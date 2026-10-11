@@ -1,0 +1,9 @@
+export { default as Banner4x1 } from "./Banner4x1";
+export { default as DesktopBoard4x } from "./DesktopBoard4x";
+export { default as Slot1x1 } from "./Slot1x1";
+export { default as Slot1x2 } from "./Slot1x2";
+export { default as Slot1x3 } from "./Slot1x3";
+export { default as Slot2x1 } from "./Slot2x1";
+export { default as Slot2x2 } from "./Slot2x2";
+export { default as Slot4x1 } from "./Slot4x1";
+export { default as Slot4x2 } from "./Slot4x2";

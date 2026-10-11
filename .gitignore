@@ -21,3 +21,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# local tooling — not part of the repo
+.claude/
+AGENT_WORKSPACE/
+
+# data: 1.4 GB, ships only inside the demo build (npm run build:demo)
+/public/data/
+
+# scratch output
+eslint_out*
+fix_*.py

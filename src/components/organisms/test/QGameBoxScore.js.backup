@@ -1,0 +1,1600 @@
+import { useMemo, useState, useRef } from "react";
+import { Flex, Box, Text, Grid, VStack } from "@chakra-ui/react";
+import teamsData from "../../../data/teams.json";
+import { useLayoutDensity, LAYOUT_DENSITY } from "../../../hooks/useLayoutDensity";
+import { gradeVsLeague, arrowVsBaseline, getLeagueAvg } from "../../../utils/rushingGrades";
+
+
+/**
+ * QGameBoxScore
+ *
+ * Box Score production modules. Each module renders BOTH teams side-by-side
+ * in a single component designed for PageShell.Slot cols={4} rows={2}.
+ *
+ * Modules:
+ *   QGameBoxScore.Passing — passing production with field map
+ *   QGameBoxScore.Rushing — rushing production with lane grid
+ */
+
+// ─── Team Meta ───────────────────────────────────────────────────────────────
+const TEAM_BY_ID = teamsData.teams.reduce((acc, team) => {
+  acc[team.exportId] = team;
+  acc[team.exportId.replace(/25$/, "")] = team;
+  acc[team.id] = team;
+  return acc;
+}, {});
+
+const getTeam = (id) => TEAM_BY_ID[id] ?? null;
+const getTeamColor = (id) => getTeam(id)?.colors?.primary ?? "#27272A";
+const getTeamSecondary = (id) => getTeam(id)?.colors?.secondary ?? "#A1A1AA";
+const getTeamAccent = (id) => getTeam(id)?.colors?.accent ?? "#4A90D9";
+const getTeamName = (id) => getTeam(id)?.shortName ?? String(id ?? "TEAM").toUpperCase();
+
+// ─── Name Helpers ────────────────────────────────────────────────────────────
+const getInitials = (name) => {
+  const parts = String(name ?? "").split(",");
+  return (parts[1]?.trim()[0] || "") + (parts[0]?.trim()[0] || "");
+};
+const getFirstName = (name) => {
+  if (!name) return "";
+  const str = String(name);
+  if (str.includes(",")) return str.split(",")[1]?.trim() || "";
+  const parts = str.trim().split(/\s+/);
+  return parts.slice(0, -1).join(" ") || "";
+};
+const getLastName = (name) => {
+  if (!name) return "";
+  const str = String(name);
+  if (str.includes(",")) return str.split(",")[0]?.trim() || "";
+  const parts = str.trim().split(/\s+/);
+  return parts[parts.length - 1] || "";
+};
+const getDisplayName = (name) => {
+  if (!name) return "";
+  const str = String(name);
+  if (str.includes(",")) {
+    const first = getFirstName(str);
+    const last = getLastName(str);
+    return first ? `${first} ${last}` : last;
+  }
+  return str;
+};
+const getLastNameOnly = (name) => getLastName(name);
+
+// ─── Formatters ──────────────────────────────────────────────────────────────
+const fmtPct = (n) => `${Math.round((n ?? 0) * 100)}%`;
+const fmt1 = (n) => (n ?? 0).toFixed(1);
+const fmt2 = (n) => (n ?? 0).toFixed(2);
+
+// ─── Avatar Map ──────────────────────────────────────────────────────────────
+const buildAvatarMap = (players) => {
+  const map = {};
+  if (!Array.isArray(players)) return map;
+  players.forEach((p) => {
+    if (!p.image_url) return;
+    const match = p.image_url.match(/\/([^/]+)\.(png|jpg|jpeg)/i);
+    if (!match) return;
+    const filename = match[1];
+    const withoutNum = filename.replace(/^\d+_/, "");
+    const parts = withoutNum.split("_").filter(Boolean);
+    if (parts.length < 2) return;
+    const lastName = parts[0].toLowerCase();
+    const firstName = parts.slice(1).join("").toLowerCase();
+    map[`${lastName},${firstName}`] = p.image_url;
+  });
+  return map;
+};
+
+// ─── Cell Colors ─────────────────────────────────────────────────────────────
+const hexToRgb = (hex) => {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? { r: parseInt(result[1], 16), g: parseInt(result[2], 16), b: parseInt(result[3], 16) } : { r: 0, g: 0, b: 0 };
+};
+const getCellColor = (comp, att, color) => {
+  if (att === 0) return "transparent";
+  const rate = comp / att;
+  const rgb = hexToRgb(color);
+  return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${0.15 + rate * 0.65})`;
+};
+const getCellTextColor = (comp, att) => {
+  if (att === 0) return "#71717A";
+  return comp / att >= 0.5 ? "#FFFFFF" : "#F4F4F5";
+};
+
+// ─── Stats Normalizer Helper ────────────────────────────────────────────────
+const normalizeStatsList = (statsField) => {
+  if (!statsField) return [];
+  const rawList = Array.isArray(statsField) ? statsField : Object.values(statsField);
+  return rawList.map((p) => ({
+    ...p,
+    name: p.name ?? p.name_raw ?? "Unknown",
+    player_key: p.player_key ?? p.player_id ?? "unknown",
+  }));
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// PASSING MODULE — Compact for 4×2 slot
+// ═══════════════════════════════════════════════════════════════════════════════
+
+// ─── Name Matching Helpers to fix 0/0 grid statistics ───────────────────────
+const cleanAndSplit = (name) => {
+  const parts = String(name ?? "")
+    .toLowerCase()
+    .replace(/[^a-z,\s]/g, "")
+    .split(/[,\s]+/)
+    .filter(Boolean);
+  return new Set(parts);
+};
+
+const isMatch = (nameA, nameB) => {
+  const setA = cleanAndSplit(nameA);
+  const setB = cleanAndSplit(nameB);
+  if (setA.size === 0 || setB.size === 0) return false;
+  const [smaller, larger] = setA.size < setB.size ? [setA, setB] : [setB, setA];
+  for (const item of smaller) {
+    if (!larger.has(item)) return false;
+  }
+  return true;
+};
+
+const derivePassingGrids = (playByPlay) => {
+  const grids = {};
+  (playByPlay ?? []).forEach((play) => {
+    if (play.play_type !== "PASS") return;
+    const action = play.actions?.[0];
+    if (!action || action.type !== "PASS") return;
+    const team = play.offense_team ? String(play.offense_team).replace(/25$/, "") : null;
+    if (!team) return;
+    const depth = action.passDepth;
+    const isComplete = action.isComplete;
+    const yards = action.net_yards || 0;
+    const dirMatch = play.raw_text?.match(/(short|deep|medium)\s+(left|middle|right)/i);
+    const direction = dirMatch ? dirMatch[2].toLowerCase() : "middle";
+
+    const passerObj = action.passer;
+    const receiverObj = action.receiver;
+    const passerName = passerObj?.name_raw || passerObj?.name || (typeof passerObj === "string" ? passerObj : null);
+    const receiverName = receiverObj?.name_raw || receiverObj?.name || (typeof receiverObj === "string" ? receiverObj : null);
+
+    [
+      { name: passerName, role: "passer" },
+      { name: receiverName, role: "receiver" }
+    ].forEach((pInfo) => {
+      const player = pInfo.name;
+      if (!player) return;
+      if (!grids[team]) grids[team] = {};
+      if (!grids[team][player]) grids[team][player] = {};
+      if (!grids[team][player][depth]) grids[team][player][depth] = {};
+      if (!grids[team][player][depth][direction]) grids[team][player][depth][direction] = { comp: 0, att: 0, yards: 0 };
+      grids[team][player][depth][direction].att += 1;
+      if (isComplete) grids[team][player][depth][direction].comp += 1;
+      grids[team][player][depth][direction].yards += yards;
+    });
+  });
+  return grids;
+};
+
+const buildPassingData = (game, teamId) => {
+  const stats = game?.individual_stats?.[teamId];
+  if (!stats) return null;
+
+  const awayId = game?.metadata?.away_team;
+  const homeId = game?.metadata?.home_team;
+  const oppTeamId = teamId === awayId ? homeId : awayId;
+
+  const advancedOpp = game?.game_advanced?.team_advanced?.[oppTeamId] ?? {};
+  const defId = advancedOpp.defensive_identity ?? {};
+  const havoc = advancedOpp.havoc ?? {};
+
+  const oppDefense = {
+    teamId: oppTeamId,
+    shortName: getTeamName(oppTeamId),
+    colors: { primary: getTeamColor(oppTeamId), secondary: getTeamSecondary(oppTeamId) },
+    disruption_rate: defId.disruption_rate ?? 0.13,
+    explosive_prevention: defId.explosive_prevention_rate ?? 0.86,
+    havoc_rate: havoc.havoc_rate_forced ?? 0.13,
+    sack_rate: havoc.sack_rate_forced ?? 0.01,
+    ypp: defId.yards_per_pass_allowed ?? 7.0,
+    bdb: defId.batted_down_balls ?? defId.pass_breakups ?? 14,
+    tfl: havoc.tfl_forced ?? 9.5,
+    pd: havoc.passes_defended_forced ?? defId.passes_defended ?? 4,
+  };
+
+  const passingRaw = normalizeStatsList(stats.passing);
+  const passing = passingRaw.filter((p) => p.name !== "TEAM");
+  const receiving = normalizeStatsList(stats.receiving);
+  const grids = derivePassingGrids(game.play_by_play);
+  const teamGrids = grids[teamId] ?? {};
+
+  const findGridForPlayer = (playerName, tGrids) => {
+    const matchKey = Object.keys(tGrids).find(key => isMatch(key, playerName));
+    return matchKey ? tGrids[matchKey] : {};
+  };
+
+  const passers = passing.map((p) => ({
+    key: p.player_key,
+    name: p.name,
+    attempts: p.attempts ?? 0,
+    completions: p.completions ?? 0,
+    yards: p.yards ?? 0,
+    touchdowns: p.touchdowns ?? 0,
+    interceptions: p.interceptions ?? 0,
+    sacks_taken: p.sacks_taken ?? 0,
+    grid: findGridForPlayer(p.name, teamGrids),
+  }));
+
+  const receivers = receiving.map((r) => ({
+    key: r.player_key,
+    name: r.name,
+    targets: r.targets ?? 0,
+    receptions: r.receptions ?? 0,
+    yards: r.yards ?? 0,
+    touchdowns: r.touchdowns ?? 0,
+    grid: findGridForPlayer(r.name, teamGrids),
+  }));
+
+  const teamRow = passingRaw.find((p) => p.name === "TEAM");
+  const teamTotal = {
+    attempts: teamRow?.attempts ?? passers.reduce((s, p) => s + p.attempts, 0),
+    completions: teamRow?.completions ?? passers.reduce((s, p) => s + p.completions, 0),
+    yards: teamRow?.yards ?? passers.reduce((s, p) => s + p.yards, 0),
+    touchdowns: teamRow?.touchdowns ?? passers.reduce((s, p) => s + p.touchdowns, 0),
+    interceptions: teamRow?.interceptions ?? passers.reduce((s, p) => s + p.interceptions, 0),
+  };
+
+  const standardDowns = { comp: 0, att: 0, yards: 0 };
+  const passingDowns = { comp: 0, att: 0, yards: 0 };
+  (game.play_by_play ?? []).forEach((play) => {
+    const cleanTeam = play.offense_team ? String(play.offense_team).replace(/25$/, "") : "";
+    if (play.play_type !== "PASS" || cleanTeam !== teamId) return;
+    const action = play.actions?.[0];
+    if (!action) return;
+    const isStd = play.down === 1 || (play.down === 2 && play.distance <= 8);
+    const target = isStd ? standardDowns : passingDowns;
+    target.att += 1;
+    if (action.isComplete) target.comp += 1;
+    target.yards += action.net_yards || 0;
+  });
+
+  return {
+    meta: {
+      shortName: getTeamName(teamId),
+      colors: { primary: getTeamColor(teamId), secondary: getTeamSecondary(teamId) },
+    },
+    passing: teamTotal,
+    downSplit: { standard: standardDowns, passing: passingDowns },
+    passers,
+    receivers,
+    oppDefense,
+  };
+};
+
+const calculateGrade = (label, val) => {
+  if (label === "Disrupt") {
+    const rate = val * 100;
+    if (rate >= 18) return "A";
+    if (rate >= 15) return "B";
+    if (rate >= 12) return "C";
+    if (rate >= 9) return "D";
+    return "F";
+  }
+  if (label === "Expl. Prev") {
+    const rate = val * 100;
+    if (rate >= 92) return "A";
+    if (rate >= 86) return "B";
+    if (rate >= 80) return "C";
+    if (rate >= 74) return "D";
+    return "F";
+  }
+  if (label === "Havoc") {
+    const rate = val * 100;
+    if (rate >= 16) return "A";
+    if (rate >= 13) return "B";
+    if (rate >= 10) return "C";
+    if (rate >= 7) return "D";
+    return "F";
+  }
+  if (label === "Sack") {
+    const rate = val * 100;
+    if (rate >= 10) return "A";
+    if (rate >= 7) return "B";
+    if (rate >= 4) return "C";
+    if (rate >= 2) return "D";
+    return "F";
+  }
+  if (label === "YPP") {
+    if (val <= 5.5) return "A";
+    if (val <= 6.8) return "B";
+    if (val <= 7.8) return "C";
+    if (val <= 8.8) return "D";
+    return "F";
+  }
+  if (label === "BDB") {
+    if (val >= 16) return "A";
+    if (val >= 12) return "B";
+    if (val >= 8) return "C";
+    if (val >= 5) return "D";
+    return "F";
+  }
+  if (label === "TFL") {
+    if (val >= 10) return "A";
+    if (val >= 7) return "B";
+    if (val >= 5) return "C";
+    if (val >= 3) return "D";
+    return "F";
+  }
+  if (label === "PD") {
+    if (val >= 6) return "A";
+    if (val >= 4) return "B";
+    if (val >= 3) return "C";
+    if (val >= 2) return "D";
+    return "F";
+  }
+  return "B";
+};
+
+const getContextArrow = (label, val) => {
+  if (label === "YPP") {
+    return val <= 6.8 ? "▼" : "▲";
+  }
+  if (val >= 0.15 || val > 7) return "▲";
+  if (val <= 0.05 || val < 3) return "▼";
+  return "═";
+};
+
+const DefenseIdentityCompact = ({ defense, isCompact }) => {
+  if (isCompact) {
+    return (
+      <Flex align="center" justify="space-between" bg={`${defense.colors.primary}12`} borderTop={`1px solid ${defense.colors.primary}25`} px={1.5} py="3px" gap={1.5} w="full">
+        <Flex align="center" gap={1} flexShrink={0}>
+          <Flex w="16px" h="16px" borderRadius="xs" bg={defense.colors.primary} align="center" justify="center" border="1px solid whiteAlpha.200">
+            <Text fontSize="7px" fontWeight="900" color={defense.colors.secondary}>{defense.shortName}</Text>
+          </Flex>
+          <Text fontSize="7px" fontWeight="800" color="text.secondary" textTransform="uppercase" letterSpacing="0.04em">DEF</Text>
+        </Flex>
+
+        <Grid templateColumns="repeat(4, 1fr)" gap={2} flex={1} maxW="280px">
+          {[
+            { label: "DRPT", value: fmtPct(defense.disruption_rate), color: "text.primary" },
+            { label: "EXPL", value: fmtPct(defense.explosive_prevention), color: "text.primary" },
+            { label: "HVC", value: fmtPct(defense.havoc_rate), color: "#E53E3E" },
+            { label: "SCK", value: fmtPct(defense.sack_rate), color: "#63B3ED" },
+          ].map((stat) => (
+            <Flex key={stat.label} align="baseline" justify="center" gap={0.5}>
+              <Text fontSize="5.5px" fontWeight="700" color="text.muted" textTransform="uppercase">{stat.label}:</Text>
+              <Text fontSize="8.5px" fontWeight="950" color={stat.color}>{stat.value}</Text>
+            </Flex>
+          ))}
+        </Grid>
+      </Flex>
+    );
+  }
+
+  return (
+    <VStack gap={1} align="stretch" w="full" bg={`${defense.colors.primary}08`} p={1.5} borderRadius="md" border={`1px solid ${defense.colors.primary}20`}>
+      <Flex align="center" gap={1.5}>
+        <Flex w="18px" h="18px" borderRadius="xs" bg={defense.colors.primary} align="center" justify="center" border="1px solid whiteAlpha.200" flexShrink={0}>
+          <Text fontSize="8.5px" fontWeight="950" color={defense.colors.secondary}>{defense.shortName}</Text>
+        </Flex>
+        <Text fontSize="10px" fontWeight="900" color="text.secondary" textTransform="uppercase" letterSpacing="0.04em">Opponent Pass Defense Impact</Text>
+      </Flex>
+      <Grid templateColumns="repeat(4, 1fr)" gap={1.5}>
+        {[
+          { dispLabel: "DRPT", label: "Disrupt", raw: defense.disruption_rate, value: fmtPct(defense.disruption_rate) },
+          { dispLabel: "EXPL", label: "Expl. Prev", raw: defense.explosive_prevention, value: fmtPct(defense.explosive_prevention) },
+          { dispLabel: "HVC", label: "Havoc", raw: defense.havoc_rate, value: fmtPct(defense.havoc_rate), color: "#E53E3E" },
+          { dispLabel: "SCK", label: "Sack", raw: defense.sack_rate, value: fmtPct(defense.sack_rate), color: "#63B3ED" },
+          { dispLabel: "YPP", label: "YPP", raw: defense.ypp, value: fmt1(defense.ypp) },
+          { dispLabel: "BDB", label: "BDB", raw: defense.bdb, value: defense.bdb },
+          { dispLabel: "TFL", label: "TFL", raw: defense.tfl, value: defense.tfl },
+          { dispLabel: "PD", label: "PD", raw: defense.pd, value: defense.pd },
+        ].map((stat) => {
+          const grade = calculateGrade(stat.label, stat.raw);
+          const arrow = getContextArrow(stat.label, stat.raw);
+          const gradeColor =
+            grade === "A"
+              ? "#48BB78"
+              : grade === "B"
+                ? "#38A169"
+                : grade === "C"
+                  ? "#ECC94B"
+                  : grade === "D"
+                    ? "#ED8936"
+                    : "#E53E3E";
+
+          return (
+            <Flex
+              key={stat.label}
+              direction="column"
+              bg="whiteAlpha.50"
+              border="1px solid whiteAlpha.100"
+              borderRadius="sm"
+              p={1}
+              align="center"
+              justify="space-between"
+              minH="42px"
+            >
+              <Flex w="full" align="center" justify="space-between" px={0.5}>
+                <Text fontSize="7.5px" fontWeight="800" color="text.muted" textTransform="uppercase">
+                  {stat.dispLabel}
+                </Text>
+                <Text fontSize="7px" fontWeight="900" color={arrow === "▲" ? "#48BB78" : arrow === "▼" ? "#E53E3E" : "text.muted"}>
+                  {arrow}
+                </Text>
+              </Flex>
+              <Flex w="full" align="baseline" justify="space-between" px={0.5} mt="2px">
+                <Text fontSize="12px" fontWeight="950" color={stat.color ?? "text.primary"}>
+                  {stat.value}
+                </Text>
+                <Text fontSize="9px" fontWeight="950" color={gradeColor}>
+                  {grade}
+                </Text>
+              </Flex>
+            </Flex>
+          );
+        })}
+      </Grid>
+    </VStack>
+  );
+};
+
+const PassingPanel = ({ data, avatarMap, isCompact }) => {
+  const [activePlayer, setActivePlayer] = useState({ ...data.passers[0], _type: "passer" });
+  const [wrPageIndex, setWrPageIndex] = useState(0);
+
+  // State sync during render to prevent 0/0 grid de-sync bug when game/team changes
+  const [prevTeamId, setPrevTeamId] = useState(null);
+  if (data.meta.shortName !== prevTeamId) {
+    setPrevTeamId(data.meta.shortName);
+    setActivePlayer({ ...data.passers[0], _type: "passer" });
+    setWrPageIndex(0);
+  }
+
+  const isPasser = activePlayer._type === "passer";
+  const accent = isPasser ? "#E53E3E" : "#4A90D9";
+
+  const getImageUrl = (player) => {
+    const key = player?.key?.replace(/^name:/, "");
+    return avatarMap[key] || avatarMap[player?.name?.toLowerCase()] || null;
+  };
+  const imageUrl = getImageUrl(activePlayer);
+
+  const teamCmpPct = data.passing.attempts > 0 ? ((data.passing.completions / data.passing.attempts) * 100).toFixed(1) + "%" : "0%";
+  const teamYpa = data.passing.attempts > 0 ? (data.passing.yards / data.passing.attempts).toFixed(1) : "0.0";
+  const stdCmpPct = data.downSplit.standard.att > 0 ? ((data.downSplit.standard.comp / data.downSplit.standard.att) * 100).toFixed(1) + "%" : "0%";
+  const stdYpa = data.downSplit.standard.att > 0 ? (data.downSplit.standard.yards / data.downSplit.standard.att).toFixed(1) : "0.0";
+  const passCmpPct = data.downSplit.passing.att > 0 ? ((data.downSplit.passing.comp / data.downSplit.passing.att) * 100).toFixed(1) + "%" : "0%";
+  const passYpa = data.downSplit.passing.att > 0 ? (data.downSplit.passing.yards / data.downSplit.passing.att).toFixed(1) : "0.0";
+
+  return (
+    <Flex direction="column" w="full" h="full" minH={0}>
+      {/* Header */}
+      <Flex direction="column"
+        bg={isCompact ? `linear-gradient(90deg, ${data.meta.colors.primary}44 0%, transparent 70%)` : data.meta.colors.primary}
+        borderBottom="1px solid whiteAlpha.200"
+        px={isCompact ? 1 : 2.5}
+        py={isCompact ? "3px" : "2.5px"}
+        gap={isCompact ? 0 : "0.5px"}
+        flexShrink={0}
+      >
+        {isCompact ? (
+          <Flex align="center" gap={1.5} py="2px">
+            <Flex w="18px" h="18px" borderRadius="sm" bg={data.meta.colors.primary} align="center" justify="center" flexShrink={0} border="1px solid whiteAlpha.200">
+              <Text fontSize="8px" fontWeight="800" color={data.meta.colors.secondary}>{data.meta.shortName}</Text>
+            </Flex>
+            <Text fontSize="11px" fontWeight="black" color="white" textTransform="uppercase" letterSpacing="0.06em">PASSING</Text>
+          </Flex>
+        ) : (
+          <Flex align="center" gap={1.5} py="1px">
+            <Flex w="18px" h="18px" borderRadius="sm" bg={data.meta.colors.primary} align="center" justify="center" flexShrink={0} border="1px solid whiteAlpha.200">
+              <Text fontSize="8px" fontWeight="900" color={data.meta.colors.secondary}>{data.meta.shortName}</Text>
+            </Flex>
+            <Text fontSize="12px" fontWeight="black" color="white" textTransform="uppercase" letterSpacing="0.04em">PASSING</Text>
+          </Flex>
+        )}
+
+        <Grid templateColumns={isCompact ? "35px repeat(6, 1fr)" : "48px repeat(6, 1fr)"} gap={0} alignItems="center">
+          <Box />
+          {["CMP", "ATT", "YDS", "CMP%", "INT", "YPA"].map((h) => (
+            <Text key={h} fontSize={isCompact ? "6.5px" : "8px"} fontWeight="800" color={isCompact ? "text.muted" : "whiteAlpha.800"} textAlign="center" textTransform="uppercase">{h}</Text>
+          ))}
+          {[
+            { label: "Total", comp: data.passing.completions, att: data.passing.attempts, yards: data.passing.yards, cmpPct: teamCmpPct, int: data.passing.interceptions, ypa: teamYpa, bold: true },
+            ...(!isCompact ? [
+              { label: "Standard", comp: data.downSplit.standard.comp, att: data.downSplit.standard.att, yards: data.downSplit.standard.yards, cmpPct: stdCmpPct, int: 0, ypa: stdYpa, bold: false },
+              { label: "Passing", comp: data.downSplit.passing.comp, att: data.downSplit.passing.att, yards: data.downSplit.passing.yards, cmpPct: passCmpPct, int: 0, ypa: passYpa, bold: false }
+            ] : [])
+          ].map((row) => (
+            <Flex key={row.label} gridColumn="span 7" alignItems="center" py={isCompact ? "2px" : "0.5px"}>
+              <Text fontSize={row.bold ? (isCompact ? "7.5px" : "8.5px") : (isCompact ? "6.5px" : "7.5px")} fontWeight="900" color={row.bold ? "text.primary" : (isCompact ? "text.secondary" : "whiteAlpha.800")} w={isCompact ? "35px" : "48px"} textTransform={row.bold ? "uppercase" : "none"} pl="2px">{row.label}</Text>
+              <Text fontSize={row.bold ? (isCompact ? "8.5px" : "10px") : (isCompact ? "7.5px" : "8.5px")} fontWeight="900" color={row.bold ? (isCompact ? "brand.400" : "white") : (isCompact ? "text.primary" : "whiteAlpha.900")} flex={1} textAlign="center">{row.comp}</Text>
+              <Text fontSize={row.bold ? (isCompact ? "8.5px" : "10px") : (isCompact ? "7.5px" : "8.5px")} fontWeight="900" color={row.bold ? (isCompact ? "brand.400" : "white") : (isCompact ? "text.primary" : "whiteAlpha.900")} flex={1} textAlign="center">{row.att}</Text>
+              <Text fontSize={row.bold ? (isCompact ? "8.5px" : "10px") : (isCompact ? "7.5px" : "8.5px")} fontWeight="900" color={row.bold ? (isCompact ? "brand.400" : "white") : (isCompact ? "text.primary" : "whiteAlpha.900")} flex={1} textAlign="center">{row.yards}</Text>
+              <Text fontSize={row.bold ? (isCompact ? "8.5px" : "10px") : (isCompact ? "7.5px" : "8.5px")} fontWeight="900" color={row.bold ? (isCompact ? "brand.400" : "white") : (isCompact ? "text.primary" : "whiteAlpha.900")} flex={1} textAlign="center">{row.cmpPct}</Text>
+              <Text fontSize={row.bold ? (isCompact ? "8.5px" : "10px") : (isCompact ? "7.5px" : "8.5px")} fontWeight="900" color={row.bold ? (isCompact ? "brand.400" : "white") : (isCompact ? "text.primary" : "whiteAlpha.900")} flex={1} textAlign="center">{row.int}</Text>
+              <Text fontSize={row.bold ? (isCompact ? "8.5px" : "10px") : (isCompact ? "7.5px" : "8.5px")} fontWeight="900" color={row.bold ? (isCompact ? "brand.400" : "white") : (isCompact ? "text.primary" : "whiteAlpha.900")} flex={1} textAlign="center">{row.ypa}</Text>
+            </Flex>
+          ))}
+        </Grid>
+      </Flex>
+
+      {/* Middle: Tables + Spotlight stacked dynamically */}
+      {isCompact ? (
+        <Flex direction="column" flex={1} minH={0} overflow="hidden" p="2px" gap="4px">
+          {/* Top Half of Middle: Player Lists (Full Width) */}
+          <Box flex={1.2} overflowY="hidden" display="flex" flexDirection="column" gap="4px">
+            {/* Passer list */}
+            <Box>
+              <Grid templateColumns="minmax(0, 1.1fr) repeat(6, 0.85fr)" gap={0} alignItems="center" py="2px" borderBottom="1px solid whiteAlpha.50">
+                <Flex align="center" gap={1} pl="2px">
+                  <Box w="2px" h="8px" bg="#E53E3E" borderRadius="sm" />
+                  <Text fontSize="10px" fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">Passing</Text>
+                </Flex>
+                {["CMP", "ATT", "YDS", "TD", "INT", "CMP%"].map((h) => (
+                  <Text key={h} fontSize="9px" fontWeight="800" color="text.muted" textAlign="center">{h}</Text>
+                ))}
+              </Grid>
+              {data.passers.map((p) => {
+                const isActive = p.key === activePlayer.key && isPasser;
+                const cmpPct = p.attempts > 0 ? ((p.completions / p.attempts) * 100).toFixed(1) + "%" : "0%";
+                return (
+                  <Grid key={p.key} templateColumns="minmax(0, 1.2fr) repeat(6, 0.8fr)" gap={0} alignItems="center"
+                    py="2px" cursor="pointer"
+                    bg={isActive ? "whiteAlpha.150" : "transparent"}
+                    borderLeft={isActive ? "3px solid #E53E3E" : "3px solid transparent"}
+                    _hover={{ bg: "whiteAlpha.60" }}
+                    onClick={() => setActivePlayer({ ...p, _type: "passer" })}
+                  >
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "600"} color={isActive ? "#F56565" : "text.primary"} pl="2px" truncate>{getLastNameOnly(p.name)}</Text>
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.completions}</Text>
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.attempts}</Text>
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.yards}</Text>
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.touchdowns}</Text>
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.interceptions}</Text>
+                    <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{cmpPct}</Text>
+                  </Grid>
+                );
+              })}
+            </Box>
+
+            {/* Receiver list */}
+            {(() => {
+              const maxCompactWrs = 3;
+              const hasWrOverflow = data.receivers.length > maxCompactWrs;
+              const totalWrPages = Math.ceil(data.receivers.length / maxCompactWrs);
+              const visibleReceivers = hasWrOverflow
+                ? data.receivers.slice(wrPageIndex * maxCompactWrs, (wrPageIndex + 1) * maxCompactWrs)
+                : data.receivers;
+
+              return (
+                <Box>
+                  <Grid templateColumns="minmax(0, 1.1fr) repeat(6, 0.85fr)" gap={0} alignItems="center" py="2px" borderBottom="1px solid whiteAlpha.50">
+                    <Flex flex={1} align="center" justify="space-between" pr="2px">
+                      <Flex align="center" gap={1} pl="2px">
+                        <Box w="2px" h="8px" bg="#4A90D9" borderRadius="sm" />
+                        <Text fontSize="10px" fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">Receiving</Text>
+                      </Flex>
+                      {hasWrOverflow && (
+                        <Flex align="center" gap={1} flexShrink={0}>
+                          <Text fontSize="8px" fontWeight="950" color="text.primary" cursor="pointer"
+                            opacity={wrPageIndex > 0 ? 1 : 0.3}
+                            pointerEvents={wrPageIndex > 0 ? "auto" : "none"}
+                            onClick={() => setWrPageIndex(wrPageIndex - 1)}
+                          >▲</Text>
+                          <Text fontSize="7px" fontWeight="900" color="text.muted">{wrPageIndex + 1}/{totalWrPages}</Text>
+                          <Text fontSize="8px" fontWeight="950" color="text.primary" cursor="pointer"
+                            opacity={wrPageIndex < totalWrPages - 1 ? 1 : 0.3}
+                            pointerEvents={wrPageIndex < totalWrPages - 1 ? "auto" : "none"}
+                            onClick={() => setWrPageIndex(wrPageIndex + 1)}
+                          >▼</Text>
+                        </Flex>
+                      )}
+                    </Flex>
+                    {["REC", "TGT", "YDS", "TD", "YPC", "YPT"].map((h) => (
+                      <Text key={h} fontSize="9px" fontWeight="800" color="text.muted" textAlign="center">{h}</Text>
+                    ))}
+                  </Grid>
+                  {visibleReceivers.map((r) => {
+                    const isActive = r.key === activePlayer.key && !isPasser;
+                    const ypc = r.receptions > 0 ? (r.yards / r.receptions).toFixed(1) : "0.0";
+                    const ypt = r.targets > 0 ? (r.yards / r.targets).toFixed(1) : "0.0";
+                    return (
+                      <Grid key={r.key} templateColumns="minmax(0, 1.2fr) repeat(6, 0.8fr)" gap={0} alignItems="center"
+                        py="2px" cursor="pointer"
+                        bg={isActive ? "whiteAlpha.150" : "transparent"}
+                        borderLeft={isActive ? "3px solid #4A90D9" : "3px solid transparent"}
+                        _hover={{ bg: "whiteAlpha.60" }}
+                        onClick={() => setActivePlayer({ ...r, _type: "receiver" })}
+                      >
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "600"} color={isActive ? "#63B3ED" : "text.primary"} pl="2px" truncate>{getLastNameOnly(r.name)}</Text>
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{r.receptions}</Text>
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{r.targets}</Text>
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{r.yards}</Text>
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{r.touchdowns}</Text>
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{ypc}</Text>
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{ypt}</Text>
+                      </Grid>
+                    );
+                  })}
+                </Box>
+              );
+            })()}
+          </Box>
+
+          {/* Bottom Half of Middle: Spotlight & Map (Side-by-Side) */}
+          <Flex w="full" flex={1} minH="120px" gap="4px" borderTop="1px solid whiteAlpha.100" pt="4px">
+            {/* Spotlight — no picture, smaller width */}
+            <Box w="28%" h="full" minW={0}>
+              <Flex direction="column" justify="center" h="full" px={2} py="2px" gap="1px"
+                bg={`${data.meta.colors.primary}18`}
+                border={`1px solid ${data.meta.colors.primary}35`}
+                borderRadius="sm"
+              >
+                <Text fontSize="12px" fontWeight="black" color="text.primary" truncate>{getLastNameOnly(activePlayer.name)}</Text>
+                <Text fontSize="8px" color={accent} fontWeight="900" textTransform="uppercase">{activePlayer.position || (isPasser ? "QB" : "WR")}</Text>
+                <Text fontSize="10px" color="text.primary" fontWeight="bold">
+                  {isPasser
+                    ? `${activePlayer.completions}/${activePlayer.attempts} C/A`
+                    : `${activePlayer.receptions}/${activePlayer.targets} R/T`
+                  }
+                </Text>
+                <Text fontSize="10px" color="brand.400" fontWeight="black">
+                  {activePlayer.yards} YDS · {activePlayer.touchdowns} TD
+                </Text>
+              </Flex>
+            </Box>
+
+            {/* Map — wider */}
+            <Box flex={1} h="full">
+              <PassingFieldMap grid={activePlayer.grid} teamColor={data.meta.colors.primary} isCompact={true} />
+            </Box>
+          </Flex>
+        </Flex>
+      ) : (
+        <Flex flex={1} minH={0} overflow="hidden">
+          {/* Left: Tables container with scroll buttons */}
+          <Flex w="55%" borderRight="1px solid whiteAlpha.100" minH={0} position="relative">
+            {/* Dynamic real-estate pagination calculations */}
+            {(() => {
+              const qbCount = data.passers.length;
+              const maxWrCapacity = 8 - qbCount;
+              const hasWrOverflow = data.receivers.length > maxWrCapacity;
+              const totalWrPages = Math.ceil(data.receivers.length / maxWrCapacity);
+              const startIndex = wrPageIndex * maxWrCapacity;
+              const visibleReceivers = hasWrOverflow
+                ? data.receivers.slice(startIndex, startIndex + maxWrCapacity)
+                : data.receivers;
+
+              return (
+                <>
+                  {/* Scroll Buttons Column (Widescreen only, when not compact and has WR overflow) */}
+                  {hasWrOverflow && !isCompact && (
+                    <Flex direction="column" w="18px" bg="rgba(0,0,0,0.3)" borderRight="1px solid whiteAlpha.100" flexShrink={0} h="full">
+                      {/* Up page button */}
+                      <Flex flex={1} align="center" justify="center" cursor="pointer"
+                        opacity={wrPageIndex > 0 ? 1 : 0.2}
+                        pointerEvents={wrPageIndex > 0 ? "auto" : "none"}
+                        _hover={{ bg: "whiteAlpha.150" }}
+                        onClick={() => {
+                          if (wrPageIndex > 0) setWrPageIndex(wrPageIndex - 1);
+                        }}
+                      >
+                        <Text color="text.secondary" fontSize="11px" fontWeight="black">▲</Text>
+                      </Flex>
+                      {/* Divider */}
+                      <Box h="1px" bg="whiteAlpha.100" w="full" />
+                      {/* Down page button */}
+                      <Flex flex={1} align="center" justify="center" cursor="pointer"
+                        opacity={wrPageIndex < totalWrPages - 1 ? 1 : 0.2}
+                        pointerEvents={wrPageIndex < totalWrPages - 1 ? "auto" : "none"}
+                        _hover={{ bg: "whiteAlpha.150" }}
+                        onClick={() => {
+                          if (wrPageIndex < totalWrPages - 1) setWrPageIndex(wrPageIndex + 1);
+                        }}
+                      >
+                        <Text color="text.secondary" fontSize="11px" fontWeight="black">▼</Text>
+                      </Flex>
+                    </Flex>
+                  )}
+
+                  {/* Table list */}
+                  <Box flex={1} p="3px" overflowY="hidden" display="flex" flexDirection="column" gap="3px">
+                    {/* Passers */}
+                    <Box>
+                      <Grid templateColumns="minmax(0, 2.2fr) repeat(6, 0.8fr)" gap={0} alignItems="center" py="2px" borderBottom="1px solid whiteAlpha.50">
+                        <Flex align="center" gap={1} pl="2px">
+                          <Box w="2px" h="8px" bg="#E53E3E" borderRadius="sm" />
+                          <Text fontSize="11px" fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">Passing</Text>
+                        </Flex>
+                        {["CMP", "ATT", "YDS", "TD", "INT", "CMP%"].map((h) => (
+                          <Text key={h} fontSize="11px" fontWeight="700" color="text.muted" textAlign="center" textTransform="uppercase">{h}</Text>
+                        ))}
+                      </Grid>
+                      {data.passers.map((p) => {
+                        const isActive = p.key === activePlayer.key && isPasser;
+                        const cmpPct = p.attempts > 0 ? ((p.completions / p.attempts) * 100).toFixed(1) + "%" : "0%";
+                        return (
+                          <Grid key={p.key} templateColumns="minmax(0, 2.2fr) repeat(6, 0.8fr)" gap={0} alignItems="center"
+                            py="3px" cursor="pointer"
+                            bg={isActive ? "whiteAlpha.250" : "transparent"}
+                            borderLeft={isActive ? "4px solid #E53E3E" : "4px solid transparent"}
+                            _hover={{ bg: "whiteAlpha.60" }}
+                            onClick={() => setActivePlayer({ ...p, _type: "passer" })}
+                          >
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color="text.primary" pl="2px" truncate>{getDisplayName(p.name)}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#E53E3E" : "text.primary"} textAlign="center">{p.completions}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#E53E3E" : "text.primary"} textAlign="center">{p.attempts}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#E53E3E" : "text.primary"} textAlign="center">{p.yards}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#E53E3E" : "text.primary"} textAlign="center">{p.touchdowns}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#E53E3E" : "text.primary"} textAlign="center">{p.interceptions}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#E53E3E" : "text.primary"} textAlign="center">{cmpPct}</Text>
+                          </Grid>
+                        );
+                      })}
+                    </Box>
+
+                    {/* Receivers */}
+                    <Box mt="3px">
+                      <Grid templateColumns="minmax(0, 2.2fr) repeat(6, 0.8fr)" gap={0} alignItems="center" py="2px" borderBottom="1px solid whiteAlpha.50">
+                        <Flex align="center" gap={1} pl="2px">
+                          <Box w="2px" h="8px" bg="#4A90D9" borderRadius="sm" />
+                          <Text fontSize="11px" fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">Receiving</Text>
+                        </Flex>
+                        {["REC", "TGT", "YDS", "TD", "YPC", "YPT"].map((h) => (
+                          <Text key={h} fontSize="11px" fontWeight="700" color="text.muted" textAlign="center" textTransform="uppercase">{h}</Text>
+                        ))}
+                      </Grid>
+                      {visibleReceivers.map((r) => {
+                        const isActive = r.key === activePlayer.key && !isPasser;
+                        const ypc = r.receptions > 0 ? (r.yards / r.receptions).toFixed(1) : "0.0";
+                        const ypt = r.targets > 0 ? (r.yards / r.targets).toFixed(1) : "0.0";
+                        return (
+                          <Grid key={r.key} templateColumns="minmax(0, 2.2fr) repeat(6, 0.8fr)" gap={0} alignItems="center"
+                            py="3px" cursor="pointer"
+                            bg={isActive ? "whiteAlpha.250" : "transparent"}
+                            borderLeft={isActive ? "4px solid #4A90D9" : "4px solid transparent"}
+                            _hover={{ bg: "whiteAlpha.60" }}
+                            onClick={() => setActivePlayer({ ...r, _type: "receiver" })}
+                          >
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color="text.primary" pl="2px" truncate>{getDisplayName(r.name)}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#4A90D9" : "text.primary"} textAlign="center">{r.receptions}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#4A90D9" : "text.primary"} textAlign="center">{r.targets}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#4A90D9" : "text.primary"} textAlign="center">{r.yards}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#4A90D9" : "text.primary"} textAlign="center">{r.touchdowns}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#4A90D9" : "text.primary"} textAlign="center">{ypc}</Text>
+                            <Text fontSize="12px" fontWeight={isActive ? "850" : "500"} color={isActive ? "#4A90D9" : "text.primary"} textAlign="center">{ypt}</Text>
+                          </Grid>
+                        );
+                      })}
+                    </Box>
+                  </Box>
+                </>
+              );
+            })()}
+          </Flex>
+
+          {/* Right: Spotlight */}
+          <Box w="45%" p="3px" overflow="hidden">
+            <Flex direction="column" w="full" h="full" gap="4px">
+              <Grid templateColumns="80px 1fr" border="1px solid rgba(255,255,255,0.15)" borderRadius="md" overflow="hidden" bg="rgba(255,255,255,0.02)" flexShrink={0} minH="72px">
+                <Flex w="80px" h="full" align="stretch" justify="stretch" bg="rgba(255,255,255,0.02)" borderRight="1px solid rgba(255,255,255,0.12)" flexShrink={0}>
+                  {imageUrl ? (
+                    <Box as="img" src={imageUrl} alt="" w="full" h="full" objectFit="cover" />
+                  ) : (
+                    <Flex w="full" h="full" bg={data.meta.colors.primary} align="center" justify="center">
+                      <Text fontSize="20px" fontWeight="950" color="white">{getInitials(activePlayer.name)}</Text>
+                    </Flex>
+                  )}
+                </Flex>
+                <Box minW={0} px={3} py="6px" display="flex" flexDirection="column" justify="center">
+                  <Text fontSize="md" fontWeight="black" color="text.primary" truncate>{getDisplayName(activePlayer.name)}</Text>
+                  <Flex align="center" gap={1.5} mt="2px">
+                    <Box w="5px" h="5px" borderRadius="full" bg={accent} />
+                    <Text fontSize="11px" color="text.muted" fontWeight="900" textTransform="uppercase" letterSpacing="0.04em">{isPasser ? "Quarterback" : "Receiver"}</Text>
+                  </Flex>
+                  <Text fontSize="11px" color="text.primary" fontWeight="bold" mt="3px" letterSpacing="0.02em">
+                    {isPasser
+                      ? `${activePlayer.completions} CMP  ·  ${activePlayer.attempts} ATT  ·  ${activePlayer.yards} YDS`
+                      : `${activePlayer.receptions} REC  ·  ${activePlayer.targets} TGT  ·  ${activePlayer.yards} YDS`
+                    }
+                  </Text>
+                  <Text fontSize="11px" color={accent} fontWeight="black" mt="1px" letterSpacing="0.02em">
+                    {isPasser
+                      ? `${activePlayer.touchdowns} TD  ·  ${activePlayer.interceptions} INT`
+                      : `${activePlayer.touchdowns} TD`
+                    }
+                  </Text>
+                </Box>
+              </Grid>
+              {/* Field Map */}
+              <Box flex={1} minH={0}>
+                <PassingFieldMap grid={activePlayer.grid} teamColor={data.meta.colors.primary} isCompact={false} />
+              </Box>
+            </Flex>
+          </Box>
+        </Flex>
+      )}
+      {/* Footer Defense Identity */}
+      <Box px={isCompact ? 1 : 2} py={isCompact ? "2px" : "4px"} borderTop="1px solid whiteAlpha.100" flexShrink={0}>
+        <DefenseIdentityCompact defense={data.oppDefense} isCompact={isCompact} />
+      </Box>
+    </Flex>
+  );
+};
+
+const PassingFieldMap = ({ grid, teamColor, isCompact }) => {
+  const depths = [
+    { key: "deep", label: "DEEP", range: ">12" },
+    { key: "medium", label: "MED", range: "4-12" },
+    { key: "short", label: "SHORT", range: "<4" },
+  ];
+  const directions = ["left", "middle", "right"];
+
+  return (
+    <Flex direction="column" w="full" h="full" gap="1px">
+      <Flex flex={1} gap="2px" minH={0}>
+        <Flex direction="column" gap="1px" w={isCompact ? "28px" : "44px"} flexShrink={0}>
+          {depths.map((d) => (
+            <Flex key={d.key} direction="column" align="flex-end" justify="center" flex={1} pr="2px">
+              <Text fontSize={isCompact ? "8px" : "13px"} fontWeight="800" color="text.secondary" textTransform="uppercase" lineHeight={1}>{d.label}</Text>
+              <Text fontSize={isCompact ? "6px" : "10px"} color="text.muted" fontWeight="700" lineHeight={1}>{d.range}</Text>
+            </Flex>
+          ))}
+        </Flex>
+        <Box flex={1} position="relative" borderRadius="sm" overflow="hidden"
+          bg="linear-gradient(180deg, #1a3d1a 0%, #0d260d 100%)"
+          border="1px solid rgba(255,255,255,0.15)"
+        >
+          <Box position="absolute" left="0" right="0" top="33.3%" h="1px" bg="rgba(255,255,255,0.12)" />
+          <Box position="absolute" left="0" right="0" top="66.6%" h="1px" bg="rgba(255,255,255,0.12)" />
+          <Box position="absolute" top="0" bottom="0" left="33.3%" w="1px" bg="rgba(255,255,255,0.12)" />
+          <Box position="absolute" top="0" bottom="0" left="66.6%" w="1px" bg="rgba(255,255,255,0.12)" />
+
+          {/* Faint yard markers */}
+          {!isCompact && (
+            <Flex position="absolute" inset="0" direction="column" justify="space-around" pointerEvents="none" opacity={0.15}>
+              <Box w="full" h="1px" borderTop="1px dashed white" />
+              <Box w="full" h="1px" borderTop="1px dashed white" />
+              <Box w="full" h="1px" borderTop="1px dashed white" />
+              <Box w="full" h="1px" borderTop="1px dashed white" />
+            </Flex>
+          )}
+
+          <Grid position="absolute" inset="1px" templateColumns="repeat(3, 1fr)" templateRows="repeat(3, 1fr)" gap="1px">
+            {depths.map((d) =>
+              directions.map((dir) => {
+                const cell = grid?.[d.key]?.[dir] ?? { comp: 0, att: 0, yards: 0 };
+                const hasData = cell.att > 0;
+                const bg = hasData ? getCellColor(cell.comp, cell.att, teamColor) : (isCompact ? "rgba(0,0,0,0.35)" : "rgba(255,255,255,0.04)");
+                const textColor = hasData ? getCellTextColor(cell.comp, cell.att) : "#71717A";
+                return (
+                  <Flex key={`${d.key}-${dir}`} direction="column" align="center" justify="center"
+                    bg={bg}
+                    borderRadius="sm"
+                    border={hasData ? `1px solid ${teamColor}66` : (isCompact ? "1px solid rgba(255,255,255,0.06)" : "1px solid rgba(255,255,255,0.12)")}
+                  >
+                    <Text fontSize={isCompact ? "clamp(8px, 0.7vw, 12px)" : "16px"} fontWeight="950" color={textColor} lineHeight={1}>{cell.comp}/{cell.att}</Text>
+                    <Text fontSize={isCompact ? "clamp(6px, 0.5vw, 9px)" : "12px"} fontWeight="800" color={textColor} lineHeight={1} mt="2px" opacity={0.9}>{cell.yards}y</Text>
+                  </Flex>
+                );
+              })
+            )}
+          </Grid>
+        </Box>
+      </Flex>
+      <Flex gap="2px" pl={isCompact ? "28px" : "44px"}>
+        {["Left", "Middle", "Right"].map((d) => (
+          <Text key={d} flex={1} fontSize={isCompact ? "8px" : "13px"} fontWeight="800" color="text.muted" textAlign="center" textTransform="uppercase">{d}</Text>
+        ))}
+      </Flex>
+    </Flex>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// RUSHING MODULE — Compact for 4×2 slot
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const buildRushingData = (game, teamId) => {
+  const stats = game?.individual_stats?.[teamId];
+  if (!stats) return null;
+
+  const rushingRaw = normalizeStatsList(stats.rushing);
+  const rushing = rushingRaw.filter((p) => p.name !== "TEAM");
+
+  // Team totals from team_box + advanced_team
+  const teamBox = game?.team_box?.[teamId] ?? {};
+  const adv = game?.advanced_team?.[teamId] ?? {};
+
+  const teamTotal = {
+    attempts: teamBox.rush_attempts ?? 0,
+    yards: teamBox.rush_yards ?? 0,
+    touchdowns: teamBox.rush_touchdowns ?? 0,
+    ypc: teamBox.yards_per_carry ?? 0,
+    // Advanced metrics for the split rows
+    epa: adv.epa_rush ?? null,                    // MISSING — DATA GAP
+    successRate: adv.success_rate ?? 0,
+    highlightYards: adv.highlight_yards_total ?? 0,
+    highlightYardsPerRush: adv.highlight_yards_per_rush ?? 0,
+    opportunityRate: adv.rush_opportunity_rate ?? 0,
+    explosiveRate: adv.explosive_rate_yardage ?? 0,
+    lineYards: adv.line_yards_total ?? 0,
+    lineYardsPerRush: adv.line_yards_per_rush ?? 0,
+    stuffRate: adv.stuff_rate ?? 0,
+    stoppedRate: adv.stopped_run_rate ?? 0,
+    epaPerPlay: adv.epa_per_play ?? 0,
+  };
+
+  // Derivable counts
+  const stuffedCount = Math.round((adv.stuff_rate ?? 0) * (teamBox.rush_attempts ?? 0));
+  const opportunityCount = Math.round((adv.rush_opportunity_rate ?? 0) * (teamBox.rush_attempts ?? 0));
+  const stoppedCount = Math.round((adv.stopped_run_rate ?? 0) * (teamBox.rush_attempts ?? 0));
+  const successfulCount = Math.round((adv.success_rate ?? 0) * (teamBox.rush_attempts ?? 0));
+
+  // Derive lanes from play_by_play
+  const lanes = { left: { attempts: 0, yards: 0, success: 0 }, middle: { attempts: 0, yards: 0, success: 0 }, right: { attempts: 0, yards: 0, success: 0 } };
+  (game.play_by_play ?? []).forEach((play) => {
+    const cleanTeam = play.offense_team ? String(play.offense_team).replace(/25$/, "") : "";
+    if (play.play_type !== "RUSH" || cleanTeam !== teamId) return;
+    const action = play.actions?.[0];
+    if (!action || action.type !== "RUSH") return;
+    const dir = action.rushDirection?.toLowerCase() || "middle";
+    const lane = dir.includes("left") ? lanes.left : dir.includes("right") ? lanes.right : lanes.middle;
+    lane.attempts += 1;
+    lane.yards += action.net_yards || 0;
+    if ((action.net_yards || 0) >= 4) lane.success += 1;
+  });
+
+  // Rushers with lanes
+  const rushers = rushing.map((p) => ({
+    key: p.player_key,
+    name: p.name,
+    position: p.position || "RB",
+    attempts: p.attempts ?? 0,
+    yards: p.yards ?? 0,
+    touchdowns: p.touchdowns ?? 0,
+    ypc: p.yards_per_carry ?? 0,
+    long: p.long ?? 0,
+    lanes: { left: { attempts: 0, yards: 0 }, middle: { attempts: 0, yards: 0 }, right: { attempts: 0, yards: 0 } },
+  }));
+
+  // Derive per-player lanes
+  (game.play_by_play ?? []).forEach((play) => {
+    const cleanTeam = play.offense_team ? String(play.offense_team).replace(/25$/, "") : "";
+    if (play.play_type !== "RUSH" || cleanTeam !== teamId) return;
+    const action = play.actions?.[0];
+    if (!action || action.type !== "RUSH") return;
+    const rusher = rushers.find((r) => r.name === action.rusher);
+    if (!rusher) return;
+    const dir = action.rushDirection?.toLowerCase() || "middle";
+    const lane = dir.includes("left") ? rusher.lanes.left : dir.includes("right") ? rusher.lanes.right : rusher.lanes.middle;
+    lane.attempts += 1;
+    lane.yards += action.net_yards || 0;
+  });
+
+  // ─── Opponent defense metrics — for defensive impact pills ───────────────────
+  const metaTeams = game?.metadata?.away_team && game?.metadata?.home_team
+    ? [game.metadata.away_team, game.metadata.home_team]
+    : [];
+  const oppTeamId = metaTeams.find((t) => {
+    const id = typeof t === "string" ? t : t?.id;
+    return id !== teamId;
+  });
+  const oppTeamIdClean = typeof oppTeamId === "string" ? oppTeamId : oppTeamId?.id ?? "";
+  const oppAdv = game?.advanced_team?.[oppTeamIdClean] ?? {};
+
+  // PLACEHOLDER: offense/defense season averages — null until pipeline provides them
+  const offenseSeasonAvg = null; /* TODO: pipeline — team offensive rushing averages */
+  const defenseSeasonAvg = null; /* TODO: pipeline — opponent defensive rushing averages */
+
+  const defenseImpact = [
+    {
+      label: "Stop Rate",
+      descriptor: "FAILED RUSHES",
+      value: fmtPct(oppAdv.stopped_run_rate ?? 0),
+      rawValue: oppAdv.stopped_run_rate ?? 0,
+      category: "run_stop",
+    },
+    {
+      label: "Stuff Rate",
+      descriptor: "LINE WINS",
+      value: fmtPct(oppAdv.stuff_rate ?? 0),
+      rawValue: oppAdv.stuff_rate ?? 0,
+      category: "line_play",
+    },
+    {
+      label: "TFL Forced",
+      descriptor: "BEHIND LOSS",
+      value: fmtPct(oppAdv.tfl_rate_forced ?? 0),
+      rawValue: oppAdv.tfl_rate_forced ?? 0,
+      category: "disruption",
+    },
+    {
+      label: "Power Stop",
+      descriptor: "SHORT YARDAGE",
+      // PLACEHOLDER: power_stop_rate is null in current data, use stopped_run_rate * 0.8 as estimate
+      value: fmtPct(oppAdv.power_stop_rate ?? (oppAdv.stopped_run_rate ?? 0) * 0.8),
+      rawValue: oppAdv.power_stop_rate ?? (oppAdv.stopped_run_rate ?? 0) * 0.8,
+      category: "short_yardage",
+    },
+    {
+      label: "1D Rush Succ",
+      descriptor: "ALLOWED",
+      value: fmtPct(oppAdv.success_rate ?? 0),
+      rawValue: oppAdv.success_rate ?? 0,
+      category: "down_success",
+    },
+    {
+      label: "Opp Allowed",
+      descriptor: "4+ YARDS",
+      value: fmtPct(oppAdv.rush_opportunity_rate ?? 0),
+      rawValue: oppAdv.rush_opportunity_rate ?? 0,
+      category: "explosive_prevention",
+    },
+  ];
+
+  return {
+    meta: {
+      shortName: getTeamName(teamId),
+      colors: { primary: getTeamColor(teamId), secondary: getTeamSecondary(teamId), accent: getTeamAccent(teamId) },
+    },
+    team: teamTotal,
+    derived: {
+      stuffedCount,
+      opportunityCount,
+      stoppedCount,
+      successfulCount,
+    },
+    lanes,
+    rushers,
+    opponent: {
+      shortName: getTeamName(oppTeamIdClean),
+      metrics: {
+        tflForced: oppAdv.tfl_rate_forced ?? 0,
+        stuffRate: oppAdv.stuff_rate ?? 0,
+        powerStopRate: oppAdv.power_stop_rate ?? 0,
+        oppAllowedRate: oppAdv.rush_opportunity_rate ?? 0,
+        firstDownSuccAllowed: oppAdv.success_rate ?? 0,
+      },
+    },
+    defenseImpact,
+    context: {
+      offenseSeasonAvg,
+      defenseSeasonAvg,
+    },
+  };
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// DEFENSIVE IMPACT PILLS — Opposing defense run-stopping performance
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const DefensiveImpactPills = ({ data, isCompact }) => {
+  const impact = data.defenseImpact ?? [];
+  if (impact.length === 0) return null;
+
+  const primary = data.meta.colors.primary;
+
+  return (
+    <Flex direction="column" w="full" gap={isCompact ? "2px" : "4px"} flexShrink={0}>
+      {/* Section header */}
+      <Flex align="center" gap={1.5} py={isCompact ? "2px" : "4px"}>
+        <Box w="3px" h={isCompact ? "10px" : "12px"} bg={primary} borderRadius="sm" />
+        <Text fontSize={isCompact ? "9px" : "11px"} fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">
+          {data.opponent.shortName} Defensive Impact
+        </Text>
+      </Flex>
+
+      {/* 3×2 Pill grid */}
+      <Grid templateColumns="repeat(3, 1fr)" gap={isCompact ? "2px" : "4px"}>
+        {impact.map((pill) => {
+          const grade = gradeVsLeague(pill.rawValue, pill.category);
+          const offArrow = arrowVsBaseline(pill.rawValue, data.context?.offenseSeasonAvg?.[pill.category] ?? null);
+          const defArrow = arrowVsBaseline(pill.rawValue, data.context?.defenseSeasonAvg?.[pill.category] ?? null);
+
+          // Grade badge background (subtle tint)
+          const gradeBg = `${grade.color}22`;
+
+          return (
+            <Flex
+              key={pill.category}
+              direction="column"
+              bg="bg.card"
+              border="1px solid whiteAlpha.100"
+              borderRadius="sm"
+              p={isCompact ? "3px" : "6px"}
+              gap={isCompact ? "1px" : "2px"}
+            >
+              {/* Top row: Stat value + Grade badge */}
+              <Flex justify="space-between" align="center">
+                <Text fontSize={isCompact ? "12px" : "16px"} fontWeight="950" color={grade.color} lineHeight={1}>
+                  {pill.value}
+                </Text>
+                <Flex bg={gradeBg} px={isCompact ? "3px" : "5px"} py="1px" borderRadius="full" border={`1px solid ${grade.color}44`}>
+                  <Text fontSize={isCompact ? "7px" : "9px"} fontWeight="900" color={grade.color}>{grade.grade}</Text>
+                </Flex>
+              </Flex>
+
+              {/* Category name */}
+              <Text fontSize={isCompact ? "8px" : "11px"} fontWeight="900" color="text.primary" lineHeight={1.2} mt={isCompact ? "1px" : "2px"}>
+                {pill.label}
+              </Text>
+
+              {/* Descriptor */}
+              <Text fontSize={isCompact ? "5.5px" : "7px"} color="text.muted" fontWeight="800" textTransform="uppercase" letterSpacing="0.03em" lineHeight={1.2}>
+                {pill.descriptor}
+              </Text>
+
+              {/* Arrows: OFF vs DEF */}
+              <Flex gap={isCompact ? "3px" : "6px"} mt={isCompact ? "1px" : "3px"} align="center">
+                <Flex align="center" gap="1px" title={`vs offense season avg: ${offArrow.label}`}>
+                  <Text fontSize={isCompact ? "7px" : "9px"} color={offArrow.color} fontWeight="900" lineHeight={1}>{offArrow.arrow}</Text>
+                  <Text fontSize={isCompact ? "5px" : "6px"} color="text.muted" fontWeight="800">OFF</Text>
+                </Flex>
+                <Flex align="center" gap="1px" title={`vs defense season avg: ${defArrow.label}`}>
+                  <Text fontSize={isCompact ? "7px" : "9px"} color={defArrow.color} fontWeight="900" lineHeight={1}>{defArrow.arrow}</Text>
+                  <Text fontSize={isCompact ? "5px" : "6px"} color="text.muted" fontWeight="800">DEF</Text>
+                </Flex>
+              </Flex>
+            </Flex>
+          );
+        })}
+      </Grid>
+    </Flex>
+  );
+};
+
+const RushingPanel = ({ data, avatarMap, isCompact }) => {
+  const [selectedPlayer, setSelectedPlayer] = useState(data.rushers[0]);
+  const [rushPageIndex, setRushPageIndex] = useState(0);
+
+  // State sync during render to prevent 0/0 grid de-sync bug when game/team changes
+  const [prevTeamId, setPrevTeamId] = useState(null);
+  if (data.meta.shortName !== prevTeamId) {
+    setPrevTeamId(data.meta.shortName);
+    setSelectedPlayer(data.rushers[0]);
+    setRushPageIndex(0);
+  }
+
+  const accent = data.meta.colors.accent;
+  const primary = data.meta.colors.primary;
+
+  const stuffed = data.derived.stuffedCount ?? 0;
+  const opp = data.derived.opportunityCount ?? 0;
+  const stopped = data.derived.stoppedCount ?? 0;
+  const blocked = Math.max(0, data.team.attempts - stuffed - opp);
+  const stuffedPct = data.team.attempts > 0 ? (stuffed / data.team.attempts) * 100 : 0;
+  const blockedPct = data.team.attempts > 0 ? (blocked / data.team.attempts) * 100 : 0;
+  const oppPct = data.team.attempts > 0 ? (opp / data.team.attempts) * 100 : 0;
+
+  const getImageUrl = (player) => {
+    const key = player?.key?.replace(/^name:/, "");
+    return avatarMap[key] || avatarMap[player?.name?.toLowerCase()] || null;
+  };
+  const imageUrl = getImageUrl(selectedPlayer);
+
+  return (
+    <Flex direction="column" w="full" h="full" minH={0}>
+      {/* Header */}
+      <Flex direction="column"
+        bg={isCompact ? `linear-gradient(90deg, ${primary}33 0%, transparent 72%)` : primary}
+        borderBottom="1px solid whiteAlpha.200"
+        px={isCompact ? 1 : 2.5}
+        py={isCompact ? "3px" : "2.5px"}
+        gap={isCompact ? "3px" : "0.5px"}
+        flexShrink={0}
+      >
+        {/* Team name + RUSHING label */}
+        <Flex align="center" gap={1.5} py={isCompact ? "2px" : "1px"}>
+          <Flex w={isCompact ? "22px" : "18px"} h={isCompact ? "22px" : "18px"} borderRadius="sm" bg={primary} align="center" justify="center" flexShrink={0} border="1px solid whiteAlpha.200">
+            <Text fontSize={isCompact ? "9px" : "8px"} fontWeight="900" color={data.meta.colors.secondary}>{data.meta.shortName}</Text>
+          </Flex>
+          <Text fontSize={isCompact ? "13px" : "12px"} fontWeight="black" color="white" textTransform="uppercase" letterSpacing="0.04em">RUSHING</Text>
+        </Flex>
+
+        {/* Row 1: Team totals — CAR · YDS · YPC · TD · EPA */}
+        <Flex align="center" gap={isCompact ? 2 : 3} py="1px">
+          {[
+            { label: "CAR", val: data.team.attempts, color: accent },
+            { label: "YDS", val: data.team.yards, color: accent },
+            { label: "YPC", val: fmt2(data.team.ypc), color: accent },
+            { label: "TD", val: data.team.touchdowns, color: accent },
+            { label: "EPA", val: data.team.epa != null ? fmt2(data.team.epa) : "—", color: accent },
+          ].map((col) => (
+            <Flex key={col.label} direction="column" align="center" minW={0} flex={1}>
+              <Text fontSize={isCompact ? "7px" : "8px"} fontWeight="800" color="text.muted" textTransform="uppercase">{col.label}</Text>
+              <Text fontSize={isCompact ? "12px" : "13px"} fontWeight="950" color={col.color}>{col.val}</Text>
+            </Flex>
+          ))}
+        </Flex>
+
+        {/* Row 2: Three split sections — RB CREATED | SHARED | OL EARNED */}
+        <Grid templateColumns="1.1fr 1fr 1fr" gap="3px" py="1px">
+          {/* RB CREATED */}
+          <Flex direction="column" bg="whiteAlpha.50" px="4px" py="3px" borderRadius="sm" gap="2px">
+            <Flex align="center" gap={1}>
+              <Box w="2px" h="6px" bg="#E53E3E" borderRadius="full" />
+              <Text fontSize={isCompact ? "6.5px" : "7.5px"} fontWeight="900" color="text.secondary" textTransform="uppercase">RB Created</Text>
+            </Flex>
+            <Grid templateColumns="repeat(5, 1fr)" gap="1px">
+              {[
+                { label: "HL YDS", val: fmt1(data.team.highlightYards) },
+                { label: "HL/C", val: fmt2(data.team.highlightYardsPerRush) },
+                { label: "OPP", val: data.derived.opportunityCount },
+                { label: "EXP", val: fmtPct(data.team.explosiveRate) },
+                { label: "1D+10", val: data.derived.opportunityCount },
+              ].map((c) => (
+                <Flex key={c.label} direction="column" align="center" bg="rgba(0,0,0,0.2)" py="1px" px="1px" borderRadius="xs">
+                  <Text fontSize={isCompact ? "5.5px" : "6px"} fontWeight="800" color="text.muted" textTransform="uppercase">{c.label}</Text>
+                  <Text fontSize={isCompact ? "8px" : "9px"} fontWeight="950" color="text.primary">{c.val}</Text>
+                </Flex>
+              ))}
+            </Grid>
+          </Flex>
+
+          {/* SHARED */}
+          <Flex direction="column" bg="whiteAlpha.50" px="4px" py="3px" borderRadius="sm" gap="2px">
+            <Flex align="center" gap={1}>
+              <Box w="2px" h="6px" bg="#ECC94B" borderRadius="full" />
+              <Text fontSize={isCompact ? "6.5px" : "7.5px"} fontWeight="900" color="text.secondary" textTransform="uppercase">Shared</Text>
+            </Flex>
+            <Grid templateColumns="repeat(5, 1fr)" gap="1px">
+              {[
+                { label: "SUCC", val: data.derived.successfulCount ?? "—" },
+                { label: "RATE", val: fmtPct(data.team.successRate) },
+                { label: "1D", val: "—" },
+                { label: "EXP", val: fmtPct(data.team.explosiveRate) },
+                { label: "EPA/C", val: fmt2(data.team.epaPerPlay) },
+              ].map((c) => (
+                <Flex key={c.label} direction="column" align="center" bg="rgba(0,0,0,0.2)" py="1px" px="1px" borderRadius="xs">
+                  <Text fontSize={isCompact ? "5.5px" : "6px"} fontWeight="800" color="text.muted" textTransform="uppercase">{c.label}</Text>
+                  <Text fontSize={isCompact ? "8px" : "9px"} fontWeight="950" color="text.primary">{c.val}</Text>
+                </Flex>
+              ))}
+            </Grid>
+          </Flex>
+
+          {/* OL EARNED */}
+          <Flex direction="column" bg="whiteAlpha.50" px="4px" py="3px" borderRadius="sm" gap="2px">
+            <Flex align="center" gap={1}>
+              <Box w="2px" h="6px" bg="#48BB78" borderRadius="full" />
+              <Text fontSize={isCompact ? "6.5px" : "7.5px"} fontWeight="900" color="text.secondary" textTransform="uppercase">OL Earned</Text>
+            </Flex>
+            <Grid templateColumns="repeat(5, 1fr)" gap="1px">
+              {[
+                { label: "LY", val: fmt1(data.team.lineYards) },
+                { label: "LY/C", val: fmt2(data.team.lineYardsPerRush) },
+                { label: "STUFF", val: data.derived.stuffedCount },
+                { label: "RATE", val: fmtPct(data.team.stuffRate) },
+                { label: "STOP", val: fmtPct(data.team.stoppedRate) },
+              ].map((c) => (
+                <Flex key={c.label} direction="column" align="center" bg="rgba(0,0,0,0.2)" py="1px" px="1px" borderRadius="xs">
+                  <Text fontSize={isCompact ? "5.5px" : "6px"} fontWeight="800" color="text.muted" textTransform="uppercase">{c.label}</Text>
+                  <Text fontSize={isCompact ? "8px" : "9px"} fontWeight="950" color="text.primary">{c.val}</Text>
+                </Flex>
+              ))}
+            </Grid>
+          </Flex>
+        </Grid>
+      </Flex>
+
+      {/* Middle: Tables + Spotlight stacked dynamically */}
+      {isCompact ? (
+        <Flex direction="column" flex={1} minH={0} overflow="hidden" p="2px" gap="4px">
+          {/* Top Half of Middle: Player Rushing Table (Full Width) */}
+          {(() => {
+            const maxCompactRushers = 4;
+            const hasRushOverflow = data.rushers.length > maxCompactRushers;
+            const totalRushPages = Math.ceil(data.rushers.length / maxCompactRushers);
+            const visibleRushers = hasRushOverflow
+              ? data.rushers.slice(rushPageIndex * maxCompactRushers, (rushPageIndex + 1) * maxCompactRushers)
+              : data.rushers;
+
+            return (
+              <Box flex={1.2} overflowY="hidden" display="flex" flexDirection="column" gap="4px">
+                <Grid templateColumns="minmax(0, 1.8fr) repeat(4, 1fr)" gap={0} alignItems="center" py="2px" borderBottom="1px solid whiteAlpha.50">
+                  <Flex flex={1} align="center" justify="space-between" pr="2px">
+                    <Flex align="center" gap={1} pl="2px">
+                      <Box w="2px" h="8px" bg={accent} borderRadius="sm" />
+                      <Text fontSize="10.5px" fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">Rushing</Text>
+                    </Flex>
+                    {hasRushOverflow && (
+                      <Flex align="center" gap={1.5} flexShrink={0}>
+                        <Text fontSize="9px" fontWeight="955" color="text.primary" cursor="pointer"
+                          opacity={rushPageIndex > 0 ? 1 : 0.3}
+                          pointerEvents={rushPageIndex > 0 ? "auto" : "none"}
+                          onClick={() => setRushPageIndex(rushPageIndex - 1)}
+                        >▲</Text>
+                        <Text fontSize="8px" fontWeight="900" color="text.muted">P.{rushPageIndex + 1}/{totalRushPages}</Text>
+                        <Text fontSize="9px" fontWeight="955" color="text.primary" cursor="pointer"
+                          opacity={rushPageIndex < totalRushPages - 1 ? 1 : 0.3}
+                          pointerEvents={rushPageIndex < totalRushPages - 1 ? "auto" : "none"}
+                          onClick={() => setRushPageIndex(rushPageIndex + 1)}
+                        >▼</Text>
+                      </Flex>
+                    )}
+                  </Flex>
+                  {["CAR", "YDS", "YPC", "TD"].map((h) => (
+                    <Text key={h} fontSize="10px" fontWeight="800" color="text.muted" textAlign="center">{h}</Text>
+                  ))}
+                </Grid>
+                {visibleRushers.map((p) => {
+                  const isActive = p.key === selectedPlayer.key;
+                  return (
+                    <Grid key={p.key} templateColumns="minmax(0, 1.8fr) repeat(4, 1fr)" gap={0} alignItems="center"
+                      py="3px" cursor="pointer"
+                      bg={isActive ? "whiteAlpha.250" : "transparent"}
+                      borderLeft={isActive ? `4px solid ${accent}` : "4px solid transparent"}
+                      _hover={{ bg: "whiteAlpha.60" }}
+                      onClick={() => setSelectedPlayer(p)}
+                    >
+                      <Box minW={0} pl="2px">
+                        <Text fontSize="11px" fontWeight={isActive ? "900" : "600"} color="text.primary" truncate>{getDisplayName(p.name)}</Text>
+                        <Text fontSize="8px" color="text.muted" fontWeight="800" textTransform="uppercase">{p.position}</Text>
+                      </Box>
+                      <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.attempts}</Text>
+                      <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.yards}</Text>
+                      <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{fmt1(p.ypc)}</Text>
+                      <Text fontSize="11px" fontWeight={isActive ? "900" : "500"} color="text.primary" textAlign="center">{p.touchdowns}</Text>
+                    </Grid>
+                  );
+                })}
+              </Box>
+            );
+          })()}
+
+          {/* Bottom Half: Defensive Impact Pills (Compact) */}
+          <Flex w="full" flex={1} minH={0} borderTop="1px solid whiteAlpha.100" pt="4px" overflow="hidden">
+            <DefensiveImpactPills data={data} isCompact={isCompact} />
+          </Flex>
+        </Flex>
+      ) : (
+        <Flex direction="column" flex={1} minH={0} overflow="hidden">
+          {/* Top row: Tables + Spotlight */}
+          <Flex flex={1} minH={0} overflow="hidden">
+            {/* Left: Tables container with scroll buttons */}
+            <Flex w="55%" borderRight="1px solid whiteAlpha.100" minH={0} position="relative">
+              {(() => {
+              const maxRushCapacity = 7;
+              const hasRushOverflow = data.rushers.length > maxRushCapacity;
+              const totalRushPages = Math.ceil(data.rushers.length / maxRushCapacity);
+              const startIndex = rushPageIndex * maxRushCapacity;
+              const visibleRushers = hasRushOverflow
+                ? data.rushers.slice(startIndex, startIndex + maxRushCapacity)
+                : data.rushers;
+
+              return (
+                <>
+                  {/* Scroll Buttons Column (Widescreen only, when not compact and has overflow) */}
+                  {hasRushOverflow && !isCompact && (
+                    <Flex direction="column" w="18px" bg="rgba(0,0,0,0.3)" borderRight="1px solid whiteAlpha.100" flexShrink={0} h="full">
+                      <Flex flex={1} align="center" justify="center" cursor="pointer"
+                        opacity={rushPageIndex > 0 ? 1 : 0.2}
+                        pointerEvents={rushPageIndex > 0 ? "auto" : "none"}
+                        _hover={{ bg: "whiteAlpha.150" }}
+                        onClick={() => {
+                          if (rushPageIndex > 0) setRushPageIndex(rushPageIndex - 1);
+                        }}
+                      >
+                        <Text color="text.secondary" fontSize="11px" fontWeight="black">▲</Text>
+                      </Flex>
+                      <Box h="1px" bg="whiteAlpha.100" w="full" />
+                      <Flex flex={1} align="center" justify="center" cursor="pointer"
+                        opacity={rushPageIndex < totalRushPages - 1 ? 1 : 0.2}
+                        pointerEvents={rushPageIndex < totalRushPages - 1 ? "auto" : "none"}
+                        _hover={{ bg: "whiteAlpha.150" }}
+                        onClick={() => {
+                          if (rushPageIndex < totalRushPages - 1) setRushPageIndex(rushPageIndex + 1);
+                        }}
+                      >
+                        <Text color="text.secondary" fontSize="11px" fontWeight="black">▼</Text>
+                      </Flex>
+                    </Flex>
+                  )}
+
+                  {/* Table list */}
+                  <Box flex={1} p="2px" overflowY="hidden" display="flex" flexDirection="column" minH={0}>
+                    <Grid templateColumns="minmax(0, 1.8fr) repeat(4, 0.5fr)" gap={0} alignItems="center" py="2px" borderBottom="1px solid whiteAlpha.50">
+                      <Flex align="center" gap={1} pl="2px">
+                        <Box w="2px" h="8px" bg={accent} borderRadius="sm" />
+                        <Text fontSize="11px" fontWeight="900" color="text.primary" textTransform="uppercase" letterSpacing="0.04em">Rushing</Text>
+                      </Flex>
+                      {["CAR", "YDS", "YPC", "TD"].map((h) => (
+                        <Text key={h} fontSize="11px" fontWeight="900" color="text.muted" textAlign="center" textTransform="uppercase">{h}</Text>
+                      ))}
+                    </Grid>
+                    {visibleRushers.map((p) => {
+                      const isActive = p.key === selectedPlayer.key;
+                      return (
+                        <Grid key={p.key} templateColumns="minmax(0, 1.8fr) repeat(4, 0.5fr)" gap={0} alignItems="center"
+                          py="4px" cursor="pointer"
+                          bg={isActive ? "whiteAlpha.250" : "transparent"}
+                          borderLeft={isActive ? `4px solid ${accent}` : "4px solid transparent"}
+                          borderBottom="1px solid whiteAlpha.50"
+                          _hover={{ bg: "whiteAlpha.60" }}
+                          onClick={() => setSelectedPlayer(p)}
+                        >
+                          <Box minW={0} pl="2px">
+                            <Text fontSize="12px" fontWeight="900" color="text.primary" truncate>{getDisplayName(p.name)}</Text>
+                            <Text fontSize="9px" color="text.muted" fontWeight="800" textTransform="uppercase">{p.position}</Text>
+                          </Box>
+                          <Text fontSize="12px" fontWeight="850" color="text.secondary" textAlign="center">{p.attempts}</Text>
+                          <Text fontSize="12px" fontWeight="950" color="text.primary" textAlign="center">{p.yards}</Text>
+                          <Text fontSize="12px" fontWeight="900" color="text.primary" textAlign="center">{fmt1(p.ypc)}</Text>
+                          <Text fontSize="12px" fontWeight="850" color="text.secondary" textAlign="center">{p.touchdowns}</Text>
+                        </Grid>
+                      );
+                    })}
+                  </Box>
+                </>
+              );
+            })()}
+          </Flex>
+
+          {/* Spotlight */}
+          <Box w="45%" p="3px" minH={0}>
+            <Flex direction="column" w="full" h="full" gap="3px">
+              {/* Avatar + Info */}
+              <Grid templateColumns="80px 1fr" border="1px solid whiteAlpha.100" borderRadius="md" overflow="hidden" bg="rgba(255,255,255,0.02)" flexShrink={0} minH="72px">
+                <Flex w="80px" h="full" align="stretch" justify="stretch" bg="rgba(255,255,255,0.02)" borderRight="1px solid rgba(255,255,255,0.12)" flexShrink={0}>
+                  {imageUrl ? (
+                    <Box as="img" src={imageUrl} alt="" w="full" h="full" objectFit="cover" />
+                  ) : (
+                    <Flex w="full" h="full" bg={primary} align="center" justify="center">
+                      <Text fontSize="20px" fontWeight="950" color="white" letterSpacing="-0.05em">{getInitials(selectedPlayer.name)}</Text>
+                    </Flex>
+                  )}
+                </Flex>
+                <Flex direction="column" justify="center" minW={0} px={3} py="6px">
+                  <Text fontSize="md" fontWeight="black" color="text.primary" truncate>{getDisplayName(selectedPlayer.name)}</Text>
+                  <Flex align="center" gap={1.5} mt="2px">
+                    <Box w="5px" h="5px" borderRadius="full" bg={accent} />
+                    <Text fontSize="11px" color="text.muted" fontWeight="900" textTransform="uppercase" letterSpacing="0.04em">{selectedPlayer.position} selected player</Text>
+                  </Flex>
+                  <Text fontSize="11px" fontWeight="900" color="text.primary" mt="3px" letterSpacing="0.02em">{selectedPlayer.attempts} CAR · {selectedPlayer.yards} YDS · {selectedPlayer.touchdowns} TD</Text>
+                  {/* Anatomy bar */}
+                  <Box h="4px" w="full" bg="whiteAlpha.100" borderRadius="full" overflow="hidden" display="flex" mt="2px">
+                    {stuffedPct > 0 && <Box h="full" w={`${stuffedPct}%`} bg="#E53E3E" />}
+                    {blockedPct > 0 && <Box h="full" w={`${blockedPct}%`} bg="#4A90D9" />}
+                    {oppPct > 0 && <Box h="full" w={`${oppPct}%`} bg="#48BB78" />}
+                  </Box>
+                  <Flex justify="space-between" mt="1px">
+                    <Text fontSize="5px" fontWeight="800" color="text.muted">STUFF: {fmtPct(stuffedPct / 100)}</Text>
+                    <Text fontSize="5px" fontWeight="800" color="text.muted">BLOCK: {fmtPct(blockedPct / 100)}</Text>
+                    <Text fontSize="5px" fontWeight="800" color="text.muted">EXPL: {fmtPct(oppPct / 100)}</Text>
+                  </Flex>
+                </Flex>
+              </Grid>
+
+              {/* Lane Grid */}
+              <Grid templateColumns="repeat(3, 1fr)" gap="2px" flex={1} minH={0}>
+                {["left", "middle", "right"].map((k) => {
+                  const lane = selectedPlayer.lanes[k];
+                  const laneYpc = lane.attempts > 0 ? lane.yards / lane.attempts : 0;
+                  const label = k === "left" ? "LEFT" : k === "middle" ? "MIDDLE" : "RIGHT";
+                  return (
+                    <Flex key={k} direction="column" justify="space-between" p="3px" bg="rgba(255,255,255,0.02)" border="1px solid whiteAlpha.100" borderRadius="sm">
+                      <Text fontSize="7px" color="text.muted" fontWeight="950" textTransform="uppercase" letterSpacing="0.04em">{label}</Text>
+                      <Box my="auto">
+                        <Text fontSize="clamp(14px, 1.2vw, 18px)" color="text.primary" fontWeight="950" lineHeight={1.05}>{lane.attempts > 0 ? `${fmt1(laneYpc)}y` : "—"}</Text>
+                        <Text fontSize="8px" color={laneYpc >= 4 ? "#48BB78" : laneYpc <= 2 && lane.attempts > 0 ? "#E53E3E" : "text.secondary"} fontWeight="900" mt="1px">{lane.attempts} CAR · {lane.yards} YDS</Text>
+                      </Box>
+                    </Flex>
+                  );
+                })}
+              </Grid>
+            </Flex>
+          </Box>
+        </Flex>
+
+        {/* Bottom row: Defensive Impact Pills (Standard) */}
+        <Box borderTop="1px solid whiteAlpha.100" p="4px" flexShrink={0}>
+          <DefensiveImpactPills data={data} isCompact={isCompact} />
+        </Box>
+      </Flex>
+    </Flex>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MAIN EXPORTS
+// ═══════════════════════════════════════════════════════════════════════════════
+
+const QGameBoxScore = ({ game, playerSeasons = [], isCompact: isCompactProp }) => {
+  const avatarMap = useMemo(() => buildAvatarMap(playerSeasons), [playerSeasons]);
+
+  const meta = game?.metadata ?? {};
+  const awayId = typeof meta.away_team === "string" ? meta.away_team : meta.away_team?.id;
+  const homeId = typeof meta.home_team === "string" ? meta.home_team : meta.home_team?.id;
+
+  const awayPassing = useMemo(() => buildPassingData(game, awayId), [game, awayId]);
+  const homePassing = useMemo(() => buildPassingData(game, homeId), [game, homeId]);
+
+  const { density } = useLayoutDensity();
+  const isCompact = isCompactProp ?? density !== LAYOUT_DENSITY.STANDARD;
+
+  if (!awayPassing || !homePassing) {
+    return (
+      <Flex w="full" h="full" align="center" justify="center" bg="bg.secondary" borderRadius="lg" border="1px solid whiteAlpha.100">
+        <Text color="text.muted" fontSize="sm">No passing data</Text>
+      </Flex>
+    );
+  }
+
+  return (
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      w="full"
+      h="full"
+      bg="bg.secondary"
+      borderRadius="lg"
+      overflow="hidden"
+      border="1px solid whiteAlpha.100"
+    >
+      <Box
+        flex={1}
+        borderRight={{ base: "none", md: "1px solid whiteAlpha.100" }}
+        borderBottom={{ base: "1px solid whiteAlpha.100", md: "none" }}
+        minH={0}
+      >
+        <PassingPanel data={awayPassing} avatarMap={avatarMap} isCompact={isCompact} />
+      </Box>
+      <Box flex={1} minH={0}>
+        <PassingPanel data={homePassing} avatarMap={avatarMap} isCompact={isCompact} />
+      </Box>
+    </Flex>
+  );
+};
+
+// Rushing module — both teams side-by-side
+const RushingModule = ({ game, playerSeasons = [], isCompact: isCompactProp }) => {
+  const avatarMap = useMemo(() => buildAvatarMap(playerSeasons), [playerSeasons]);
+
+  const meta = game?.metadata ?? {};
+  const awayId = typeof meta.away_team === "string" ? meta.away_team : meta.away_team?.id;
+  const homeId = typeof meta.home_team === "string" ? meta.home_team : meta.home_team?.id;
+
+  const awayRushing = useMemo(() => buildRushingData(game, awayId), [game, awayId]);
+  const homeRushing = useMemo(() => buildRushingData(game, homeId), [game, homeId]);
+
+  const { density } = useLayoutDensity();
+  const isCompact = isCompactProp ?? density !== LAYOUT_DENSITY.STANDARD;
+
+  if (!awayRushing || !homeRushing) {
+    return (
+      <Flex w="full" h="full" align="center" justify="center" bg="bg.secondary" borderRadius="lg" border="1px solid whiteAlpha.100">
+        <Text color="text.muted" fontSize="sm">No rushing data</Text>
+      </Flex>
+    );
+  }
+
+  return (
+    <Flex
+      direction={{ base: "column", md: "row" }}
+      w="full"
+      h="full"
+      bg="bg.secondary"
+      borderRadius="lg"
+      overflow="hidden"
+      border="1px solid whiteAlpha.100"
+    >
+      <Box
+        flex={1}
+        borderRight={{ base: "none", md: "1px solid whiteAlpha.100" }}
+        borderBottom={{ base: "1px solid whiteAlpha.100", md: "none" }}
+        minH={0}
+      >
+        <RushingPanel data={awayRushing} avatarMap={avatarMap} isCompact={isCompact} />
+      </Box>
+      <Box flex={1} minH={0}>
+        <RushingPanel data={homeRushing} avatarMap={avatarMap} isCompact={isCompact} />
+      </Box>
+    </Flex>
+  );
+};
+
+QGameBoxScore.Passing = QGameBoxScore;
+QGameBoxScore.Rushing = RushingModule;
+QGameBoxScore.buildAvatarMap = buildAvatarMap;
+
+export default QGameBoxScore;

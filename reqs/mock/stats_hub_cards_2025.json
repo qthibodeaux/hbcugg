@@ -1,0 +1,1292 @@
+{
+  "season": 2025,
+  "generated_at": "2026-09-02T23:11:16.658Z",
+  "method": {
+    "pooled_team_seasons": 108,
+    "seasons": [
+      2019,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "note": "Correlations are Pearson r between a team-season rate metric and that team's win percentage. Descriptive only — not opponent-adjusted, and correlation is not causation. See Stats Hub Design Doc §9."
+  },
+  "levers": [
+    {
+      "field": "d_rushing.successRate",
+      "side": "d",
+      "metric": "rushing.successRate",
+      "label": "Rush Success",
+      "short": "Rush SR",
+      "family": "Rushing",
+      "r": -0.543,
+      "abs": 0.5431841838140602,
+      "r2": 0.295,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_passing.ypa",
+      "side": "d",
+      "metric": "passing.ypa",
+      "label": "Yards / Attempt",
+      "short": "YPA",
+      "family": "Passing",
+      "r": -0.538,
+      "abs": 0.5381806613161088,
+      "r2": 0.29,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_rushing.successRate",
+      "side": "o",
+      "metric": "rushing.successRate",
+      "label": "Rush Success",
+      "short": "Rush SR",
+      "family": "Rushing",
+      "r": 0.535,
+      "abs": 0.5351292284930965,
+      "r2": 0.286,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_passing.explosiveRate",
+      "side": "d",
+      "metric": "passing.explosiveRate",
+      "label": "Explosive Rate",
+      "short": "Expl",
+      "family": "Passing",
+      "r": -0.535,
+      "abs": 0.5345118849147656,
+      "r2": 0.286,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_passing.ypa",
+      "side": "o",
+      "metric": "passing.ypa",
+      "label": "Yards / Attempt",
+      "short": "YPA",
+      "family": "Passing",
+      "r": 0.515,
+      "abs": 0.5154302851832714,
+      "r2": 0.266,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_passing.completionRate",
+      "side": "d",
+      "metric": "passing.completionRate",
+      "label": "Completion Rate",
+      "short": "Comp",
+      "family": "Passing",
+      "r": -0.449,
+      "abs": 0.44902873297751117,
+      "r2": 0.202,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_passing.explosiveRate",
+      "side": "o",
+      "metric": "passing.explosiveRate",
+      "label": "Explosive Rate",
+      "short": "Expl",
+      "family": "Passing",
+      "r": 0.44,
+      "abs": 0.4395952958175976,
+      "r2": 0.193,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_passing.completionRate",
+      "side": "o",
+      "metric": "passing.completionRate",
+      "label": "Completion Rate",
+      "short": "Comp",
+      "family": "Passing",
+      "r": 0.401,
+      "abs": 0.40149064006048935,
+      "r2": 0.161,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_passing.pressureRate",
+      "side": "o",
+      "metric": "passing.pressureRate",
+      "label": "Pressure Rate",
+      "short": "Press",
+      "family": "Passing",
+      "r": -0.392,
+      "abs": 0.39216808208112525,
+      "r2": 0.154,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_passing.pressureRate",
+      "side": "d",
+      "metric": "passing.pressureRate",
+      "label": "Pressure Rate",
+      "short": "Press",
+      "family": "Passing",
+      "r": 0.384,
+      "abs": 0.38367740752114765,
+      "r2": 0.147,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_rushing.stopRate",
+      "side": "d",
+      "metric": "rushing.stopRate",
+      "label": "Stop Rate",
+      "short": "Stop",
+      "family": "Rushing",
+      "r": 0.383,
+      "abs": 0.3826954895681373,
+      "r2": 0.146,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_rushing.powerStopRate",
+      "side": "d",
+      "metric": "rushing.powerStopRate",
+      "label": "Power Stop",
+      "short": "Power",
+      "family": "Rushing",
+      "r": 0.383,
+      "abs": 0.38260349993127973,
+      "r2": 0.146,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_rushing.opportunityRate",
+      "side": "d",
+      "metric": "rushing.opportunityRate",
+      "label": "Opportunity Rate",
+      "short": "Opp",
+      "family": "Rushing",
+      "r": -0.365,
+      "abs": 0.3649921297470019,
+      "r2": 0.133,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_rushing.stuffRate",
+      "side": "o",
+      "metric": "rushing.stuffRate",
+      "label": "Stuff Rate",
+      "short": "Stuff",
+      "family": "Rushing",
+      "r": -0.336,
+      "abs": 0.33585736283087664,
+      "r2": 0.113,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_rushing.opportunityRate",
+      "side": "o",
+      "metric": "rushing.opportunityRate",
+      "label": "Opportunity Rate",
+      "short": "Opp",
+      "family": "Rushing",
+      "r": 0.279,
+      "abs": 0.27948890372702184,
+      "r2": 0.078,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_rushing.stuffRate",
+      "side": "d",
+      "metric": "rushing.stuffRate",
+      "label": "Stuff Rate",
+      "short": "Stuff",
+      "family": "Rushing",
+      "r": 0.217,
+      "abs": 0.21747485467124905,
+      "r2": 0.047,
+      "direction": "higher_wins",
+      "sample": 108
+    },
+    {
+      "field": "d_rushing.tflRate",
+      "side": "d",
+      "metric": "rushing.tflRate",
+      "label": "TFL Rate",
+      "short": "TFL",
+      "family": "Rushing",
+      "r": -0.163,
+      "abs": 0.16318633252446837,
+      "r2": 0.027,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_rushing.powerStopRate",
+      "side": "o",
+      "metric": "rushing.powerStopRate",
+      "label": "Power Stop",
+      "short": "Power",
+      "family": "Rushing",
+      "r": -0.142,
+      "abs": 0.1417601905820263,
+      "r2": 0.02,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_rushing.stopRate",
+      "side": "o",
+      "metric": "rushing.stopRate",
+      "label": "Stop Rate",
+      "short": "Stop",
+      "family": "Rushing",
+      "r": -0.142,
+      "abs": 0.14174475689511365,
+      "r2": 0.02,
+      "direction": "lower_wins",
+      "sample": 108
+    },
+    {
+      "field": "o_rushing.tflRate",
+      "side": "o",
+      "metric": "rushing.tflRate",
+      "label": "TFL Rate",
+      "short": "TFL",
+      "family": "Rushing",
+      "r": -0.007,
+      "abs": 0.006524160612437116,
+      "r2": 0,
+      "direction": "lower_wins",
+      "sample": 108
+    }
+  ],
+  "cards": [
+    {
+      "archetype": "win_levers",
+      "layout": "LEAGUE",
+      "icon": "target",
+      "headline": "Defense Rush Success predicts winning better than anything else we measure",
+      "subhead": "Across 108 team-seasons, 6 years of SWAC and MEAC football.",
+      "stat_primary": {
+        "label": "Correlation with win %",
+        "value": -0.543,
+        "context": "Defense Rush Success"
+      },
+      "stat_support": [
+        {
+          "label": "Team-seasons",
+          "value": 108
+        },
+        {
+          "label": "Variance tracked",
+          "value": "30%"
+        }
+      ],
+      "viz": {
+        "kind": "correlation_bars",
+        "entries": [
+          {
+            "label": "Defense Rush Success",
+            "short": "DEF Rush SR",
+            "r": -0.543,
+            "abs": 0.5431841838140602,
+            "direction": "lower_wins",
+            "family": "Rushing"
+          },
+          {
+            "label": "Defense Yards / Attempt",
+            "short": "DEF YPA",
+            "r": -0.538,
+            "abs": 0.5381806613161088,
+            "direction": "lower_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Offense Rush Success",
+            "short": "OFF Rush SR",
+            "r": 0.535,
+            "abs": 0.5351292284930965,
+            "direction": "higher_wins",
+            "family": "Rushing"
+          },
+          {
+            "label": "Defense Explosive Rate",
+            "short": "DEF Expl",
+            "r": -0.535,
+            "abs": 0.5345118849147656,
+            "direction": "lower_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Offense Yards / Attempt",
+            "short": "OFF YPA",
+            "r": 0.515,
+            "abs": 0.5154302851832714,
+            "direction": "higher_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Defense Completion Rate",
+            "short": "DEF Comp",
+            "r": -0.449,
+            "abs": 0.44902873297751117,
+            "direction": "lower_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Offense Explosive Rate",
+            "short": "OFF Expl",
+            "r": 0.44,
+            "abs": 0.4395952958175976,
+            "direction": "higher_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Offense Completion Rate",
+            "short": "OFF Comp",
+            "r": 0.401,
+            "abs": 0.40149064006048935,
+            "direction": "higher_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Offense Pressure Rate",
+            "short": "OFF Press",
+            "r": -0.392,
+            "abs": 0.39216808208112525,
+            "direction": "lower_wins",
+            "family": "Passing"
+          },
+          {
+            "label": "Defense Pressure Rate",
+            "short": "DEF Press",
+            "r": 0.384,
+            "abs": 0.38367740752114765,
+            "direction": "higher_wins",
+            "family": "Passing"
+          }
+        ]
+      },
+      "cta": {
+        "label": "Open Team Efficiency",
+        "href": "/stats?tab=team-efficiency"
+      },
+      "score": 100,
+      "card_id": "win_levers-1"
+    },
+    {
+      "archetype": "league_map",
+      "layout": "LEAGUE",
+      "icon": "map",
+      "headline": "The whole league, plotted",
+      "subhead": "Offense Rush Success against Defense Rush Success — all 18 teams, no cutoff.",
+      "stat_primary": {
+        "label": "Teams plotted",
+        "value": 18,
+        "context": "no truncation"
+      },
+      "stat_support": [],
+      "viz": {
+        "kind": "scatter_map",
+        "x": {
+          "field": "o_rushing.successRate",
+          "label": "Offense Rush Success",
+          "invert": false
+        },
+        "y": {
+          "field": "d_rushing.successRate",
+          "label": "Defense Rush Success",
+          "invert": true
+        },
+        "league": {
+          "x": 0.42417777777777776,
+          "y": 0.42759444444444444
+        },
+        "points": [
+          {
+            "team_id": "swacalc",
+            "short": "Alcorn",
+            "logo": "/assets/swacalc.svg",
+            "color": "#5C068C",
+            "record": "5-8",
+            "x": 0.4566,
+            "y": 0.3321
+          },
+          {
+            "team_id": "swacaamu",
+            "short": "AAMU",
+            "logo": "/assets/swacaamu.svg",
+            "color": "#660000",
+            "record": "4-9",
+            "x": 0.3861,
+            "y": 0.4578
+          },
+          {
+            "team_id": "swacasu",
+            "short": "ASU",
+            "logo": "/assets/swacasu.svg",
+            "color": "#000000",
+            "record": "10-3",
+            "x": 0.5165,
+            "y": 0.4508
+          },
+          {
+            "team_id": "swacbcu",
+            "short": "BCU",
+            "logo": "/assets/swacbcu.svg",
+            "color": "#6F2633",
+            "record": "6-7",
+            "x": 0.476,
+            "y": 0.4581
+          },
+          {
+            "team_id": "swacfamu",
+            "short": "FAMU",
+            "logo": "/assets/swacfamu.svg",
+            "color": "#006747",
+            "record": "5-8",
+            "x": 0.3961,
+            "y": 0.4478
+          },
+          {
+            "team_id": "swacjsu",
+            "short": "JSU",
+            "logo": "/assets/swacjsu.svg",
+            "color": "#002147",
+            "record": "7-2",
+            "x": 0.477,
+            "y": 0.3989
+          },
+          {
+            "team_id": "swacmvsu",
+            "short": "MVSU",
+            "logo": "/assets/swacmvsu.svg",
+            "color": "#046A38",
+            "record": "2-12",
+            "x": 0.345,
+            "y": 0.5137
+          },
+          {
+            "team_id": "swacpvamu",
+            "short": "PVAMU",
+            "logo": "/assets/swacpvamu.svg",
+            "color": "#4B0082",
+            "record": "10-3",
+            "x": 0.4768,
+            "y": 0.3552
+          },
+          {
+            "team_id": "swacsu",
+            "short": "SU",
+            "logo": "/assets/swacsu.svg",
+            "color": "#69B3E7",
+            "record": "2-11",
+            "x": 0.4127,
+            "y": 0.4284
+          },
+          {
+            "team_id": "swactsu",
+            "short": "TSU",
+            "logo": "/assets/swactsu.svg",
+            "color": "#6F2633",
+            "record": "6-5",
+            "x": 0.4334,
+            "y": 0.454
+          },
+          {
+            "team_id": "swacuapb",
+            "short": "UAPB",
+            "logo": "/assets/swacuapb.svg",
+            "color": "#000000",
+            "record": "4-8",
+            "x": 0.39,
+            "y": 0.4858
+          },
+          {
+            "team_id": "swacgsu",
+            "short": "GSU",
+            "logo": "/assets/swacgsu.svg",
+            "color": "#000000",
+            "record": "8-5",
+            "x": 0.3566,
+            "y": 0.386
+          },
+          {
+            "team_id": "meacdsu",
+            "short": "DSU",
+            "logo": "/assets/meacdsu.svg",
+            "color": "#EE3124",
+            "record": "8-4",
+            "x": 0.4039,
+            "y": 0.4314
+          },
+          {
+            "team_id": "meachu",
+            "short": "HU",
+            "logo": "/assets/meachu.svg",
+            "color": "#003A63",
+            "record": "3-3",
+            "x": 0.3668,
+            "y": 0.3943
+          },
+          {
+            "team_id": "meacmsu",
+            "short": "MSU",
+            "logo": "/assets/meacmsu.svg",
+            "color": "#002D72",
+            "record": "4-8",
+            "x": 0.4141,
+            "y": 0.4901
+          },
+          {
+            "team_id": "meacnccu",
+            "short": "NCCU",
+            "logo": "/assets/meacnccu.svg",
+            "color": "#8A1538",
+            "record": "8-4",
+            "x": 0.4493,
+            "y": 0.3688
+          },
+          {
+            "team_id": "meacnsu",
+            "short": "NSU",
+            "logo": "/assets/meacnsu.svg",
+            "color": "#007A5E",
+            "record": "1-11",
+            "x": 0.4123,
+            "y": 0.4645
+          },
+          {
+            "team_id": "meacscsu",
+            "short": "SCSU",
+            "logo": "/assets/meacscsu.svg",
+            "color": "#900027",
+            "record": "9-3",
+            "x": 0.466,
+            "y": 0.379
+          }
+        ]
+      },
+      "cta": {
+        "label": "Open Chart Builder",
+        "href": "/stats?tab=chart-builder"
+      },
+      "score": 95,
+      "card_id": "league_map-2"
+    },
+    {
+      "archetype": "metric_of_week",
+      "layout": "LEAGUE",
+      "icon": "book",
+      "headline": "Metric of the week: Offense Yards / Attempt",
+      "subhead": "Higher is better. It moves with winning at r = 0.515, so the teams on the right of this spread are the ones it rewards.",
+      "stat_primary": {
+        "label": "League leader",
+        "value": "SCSU",
+        "context": "Offense Yards / Attempt"
+      },
+      "stat_support": [
+        {
+          "label": "League average",
+          "value": 759.5
+        },
+        {
+          "label": "Correlation",
+          "value": 0.515
+        }
+      ],
+      "viz": {
+        "kind": "distribution",
+        "unit": "num",
+        "entries": [
+          {
+            "team_id": "meacscsu",
+            "short": "SCSU",
+            "logo": "/assets/meacscsu.svg",
+            "color": "#900027",
+            "value": 9.8386,
+            "record": "9-3"
+          },
+          {
+            "team_id": "swacasu",
+            "short": "ASU",
+            "logo": "/assets/swacasu.svg",
+            "color": "#000000",
+            "value": 9.7344,
+            "record": "10-3"
+          },
+          {
+            "team_id": "swacjsu",
+            "short": "JSU",
+            "logo": "/assets/swacjsu.svg",
+            "color": "#002147",
+            "value": 9.6622,
+            "record": "7-2"
+          },
+          {
+            "team_id": "swacpvamu",
+            "short": "PVAMU",
+            "logo": "/assets/swacpvamu.svg",
+            "color": "#4B0082",
+            "value": 9.386,
+            "record": "10-3"
+          },
+          {
+            "team_id": "meacnsu",
+            "short": "NSU",
+            "logo": "/assets/meacnsu.svg",
+            "color": "#007A5E",
+            "value": 8.438,
+            "record": "1-11"
+          },
+          {
+            "team_id": "meacnccu",
+            "short": "NCCU",
+            "logo": "/assets/meacnccu.svg",
+            "color": "#8A1538",
+            "value": 8.3786,
+            "record": "8-4"
+          },
+          {
+            "team_id": "swacbcu",
+            "short": "BCU",
+            "logo": "/assets/swacbcu.svg",
+            "color": "#6F2633",
+            "value": 8.3056,
+            "record": "6-7"
+          },
+          {
+            "team_id": "meacdsu",
+            "short": "DSU",
+            "logo": "/assets/meacdsu.svg",
+            "color": "#EE3124",
+            "value": 8.122,
+            "record": "8-4"
+          },
+          {
+            "team_id": "swacfamu",
+            "short": "FAMU",
+            "logo": "/assets/swacfamu.svg",
+            "color": "#006747",
+            "value": 7.502,
+            "record": "5-8"
+          },
+          {
+            "team_id": "swactsu",
+            "short": "TSU",
+            "logo": "/assets/swactsu.svg",
+            "color": "#6F2633",
+            "value": 7.4075,
+            "record": "6-5"
+          },
+          {
+            "team_id": "swacgsu",
+            "short": "GSU",
+            "logo": "/assets/swacgsu.svg",
+            "color": "#000000",
+            "value": 6.6925,
+            "record": "8-5"
+          },
+          {
+            "team_id": "swacaamu",
+            "short": "AAMU",
+            "logo": "/assets/swacaamu.svg",
+            "color": "#660000",
+            "value": 6.6489,
+            "record": "4-9"
+          },
+          {
+            "team_id": "swacuapb",
+            "short": "UAPB",
+            "logo": "/assets/swacuapb.svg",
+            "color": "#000000",
+            "value": 6.4487,
+            "record": "4-8"
+          },
+          {
+            "team_id": "meacmsu",
+            "short": "MSU",
+            "logo": "/assets/meacmsu.svg",
+            "color": "#002D72",
+            "value": 6.41,
+            "record": "4-8"
+          },
+          {
+            "team_id": "swacsu",
+            "short": "SU",
+            "logo": "/assets/swacsu.svg",
+            "color": "#69B3E7",
+            "value": 6.2545,
+            "record": "2-11"
+          },
+          {
+            "team_id": "meachu",
+            "short": "HU",
+            "logo": "/assets/meachu.svg",
+            "color": "#003A63",
+            "value": 6.12,
+            "record": "3-3"
+          },
+          {
+            "team_id": "swacmvsu",
+            "short": "MVSU",
+            "logo": "/assets/swacmvsu.svg",
+            "color": "#046A38",
+            "value": 6.05,
+            "record": "2-12"
+          },
+          {
+            "team_id": "swacalc",
+            "short": "Alcorn",
+            "logo": "/assets/swacalc.svg",
+            "color": "#5C068C",
+            "value": 5.3122,
+            "record": "5-8"
+          }
+        ],
+        "league_avg": 7.5951
+      },
+      "cta": {
+        "label": "Rank every team on it",
+        "href": "/stats?tab=team-efficiency"
+      },
+      "score": 92,
+      "card_id": "metric_of_week-3"
+    },
+    {
+      "archetype": "record_ahead_of_performance",
+      "layout": "SOLO",
+      "icon": "trending-up",
+      "headline": "Delaware State is winning more than the numbers say they should",
+      "subhead": "Their record sits well ahead of their efficiency profile. That gap is usually close-game luck, turnover margin, or a schedule that hasn't tested them yet — and it usually closes.",
+      "subject": [
+        {
+          "team_id": "meacdsu",
+          "name": "Delaware State",
+          "short": "DSU",
+          "logo": "/assets/meacdsu.svg",
+          "conference": "MEAC",
+          "record": "8-4",
+          "href": "/teams/meacdsu"
+        }
+      ],
+      "stat_primary": {
+        "label": "Record ahead of profile",
+        "value": "+0.98",
+        "context": "z-score gap"
+      },
+      "stat_support": [
+        {
+          "label": "Actual",
+          "value": "8-4"
+        },
+        {
+          "label": "Expected win %",
+          "value": "45%"
+        }
+      ],
+      "viz": {
+        "kind": "delta_bars",
+        "rows": [
+          {
+            "label": "Actual win %",
+            "value": 0.667,
+            "tone": "accent"
+          },
+          {
+            "label": "Expected from profile",
+            "value": 0.449,
+            "tone": "muted"
+          }
+        ],
+        "max": 1
+      },
+      "cta": {
+        "label": "DSU team page",
+        "href": "/teams/meacdsu"
+      },
+      "score": 90,
+      "card_id": "record_ahead_of_performance-4"
+    },
+    {
+      "archetype": "performance_ahead_of_record",
+      "layout": "SOLO",
+      "icon": "trending-down",
+      "headline": "Norfolk State is better than their record",
+      "subhead": "Their underlying numbers are stronger than their win total. Teams in this spot are the classic breakout candidate — the profile is already there.",
+      "subject": [
+        {
+          "team_id": "meacnsu",
+          "name": "Norfolk State",
+          "short": "NSU",
+          "logo": "/assets/meacnsu.svg",
+          "conference": "MEAC",
+          "record": "1-11",
+          "href": "/teams/meacnsu"
+        }
+      ],
+      "stat_primary": {
+        "label": "Profile ahead of record",
+        "value": "-1.59",
+        "context": "z-score gap"
+      },
+      "stat_support": [
+        {
+          "label": "Actual",
+          "value": "1-11"
+        },
+        {
+          "label": "Expected win %",
+          "value": "44%"
+        }
+      ],
+      "viz": {
+        "kind": "delta_bars",
+        "rows": [
+          {
+            "label": "Actual win %",
+            "value": 0.083,
+            "tone": "accent"
+          },
+          {
+            "label": "Expected from profile",
+            "value": 0.437,
+            "tone": "muted"
+          }
+        ],
+        "max": 1
+      },
+      "cta": {
+        "label": "NSU team page",
+        "href": "/teams/meacnsu"
+      },
+      "score": 89,
+      "card_id": "performance_ahead_of_record-5"
+    },
+    {
+      "archetype": "dead_metric",
+      "layout": "LEAGUE",
+      "icon": "slash",
+      "headline": "Offense TFL Rate tells you almost nothing about winning",
+      "subhead": "A correlation of -0.007 across 108 team-seasons — effectively zero. Worth knowing before you quote it.",
+      "stat_primary": {
+        "label": "Correlation with win %",
+        "value": -0.007,
+        "context": "Offense TFL Rate"
+      },
+      "stat_support": [
+        {
+          "label": "vs. best lever",
+          "value": "-0.543"
+        },
+        {
+          "label": "Sample",
+          "value": 108
+        }
+      ],
+      "viz": {
+        "kind": "dumbbell",
+        "rows": [
+          {
+            "label": "Offense TFL Rate",
+            "value": 0.007,
+            "tone": "muted"
+          },
+          {
+            "label": "Defense Rush Success",
+            "value": 0.543,
+            "tone": "accent"
+          }
+        ],
+        "max": 1,
+        "unit": "r"
+      },
+      "cta": {
+        "label": "See every lever",
+        "href": "/stats?tab=team-efficiency"
+      },
+      "score": 88,
+      "card_id": "dead_metric-6"
+    },
+    {
+      "archetype": "statistical_twins",
+      "layout": "DUO",
+      "icon": "copy",
+      "headline": "DSU and FAMU are statistically the same team",
+      "subhead": "Closest pair in the league across every metric that predicts winning — and 3 games apart in the standings.",
+      "subject": [
+        {
+          "team_id": "meacdsu",
+          "name": "Delaware State",
+          "short": "DSU",
+          "logo": "/assets/meacdsu.svg",
+          "conference": "MEAC",
+          "record": "8-4",
+          "href": "/teams/meacdsu"
+        },
+        {
+          "team_id": "swacfamu",
+          "name": "Florida A&M",
+          "short": "FAMU",
+          "logo": "/assets/swacfamu.svg",
+          "conference": "SWAC",
+          "record": "5-8",
+          "href": "/teams/swacfamu"
+        }
+      ],
+      "stat_primary": {
+        "label": "Profile distance",
+        "value": 0.76,
+        "context": "closest of 153 pairs"
+      },
+      "stat_support": [
+        {
+          "label": "DSU",
+          "value": "8-4"
+        },
+        {
+          "label": "FAMU",
+          "value": "5-8"
+        }
+      ],
+      "viz": {
+        "kind": "twin_radar",
+        "axes": [
+          {
+            "key": "d_rushing.successRate",
+            "label": "DEF Rush SR",
+            "a": 56,
+            "b": 50
+          },
+          {
+            "key": "d_passing.ypa",
+            "label": "DEF YPA",
+            "a": 22,
+            "b": 67
+          },
+          {
+            "key": "o_rushing.successRate",
+            "label": "OFF Rush SR",
+            "a": 33,
+            "b": 28
+          },
+          {
+            "key": "d_passing.explosiveRate",
+            "label": "DEF Expl",
+            "a": 28,
+            "b": 33
+          },
+          {
+            "key": "o_passing.ypa",
+            "label": "OFF YPA",
+            "a": 56,
+            "b": 50
+          },
+          {
+            "key": "d_passing.completionRate",
+            "label": "DEF Comp",
+            "a": 67,
+            "b": 50
+          }
+        ],
+        "a_label": "DSU",
+        "b_label": "FAMU",
+        "a_color": "#EE3124",
+        "b_color": "#006747"
+      },
+      "cta": {
+        "label": "Compare them",
+        "href": "/stats?tab=chart-builder"
+      },
+      "score": 86,
+      "card_id": "statistical_twins-7"
+    },
+    {
+      "archetype": "team_fingerprint",
+      "layout": "SOLO",
+      "icon": "fingerprint",
+      "headline": "Mississippi Valley State has the most distinctive profile in the league",
+      "subhead": "Furthest from league average across every predictive metric — the most identifiable shape on the board, for better and worse.",
+      "subject": [
+        {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State",
+          "short": "MVSU",
+          "logo": "/assets/swacmvsu.svg",
+          "conference": "SWAC",
+          "record": "2-12",
+          "href": "/teams/swacmvsu"
+        }
+      ],
+      "stat_primary": {
+        "label": "Distance from average",
+        "value": 1.37,
+        "context": "avg |z| across levers"
+      },
+      "stat_support": [
+        {
+          "label": "Record",
+          "value": "2-12"
+        }
+      ],
+      "viz": {
+        "kind": "radar",
+        "color": "#046A38",
+        "axes": [
+          {
+            "key": "d_rushing.successRate",
+            "label": "DEF Rush SR",
+            "value": 6
+          },
+          {
+            "key": "d_passing.ypa",
+            "label": "DEF YPA",
+            "value": 44
+          },
+          {
+            "key": "o_rushing.successRate",
+            "label": "OFF Rush SR",
+            "value": 0
+          },
+          {
+            "key": "d_passing.explosiveRate",
+            "label": "DEF Expl",
+            "value": 56
+          },
+          {
+            "key": "o_passing.ypa",
+            "label": "OFF YPA",
+            "value": 6
+          },
+          {
+            "key": "d_passing.completionRate",
+            "label": "DEF Comp",
+            "value": 22
+          },
+          {
+            "key": "o_passing.explosiveRate",
+            "label": "OFF Expl",
+            "value": 6
+          },
+          {
+            "key": "o_passing.completionRate",
+            "label": "OFF Comp",
+            "value": 6
+          }
+        ]
+      },
+      "cta": {
+        "label": "MVSU team page",
+        "href": "/teams/swacmvsu"
+      },
+      "score": 84,
+      "card_id": "team_fingerprint-8"
+    },
+    {
+      "archetype": "production_leader",
+      "layout": "SOLO",
+      "icon": "flame",
+      "headline": "Cameron Peters has produced more than anyone in the league",
+      "subhead": "PAR measures production above a replacement-level player at the same position. Cameron Peters leads all 1054 producers.",
+      "subject": [
+        {
+          "person_id": "PERS_00003846",
+          "name": "Cameron Peters",
+          "position": "QB",
+          "team_id": "swacpvamu",
+          "short": "PVAMU",
+          "logo": "/assets/swacpvamu.svg",
+          "href": "/players/PERS_00003846"
+        }
+      ],
+      "stat_primary": {
+        "label": "PAR",
+        "value": 142.3,
+        "context": "10 games"
+      },
+      "stat_support": [
+        {
+          "label": "Per game",
+          "value": 19.7
+        },
+        {
+          "label": "Of 43 QBs",
+          "value": "#1"
+        }
+      ],
+      "viz": {
+        "kind": "rank_bars",
+        "entries": [
+          {
+            "label": "Peters",
+            "value": 142.3,
+            "team": "PVAMU",
+            "color": "#4B0082",
+            "is_subject": true
+          },
+          {
+            "label": "Harris",
+            "value": 117.6,
+            "team": "NCCU",
+            "color": "#8A1538",
+            "is_subject": false
+          },
+          {
+            "label": "Johnson",
+            "value": 93.2,
+            "team": "NCCU",
+            "color": "#8A1538",
+            "is_subject": false
+          },
+          {
+            "label": "Givens",
+            "value": 91.2,
+            "team": "SU",
+            "color": "#69B3E7",
+            "is_subject": false
+          },
+          {
+            "label": "Ransom",
+            "value": 73.6,
+            "team": "BCU",
+            "color": "#6F2633",
+            "is_subject": false
+          },
+          {
+            "label": "Body",
+            "value": 65.6,
+            "team": "ASU",
+            "color": "#000000",
+            "is_subject": false
+          }
+        ]
+      },
+      "cta": {
+        "label": "Open Player Analytics",
+        "href": "/player-analytics"
+      },
+      "score": 82,
+      "card_id": "production_leader-9"
+    },
+    {
+      "archetype": "conference_gap",
+      "layout": "LEAGUE",
+      "icon": "git-compare",
+      "headline": "SWAC and MEAC separate most on Offense Pressure Rate",
+      "subhead": "SWAC holds the edge here — the widest gap between the two conferences on any metric that predicts winning.",
+      "stat_primary": {
+        "label": "Gap",
+        "value": 1.24,
+        "context": "standard deviations"
+      },
+      "stat_support": [
+        {
+          "label": "SWAC avg",
+          "value": 12.6
+        },
+        {
+          "label": "MEAC avg",
+          "value": 19.5
+        }
+      ],
+      "viz": {
+        "kind": "conference_split",
+        "metric": "Offense Pressure Rate",
+        "groups": [
+          {
+            "label": "SWAC",
+            "value": 0.1264,
+            "teams": 12
+          },
+          {
+            "label": "MEAC",
+            "value": 0.1946,
+            "teams": 6
+          }
+        ],
+        "better": "SWAC"
+      },
+      "cta": {
+        "label": "Break it down by team",
+        "href": "/stats?tab=team-efficiency"
+      },
+      "score": 80,
+      "card_id": "conference_gap-10"
+    },
+    {
+      "archetype": "parity_index",
+      "layout": "LEAGUE",
+      "icon": "scale",
+      "headline": "2025 is more top-heavy than most seasons on record",
+      "subhead": "Win-percentage spread across all 18 teams, measured against every season we have.",
+      "stat_primary": {
+        "label": "Win % spread",
+        "value": 0.222,
+        "context": "2025"
+      },
+      "stat_support": [
+        {
+          "label": "Seasons compared",
+          "value": 6
+        }
+      ],
+      "viz": {
+        "kind": "season_trend",
+        "entries": [
+          {
+            "label": "2019",
+            "value": 0.2599,
+            "highlight": false
+          },
+          {
+            "label": "2021",
+            "value": 0.2045,
+            "highlight": false
+          },
+          {
+            "label": "2022",
+            "value": 0.216,
+            "highlight": false
+          },
+          {
+            "label": "2023",
+            "value": 0.2328,
+            "highlight": false
+          },
+          {
+            "label": "2024",
+            "value": 0.2201,
+            "highlight": false
+          },
+          {
+            "label": "2025",
+            "value": 0.2224,
+            "highlight": true
+          }
+        ],
+        "invert": true
+      },
+      "cta": {
+        "label": "See the standings",
+        "href": "/game-center/standings"
+      },
+      "score": 74,
+      "card_id": "parity_index-11"
+    }
+  ]
+}

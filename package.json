@@ -3,18 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^3.34.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@gsap/react": "^2.1.2",
+    "@tanstack/react-query": "^5.90.21",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.14.2",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^0.577.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.1",
     "react-scripts": "5.0.1",
+    "react-simple-maps": "^3.0.0",
+    "recharts": "^3.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "set NODE_OPTIONS=--max-old-space-size=4096 && react-scripts start",
+    "build": "set NODE_OPTIONS=--max-old-space-size=4096 && react-scripts build",
+    "build:demo": "set REACT_APP_DEMO=1&& set PUBLIC_URL=/hbcugg&& set NODE_OPTIONS=--max-old-space-size=4096 && react-scripts build && node scripts/prune_demo_build.js && node scripts/rebase_demo_build.js",
+    "deploy:demo": "gh-pages -d build -t",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -35,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

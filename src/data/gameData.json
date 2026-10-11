@@ -1,0 +1,2348 @@
+{
+  "header": {
+    "game_id": "W0hufamu",
+    "away_team": {
+      "id": "hbcu",
+      "name": "Howard Bison",
+      "abbreviation": "HBCU",
+      "score": 28,
+      "final_score": 28
+    },
+    "home_team": {
+      "id": "famu",
+      "name": "Florida A&M Rattlers",
+      "abbreviation": "FAMU",
+      "score": 21,
+      "final_score": 21
+    },
+    "date": "09/07/2025",
+    "site": "Bragg Memorial Stadium, Tallahassee, FL",
+    "attendance": 15420,
+    "temperature": 84,
+    "weather": "Cloudy",
+    "kickoff_time": "6:00 PM",
+    "game_excitement_index": 8.7,
+    "winner": "hbcu",
+    "final_margin": 7
+  },
+  "team_stats": {
+    "hbcu": {
+      "epa_per_play": -0.01,
+      "epa_per_play_percentile": 43,
+      "success_rate": 0.38,
+      "success_rate_percentile": 29,
+      "yards_per_play": 4.18,
+      "yards_per_play_percentile": 11,
+      "epa_dropback": -0.02,
+      "epa_dropback_percentile": 45,
+      "epa_rush": 0.01,
+      "epa_rush_percentile": 49,
+      "yards_dropback": 6.86,
+      "yards_dropback_percentile": 59,
+      "yards_rush": 4.19,
+      "yards_rush_percentile": 47,
+      "explosive_play_rate": 0.05,
+      "explosive_play_rate_percentile": 16,
+      "third_down_success_rate": 0.39,
+      "third_down_success_rate_percentile": 41,
+      "red_zone_success_rate": 0.29,
+      "red_zone_success_rate_percentile": 26,
+      "def_run_stuff_rate": 0.23,
+      "def_run_stuff_rate_percentile": 18,
+      "havoc_rate": 0.14,
+      "havoc_rate_percentile": 55
+    },
+    "famu": {
+      "epa_per_play": 0.17,
+      "epa_per_play_percentile": 77,
+      "success_rate": 0.41,
+      "success_rate_percentile": 47,
+      "yards_per_play": 5.75,
+      "yards_per_play_percentile": 47,
+      "epa_dropback": 0.68,
+      "epa_dropback_percentile": 96,
+      "epa_rush": -0.11,
+      "epa_rush_percentile": 29,
+      "yards_dropback": 6.6,
+      "yards_dropback_percentile": 55,
+      "yards_rush": 4.23,
+      "yards_rush_percentile": 52,
+      "explosive_play_rate": 0.12,
+      "explosive_play_rate_percentile": 86,
+      "third_down_success_rate": 0.6,
+      "third_down_success_rate_percentile": 90,
+      "red_zone_success_rate": 0.75,
+      "red_zone_success_rate_percentile": 94,
+      "def_run_stuff_rate": 0.13,
+      "def_run_stuff_rate_percentile": 0,
+      "havoc_rate": 0.16,
+      "havoc_rate_percentile": 70
+    }
+  },
+  "expected_points": {
+    "hbcu": {
+      "total_plays": 86,
+      "total_epa": -0.16,
+      "offensive_epa": -0.75,
+      "special_teams_epa": 0.45,
+      "penalty_epa": -6.78
+    },
+    "famu": {
+      "total_plays": 58,
+      "total_epa": 7.17,
+      "offensive_epa": 8.65,
+      "special_teams_epa": -0.15,
+      "penalty_epa": 1.45
+    }
+  },
+  "production": {
+    "hbcu": {
+      "scrimmage_plays": 74,
+      "total_yards": 309,
+      "yards_per_play": 4.18,
+      "epa": -0.75,
+      "epa_per_play": -0.01,
+      "passing": {
+        "attempts": 43,
+        "pass_percentage": 0.58,
+        "yards": 295,
+        "yards_per_play": 6.86,
+        "epa": -0.92,
+        "epa_per_play": -0.02
+      },
+      "rushing": {
+        "attempts": 31,
+        "rush_percentage": 0.42,
+        "yards": 130,
+        "yards_per_play": 4.19,
+        "epa": 0.17,
+        "epa_per_play": 0.01
+      }
+    },
+    "famu": {
+      "scrimmage_plays": 51,
+      "total_yards": 293,
+      "yards_per_play": 5.75,
+      "epa": 8.65,
+      "epa_per_play": 0.17,
+      "passing": {
+        "attempts": 20,
+        "pass_percentage": 0.39,
+        "yards": 132,
+        "yards_per_play": 6.6,
+        "epa": 13.63,
+        "epa_per_play": 0.68
+      },
+      "rushing": {
+        "attempts": 30,
+        "rush_percentage": 0.59,
+        "yards": 127,
+        "yards_per_play": 4.23,
+        "epa": -3.45,
+        "epa_per_play": -0.11
+      }
+    }
+  },
+  "rushing_analysis": {
+    "hbcu": {
+      "power_run_attempts": 1,
+      "power_run_percentage": 0.03,
+      "successful_power_runs": 1,
+      "successful_power_rate": 1.0,
+      "stuffed_runs": 4,
+      "stuffed_run_rate": 0.13,
+      "stopped_runs": 8,
+      "stopped_run_rate": 0.26,
+      "opportunity_runs": 19,
+      "opportunity_run_rate": 0.61,
+      "ol_line_yards": 66.5,
+      "ol_yards_per_carry": 2.15,
+      "highlight_yards": 20,
+      "highlight_yards_per_opportunity": 1.05
+    },
+    "famu": {
+      "power_run_attempts": 0,
+      "power_run_percentage": 0.0,
+      "successful_power_runs": 0,
+      "successful_power_rate": 0.0,
+      "stuffed_runs": 7,
+      "stuffed_run_rate": 0.23,
+      "stopped_runs": 15,
+      "stopped_run_rate": 0.5,
+      "opportunity_runs": 13,
+      "opportunity_run_rate": 0.43,
+      "ol_line_yards": 47.8,
+      "ol_yards_per_carry": 1.59,
+      "highlight_yards": 44.5,
+      "highlight_yards_per_opportunity": 3.42
+    }
+  },
+  "explosiveness": {
+    "hbcu": {
+      "total_plays": 86,
+      "scrimmage_plays": 74,
+      "explosive_plays": 4,
+      "explosive_play_rate": 0.05,
+      "explosive_passing": {
+        "plays": 4,
+        "rate": 0.09,
+        "epa_threshold": 2.4
+      },
+      "explosive_rushing": {
+        "plays": 0,
+        "rate": 0.0,
+        "epa_threshold": 1.8
+      },
+      "epa_without_explosives": -17.02,
+      "epa_per_play_without_explosives": -0.24,
+      "passing_without_explosives": {
+        "epa": -17.19,
+        "epa_per_play": -0.4
+      },
+      "rushing_without_explosives": {
+        "epa": 0.17,
+        "epa_per_play": 0.01
+      }
+    },
+    "famu": {
+      "total_plays": 58,
+      "scrimmage_plays": 51,
+      "explosive_plays": 6,
+      "explosive_play_rate": 0.12,
+      "explosive_passing": {
+        "plays": 2,
+        "rate": 0.1,
+        "epa_threshold": 2.4
+      },
+      "explosive_rushing": {
+        "plays": 4,
+        "rate": 0.13,
+        "epa_threshold": 1.8
+      },
+      "epa_without_explosives": -7.85,
+      "epa_per_play_without_explosives": -0.17,
+      "passing_without_explosives": {
+        "epa": 5.85,
+        "epa_per_play": 0.29
+      },
+      "rushing_without_explosives": {
+        "epa": -12.18,
+        "epa_per_play": -0.47
+      }
+    }
+  },
+  "situational": {
+    "hbcu": {
+      "successful_plays": 28,
+      "success_rate": 0.38,
+      "passing_success": {
+        "plays": 15,
+        "rate": 0.35
+      },
+      "rushing_success": {
+        "plays": 13,
+        "rate": 0.42
+      },
+      "standard_downs": {
+        "plays": 20,
+        "success_rate": 0.41
+      },
+      "passing_downs": {
+        "plays": 8,
+        "success_rate": 0.32
+      },
+      "early_downs": {
+        "plays": 18,
+        "success_rate": 0.33,
+        "epa": -11.13,
+        "epa_per_play": -0.21,
+        "passing": {
+          "plays": 30,
+          "percentage": 0.56,
+          "success_rate": 0.3
+        },
+        "rushing": {
+          "plays": 24,
+          "percentage": 0.44,
+          "success_rate": 0.38
+        }
+      },
+      "late_downs": {
+        "plays": 10,
+        "success_rate": 0.5,
+        "epa": 10.38,
+        "epa_per_play": 0.52,
+        "avg_distance": 6.15,
+        "passing": {
+          "plays": 13,
+          "percentage": 0.65,
+          "success_rate": 0.46
+        },
+        "rushing": {
+          "plays": 7,
+          "percentage": 0.35,
+          "success_rate": 0.57
+        }
+      },
+      "middle_eight": {
+        "plays": 9,
+        "epa": -2.87,
+        "epa_per_play": -0.32,
+        "passing": {
+          "plays": 6,
+          "percentage": 0.67,
+          "success_rate": 0.17
+        },
+        "rushing": {
+          "plays": 3,
+          "percentage": 0.33,
+          "success_rate": 0.33
+        }
+      }
+    },
+    "famu": {
+      "successful_plays": 21,
+      "success_rate": 0.41,
+      "passing_success": {
+        "plays": 11,
+        "rate": 0.55
+      },
+      "rushing_success": {
+        "plays": 10,
+        "rate": 0.33
+      },
+      "standard_downs": {
+        "plays": 13,
+        "success_rate": 0.39
+      },
+      "passing_downs": {
+        "plays": 8,
+        "success_rate": 0.44
+      },
+      "early_downs": {
+        "plays": 15,
+        "success_rate": 0.37,
+        "epa": 0.76,
+        "epa_per_play": 0.02,
+        "passing": {
+          "plays": 13,
+          "percentage": 0.32,
+          "success_rate": 0.46
+        },
+        "rushing": {
+          "plays": 27,
+          "percentage": 0.66,
+          "success_rate": 0.33
+        }
+      },
+      "late_downs": {
+        "plays": 6,
+        "success_rate": 0.6,
+        "epa": 7.9,
+        "epa_per_play": 0.79,
+        "avg_distance": 10.4,
+        "passing": {
+          "plays": 7,
+          "percentage": 0.7,
+          "success_rate": 0.71
+        },
+        "rushing": {
+          "plays": 3,
+          "percentage": 0.3,
+          "success_rate": 0.33
+        }
+      },
+      "middle_eight": {
+        "plays": 14,
+        "epa": -3.83,
+        "epa_per_play": -0.27,
+        "passing": {
+          "plays": 6,
+          "percentage": 0.43,
+          "success_rate": 0.33
+        },
+        "rushing": {
+          "plays": 8,
+          "percentage": 0.57,
+          "success_rate": 0.38
+        }
+      }
+    }
+  },
+  "drive_analysis": {
+    "hbcu": {
+      "total_drives": 10,
+      "avg_starting_field_position": "Own 32",
+      "avg_starting_yardline": 32,
+      "plays_per_drive": 7.4,
+      "yards_per_drive": 30.9,
+      "available_yards_percentage": 0.46
+    },
+    "famu": {
+      "total_drives": 8,
+      "avg_starting_field_position": "Own 24",
+      "avg_starting_yardline": 24,
+      "plays_per_drive": 6.38,
+      "yards_per_drive": 36.63,
+      "available_yards_percentage": 0.48
+    }
+  },
+  "defensive": {
+    "hbcu": {
+      "scrimmage_plays": 51,
+      "stop_rate": 0.51,
+      "havoc_plays_created": 7,
+      "havoc_rate": 0.14,
+      "havoc_passing": {
+        "plays": 2,
+        "rate": 0.1
+      },
+      "havoc_rushing": {
+        "plays": 5,
+        "rate": 0.17
+      },
+      "tfls_generated": 6,
+      "tfls_passing": 1,
+      "tfls_rushing": 5,
+      "sacks_generated": 0,
+      "sack_rate": 0.0,
+      "passes_defended": 0,
+      "interceptions": 0,
+      "fumbles_forced": 0
+    },
+    "famu": {
+      "scrimmage_plays": 74,
+      "stop_rate": 0.41,
+      "havoc_plays_created": 12,
+      "havoc_rate": 0.16,
+      "havoc_passing": {
+        "plays": 10,
+        "rate": 0.23
+      },
+      "havoc_rushing": {
+        "plays": 2,
+        "rate": 0.06
+      },
+      "tfls_generated": 8,
+      "tfls_passing": 6,
+      "tfls_rushing": 2,
+      "sacks_generated": 0,
+      "sack_rate": 0.0,
+      "passes_defended": 0,
+      "interceptions": 1,
+      "fumbles_forced": 0
+    }
+  },
+  "turnovers": {
+    "hbcu": {
+      "total_turnovers": 1,
+      "fumbles": 0,
+      "fumbles_lost": 0,
+      "fumbles_recovered": 0,
+      "interceptions": 1,
+      "turnover_margin": -1,
+      "expected_turnovers": 1.1,
+      "expected_turnover_margin": -0.9,
+      "turnover_luck_points": -0.6
+    },
+    "famu": {
+      "total_turnovers": 0,
+      "fumbles": 0,
+      "fumbles_lost": 0,
+      "fumbles_recovered": 0,
+      "interceptions": 0,
+      "turnover_margin": 1,
+      "expected_turnovers": 0.2,
+      "expected_turnover_margin": 0.9,
+      "turnover_luck_points": 0.6
+    }
+  },
+  "special_teams": {
+    "hbcu": {
+      "total_plays": 12,
+      "special_teams_percentage": 0.16,
+      "total_epa": 0.45,
+      "field_goal_epa": -3.86,
+      "punting_epa": 3.78,
+      "kickoff_return_epa": 0.52
+    },
+    "famu": {
+      "total_plays": 7,
+      "special_teams_percentage": 0.14,
+      "total_epa": -0.15,
+      "field_goal_epa": 0.0,
+      "punting_epa": -2.57,
+      "kickoff_return_epa": 2.41
+    }
+  },
+  "players": {
+    "hbcu": {
+      "Cameron Peters": {
+        "player_id": "PERS_00000123",
+        "position": "QB",
+        "passing": {
+          "completions": 22,
+          "attempts": 43,
+          "completion_percentage": 0.512,
+          "yards": 295,
+          "touchdowns": 2,
+          "interceptions": 1,
+          "sacks_taken": 0,
+          "xqbr": 52.0,
+          "dettmer_score": 1.11,
+          "yards_per_attempt": 6.86,
+          "epa_per_play": -0.02,
+          "epa": -0.92,
+          "success_rate": 0.35,
+          "wpa": 0.49
+        },
+        "rushing": {
+          "attempts": 9,
+          "yards": 43,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 4.78,
+          "epa_per_play": 0.13,
+          "epa": 1.18,
+          "success_rate": 0.56,
+          "wpa": 0.07
+        }
+      },
+      "Cameron Franklin": {
+        "player_id": "PERS_00000456",
+        "position": "RB",
+        "rushing": {
+          "attempts": 1,
+          "yards": 5,
+          "touchdowns": 1,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 5.0,
+          "epa_per_play": 1.71,
+          "epa": 1.71,
+          "success_rate": 1.0,
+          "wpa": 0.08
+        }
+      },
+      "Chase Bingmon": {
+        "player_id": "PERS_00000457",
+        "position": "RB",
+        "rushing": {
+          "attempts": 10,
+          "yards": 50,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 5.0,
+          "epa_per_play": 0.04,
+          "epa": 0.43,
+          "success_rate": 0.3,
+          "wpa": -0.04
+        },
+        "receiving": {
+          "receptions": 2,
+          "targets": 2,
+          "catch_rate": 1.0,
+          "yards": 22,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 11.0,
+          "yards_per_target": 11.0,
+          "epa_per_play": -0.25,
+          "epa": -0.49,
+          "success_rate": 0.5,
+          "wpa": 0.14
+        }
+      },
+      "Andre Dennis": {
+        "player_id": "PERS_00000458",
+        "position": "RB",
+        "rushing": {
+          "attempts": 1,
+          "yards": 3,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 3.0,
+          "epa_per_play": -0.42,
+          "epa": -0.42,
+          "success_rate": 0.0,
+          "wpa": 0.0
+        },
+        "receiving": {
+          "receptions": 3,
+          "targets": 4,
+          "catch_rate": 0.75,
+          "yards": 36,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 12.0,
+          "yards_per_target": 9.0,
+          "epa_per_play": -0.04,
+          "epa": -0.14,
+          "success_rate": 0.5,
+          "wpa": -0.07
+        }
+      },
+      "Brandon Campbell": {
+        "player_id": "PERS_00000459",
+        "position": "RB",
+        "rushing": {
+          "attempts": 8,
+          "yards": 22,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 2.75,
+          "epa_per_play": -0.3,
+          "epa": -2.4,
+          "success_rate": 0.38,
+          "wpa": -0.05
+        },
+        "receiving": {
+          "receptions": 3,
+          "targets": 3,
+          "catch_rate": 1.0,
+          "yards": 32,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 10.67,
+          "yards_per_target": 10.67,
+          "epa_per_play": 0.67,
+          "epa": 2.0,
+          "success_rate": 0.33,
+          "wpa": 0.08
+        }
+      },
+      "Kheagian Heckaman": {
+        "player_id": "PERS_00000789",
+        "position": "WR",
+        "receiving": {
+          "receptions": 2,
+          "targets": 2,
+          "catch_rate": 1.0,
+          "yards": 73,
+          "touchdowns": 1,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 36.5,
+          "yards_per_target": 36.5,
+          "epa_per_play": 4.49,
+          "epa": 8.98,
+          "success_rate": 1.0,
+          "wpa": 0.24
+        }
+      },
+      "Jyzaiah Rockwell": {
+        "player_id": "PERS_00000790",
+        "position": "WR",
+        "receiving": {
+          "receptions": 6,
+          "targets": 6,
+          "catch_rate": 1.0,
+          "yards": 72,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 12.0,
+          "yards_per_target": 12.0,
+          "epa_per_play": 0.73,
+          "epa": 4.38,
+          "success_rate": 0.67,
+          "wpa": 0.15
+        }
+      },
+      "Jeremiah Ratliff": {
+        "player_id": "PERS_00000791",
+        "position": "WR",
+        "receiving": {
+          "receptions": 1,
+          "targets": 1,
+          "catch_rate": 1.0,
+          "yards": 30,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 30.0,
+          "yards_per_target": 30.0,
+          "epa_per_play": 1.72,
+          "epa": 1.72,
+          "success_rate": 1.0,
+          "wpa": 0.11
+        }
+      },
+      "Ethan John": {
+        "player_id": "PERS_00000792",
+        "position": "WR",
+        "receiving": {
+          "receptions": 1,
+          "targets": 1,
+          "catch_rate": 1.0,
+          "yards": 2,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 2.0,
+          "yards_per_target": 2.0,
+          "epa_per_play": -0.45,
+          "epa": -0.45,
+          "success_rate": 0.0,
+          "wpa": 0.0
+        }
+      },
+      "Rodny Ojo": {
+        "player_id": "PERS_00000793",
+        "position": "WR",
+        "receiving": {
+          "receptions": 4,
+          "targets": 6,
+          "catch_rate": 0.67,
+          "yards": 28,
+          "touchdowns": 1,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 7.0,
+          "yards_per_target": 4.67,
+          "epa_per_play": -0.48,
+          "epa": -2.9,
+          "success_rate": 0.33,
+          "wpa": 0.5
+        }
+      },
+      "TEAM": {
+        "player_id": "TEAM_HBCU",
+        "position": "TEAM",
+        "rushing": {
+          "attempts": 2,
+          "yards": 7,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 3.5,
+          "epa_per_play": -0.17,
+          "epa": -0.34,
+          "success_rate": 0.5,
+          "wpa": -0.02
+        },
+        "receiving": {
+          "receptions": 0,
+          "targets": 18,
+          "catch_rate": 0.0,
+          "yards": 0,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 0.0,
+          "yards_per_target": 0.0,
+          "epa_per_play": -0.78,
+          "epa": -14.02,
+          "success_rate": 0.11,
+          "wpa": -0.65
+        }
+      }
+    },
+    "famu": {
+      "KJ Cooper": {
+        "player_id": "PERS_00000321",
+        "position": "QB",
+        "passing": {
+          "completions": 11,
+          "attempts": 20,
+          "completion_percentage": 0.55,
+          "yards": 132,
+          "touchdowns": 1,
+          "interceptions": 0,
+          "sacks_taken": 0,
+          "xqbr": 88.1,
+          "dettmer_score": 0.17,
+          "yards_per_attempt": 6.6,
+          "epa_per_play": 0.68,
+          "epa": 13.63,
+          "success_rate": 0.55,
+          "wpa": 0.6
+        },
+        "rushing": {
+          "attempts": 3,
+          "yards": 21,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 7.0,
+          "epa_per_play": 0.51,
+          "epa": 1.52,
+          "success_rate": 0.67,
+          "wpa": 0.11
+        }
+      },
+      "Atheen Renfro": {
+        "player_id": "PERS_00000654",
+        "position": "RB",
+        "rushing": {
+          "attempts": 15,
+          "yards": 66,
+          "touchdowns": 1,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 4.4,
+          "epa_per_play": -0.11,
+          "epa": -1.7,
+          "success_rate": 0.4,
+          "wpa": 0.04
+        }
+      },
+      "Da'Veon Ford": {
+        "player_id": "PERS_00000655",
+        "position": "RB",
+        "rushing": {
+          "attempts": 11,
+          "yards": 37,
+          "touchdowns": 1,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 3.36,
+          "epa_per_play": -0.26,
+          "epa": -2.91,
+          "success_rate": 0.18,
+          "wpa": -0.09
+        },
+        "receiving": {
+          "receptions": 2,
+          "targets": 2,
+          "catch_rate": 1.0,
+          "yards": 22,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 11.0,
+          "yards_per_target": 11.0,
+          "epa_per_play": 0.97,
+          "epa": 1.94,
+          "success_rate": 0.5,
+          "wpa": 0.06
+        }
+      },
+      "Roriyon Richardson": {
+        "player_id": "PERS_00000987",
+        "position": "WR",
+        "receiving": {
+          "receptions": 3,
+          "targets": 4,
+          "catch_rate": 0.75,
+          "yards": 57,
+          "touchdowns": 1,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 19.0,
+          "yards_per_target": 14.25,
+          "epa_per_play": 1.95,
+          "epa": 7.81,
+          "success_rate": 0.75,
+          "wpa": 0.35
+        }
+      },
+      "Trenton Leary": {
+        "player_id": "PERS_00000988",
+        "position": "WR",
+        "receiving": {
+          "receptions": 2,
+          "targets": 6,
+          "catch_rate": 0.33,
+          "yards": 4,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 2.0,
+          "yards_per_target": 0.67,
+          "epa_per_play": -0.34,
+          "epa": -2.04,
+          "success_rate": 0.33,
+          "wpa": -0.08
+        }
+      },
+      "Kerien Charlo": {
+        "player_id": "PERS_00000989",
+        "position": "WR",
+        "receiving": {
+          "receptions": 1,
+          "targets": 1,
+          "catch_rate": 1.0,
+          "yards": 14,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 14.0,
+          "yards_per_target": 14.0,
+          "epa_per_play": 1.39,
+          "epa": 1.39,
+          "success_rate": 1.0,
+          "wpa": 0.03
+        }
+      },
+      "Jaquan McGee": {
+        "player_id": "PERS_00000990",
+        "position": "WR",
+        "receiving": {
+          "receptions": 1,
+          "targets": 1,
+          "catch_rate": 1.0,
+          "yards": 10,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 10.0,
+          "yards_per_target": 10.0,
+          "epa_per_play": 1.36,
+          "epa": 1.36,
+          "success_rate": 1.0,
+          "wpa": 0.03
+        }
+      },
+      "Kordell Rodgers": {
+        "player_id": "PERS_00000991",
+        "position": "WR",
+        "receiving": {
+          "receptions": 1,
+          "targets": 1,
+          "catch_rate": 1.0,
+          "yards": 2,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 2.0,
+          "yards_per_target": 2.0,
+          "epa_per_play": -0.88,
+          "epa": -0.88,
+          "success_rate": 0.0,
+          "wpa": -0.04
+        }
+      },
+      "TEAM": {
+        "player_id": "TEAM_FAMU",
+        "position": "TEAM",
+        "rushing": {
+          "attempts": 1,
+          "yards": 3,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_attempt": 3.0,
+          "epa_per_play": -0.37,
+          "epa": -0.37,
+          "success_rate": 0.0,
+          "wpa": 0.0
+        },
+        "receiving": {
+          "receptions": 1,
+          "targets": 5,
+          "catch_rate": 0.2,
+          "yards": 23,
+          "touchdowns": 0,
+          "fumbles": 0,
+          "fumbles_lost": 0,
+          "yards_per_reception": 23.0,
+          "yards_per_target": 4.6,
+          "epa_per_play": 0.81,
+          "epa": 4.05,
+          "success_rate": 0.6,
+          "wpa": 0.26
+        }
+      }
+    }
+  },
+  "scoring_plays": [
+    {
+      "time": "Q1 9:03",
+      "offense": "famu",
+      "play_description": "(1st & Goal at PV 10) Da'Veon Ford run for 10 yds for a TD (Christian Avelar KICK) - PV 0, TXSO 7",
+      "epa": 1.88,
+      "win_probability_before": 0.56,
+      "win_probability_after": 0.682,
+      "wpa": 0.121,
+      "play_id": "td_ford",
+      "sequence": 6
+    },
+    {
+      "time": "Q1 2:00",
+      "offense": "hbcu",
+      "play_description": "(4th & 2 at PV 43) Cameron Peters pass complete to Kheagian Heckaman for 57 yds for a TD (Aiden Webb KICK) - PV 7, TXSO 7",
+      "epa": 7.96,
+      "win_probability_before": 0.318,
+      "win_probability_after": 0.531,
+      "wpa": 0.213,
+      "play_id": "td_heckaman",
+      "sequence": 15
+    },
+    {
+      "time": "Q2 9:11",
+      "offense": "hbcu",
+      "play_description": "(2nd & Goal at TXSO 5) Cameron Franklin run for 5 yds for a TD (Aiden Webb KICK) - PV 14, TXSO 7",
+      "epa": 1.71,
+      "win_probability_before": 0.646,
+      "win_probability_after": 0.722,
+      "wpa": 0.076,
+      "play_id": "td_franklin",
+      "sequence": 28
+    },
+    {
+      "time": "Q2 8:52",
+      "offense": "famu",
+      "play_description": "(1st & 10 at PV 20) Atheen Renfro run for 20 yds for a TD (Christian Avelar KICK) - PV 14, TXSO 14",
+      "epa": 2.66,
+      "win_probability_before": 0.371,
+      "win_probability_after": 0.447,
+      "wpa": 0.075,
+      "play_id": "td_renfro",
+      "sequence": 30
+    },
+    {
+      "time": "Q4 9:45",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 1) Team Safety - PV 16, TXSO 14",
+      "epa": -1.53,
+      "win_probability_before": 0.444,
+      "win_probability_after": 0.545,
+      "wpa": 0.102,
+      "play_id": "safety",
+      "sequence": 76
+    },
+    {
+      "time": "Q4 1:16",
+      "offense": "famu",
+      "play_description": "(2nd & 11 at PV 15) KJ Cooper pass complete to Roriyon Richardson for 15 yds for a TD (Christian Avelar KICK) - PV 16, TXSO 21",
+      "epa": 3.62,
+      "win_probability_before": 0.699,
+      "win_probability_after": 0.957,
+      "wpa": 0.258,
+      "play_id": "td_richardson",
+      "sequence": 89
+    },
+    {
+      "time": "Q4 0:00",
+      "offense": "hbcu",
+      "play_description": "(Assessed on Kickoff) Rodny Ojo 13 Yd pass from Cameron Peters - PV 22, TXSO 21",
+      "epa": 0.0,
+      "win_probability_before": 0.384,
+      "win_probability_after": 0.0,
+      "wpa": -0.219,
+      "play_id": "conversion",
+      "sequence": 95
+    }
+  ],
+  "drives": [
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "result": "Touchdown",
+      "description": "11 plays, 83 yards, 5:47",
+      "epa": 4.7,
+      "win_probability_before": 0.493,
+      "win_probability_after": 0.682,
+      "drive_id": "drive_1",
+      "sequence": 1
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "hbcu",
+      "result": "Punt",
+      "description": "3 plays, 9 yards, 0:24",
+      "epa": 3.46,
+      "win_probability_before": 0.493,
+      "win_probability_after": 0.483,
+      "drive_id": "drive_2",
+      "sequence": 2
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "result": "Touchdown",
+      "description": "6 plays, 85 yards, 6:46",
+      "epa": 6.02,
+      "win_probability_before": 0.348,
+      "win_probability_after": 0.53,
+      "drive_id": "drive_3",
+      "sequence": 3
+    },
+    {
+      "time": "Q1 1:50",
+      "offense": "famu",
+      "result": "Punt",
+      "description": "3 plays, -2 yards, 1:37",
+      "epa": -2.56,
+      "win_probability_before": 0.464,
+      "win_probability_after": 0.439,
+      "drive_id": "drive_4",
+      "sequence": 4
+    },
+    {
+      "time": "Q2 14:49",
+      "offense": "hbcu",
+      "result": "Touchdown",
+      "description": "9 plays, 34 yards, 5:38",
+      "epa": 3.13,
+      "win_probability_before": 0.624,
+      "win_probability_after": 0.722,
+      "drive_id": "drive_5",
+      "sequence": 5
+    },
+    {
+      "time": "Q2 8:58",
+      "offense": "famu",
+      "result": "Touchdown",
+      "description": "1 play, 20 yards, 0:06",
+      "epa": 5.54,
+      "win_probability_before": 0.282,
+      "win_probability_after": 0.447,
+      "drive_id": "drive_6",
+      "sequence": 6
+    },
+    {
+      "time": "Q2 8:52",
+      "offense": "hbcu",
+      "result": "Missed FG",
+      "description": "11 plays, 47 yards, 6:03",
+      "epa": -3.52,
+      "win_probability_before": 0.548,
+      "win_probability_after": 0.49,
+      "drive_id": "drive_7",
+      "sequence": 7
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "result": "Punt",
+      "description": "8 plays, 21 yards, 1:02",
+      "epa": -2.45,
+      "win_probability_before": 0.51,
+      "win_probability_after": 0.427,
+      "drive_id": "drive_8",
+      "sequence": 8
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "result": "Punt",
+      "description": "4 plays, 32 yards, 1:42",
+      "epa": -1.32,
+      "win_probability_before": 0.573,
+      "win_probability_after": 0.571,
+      "drive_id": "drive_9",
+      "sequence": 9
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "hbcu",
+      "result": "Punt",
+      "description": "5 plays, 16 yards, 2:17",
+      "epa": -2.38,
+      "win_probability_before": 0.571,
+      "win_probability_after": 0.476,
+      "drive_id": "drive_10",
+      "sequence": 10
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "famu",
+      "result": "Punt",
+      "description": "10 plays, 56 yards, 5:08",
+      "epa": 0.36,
+      "win_probability_before": 0.546,
+      "win_probability_after": 0.51,
+      "drive_id": "drive_11",
+      "sequence": 11
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "result": "Punt",
+      "description": "5 plays, 17 yards, 2:27",
+      "epa": -3.39,
+      "win_probability_before": 0.524,
+      "win_probability_after": 0.432,
+      "drive_id": "drive_12",
+      "sequence": 12
+    },
+    {
+      "time": "Q3 9:35",
+      "offense": "hbcu",
+      "result": "Interception",
+      "description": "9 plays, 18 yards, 4:34",
+      "epa": -1.9,
+      "win_probability_before": 0.568,
+      "win_probability_after": 0.512,
+      "drive_id": "drive_13",
+      "sequence": 13
+    },
+    {
+      "time": "Q4 14:53",
+      "offense": "hbcu",
+      "result": "Punt",
+      "description": "13 plays, 49 yards, 4:51",
+      "epa": 0.05,
+      "win_probability_before": 0.49,
+      "win_probability_after": 0.556,
+      "drive_id": "drive_14",
+      "sequence": 14
+    },
+    {
+      "time": "Q4 9:45",
+      "offense": "famu",
+      "result": "SAFETY",
+      "description": "1 play, 0 yards, 0:17",
+      "epa": -1.53,
+      "win_probability_before": 0.444,
+      "win_probability_after": 0.545,
+      "drive_id": "drive_15",
+      "sequence": 15
+    },
+    {
+      "time": "Q4 9:45",
+      "offense": "hbcu",
+      "result": "Punt",
+      "description": "5 plays, 10 yards, 3:36",
+      "epa": -1.66,
+      "win_probability_before": 0.659,
+      "win_probability_after": 0.65,
+      "drive_id": "drive_16",
+      "sequence": 16
+    },
+    {
+      "time": "Q4 6:09",
+      "offense": "famu",
+      "result": "Touchdown",
+      "description": "12 plays, 88 yards, 4:53",
+      "epa": 6.5,
+      "win_probability_before": 0.35,
+      "win_probability_after": 0.957,
+      "drive_id": "drive_17",
+      "sequence": 17
+    },
+    {
+      "time": "Q4 0:00",
+      "offense": "hbcu",
+      "result": "Touchdown",
+      "description": "10 plays, 84 yards, 1:09",
+      "epa": -2.05,
+      "win_probability_before": 0.384,
+      "win_probability_after": 0.0,
+      "drive_id": "drive_18",
+      "sequence": 18
+    }
+  ],
+  "play_by_play": [
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 17) Da'Veon Ford run for 4 yds to the TXSO 21 - PV 0, TXSO 0",
+      "epa": -0.25,
+      "win_probability_before": 0.493,
+      "win_probability_after": 0.482,
+      "wpa": -0.011,
+      "play_id": "play_001",
+      "sequence": 1
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(2nd & 6 at TXSO 21) KJ Cooper pass complete to Jaquan Mcgee for 10 yds to the TXSO 31 for a 1ST down - PV 0, TXSO 0",
+      "epa": 1.36,
+      "win_probability_before": 0.482,
+      "win_probability_after": 0.51,
+      "wpa": 0.028,
+      "play_id": "play_002",
+      "sequence": 2
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 31) Da'Veon Ford run for 4 yds to the TXSO 35 - PV 0, TXSO 0",
+      "epa": -0.13,
+      "win_probability_before": 0.51,
+      "win_probability_after": 0.507,
+      "wpa": -0.003,
+      "play_id": "play_003",
+      "sequence": 3
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(2nd & 6 at TXSO 35) Da'Veon Ford run for 2 yds to the TXSO 37 - PV 0, TXSO 0",
+      "epa": -0.65,
+      "win_probability_before": 0.507,
+      "win_probability_after": 0.496,
+      "wpa": -0.011,
+      "play_id": "play_004",
+      "sequence": 4
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(3rd & 4 at TXSO 37) KJ Cooper pass complete to Trenton Leary for 4 yds to the TXSO 41 for a 1ST down - PV 0, TXSO 0",
+      "epa": 1.32,
+      "win_probability_before": 0.496,
+      "win_probability_after": 0.54,
+      "wpa": 0.044,
+      "play_id": "play_005",
+      "sequence": 5
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 41) Da'Veon Ford run for 4 yds to the TXSO 45 - PV 0, TXSO 0",
+      "epa": -0.1,
+      "win_probability_before": 0.54,
+      "win_probability_after": 0.54,
+      "wpa": 0.0,
+      "play_id": "play_006",
+      "sequence": 6
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(2nd & 6 at TXSO 45) KJ Cooper pass complete to Kerien Charlo for 14 yds to the PV 41 for a 1ST down - PV 0, TXSO 0",
+      "epa": 1.39,
+      "win_probability_before": 0.54,
+      "win_probability_after": 0.568,
+      "wpa": 0.028,
+      "play_id": "play_007",
+      "sequence": 7
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(1st & 10 at PV 41) Texas Southern Penalty, false start (-5 Yards) to the PV 46 - PV 0, TXSO 0",
+      "epa": -0.86,
+      "win_probability_before": 0.568,
+      "win_probability_after": 0.541,
+      "wpa": -0.027,
+      "play_id": "play_008",
+      "sequence": 8
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(1st & 15 at PV 46) KJ Cooper pass incomplete - PV 0, TXSO 0",
+      "epa": -0.8,
+      "win_probability_before": 0.541,
+      "win_probability_after": 0.518,
+      "wpa": -0.023,
+      "play_id": "play_009",
+      "sequence": 9
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(2nd & 15 at PV 46) KJ Cooper pass complete to Trenton Leary for no gain to the PV 46 - PV 0, TXSO 0",
+      "epa": -1.1,
+      "win_probability_before": 0.518,
+      "win_probability_after": 0.491,
+      "wpa": -0.027,
+      "play_id": "play_010",
+      "sequence": 10
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(3rd & 15 at PV 46) KJ Cooper pass complete to Roriyon Richardson for 36 yds to the PV 10 for a 1ST down - PV 0, TXSO 0",
+      "epa": 4.15,
+      "win_probability_before": 0.491,
+      "win_probability_after": 0.589,
+      "wpa": 0.098,
+      "play_id": "play_011",
+      "sequence": 11
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "hbcu",
+      "play_description": "(3rd & 10 at PV 12) Cameron Peters pass complete to Brandon Campbell for 9 yds to the PV 21 - PV 0, TXSO 0",
+      "epa": -0.14,
+      "win_probability_before": 0.493,
+      "win_probability_after": 0.51,
+      "wpa": 0.017,
+      "play_id": "play_012",
+      "sequence": 12
+    },
+    {
+      "time": "Q1 14:50",
+      "offense": "famu",
+      "play_description": "(Kickoff at PV 35) Carlos Villagomez kickoff for 65 yds , Trenton Leary return for 17 yds to the TXSO 17 Trenton Leary fumbled, recovered by TXSO Trenton Leary , return for no gain to the TXSO 17 - PV 0, TXSO 0",
+      "epa": -1.51,
+      "win_probability_before": 0.515,
+      "win_probability_after": 0.44,
+      "wpa": -0.075,
+      "play_id": "play_013",
+      "sequence": 13
+    },
+    {
+      "time": "Q1 9:03",
+      "offense": "famu",
+      "play_description": "(1st & Goal at PV 10) Da'Veon Ford run for 10 yds for a TD (Christian Avelar KICK) - PV 0, TXSO 7",
+      "epa": 1.88,
+      "win_probability_before": 0.56,
+      "win_probability_after": 0.682,
+      "wpa": 0.121,
+      "play_id": "play_014",
+      "sequence": 14
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(Kickoff at TXSO 35) Christian Avelar kickoff for 60 yds , Kellen Stewart return for 20 yds to the PV 45 Prairie View A&M Penalty, Offensive holding (Ja'Koby Banks) to the PV 15 - PV 0, TXSO 7",
+      "epa": -1.48,
+      "win_probability_before": 0.348,
+      "win_probability_after": 0.335,
+      "wpa": -0.013,
+      "play_id": "play_015",
+      "sequence": 15
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 15) Cameron Peters pass complete to Rodny Ojo for 8 yds to the PV 23 - PV 0, TXSO 7",
+      "epa": 0.35,
+      "win_probability_before": 0.343,
+      "win_probability_after": 0.345,
+      "wpa": 0.002,
+      "play_id": "play_016",
+      "sequence": 16
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(2nd & 2 at PV 23) Cameron Peters pass complete to Jyzaiah Rockwell for 12 yds to the PV 35 for a 1ST down - PV 0, TXSO 7",
+      "epa": 1.07,
+      "win_probability_before": 0.345,
+      "win_probability_after": 0.354,
+      "wpa": 0.009,
+      "play_id": "play_017",
+      "sequence": 17
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 35) Texas Southern Penalty, off-side (Yards) to the PV 35 - PV 0, TXSO 7",
+      "epa": 0.0,
+      "win_probability_before": 0.354,
+      "win_probability_after": 0.354,
+      "wpa": 0.0,
+      "play_id": "play_018",
+      "sequence": 18
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 35) Cameron Peters run for 1 yd to the PV 36 - PV 0, TXSO 7",
+      "epa": -0.61,
+      "win_probability_before": 0.354,
+      "win_probability_after": 0.357,
+      "wpa": 0.003,
+      "play_id": "play_019",
+      "sequence": 19
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(2nd & 9 at PV 36) Cameron Peters pass complete to Jyzaiah Rockwell for 6 yds to the PV 42 - PV 0, TXSO 7",
+      "epa": 0.18,
+      "win_probability_before": 0.357,
+      "win_probability_after": 0.355,
+      "wpa": -0.002,
+      "play_id": "play_020",
+      "sequence": 20
+    },
+    {
+      "time": "Q1 8:46",
+      "offense": "hbcu",
+      "play_description": "(3rd & 3 at PV 42) Cameron Peters run for 1 yd to the PV 43 - PV 0, TXSO 7",
+      "epa": -1.45,
+      "win_probability_before": 0.355,
+      "win_probability_after": 0.318,
+      "wpa": -0.037,
+      "play_id": "play_021",
+      "sequence": 21
+    },
+    {
+      "time": "Q1 2:00",
+      "offense": "hbcu",
+      "play_description": "(4th & 2 at PV 43) Cameron Peters pass complete to Kheagian Heckaman for 57 yds for a TD (Aiden Webb KICK) - PV 7, TXSO 7",
+      "epa": 7.96,
+      "win_probability_before": 0.318,
+      "win_probability_after": 0.531,
+      "wpa": 0.213,
+      "play_id": "play_022",
+      "sequence": 22
+    },
+    {
+      "time": "Q1 1:50",
+      "offense": "famu",
+      "play_description": "(Kickoff at PV 35) Carlos Villagomez kickoff for 58 yds , Trenton Leary return for 47 yds to the PV 46 - PV 7, TXSO 7",
+      "epa": 1.04,
+      "win_probability_before": 0.464,
+      "win_probability_after": 0.509,
+      "wpa": 0.045,
+      "play_id": "play_023",
+      "sequence": 23
+    },
+    {
+      "time": "Q1 1:50",
+      "offense": "famu",
+      "play_description": "(1st & 10 at PV 46) Atheen Renfro run for a loss of 3 yards to the PV 49 - PV 7, TXSO 7",
+      "epa": -1.34,
+      "win_probability_before": 0.516,
+      "win_probability_after": 0.49,
+      "wpa": -0.026,
+      "play_id": "play_024",
+      "sequence": 24
+    },
+    {
+      "time": "Q1 1:50",
+      "offense": "famu",
+      "play_description": "(2nd & 13 at PV 49) KJ Cooper pass incomplete to Roriyon Richardson - PV 7, TXSO 7",
+      "epa": -1.09,
+      "win_probability_before": 0.49,
+      "win_probability_after": 0.447,
+      "wpa": -0.043,
+      "play_id": "play_025",
+      "sequence": 25
+    },
+    {
+      "time": "Q1 1:50",
+      "offense": "famu",
+      "play_description": "(3rd & 13 at PV 49) KJ Cooper run for 1 yd to the PV 48 - PV 7, TXSO 7",
+      "epa": -1.34,
+      "win_probability_before": 0.447,
+      "win_probability_after": 0.422,
+      "wpa": -0.025,
+      "play_id": "play_026",
+      "sequence": 26
+    },
+    {
+      "time": "Q1 0:13",
+      "offense": "famu",
+      "play_description": "(4th & 12 at PV 48) Jeremy Ramirez punt for 36 yds - PV 7, TXSO 7",
+      "epa": 0.17,
+      "win_probability_before": 0.422,
+      "win_probability_after": 0.439,
+      "wpa": 0.017,
+      "play_id": "play_027",
+      "sequence": 27
+    },
+    {
+      "time": "Q1 0:13",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 12) Cameron Peters pass incomplete to Andre Dennis - PV 7, TXSO 7",
+      "epa": -0.79,
+      "win_probability_before": 0.561,
+      "win_probability_after": 0.53,
+      "wpa": -0.031,
+      "play_id": "play_028",
+      "sequence": 28
+    },
+    {
+      "time": "Q1 0:13",
+      "offense": "hbcu",
+      "play_description": "(2nd & 10 at PV 12) Cameron Peters pass incomplete - PV 7, TXSO 7",
+      "epa": -0.93,
+      "win_probability_before": 0.53,
+      "win_probability_after": 0.487,
+      "wpa": -0.043,
+      "play_id": "play_029",
+      "sequence": 29
+    },
+    {
+      "time": "Q2 14:49",
+      "offense": "hbcu",
+      "play_description": "(4th & 1 at PV 21) Aiden Webb punt for 45 yds - PV 7, TXSO 7",
+      "epa": 5.31,
+      "win_probability_before": 0.456,
+      "win_probability_after": 0.483,
+      "wpa": 0.027,
+      "play_id": "play_030",
+      "sequence": 30
+    },
+    {
+      "time": "Q2 14:49",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 34) run for no gain to the TXSO 34 - PV 7, TXSO 7",
+      "epa": -0.54,
+      "win_probability_before": 0.624,
+      "win_probability_after": 0.605,
+      "wpa": -0.019,
+      "play_id": "play_031",
+      "sequence": 31
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(2nd & 10 at TXSO 34) Brandon Campbell run for 7 yds to the TXSO 27 - PV 7, TXSO 7",
+      "epa": 0.28,
+      "win_probability_before": 0.605,
+      "win_probability_after": 0.605,
+      "wpa": 0.0,
+      "play_id": "play_032",
+      "sequence": 32
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(3rd & 3 at TXSO 27) Cameron Peters pass incomplete - PV 7, TXSO 7",
+      "epa": -1.73,
+      "win_probability_before": 0.605,
+      "win_probability_after": 0.584,
+      "wpa": -0.021,
+      "play_id": "play_033",
+      "sequence": 33
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(4th & 3 at TXSO 27) Texas Southern Penalty, off-side (5 Yards) to the TXSO 22 for a 1ST down - PV 7, TXSO 7",
+      "epa": 2.77,
+      "win_probability_before": 0.584,
+      "win_probability_after": 0.638,
+      "wpa": 0.054,
+      "play_id": "play_034",
+      "sequence": 34
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 22) Cameron Peters run for 4 yds to the TXSO 18 - PV 7, TXSO 7",
+      "epa": -0.15,
+      "win_probability_before": 0.638,
+      "win_probability_after": 0.637,
+      "wpa": -0.001,
+      "play_id": "play_035",
+      "sequence": 35
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(2nd & 6 at TXSO 18) Cameron Peters pass complete to Jyzaiah Rockwell for 1 yd to the TXSO 17 - PV 7, TXSO 7",
+      "epa": -0.46,
+      "win_probability_before": 0.638,
+      "win_probability_after": 0.627,
+      "wpa": -0.011,
+      "play_id": "play_036",
+      "sequence": 36
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(3rd & 5 at TXSO 17) Brandon Campbell run for 4 yds to the TXSO 13 - PV 7, TXSO 7",
+      "epa": -0.2,
+      "win_probability_before": 0.627,
+      "win_probability_after": 0.613,
+      "wpa": -0.014,
+      "play_id": "play_037",
+      "sequence": 37
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(4th & 1 at TXSO 13) Brandon Campbell run for 3 yds to the TXSO 10 for a 1ST down - PV 7, TXSO 7",
+      "epa": 1.3,
+      "win_probability_before": 0.612,
+      "win_probability_after": 0.644,
+      "wpa": 0.032,
+      "play_id": "play_038",
+      "sequence": 38
+    },
+    {
+      "time": "Q2 13:09",
+      "offense": "hbcu",
+      "play_description": "(1st & Goal at TXSO 10) Cameron Peters run for 5 yds to the TXSO 5 - PV 7, TXSO 7",
+      "epa": 0.15,
+      "win_probability_before": 0.644,
+      "win_probability_after": 0.646,
+      "wpa": 0.002,
+      "play_id": "play_039",
+      "sequence": 39
+    },
+    {
+      "time": "Q2 9:11",
+      "offense": "hbcu",
+      "play_description": "(2nd & Goal at TXSO 5) Cameron Franklin run for 5 yds for a TD (Aiden Webb KICK) - PV 14, TXSO 7",
+      "epa": 1.71,
+      "win_probability_before": 0.646,
+      "win_probability_after": 0.722,
+      "wpa": 0.076,
+      "play_id": "play_040",
+      "sequence": 40
+    },
+    {
+      "time": "Q2 8:58",
+      "offense": "famu",
+      "play_description": "(Kickoff at PV 35) Carlos Villagomez kickoff for 61 yds , Kerien Charlo return for 76 yds to the PV 20 - PV 14, TXSO 7",
+      "epa": 2.88,
+      "win_probability_before": 0.282,
+      "win_probability_after": 0.35,
+      "wpa": 0.068,
+      "play_id": "play_041",
+      "sequence": 41
+    },
+    {
+      "time": "Q2 8:52",
+      "offense": "famu",
+      "play_description": "(1st & 10 at PV 20) Atheen Renfro run for 20 yds for a TD (Christian Avelar KICK) - PV 14, TXSO 14",
+      "epa": 2.66,
+      "win_probability_before": 0.371,
+      "win_probability_after": 0.447,
+      "wpa": 0.075,
+      "play_id": "play_042",
+      "sequence": 42
+    },
+    {
+      "time": "Q2 8:52",
+      "offense": "hbcu",
+      "play_description": "(Kickoff at TXSO 35) Christian Avelar kickoff Texas Southern Penalty, unsportsmanlike conduct (-15 Yards) to the TXSO 20 - PV 14, TXSO 14",
+      "epa": -0.27,
+      "win_probability_before": 0.548,
+      "win_probability_after": 0.526,
+      "wpa": -0.022,
+      "play_id": "play_043",
+      "sequence": 43
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(Kickoff at TXSO 20) Christian Avelar kickoff for 64 yds , Kellen Stewart return for 26 yds to the PV 42 - PV 14, TXSO 14",
+      "epa": 0.13,
+      "win_probability_before": 0.546,
+      "win_probability_after": 0.57,
+      "wpa": 0.024,
+      "play_id": "play_044",
+      "sequence": 44
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 42) Brandon Campbell run for 5 yds to the PV 47 - PV 14, TXSO 14",
+      "epa": 0.05,
+      "win_probability_before": 0.576,
+      "win_probability_after": 0.575,
+      "wpa": -0.001,
+      "play_id": "play_045",
+      "sequence": 45
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(2nd & 5 at PV 47) Andre Dennis run for 3 yds to the 50 yard line - PV 14, TXSO 14",
+      "epa": -0.42,
+      "win_probability_before": 0.576,
+      "win_probability_after": 0.573,
+      "wpa": -0.003,
+      "play_id": "play_046",
+      "sequence": 46
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(3rd & 2 at 50) Cameron Peters run for 6 yds to the TXSO 44 for a 1ST down - PV 14, TXSO 14",
+      "epa": 1.32,
+      "win_probability_before": 0.572,
+      "win_probability_after": 0.593,
+      "wpa": 0.021,
+      "play_id": "play_047",
+      "sequence": 47
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 44) Cameron Peters pass complete to Kheagian Heckaman for 16 yds to the TXSO 28 for a 1ST down - PV 14, TXSO 14",
+      "epa": 1.02,
+      "win_probability_before": 0.593,
+      "win_probability_after": 0.618,
+      "wpa": 0.025,
+      "play_id": "play_048",
+      "sequence": 48
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 28) Cameron Peters pass incomplete - PV 14, TXSO 14",
+      "epa": -0.53,
+      "win_probability_before": 0.617,
+      "win_probability_after": 0.61,
+      "wpa": -0.007,
+      "play_id": "play_049",
+      "sequence": 49
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(2nd & 10 at TXSO 28) run for 7 yds to the TXSO 21 - PV 14, TXSO 14",
+      "epa": 0.2,
+      "win_probability_before": 0.61,
+      "win_probability_after": 0.614,
+      "wpa": 0.004,
+      "play_id": "play_050",
+      "sequence": 50
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(3rd & 3 at TXSO 21) Cameron Peters pass complete to Rodny Ojo for 7 yds to the TXSO 14 for a 1ST down - PV 14, TXSO 14",
+      "epa": 1.03,
+      "win_probability_before": 0.614,
+      "win_probability_after": 0.637,
+      "wpa": 0.023,
+      "play_id": "play_051",
+      "sequence": 51
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 14) Chase Bingmon run for 3 yds to the TXSO 11 - PV 14, TXSO 14",
+      "epa": -0.31,
+      "win_probability_before": 0.641,
+      "win_probability_after": 0.628,
+      "wpa": -0.013,
+      "play_id": "play_052",
+      "sequence": 52
+    },
+    {
+      "time": "Q2 8:47",
+      "offense": "hbcu",
+      "play_description": "(2nd & 7 at TXSO 11) Cameron Peters pass incomplete - PV 14, TXSO 14",
+      "epa": -0.76,
+      "win_probability_before": 0.629,
+      "win_probability_after": 0.618,
+      "wpa": -0.011,
+      "play_id": "play_053",
+      "sequence": 53
+    },
+    {
+      "time": "Q2 4:53",
+      "offense": "hbcu",
+      "play_description": "(3rd & 7 at TXSO 11) Cameron Peters pass incomplete to Rodny Ojo, broken up by Justice Ugo - PV 14, TXSO 14",
+      "epa": -1.12,
+      "win_probability_before": 0.617,
+      "win_probability_after": 0.577,
+      "wpa": -0.04,
+      "play_id": "play_054",
+      "sequence": 54
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "hbcu",
+      "play_description": "(4th & 7 at TXSO 11) Aiden Webb 28 yd FG MISSED - PV 14, TXSO 14",
+      "epa": -3.86,
+      "win_probability_before": 0.577,
+      "win_probability_after": 0.49,
+      "wpa": -0.087,
+      "play_id": "play_055",
+      "sequence": 55
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 20) Atheen Renfro run for no gain to the TXSO 20 for a 1ST down Prairie View A&M Penalty, face mask (15 yards) (Ja'Koby Banks) to the TXSO 35 for a 1ST down - PV 14, TXSO 14",
+      "epa": 0.78,
+      "win_probability_before": 0.51,
+      "win_probability_after": 0.529,
+      "wpa": 0.019,
+      "play_id": "play_056",
+      "sequence": 56
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 35) Atheen Renfro run for 5 yds to the TXSO 40 - PV 14, TXSO 14",
+      "epa": 0.06,
+      "win_probability_before": 0.528,
+      "win_probability_after": 0.533,
+      "wpa": 0.005,
+      "play_id": "play_057",
+      "sequence": 57
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(2nd & 5 at TXSO 40) KJ Cooper pass incomplete to Trenton Leary, broken up by Ashton Ojiaku - PV 14, TXSO 14",
+      "epa": -0.66,
+      "win_probability_before": 0.533,
+      "win_probability_after": 0.504,
+      "wpa": -0.029,
+      "play_id": "play_058",
+      "sequence": 58
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(3rd & 5 at TXSO 40) KJ Cooper pass complete to Roriyon Richardson for 6 yds to the TXSO 46 for a 1ST down - PV 14, TXSO 14",
+      "epa": 1.14,
+      "win_probability_before": 0.505,
+      "win_probability_after": 0.541,
+      "wpa": 0.036,
+      "play_id": "play_059",
+      "sequence": 59
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 46) run for 3 yds to the TXSO 49 - PV 14, TXSO 14",
+      "epa": -0.37,
+      "win_probability_before": 0.541,
+      "win_probability_after": 0.537,
+      "wpa": -0.004,
+      "play_id": "play_060",
+      "sequence": 60
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(2nd & 7 at TXSO 49) Atheen Renfro run for no gain to the TXSO 49 Texas Southern Penalty, Offensive holding (-10 Yards) to the TXSO 39 - PV 14, TXSO 14",
+      "epa": -0.87,
+      "win_probability_before": 0.537,
+      "win_probability_after": 0.502,
+      "wpa": -0.035,
+      "play_id": "play_061",
+      "sequence": 61
+    },
+    {
+      "time": "Q2 2:44",
+      "offense": "famu",
+      "play_description": "(2nd & 17 at TXSO 39) KJ Cooper pass incomplete - PV 14, TXSO 14",
+      "epa": -0.59,
+      "win_probability_before": 0.503,
+      "win_probability_after": 0.468,
+      "wpa": -0.035,
+      "play_id": "play_062",
+      "sequence": 62
+    },
+    {
+      "time": "Q2 2:38",
+      "offense": "famu",
+      "play_description": "(3rd & 17 at TXSO 39) KJ Cooper pass complete to Kordell Rodgers for 2 yds to the TXSO 41 - PV 14, TXSO 14",
+      "epa": -0.88,
+      "win_probability_before": 0.468,
+      "win_probability_after": 0.429,
+      "wpa": -0.039,
+      "play_id": "play_063",
+      "sequence": 63
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "famu",
+      "play_description": "(4th & 15 at TXSO 41) Jeremy Ramirez punt for 37 yds , Andre Dennis returns for 1 yd to the PV 23 - PV 14, TXSO 14",
+      "epa": -1.07,
+      "win_probability_before": 0.429,
+      "win_probability_after": 0.427,
+      "wpa": -0.002,
+      "play_id": "play_064",
+      "sequence": 64
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 23) Cameron Peters pass complete to Jyzaiah Rockwell for 33 yds to the TXSO 44 for a 1ST down - PV 14, TXSO 14",
+      "epa": 1.48,
+      "win_probability_before": 0.573,
+      "win_probability_after": 0.614,
+      "wpa": 0.041,
+      "play_id": "play_065",
+      "sequence": 65
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 44) Cameron Peters pass incomplete - PV 14, TXSO 14",
+      "epa": -0.38,
+      "win_probability_before": 0.614,
+      "win_probability_after": 0.596,
+      "wpa": -0.018,
+      "play_id": "play_066",
+      "sequence": 66
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "play_description": "(2nd & 10 at TXSO 44) Chase Bingmon run for 4 yds to the TXSO 40 - PV 14, TXSO 14",
+      "epa": -0.19,
+      "win_probability_before": 0.597,
+      "win_probability_after": 0.588,
+      "wpa": -0.009,
+      "play_id": "play_067",
+      "sequence": 67
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "play_description": "(3rd & 6 at TXSO 40) Cameron Peters pass incomplete - PV 14, TXSO 14",
+      "epa": -1.27,
+      "win_probability_before": 0.587,
+      "win_probability_after": 0.545,
+      "wpa": -0.042,
+      "play_id": "play_068",
+      "sequence": 68
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "play_description": "(4th & 6 at TXSO 40) Prairie View A&M Penalty, delay of game (Ja'Koby Banks) to the TXSO 45 - PV 14, TXSO 14",
+      "epa": -0.65,
+      "win_probability_before": 0.545,
+      "win_probability_after": 0.52,
+      "wpa": -0.025,
+      "play_id": "play_069",
+      "sequence": 69
+    },
+    {
+      "time": "Q2 1:42",
+      "offense": "hbcu",
+      "play_description": "(4th & 11 at TXSO 45) Adam Atwell punt for 29 yds - PV 14, TXSO 14",
+      "epa": -0.3,
+      "win_probability_before": 0.52,
+      "win_probability_after": 0.571,
+      "wpa": 0.051,
+      "play_id": "play_070",
+      "sequence": 70
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at 50) Chase Bingmon run for 14 yds to the TXSO 36 for a 1ST down - PV 14, TXSO 14",
+      "epa": 0.94,
+      "win_probability_before": 0.571,
+      "win_probability_after": 0.592,
+      "wpa": 0.021,
+      "play_id": "play_071",
+      "sequence": 71
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at TXSO 36) Brandon Campbell run for 1 yd to the TXSO 35 - PV 14, TXSO 14",
+      "epa": -0.71,
+      "win_probability_before": 0.592,
+      "win_probability_after": 0.583,
+      "wpa": -0.009,
+      "play_id": "play_072",
+      "sequence": 72
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "hbcu",
+      "play_description": "(2nd & 9 at TXSO 35) Cameron Peters pass incomplete Prairie View A&M Penalty, Offensive holding (Ja'Koby Banks) to the TXSO 45 - PV 14, TXSO 14",
+      "epa": -1.21,
+      "win_probability_before": 0.583,
+      "win_probability_after": 0.545,
+      "wpa": -0.038,
+      "play_id": "play_073",
+      "sequence": 73
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "hbcu",
+      "play_description": "(2nd & 19 at TXSO 45) Cameron Peters pass complete to Jyzaiah Rockwell for 4 yds to the TXSO 41 - PV 14, TXSO 14",
+      "epa": -0.65,
+      "win_probability_before": 0.545,
+      "win_probability_after": 0.534,
+      "wpa": -0.011,
+      "play_id": "play_074",
+      "sequence": 74
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "hbcu",
+      "play_description": "(3rd & 15 at TXSO 41) Cameron Peters pass complete to Brandon Campbell for no gain to the TXSO 34 - PV 14, TXSO 14",
+      "epa": -0.86,
+      "win_probability_before": 0.534,
+      "win_probability_after": 0.504,
+      "wpa": -0.03,
+      "play_id": "play_075",
+      "sequence": 75
+    },
+    {
+      "time": "Q3 15:00",
+      "offense": "famu",
+      "play_description": "(2nd & 24 at PV 46) Da'Veon Ford run for 3 yds to the PV 43 - PV 14, TXSO 14",
+      "epa": -0.73,
+      "win_probability_before": 0.546,
+      "win_probability_after": 0.515,
+      "wpa": -0.031,
+      "play_id": "play_076",
+      "sequence": 76
+    },
+    {
+      "time": "Q3 14:19",
+      "offense": "hbcu",
+      "play_description": "(Kickoff at TXSO 35) kickoff for 15 yds - PV 14, TXSO 14",
+      "epa": 1.79,
+      "win_probability_before": 0.554,
+      "win_probability_after": 0.587,
+      "wpa": 0.033,
+      "play_id": "play_077",
+      "sequence": 77
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "hbcu",
+      "play_description": "(4th & 8 at TXSO 34) Adam Atwell punt for 34 yds - PV 14, TXSO 14",
+      "epa": -1.67,
+      "win_probability_before": 0.537,
+      "win_probability_after": 0.476,
+      "wpa": -0.061,
+      "play_id": "play_078",
+      "sequence": 78
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 20) Atheen Renfro run for 2 yds to the TXSO 22 - PV 14, TXSO 14",
+      "epa": -0.59,
+      "win_probability_before": 0.524,
+      "win_probability_after": 0.517,
+      "wpa": -0.007,
+      "play_id": "play_079",
+      "sequence": 79
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "play_description": "(2nd & 8 at TXSO 22) KJ Cooper pass incomplete to Trenton Leary for a 1ST down Prairie View A&M Penalty, Defensive pass interference (Eric Zachery) to the TXSO 37 for a 1ST down - PV 14, TXSO 14",
+      "epa": 1.78,
+      "win_probability_before": 0.517,
+      "win_probability_after": 0.557,
+      "wpa": 0.04,
+      "play_id": "play_080",
+      "sequence": 80
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "play_description": "(1st & 10 at TXSO 37) Atheen Renfro run for 5 yds to the TXSO 42 - PV 14, TXSO 14",
+      "epa": 0.08,
+      "win_probability_before": 0.557,
+      "win_probability_after": 0.564,
+      "wpa": 0.007,
+      "play_id": "play_081",
+      "sequence": 81
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "play_description": "(2nd & 5 at TXSO 42) Atheen Renfro run for a loss of 5 yards to the TXSO 37 - PV 14, TXSO 14",
+      "epa": -1.66,
+      "win_probability_before": 0.564,
+      "win_probability_after": 0.506,
+      "wpa": -0.058,
+      "play_id": "play_082",
+      "sequence": 82
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "play_description": "(3rd & 10 at TXSO 37) KJ Cooper pass incomplete to Trenton Leary - PV 14, TXSO 14",
+      "epa": -1.34,
+      "win_probability_before": 0.506,
+      "win_probability_after": 0.451,
+      "wpa": -0.055,
+      "play_id": "play_083",
+      "sequence": 83
+    },
+    {
+      "time": "Q3 12:02",
+      "offense": "famu",
+      "play_description": "(4th & 10 at TXSO 37) Prairie View A&M Penalty, Offensive holding (Yards) to the TXSO 37 - PV 14, TXSO 14",
+      "epa": -0.07,
+      "win_probability_before": 0.451,
+      "win_probability_after": 0.457,
+      "wpa": 0.006,
+      "play_id": "play_084",
+      "sequence": 84
+    },
+    {
+      "time": "Q3 9:35",
+      "offense": "famu",
+      "play_description": "(4th & 10 at TXSO 37) Jeremy Ramirez punt for 19 yds - PV 14, TXSO 14",
+      "epa": -1.59,
+      "win_probability_before": 0.457,
+      "win_probability_after": 0.432,
+      "wpa": -0.025,
+      "play_id": "play_085",
+      "sequence": 85
+    },
+    {
+      "time": "Q3 9:35",
+      "offense": "hbcu",
+      "play_description": "(1st & 10 at PV 44) Chase Bingmon run for no gain to the PV 44 Prairie View A&M Penalty, Offensive holding (Ja'Koby Banks) to the PV 34 - PV 14, TXSO 14",
+      "epa": -1.04,
+      "win_probability_before": 0.568,
+      "win_probability_after": 0.536,
+      "wpa": -0.032,
+      "play_id": "play_086",
+      "sequence": 86
+    }
+  ],
+  "big_plays": [
+    {
+      "time": "Q1 2:00",
+      "offense": "hbcu",
+      "play_description": "(4th & 2 at PV 43) Cameron Peters pass complete to Kheagian Heckaman for 57 yds for a TD (Aiden Webb KICK) - PV 7, TXSO 7",
+      "epa": 7.96,
+      "win_probability_before": 0.318,
+      "win_probability_after": 0.531,
+      "wpa": 0.213,
+      "play_id": "play_001",
+      "sequence": 15
+    },
+    {
+      "time": "Q2 14:49",
+      "offense": "hbcu",
+      "play_description": "(4th & 1 at PV 21) Aiden Webb punt for 45 yds - PV 7, TXSO 7",
+      "epa": 5.31,
+      "win_probability_before": 0.456,
+      "win_probability_after": 0.483,
+      "wpa": 0.027,
+      "play_id": "play_042",
+      "sequence": 42
+    },
+    {
+      "time": "Q1 15:00",
+      "offense": "famu",
+      "play_description": "(3rd & 15 at PV 46) KJ Cooper pass complete to Roriyon Richardson for 36 yds to the PV 10 for a 1ST down - PV 0, TXSO 0",
+      "epa": 4.15,
+      "win_probability_before": 0.491,
+      "win_probability_after": 0.589,
+      "wpa": 0.098,
+      "play_id": "play_008",
+      "sequence": 8
+    },
+    {
+      "time": "Q4 1:16",
+      "offense": "famu",
+      "play_description": "(2nd & 11 at PV 15) KJ Cooper pass complete to Roriyon Richardson for 15 yds for a TD (Christian Avelar KICK) - PV 16, TXSO 21",
+      "epa": 3.62,
+      "win_probability_before": 0.699,
+      "win_probability_after": 0.957,
+      "wpa": 0.258,
+      "play_id": "play_089",
+      "sequence": 89
+    }
+  ],
+  "most_important_plays": [
+    {
+      "time": "Q4 0:11",
+      "offense": "hbcu",
+      "play_description": "(1st & Goal at TXSO 17) Cameron Peters pass complete to Rodny Ojo for no gain to the TXSO 17 - PV 16, TXSO 21",
+      "epa": -2.5,
+      "win_probability_before": 0.249,
+      "win_probability_after": 1.0,
+      "wpa": 0.751,
+      "play_id": "play_095",
+      "sequence": 95
+    },
+    {
+      "time": "Q4 1:09",
+      "offense": "hbcu",
+      "play_description": "(Kickoff at TXSO 35) Jeremy Ramirez kickoff for 39 yds, Kellen Stewart return for no gain to the PV 35 Prairie View A&M Penalty, Offensive holding (Ja'Koby Banks) to the PV 16 - PV 16, TXSO 21",
+      "epa": -0.67,
+      "win_probability_before": 0.857,
+      "win_probability_after": 0.154,
+      "wpa": -0.703,
+      "play_id": "play_088",
+      "sequence": 88
+    },
+    {
+      "time": "Q4 0:11",
+      "offense": "hbcu",
+      "play_description": "(1st & Goal at TXSO 2) Cameron Peters pass incomplete Prairie View A&M Penalty, Offensive pass interference (Ja'Koby Banks) to the TXSO 17 - PV 16, TXSO 21",
+      "epa": -3.18,
+      "win_probability_before": 0.702,
+      "win_probability_after": 0.249,
+      "wpa": -0.453,
+      "play_id": "play_094",
+      "sequence": 94
+    },
+    {
+      "time": "Q4 0:11",
+      "offense": "hbcu",
+      "play_description": "(3rd & Goal at TXSO 10) Cameron Peters pass incomplete for a 1ST down Texas Southern Penalty, Defensive pass interference (8 Yards) to the TXSO 2 for a 1ST down - PV 16, TXSO 21",
+      "epa": 2.53,
+      "win_probability_before": 0.3,
+      "win_probability_after": 0.702,
+      "wpa": 0.402,
+      "play_id": "play_096",
+      "sequence": 96
+    }
+  ],
+  "win_probability_chart": [
+    {
+      "time": "0:00",
+      "quarter": 1,
+      "clock": "15:00",
+      "score": "0-0",
+      "hbcu_wp": 0.5,
+      "famu_wp": 0.5,
+      "play_id": "kickoff"
+    },
+    {
+      "time": "15:00",
+      "quarter": 1,
+      "clock": "0:00",
+      "score": "7-7",
+      "hbcu_wp": 0.531,
+      "famu_wp": 0.469,
+      "play_id": "td_heckaman"
+    },
+    {
+      "time": "2:00",
+      "quarter": 2,
+      "clock": "0:00",
+      "score": "14-7",
+      "hbcu_wp": 0.612,
+      "famu_wp": 0.388,
+      "play_id": "td_franklin"
+    },
+    {
+      "time": "0:00",
+      "quarter": 4,
+      "clock": "1:16",
+      "score": "21-14",
+      "hbcu_wp": 0.699,
+      "famu_wp": 0.301,
+      "play_id": "td_richardson"
+    },
+    {
+      "time": "0:00",
+      "quarter": 4,
+      "clock": "0:00",
+      "score": "28-21",
+      "hbcu_wp": 1.0,
+      "famu_wp": 0.0,
+      "play_id": "final"
+    }
+  ],
+  "production_scores": {
+    "status": "not_implemented",
+    "note": "Production Score & PAR will be available when Pipeline C (Analytics & Identity Modeling) is implemented",
+    "planned_formulas": {
+      "qb_production_score": {
+        "passing_tds": 3.0,
+        "passing_attempts": 0.12,
+        "passing_completions": 0.21,
+        "passing_yards": 0.03,
+        "passing_interceptions": -5.46,
+        "rushing_tds": 3.0,
+        "rushing_attempts": 0.09,
+        "rushing_yards": 0.03
+      },
+      "rb_production_score": {
+        "rushing_tds": 3.0,
+        "rushing_attempts": 0.09,
+        "rushing_yards": 0.03,
+        "rushing_fumbles": -8.85,
+        "receiving_tds": 3.0,
+        "receiving_receptions": 0.21,
+        "receiving_yards": 0.03
+      },
+      "par_calculation": "production_score - position_median"
+    }
+  }
+}

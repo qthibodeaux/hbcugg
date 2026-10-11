@@ -1,0 +1,189 @@
+{
+  "_note": "Mock payload for frontend layout work, matching PLAYER_STATS_ADVANCED_INVENTORY_2026-08-21.md. Fields marked ready in the inventory use realistic shapes/values pulled from real field names. Fields marked unbuilt are illustrative only -- the numbers are placeholders, the computation doesn't exist yet.",
+  "player_id": "PERS_00099001",
+  "player_key": "PERS_00099001",
+  "name": "Cam Peters",
+  "team_id": "swacjsu",
+  "team_name": "Jackson State",
+  "position": "QB",
+  "jersey_number": 11,
+  "class_year": "Junior",
+  "season": 2025,
+
+  "stats_tab": {
+    "headline_snapshot": [
+      { "label": "Pass Yards", "value": 2841, "conference_rank": 3 },
+      { "label": "Pass TDs", "value": 24, "conference_rank": 2 },
+      { "label": "Completion %", "value": 64.7, "conference_rank": 5 },
+      { "label": "Rush Yards", "value": 412, "conference_rank": 8 }
+    ],
+
+    "production_grid": {
+      "season": {
+        "passing": {
+          "attempts": 312, "completions": 202, "yards": 2841, "touchdowns": 24,
+          "interceptions": 7, "sacks_taken": 18, "sack_yards_lost": 121
+        },
+        "rushing": {
+          "attempts": 89, "yards": 412, "touchdowns": 5, "fumbles": 2
+        }
+      },
+      "career": {
+        "_status": "needs aggregation -- season sums joined via career_profiles.json player_key",
+        "seasons_played": 2,
+        "passing": { "attempts": 540, "completions": 342, "yards": 4655, "touchdowns": 38, "interceptions": 13 },
+        "rushing": { "attempts": 151, "yards": 688, "touchdowns": 9 }
+      }
+    },
+
+    "role_usage": {
+      "_status": "unbuilt -- carry/target/snap share not yet computed",
+      "snap_share": null,
+      "dropback_share": null
+    },
+
+    "game_log": [
+      {
+        "week": 8, "date": "2025-10-18", "opponent": "swacaamu", "result": "W 28-21",
+        "passing": {
+          "attempts": 34, "completions": 24, "yards": 289, "touchdowns": 3, "interceptions": 0,
+          "sacks_taken": 2, "sack_yards_lost": 14,
+          "short_attempts": 14, "short_completions": 11,
+          "medium_attempts": 12, "medium_completions": 9,
+          "deep_attempts": 8, "deep_completions": 4,
+          "red_zone_attempts": 5, "red_zone_completions": 4, "red_zone_yards": 31, "red_zone_touchdowns": 2,
+          "third_down_attempts": 9, "third_down_completions": 6,
+          "pressure_attempts": 6, "pressure_completions": 3, "pressure_yards": 22,
+          "pass_heat_map": {
+            "short_left": 4, "short_middle": 5, "short_right": 5,
+            "medium_left": 3, "medium_middle": 4, "medium_right": 5,
+            "deep_left": 3, "deep_middle": 2, "deep_right": 3
+          }
+        },
+        "rushing": {
+          "attempts": 6, "yards": 41, "touchdowns": 1, "fumbles": 0,
+          "left_attempts": 2, "left_yards": 15, "middle_attempts": 3, "middle_yards": 22, "right_attempts": 1, "right_yards": 4
+        }
+      },
+      {
+        "week": 9, "date": "2025-10-25", "opponent": "swacalc", "result": "L 17-24",
+        "passing": {
+          "attempts": 41, "completions": 22, "yards": 245, "touchdowns": 1, "interceptions": 2,
+          "sacks_taken": 4, "sack_yards_lost": 29,
+          "short_attempts": 19, "short_completions": 13,
+          "medium_attempts": 14, "medium_completions": 6,
+          "deep_attempts": 8, "deep_completions": 3,
+          "red_zone_attempts": 2, "red_zone_completions": 1, "red_zone_yards": 6, "red_zone_touchdowns": 0,
+          "third_down_attempts": 12, "third_down_completions": 5,
+          "pressure_attempts": 9, "pressure_completions": 2, "pressure_yards": 11,
+          "pass_heat_map": {
+            "short_left": 5, "short_middle": 6, "short_right": 8,
+            "medium_left": 4, "medium_middle": 5, "medium_right": 5,
+            "deep_left": 3, "deep_middle": 2, "deep_right": 3
+          }
+        },
+        "rushing": {
+          "attempts": 5, "yards": 12, "touchdowns": 0, "fumbles": 1,
+          "left_attempts": 1, "left_yards": 3, "middle_attempts": 3, "middle_yards": 6, "right_attempts": 1, "right_yards": 3
+        }
+      }
+    ],
+
+    "charts": {
+      "production_by_game": [
+        { "week": 8, "value": 289 },
+        { "week": 9, "value": 245 }
+      ],
+      "percentile_trend": {
+        "_status": "needs aggregation -- percentile-vs-position-group not yet computed",
+        "by_week": [
+          { "week": 8, "percentile": null },
+          { "week": 9, "percentile": null }
+        ]
+      }
+    }
+  },
+
+  "advanced_tab": {
+    "percentile_radar": {
+      "_status": "mix of ready components (season sums) and unbuilt (percentile conversion)",
+      "axes": [
+        { "label": "Completion %", "value": 64.7, "percentile": null },
+        { "label": "TD:INT Ratio", "value": 3.43, "percentile": null },
+        { "label": "Explosive Pass Rate", "value": null, "percentile": null, "status": "needs aggregation" },
+        { "label": "Pressure Completion %", "value": 41.2, "percentile": null },
+        { "label": "Called-Upon Share", "value": null, "percentile": null, "status": "unbuilt" },
+        { "label": "Opponent-Adjusted YPA", "value": null, "percentile": null, "status": "unbuilt" }
+      ]
+    },
+
+    "situational_splits_season": {
+      "passing": {
+        "red_zone": { "attempts": 34, "completions": 26, "yards": 198, "touchdowns": 14 },
+        "third_down": { "attempts": 71, "completions": 39 },
+        "pressure": { "attempts": 52, "completions": 19, "yards": 133 }
+      }
+    },
+
+    "called_upon_share": {
+      "_status": "unbuilt -- requires play-participant x enriched.derived join (money_down, third_and_short/medium/long, standard_down, early_down, is_garbage_time_sp_plus, is_competitive_time)",
+      "early_down_standard_distance": {
+        "share_of_team_dropbacks": null,
+        "success_rate_on_subset": null,
+        "sample_size": null
+      },
+      "money_down": {
+        "share_of_team_dropbacks": null,
+        "success_rate_on_subset": null,
+        "sample_size": null
+      }
+    },
+
+    "opponent_adjusted": {
+      "_status": "unbuilt for player level -- team-level as_of_rating exists in formula1_ridge_panel.py but is discarded after averaging; needs per-game exposure + join to player log by date",
+      "by_game": [
+        { "week": 8, "opponent": "swacaamu", "opponent_strength_percentile": null, "adjusted_ypa": null },
+        { "week": 9, "opponent": "swacalc", "opponent_strength_percentile": null, "adjusted_ypa": null }
+      ]
+    },
+
+    "pocket_management": {
+      "_status": "needs aggregation -- fields exist on passing already, just never split into a standalone display category",
+      "season": { "sacks_taken": 18, "sack_yards_lost": 121, "sack_rate": 5.5 }
+    },
+
+    "field_maps": {
+      "rush_heat_map_season": { "left": { "attempts": 24, "yards": 118 }, "middle": { "attempts": 41, "yards": 201 }, "right": { "attempts": 24, "yards": 93 } },
+      "pass_heat_map_season": {
+        "short_left": 38, "short_middle": 44, "short_right": 46,
+        "medium_left": 29, "medium_middle": 31, "medium_right": 33,
+        "deep_left": 21, "deep_middle": 18, "deep_right": 22
+      }
+    },
+
+    "component_breakdown": {
+      "_status": "unbuilt -- same join as called_upon_share",
+      "by_game": [
+        { "week": 8, "standard_down": null, "money_down": null, "garbage_time": null },
+        { "week": 9, "standard_down": null, "money_down": null, "garbage_time": null }
+      ]
+    },
+
+    "trajectory": {
+      "career_profile": {
+        "career_id": "CAREER_00004821",
+        "transfer_detected": false,
+        "name_collision": false,
+        "seasons": [2024, 2025]
+      },
+      "role_change_over_time": { "_status": "unbuilt, blocked on called_upon_share" },
+      "coaching_continuity_overlay": { "_status": "needs aggregation -- team_trajectories.json has this at team level, not yet joined to player timeline" }
+    },
+
+    "compare_ready": true,
+
+    "position_specific": {
+      "_note": "QB -- no OL/DL-style module applies here"
+    }
+  }
+}

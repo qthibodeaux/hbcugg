@@ -1,0 +1,1326 @@
+{
+  "teams": [
+    {
+      "id": "alcorn",
+      "exportId": "swacalc25",
+      "name": "Alcorn State",
+      "fullName": "Alcorn State University",
+      "shortName": "Alcorn",
+      "displayName": "Alcorn",
+      "bannerShort": "ASU",
+      "mascot": "Braves",
+      "conference": "SWAC",
+      "division": "West",
+      "city": "Lorman",
+      "state": "MS",
+      "location": "Lorman, MS",
+      "founded": 1871,
+      "enrollment": 3700,
+      "stadium": "Spinks-Casem Stadium",
+      "stadiumCapacity": 10000,
+      "colors": {
+        "primary": "#5C068C",
+        "secondary": "#FFD100",
+        "accent": null
+      },
+      "logo": "/assets/swacalc.svg",
+      "website": "https://alcornsports.com",
+      "socialHandles": {
+        "twitter": "@AlcornSports",
+        "instagram": "@alcornsports"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "motto": "For the Love of Truth",
+        "location": {
+          "campusNickname": "The Hill",
+          "campusType": "Rural"
+        },
+        "stadium": {
+          "name": "Jack Spinks-Marino Casem Stadium",
+          "surface": "Natural Grass",
+          "built": 1992,
+          "recordAttendance": 26500,
+          "notableFeature": "Built in 1992 to replace historic Henderson Stadium; rededicated in 2011 to honor NFL pioneer Jack Spinks and legendary coach Marino Casem; record crowd of 26,500 witnessed Steve McNair break the NCAA total offense record in 1994"
+        },
+        "marching_band": {
+          "bandName": "Sounds of Dyn-O-Mite",
+          "bandNickname": "SOD",
+          "founded": 1964,
+          "size": 180,
+          "signatureSelection": "Dyn-O-Mite",
+          "danceTeamName": "Detonators",
+          "flagLineName": "Golden Girls",
+          "drumMajorStyle": "High-step with baton feature",
+          "specialEntrance": "The Explosion",
+          "philosophy": "We don't just play music — we ignite the crowd and carry the spirit of every Brave who came before us."
+        },
+        "gameday": {
+          "traditionTitle": "Brave Nation Game Day",
+          "teamWalk": {
+            "name": "The Brave Walk",
+            "description": "Players walk from the athletic complex through campus to the stadium, greeted by fans lining the path two hours before kickoff — a tradition dating back to the golden era of Coach Casem."
+          },
+          "tailgateCulture": {
+            "name": "The Hilltop Cookout",
+            "signatureFood": "Smoked catfish and sweet potato pie"
+          },
+          "fightSong": "Alcorn Fight Song",
+          "signatureChants": [
+            {
+              "name": "BRAVELAND",
+              "lyrics": "B-R-A-V-E-S, Braves!",
+              "cue": "After every score, the student section leads the call"
+            },
+            {
+              "name": "PURPLE REIGN",
+              "lyrics": "Purple and Gold, we ride!",
+              "cue": "Third quarter opener"
+            }
+          ]
+        },
+        "athletics": {
+          "conferenceChampionships": [
+            1968,
+            1969,
+            1970,
+            1974,
+            1976,
+            1979,
+            1984,
+            1992,
+            1994,
+            2014,
+            2015,
+            2018,
+            2019
+          ],
+          "nationalChampionships": [
+            1968,
+            1969,
+            1974,
+            1984
+          ],
+          "nflDraftPicks": 57,
+          "hallOfFamers": [
+            {
+              "name": "Marino Casem",
+              "inducted": 2003
+            },
+            {
+              "name": "Steve McNair",
+              "inducted": 2020
+            }
+          ],
+          "retiredNumbers": [
+            {
+              "number": "9",
+              "name": "Steve McNair",
+              "years": "1991–94",
+              "position": "QB"
+            }
+          ],
+          "rivalries": [
+            {
+              "teamId": "jackson-state",
+              "teamName": "Jackson State",
+              "gameName": "The Soul Bowl",
+              "logo": "/assets/swacjsu.svg",
+              "meetings": 60,
+              "seriesRecord": "27-33",
+              "leadingTeam": "Jackson State",
+              "lastResult": {
+                "year": 2024,
+                "winner": "Jackson State",
+                "score": "27-14"
+              }
+            }
+          ]
+        },
+        "history": {
+          "briefHistory": "Founded in 1871, Alcorn State University is the oldest public historically Black land-grant university in the United States. Named after Mississippi Governor James L. Alcorn, the university has produced civil rights icons, literary giants, and NFL legends from its hilltop campus in Lorman, Mississippi.",
+          "historicMilestones": [
+            {
+              "year": 1871,
+              "event": "Founded as Alcorn University, the first HBCU land-grant institution in the U.S."
+            },
+            {
+              "year": 1921,
+              "event": "Football program established; inaugural season goes 4-0"
+            },
+            {
+              "year": 1950,
+              "event": "Medgar Evers graduates and begins civil rights work; both Evers brothers played for the Braves"
+            },
+            {
+              "year": 1968,
+              "event": "First of four Black College National Championships under coach Marino Casem"
+            },
+            {
+              "year": 1994,
+              "event": "Steve McNair breaks NCAA career total offense record before 26,500 fans on The Hill"
+            },
+            {
+              "year": 1995,
+              "event": "Steve McNair drafted 3rd overall by the Houston Oilers"
+            }
+          ],
+          "funFacts": [
+            "Alcorn State is the oldest public HBCU in the United States.",
+            "Steve McNair set a then-Division I-AA record with 16,823 career yards of total offense.",
+            "The Sounds of Dyn-O-Mite band has performed at every presidential inaugural parade since 1973.",
+            "Alex Haley, author of Roots, served as a water boy for the Alcorn football team."
+          ]
+        },
+        "alumniRoster": [
+          {
+            "name": "Steve McNair",
+            "field": "Athletics",
+            "role": "NFL Co-MVP · 3× Pro Bowl QB · College Football Hall of Fame",
+            "achievement": "Set NCAA records at Alcorn before being drafted 3rd overall in 1995. Named NFL Co-MVP in 2003. Led Tennessee Titans to Super Bowl XXXIV.",
+            "initials": "SM",
+            "years": "1991–1994"
+          },
+          {
+            "name": "Alex Haley",
+            "field": "Literature",
+            "role": "Pulitzer Prize Winner · Author · Historian",
+            "achievement": "Author of Roots: The Saga of an American Family, which sparked a national conversation about African American history and identity.",
+            "initials": "AH",
+            "years": "1939–1941"
+          },
+          {
+            "name": "Medgar Evers",
+            "field": "Civil Rights",
+            "role": "NAACP Field Secretary · Civil Rights Martyr",
+            "achievement": "Legendary activist whose assassination in 1963 galvanized the Civil Rights Movement.",
+            "initials": "ME",
+            "years": "1948–1952"
+          }
+        ],
+        "social": {
+          "teamHandles": {
+            "instagram": {
+              "handle": "@AlcornStateFB",
+              "followers": "12.4K"
+            },
+            "twitter": {
+              "handle": "@AlcornSports",
+              "followers": "8.2K"
+            },
+            "facebook": {
+              "handle": "AlcornStateFB",
+              "followers": "15.1K"
+            },
+            "tiktok": {
+              "handle": "@alcornstatefb",
+              "followers": "3.8K"
+            },
+            "youtube": {
+              "handle": "Alcorn Athletics",
+              "followers": "2.1K"
+            }
+          }
+        },
+        "colorsDescription": "Purple and Gold — royalty and excellence, worn with pride since 1871."
+      }
+    },
+    {
+      "id": "alabama-am",
+      "exportId": "swacaamu25",
+      "name": "Alabama A&M",
+      "fullName": "Alabama A&M University",
+      "shortName": "AAMU",
+      "displayName": "Alabama A&M",
+      "mascot": "Bulldogs",
+      "conference": "SWAC",
+      "division": "East",
+      "city": "Normal",
+      "state": "AL",
+      "location": "Normal, AL",
+      "founded": 1875,
+      "enrollment": 6500,
+      "stadium": "Louis Crews Stadium",
+      "stadiumCapacity": 20000,
+      "colors": {
+        "primary": "#660000",
+        "secondary": "#FFFFFF",
+        "accent": null
+      },
+      "logo": "/assets/swacaamu.svg",
+      "website": "https://aamusports.com",
+      "socialHandles": {
+        "twitter": "@AAMUSports",
+        "instagram": "@aamusports"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1875 by a former slave, William Hooper Councill.",
+        "athleticDirector": "Dr. Paul A. Bryant",
+        "location": {
+          "city": "Normal",
+          "state": "AL",
+          "campusNickname": "The Hill",
+          "campusType": "Suburban / Urban"
+        },
+        "traditions": {
+          "onField": [
+            "The Bulldog Walk"
+          ],
+          "offField": [
+            "High-energy step shows at the Quad"
+          ]
+        },
+        "band": {
+          "name": "Marching Maroon and White",
+          "signatureSelection": "AAMU Fanfare"
+        },
+        "colorsDescription": "Maroon and White reflect the strength and purity of the Bulldog spirit.",
+        "motto": "Service Is Sovereignty",
+        "stadium": {
+          "name": "Louis Crews Stadium",
+          "surface": "FieldTurf (CoolPlay system with coconut husks)",
+          "built": 1996,
+          "recordAttendance": 26391,
+          "notableFeature": "Tenth largest stadium in Alabama; features 19 skyboxes and an 8-lane running track.",
+          "photo": "/data/qwikis/swacaamu/louiscrews.jpg"
+        },
+        "marching_band": {
+          "bandName": "Marching Maroon & White",
+          "bandNickname": "MMW",
+          "signatureSelection": "The AAMU Fanfare",
+          "founded": 1890,
+          "size": 250,
+          "danceTeamName": "Dancin Divas",
+          "flagLineName": "Maroonettes",
+          "drumMajorStyle": "High-step, traditional Southern show-style",
+          "specialEntrance": "The 60-Yard Entrance",
+          "philosophy": "Excellence in Musicality and Showmanship",
+          "tracks": [
+            {
+              "title": "AAMU Fanfare",
+              "label": "SIGNATURE",
+              "src": "/assets/audio/aamu-fanfare.mp3"
+            },
+            {
+              "title": "Bulldog Fight Song",
+              "label": "TRADITION",
+              "src": "/assets/audio/aamu-fightsong.mp3"
+            }
+          ]
+        },
+        "gameday": {
+          "traditionTitle": "Bulldog Gameday on The Hill",
+          "teamWalk": {
+            "name": "The Bulldog Walk",
+            "description": "Players enter through a corridor of fans and the band"
+          },
+          "tailgateCulture": {
+            "name": "The Hill Experience",
+            "signatureFood": "North Alabama barbecue and soul food tailgate plates"
+          },
+          "fightSong": "Alabama A&M Fight Song",
+          "signatureChants": [
+            {
+              "name": "Go Bulldogs!",
+              "lyrics": "Go Bulldogs!",
+              "cue": "Standard game chant"
+            },
+            {
+              "name": "A-A-M-U",
+              "lyrics": "A-A-M-U!",
+              "cue": "After first downs"
+            }
+          ]
+        },
+        "athletics": {
+          "conferenceChampionships": [
+            1962,
+            1963,
+            1966,
+            1971,
+            1972,
+            1979,
+            1981,
+            1987,
+            1988,
+            1989,
+            1990,
+            1991,
+            2006,
+            2020
+          ],
+          "nationalChampionships": [
+            2020
+          ],
+          "retiredNumbers": [
+            {
+              "number": "22",
+              "name": "John Stallworth",
+              "position": "WR"
+            },
+            {
+              "number": "55",
+              "name": "Robert Mathis",
+              "position": "DE"
+            }
+          ],
+          "rivalries": [
+            {
+              "teamId": "alabama-state",
+              "teamName": "Alabama State",
+              "gameName": "Magic City Classic",
+              "logo": "/assets/swacasu.svg",
+              "seriesRecord": "44-40-3",
+              "leader": "AAMU",
+              "lastResult": {
+                "year": 2024,
+                "winner": "AAMU",
+                "score": "15-10"
+              }
+            },
+            {
+              "teamId": "tuskegee",
+              "teamName": "Tuskegee",
+              "gameName": "Louis Crews Classic",
+              "logo": "/assets/tuskegee.svg",
+              "seriesRecord": "48-22-3",
+              "leader": "AAMU",
+              "lastResult": {
+                "year": 2023,
+                "winner": "AAMU",
+                "score": "58-14"
+              }
+            }
+          ]
+        },
+        "history": {
+          "briefHistory": "Alabama A&M was founded in 1875 by William Hooper Councill, a former slave. It has grown from a teacher training school to a comprehensive land-grant university known for engineering and agriculture.",
+          "famousFirsts": [
+            "First HBCU band to lead the Macy's Thanksgiving Day Parade (2023).",
+            "Founded by William Hooper Councill, a former slave, in 1875."
+          ],
+          "notableAlumni": [
+            {
+              "name": "John Stallworth",
+              "bio": "NFL Hall of Fame WR · 4× Super Bowl Champ",
+              "achievement": "Legendary Steelers receiver and HBCU icon. 4× Super Bowl Champion and 1987 Pro Football Hall of Fame inductee.",
+              "year": "1974",
+              "image": "/data/qwikis/swacaamu/johnstallworth.jpg"
+            },
+            {
+              "name": "Robert Mathis",
+              "bio": "NFL Legend · Super Bowl Champ · Colts Ring of Honor",
+              "achievement": "NFL's all-time leader in forced fumbles. 5× Pro Bowler and 2013 AFC Defensive Player of the Year.",
+              "year": "2003",
+              "image": "/data/qwikis/swacaamu/robertmathis.jpg"
+            },
+            {
+              "name": "Aqeel Glass",
+              "bio": "2× Deacon Jones Trophy Winner",
+              "achievement": "Led A&M to an undefeated 2020 spring season and HBCU National Championship. Back-to-back Black College Player of the Year.",
+              "year": "2021"
+            },
+            {
+              "name": "William Hooper Councill",
+              "bio": "Founder · Educator · Statesman",
+              "achievement": "Born into slavery, he founded Alabama A&M in 1875 and served as its first president for 35 years.",
+              "year": "Fdr"
+            }
+          ],
+          "historicMilestones": [
+            {
+              "year": 1875,
+              "event": "Founded as Huntsville Normal School"
+            },
+            {
+              "year": 1912,
+              "event": "Football program established"
+            },
+            {
+              "year": 1960,
+              "event": "Coach Louis Crews arrives (94 wins)"
+            },
+            {
+              "year": 1998,
+              "event": "Joins the SWAC"
+            },
+            {
+              "year": 2020,
+              "event": "Undefeated season and National Championship"
+            }
+          ],
+          "funFacts": [
+            "The school is located on a site formerly known as the Green Bottom Inn where Andrew Jackson used to race horses.",
+            "Aqeel Glass and Robert Mathis are among the most decorated players in program history.",
+            "The Marching Maroon & White led the Macy's Thanksgiving Day Parade in 2023."
+          ]
+        }
+      }
+    },
+    {
+      "id": "alabama-state",
+      "exportId": "swacasu25",
+      "name": "Alabama State",
+      "fullName": "Alabama State University",
+      "shortName": "ASU",
+      "displayName": "Alabama State",
+      "mascot": "Hornets",
+      "conference": "SWAC",
+      "division": "East",
+      "city": "Montgomery",
+      "state": "AL",
+      "location": "Montgomery, AL",
+      "founded": 1867,
+      "enrollment": "~5,800–6,000 (from 40+ states, 20+ countries)",
+      "motto": "The Truth Shall Make You Free",
+      "campusNickname": "'Bama State",
+      "campusType": "Urban HBCU; 172-acre campus in Montgomery, Alabama",
+      "stadium": "ASU Stadium (formerly Hornet Stadium)",
+      "stadiumCapacity": 26500,
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFC72C",
+        "accent": null
+      },
+      "logo": "/assets/swacasu.svg",
+      "website": "https://bamastatesports.com",
+      "socialHandles": {
+        "twitter": "@BamaStateSports",
+        "instagram": "@bamastatesports"
+      },
+      "nationalChampionships": [
+        1991
+      ],
+      "conferenceChampionships": [
+        {
+          "conference": "SIAC",
+          "years": [
+            1935,
+            1939,
+            1965,
+            1966
+          ]
+        },
+        {
+          "conference": "SWAC",
+          "years": [
+            1991,
+            2004
+          ]
+        }
+      ],
+      "wiki": {
+        "briefHistory": "The Alabama State Hornets are the college football team representing Alabama State University. The Hornets play in NCAA Division I Football Championship Subdivision (FCS) as a member of the Southwestern Athletic Conference (SWAC). Hornet Stadium serves as the facility for Alabama State football games and practices. The 120-yard field turf playing field provides training to ASU football in all weather conditions. In June 2011, construction on the Houston Markham Football Complex was completed. The two-story, 30,000-square-foot facility serves as the new home of the football program.",
+        "traditions": {
+          "onField": [
+            "Magic City Classic",
+            "Turkey Day Classic"
+          ],
+          "offField": [
+            "The Mighty Marching Hornets"
+          ]
+        },
+        "band": {
+          "name": "Mighty Marching Hornets",
+          "nickname": "The Price of Glory is High; MMH",
+          "founded": 1964,
+          "staffSize": "250+ members; longtime director Dr. James B. Oliver (retired after 26 years)",
+          "signatureSelection": "Hail Alabama (fight song); high-energy halftime productions",
+          "danceTeamName": "Stingettes, Honey Beez",
+          "flagLineName": "Not formally named (part of MMH color guard)",
+          "drumMajorStyle": "High-stepping HBCU style; multiple co-head drum majors; acrobatic and showmanship-forward",
+          "specialEntrance": "Featured in Beyoncé's 2019 Homecoming; first HBCU band to lead Rose Bowl Parade (2019); appeared in Billy Lynn's Long Halftime Walk (2016); starred in Bama State Style docuseries",
+          "philosophy": "The Mighty Marching Hornets aspire to be the best playing and marching unit and the most creative and exciting half-time show producers. Its ultimate goal is to become the most famous musical organization for college and university bands today."
+        },
+        "colorsDescription": "Black and Gold represent the strength and sting of the Hornet spirit.",
+        "stadium": {
+          "name": "ASU Stadium (formerly Hornet Stadium)",
+          "surface": "Synthetic turf",
+          "built": 2012,
+          "capacity": 26500,
+          "recordAttendance": "~26,500 (stadium capacity; sellout record not formally published)",
+          "notableFeature": "$62 million, 26,500-seat facility with 20 suites, loge and club seating, five locker rooms, state-of-the-art",
+          "images": [
+            "/data/qwikis/swacasu/asu stadium.jpg",
+            "/data/qwikis/swacasu/asu stadium 3.jpg"
+          ]
+        },
+        "fightSong": "Hail Alabama",
+        "teamWalk": "The 'Hornet Walk' — players walk along Harris Way ~2 hours before kickoff, greeted by fans, students, and recruits",
+        "tailgateCulture": "'Vendor Valley' in front of ASU Stadium; 'Connection Yard Fest' pre-game; tailgating lots open early with food, music, community; Turkey Day Classic draws 30,000+ with pep rally, parade, concert",
+        "signatureChants": "Go Hornets! / Sting 'em! — crowd chants; Turkey Day Classic and Magic City Classic are among the loudest in HBCU football",
+        "historicMilestones": [
+          "1901: First football game in program history, played against Tuskegee",
+          "1924: Turkey Day Classic tradition begins — now the nation's oldest Black college football classic",
+          "1935 & 1939: SIAC Conference Championships",
+          "1965 & 1966: Back-to-back SIAC Championships",
+          "1982: ASU joins the Southwestern Athletic Conference (SWAC)",
+          "1991: Undefeated season (11–0–1), SWAC Championship, and Black College National Championship under coach Houston Markham — the most dominant season in program history",
+          "2004: SWAC Championship",
+          "2012: New $62M ASU Stadium opens",
+          "2019: Mighty Marching Hornets become first HBCU band to lead the Rose Bowl Parade",
+          "2024: 100th Turkey Day Classic played; ASU wins 34–6",
+          "2025: ASU wins 4th consecutive Magic City Classic 56–13 (longest streak since 1990–1995)"
+        ],
+        "funFacts": [
+          "The Turkey Day Classic (vs. Tuskegee) is the nation's oldest Black college football classic, drawing over 30,000 fans each Thanksgiving",
+          "The Magic City Classic (vs. Alabama A&M) is the largest HBCU event in the nation, attracting nearly 70,000+ fans annually at Legion Field in Birmingham",
+          "Over 20 ASU alumni have played in the NFL, including linebacker Eddie Robinson (11-year NFL career), who was a key player on the legendary 1991 national championship team",
+          "The Mighty Marching Hornets appeared in Beyoncé's landmark 2019 Homecoming special on Netflix",
+          "ASU was founded in 1867 by nine formerly enslaved men — known as the 'Marion Nine' — who raised $500 to start the school",
+          "Rosa Parks, one of the most iconic figures of the Civil Rights Movement, is among ASU's notable alumni connections",
+          "The 1991 Hornets went undefeated through 20 consecutive games across the 1990–1991 seasons — the last SWAC team to finish a season undefeated"
+        ]
+      }
+    },
+    {
+      "id": "bethune-cookman",
+      "exportId": "swacbcu25",
+      "name": "Bethune Cookman",
+      "fullName": "Bethune-Cookman University",
+      "shortName": "BCU",
+      "displayName": "Bethune-Cookman",
+      "mascot": "Wildcats",
+      "conference": "SWAC",
+      "division": "East",
+      "city": "Daytona Beach",
+      "state": "FL",
+      "location": "Daytona Beach, FL",
+      "founded": 1904,
+      "enrollment": 3500,
+      "stadium": "Gordon Grayson Stadium",
+      "stadiumCapacity": 8000,
+      "colors": {
+        "primary": "#6F2633",
+        "secondary": "#F3A41E",
+        "accent": null
+      },
+      "logo": "/assets/swacbcu.svg",
+      "website": "https://bcuwildcats.com",
+      "socialHandles": {
+        "twitter": "@BCUWildcats",
+        "instagram": "@bcuwildcats"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded by Mary McLeod Bethune in 1904 as the Daytona Educational and Industrial Training School for Negro Girls.",
+        "traditions": {
+          "onField": [
+            "The Wildcat Walk"
+          ],
+          "offField": [
+            "The Marching Wildcats (The Pride)"
+          ]
+        },
+        "band": {
+          "name": "The Marching Wildcats",
+          "signatureSelection": "Let's Go Wildcats"
+        },
+        "colorsDescription": "Maroon and Gold reflect the royal legacy of the Wildcats."
+      }
+    },
+    {
+      "id": "florida-am",
+      "exportId": "swacfamu25",
+      "name": "Florida A&M",
+      "fullName": "Florida A&M University",
+      "shortName": "FAMU",
+      "displayName": "Florida A&M",
+      "mascot": "Rattlers",
+      "conference": "SWAC",
+      "division": "East",
+      "city": "Tallahassee",
+      "state": "FL",
+      "location": "Tallahassee, FL",
+      "founded": 1887,
+      "enrollment": 9500,
+      "stadium": "Bragg Memorial Stadium",
+      "stadiumCapacity": 25500,
+      "colors": {
+        "primary": "#006747",
+        "secondary": "#F4811F",
+        "accent": null
+      },
+      "logo": "/assets/swacfamu.svg",
+      "website": "https://famusports.com",
+      "socialHandles": {
+        "twitter": "@FAMUAthletics",
+        "instagram": "@famuathletics"
+      },
+      "nationalChampionships": [
+        1978
+      ],
+      "wiki": {
+        "briefHistory": "Founded in 1887, FAMU is the only public HBCU in Florida and the highest-ranked public HBCU in the country.",
+        "traditions": {
+          "onField": [
+            "The Rattler Strike",
+            "Orange and Green game"
+          ],
+          "offField": [
+            "The Marching 100",
+            "Friday Set"
+          ]
+        },
+        "band": {
+          "name": "Marching 100",
+          "signatureSelection": "S.O.S."
+        },
+        "colorsDescription": "Orange and Green represent the blooming fruit and lush land of Florida."
+      }
+    },
+    {
+      "id": "jackson-state",
+      "exportId": "swacjsu25",
+      "name": "Jackson State",
+      "fullName": "Jackson State University",
+      "shortName": "JSU",
+      "displayName": "Jackson State",
+      "mascot": "Tigers",
+      "conference": "SWAC",
+      "division": "East",
+      "city": "Jackson",
+      "state": "MS",
+      "location": "Jackson, MS",
+      "founded": 1877,
+      "enrollment": 5800,
+      "stadium": "Veterans Memorial Stadium",
+      "stadiumCapacity": 60492,
+      "colors": {
+        "primary": "#002147",
+        "secondary": "#FFFFFF",
+        "accent": "#4A90D9"
+      },
+      "logo": "/assets/swacjsu.svg",
+      "website": "https://jsutigers.com",
+      "socialHandles": {
+        "twitter": "@JSUtigers",
+        "instagram": "@jsutigers"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1877 as Natchez Seminary, Jackson State is a high research activity university in Mississippi.",
+        "traditions": {
+          "onField": [
+            "The Tiger Run-out",
+            "W.C. Gorden Classic"
+          ],
+          "offField": [
+            "Sonic Boom of the South",
+            "Thee I Love"
+          ]
+        },
+        "band": {
+          "name": "Sonic Boom of the South",
+          "signatureSelection": "Get Ready"
+        },
+        "colorsDescription": "Navy Blue and White represent the depth and purity of the Tiger legacy."
+      }
+    },
+    {
+      "id": "mvsu",
+      "exportId": "swacmvsu25",
+      "name": "Mississippi Valley State",
+      "fullName": "Mississippi Valley State University",
+      "shortName": "MVSU",
+      "displayName": "Miss. Valley",
+      "bannerName": "Mississippi Valley",
+      "mascot": "Delta Devils",
+      "conference": "SWAC",
+      "division": "East",
+      "city": "Itta Bena",
+      "state": "MS",
+      "location": "Itta Bena, MS",
+      "founded": 1950,
+      "enrollment": 1400,
+      "stadium": "Rice-Totten Stadium",
+      "stadiumCapacity": 8000,
+      "colors": {
+        "primary": "#046A38",
+        "secondary": "#FFFFFF",
+        "accent": null
+      },
+      "logo": "/assets/swacmvsu.svg",
+      "website": "https://godeltadevils.com",
+      "socialHandles": {
+        "twitter": "@MVSUAthletics",
+        "instagram": "@mvsuathletics"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1950 as Mississippi Vocational College, MVSU is located in the heart of the Mississippi Delta and has produced NFL legends like Jerry Rice.",
+        "traditions": {
+          "onField": [
+            "The Valley Entrance",
+            "The Delta Shuffle"
+          ],
+          "offField": [
+            "The Mean Green Marching Machine",
+            "Valley State Pride"
+          ]
+        },
+        "band": {
+          "name": "Mean Green Marching Machine",
+          "signatureSelection": "Devil's Fanfare"
+        },
+        "colorsDescription": "Forest Green and White reflect the fertility of the Delta and the purity of the educational mission."
+      }
+    },
+    {
+      "id": "pvam",
+      "exportId": "swacpvamu25",
+      "name": "Prairie View A&M",
+      "fullName": "Prairie View A&M University",
+      "shortName": "PVAMU",
+      "displayName": "Prairie View",
+      "mascot": "Panthers",
+      "conference": "SWAC",
+      "division": "West",
+      "city": "Prairie View",
+      "state": "TX",
+      "location": "Prairie View, TX",
+      "founded": 1876,
+      "enrollment": 9200,
+      "stadium": "Panther Stadium",
+      "stadiumCapacity": 6000,
+      "colors": {
+        "primary": "#4B0082",
+        "secondary": "#FFB81C",
+        "accent": null
+      },
+      "logo": "/assets/swacpvamu.svg",
+      "website": "https://pvpanthers.com",
+      "socialHandles": {
+        "twitter": "@PVPanthers",
+        "instagram": "@pvpanthers"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Established in 1876, Prairie View A&M is the second-oldest public institution of higher education in the state of Texas.",
+        "traditions": {
+          "onField": [
+            "The Panther Walk",
+            "Labor Day Classic"
+          ],
+          "offField": [
+            "The Marching Storm",
+            "Black Shear Field energy"
+          ]
+        },
+        "band": {
+          "name": "The Marching Storm",
+          "signatureSelection": "Storm Warning"
+        },
+        "colorsDescription": "Royal Purple and Gold represent the royal heritage of the Panther nation."
+      }
+    },
+    {
+      "id": "southern",
+      "exportId": "swacsu25",
+      "name": "Southern",
+      "fullName": "Southern University",
+      "shortName": "SU",
+      "displayName": "Southern",
+      "mascot": "Jaguars",
+      "conference": "SWAC",
+      "division": "West",
+      "city": "Baton Rouge",
+      "state": "LA",
+      "location": "Baton Rouge, LA",
+      "founded": 1880,
+      "enrollment": 6200,
+      "stadium": "A.W. Mumford Stadium",
+      "stadiumCapacity": 30000,
+      "colors": {
+        "primary": "#69B3E7",
+        "secondary": "#FFC72C",
+        "accent": null
+      },
+      "logo": "/assets/swacsu.svg",
+      "website": "https://goJaguars.com",
+      "socialHandles": {
+        "twitter": "@SouthernJaguars",
+        "instagram": "@southernjaguars"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1880, Southern is the flagship institution of the Southern University System, the only HBCU system in the country.",
+        "traditions": {
+          "onField": [
+            "The Jaguar Walk",
+            "Bayou Classic"
+          ],
+          "offField": [
+            "The Human Jukebox",
+            "Dancing Dolls"
+          ]
+        },
+        "band": {
+          "name": "The Human Jukebox",
+          "signatureSelection": "Jaguar Pride"
+        },
+        "colorsDescription": "Columbia Blue and Gold reflect the majestic river and the bright future of the Jaguar nation."
+      }
+    },
+    {
+      "id": "texas-southern",
+      "exportId": "swactsu25",
+      "name": "Texas Southern",
+      "fullName": "Texas Southern University",
+      "shortName": "TSU",
+      "displayName": "Texas Southern",
+      "mascot": "Tigers",
+      "conference": "SWAC",
+      "division": "West",
+      "city": "Houston",
+      "state": "TX",
+      "location": "Houston, TX",
+      "founded": 1927,
+      "enrollment": 6800,
+      "stadium": "Shell Energy Stadium",
+      "stadiumCapacity": 22039,
+      "colors": {
+        "primary": "#6F2633",
+        "secondary": "#A2AAAD",
+        "accent": null
+      },
+      "logo": "/assets/swactsu.svg",
+      "website": "https://tsusports.com",
+      "socialHandles": {
+        "twitter": "@TSUSports",
+        "instagram": "@tsusports"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1927, Texas Southern University is one of the largest and most comprehensive HBCUs in the nation, located in Houston's Third Ward.",
+        "traditions": {
+          "onField": [
+            "The Tiger Walk",
+            "Labor Day Classic"
+          ],
+          "offField": [
+            "Ocean of Soul",
+            "The Tiger Paw"
+          ]
+        },
+        "band": {
+          "name": "Ocean of Soul",
+          "signatureSelection": "The Ocean's Fanfare"
+        },
+        "colorsDescription": "Maroon and Gray represent the strength and resilience of the TSU legacy."
+      }
+    },
+    {
+      "id": "uapb",
+      "exportId": "swacuapb25",
+      "name": "Arkansas-Pine Bluff",
+      "fullName": "University of Arkansas at Pine Bluff",
+      "shortName": "UAPB",
+      "displayName": "Pine Bluff",
+      "bannerName": "Arkansas Pine Bluff",
+      "mascot": "Golden Lions",
+      "conference": "SWAC",
+      "division": "West",
+      "city": "Pine Bluff",
+      "state": "AR",
+      "location": "Pine Bluff, AR",
+      "founded": 1875,
+      "enrollment": 2500,
+      "stadium": "Simmons Bank Field",
+      "stadiumCapacity": 10000,
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FFD100",
+        "accent": null
+      },
+      "logo": "/assets/swacuapb.svg",
+      "website": "https://uapblionsroar.com",
+      "socialHandles": {
+        "twitter": "@UAPBLionsRoar",
+        "instagram": "@uapblionsroar"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1873 as Branch Normal College, UAPB is the oldest public HBCU in Arkansas and a land-grant institution.",
+        "traditions": {
+          "onField": [
+            "The Lion Walk",
+            "Golden Lion spirit"
+          ],
+          "offField": [
+            "M4 - Marching Musical Machine of the Mid-South"
+          ]
+        },
+        "band": {
+          "name": "M4",
+          "signatureSelection": "The Lion's Roar"
+        },
+        "colorsDescription": "Black and Gold represent the courage and excellence of the Golden Lion spirit."
+      }
+    },
+    {
+      "id": "grambling",
+      "exportId": "swacgsu25",
+      "name": "Grambling State",
+      "fullName": "Grambling State University",
+      "bannerShort": "GSU",
+      "shortName": "GSU",
+      "displayName": "Grambling",
+      "mascot": "Tigers",
+      "conference": "SWAC",
+      "division": "West",
+      "city": "Grambling",
+      "state": "LA",
+      "location": "Grambling, LA",
+      "founded": 1901,
+      "enrollment": 4400,
+      "stadium": "Eddie Robinson Stadium",
+      "stadiumCapacity": 19600,
+      "colors": {
+        "primary": "#000000",
+        "secondary": "#FDB913",
+        "accent": null
+      },
+      "logo": "/assets/swacgsu.svg",
+      "website": "https://gramblingathletics.com",
+      "socialHandles": {
+        "twitter": "@GramblingTigers",
+        "instagram": "@gramblingtigers"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Founded in 1901, Grambling State became a national icon under Coach Eddie Robinson, who built one of the winningest programs in CFB history.",
+        "traditions": {
+          "onField": [
+            "The Tiger Run-out",
+            "Bayou Classic"
+          ],
+          "offField": [
+            "World Famed Tiger Marching Band",
+            "Grambling Pride"
+          ]
+        },
+        "band": {
+          "name": "World Famed Tiger Marching Band",
+          "signatureSelection": "The Tiger Fanfare"
+        },
+        "colorsDescription": "Black and Gold reflect the prestige and historical dominance of the G-Men."
+      }
+    },
+    {
+      "id": "delaware-state",
+      "exportId": "meacdsu25",
+      "name": "Delaware State",
+      "fullName": "Delaware State University",
+      "shortName": "DSU",
+      "displayName": "Delaware State",
+      "mascot": "Hornets",
+      "conference": "MEAC",
+      "division": null,
+      "city": "Dover",
+      "state": "DE",
+      "location": "Dover, DE",
+      "founded": 1891,
+      "enrollment": 6280,
+      "stadium": "Alumni Stadium",
+      "stadiumCapacity": 7193,
+      "colors": {
+        "primary": "#EE3124",
+        "secondary": "#0077C8",
+        "accent": null
+      },
+      "logo": "/assets/meacdsu.svg",
+      "website": "https://dsuhornets.com",
+      "socialHandles": {
+        "twitter": "@DSUHornets",
+        "instagram": "@dsuhornets"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Delaware State University was established on May 15, 1891, by the Delaware General Assembly as the Delaware College for Colored Students under the Morrill Act of 1890. One of the nation's earliest land-grant HBCUs, DSU was founded on a 95-acre property north of Dover with an initial $8,000 state appropriation. After several name changes - including State College for Colored Students and Delaware State College - it achieved university status in 1993. DSU made history in 2021 by becoming the first HBCU to acquire a non-HBCU institution, Wesley College. Today it enrolls over 6,000 students across its 356-acre campus and is widely recognized as one of the nation's premier HBCUs.",
+        "traditions": {
+          "onField": [
+            "Homecoming Football Game, the crown jewel of campus tradition, drawing alumni from across the country",
+            "Pre-game march of the Approaching Storm band through campus to the stadium",
+            "Halftime spectacular featuring the Approaching Storm's precision drill and contemporary music",
+            "Senior Day recognition ceremonies honoring graduating student-athletes on the Alumni Stadium field"
+          ],
+          "offField": [
+            "Founder's Day celebration each May honoring the university's 1891 establishment",
+            "Homecoming Week events including the coronation of the Homecoming King and Queen",
+            "Greek Step Show during Homecoming weekend showcasing NPHC fraternities and sororities",
+            "Scholarship Gala recognizing academic excellence among student-athletes and scholars"
+          ]
+        },
+        "band": {
+          "name": "The Approaching Storm",
+          "signatureSelection": "Poison (Bell Biv DeVoe)"
+        },
+        "colorsDescription": "Red and Columbia Blue. The red embodies the passion, determination, and fighting spirit of the Hornets, while Columbia Blue - a shade chosen to reflect clarity, loyalty, and pride - connects the university to its land-grant heritage of service to the state of Delaware. Together the colors have been a constant symbol of DSU's identity since its early years as a state institution."
+      }
+    },
+    {
+      "id": "howard",
+      "exportId": "meachu25",
+      "name": "Howard",
+      "fullName": "Howard University",
+      "shortName": "HU",
+      "displayName": "Howard",
+      "mascot": "Bison",
+      "conference": "MEAC",
+      "division": null,
+      "city": "Washington",
+      "state": "DC",
+      "location": "Washington, DC",
+      "founded": 1867,
+      "enrollment": 14890,
+      "stadium": "William H. Greene Stadium",
+      "stadiumCapacity": 10000,
+      "colors": {
+        "primary": "#003A63",
+        "secondary": "#E31837",
+        "accent": null
+      },
+      "logo": "/assets/meachu.svg",
+      "website": "https://hubison.com",
+      "socialHandles": {
+        "twitter": "@HUBison",
+        "instagram": "@hubison"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Howard University was founded on March 2, 1867, by Civil War General Oliver O. Howard, just two years after the end of the Civil War. Chartered by an Act of Congress, it is one of the nation's most storied HBCUs and the only one classified as a Carnegie Research University with very high research activity. Over its 158-year history, Howard has trained generations of Black leaders across law, medicine, business, and the arts - including Thurgood Marshall, Kamala Harris, and Chadwick Boseman. Home to 14 schools and colleges and approximately 14,900 students, Howard is consistently ranked the #1 HBCU in the nation by Forbes and is the founding site of five of the nine NPHC organizations.",
+        "traditions": {
+          "onField": [
+            "Homecoming Football Game at Greene Stadium, the centerpiece of Howard's legendary Homecoming Week drawing 100,000+ alumni and visitors to campus",
+            "The Showtime Marching Band's electrifying pre-game and halftime performances, recognized nationally for their precision and showmanship",
+            "The 'Bison Walk' - players processing through a spirited crowd of students and fans before kickoff",
+            "Rivalry Week matchups against Morgan State (the 'Morgan-Howard Classic') generating intense campus-wide excitement"
+          ],
+          "offField": [
+            "Howard Homecoming Week - widely regarded as the most celebrated HBCU homecoming in the nation, featuring Yardfest, coronation, Greek Step Shows, and the Yard Block Party",
+            "The Coronation Ball, a formal pageant crowning Howard's Homecoming King and Queen before thousands of attendees",
+            "Charter Day celebrations each March 2 marking the university's 1867 founding",
+            "The Howard University Convocation, gathering the full university community at the start of each academic year"
+          ]
+        },
+        "band": {
+          "name": "The Showtime Marching Band",
+          "signatureSelection": "Fly Like an Eagle / Howard University Fight Song medley"
+        },
+        "colorsDescription": "Navy Blue and White. Navy blue has long represented the prestige, intellectual depth, and institutional gravitas of one of America's leading research universities. White symbolizes truth, integrity, and academic excellence - values reinforced by Howard's motto, Veritas et Utilitas (Truth and Service). The pairing reflects Howard's dual commitment to scholarly rigor and its mission of service to the African American community and the world."
+      }
+    },
+    {
+      "id": "morgan-state",
+      "exportId": "meacmsu25",
+      "name": "Morgan State",
+      "fullName": "Morgan State University",
+      "shortName": "MSU",
+      "displayName": "Morgan State",
+      "mascot": "Bears",
+      "conference": "MEAC",
+      "division": null,
+      "city": "Baltimore",
+      "state": "MD",
+      "location": "Baltimore, MD",
+      "founded": 1867,
+      "enrollment": 10739,
+      "stadium": "W.A.C. Hughes Memorial Stadium",
+      "stadiumCapacity": 10001,
+      "colors": {
+        "primary": "#002D72",
+        "secondary": "#FFA300",
+        "accent": null
+      },
+      "logo": "/assets/meacmsu.svg",
+      "website": "https://morganstatebears.com",
+      "socialHandles": {
+        "twitter": "@MorganStateBears",
+        "instagram": "@morganstatebears"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Morgan State University was founded in 1867 as the Centenary Biblical Institute by the Methodist Episcopal Church in Baltimore, Maryland. Originally created to train Black men for the ministry, it evolved into a liberal arts institution and was renamed Morgan College in 1890 in honor of early benefactor Reverend Lyttleton Morgan. After transferring from the Methodist Church to the State of Maryland in 1939, it expanded significantly and was redesignated Morgan State University in 1975. Today Maryland's largest HBCU, Morgan enrolls over 10,700 students and holds Carnegie Doctoral University status, with a mission to serve as Maryland's Preeminent Public Urban Research University.",
+        "traditions": {
+          "onField": [
+            "The 'Bear Walk' - the team's ceremonial entrance into Hughes Stadium accompanied by the thunderous sound of the Magnificent Marching Machine",
+            "Homecoming game at 'The Den' (Hughes Stadium), a marquee event in MEAC football drawing large alumni crowds to Baltimore",
+            "Halftime performances by the Magnificent Marching Machine, which has appeared at Presidential Inaugurations, the Macy's Thanksgiving Day Parade, and NFL events",
+            "The Morgan-Howard Classic, a signature rivalry game that has defined MEAC competition for decades"
+          ],
+          "offField": [
+            "Homecoming Week festivities anchored by the Spirit Competition, Greek Step Show, and the crowning of Miss Morgan State University",
+            "The Quad Cookout - a beloved pregame tradition with free food, inflatables, and music for students outside Hughes Stadium's west end zone",
+            "Legacy Track Meet hosted annually at Hughes Stadium, celebrating Morgan's historic track and field legacy",
+            "Founder's Week in October celebrating Morgan's 1867 founding with campus-wide events and alumni engagement"
+          ]
+        },
+        "band": {
+          "name": "The Magnificent Marching Machine",
+          "signatureSelection": "Atomic Dog (Parliament-Funkadelic)"
+        },
+        "colorsDescription": "Royal Blue and Orange. The royal blue reflects Baltimore's civic pride and institutional stability - a nod to Morgan's deep roots in the city it calls home. Orange, vibrant and energetic, represents the passion, creativity, and ambition of the Bear community. The combination was adopted as Morgan evolved from a small Methodist college into Maryland's flagship HBCU, and the colors remain a source of fierce pride at every Bear athletic event."
+      }
+    },
+    {
+      "id": "nccu",
+      "exportId": "meacnccu25",
+      "name": "North Carolina Central",
+      "fullName": "North Carolina Central University",
+      "shortName": "NCCU",
+      "displayName": "NC Central",
+      "bannerName": "NC Central",
+      "mascot": "Eagles",
+      "conference": "MEAC",
+      "division": null,
+      "city": "Durham",
+      "state": "NC",
+      "location": "Durham, NC",
+      "founded": 1909,
+      "enrollment": 8579,
+      "stadium": "O'Kelly-Riddick Stadium",
+      "stadiumCapacity": 10000,
+      "colors": {
+        "primary": "#8A1538",
+        "secondary": "#A89968",
+        "accent": null
+      },
+      "logo": "/assets/meacnccu.svg",
+      "website": "https://nccueaglepride.com",
+      "socialHandles": {
+        "twitter": "@NCCUEaglePride",
+        "instagram": "@nccueaglepride"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "North Carolina Central University was founded in 1909 by Dr. James E. Shepard, a pharmacist and visionary educator, who opened the National Religious Training School and Chautauqua in Durham, NC, supported by private funds from both Northern and Southern philanthropists. It became a state institution in 1923 and joined the University of North Carolina system in 1972. NCCU is the nation's first public liberal arts HBCU and has grown into a comprehensive research university offering programs through law, library science, business, and STEM disciplines. The Eagles have produced notable alumni across law, politics, and entertainment, and the football program captured the HBCU National Championship in 2022 and 2023.",
+        "traditions": {
+          "onField": [
+            "The National Championship Parade and Pep Rally held at O'Kelly-Riddick Stadium following the Eagles' 2022 Celebration Bowl title",
+            "Homecoming Football Game - the signature fall event where the Eagles alumni return to 'The Nest' in full force",
+            "Pre-game march of the SoundMachine band from the Fine Arts building through campus to the stadium",
+            "The 'Eagle Pride' tunnel entrance, where players take the field through a line of cheerleaders and the band's fanfare"
+          ],
+          "offField": [
+            "Homecoming Week centered on the 'Eagle Nation' theme, featuring the crowning of Miss NCCU and a Greek Step Show",
+            "Founder's Day each November honoring Dr. James E. Shepard's 1909 founding of the university",
+            "The Spring Maroon & Gray Game - an annual spring football scrimmage open to the public at O'Kelly-Riddick",
+            "Bull Durham Bowl tailgate tradition, connecting NCCU football with the broader Durham community"
+          ]
+        },
+        "band": {
+          "name": "The SoundMachine",
+          "signatureSelection": "Outstanding (The Gap Band)"
+        },
+        "colorsDescription": "Maroon and Gray. Maroon - a deep, dignified red - was chosen to reflect the strength, sacrifice, and scholarly tradition of NCCU's founding mission as the nation's first public HBCU liberal arts institution. Gray complements maroon with understated elegance, representing wisdom, balance, and the enduring legacy of Dr. James E. Shepard's vision for accessible, rigorous higher education for African Americans in the South."
+      }
+    },
+    {
+      "id": "norfolk-state",
+      "exportId": "meacnsu25",
+      "name": "Norfolk State",
+      "fullName": "Norfolk State University",
+      "shortName": "NSU",
+      "displayName": "Norfolk State",
+      "mascot": "Spartans",
+      "conference": "MEAC",
+      "division": null,
+      "city": "Norfolk",
+      "state": "VA",
+      "location": "Norfolk, VA",
+      "founded": 1935,
+      "enrollment": 6053,
+      "stadium": "William 'Dick' Price Stadium",
+      "stadiumCapacity": 30000,
+      "colors": {
+        "primary": "#007A5E",
+        "secondary": "#FFC72C",
+        "accent": null
+      },
+      "logo": "/assets/meacnsu.svg",
+      "website": "https://nsuspartans.com",
+      "socialHandles": {
+        "twitter": "@NSUSpartans",
+        "instagram": "@nsuspartans"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "Norfolk State University was founded in 1935 as the Norfolk Unit of Virginia Union University, initially serving 85 students. It became an independent institution in 1942, joined Virginia State College by legislative act, and was renamed Norfolk State College in 1969 when it gained full accreditation with an enrollment of 5,400. It achieved university status in 1979. NSU is a comprehensive urban HBCU located in Norfolk, Virginia, offering programs through eight schools and colleges. The Spartans are celebrated for their basketball program's 2012 NCAA Tournament upset of #2 Missouri as a 15-seed, one of the greatest upsets in tournament history. NSU owns one of the largest on-campus FCS football stadiums in the country.",
+        "traditions": {
+          "onField": [
+            "The Labor Day Classic - the stadium's inaugural game in 1997 drew a record 33,872 fans and launched Dick Price Stadium as one of the MEAC's premier venues",
+            "Homecoming Football Game at Dick Price Stadium, consistently drawing some of the largest crowds in MEAC football",
+            "The Spartan Legion band's pregame march and halftime production, a central attraction of every NSU home game",
+            "MEAC rivalry games against Hampton University, generating the largest and most spirited crowds of the season"
+          ],
+          "offField": [
+            "Homecoming Week featuring the crowning of Miss Norfolk State University and a celebrated Greek Step Show",
+            "Founder's Day in February honoring NSU's 1935 establishment and the legacy of its founding mission",
+            "The Spartan Legion's participation in the Tournament of Roses Parade (2023) - a crowning moment in band tradition",
+            "NSU Tailgate Culture - four-hour pre-game tailgating at Dick Price Stadium is an ingrained ritual, with alumni and fans filling the stadium lots with food, music, and fellowship"
+          ]
+        },
+        "band": {
+          "name": "The Spartan Legion",
+          "signatureSelection": "Back That Azz Up (Juvenile)"
+        },
+        "colorsDescription": "Green and Gold. Green represents the growth, vitality, and forward-looking spirit of NSU's urban mission - rooted in the city of Norfolk's coastal landscape and the university's commitment to community transformation. Gold conveys excellence, achievement, and the pursuit of greatness that has defined the Spartan tradition since the school's 1935 founding. The color combination was adopted as the university grew from a small commuter college into a nationally recognized HBCU."
+      }
+    },
+    {
+      "id": "sc-state",
+      "exportId": "meacscsu25",
+      "name": "South Carolina State",
+      "fullName": "South Carolina State University",
+      "shortName": "SCSU",
+      "displayName": "SC State",
+      "bannerName": "SC State",
+      "mascot": "Bulldogs",
+      "conference": "MEAC",
+      "division": null,
+      "city": "Orangeburg",
+      "state": "SC",
+      "location": "Orangeburg, SC",
+      "founded": 1896,
+      "enrollment": 3242,
+      "stadium": "Oliver C. Dawson Stadium",
+      "stadiumCapacity": 22000,
+      "colors": {
+        "primary": "#900027",
+        "secondary": "#002B54",
+        "accent": null
+      },
+      "logo": "/assets/meacscsu.svg",
+      "website": "https://scsuathletics.com",
+      "socialHandles": {
+        "twitter": "@SCSUBulldogs",
+        "instagram": "@scsubulldogs"
+      },
+      "nationalChampionships": [],
+      "wiki": {
+        "briefHistory": "South Carolina State University traces its roots to 1872, when the South Carolina Agricultural and Mechanical Institute was established within Claflin College under the Morrill Land Grant Act. In 1896, the South Carolina General Assembly created a fully separate institution - the Colored Normal Industrial Agricultural and Mechanical College of South Carolina - in Orangeburg. Renamed South Carolina State College in 1954 and elevated to university status in 1992, SCSU is the only public HBCU land-grant research institution in South Carolina. The Bulldogs are one of MEAC's most successful football programs, having won 19 MEAC championships and seven HBCU national titles (including the most recent in 2025), and produced Pro Football Hall of Famers Deacon Jones, Marion Motley, Harry Carson, and Donnie Shell.",
+        "traditions": {
+          "onField": [
+            "The Marching 101's game-day entrance - the band marches onto Oliver C. Dawson Stadium's field in a dramatic formation that is one of the most recognized spectacles in HBCU football",
+            "Homecoming Football Game in Orangeburg, a reunion of the Bulldog faithful that fills Dawson Stadium and the surrounding community",
+            "The 'Bulldog Walk' - players and coaches process from the athletic complex to the stadium through a corridor of fans before kickoff",
+            "Championship Banner Ceremonies at Dawson Stadium, where each MEAC title and HBCU national championship is honored with a new banner on the stadium's exterior facade"
+          ],
+          "offField": [
+            "Homecoming Weekend - a campus-wide celebration featuring the Miss SC State Pageant, the Greek Step Show, and a packed parade through Orangeburg",
+            "Founder's Day in September honoring the 1896 establishment of the institution and the legacy of its founding mission",
+            "The Marching 101's Battle of the Bands appearances, most notably the Honda BOTB, which have elevated SC State's national profile",
+            "Duke's Bar-B-Que Tradition - generations of Bulldog fans gather at Orangeburg's legendary Duke's BBQ on game day, making it an unofficial pre-game ritual"
+          ]
+        },
+        "band": {
+          "name": "The Marching 101",
+          "signatureSelection": "Lean On Me (Bill Withers)"
+        },
+        "colorsDescription": "Garnet and Navy Blue. Garnet - a rich, deep red - is a color shared across the state of South Carolina as a symbol of pride and resilience, connecting SC State to its role as the state's flagship HBCU and land-grant institution. Navy blue represents steadfastness, dignity, and the depth of tradition built over more than 125 years. Together, the colors speak to SC State's identity as both a South Carolina institution and a national powerhouse in HBCU athletics and academics."
+      }
+    }
+  ]
+}

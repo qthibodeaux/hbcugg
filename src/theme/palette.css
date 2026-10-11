@@ -1,0 +1,61 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   LIGHT / NIGHT PALETTE — the surface, text and line colours, as CSS variables.
+   Night is the default (and the only mode at launch.0). `data-theme="light"` on
+   <html> swaps every variable at once; nothing re-renders. Chakra's `bg.*` and
+   `text.*` tokens point here (src/theme/index.js), so any component on those
+   tokens flips for free. Hard-coded hex / rgba stays night until it is moved
+   onto a variable — see THEME_LIGHT_NIGHT.md for the map.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+:root,
+:root[data-theme="night"] {
+  color-scheme: dark;
+
+  /* Surfaces — page, panel, card */
+  --gg-bg-primary: #0B0B0D;
+  --gg-bg-secondary: #141416;
+  --gg-bg-card: #1A1A1D;
+  --gg-bg-raised: #1F1F25;
+
+  /* Text */
+  --gg-text-primary: #F4F4F5;
+  --gg-text-secondary: #A1A1AA;
+  --gg-text-muted: #71717A;
+  --gg-ink: #FFFFFF;          /* the brightest text: headlines, scores */
+
+  /* Lines and overlays — what whiteAlpha.* does on night */
+  --gg-line-subtle: rgba(255, 255, 255, 0.04);
+  --gg-line: rgba(255, 255, 255, 0.06);
+  --gg-line-strong: rgba(255, 255, 255, 0.12);
+  --gg-hover: rgba(255, 255, 255, 0.08);
+  --gg-track: rgba(255, 255, 255, 0.06);   /* empty bar / meter track */
+
+  /* Scrollbar */
+  --gg-scroll-track: #0B0B0D;
+  --gg-scroll-thumb: #3F3F46;
+  --gg-scroll-thumb-hover: #52525B;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --gg-bg-primary: #F2F2F5;
+  --gg-bg-secondary: #FFFFFF;
+  --gg-bg-card: #FAFAFB;
+  --gg-bg-raised: #ECECF0;
+
+  --gg-text-primary: #18181B;
+  --gg-text-secondary: #52525B;
+  --gg-text-muted: #71717A;
+  --gg-ink: #0B0B0D;
+
+  --gg-line-subtle: rgba(0, 0, 0, 0.04);
+  --gg-line: rgba(0, 0, 0, 0.08);
+  --gg-line-strong: rgba(0, 0, 0, 0.14);
+  --gg-hover: rgba(0, 0, 0, 0.05);
+  --gg-track: rgba(0, 0, 0, 0.07);
+
+  --gg-scroll-track: #F2F2F5;
+  --gg-scroll-thumb: #C4C4CC;
+  --gg-scroll-thumb-hover: #A1A1AA;
+}

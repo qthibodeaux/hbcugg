@@ -1,0 +1,105 @@
+{
+  "id": "alcorn",
+  "exportId": "swacalc25",
+  "name": "Alcorn State University",
+  "shortName": "Alcorn",
+  "bannerShort": "ASU",
+  "mascot": "Braves",
+  "motto": "Where Knowledge and Character Meet",
+  "mottoTranslation": null, 
+  "founded": 1871,
+  "enrollment": 3700,
+  "website": "https://alcornsports.com",
+  
+  "branding": {
+    "colors": { "primary": "#5C068C", "secondary": "#FFD100", "accent": "#000000" },
+    "colorsDescription": "Purple and Gold represents the royal heritage and excellence of the institution.",
+    "logo": "/assets/swacalc.svg",
+    "helmetLogo": "/assets/alcorn_helmet.svg",
+    "secondaryLogo": "/assets/alcorn_brave_head.svg",
+    "socialHandles": { "twitter": "@AlcornSports", "instagram": "@alcornsports", "youtube": "AlcornStateSports" }
+  },
+
+  "location_and_campus": {
+    "city": "Lorman",
+    "state": "MS",
+    "location": "Lorman, MS",
+    "campusNickname": "The Reservation",
+    "campusType": "Rural",
+    "landmarkSpots": ["The Oakland Memorial Chapel", "The Golden Class Gate"],
+    "coordinates": { "lat": 31.8767, "lng": -91.1384 }
+  },
+
+  "stadium": {
+    "name": "Spinks-Casem Stadium",
+    "capacity": 10000,
+    "surface": "Natural Grass",
+    "built": 1992,
+    "recordAttendance": 22500,
+    "notableFeature": "Known for the intense tailgating atmosphere stretching into the surrounding woods.",
+    "seatingSections": { "studentSection": "Sections J-M", "bandSection": "Section N" }
+  },
+
+  "sonic_profile": {
+    "bandName": "Sounds of Dyn-O-Mite",
+    "bandNickname": "SOD",
+    "founded": 1960,
+    "size": 250,
+    "signatureSelection": "Fanfare",
+    "danceTeamName": "Golden Girls",
+    "flagLineName": "Purple Flashers",
+    "drumMajorStyle": "High-stepping, acrobatic",
+    "specialEntrance": "The SOD Run-On",
+    "philosophy": "High-energy performances blending traditional marching styles with contemporary showmanship.",
+    "famousHalftimeRoutines": ["The Michael Jackson Tribute 2018"],
+    "bandRivalries": ["Sonic Boom of the South (Jackson State)"]
+  },
+
+  "gameday_and_traditions": {
+    "traditionTitle": "The Brave Way",
+    "teamWalk": {
+      "name": "The Brave Walk",
+      "description": "The team processes through a gauntlet of thousands of fans heading into the stadium."
+    },
+    "signatureChants": [
+      { "name": "Drive for Six", "lyrics": "Go Braves! Drive for six!", "cue": "Played after a big first down" }
+    ],
+    "tailgateCulture": {
+      "name": "Reservation Tailgate",
+      "description": "A massive family reunion atmosphere featuring deep-south BBQ and live DJs.",
+      "signatureFood": "Smoked turkey legs and fried catfish"
+    },
+    "fightSong": "Alcorn Ode",
+    "almaMater": "Beneath the shade of giant trees..."
+  },
+
+  "athletics_and_legacy": {
+    "nationalChampionships": [],
+    "conferenceChampionships": [1960, 1968, 1969, 1970, 1974, 1976, 1979, 1984, 1992, 1994, 2014, 2015, 2018, 2019],
+    "nflDraftPicks": "50+",
+    "hallOfFamers": ["Steve McNair"],
+    "retiredNumbers": ["9"],
+    "rivalries": [
+      { "teamId": "jackson_state", "gameName": "The Soul Bowl", "trophy": "Soul Bowl Trophy" },
+      { "teamId": "mississippi_valley", "gameName": "The A-Line Rivalry", "trophy": null }
+    ]
+  },
+
+  "wiki_and_history": {
+    "briefHistory": "Founded in 1871 as Alcorn University, it is the oldest public historically black land-grant institution in the United States.",
+    "famousFirsts": [
+      "First black land-grant institution in the nation.",
+      "Hiram R. Revels, the first African American to serve in the U.S. Senate, was its first president."
+    ],
+    "notableAlumni": [
+      { "name": "Steve McNair", "field": "Athletics", "achievement": "NFL MVP and legendary quarterback." },
+      { "name": "Alex Haley", "field": "Literature", "achievement": "Author of 'Roots'." },
+      { "name": "Medgar Evers", "field": "Civil Rights", "achievement": "Legendary civil rights activist." }
+    ],
+    "architectureStyle": "A mix of historic brick landmarks and modern athletic facilities.",
+    "funFacts": [
+      "The campus is located on 1,700 acres of land in rural Claiborne County.",
+      "The school was originally named after Mississippi Governor James L. Alcorn."
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "inventory_schema_version": "1.0",
+  "comment": "This is the MASTER SCHEMA for the School Wiki / Heritage Hub. Use this as the blueprint for all 18 programs.",
+  "teams": {
+    "alcorn": {
+      "id": "alcorn",
+      "exportId": "swacalc25",
+      "name": "Alcorn State University",
+      "shortName": "Alcorn",
+      "mascot": "Braves",
+      "foundation": {
+        "year": 1871,
+        "motto": "Where Knowledge and Character Meet",
+        "mottoTranslation": null,
+        "briefHistory": "Founded in 1871 as Alcorn University, it is the oldest public historically black land-grant institution in the United States.",
+        "famousFirsts": [
+          "First black land-grant institution in the nation.",
+          "Hiram R. Revels, the first African American to serve in the U.S. Senate, was its first president."
+        ]
+      },
+      "identity": {
+        "campusNickname": "The Reservation",
+        "colorsDescription": "Purple and Gold represents the royal heritage and excellence of the institution.",
+        "landmarkSpots": [
+          { "name": "Oakland Memorial Chapel", "significance": "Oldest building on campus, a National Historic Landmark." },
+          { "name": "The Golden Class Gate", "significance": "A ceremonial entrance for graduating seniors." }
+        ],
+        "social": {
+          "twitter": "@AlcornSports",
+          "instagram": "@alcornsports",
+          "youtube": "AlcornStateSports"
+        }
+      },
+      "ensemble": {
+        "bandName": "Sounds of Dyn-O-Mite",
+        "bandNickname": "SOD",
+        "signatureSelection": "Fanfare",
+        "danceTeamName": "Golden Girls",
+        "flagLineName": "Purple Flashers",
+        "drumMajorStyle": "High-stepping, acrobatic",
+        "specialEntrance": "The SOD Run-On",
+        "philosophy": "High-energy performances blending traditional marching styles with contemporary showmanship."
+      },
+      "rituals": {
+        "procession": {
+          "name": "The Brave Walk",
+          "description": "The team processes through a gauntlet of thousands of fans heading into the stadium."
+        },
+        "tailgate": {
+          "name": "Reservation Tailgate",
+          "description": "A massive family reunion atmosphere featuring deep-south BBQ and live DJs.",
+          "signatureFood": ["Smoked turkey legs", "Fried catfish"]
+        },
+        "chants": [
+          { "name": "Drive for Six", "lyrics": "Go Braves! Drive for six!", "cue": "Played after a big first down" }
+        ],
+        "songs": {
+          "fightSong": "Alcorn Ode",
+          "almaMater": "Beneath the shade of giant trees..."
+        }
+      },
+      "digital_footprint": {
+        "social_command": {
+          "university": { "handle": "@AlcornStateU", "platform": "twitter", "url": "https://twitter.com/alcornstateu" },
+          "athletics": { "handle": "@AlcornSports", "platform": "instagram", "url": "https://instagram.com/alcornsports" },
+          "band": { "handle": "@AlcornStateSOD", "platform": "tiktok", "url": "https://tiktok.com/@alcornstatesod" }
+        },
+        "culture_catalyst": {
+          "influencer_of_the_week": {
+            "name": "K.J. Wright",
+            "handle": "@KJ_WRIGHT34",
+            "platform": "instagram",
+            "specialty": "Pro Bowler & Community Leader",
+            "hype_quote": "Always giving back to the Reservation. Legacy isn't just about the rings.",
+            "impact_score": 98.4
+          }
+        }
+      },
+      "legacy": {
+        "notableAlumni": [
+          { "name": "Steve McNair", "field": "Athletics", "achievement": "NFL MVP and legendary quarterback." },
+          { "name": "Alex Haley", "field": "Literature", "achievement": "Author of 'Roots'." },
+          { "name": "Medgar Evers", "field": "Civil Rights", "achievement": "Legendary civil rights activist." }
+        ],
+        "championships": {
+          "national": [],
+          "conference": [1960, 1968, 1969, 1970, 1974, 1976, 1979, 1984, 1992, 1994, 2014, 2015, 2018, 2019]
+        },
+        "rivalries": [
+          { "opponentId": "jackson-state", "classicName": "The Soul Bowl", "trophy": "Soul Bowl Trophy" },
+          { "opponentId": "mississippi-valley", "classicName": "The A-Line Rivalry", "trophy": null }
+        ]
+      }
+    }
+  }
+}
