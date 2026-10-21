@@ -1,0 +1,464 @@
+{
+  "person_id": "PERS_00011614",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00011614",
+    "first_name": "Jakarri",
+    "last_name": "Martin",
+    "team_id": "meacnccu",
+    "team_abbreviation": "NCCU",
+    "conference": "MEAC",
+    "division": null,
+    "jersey_number": 6,
+    "position": "Defensive Back",
+    "position_group": "DB",
+    "raw_position": "DB",
+    "class_year": 4,
+    "class_label": "Senior",
+    "height": 68,
+    "weight": 180,
+    "home_city": "Atlanta",
+    "home_state": "GA",
+    "is_in_state": false,
+    "previous_school": "Catawba",
+    "high_school": "Langston Hughes Hs",
+    "image_url": "https://nccueaglepride.com/images/2026/8/5/Martin_Jakarri.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 2.24,
+    "per_game": 3.08,
+    "games_played": 1,
+    "rank_in_position_group": 67,
+    "position_group_total": 198,
+    "conference_rank": 249,
+    "conference_total": 713,
+    "position_group_mean": 5.04
+  },
+  "season_totals": {
+    "par": 2.24,
+    "total_production": 3.08,
+    "avg_production": 3.08,
+    "games_played": 1,
+    "season_components": {
+      "hit_production": 0.56,
+      "hawk_production": 2.52,
+      "scrum_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "NCCUTSU29082026",
+      "game_path_id": "nccutsu26",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 30-42",
+      "data_state": "played",
+      "par": 2.24,
+      "components": {
+        "hit_production": 0.56,
+        "hawk_production": 2.52
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 3
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 2,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "pass_breakup",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": 31,
+            "quarter": 2,
+            "game_clock": "04:21"
+          },
+          {
+            "type": "pass_breakup",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": 39,
+            "quarter": 2,
+            "game_clock": "01:55"
+          }
+        ]
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_elizabethcitysta_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Elizabeth City State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 27-6",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_meacncat_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": "meacncat",
+      "opponent_name": "NC A&T",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 30-22",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_meacnccu_at_gardnerwebb",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Gardner-Webb",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 20-44",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "2026-09-26_meacnccu_at_eastcarolina",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "East Carolina",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 9-42",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "2026-10-03_campbell_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Campbell",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 31-38",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "2026-10-10_williammary_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "William & Mary",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 14-17",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 8,
+      "game_id": "2026-10-23_meacnccu_at_meacdsu",
+      "game_path_id": null,
+      "opponent_id": "meacdsu",
+      "opponent_name": "Del State",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 9,
+      "game_id": "2026-10-31_meachu_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": "meachu",
+      "opponent_name": "Howard",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-07_meacnccu_at_meacnsu",
+      "game_path_id": null,
+      "opponent_id": "meacnsu",
+      "opponent_name": "Norfolk",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_meacnccu_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": "meacscsu",
+      "opponent_name": "SC State",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_meacmsu_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": "meacmsu",
+      "opponent_name": "Morgan",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 0,
+    "game_id": "NCCUTSU29082026",
+    "game_path_id": "nccutsu26",
+    "opponent_id": "swactsu",
+    "opponent_name": "TSU",
+    "home_away": "away",
+    "result": "L",
+    "score": "L 30-42",
+    "par": 2.24,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 3
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 68,
+      "rank": 19,
+      "total": 20,
+      "group": "DB",
+      "group_avg": 71.5
+    },
+    "weight": {
+      "value": 180,
+      "rank": 9,
+      "total": 20,
+      "group": "DB",
+      "group_avg": 181.8
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 6
+      },
+      {
+        "class": "So.",
+        "count": 5
+      },
+      {
+        "class": "Jr.",
+        "count": 5
+      },
+      {
+        "class": "Sr.",
+        "count": 3
+      },
+      {
+        "class": "Gr.",
+        "count": 1
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "DBS",
+        "rank": 10,
+        "total": 20
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 11
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 31
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 47
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "D2",
+    "previous_school": "Catawba",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 348.3,
+    "distance_tier": "regional",
+    "experience_score": 4.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": true,
+        "season": 2026
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2027
+      }
+    ]
+  }
+}

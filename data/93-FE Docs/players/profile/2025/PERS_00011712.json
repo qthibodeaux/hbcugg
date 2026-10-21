@@ -1,0 +1,754 @@
+{
+  "person_id": "PERS_00011712",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00011712",
+    "first_name": "Ka'Von",
+    "last_name": "Chisolm",
+    "team_id": "meacscsu",
+    "team_abbreviation": "SCSU",
+    "conference": "MEAC",
+    "division": null,
+    "jersey_number": 7,
+    "position": "Defensive Line",
+    "position_group": "DL",
+    "raw_position": "DL",
+    "class_year": 1,
+    "class_label": "Freshman",
+    "height": 77,
+    "weight": 260,
+    "home_city": "Estill",
+    "home_state": "SC",
+    "is_in_state": true,
+    "previous_school": "Hampton Co. Hs",
+    "high_school": null,
+    "image_url": "https://www.scsuathletics.com/images/2025/9/1/Chisolm__Ka_Von.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 33.575,
+    "per_game": 6.8614,
+    "games_played": 7,
+    "rank_in_position_group": 11,
+    "position_group_total": 200,
+    "conference_rank": 66,
+    "conference_total": 1006,
+    "position_group_mean": 6.62
+  },
+  "season_totals": {
+    "par": 33.575,
+    "total_production": 48.03,
+    "avg_production": 6.8614,
+    "games_played": 7,
+    "season_components": {
+      "hit_production": 43.09,
+      "hawk_production": 0,
+      "scrum_production": 4.94
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "2025-08-30_wofford_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Wofford",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 16-15",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2025-09-06_meacscsu_at_southcarolina",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "South Carolina",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 10-38",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "BCUSCSU13092025",
+      "game_path_id": "bcuscsu25",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 55-41",
+      "data_state": "played",
+      "par": 5.94,
+      "components": {
+        "hit_production": 8.01
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 3
+        },
+        {
+          "label": "TFL",
+          "value": 1.5
+        },
+        {
+          "label": "SACK",
+          "value": 1.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.5,
+          "sacks": 1.0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "tfl",
+            "credit": 0.5,
+            "zone": "left",
+            "depth": -2,
+            "quarter": 2,
+            "game_clock": "10:20"
+          },
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -2,
+            "quarter": 4,
+            "game_clock": "12:18"
+          }
+        ]
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "2025-09-20_meacscsu_at_southflorida",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "South Florida",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 14-63",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "2025-09-27_meacscsu_at_charlestonsouthe",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Charleston Southern",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 24-31",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "2025-10-04_savannahstate_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Savannah State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 49-6",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "2025-10-11_meacscsu_at_meacncat",
+      "game_path_id": null,
+      "opponent_id": "meacncat",
+      "opponent_name": "NC A&T",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 22-16",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "SCSUNSU25102025",
+      "game_path_id": "scsunsu25",
+      "opponent_id": "meacnsu",
+      "opponent_name": "Norfolk",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 51-20",
+      "data_state": "played",
+      "par": 4.48,
+      "components": {
+        "hit_production": 6.55
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 2
+        },
+        {
+          "label": "TFL",
+          "value": 1.0
+        },
+        {
+          "label": "SACK",
+          "value": 1.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.0,
+          "sacks": 1.0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -10,
+            "quarter": 1,
+            "game_clock": "10:23"
+          }
+        ]
+      }
+    },
+    {
+      "week": 10,
+      "game_id": "MORGSCSU01112025",
+      "game_path_id": "msuscsu25",
+      "opponent_id": "meacmsu",
+      "opponent_name": "Morgan",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 36-30",
+      "data_state": "played",
+      "par": 1.54,
+      "components": {
+        "hit_production": 3.6
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 3
+        },
+        {
+          "label": "TFL",
+          "value": 1.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": -2,
+            "quarter": 1,
+            "game_clock": "14:58"
+          }
+        ]
+      }
+    },
+    {
+      "week": 11,
+      "game_id": "HUSCSU08112025",
+      "game_path_id": "huscsu25",
+      "opponent_id": "meachu",
+      "opponent_name": "Howard",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 42-12",
+      "data_state": "played",
+      "par": 3.0,
+      "components": {
+        "hit_production": 5.07
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 2
+        },
+        {
+          "label": "TFL",
+          "value": 0.5
+        },
+        {
+          "label": "SACK",
+          "value": 0.5
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0.5,
+          "sacks": 0.5,
+          "qb_hurries": 1,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 0.5,
+            "zone": null,
+            "depth": -6,
+            "quarter": 2,
+            "game_clock": "04:11"
+          },
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": null,
+            "quarter": 3,
+            "game_clock": "01:10"
+          }
+        ]
+      }
+    },
+    {
+      "week": 12,
+      "game_id": "SCSUNCCU14112025",
+      "game_path_id": "scsunccu25",
+      "opponent_id": "meacnccu",
+      "opponent_name": "NC Central",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 34-27",
+      "data_state": "played",
+      "par": 10.53,
+      "components": {
+        "hit_production": 12.59
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 5
+        },
+        {
+          "label": "TFL",
+          "value": 2.0
+        },
+        {
+          "label": "SACK",
+          "value": 1.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 2.0,
+          "sacks": 1.0,
+          "qb_hurries": 2,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -8,
+            "quarter": 2,
+            "game_clock": "00:25"
+          },
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": null,
+            "quarter": 3,
+            "game_clock": "09:22"
+          },
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": -3,
+            "quarter": 3,
+            "game_clock": "06:04"
+          },
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": null,
+            "quarter": 4,
+            "game_clock": "01:43"
+          }
+        ]
+      }
+    },
+    {
+      "week": 13,
+      "game_id": "SCSUDSU22112025",
+      "game_path_id": "scsudsu25",
+      "opponent_id": "meacdsu",
+      "opponent_name": "Del State",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 28-17",
+      "data_state": "played",
+      "par": 4.64,
+      "components": {
+        "hit_production": 6.71
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 5
+        },
+        {
+          "label": "TFL",
+          "value": 2.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 2.0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": -9,
+            "quarter": 1,
+            "game_clock": "06:41"
+          },
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": -6,
+            "quarter": 4,
+            "game_clock": "05:05"
+          }
+        ]
+      }
+    },
+    {
+      "week": 16,
+      "game_id": "SCSUPVAMU13122025",
+      "game_path_id": "scsupvamu25",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 40-38",
+      "data_state": "played",
+      "par": 3.44,
+      "components": {
+        "hit_production": 0.57,
+        "scrum_production": 4.94
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 1
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 1,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "forced_fumble",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": -16,
+            "quarter": 3,
+            "game_clock": "12:50"
+          }
+        ]
+      }
+    }
+  ],
+  "spotlight": {
+    "week": 16,
+    "game_id": "SCSUPVAMU13122025",
+    "game_path_id": "scsupvamu25",
+    "opponent_id": "swacpvamu",
+    "opponent_name": "PVAMU",
+    "home_away": "away",
+    "result": "W",
+    "score": "W 40-38",
+    "par": 3.44,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 1
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 77,
+      "rank": 1,
+      "total": 17,
+      "group": "DL",
+      "group_avg": 74.2
+    },
+    "weight": {
+      "value": 260,
+      "rank": 9,
+      "total": 17,
+      "group": "DL",
+      "group_avg": 261.1
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 4
+      },
+      {
+        "class": "So.",
+        "count": 3
+      },
+      {
+        "class": "Jr.",
+        "count": 3
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 4
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "DLS",
+        "rank": 11,
+        "total": 17
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 10
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 58
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 44
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": false,
+    "transfer_tier": null,
+    "previous_school": "Hampton Co. Hs",
+    "is_redshirt": true,
+    "redshirt_note": "Redshirt season used.",
+    "distance_miles": 55.5,
+    "distance_tier": "local",
+    "experience_score": 1.5,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": true,
+        "season": 2025
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": 2026
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2028
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2029
+      }
+    ]
+  }
+}

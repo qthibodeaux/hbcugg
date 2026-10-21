@@ -1,0 +1,832 @@
+{
+  "season": 2026,
+  "team_id": "swacjsu",
+  "generated_at": "2026-10-20T01:24:00-05:00",
+  "season_state": "in_progress",
+  "team_abbreviation": "JKST",
+  "school_name": "Jackson State University",
+  "conference": "swac",
+  "division": "east",
+  "team": {
+    "team_id": "swacjsu",
+    "name": "J-State",
+    "short_name": "JKST",
+    "school_name": "Jackson State University",
+    "conference": "swac",
+    "division": "east",
+    "division_label": "SWAC East",
+    "record": "6-1",
+    "conference_record": "3-1",
+    "division_record": "2-0"
+  },
+  "summary": {
+    "games": 11,
+    "final_games": 7,
+    "upcoming_games": 4,
+    "home_games": 5,
+    "away_games": 5,
+    "neutral_games": 1,
+    "conference_games": 8,
+    "games_with_recap": 4,
+    "played": 7,
+    "wins": 6,
+    "losses": 1,
+    "ties": 0
+  },
+  "games": [
+    {
+      "game_id": "2026-08-29_swacjsu_at_tennesseestate",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "week": 0,
+      "week_label": "Week 0",
+      "kickoff_label": "TBA",
+      "opponent": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "display_short": "TNST",
+        "opponent_class": "hbcu_external"
+      },
+      "opponent_id": null,
+      "opponent_team_id": null,
+      "opponent_name": "Tennessee State",
+      "opponent_short": "TNST",
+      "opponent_class": "hbcu_external",
+      "home_away": "away",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": null,
+        "venue_label": "John Merritt Classic",
+        "city": "Nashville, Tenn.",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "events": [
+        {
+          "event_type_id": "john_merritt_classic",
+          "display_name": "John Merritt Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacjsu"
+          ]
+        }
+      ],
+      "is_covered_matchup": false,
+      "conference_scope": "non_conference",
+      "division_scope": "not_applicable",
+      "game_type": "non_conference",
+      "event": {
+        "kind": "classic",
+        "name": "John Merritt Classic",
+        "event_type_id": "john_merritt_classic"
+      },
+      "result": "W",
+      "team_score": 26,
+      "opponent_score": 24,
+      "display_score": "W 26-24",
+      "winner_team_id": "swacjsu",
+      "score_team": 26,
+      "score_opponent": 24,
+      "score": "W 26-24",
+      "record_entering": "0-0",
+      "conference_record_entering": "0-0",
+      "tag": "John Merritt Classic",
+      "headline": "W 26-24 vs TNST",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": null
+    },
+    {
+      "game_id": "2026-09-05_edwardwaters_at_swacjsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "week": 1,
+      "week_label": "Week 1",
+      "kickoff_label": "TBA",
+      "opponent": {
+        "team_id": null,
+        "name": "Edward Waters",
+        "short_name": "EWU",
+        "display_short": "EWU",
+        "opponent_class": "hbcu_external"
+      },
+      "opponent_id": null,
+      "opponent_team_id": null,
+      "opponent_name": "Edward Waters",
+      "opponent_short": "EWU",
+      "opponent_class": "hbcu_external",
+      "home_away": "home",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "venue_label": "Labor Day Classic",
+        "city": "Jackson",
+        "neutral_site_name": null,
+        "venue_id": "VEN_mississippi_veterans_memorial_stadium",
+        "name": "Mississippi Veterans Memorial Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "labor_day_classic",
+          "display_name": "Labor Day Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacjsu"
+          ]
+        }
+      ],
+      "is_covered_matchup": false,
+      "conference_scope": "non_conference",
+      "division_scope": "not_applicable",
+      "game_type": "non_conference",
+      "event": {
+        "kind": "classic",
+        "name": "Labor Day Classic",
+        "event_type_id": "labor_day_classic"
+      },
+      "result": "W",
+      "team_score": 66,
+      "opponent_score": 14,
+      "display_score": "W 66-14",
+      "winner_team_id": "swacjsu",
+      "score_team": 66,
+      "score_opponent": 14,
+      "score": "W 66-14",
+      "record_entering": "1-0",
+      "conference_record_entering": "0-0",
+      "tag": "Labor Day Classic",
+      "headline": "W 66-14 vs EWU",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": null
+    },
+    {
+      "game_id": "2026-09-19_tuskegee_at_swacjsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "week": 3,
+      "week_label": "Week 3",
+      "kickoff_label": "TBA",
+      "opponent": {
+        "team_id": null,
+        "name": "Tuskegee",
+        "short_name": "TUSK",
+        "display_short": "TUSK",
+        "opponent_class": "hbcu_external"
+      },
+      "opponent_id": null,
+      "opponent_team_id": null,
+      "opponent_name": "Tuskegee",
+      "opponent_short": "TUSK",
+      "opponent_class": "hbcu_external",
+      "home_away": "home",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "venue_label": "W.C. Gorden Classic",
+        "city": "Jackson",
+        "neutral_site_name": null,
+        "venue_id": "VEN_mississippi_veterans_memorial_stadium",
+        "name": "Mississippi Veterans Memorial Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "wc_gorden_classic",
+          "display_name": "W.C. Gorden Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacjsu"
+          ]
+        }
+      ],
+      "is_covered_matchup": false,
+      "conference_scope": "non_conference",
+      "division_scope": "not_applicable",
+      "game_type": "non_conference",
+      "event": {
+        "kind": "classic",
+        "name": "W.C. Gorden Classic",
+        "event_type_id": "wc_gorden_classic"
+      },
+      "result": "W",
+      "team_score": 41,
+      "opponent_score": 7,
+      "display_score": "W 41-7",
+      "winner_team_id": "swacjsu",
+      "score_team": 41,
+      "score_opponent": 7,
+      "score": "W 41-7",
+      "record_entering": "2-0",
+      "conference_record_entering": "0-0",
+      "tag": "W.C. Gorden Classic",
+      "headline": "W 41-7 vs TUSK",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": null
+    },
+    {
+      "game_id": "SUJSU26092026",
+      "game_path_id": "sujsu26",
+      "route": "/game/sujsu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "week": 4,
+      "week_label": "Week 4",
+      "kickoff_label": "06:02 PM",
+      "opponent": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "display_short": "SOU",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacsu",
+      "opponent_team_id": "swacsu",
+      "opponent_name": "Southern",
+      "opponent_short": "SOU",
+      "opponent_class": "covered",
+      "home_away": "home",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "venue_label": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "neutral_site_name": null,
+        "venue_id": "VEN_mississippi_veterans_memorial_stadium",
+        "name": "Mississippi Veterans Memorial Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "greek_day",
+          "display_name": "Greek Day/Night",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ]
+        },
+        {
+          "event_type_id": "themed_game",
+          "display_name": "Themed Game",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ],
+          "label": "Future Legends"
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "cross_division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "promotion",
+        "name": "Greek Day/Night",
+        "event_type_id": "greek_day"
+      },
+      "result": "W",
+      "team_score": 35,
+      "opponent_score": 17,
+      "display_score": "W 35-17",
+      "winner_team_id": "swacjsu",
+      "score_team": 35,
+      "score_opponent": 17,
+      "score": "W 35-17",
+      "record_entering": "3-0",
+      "conference_record_entering": "0-0",
+      "tag": "",
+      "headline": "W 35-17 vs SOU",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.6251
+    },
+    {
+      "game_id": "AAMUJSU03102026",
+      "game_path_id": "aamujsu26",
+      "route": "/game/aamujsu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "week": 5,
+      "week_label": "Week 5",
+      "kickoff_label": "04:08 PM",
+      "opponent": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "display_short": "AAMU",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacaamu",
+      "opponent_team_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "opponent_short": "AAMU",
+      "opponent_class": "covered",
+      "home_away": "home",
+      "neutral_site": true,
+      "venue": {
+        "stadium_name": "Ladd-Peebles Stadium",
+        "venue_label": "Gulf Coast Challenge",
+        "city": "Mobile",
+        "neutral_site_name": "Gulf Coast Challenge",
+        "venue_id": "VEN_ladd_peebles_stadium",
+        "name": "Ladd-Peebles Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "gulf_coast_challenge",
+          "display_name": "Gulf Coast Challenge",
+          "category": "recurring_series",
+          "teams": [
+            "swacjsu",
+            "swacaamu"
+          ]
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "classic",
+        "name": "Gulf Coast Challenge",
+        "event_type_id": "gulf_coast_challenge"
+      },
+      "result": "W",
+      "team_score": 31,
+      "opponent_score": 28,
+      "display_score": "W 31-28",
+      "winner_team_id": "swacjsu",
+      "score_team": 31,
+      "score_opponent": 28,
+      "score": "W 31-28",
+      "record_entering": "4-0",
+      "conference_record_entering": "1-0",
+      "tag": "Gulf Coast Challenge",
+      "headline": "W 31-28 vs AAMU",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.5324
+    },
+    {
+      "game_id": "JSUGRAM10102026",
+      "game_path_id": "jsugsu26",
+      "route": "/game/jsugsu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "week": 6,
+      "week_label": "Week 6",
+      "kickoff_label": "04:06 PM",
+      "opponent": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "display_short": "GRAM",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacgsu",
+      "opponent_team_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "opponent_short": "GRAM",
+      "opponent_class": "covered",
+      "home_away": "away",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Eddie G. Robinson Memorial Stadium",
+        "venue_label": "Eddie G. Robinson Memorial Stadium",
+        "city": "Grambling",
+        "neutral_site_name": null,
+        "venue_id": "VEN_eddie_g_robinson_memorial_stadium",
+        "name": "Eddie G. Robinson Memorial Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "breast_cancer_awareness",
+          "display_name": "Breast Cancer Awareness",
+          "category": "theme_day",
+          "teams": [
+            "swacgsu"
+          ]
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "cross_division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "promotion",
+        "name": "Breast Cancer Awareness",
+        "event_type_id": "breast_cancer_awareness"
+      },
+      "result": "L",
+      "team_score": 38,
+      "opponent_score": 45,
+      "display_score": "L 38-45",
+      "winner_team_id": "swacgsu",
+      "score_team": 38,
+      "score_opponent": 45,
+      "score": "L 38-45",
+      "record_entering": "5-0",
+      "conference_record_entering": "2-0",
+      "tag": "",
+      "headline": "L 38-45 vs GRAM",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.6094
+    },
+    {
+      "game_id": "FAMUJSU17102026",
+      "game_path_id": "famujsu26",
+      "route": "/game/famujsu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "week": 7,
+      "week_label": "Week 7",
+      "kickoff_label": "02:04 PM",
+      "opponent": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "display_short": "FAMU",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacfamu",
+      "opponent_team_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "opponent_short": "FAMU",
+      "opponent_class": "covered",
+      "home_away": "home",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "venue_label": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "neutral_site_name": null,
+        "venue_id": "VEN_mississippi_veterans_memorial_stadium",
+        "name": "Mississippi Veterans Memorial Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ]
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming",
+        "event_type_id": "homecoming"
+      },
+      "result": "W",
+      "team_score": 27,
+      "opponent_score": 17,
+      "display_score": "W 27-17",
+      "winner_team_id": "swacjsu",
+      "score_team": 27,
+      "score_opponent": 17,
+      "score": "W 27-17",
+      "record_entering": "5-1",
+      "conference_record_entering": "2-1",
+      "tag": "Homecoming",
+      "headline": "W 27-17 vs FAMU",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.6241
+    },
+    {
+      "game_id": "2026-10-24_swacjsu_at_swacbcu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "scheduled",
+      "status_label": "13:00",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "week": 8,
+      "week_label": "Week 8",
+      "kickoff_label": "13:00",
+      "opponent": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "display_short": "BCU",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacbcu",
+      "opponent_team_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "opponent_short": "BCU",
+      "opponent_class": "covered",
+      "home_away": "away",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "venue_label": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "neutral_site_name": null,
+        "venue_id": "VEN_daytona_stadium",
+        "name": "Daytona Stadium"
+      },
+      "events": [],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "division",
+      "game_type": "regular_conference",
+      "event": null,
+      "result": null,
+      "team_score": null,
+      "opponent_score": null,
+      "display_score": "",
+      "winner_team_id": null,
+      "score_team": null,
+      "score_opponent": null,
+      "score": null,
+      "record_entering": "6-1",
+      "conference_record_entering": "3-1",
+      "tag": "",
+      "headline": "Travels to BCU",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.5705
+    },
+    {
+      "game_id": "2026-11-07_swacmvsu_at_swacjsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "scheduled",
+      "status_label": "Scheduled",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "week": 10,
+      "week_label": "Week 10",
+      "kickoff_label": "TBA",
+      "opponent": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "display_short": "MVSU",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacmvsu",
+      "opponent_team_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "opponent_short": "MVSU",
+      "opponent_class": "covered",
+      "home_away": "home",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "venue_label": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "neutral_site_name": null,
+        "venue_id": "VEN_mississippi_veterans_memorial_stadium",
+        "name": "Mississippi Veterans Memorial Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "senior_day",
+          "display_name": "Senior Day",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ]
+        },
+        {
+          "event_type_id": "high_school_day",
+          "display_name": "High School Day",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ]
+        },
+        {
+          "event_type_id": "military_appreciation",
+          "display_name": "Military/Veteran Appreciation",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ]
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "promotion",
+        "name": "Senior Day",
+        "event_type_id": "senior_day"
+      },
+      "result": null,
+      "team_score": null,
+      "opponent_score": null,
+      "display_score": "",
+      "winner_team_id": null,
+      "score_team": null,
+      "score_opponent": null,
+      "score": null,
+      "record_entering": "6-1",
+      "conference_record_entering": "3-1",
+      "tag": "",
+      "headline": "Hosts MVSU at Mississippi Veterans Memorial Stadium",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.5897
+    },
+    {
+      "game_id": "2026-11-14_swacjsu_at_swacasu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "scheduled",
+      "status_label": "Scheduled",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "week": 11,
+      "week_label": "Week 11",
+      "kickoff_label": "TBA",
+      "opponent": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "display_short": "ALST",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacasu",
+      "opponent_team_id": "swacasu",
+      "opponent_name": "Bama State",
+      "opponent_short": "ALST",
+      "opponent_class": "covered",
+      "home_away": "away",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "venue_label": "ASU Stadium",
+        "city": "Montgomery",
+        "neutral_site_name": null,
+        "venue_id": "VEN_asu_stadium",
+        "name": "ASU Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "hall_of_fame_day",
+          "display_name": "Hall of Fame Day/Weekend",
+          "category": "theme_day",
+          "teams": [
+            "swacasu"
+          ]
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "promotion",
+        "name": "Hall of Fame Day/Weekend",
+        "event_type_id": "hall_of_fame_day"
+      },
+      "result": null,
+      "team_score": null,
+      "opponent_score": null,
+      "display_score": "",
+      "winner_team_id": null,
+      "score_team": null,
+      "score_opponent": null,
+      "score": null,
+      "record_entering": "6-1",
+      "conference_record_entering": "3-1",
+      "tag": "",
+      "headline": "Travels to ALST",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.5387
+    },
+    {
+      "game_id": "2026-11-21_swacjsu_at_swacalc",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "scheduled",
+      "status_label": "Scheduled",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "week": 12,
+      "week_label": "Week 12",
+      "kickoff_label": "TBA",
+      "opponent": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "display_short": "ALCN",
+        "opponent_class": "covered"
+      },
+      "opponent_id": "swacalc",
+      "opponent_team_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "opponent_short": "ALCN",
+      "opponent_class": "covered",
+      "home_away": "away",
+      "neutral_site": false,
+      "venue": {
+        "stadium_name": "Jack Spinks-Marino Casem Stadium",
+        "venue_label": "Jack Spinks-Marino Casem Stadium",
+        "city": "Lorman",
+        "neutral_site_name": null,
+        "venue_id": "VEN_jack_spinks_marino_casem_stadium",
+        "name": "Jack Spinks-Marino Casem Stadium"
+      },
+      "events": [
+        {
+          "event_type_id": "senior_day",
+          "display_name": "Senior Day",
+          "category": "theme_day",
+          "teams": [
+            "swacalc"
+          ]
+        }
+      ],
+      "is_covered_matchup": true,
+      "conference_scope": "conference",
+      "division_scope": "cross_division",
+      "game_type": "regular_conference",
+      "event": {
+        "kind": "promotion",
+        "name": "Senior Day",
+        "event_type_id": "senior_day"
+      },
+      "result": null,
+      "team_score": null,
+      "opponent_score": null,
+      "display_score": "",
+      "winner_team_id": null,
+      "score_team": null,
+      "score_opponent": null,
+      "score": null,
+      "record_entering": "6-1",
+      "conference_record_entering": "3-1",
+      "tag": "",
+      "headline": "Travels to ALCN",
+      "is_rivalry": false,
+      "is_homecoming": false,
+      "is_conference_championship": false,
+      "is_celebration_bowl": false,
+      "win_probability": 0.548
+    }
+  ]
+}

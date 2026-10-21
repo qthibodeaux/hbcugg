@@ -1,0 +1,709 @@
+{
+  "season": 2025,
+  "generated_at": "2026-10-20T06:37:21.483759+00:00",
+  "teams": {
+    "swacalc": {
+      "rushing": {
+        "stopRate": 0.2562,
+        "stuffRate": 0.1875,
+        "tflRate": 0.1125,
+        "powerStopRate": 0.4688,
+        "successRate": 0.5,
+        "opportunityRate": 0.5,
+        "yardsPerCarry": 5.2,
+        "lineYardsPerRush": 3.0756,
+        "highlightYardsPerRush": 2.1525,
+        "highlightYardsPerOpportunity": 4.305
+      },
+      "passing": {
+        "pressureRate": 0.1141,
+        "explosiveRate": 0.1141,
+        "completionRate": 0.664,
+        "ypa": 6.956
+      },
+      "defense_impact": {
+        "disruptionRate": 0.141,
+        "explosivePreventionRate": 0.8823,
+        "havocRateForced": 0.141,
+        "sackRateForced": 0.0182,
+        "yardsPerPlayAllowed": 5.3682,
+        "bendDontBreakIndex": 17.88,
+        "tflRateForced": 0.0614,
+        "passDefendedRateForced": 0.058
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 4.4,
+        "lineYardsPerRushAllowed": 2.6423,
+        "successRateAllowed": 0.3548,
+        "opportunityRateAllowed": 0.4086,
+        "highlightYardsPerRushAllowed": 1.752,
+        "highlightYardsPerOpportunityAllowed": 4.2878,
+        "stuffRateAllowed": 0.2186
+      }
+    },
+    "swacaamu": {
+      "rushing": {
+        "stopRate": 0.2941,
+        "stuffRate": 0.1471,
+        "tflRate": 0.0919,
+        "powerStopRate": 0.2083,
+        "successRate": 0.4154,
+        "opportunityRate": 0.4743,
+        "yardsPerCarry": 4.6,
+        "lineYardsPerRush": 2.9316,
+        "highlightYardsPerRush": 1.7081,
+        "highlightYardsPerOpportunity": 3.6013
+      },
+      "passing": {
+        "pressureRate": 0.1551,
+        "explosiveRate": 0.1266,
+        "completionRate": 0.6081,
+        "ypa": 6.6385
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1164,
+        "explosivePreventionRate": 0.8289,
+        "havocRateForced": 0.1164,
+        "sackRateForced": 0.0123,
+        "yardsPerPlayAllowed": 7.1887,
+        "bendDontBreakIndex": 12.98,
+        "tflRateForced": 0.067,
+        "passDefendedRateForced": 0.0335
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.8,
+        "lineYardsPerRushAllowed": 3.1036,
+        "successRateAllowed": 0.429,
+        "opportunityRateAllowed": 0.4882,
+        "highlightYardsPerRushAllowed": 2.6893,
+        "highlightYardsPerOpportunityAllowed": 5.5086,
+        "stuffRateAllowed": 0.1805
+      }
+    },
+    "swacasu": {
+      "rushing": {
+        "stopRate": 0.2785,
+        "stuffRate": 0.1208,
+        "tflRate": 0.057,
+        "powerStopRate": 0.2353,
+        "successRate": 0.547,
+        "opportunityRate": 0.5638,
+        "yardsPerCarry": 7.0,
+        "lineYardsPerRush": 3.7493,
+        "highlightYardsPerRush": 3.2708,
+        "highlightYardsPerOpportunity": 5.8013
+      },
+      "passing": {
+        "pressureRate": 0.058,
+        "explosiveRate": 0.2029,
+        "completionRate": 0.6617,
+        "ypa": 9.6169
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1234,
+        "explosivePreventionRate": 0.8977,
+        "havocRateForced": 0.1234,
+        "sackRateForced": 0.0195,
+        "yardsPerPlayAllowed": 5.1899,
+        "bendDontBreakIndex": 18.27,
+        "tflRateForced": 0.039,
+        "passDefendedRateForced": 0.0584
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.1,
+        "lineYardsPerRushAllowed": 3.2496,
+        "successRateAllowed": 0.5073,
+        "opportunityRateAllowed": 0.5308,
+        "highlightYardsPerRushAllowed": 1.8032,
+        "highlightYardsPerOpportunityAllowed": 3.3971,
+        "stuffRateAllowed": 0.1525
+      }
+    },
+    "swacbcu": {
+      "rushing": {
+        "stopRate": 0.2492,
+        "stuffRate": 0.1703,
+        "tflRate": 0.1167,
+        "powerStopRate": 0.4,
+        "successRate": 0.4732,
+        "opportunityRate": 0.53,
+        "yardsPerCarry": 5.5,
+        "lineYardsPerRush": 3.2063,
+        "highlightYardsPerRush": 2.3079,
+        "highlightYardsPerOpportunity": 4.3545
+      },
+      "passing": {
+        "pressureRate": 0.1336,
+        "explosiveRate": 0.137,
+        "completionRate": 0.6739,
+        "ypa": 8.4239
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1497,
+        "explosivePreventionRate": 0.8468,
+        "havocRateForced": 0.1497,
+        "sackRateForced": 0.031,
+        "yardsPerPlayAllowed": 6.9053,
+        "bendDontBreakIndex": 14.23,
+        "tflRateForced": 0.0396,
+        "passDefendedRateForced": 0.0723
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 6.7,
+        "lineYardsPerRushAllowed": 3.6363,
+        "successRateAllowed": 0.5311,
+        "opportunityRateAllowed": 0.5824,
+        "highlightYardsPerRushAllowed": 3.089,
+        "highlightYardsPerOpportunityAllowed": 5.3039,
+        "stuffRateAllowed": 0.1355
+      }
+    },
+    "swacfamu": {
+      "rushing": {
+        "stopRate": 0.2646,
+        "stuffRate": 0.1993,
+        "tflRate": 0.134,
+        "powerStopRate": 0.3333,
+        "successRate": 0.4296,
+        "opportunityRate": 0.4914,
+        "yardsPerCarry": 5.7,
+        "lineYardsPerRush": 3.044,
+        "highlightYardsPerRush": 2.6948,
+        "highlightYardsPerOpportunity": 5.4839
+      },
+      "passing": {
+        "pressureRate": 0.1061,
+        "explosiveRate": 0.1636,
+        "completionRate": 0.6242,
+        "ypa": 7.3758
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1387,
+        "explosivePreventionRate": 0.8567,
+        "havocRateForced": 0.1387,
+        "sackRateForced": 0.02,
+        "yardsPerPlayAllowed": 6.3328,
+        "bendDontBreakIndex": 13.22,
+        "tflRateForced": 0.0555,
+        "passDefendedRateForced": 0.0601
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.7,
+        "lineYardsPerRushAllowed": 3.2099,
+        "successRateAllowed": 0.4577,
+        "opportunityRateAllowed": 0.4956,
+        "highlightYardsPerRushAllowed": 2.481,
+        "highlightYardsPerOpportunityAllowed": 5.0061,
+        "stuffRateAllowed": 0.1662
+      }
+    },
+    "swacjsu": {
+      "rushing": {
+        "stopRate": 0.2398,
+        "stuffRate": 0.1582,
+        "tflRate": 0.0944,
+        "powerStopRate": 0.1852,
+        "successRate": 0.5153,
+        "opportunityRate": 0.5536,
+        "yardsPerCarry": 6.0,
+        "lineYardsPerRush": 3.4153,
+        "highlightYardsPerRush": 2.5898,
+        "highlightYardsPerOpportunity": 4.6781
+      },
+      "passing": {
+        "pressureRate": 0.0905,
+        "explosiveRate": 0.1571,
+        "completionRate": 0.6468,
+        "ypa": 9.5821
+      },
+      "defense_impact": {
+        "disruptionRate": 0.163,
+        "explosivePreventionRate": 0.8841,
+        "havocRateForced": 0.163,
+        "sackRateForced": 0.0217,
+        "yardsPerPlayAllowed": 5.587,
+        "bendDontBreakIndex": 18.58,
+        "tflRateForced": 0.067,
+        "passDefendedRateForced": 0.0688
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 4.1,
+        "lineYardsPerRushAllowed": 2.2692,
+        "successRateAllowed": 0.3609,
+        "opportunityRateAllowed": 0.3872,
+        "highlightYardsPerRushAllowed": 1.791,
+        "highlightYardsPerOpportunityAllowed": 4.6255,
+        "stuffRateAllowed": 0.2368
+      }
+    },
+    "swacmvsu": {
+      "rushing": {
+        "stopRate": 0.295,
+        "stuffRate": 0.2797,
+        "tflRate": 0.2107,
+        "powerStopRate": 0.3889,
+        "successRate": 0.3525,
+        "opportunityRate": 0.4138,
+        "yardsPerCarry": 3.4,
+        "lineYardsPerRush": 2.0544,
+        "highlightYardsPerRush": 1.367,
+        "highlightYardsPerOpportunity": 3.3035
+      },
+      "passing": {
+        "pressureRate": 0.1605,
+        "explosiveRate": 0.1265,
+        "completionRate": 0.5325,
+        "ypa": 6.2305
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1242,
+        "explosivePreventionRate": 0.8709,
+        "havocRateForced": 0.1242,
+        "sackRateForced": 0.0147,
+        "yardsPerPlayAllowed": 6.1814,
+        "bendDontBreakIndex": 12.2,
+        "tflRateForced": 0.0637,
+        "passDefendedRateForced": 0.0425
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.3,
+        "lineYardsPerRushAllowed": 3.2721,
+        "successRateAllowed": 0.5296,
+        "opportunityRateAllowed": 0.5521,
+        "highlightYardsPerRushAllowed": 1.9983,
+        "highlightYardsPerOpportunityAllowed": 3.6195,
+        "stuffRateAllowed": 0.1465
+      }
+    },
+    "swacpvamu": {
+      "rushing": {
+        "stopRate": 0.3022,
+        "stuffRate": 0.1621,
+        "tflRate": 0.0962,
+        "powerStopRate": 0.2857,
+        "successRate": 0.4396,
+        "opportunityRate": 0.5027,
+        "yardsPerCarry": 5.1,
+        "lineYardsPerRush": 3.0841,
+        "highlightYardsPerRush": 2.0615,
+        "highlightYardsPerOpportunity": 4.1009
+      },
+      "passing": {
+        "pressureRate": 0.0822,
+        "explosiveRate": 0.2138,
+        "completionRate": 0.6279,
+        "ypa": 9.2359
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1645,
+        "explosivePreventionRate": 0.9336,
+        "havocRateForced": 0.1645,
+        "sackRateForced": 0.0249,
+        "yardsPerPlayAllowed": 4.2724,
+        "bendDontBreakIndex": 16.81,
+        "tflRateForced": 0.0681,
+        "passDefendedRateForced": 0.0714
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 3.8,
+        "lineYardsPerRushAllowed": 2.4988,
+        "successRateAllowed": 0.3698,
+        "opportunityRateAllowed": 0.4527,
+        "highlightYardsPerRushAllowed": 1.2586,
+        "highlightYardsPerOpportunityAllowed": 2.7802,
+        "stuffRateAllowed": 0.2041
+      }
+    },
+    "swacsu": {
+      "rushing": {
+        "stopRate": 0.3307,
+        "stuffRate": 0.1693,
+        "tflRate": 0.1005,
+        "powerStopRate": 0.2,
+        "successRate": 0.4524,
+        "opportunityRate": 0.4735,
+        "yardsPerCarry": 5.1,
+        "lineYardsPerRush": 2.9392,
+        "highlightYardsPerRush": 2.1667,
+        "highlightYardsPerOpportunity": 4.5759
+      },
+      "passing": {
+        "pressureRate": 0.0931,
+        "explosiveRate": 0.131,
+        "completionRate": 0.5145,
+        "ypa": 6.3225
+      },
+      "defense_impact": {
+        "disruptionRate": 0.138,
+        "explosivePreventionRate": 0.8755,
+        "havocRateForced": 0.138,
+        "sackRateForced": 0.0257,
+        "yardsPerPlayAllowed": 5.9608,
+        "bendDontBreakIndex": 11.94,
+        "tflRateForced": 0.0514,
+        "passDefendedRateForced": 0.0568
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.1,
+        "lineYardsPerRushAllowed": 3.1515,
+        "successRateAllowed": 0.4322,
+        "opportunityRateAllowed": 0.4849,
+        "highlightYardsPerRushAllowed": 1.9892,
+        "highlightYardsPerOpportunityAllowed": 4.1023,
+        "stuffRateAllowed": 0.1709
+      }
+    },
+    "swactsu": {
+      "rushing": {
+        "stopRate": 0.3067,
+        "stuffRate": 0.1333,
+        "tflRate": 0.0733,
+        "powerStopRate": 0.25,
+        "successRate": 0.4767,
+        "opportunityRate": 0.51,
+        "yardsPerCarry": 5.4,
+        "lineYardsPerRush": 3.3627,
+        "highlightYardsPerRush": 2.0473,
+        "highlightYardsPerOpportunity": 4.0143
+      },
+      "passing": {
+        "pressureRate": 0.1156,
+        "explosiveRate": 0.0978,
+        "completionRate": 0.6215,
+        "ypa": 6.9486
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1141,
+        "explosivePreventionRate": 0.8778,
+        "havocRateForced": 0.1141,
+        "sackRateForced": 0.0163,
+        "yardsPerPlayAllowed": 6.1609,
+        "bendDontBreakIndex": 19.15,
+        "tflRateForced": 0.0428,
+        "passDefendedRateForced": 0.0448
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.1,
+        "lineYardsPerRushAllowed": 3.2599,
+        "successRateAllowed": 0.4621,
+        "opportunityRateAllowed": 0.5162,
+        "highlightYardsPerRushAllowed": 1.8051,
+        "highlightYardsPerOpportunityAllowed": 3.4969,
+        "stuffRateAllowed": 0.148
+      }
+    },
+    "swacuapb": {
+      "rushing": {
+        "stopRate": 0.3457,
+        "stuffRate": 0.171,
+        "tflRate": 0.0595,
+        "powerStopRate": 0.2222,
+        "successRate": 0.3978,
+        "opportunityRate": 0.4572,
+        "yardsPerCarry": 4.6,
+        "lineYardsPerRush": 3.0472,
+        "highlightYardsPerRush": 1.5364,
+        "highlightYardsPerOpportunity": 3.3605
+      },
+      "passing": {
+        "pressureRate": 0.1564,
+        "explosiveRate": 0.1235,
+        "completionRate": 0.5794,
+        "ypa": 6.7124
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1154,
+        "explosivePreventionRate": 0.8327,
+        "havocRateForced": 0.1154,
+        "sackRateForced": 0.0154,
+        "yardsPerPlayAllowed": 7.0692,
+        "bendDontBreakIndex": 13.77,
+        "tflRateForced": 0.0538,
+        "passDefendedRateForced": 0.0423
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 6.4,
+        "lineYardsPerRushAllowed": 3.508,
+        "successRateAllowed": 0.5084,
+        "opportunityRateAllowed": 0.5284,
+        "highlightYardsPerRushAllowed": 2.8666,
+        "highlightYardsPerOpportunityAllowed": 5.4251,
+        "stuffRateAllowed": 0.1472
+      }
+    },
+    "swacgsu": {
+      "rushing": {
+        "stopRate": 0.3212,
+        "stuffRate": 0.2482,
+        "tflRate": 0.135,
+        "powerStopRate": 0.4444,
+        "successRate": 0.3285,
+        "opportunityRate": 0.4124,
+        "yardsPerCarry": 4.2,
+        "lineYardsPerRush": 2.462,
+        "highlightYardsPerRush": 1.7241,
+        "highlightYardsPerOpportunity": 4.1806
+      },
+      "passing": {
+        "pressureRate": 0.1565,
+        "explosiveRate": 0.1174,
+        "completionRate": 0.576,
+        "ypa": 6.2627
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1497,
+        "explosivePreventionRate": 0.8669,
+        "havocRateForced": 0.1497,
+        "sackRateForced": 0.0499,
+        "yardsPerPlayAllowed": 5.4407,
+        "bendDontBreakIndex": 15.3,
+        "tflRateForced": 0.0499,
+        "passDefendedRateForced": 0.0478
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.3,
+        "lineYardsPerRushAllowed": 2.9803,
+        "successRateAllowed": 0.4286,
+        "opportunityRateAllowed": 0.4942,
+        "highlightYardsPerRushAllowed": 2.3015,
+        "highlightYardsPerOpportunityAllowed": 4.657,
+        "stuffRateAllowed": 0.1853
+      }
+    },
+    "meacdsu": {
+      "rushing": {
+        "stopRate": 0.2927,
+        "stuffRate": 0.2488,
+        "tflRate": 0.1268,
+        "powerStopRate": 0.4,
+        "successRate": 0.4098,
+        "opportunityRate": 0.4732,
+        "yardsPerCarry": 6.3,
+        "lineYardsPerRush": 2.8463,
+        "highlightYardsPerRush": 3.4707,
+        "highlightYardsPerOpportunity": 7.3345
+      },
+      "passing": {
+        "pressureRate": 0.1545,
+        "explosiveRate": 0.122,
+        "completionRate": 0.6239,
+        "ypa": 7.3303
+      },
+      "defense_impact": {
+        "disruptionRate": 0.202,
+        "explosivePreventionRate": 0.8519,
+        "havocRateForced": 0.202,
+        "sackRateForced": 0.0572,
+        "yardsPerPlayAllowed": 6.2054,
+        "bendDontBreakIndex": 20.48,
+        "tflRateForced": 0.0572,
+        "passDefendedRateForced": 0.0741
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.1,
+        "lineYardsPerRushAllowed": 3.0298,
+        "successRateAllowed": 0.4046,
+        "opportunityRateAllowed": 0.4733,
+        "highlightYardsPerRushAllowed": 2.1153,
+        "highlightYardsPerOpportunityAllowed": 4.4693,
+        "stuffRateAllowed": 0.2061
+      }
+    },
+    "meachu": {
+      "rushing": {
+        "stopRate": 0.3832,
+        "stuffRate": 0.2036,
+        "tflRate": 0.0958,
+        "powerStopRate": 0.625,
+        "successRate": 0.3293,
+        "opportunityRate": 0.4311,
+        "yardsPerCarry": 4.1,
+        "lineYardsPerRush": 2.6473,
+        "highlightYardsPerRush": 1.4066,
+        "highlightYardsPerOpportunity": 3.2628
+      },
+      "passing": {
+        "pressureRate": 0.1887,
+        "explosiveRate": 0.1085,
+        "completionRate": 0.5907,
+        "ypa": 6.285
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1744,
+        "explosivePreventionRate": 0.8488,
+        "havocRateForced": 0.1744,
+        "sackRateForced": 0.0552,
+        "yardsPerPlayAllowed": 6.3721,
+        "bendDontBreakIndex": 16.61,
+        "tflRateForced": 0.0349,
+        "passDefendedRateForced": 0.0814
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.7,
+        "lineYardsPerRushAllowed": 3.0687,
+        "successRateAllowed": 0.4246,
+        "opportunityRateAllowed": 0.4413,
+        "highlightYardsPerRushAllowed": 2.5961,
+        "highlightYardsPerOpportunityAllowed": 5.8828,
+        "stuffRateAllowed": 0.1899
+      }
+    },
+    "meacmsu": {
+      "rushing": {
+        "stopRate": 0.3133,
+        "stuffRate": 0.2289,
+        "tflRate": 0.1205,
+        "powerStopRate": 0.4286,
+        "successRate": 0.4096,
+        "opportunityRate": 0.4518,
+        "yardsPerCarry": 5.7,
+        "lineYardsPerRush": 2.9205,
+        "highlightYardsPerRush": 2.7482,
+        "highlightYardsPerOpportunity": 6.0828
+      },
+      "passing": {
+        "pressureRate": 0.2199,
+        "explosiveRate": 0.1418,
+        "completionRate": 0.562,
+        "ypa": 6.6612
+      },
+      "defense_impact": {
+        "disruptionRate": 0.1774,
+        "explosivePreventionRate": 0.8593,
+        "havocRateForced": 0.1774,
+        "sackRateForced": 0.0398,
+        "yardsPerPlayAllowed": 6.2508,
+        "bendDontBreakIndex": 15.14,
+        "tflRateForced": 0.0612,
+        "passDefendedRateForced": 0.0581
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.9,
+        "lineYardsPerRushAllowed": 3.0095,
+        "successRateAllowed": 0.5,
+        "opportunityRateAllowed": 0.5,
+        "highlightYardsPerRushAllowed": 2.9209,
+        "highlightYardsPerOpportunityAllowed": 5.8418,
+        "stuffRateAllowed": 0.1899
+      }
+    },
+    "meacnccu": {
+      "rushing": {
+        "stopRate": 0.3269,
+        "stuffRate": 0.1875,
+        "tflRate": 0.1154,
+        "powerStopRate": 0.2105,
+        "successRate": 0.4423,
+        "opportunityRate": 0.4519,
+        "yardsPerCarry": 5.0,
+        "lineYardsPerRush": 2.9115,
+        "highlightYardsPerRush": 2.1077,
+        "highlightYardsPerOpportunity": 4.6641
+      },
+      "passing": {
+        "pressureRate": 0.1074,
+        "explosiveRate": 0.186,
+        "completionRate": 0.6388,
+        "ypa": 8.3877
+      },
+      "defense_impact": {
+        "disruptionRate": 0.2183,
+        "explosivePreventionRate": 0.8873,
+        "havocRateForced": 0.2183,
+        "sackRateForced": 0.0681,
+        "yardsPerPlayAllowed": 5.2864,
+        "bendDontBreakIndex": 15.42,
+        "tflRateForced": 0.0728,
+        "passDefendedRateForced": 0.0704
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.5,
+        "lineYardsPerRushAllowed": 2.7005,
+        "successRateAllowed": 0.3853,
+        "opportunityRateAllowed": 0.4358,
+        "highlightYardsPerRushAllowed": 2.7995,
+        "highlightYardsPerOpportunityAllowed": 6.4238,
+        "stuffRateAllowed": 0.2477
+      }
+    },
+    "meacnsu": {
+      "rushing": {
+        "stopRate": 0.296,
+        "stuffRate": 0.208,
+        "tflRate": 0.128,
+        "powerStopRate": 0.0,
+        "successRate": 0.432,
+        "opportunityRate": 0.52,
+        "yardsPerCarry": 7.0,
+        "lineYardsPerRush": 3.1688,
+        "highlightYardsPerRush": 3.7992,
+        "highlightYardsPerOpportunity": 7.3062
+      },
+      "passing": {
+        "pressureRate": 0.2025,
+        "explosiveRate": 0.1329,
+        "completionRate": 0.5882,
+        "ypa": 8.3529
+      },
+      "defense_impact": {
+        "disruptionRate": 0.137,
+        "explosivePreventionRate": 0.895,
+        "havocRateForced": 0.137,
+        "sackRateForced": 0.035,
+        "yardsPerPlayAllowed": 6.1749,
+        "bendDontBreakIndex": 12.17,
+        "tflRateForced": 0.0466,
+        "passDefendedRateForced": 0.0554
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 4.7,
+        "lineYardsPerRushAllowed": 2.9051,
+        "successRateAllowed": 0.4124,
+        "opportunityRateAllowed": 0.4915,
+        "highlightYardsPerRushAllowed": 1.8407,
+        "highlightYardsPerOpportunityAllowed": 3.7451,
+        "stuffRateAllowed": 0.2203
+      }
+    },
+    "meacscsu": {
+      "rushing": {
+        "stopRate": 0.3292,
+        "stuffRate": 0.2042,
+        "tflRate": 0.0958,
+        "powerStopRate": 0.3684,
+        "successRate": 0.4583,
+        "opportunityRate": 0.4708,
+        "yardsPerCarry": 4.7,
+        "lineYardsPerRush": 2.9042,
+        "highlightYardsPerRush": 1.8125,
+        "highlightYardsPerOpportunity": 3.8498
+      },
+      "passing": {
+        "pressureRate": 0.1388,
+        "explosiveRate": 0.1837,
+        "completionRate": 0.63,
+        "ypa": 9.8326
+      },
+      "defense_impact": {
+        "disruptionRate": 0.2013,
+        "explosivePreventionRate": 0.8584,
+        "havocRateForced": 0.2013,
+        "sackRateForced": 0.0398,
+        "yardsPerPlayAllowed": 6.0442,
+        "bendDontBreakIndex": 15.52,
+        "tflRateForced": 0.0819,
+        "passDefendedRateForced": 0.0774
+      },
+      "rushing_defense": {
+        "yardsPerCarryAllowed": 5.3,
+        "lineYardsPerRushAllowed": 2.3917,
+        "successRateAllowed": 0.3807,
+        "opportunityRateAllowed": 0.4358,
+        "highlightYardsPerRushAllowed": 2.9064,
+        "highlightYardsPerOpportunityAllowed": 6.6691,
+        "stuffRateAllowed": 0.2752
+      }
+    }
+  },
+  "basis": "Counted over the season's League plays and divided once (stats/team-analytics hub_{season}.json); the same numbers Team Analytics prints."
+}

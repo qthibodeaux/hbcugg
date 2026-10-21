@@ -1,0 +1,451 @@
+{
+  "team_id": "meacmsu",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "MEAC",
+    "division": "",
+    "division_label": "MEAC",
+    "season": 2025,
+    "team_abbreviation": "MSU",
+    "school_name": "Morgan State University",
+    "avg_par": 6.7,
+    "roster_count": 110,
+    "transfer_count": 42,
+    "transfer_rate": 38.2,
+    "upperclass_pct": 44.5
+  },
+  "conference_record": {
+    "conference_label": "1-4",
+    "conference_wins": 1,
+    "conference_losses": 4,
+    "overall_label": "4-8",
+    "overall_wins": 4,
+    "overall_losses": 8,
+    "overall_ties": 0,
+    "division_rank": "5th - MEAC",
+    "last_5": [
+      {
+        "week": 9,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "meachu",
+        "opponent_short": "HOW",
+        "score_team": 27,
+        "score_opponent": 33,
+        "score": "L 27-33",
+        "game_path_id": "msuhu25"
+      },
+      {
+        "week": 10,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "meacscsu",
+        "opponent_short": "SCSU",
+        "score_team": 30,
+        "score_opponent": 36,
+        "score": "L 30-36",
+        "game_path_id": "msuscsu25"
+      },
+      {
+        "week": 11,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "meacdsu",
+        "opponent_short": "DSU",
+        "score_team": 12,
+        "score_opponent": 14,
+        "score": "L 12-14",
+        "game_path_id": "dsumsu25"
+      },
+      {
+        "week": 12,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "meacnsu",
+        "opponent_short": "NSU",
+        "score_team": 35,
+        "score_opponent": 28,
+        "score": "W 35-28",
+        "game_path_id": "msunsu25"
+      },
+      {
+        "week": 13,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "meacnccu",
+        "opponent_short": "NCCU",
+        "score_team": 14,
+        "score_opponent": 33,
+        "score": "L 14-33",
+        "game_path_id": "nccumsu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "NCCUMORG22112025",
+    "game_path_id": "nccumsu25",
+    "week": 13,
+    "date": "2025-11-22",
+    "opponent_id": "meacnccu",
+    "opponent_name": "NC Central",
+    "result": "L",
+    "score_team": 14,
+    "score_opponent": 33,
+    "score": "L 14-33",
+    "venue": {
+      "stadium_name": "Hughes Stadium",
+      "venue_label": "Hughes Stadium",
+      "city": "Baltimore",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "L 14-33 vs NCCU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.4055
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 4-8, 5th - MEAC.",
+    "record": "4-8",
+    "wins": 4,
+    "losses": 8,
+    "conference_record": "1-4",
+    "conference_wins": 1,
+    "conference_losses": 4,
+    "division_finish": "5th - MEAC",
+    "avg_par": 6.7,
+    "games_played": 12
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00003748",
+      "name": "Damon Wilson",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://morganstatebears.com/images/2022/10/4/7L6A0260.JPG",
+      "tenure_year": 4,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": 0.0489,
+        "display": "+0.05",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00003750",
+      "name": "Apollo Wright",
+      "role": "Offensive Coordinator",
+      "role_title": "Offensive Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://morganstatebears.com/images/2024/8/13/WRIGHT_Apollo.jpg",
+      "tenure_year": 2,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": 0.0211,
+        "display": "+0.02",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00003749",
+      "name": "Antone' Sewell",
+      "role": "Defensive Coordinator",
+      "role_title": "Assistant Head Coach, Defensive Coordinator, Safeties",
+      "role_group": "coordinator",
+      "image_url": "https://morganstatebears.com/images/2022/10/4/SEWELL.jpg",
+      "tenure_year": 4,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.0278,
+        "display": "+0.03",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 56.2,
+            "display": "56.2%",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 161.2,
+            "display": "161.2",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.4,
+            "display": "1.40",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.8,
+            "display": "0.80",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 188.2,
+            "display": "188.2",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 1.6,
+            "display": "1.60",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 22.88,
+            "display": "22.9%",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 40.0,
+            "display": "40.0%",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 18.05,
+            "display": "18.1%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 21.64,
+            "display": "21.6%",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.6,
+            "display": "2.60",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 2.4,
+            "display": "2.40",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 40.35,
+            "display": "40.4%",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.0207,
+            "display": "-0.02",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 37.7,
+            "display": "37.7%",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 70.8,
+            "display": "70.8%",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 37.5,
+            "display": "37.5%",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 38.0,
+            "display": "38.0",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 16.7,
+            "display": "16.7%",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 25.6,
+            "display": "25.6",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "defensive_havoc",
+    "key": "turnovers_forced_per_game",
+    "label": "TO FORCED/GM",
+    "value": 2.4,
+    "display": "2.40",
+    "rank": 1,
+    "total": 18,
+    "sentence": "Turnovers forced per game"
+  },
+  "star_impact": {
+    "person_id": "PERS_00011570",
+    "full_name": "Aki Harvey",
+    "last_name": "Harvey",
+    "position": "DB",
+    "class_year": "Jr.",
+    "image_url": "https://morganstatebears.com/images/2025/8/12/HARVEY_Aki_.jpg",
+    "from_game": {
+      "game_id": "NCCUMORG22112025",
+      "game_path_id": "nccumsu25",
+      "week": 13,
+      "opponent_name": "NC Central",
+      "result": "L",
+      "score": "L 14-33"
+    },
+    "game_par": 17.82,
+    "season_par": 25.03,
+    "par_per_game": 5.01,
+    "stat_line": [
+      {
+        "label": "PD",
+        "value": "1"
+      },
+      {
+        "label": "FR",
+        "value": "1"
+      },
+      {
+        "label": "TKL",
+        "value": "3"
+      }
+    ],
+    "profile_url": "/player/PERS_00011570"
+  }
+}

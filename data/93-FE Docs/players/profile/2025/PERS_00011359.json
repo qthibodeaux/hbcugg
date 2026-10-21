@@ -1,0 +1,438 @@
+{
+  "person_id": "PERS_00011359",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00011359",
+    "first_name": "Tomorrio",
+    "last_name": "Bilberry",
+    "team_id": "swacuapb",
+    "team_abbreviation": "UAPB",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 23,
+    "position": "Defensive Back",
+    "position_group": "DB",
+    "raw_position": "DB",
+    "class_year": 1,
+    "class_label": "Freshman",
+    "height": 72,
+    "weight": 170,
+    "home_city": "Franklin",
+    "home_state": "LA",
+    "is_in_state": false,
+    "previous_school": "Union Parish High",
+    "high_school": null,
+    "image_url": "https://uapblionsroar.com/images/2025/8/19/_23_Tomorrio_Bilberry_Jr.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": -0.7,
+    "per_game": 0.14,
+    "games_played": 1,
+    "rank_in_position_group": 208,
+    "position_group_total": 279,
+    "conference_rank": 610,
+    "conference_total": 1006,
+    "position_group_mean": 8.26
+  },
+  "season_totals": {
+    "par": -0.7,
+    "total_production": 0.14,
+    "avg_production": 0.14,
+    "games_played": 1,
+    "season_components": {
+      "hit_production": 0.14,
+      "hawk_production": 0,
+      "scrum_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "2025-08-30_swacuapb_at_texastech",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Texas Tech",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 7-67",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2025-09-06_swacuapb_at_centralarkansas",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Central Arkansas",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 17-41",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2025-09-13_lincolnca_at_swacuapb",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Lincoln (CA)",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 34-8",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "ALCUAPB27092025",
+      "game_path_id": "alcuapb25",
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 24-20",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 6,
+      "game_id": "UAPBTSU04102025",
+      "game_path_id": "uapbtsu25",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 7-51",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 7,
+      "game_id": "2025-10-11_westgatechristia_at_swacuapb",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Westgate Christian",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 79-10",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 8,
+      "game_id": "GRAMUAPB18102025",
+      "game_path_id": "gsuuapb25",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 16-20",
+      "data_state": "played",
+      "par": -0.7,
+      "components": {
+        "hit_production": 0.14
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 1
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "UAPBBCU25102025",
+      "game_path_id": "uapbbcu25",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 14-31",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "SUUAPB01112025",
+      "game_path_id": "suuapb25",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 40-21",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "FAMUUAPB08112025",
+      "game_path_id": "famuuapb25",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 28-31",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "UAPBPVAMU15112025",
+      "game_path_id": "uapbpvamu25",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 9-56",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 13,
+      "game_id": "UAPBASU22112025",
+      "game_path_id": "uapbasu25",
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 13-44",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 8,
+    "game_id": "GRAMUAPB18102025",
+    "game_path_id": "gsuuapb25",
+    "opponent_id": "swacgsu",
+    "opponent_name": "Grambling",
+    "home_away": "home",
+    "result": "L",
+    "score": "L 16-20",
+    "par": -0.7,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 1
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 72,
+      "rank": 7,
+      "total": 19,
+      "group": "DB",
+      "group_avg": 71.8
+    },
+    "weight": {
+      "value": 170,
+      "rank": 12,
+      "total": 18,
+      "group": "DB",
+      "group_avg": 179.3
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 3
+      },
+      {
+        "class": "So.",
+        "count": 7
+      },
+      {
+        "class": "Jr.",
+        "count": 1
+      },
+      {
+        "class": "Sr.",
+        "count": 4
+      },
+      {
+        "class": "Gr.",
+        "count": 1
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "DBS",
+        "rank": 16,
+        "total": 19
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 12
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 47
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 27
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": false,
+    "transfer_tier": null,
+    "previous_school": "Union Parish High",
+    "is_redshirt": true,
+    "redshirt_note": "Redshirt season used.",
+    "distance_miles": 307.3,
+    "distance_tier": "regional",
+    "experience_score": 1.5,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": true,
+        "season": 2025
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": 2026
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2028
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2029
+      }
+    ]
+  }
+}

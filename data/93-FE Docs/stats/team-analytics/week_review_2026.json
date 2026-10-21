@@ -1,0 +1,728 @@
+{
+ "season": 2026,
+ "generated_at": "2026-10-20T01:37:10-05:00",
+ "through_week": 7,
+ "default_week": 7,
+ "weeks": [
+  {
+   "week": 0,
+   "label": "Week 0",
+   "date_range": {
+    "start": "2026-07-03",
+    "end": "2026-08-31"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-08-29_meachu_at_swacaamu",
+     "route": "/game/huaamu26",
+     "date": "2026-08-29",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 24
+     },
+     "away": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 31
+     },
+     "winner_id": "meachu",
+     "margin": 7,
+     "net_success": -0.1123,
+     "epa_diff": 0.0207,
+     "winner_edge": -0.1123
+    },
+    {
+     "schedule_game_id": "2026-08-29_meacnccu_at_swactsu",
+     "route": "/game/nccutsu26",
+     "date": "2026-08-29",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 42
+     },
+     "away": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 30
+     },
+     "winner_id": "swactsu",
+     "margin": 12,
+     "net_success": 0.055,
+     "epa_diff": 0.4762,
+     "winner_edge": 0.055
+    },
+    {
+     "schedule_game_id": "2026-08-29_swacasu_at_swacsu",
+     "route": "/game/asusu26",
+     "date": "2026-08-29",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 17
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 30
+     },
+     "winner_id": "swacasu",
+     "margin": 13,
+     "net_success": 0.0122,
+     "epa_diff": 0.1805,
+     "winner_edge": 0.0122
+    }
+   ]
+  },
+  {
+   "week": 1,
+   "label": "Week 1",
+   "date_range": {
+    "start": "2026-09-01",
+    "end": "2026-09-07"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-09-06_meacscsu_at_swacfamu",
+     "route": "/game/scsufamu26",
+     "date": "2026-09-06",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 13
+     },
+     "away": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 31
+     },
+     "winner_id": "meacscsu",
+     "margin": 18,
+     "net_success": 0.2833,
+     "epa_diff": 0.2039,
+     "winner_edge": 0.2833
+    },
+    {
+     "schedule_game_id": "2026-09-06_swactsu_at_swacpvamu",
+     "route": "/game/tsupvamu26",
+     "date": "2026-09-06",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 52
+     },
+     "away": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 14
+     },
+     "winner_id": "swacpvamu",
+     "margin": 38,
+     "net_success": 0.114,
+     "epa_diff": 0.117,
+     "winner_edge": 0.114
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "label": "Week 2",
+   "date_range": {
+    "start": "2026-09-08",
+    "end": "2026-09-14"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-09-12_swacuapb_at_swacalc",
+     "route": "/game/uapbalc26",
+     "date": "2026-09-12",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 53
+     },
+     "away": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 51
+     },
+     "winner_id": "swacalc",
+     "margin": 2,
+     "net_success": 0.0913,
+     "epa_diff": 0.1329,
+     "winner_edge": 0.0913
+    }
+   ]
+  },
+  {
+   "week": 4,
+   "label": "Week 4",
+   "date_range": {
+    "start": "2026-09-22",
+    "end": "2026-09-28"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-09-26_meacscsu_at_swacbcu",
+     "route": "/game/scsubcu26",
+     "date": "2026-09-26",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 21
+     },
+     "away": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 31
+     },
+     "winner_id": "meacscsu",
+     "margin": 10,
+     "net_success": 0.1362,
+     "epa_diff": 0.1244,
+     "winner_edge": 0.1362
+    },
+    {
+     "schedule_game_id": "2026-09-26_swacaamu_at_swacfamu",
+     "route": "/game/aamufamu26",
+     "date": "2026-09-26",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 21
+     },
+     "away": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 40
+     },
+     "winner_id": "swacaamu",
+     "margin": 19,
+     "net_success": 0.243,
+     "epa_diff": 0.4317,
+     "winner_edge": 0.243
+    },
+    {
+     "schedule_game_id": "2026-09-26_swacmvsu_at_swacasu",
+     "route": "/game/mvsuasu26",
+     "date": "2026-09-26",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 41
+     },
+     "away": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 15
+     },
+     "winner_id": "swacasu",
+     "margin": 26,
+     "net_success": -0.0389,
+     "epa_diff": -0.1301,
+     "winner_edge": -0.0389
+    },
+    {
+     "schedule_game_id": "2026-09-26_swacpvamu_at_swacgsu",
+     "route": "/game/pvamugsu26",
+     "date": "2026-09-26",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 14
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 21
+     },
+     "winner_id": "swacpvamu",
+     "margin": 7,
+     "net_success": 0.1281,
+     "epa_diff": 0.0741,
+     "winner_edge": 0.1281
+    },
+    {
+     "schedule_game_id": "2026-09-26_swacsu_at_swacjsu",
+     "route": "/game/sujsu26",
+     "date": "2026-09-26",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 35
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 17
+     },
+     "winner_id": "swacjsu",
+     "margin": 18,
+     "net_success": 0.1278,
+     "epa_diff": 0.2923,
+     "winner_edge": 0.1278
+    },
+    {
+     "schedule_game_id": "2026-09-26_swactsu_at_swacalc",
+     "route": "/game/tsualc26",
+     "date": "2026-09-26",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 43
+     },
+     "away": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 40
+     },
+     "winner_id": "swacalc",
+     "margin": 3,
+     "net_success": 0.0122,
+     "epa_diff": -0.2066,
+     "winner_edge": 0.0122
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "label": "Week 5",
+   "date_range": {
+    "start": "2026-09-29",
+    "end": "2026-10-05"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-10-03_swacaamu_at_swacjsu",
+     "route": "/game/aamujsu26",
+     "date": "2026-10-03",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 31
+     },
+     "away": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 28
+     },
+     "winner_id": "swacjsu",
+     "margin": 3,
+     "net_success": 0.0489,
+     "epa_diff": 0.0454,
+     "winner_edge": 0.0489
+    },
+    {
+     "schedule_game_id": "2026-10-03_swacalc_at_swacgsu",
+     "route": "/game/alcgsu26",
+     "date": "2026-10-03",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 63
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 59
+     },
+     "winner_id": "swacgsu",
+     "margin": 4,
+     "net_success": 0.0064,
+     "epa_diff": 0.0147,
+     "winner_edge": 0.0064
+    },
+    {
+     "schedule_game_id": "2026-10-03_swacasu_at_swacbcu",
+     "route": "/game/asubcu26",
+     "date": "2026-10-03",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 16
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 10
+     },
+     "winner_id": "swacbcu",
+     "margin": 6,
+     "net_success": 0.0171,
+     "epa_diff": 0.2653,
+     "winner_edge": 0.0171
+    },
+    {
+     "schedule_game_id": "2026-10-03_swacpvamu_at_swacmvsu",
+     "route": "/game/pvamumvsu26",
+     "date": "2026-10-03",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 28
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 27
+     },
+     "winner_id": "swacmvsu",
+     "margin": 1,
+     "net_success": 0.0162,
+     "epa_diff": 0.2845,
+     "winner_edge": 0.0162
+    },
+    {
+     "schedule_game_id": "2026-10-03_swacuapb_at_swacsu",
+     "route": "/game/uapbsu26",
+     "date": "2026-10-03",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 10
+     },
+     "away": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 41
+     },
+     "winner_id": "swacuapb",
+     "margin": 31,
+     "net_success": 0.1145,
+     "epa_diff": 0.1382,
+     "winner_edge": 0.1145
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "label": "Week 6",
+   "date_range": {
+    "start": "2026-10-06",
+    "end": "2026-10-12"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-10-09_swacfamu_at_swacasu",
+     "route": "/game/famuasu26",
+     "date": "2026-10-09",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 27
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 28
+     },
+     "winner_id": "swacfamu",
+     "margin": 1,
+     "net_success": -0.2117,
+     "epa_diff": 0.0766,
+     "winner_edge": -0.2117
+    },
+    {
+     "schedule_game_id": "2026-10-10_swacbcu_at_swacaamu",
+     "route": "/game/bcuaamu26",
+     "date": "2026-10-10",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 55
+     },
+     "away": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 17
+     },
+     "winner_id": "swacaamu",
+     "margin": 38,
+     "net_success": 0.1078,
+     "epa_diff": 0.3925,
+     "winner_edge": 0.1078
+    },
+    {
+     "schedule_game_id": "2026-10-10_swacjsu_at_swacgsu",
+     "route": "/game/jsugsu26",
+     "date": "2026-10-10",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 45
+     },
+     "away": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 38
+     },
+     "winner_id": "swacgsu",
+     "margin": 7,
+     "net_success": 0.0977,
+     "epa_diff": 0.0457,
+     "winner_edge": 0.0977
+    },
+    {
+     "schedule_game_id": "2026-10-10_swacmvsu_at_swactsu",
+     "route": "/game/mvsutsu26",
+     "date": "2026-10-10",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 34
+     },
+     "away": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 38
+     },
+     "winner_id": "swacmvsu",
+     "margin": 4,
+     "net_success": -0.0085,
+     "epa_diff": 0.0722,
+     "winner_edge": -0.0085
+    },
+    {
+     "schedule_game_id": "2026-10-10_swacsu_at_swacpvamu",
+     "route": "/game/supvamu26",
+     "date": "2026-10-10",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 14
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 28
+     },
+     "winner_id": "swacsu",
+     "margin": 14,
+     "net_success": -0.1026,
+     "epa_diff": 0.3236,
+     "winner_edge": -0.1026
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "label": "Week 7",
+   "date_range": {
+    "start": "2026-10-13",
+    "end": "2026-10-19"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2026-10-17_swacalc_at_swacpvamu",
+     "route": "/game/alcpvamu26",
+     "date": "2026-10-17",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 41
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 38
+     },
+     "winner_id": "swacpvamu",
+     "margin": 3,
+     "net_success": 0.0524,
+     "epa_diff": -0.0864,
+     "winner_edge": 0.0524
+    },
+    {
+     "schedule_game_id": "2026-10-17_swacasu_at_swacuapb",
+     "route": "/game/asuuapb26",
+     "date": "2026-10-17",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 15
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 21
+     },
+     "winner_id": "swacasu",
+     "margin": 6,
+     "net_success": 0.0682,
+     "epa_diff": 0.1629,
+     "winner_edge": 0.0682
+    },
+    {
+     "schedule_game_id": "2026-10-17_swacbcu_at_swacmvsu",
+     "route": "/game/bcumvsu26",
+     "date": "2026-10-17",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 14
+     },
+     "away": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 34
+     },
+     "winner_id": "swacbcu",
+     "margin": 20,
+     "net_success": 0.0307,
+     "epa_diff": 0.1715,
+     "winner_edge": 0.0307
+    },
+    {
+     "schedule_game_id": "2026-10-17_swacfamu_at_swacjsu",
+     "route": "/game/famujsu26",
+     "date": "2026-10-17",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 27
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 17
+     },
+     "winner_id": "swacjsu",
+     "margin": 10,
+     "net_success": -0.0039,
+     "epa_diff": 0.0531,
+     "winner_edge": -0.0039
+    },
+    {
+     "schedule_game_id": "2026-10-17_swacgsu_at_swacaamu",
+     "route": "/game/gsuaamu26",
+     "date": "2026-10-17",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 61
+     },
+     "away": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 31
+     },
+     "winner_id": "swacaamu",
+     "margin": 30,
+     "net_success": 0.3135,
+     "epa_diff": 0.4187,
+     "winner_edge": 0.3135
+    }
+   ]
+  }
+ ],
+ "scope": "Games between two of the 18 with play-by-play (a parsed PDF) only. Outside opponents and games without play-by-play are not listed.",
+ "edge_method": "winner_edge = net_success: the winner's success rate minus the loser's, over each side's offensive plays in the game. Negative when the winner was less successful play for play. Success = 50% of the distance on 1st down, 70% on 2nd, 100% on 3rd/4th."
+}

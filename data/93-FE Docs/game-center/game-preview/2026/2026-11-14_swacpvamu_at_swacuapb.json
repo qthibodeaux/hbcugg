@@ -1,0 +1,1272 @@
+{
+  "game_id": "2026-11-14_swacpvamu_at_swacuapb",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:24:11-05:00",
+  "status": "scheduled",
+  "played_game_path_id": null,
+  "date": "2026-11-14",
+  "week": 11,
+  "week_label": "Week 11",
+  "kickoff": {
+    "at": null,
+    "label": null,
+    "tbd": true
+  },
+  "venue": {
+    "stadium_name": "Simmons Bank Field",
+    "city": "Pine Bluff, AR",
+    "sponsor": null,
+    "neutral_site": false,
+    "neutral_site_name": null
+  },
+  "event": null,
+  "flags": {
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false
+  },
+  "away": {
+    "team_id": "swacpvamu",
+    "record_entering": "3-5",
+    "conference_record_entering": "3-2",
+    "conference": "SWAC",
+    "coaches": {
+      "head_coach": "Tremaine Jackson",
+      "offensive_coordinator": "Christopher Buckner",
+      "defensive_coordinator": "Brandon Andersen"
+    },
+    "quarterback": {
+      "person_id": "PERS_00012215",
+      "name": "Tevin Carter",
+      "last_name": "Carter",
+      "image_url": "https://pvpanthers.com/images/2026/4/21/11_Tevin_Carter.jpg",
+      "games_played": 5,
+      "line": {
+        "cmp": 85,
+        "att": 119,
+        "yds": 781,
+        "td": 10,
+        "int": 5,
+        "sacks": 10
+      },
+      "air_yards": {
+        "attempts": 97,
+        "adot": 5.7,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0515
+          },
+          {
+            "yards": -4,
+            "share": 0.0515
+          },
+          {
+            "yards": -3,
+            "share": 0.0
+          },
+          {
+            "yards": -2,
+            "share": 0.0103
+          },
+          {
+            "yards": -1,
+            "share": 0.0206
+          },
+          {
+            "yards": 0,
+            "share": 0.2165
+          },
+          {
+            "yards": 1,
+            "share": 0.0722
+          },
+          {
+            "yards": 2,
+            "share": 0.0
+          },
+          {
+            "yards": 3,
+            "share": 0.0206
+          },
+          {
+            "yards": 4,
+            "share": 0.0825
+          },
+          {
+            "yards": 5,
+            "share": 0.0825
+          },
+          {
+            "yards": 6,
+            "share": 0.0103
+          },
+          {
+            "yards": 7,
+            "share": 0.0412
+          },
+          {
+            "yards": 8,
+            "share": 0.0309
+          },
+          {
+            "yards": 9,
+            "share": 0.0309
+          },
+          {
+            "yards": 10,
+            "share": 0.0206
+          },
+          {
+            "yards": 11,
+            "share": 0.0515
+          },
+          {
+            "yards": 12,
+            "share": 0.0309
+          },
+          {
+            "yards": 13,
+            "share": 0.0206
+          },
+          {
+            "yards": 14,
+            "share": 0.0309
+          },
+          {
+            "yards": 15,
+            "share": 0.0103
+          },
+          {
+            "yards": 16,
+            "share": 0.0206
+          },
+          {
+            "yards": 17,
+            "share": 0.0
+          },
+          {
+            "yards": 18,
+            "share": 0.0103
+          },
+          {
+            "yards": 19,
+            "share": 0.0206
+          },
+          {
+            "yards": 20,
+            "share": 0.0103
+          },
+          {
+            "yards": 21,
+            "share": 0.0
+          },
+          {
+            "yards": 22,
+            "share": 0.0103
+          },
+          {
+            "yards": 23,
+            "share": 0.0103
+          },
+          {
+            "yards": 24,
+            "share": 0.0103
+          },
+          {
+            "yards": 25,
+            "share": 0.0
+          },
+          {
+            "yards": 26,
+            "share": 0.0
+          },
+          {
+            "yards": 27,
+            "share": 0.0
+          },
+          {
+            "yards": 28,
+            "share": 0.0
+          },
+          {
+            "yards": 29,
+            "share": 0.0
+          },
+          {
+            "yards": 30,
+            "share": 0.0206
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0187
+          },
+          {
+            "yards": -4,
+            "share": 0.0135
+          },
+          {
+            "yards": -3,
+            "share": 0.027
+          },
+          {
+            "yards": -2,
+            "share": 0.0292
+          },
+          {
+            "yards": -1,
+            "share": 0.027
+          },
+          {
+            "yards": 0,
+            "share": 0.0959
+          },
+          {
+            "yards": 1,
+            "share": 0.036
+          },
+          {
+            "yards": 2,
+            "share": 0.03
+          },
+          {
+            "yards": 3,
+            "share": 0.0524
+          },
+          {
+            "yards": 4,
+            "share": 0.0629
+          },
+          {
+            "yards": 5,
+            "share": 0.0659
+          },
+          {
+            "yards": 6,
+            "share": 0.0479
+          },
+          {
+            "yards": 7,
+            "share": 0.0524
+          },
+          {
+            "yards": 8,
+            "share": 0.03
+          },
+          {
+            "yards": 9,
+            "share": 0.0352
+          },
+          {
+            "yards": 10,
+            "share": 0.0315
+          },
+          {
+            "yards": 11,
+            "share": 0.0255
+          },
+          {
+            "yards": 12,
+            "share": 0.018
+          },
+          {
+            "yards": 13,
+            "share": 0.021
+          },
+          {
+            "yards": 14,
+            "share": 0.0277
+          },
+          {
+            "yards": 15,
+            "share": 0.0315
+          },
+          {
+            "yards": 16,
+            "share": 0.0187
+          },
+          {
+            "yards": 17,
+            "share": 0.0157
+          },
+          {
+            "yards": 18,
+            "share": 0.0105
+          },
+          {
+            "yards": 19,
+            "share": 0.0112
+          },
+          {
+            "yards": 20,
+            "share": 0.015
+          },
+          {
+            "yards": 21,
+            "share": 0.012
+          },
+          {
+            "yards": 22,
+            "share": 0.0045
+          },
+          {
+            "yards": 23,
+            "share": 0.0105
+          },
+          {
+            "yards": 24,
+            "share": 0.0112
+          },
+          {
+            "yards": 25,
+            "share": 0.009
+          },
+          {
+            "yards": 26,
+            "share": 0.0067
+          },
+          {
+            "yards": 27,
+            "share": 0.0052
+          },
+          {
+            "yards": 28,
+            "share": 0.0075
+          },
+          {
+            "yards": 29,
+            "share": 0.0082
+          },
+          {
+            "yards": 30,
+            "share": 0.0749
+          }
+        ],
+        "deep_30_share": 0.0206,
+        "league_deep_30_share": 0.0749
+      }
+    }
+  },
+  "home": {
+    "team_id": "swacuapb",
+    "record_entering": "3-3",
+    "conference_record_entering": "1-2",
+    "conference": "SWAC",
+    "coaches": {
+      "head_coach": "Alonzo Hampton",
+      "offensive_coordinator": "Stephen Barnette",
+      "defensive_coordinator": "Jeff Burrow"
+    },
+    "quarterback": {
+      "person_id": "PERS_00012387",
+      "name": "Garrison Davis",
+      "last_name": "Davis",
+      "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_15_Garrison_Davis.jpg",
+      "games_played": 3,
+      "line": {
+        "cmp": 31,
+        "att": 52,
+        "yds": 350,
+        "td": 8,
+        "int": 1,
+        "sacks": 6
+      },
+      "air_yards": {
+        "attempts": 52,
+        "adot": 10.25,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0192
+          },
+          {
+            "yards": -4,
+            "share": 0.0
+          },
+          {
+            "yards": -3,
+            "share": 0.0192
+          },
+          {
+            "yards": -2,
+            "share": 0.0
+          },
+          {
+            "yards": -1,
+            "share": 0.0385
+          },
+          {
+            "yards": 0,
+            "share": 0.0577
+          },
+          {
+            "yards": 1,
+            "share": 0.0962
+          },
+          {
+            "yards": 2,
+            "share": 0.0385
+          },
+          {
+            "yards": 3,
+            "share": 0.0962
+          },
+          {
+            "yards": 4,
+            "share": 0.0
+          },
+          {
+            "yards": 5,
+            "share": 0.0385
+          },
+          {
+            "yards": 6,
+            "share": 0.0577
+          },
+          {
+            "yards": 7,
+            "share": 0.0577
+          },
+          {
+            "yards": 8,
+            "share": 0.0192
+          },
+          {
+            "yards": 9,
+            "share": 0.0192
+          },
+          {
+            "yards": 10,
+            "share": 0.0769
+          },
+          {
+            "yards": 11,
+            "share": 0.0192
+          },
+          {
+            "yards": 12,
+            "share": 0.0192
+          },
+          {
+            "yards": 13,
+            "share": 0.0
+          },
+          {
+            "yards": 14,
+            "share": 0.0385
+          },
+          {
+            "yards": 15,
+            "share": 0.0577
+          },
+          {
+            "yards": 16,
+            "share": 0.0
+          },
+          {
+            "yards": 17,
+            "share": 0.0
+          },
+          {
+            "yards": 18,
+            "share": 0.0
+          },
+          {
+            "yards": 19,
+            "share": 0.0385
+          },
+          {
+            "yards": 20,
+            "share": 0.0
+          },
+          {
+            "yards": 21,
+            "share": 0.0192
+          },
+          {
+            "yards": 22,
+            "share": 0.0
+          },
+          {
+            "yards": 23,
+            "share": 0.0192
+          },
+          {
+            "yards": 24,
+            "share": 0.0385
+          },
+          {
+            "yards": 25,
+            "share": 0.0385
+          },
+          {
+            "yards": 26,
+            "share": 0.0
+          },
+          {
+            "yards": 27,
+            "share": 0.0
+          },
+          {
+            "yards": 28,
+            "share": 0.0
+          },
+          {
+            "yards": 29,
+            "share": 0.0
+          },
+          {
+            "yards": 30,
+            "share": 0.0769
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0187
+          },
+          {
+            "yards": -4,
+            "share": 0.0135
+          },
+          {
+            "yards": -3,
+            "share": 0.027
+          },
+          {
+            "yards": -2,
+            "share": 0.0292
+          },
+          {
+            "yards": -1,
+            "share": 0.027
+          },
+          {
+            "yards": 0,
+            "share": 0.0959
+          },
+          {
+            "yards": 1,
+            "share": 0.036
+          },
+          {
+            "yards": 2,
+            "share": 0.03
+          },
+          {
+            "yards": 3,
+            "share": 0.0524
+          },
+          {
+            "yards": 4,
+            "share": 0.0629
+          },
+          {
+            "yards": 5,
+            "share": 0.0659
+          },
+          {
+            "yards": 6,
+            "share": 0.0479
+          },
+          {
+            "yards": 7,
+            "share": 0.0524
+          },
+          {
+            "yards": 8,
+            "share": 0.03
+          },
+          {
+            "yards": 9,
+            "share": 0.0352
+          },
+          {
+            "yards": 10,
+            "share": 0.0315
+          },
+          {
+            "yards": 11,
+            "share": 0.0255
+          },
+          {
+            "yards": 12,
+            "share": 0.018
+          },
+          {
+            "yards": 13,
+            "share": 0.021
+          },
+          {
+            "yards": 14,
+            "share": 0.0277
+          },
+          {
+            "yards": 15,
+            "share": 0.0315
+          },
+          {
+            "yards": 16,
+            "share": 0.0187
+          },
+          {
+            "yards": 17,
+            "share": 0.0157
+          },
+          {
+            "yards": 18,
+            "share": 0.0105
+          },
+          {
+            "yards": 19,
+            "share": 0.0112
+          },
+          {
+            "yards": 20,
+            "share": 0.015
+          },
+          {
+            "yards": 21,
+            "share": 0.012
+          },
+          {
+            "yards": 22,
+            "share": 0.0045
+          },
+          {
+            "yards": 23,
+            "share": 0.0105
+          },
+          {
+            "yards": 24,
+            "share": 0.0112
+          },
+          {
+            "yards": 25,
+            "share": 0.009
+          },
+          {
+            "yards": 26,
+            "share": 0.0067
+          },
+          {
+            "yards": 27,
+            "share": 0.0052
+          },
+          {
+            "yards": 28,
+            "share": 0.0075
+          },
+          {
+            "yards": 29,
+            "share": 0.0082
+          },
+          {
+            "yards": 30,
+            "share": 0.0749
+          }
+        ],
+        "deep_30_share": 0.0769,
+        "league_deep_30_share": 0.0749
+      }
+    }
+  },
+  "stats": {
+    "season": 2026,
+    "basis": "current_season",
+    "through_week": 7,
+    "ranked_teams": 15,
+    "teams": {
+      "swacpvamu": {
+        "games_played": 5,
+        "fields": {
+          "net_adj_epa": {
+            "value": -0.031,
+            "rank": 12
+          },
+          "o_adj_epa": {
+            "value": -0.0305,
+            "rank": 11
+          },
+          "d_adj_epa": {
+            "value": 0.0005,
+            "rank": 8
+          },
+          "net_epa": {
+            "value": -0.1145,
+            "rank": 13
+          },
+          "o_epa": {
+            "value": -0.0674,
+            "rank": 13
+          },
+          "d_epa": {
+            "value": 0.0471,
+            "rank": 9
+          },
+          "o_success": {
+            "value": 0.4323,
+            "rank": 5
+          },
+          "d_success": {
+            "value": 0.362,
+            "rank": 4
+          },
+          "o_early_succ": {
+            "value": 0.4538,
+            "rank": 5
+          },
+          "d_early_succ": {
+            "value": 0.3471,
+            "rank": 3
+          },
+          "o_late_succ": {
+            "value": 0.3538,
+            "rank": 11
+          },
+          "d_late_succ": {
+            "value": 0.4048,
+            "rank": 9
+          },
+          "o_pts_drive": {
+            "value": 2.35,
+            "rank": 8
+          },
+          "d_pts_drive": {
+            "value": 1.9828,
+            "rank": 5
+          },
+          "o_yds_drive": {
+            "value": 29.17,
+            "rank": 9
+          },
+          "d_yds_drive": {
+            "value": 31.09,
+            "rank": 6
+          },
+          "o_3andout": {
+            "value": 0.1667,
+            "rank": 3
+          },
+          "d_3andout": {
+            "value": 0.2931,
+            "rank": 5
+          },
+          "o_expl_drive": {
+            "value": 0.2833,
+            "rank": 7
+          },
+          "d_expl_drive": {
+            "value": 0.2586,
+            "rank": 8
+          },
+          "o_start_fp": {
+            "value": 36.4,
+            "rank": 2
+          },
+          "d_start_fp": {
+            "value": 26.22,
+            "rank": 2
+          },
+          "o_third_dist": {
+            "value": 8.1,
+            "rank": 12
+          },
+          "d_third_dist": {
+            "value": 8.03,
+            "rank": 8
+          },
+          "o_ppg": {
+            "value": 31.0,
+            "rank": 7
+          },
+          "d_ppg": {
+            "value": 24.4,
+            "rank": 4
+          },
+          "to_margin": {
+            "value": -3,
+            "rank": 13
+          },
+          "o_turnovers": {
+            "value": 7,
+            "rank": 12
+          },
+          "pen_ypg": {
+            "value": 81.0,
+            "rank": 10
+          },
+          "o_ypg": {
+            "value": 356.6,
+            "rank": 9
+          },
+          "o_pass_ypg": {
+            "value": 165.0,
+            "rank": 11
+          },
+          "o_rush_ypg": {
+            "value": 191.6,
+            "rank": 8
+          },
+          "o_havoc_rate": {
+            "value": 0.1386,
+            "rank": 5
+          },
+          "d_havoc_rate": {
+            "value": 0.1902,
+            "rank": 4
+          },
+          "o_expl_rate": {
+            "value": 0.1419,
+            "rank": 7
+          },
+          "d_expl_rate": {
+            "value": 0.1166,
+            "rank": 6
+          },
+          "o_rz_td": {
+            "value": 0.75,
+            "rank": 5
+          },
+          "d_rz_td": {
+            "value": 0.8,
+            "rank": 13
+          }
+        }
+      },
+      "swacuapb": {
+        "games_played": 3,
+        "fields": {
+          "net_adj_epa": {
+            "value": -0.0135,
+            "rank": 8
+          },
+          "o_adj_epa": {
+            "value": 0.0037,
+            "rank": 6
+          },
+          "d_adj_epa": {
+            "value": 0.0172,
+            "rank": 10
+          },
+          "net_epa": {
+            "value": -0.0756,
+            "rank": 11
+          },
+          "o_epa": {
+            "value": 0.0722,
+            "rank": 6
+          },
+          "d_epa": {
+            "value": 0.1478,
+            "rank": 12
+          },
+          "o_success": {
+            "value": 0.4646,
+            "rank": 4
+          },
+          "d_success": {
+            "value": 0.4798,
+            "rank": 14
+          },
+          "o_early_succ": {
+            "value": 0.474,
+            "rank": 4
+          },
+          "d_early_succ": {
+            "value": 0.487,
+            "rank": 14
+          },
+          "o_late_succ": {
+            "value": 0.4318,
+            "rank": 7
+          },
+          "d_late_succ": {
+            "value": 0.4545,
+            "rank": 12
+          },
+          "o_pts_drive": {
+            "value": 3.0303,
+            "rank": 2
+          },
+          "d_pts_drive": {
+            "value": 2.4,
+            "rank": 10
+          },
+          "o_yds_drive": {
+            "value": 38.94,
+            "rank": 2
+          },
+          "d_yds_drive": {
+            "value": 35.57,
+            "rank": 12
+          },
+          "o_3andout": {
+            "value": 0.1212,
+            "rank": 2
+          },
+          "d_3andout": {
+            "value": 0.1143,
+            "rank": 14
+          },
+          "o_expl_drive": {
+            "value": 0.4242,
+            "rank": 2
+          },
+          "d_expl_drive": {
+            "value": 0.2571,
+            "rank": 7
+          },
+          "o_start_fp": {
+            "value": 39.24,
+            "rank": 1
+          },
+          "d_start_fp": {
+            "value": 30.03,
+            "rank": 7
+          },
+          "o_third_dist": {
+            "value": 7.2,
+            "rank": 5
+          },
+          "d_third_dist": {
+            "value": 6.65,
+            "rank": 12
+          },
+          "o_ppg": {
+            "value": 35.7,
+            "rank": 4
+          },
+          "d_ppg": {
+            "value": 28.0,
+            "rank": 8
+          },
+          "to_margin": {
+            "value": -1,
+            "rank": 9
+          },
+          "o_turnovers": {
+            "value": 5,
+            "rank": 6
+          },
+          "pen_ypg": {
+            "value": 46.67,
+            "rank": 3
+          },
+          "o_ypg": {
+            "value": 435.3,
+            "rank": 5
+          },
+          "o_pass_ypg": {
+            "value": 197.7,
+            "rank": 6
+          },
+          "o_rush_ypg": {
+            "value": 237.7,
+            "rank": 2
+          },
+          "o_havoc_rate": {
+            "value": 0.1313,
+            "rank": 4
+          },
+          "d_havoc_rate": {
+            "value": 0.1162,
+            "rank": 14
+          },
+          "o_expl_rate": {
+            "value": 0.1313,
+            "rank": 9
+          },
+          "d_expl_rate": {
+            "value": 0.1313,
+            "rank": 8
+          },
+          "o_rz_td": {
+            "value": 0.5455,
+            "rank": 12
+          },
+          "d_rz_td": {
+            "value": 0.7059,
+            "rank": 8
+          }
+        }
+      }
+    }
+  },
+  "top_players": {
+    "swacpvamu": [
+      {
+        "person_id": "PERS_00012215",
+        "name": "T.Carter",
+        "last_name": "Carter",
+        "image_url": "https://pvpanthers.com/images/2026/4/21/11_Tevin_Carter.jpg",
+        "position": "QB",
+        "games_played": 5,
+        "production_score": 88.69,
+        "production_per_game": 17.74
+      },
+      {
+        "person_id": "PERS_00012207",
+        "name": "M.Gucake",
+        "last_name": "Gucake",
+        "image_url": "https://pvpanthers.com/images/2026/4/25/FB-6_Malik_Gucake.jpg",
+        "position": "DL",
+        "games_played": 5,
+        "production_score": 58.41,
+        "production_per_game": 11.68
+      },
+      {
+        "person_id": "PERS_00012261",
+        "name": "M.Williams",
+        "last_name": "Williams",
+        "image_url": "https://pvpanthers.com/images/2026/4/21/68_Malachi_Williams.jpg",
+        "position": "DB",
+        "games_played": 5,
+        "production_score": 37.46,
+        "production_per_game": 7.49
+      },
+      {
+        "person_id": "PERS_00013732",
+        "name": "R.Carter",
+        "last_name": "Carter",
+        "image_url": "https://pvpanthers.com/images/2026/4/21/70_Rondell_Carter.jpg",
+        "position": "DB",
+        "games_played": 5,
+        "production_score": 26.93,
+        "production_per_game": 5.39
+      },
+      {
+        "person_id": "PERS_00013768",
+        "name": "D.Wynn",
+        "last_name": "Wynn",
+        "image_url": "https://pvpanthers.com/images/2026/4/25/FB-11_Demarcus_Wynn.jpg",
+        "position": "DL",
+        "games_played": 5,
+        "production_score": 21.47,
+        "production_per_game": 4.29
+      },
+      {
+        "person_id": "PERS_00013730",
+        "name": "T.Morehead",
+        "last_name": "Morehead",
+        "image_url": "https://pvpanthers.com/images/2026/4/21/61_Tyler_Morehead.jpg",
+        "position": "LB",
+        "games_played": 4,
+        "production_score": 21.32,
+        "production_per_game": 5.33
+      },
+      {
+        "person_id": "PERS_00011223",
+        "name": "C.Bingmon",
+        "last_name": "Bingmon",
+        "image_url": "https://pvpanthers.com/images/2026/4/21/7_Chase_Bingmon.jpg",
+        "position": "RB",
+        "games_played": 5,
+        "production_score": 21.21,
+        "production_per_game": 4.24
+      },
+      {
+        "person_id": "PERS_00013739",
+        "name": "J.Jean-Louis",
+        "last_name": "Jean-Louis",
+        "image_url": "https://pvpanthers.com/images/2026/4/21/65_JJ_Jean_Louis.jpg",
+        "position": "LB",
+        "games_played": 5,
+        "production_score": 20.53,
+        "production_per_game": 4.11
+      }
+    ],
+    "swacuapb": [
+      {
+        "person_id": "PERS_00012387",
+        "name": "G.Davis",
+        "last_name": "Davis",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_15_Garrison_Davis.jpg",
+        "position": "QB",
+        "games_played": 3,
+        "production_score": 48.61,
+        "production_per_game": 16.2
+      },
+      {
+        "person_id": "PERS_00012395",
+        "name": "M.Henderson",
+        "last_name": "Henderson",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_35_Michael_Henderson.jpg",
+        "position": "DB",
+        "games_played": 3,
+        "production_score": 33.43,
+        "production_per_game": 11.14
+      },
+      {
+        "person_id": "PERS_00011355",
+        "name": "D.Robinson",
+        "last_name": "Robinson",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_2_D_Avery_Robinson.jpg",
+        "position": "WR",
+        "games_played": 3,
+        "production_score": 27.93,
+        "production_per_game": 9.31
+      },
+      {
+        "person_id": "PERS_00013913",
+        "name": "D.Whitlock Jr",
+        "last_name": "Whitlock",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_17_Demetric_Whitlock.jpg",
+        "position": "WR",
+        "games_played": 3,
+        "production_score": 18.24,
+        "production_per_game": 6.08
+      },
+      {
+        "person_id": "PERS_00012381",
+        "name": "D.Hilliard",
+        "last_name": "Hilliard",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_0_Danarius_Hilliard.jpg",
+        "position": "LB",
+        "games_played": 3,
+        "production_score": 16.02,
+        "production_per_game": 5.34
+      },
+      {
+        "person_id": "PERS_00013957",
+        "name": "K.Wilks",
+        "last_name": "Wilks",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_98_Keiyhaun_Wilks.jpg",
+        "position": "DL",
+        "games_played": 3,
+        "production_score": 12.96,
+        "production_per_game": 4.32
+      },
+      {
+        "person_id": "PERS_00013950",
+        "name": "D.Simon Jr.",
+        "last_name": "Simon",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_90_Derick_Simon_Jr..jpg",
+        "position": "DL",
+        "games_played": 3,
+        "production_score": 12.52,
+        "production_per_game": 4.17
+      },
+      {
+        "person_id": "PERS_00013919",
+        "name": "D.Paulhill",
+        "last_name": "Paulhill",
+        "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_27_Du_Wayne_Paulhill_Jr..jpg",
+        "position": "DB",
+        "games_played": 3,
+        "production_score": 12.07,
+        "production_per_game": 4.02
+      }
+    ]
+  },
+  "meetings": {
+    "coverage_from_season": 2019,
+    "series": {
+      "games": 6,
+      "wins": {
+        "swacpvamu": 5,
+        "swacuapb": 1
+      },
+      "current_streak": {
+        "team_id": "swacpvamu",
+        "games": 1
+      }
+    },
+    "items": [
+      {
+        "game_id": "UAPBPVAMU15112025",
+        "game_path_id": "uapbpvamu25",
+        "date": "2025-11-15",
+        "season": 2025,
+        "away_team_id": "swacuapb",
+        "home_team_id": "swacpvamu",
+        "away_score": 9,
+        "home_score": 56,
+        "venue": {
+          "stadium_name": "Panther Stadium at Blackshear Field",
+          "city": "Prairie View, TX"
+        },
+        "event_name": "Camo/Military Day"
+      },
+      {
+        "game_id": "PVAMUUAPB11102024",
+        "game_path_id": "pvamuuapb24",
+        "date": "2024-10-11",
+        "season": 2024,
+        "away_team_id": "swacpvamu",
+        "home_team_id": "swacuapb",
+        "away_score": 17,
+        "home_score": 21,
+        "venue": {
+          "stadium_name": "Simmons Bank Field",
+          "city": "Pine Bluff, AR"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "UAPBPVAMU04112023",
+        "game_path_id": "uapbpvamu23",
+        "date": "2023-11-04",
+        "season": 2023,
+        "away_team_id": "swacuapb",
+        "home_team_id": "swacpvamu",
+        "away_score": 14,
+        "home_score": 38,
+        "venue": {
+          "stadium_name": "Panther Stadium at Blackshear Field",
+          "city": "Prairie View, TX"
+        },
+        "event_name": "Homecoming"
+      },
+      {
+        "game_id": "PVAMUUAPB12112022",
+        "game_path_id": "pvamuuapb22",
+        "date": "2022-11-12",
+        "season": 2022,
+        "away_team_id": "swacpvamu",
+        "home_team_id": "swacuapb",
+        "away_score": 55,
+        "home_score": 24,
+        "venue": {
+          "stadium_name": "Simmons Bank Field",
+          "city": "Pine Bluff, AR"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "UAPBPVAMU30092021",
+        "game_path_id": "uapbpvamu21",
+        "date": "2021-09-30",
+        "season": 2021,
+        "away_team_id": "swacuapb",
+        "home_team_id": "swacpvamu",
+        "away_score": 17,
+        "home_score": 27,
+        "venue": {
+          "stadium_name": "Panther Stadium at Blackshear Field",
+          "city": "Prairie View, TX"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "UAPBPVAMU09112019",
+        "game_path_id": "uapbpvamu19",
+        "date": "2019-11-09",
+        "season": 2019,
+        "away_team_id": "swacuapb",
+        "home_team_id": "swacpvamu",
+        "away_score": 20,
+        "home_score": 37,
+        "venue": {
+          "stadium_name": "Panther Stadium at Blackshear Field",
+          "city": "Prairie View, TX"
+        },
+        "event_name": null
+      }
+    ]
+  },
+  "event_history": null
+}

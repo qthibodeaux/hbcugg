@@ -1,0 +1,442 @@
+{
+  "person_id": "PERS_00011617",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00011617",
+    "first_name": "Kendall",
+    "last_name": "Wilson",
+    "team_id": "meacnccu",
+    "team_abbreviation": "NCCU",
+    "conference": "MEAC",
+    "division": null,
+    "jersey_number": 13,
+    "position": "Linebacker",
+    "position_group": "LB",
+    "raw_position": "LB",
+    "class_year": 4,
+    "class_label": "Senior",
+    "height": 69,
+    "weight": 225,
+    "home_city": "Orlando",
+    "home_state": "FL",
+    "is_in_state": false,
+    "previous_school": "St. Thomas",
+    "high_school": null,
+    "image_url": "https://nccueaglepride.com/images/2025/8/16/Wilson_Kendall.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": -0.46,
+    "per_game": 0.88,
+    "games_played": 1,
+    "rank_in_position_group": 73,
+    "position_group_total": 143,
+    "conference_rank": 564,
+    "conference_total": 1006,
+    "position_group_mean": 8.93
+  },
+  "season_totals": {
+    "par": -0.46,
+    "total_production": 0.88,
+    "avg_production": 0.88,
+    "games_played": 1,
+    "season_components": {
+      "hit_production": 0.88,
+      "hawk_production": 0,
+      "scrum_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "NCCUSU23082025",
+      "game_path_id": "nccusu25",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 31-14",
+      "data_state": "played",
+      "par": -0.46,
+      "components": {
+        "hit_production": 0.88
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 4
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2025-08-30_newhampshire_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "New Hampshire",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 10-27",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2025-09-06_meacnccu_at_olddominion",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Old Dominion",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 6-54",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2025-09-13_fayettevillestat_at_meacnccu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Fayetteville State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 49-19",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "2025-09-20_meacnccu_at_meacncat",
+      "game_path_id": null,
+      "opponent_id": "meacncat",
+      "opponent_name": "NC A&T",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 62-20",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "2025-09-27_meacnccu_at_easttexasam",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "East Texas A&M",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 50-42",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "NCCUFAMU11102025",
+      "game_path_id": "nccufamu25",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 45-7",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 9,
+      "game_id": "DSUNCCU25102025",
+      "game_path_id": "dsunccu25",
+      "opponent_id": "meacdsu",
+      "opponent_name": "Del State",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 26-35",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "NCCUHU01112025",
+      "game_path_id": "nccuhu25",
+      "opponent_id": "meachu",
+      "opponent_name": "Howard",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 35-14",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "NSUNCCU08112025",
+      "game_path_id": "nsunccu25",
+      "opponent_id": "meacnsu",
+      "opponent_name": "Norfolk",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 31-28",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "SCSUNCCU14112025",
+      "game_path_id": "scsunccu25",
+      "opponent_id": "meacscsu",
+      "opponent_name": "SC State",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 27-34",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 13,
+      "game_id": "NCCUMORG22112025",
+      "game_path_id": "nccumsu25",
+      "opponent_id": "meacmsu",
+      "opponent_name": "Morgan",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 33-14",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 0,
+    "game_id": "NCCUSU23082025",
+    "game_path_id": "nccusu25",
+    "opponent_id": "swacsu",
+    "opponent_name": "Southern",
+    "home_away": "away",
+    "result": "W",
+    "score": "W 31-14",
+    "par": -0.46,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 4
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 69,
+      "rank": 10,
+      "total": 10,
+      "group": "LB",
+      "group_avg": 72.7
+    },
+    "weight": {
+      "value": 225,
+      "rank": 4,
+      "total": 10,
+      "group": "LB",
+      "group_avg": 220.1
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 4
+      },
+      {
+        "class": "So.",
+        "count": 1
+      },
+      {
+        "class": "Jr.",
+        "count": 2
+      },
+      {
+        "class": "Sr.",
+        "count": 3
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "LBS",
+        "rank": 6,
+        "total": 10
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 19
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 27
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 58
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "FCS",
+    "previous_school": "St. Thomas",
+    "is_redshirt": true,
+    "redshirt_note": "Redshirt season used.",
+    "distance_miles": 537.5,
+    "distance_tier": "national",
+    "experience_score": 4.5,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": true,
+        "season": 2025
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2026
+      }
+    ]
+  }
+}

@@ -1,0 +1,4730 @@
+{
+  "game_id": "2026-11-07_swacasu_at_swactsu",
+  "season": 2026,
+  "generated_at": "2026-10-01T07:11:55-05:00",
+  "status": "scheduled",
+  "played_game_path_id": null,
+  "date": "2026-11-07",
+  "week": 10,
+  "week_label": "Week 10",
+  "kickoff": {
+    "at": null,
+    "label": null,
+    "tbd": true
+  },
+  "venue": {
+    "stadium_name": "W.W. Thorne Stadium",
+    "city": "Houston, TX",
+    "sponsor": null,
+    "neutral_site": false,
+    "neutral_site_name": null
+  },
+  "event": {
+    "kind": "theme",
+    "name": "Themed Game",
+    "type_id": "themed_game",
+    "type_label": "Themed Game",
+    "owner_team_id": null
+  },
+  "flags": {
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false
+  },
+  "away": {
+    "team_id": "swacasu",
+    "record_entering": "3-1",
+    "conference_record_entering": "1-0",
+    "conference": "SWAC"
+  },
+  "home": {
+    "team_id": "swactsu",
+    "record_entering": "1-3",
+    "conference_record_entering": "0-2",
+    "conference": "SWAC"
+  },
+  "stats": {
+    "season": 2026,
+    "basis": "current_season",
+    "through_week": 4,
+    "ranked_teams": 15,
+    "teams": {
+      "meacdsu": {
+        "games_played": 0,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_success": {
+            "value": null,
+            "rank": null
+          },
+          "d_success": {
+            "value": null,
+            "rank": null
+          },
+          "o_success_pass": {
+            "value": null,
+            "rank": null
+          },
+          "d_success_pass": {
+            "value": null,
+            "rank": null
+          },
+          "o_success_rush": {
+            "value": null,
+            "rank": null
+          },
+          "d_success_rush": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "net_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_pass": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_pass": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_rush": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_rush": {
+            "value": null,
+            "rank": null
+          },
+          "o_avail_yds": {
+            "value": null,
+            "rank": null
+          },
+          "d_avail_yds": {
+            "value": null,
+            "rank": null
+          },
+          "o_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "d_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_early_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_early_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_succ": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_succ": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_dist": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_dist": {
+            "value": null,
+            "rank": null
+          }
+        }
+      },
+      "meachu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.019,
+            "rank": 7
+          },
+          "o_epa": {
+            "value": 0.0532,
+            "rank": 6
+          },
+          "d_epa": {
+            "value": 0.0342,
+            "rank": 8
+          },
+          "o_success": {
+            "value": 0.3377,
+            "rank": 11
+          },
+          "d_success": {
+            "value": 0.45,
+            "rank": 8
+          },
+          "o_success_pass": {
+            "value": 0.381,
+            "rank": 5
+          },
+          "d_success_pass": {
+            "value": 0.439,
+            "rank": 14
+          },
+          "o_success_rush": {
+            "value": 0.2857,
+            "rank": 12
+          },
+          "d_success_rush": {
+            "value": 0.4737,
+            "rank": 8
+          },
+          "net_epa_drive": {
+            "value": 0.1444,
+            "rank": 8
+          },
+          "o_epa_drive": {
+            "value": 0.3153,
+            "rank": 5
+          },
+          "d_epa_drive": {
+            "value": 0.1709,
+            "rank": 8
+          },
+          "net_fp": {
+            "value": 5.54,
+            "rank": 3
+          },
+          "o_epa_pass": {
+            "value": 0.1678,
+            "rank": 3
+          },
+          "d_epa_pass": {
+            "value": 0.0086,
+            "rank": 8
+          },
+          "o_epa_rush": {
+            "value": -0.0843,
+            "rank": 11
+          },
+          "d_epa_rush": {
+            "value": 0.0894,
+            "rank": 7
+          },
+          "o_avail_yds": {
+            "value": 0.5175,
+            "rank": 5
+          },
+          "d_avail_yds": {
+            "value": 0.4781,
+            "rank": 9
+          },
+          "o_start_fp": {
+            "value": 29.54,
+            "rank": 10
+          },
+          "d_start_fp": {
+            "value": 24.0,
+            "rank": 1
+          },
+          "o_early_epa": {
+            "value": 0.0215,
+            "rank": 8
+          },
+          "d_early_epa": {
+            "value": 0.121,
+            "rank": 11
+          },
+          "o_third_succ": {
+            "value": 0.45,
+            "rank": 5
+          },
+          "d_third_succ": {
+            "value": 0.2727,
+            "rank": 3
+          },
+          "o_third_dist": {
+            "value": 7.5,
+            "rank": 4
+          },
+          "d_third_dist": {
+            "value": 5.9,
+            "rank": 14
+          }
+        }
+      },
+      "meacmsu": {
+        "games_played": 0,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_success": {
+            "value": null,
+            "rank": null
+          },
+          "d_success": {
+            "value": null,
+            "rank": null
+          },
+          "o_success_pass": {
+            "value": null,
+            "rank": null
+          },
+          "d_success_pass": {
+            "value": null,
+            "rank": null
+          },
+          "o_success_rush": {
+            "value": null,
+            "rank": null
+          },
+          "d_success_rush": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "net_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_pass": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_pass": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_rush": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_rush": {
+            "value": null,
+            "rank": null
+          },
+          "o_avail_yds": {
+            "value": null,
+            "rank": null
+          },
+          "d_avail_yds": {
+            "value": null,
+            "rank": null
+          },
+          "o_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "d_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_early_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_early_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_succ": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_succ": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_dist": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_dist": {
+            "value": null,
+            "rank": null
+          }
+        }
+      },
+      "meacnccu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.4289,
+            "rank": 15
+          },
+          "o_epa": {
+            "value": -0.0326,
+            "rank": 11
+          },
+          "d_epa": {
+            "value": 0.3963,
+            "rank": 15
+          },
+          "o_success": {
+            "value": 0.411,
+            "rank": 8
+          },
+          "d_success": {
+            "value": 0.4717,
+            "rank": 12
+          },
+          "o_success_pass": {
+            "value": 0.2973,
+            "rank": 14
+          },
+          "d_success_pass": {
+            "value": 0.2857,
+            "rank": 1
+          },
+          "o_success_rush": {
+            "value": 0.5278,
+            "rank": 5
+          },
+          "d_success_rush": {
+            "value": 0.5938,
+            "rank": 15
+          },
+          "net_epa_drive": {
+            "value": -2.0921,
+            "rank": 15
+          },
+          "o_epa_drive": {
+            "value": -0.1828,
+            "rank": 11
+          },
+          "d_epa_drive": {
+            "value": 1.9093,
+            "rank": 15
+          },
+          "net_fp": {
+            "value": 7.82,
+            "rank": 2
+          },
+          "o_epa_pass": {
+            "value": -0.2886,
+            "rank": 14
+          },
+          "d_epa_pass": {
+            "value": 0.0665,
+            "rank": 10
+          },
+          "o_epa_rush": {
+            "value": 0.2306,
+            "rank": 3
+          },
+          "d_epa_rush": {
+            "value": 0.6127,
+            "rank": 15
+          },
+          "o_avail_yds": {
+            "value": 0.4697,
+            "rank": 7
+          },
+          "d_avail_yds": {
+            "value": 0.5653,
+            "rank": 12
+          },
+          "o_start_fp": {
+            "value": 34.0,
+            "rank": 4
+          },
+          "d_start_fp": {
+            "value": 26.18,
+            "rank": 2
+          },
+          "o_early_epa": {
+            "value": 0.0135,
+            "rank": 10
+          },
+          "d_early_epa": {
+            "value": 0.1774,
+            "rank": 12
+          },
+          "o_third_succ": {
+            "value": 0.3571,
+            "rank": 9
+          },
+          "d_third_succ": {
+            "value": 0.5556,
+            "rank": 15
+          },
+          "o_third_dist": {
+            "value": 9.1,
+            "rank": 14
+          },
+          "d_third_dist": {
+            "value": 10.8,
+            "rank": 1
+          }
+        }
+      },
+      "meacnsu": {
+        "games_played": 0,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_success": {
+            "value": null,
+            "rank": null
+          },
+          "d_success": {
+            "value": null,
+            "rank": null
+          },
+          "o_success_pass": {
+            "value": null,
+            "rank": null
+          },
+          "d_success_pass": {
+            "value": null,
+            "rank": null
+          },
+          "o_success_rush": {
+            "value": null,
+            "rank": null
+          },
+          "d_success_rush": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_drive": {
+            "value": null,
+            "rank": null
+          },
+          "net_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_pass": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_pass": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa_rush": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa_rush": {
+            "value": null,
+            "rank": null
+          },
+          "o_avail_yds": {
+            "value": null,
+            "rank": null
+          },
+          "d_avail_yds": {
+            "value": null,
+            "rank": null
+          },
+          "o_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "d_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_early_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_early_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_succ": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_succ": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_dist": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_dist": {
+            "value": null,
+            "rank": null
+          }
+        }
+      },
+      "meacscsu": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.3133,
+            "rank": 1
+          },
+          "o_epa": {
+            "value": 0.0268,
+            "rank": 7
+          },
+          "d_epa": {
+            "value": -0.2865,
+            "rank": 2
+          },
+          "o_success": {
+            "value": 0.4876,
+            "rank": 3
+          },
+          "d_success": {
+            "value": 0.2661,
+            "rank": 2
+          },
+          "o_success_pass": {
+            "value": 0.3721,
+            "rank": 6
+          },
+          "d_success_pass": {
+            "value": 0.3167,
+            "rank": 5
+          },
+          "o_success_rush": {
+            "value": 0.5513,
+            "rank": 2
+          },
+          "d_success_rush": {
+            "value": 0.2041,
+            "rank": 1
+          },
+          "net_epa_drive": {
+            "value": 1.3841,
+            "rank": 1
+          },
+          "o_epa_drive": {
+            "value": 0.1351,
+            "rank": 7
+          },
+          "d_epa_drive": {
+            "value": -1.249,
+            "rank": 2
+          },
+          "net_fp": {
+            "value": -3.11,
+            "rank": 13
+          },
+          "o_epa_pass": {
+            "value": -0.3051,
+            "rank": 15
+          },
+          "d_epa_pass": {
+            "value": -0.2297,
+            "rank": 5
+          },
+          "o_epa_rush": {
+            "value": 0.2097,
+            "rank": 4
+          },
+          "d_epa_rush": {
+            "value": -0.356,
+            "rank": 2
+          },
+          "o_avail_yds": {
+            "value": 0.5164,
+            "rank": 6
+          },
+          "d_avail_yds": {
+            "value": 0.1395,
+            "rank": 1
+          },
+          "o_start_fp": {
+            "value": 31.25,
+            "rank": 7
+          },
+          "d_start_fp": {
+            "value": 34.36,
+            "rank": 14
+          },
+          "o_early_epa": {
+            "value": 0.1499,
+            "rank": 3
+          },
+          "d_early_epa": {
+            "value": -0.376,
+            "rank": 1
+          },
+          "o_third_succ": {
+            "value": 0.3333,
+            "rank": 10
+          },
+          "d_third_succ": {
+            "value": 0.2903,
+            "rank": 5
+          },
+          "o_third_dist": {
+            "value": 6.9,
+            "rank": 2
+          },
+          "d_third_dist": {
+            "value": 8.2,
+            "rank": 5
+          }
+        }
+      },
+      "swacaamu": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.1722,
+            "rank": 3
+          },
+          "o_epa": {
+            "value": 0.0159,
+            "rank": 8
+          },
+          "d_epa": {
+            "value": -0.1563,
+            "rank": 4
+          },
+          "o_success": {
+            "value": 0.4733,
+            "rank": 4
+          },
+          "d_success": {
+            "value": 0.2993,
+            "rank": 3
+          },
+          "o_success_pass": {
+            "value": 0.44,
+            "rank": 2
+          },
+          "d_success_pass": {
+            "value": 0.3462,
+            "rank": 6
+          },
+          "o_success_rush": {
+            "value": 0.5179,
+            "rank": 6
+          },
+          "d_success_rush": {
+            "value": 0.2373,
+            "rank": 3
+          },
+          "net_epa_drive": {
+            "value": 0.7881,
+            "rank": 3
+          },
+          "o_epa_drive": {
+            "value": 0.0742,
+            "rank": 8
+          },
+          "d_epa_drive": {
+            "value": -0.7139,
+            "rank": 4
+          },
+          "net_fp": {
+            "value": -4.5,
+            "rank": 14
+          },
+          "o_epa_pass": {
+            "value": -0.0604,
+            "rank": 8
+          },
+          "d_epa_pass": {
+            "value": 0.0443,
+            "rank": 9
+          },
+          "o_epa_rush": {
+            "value": 0.1179,
+            "rank": 7
+          },
+          "d_epa_rush": {
+            "value": -0.4216,
+            "rank": 1
+          },
+          "o_avail_yds": {
+            "value": 0.5436,
+            "rank": 3
+          },
+          "d_avail_yds": {
+            "value": 0.3859,
+            "rank": 4
+          },
+          "o_start_fp": {
+            "value": 23.46,
+            "rank": 15
+          },
+          "d_start_fp": {
+            "value": 27.96,
+            "rank": 6
+          },
+          "o_early_epa": {
+            "value": 0.1115,
+            "rank": 7
+          },
+          "d_early_epa": {
+            "value": -0.1673,
+            "rank": 4
+          },
+          "o_third_succ": {
+            "value": 0.2727,
+            "rank": 13
+          },
+          "d_third_succ": {
+            "value": 0.3429,
+            "rank": 7
+          },
+          "o_third_dist": {
+            "value": 6.0,
+            "rank": 1
+          },
+          "d_third_dist": {
+            "value": 8.03,
+            "rank": 6
+          }
+        }
+      },
+      "swacalc": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.0179,
+            "rank": 8
+          },
+          "o_epa": {
+            "value": 0.233,
+            "rank": 1
+          },
+          "d_epa": {
+            "value": 0.2151,
+            "rank": 12
+          },
+          "o_success": {
+            "value": 0.5114,
+            "rank": 1
+          },
+          "d_success": {
+            "value": 0.4621,
+            "rank": 11
+          },
+          "o_success_pass": {
+            "value": 0.4944,
+            "rank": 1
+          },
+          "d_success_pass": {
+            "value": 0.4167,
+            "rank": 13
+          },
+          "o_success_rush": {
+            "value": 0.5287,
+            "rank": 4
+          },
+          "d_success_rush": {
+            "value": 0.5,
+            "rank": 10
+          },
+          "net_epa_drive": {
+            "value": 0.4132,
+            "rank": 7
+          },
+          "o_epa_drive": {
+            "value": 1.4647,
+            "rank": 1
+          },
+          "d_epa_drive": {
+            "value": 1.0515,
+            "rank": 12
+          },
+          "net_fp": {
+            "value": -2.52,
+            "rank": 10
+          },
+          "o_epa_pass": {
+            "value": 0.3812,
+            "rank": 1
+          },
+          "d_epa_pass": {
+            "value": 0.2391,
+            "rank": 14
+          },
+          "o_epa_rush": {
+            "value": 0.0814,
+            "rank": 8
+          },
+          "d_epa_rush": {
+            "value": 0.1951,
+            "rank": 12
+          },
+          "o_avail_yds": {
+            "value": 0.6197,
+            "rank": 1
+          },
+          "d_avail_yds": {
+            "value": 0.5857,
+            "rank": 14
+          },
+          "o_start_fp": {
+            "value": 29.0,
+            "rank": 11
+          },
+          "d_start_fp": {
+            "value": 31.52,
+            "rank": 12
+          },
+          "o_early_epa": {
+            "value": 0.2041,
+            "rank": 2
+          },
+          "d_early_epa": {
+            "value": 0.097,
+            "rank": 10
+          },
+          "o_third_succ": {
+            "value": 0.5135,
+            "rank": 2
+          },
+          "d_third_succ": {
+            "value": 0.5333,
+            "rank": 14
+          },
+          "o_third_dist": {
+            "value": 7.7,
+            "rank": 7
+          },
+          "d_third_dist": {
+            "value": 6.84,
+            "rank": 13
+          }
+        }
+      },
+      "swacasu": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.1523,
+            "rank": 4
+          },
+          "o_epa": {
+            "value": -0.1186,
+            "rank": 13
+          },
+          "d_epa": {
+            "value": -0.2709,
+            "rank": 3
+          },
+          "o_success": {
+            "value": 0.313,
+            "rank": 13
+          },
+          "d_success": {
+            "value": 0.3226,
+            "rank": 4
+          },
+          "o_success_pass": {
+            "value": 0.3404,
+            "rank": 12
+          },
+          "d_success_pass": {
+            "value": 0.3846,
+            "rank": 8
+          },
+          "o_success_rush": {
+            "value": 0.2941,
+            "rank": 11
+          },
+          "d_success_rush": {
+            "value": 0.2778,
+            "rank": 4
+          },
+          "net_epa_drive": {
+            "value": 0.6335,
+            "rank": 4
+          },
+          "o_epa_drive": {
+            "value": -0.5246,
+            "rank": 12
+          },
+          "d_epa_drive": {
+            "value": -1.1581,
+            "rank": 3
+          },
+          "net_fp": {
+            "value": 4.78,
+            "rank": 5
+          },
+          "o_epa_pass": {
+            "value": -0.1418,
+            "rank": 10
+          },
+          "d_epa_pass": {
+            "value": -0.1989,
+            "rank": 6
+          },
+          "o_epa_rush": {
+            "value": -0.1026,
+            "rank": 12
+          },
+          "d_epa_rush": {
+            "value": -0.3228,
+            "rank": 3
+          },
+          "o_avail_yds": {
+            "value": 0.3986,
+            "rank": 11
+          },
+          "d_avail_yds": {
+            "value": 0.3245,
+            "rank": 3
+          },
+          "o_start_fp": {
+            "value": 36.12,
+            "rank": 1
+          },
+          "d_start_fp": {
+            "value": 31.34,
+            "rank": 11
+          },
+          "o_early_epa": {
+            "value": 0.1181,
+            "rank": 5
+          },
+          "d_early_epa": {
+            "value": -0.239,
+            "rank": 2
+          },
+          "o_third_succ": {
+            "value": 0.1667,
+            "rank": 15
+          },
+          "d_third_succ": {
+            "value": 0.2727,
+            "rank": 3
+          },
+          "o_third_dist": {
+            "value": 7.5,
+            "rank": 4
+          },
+          "d_third_dist": {
+            "value": 9.4,
+            "rank": 2
+          }
+        }
+      },
+      "swacbcu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.2665,
+            "rank": 13
+          },
+          "o_epa": {
+            "value": -0.0068,
+            "rank": 9
+          },
+          "d_epa": {
+            "value": 0.2597,
+            "rank": 14
+          },
+          "o_success": {
+            "value": 0.3265,
+            "rank": 12
+          },
+          "d_success": {
+            "value": 0.4762,
+            "rank": 13
+          },
+          "o_success_pass": {
+            "value": 0.4,
+            "rank": 4
+          },
+          "d_success_pass": {
+            "value": 0.3913,
+            "rank": 9
+          },
+          "o_success_rush": {
+            "value": 0.25,
+            "rank": 14
+          },
+          "d_success_rush": {
+            "value": 0.525,
+            "rank": 12
+          },
+          "net_epa_drive": {
+            "value": -1.5155,
+            "rank": 14
+          },
+          "o_epa_drive": {
+            "value": -0.0279,
+            "rank": 9
+          },
+          "d_epa_drive": {
+            "value": 1.4876,
+            "rank": 14
+          },
+          "net_fp": {
+            "value": 8.97,
+            "rank": 1
+          },
+          "o_epa_pass": {
+            "value": -0.0883,
+            "rank": 9
+          },
+          "d_epa_pass": {
+            "value": 0.114,
+            "rank": 12
+          },
+          "o_epa_rush": {
+            "value": 0.078,
+            "rank": 9
+          },
+          "d_epa_rush": {
+            "value": 0.3436,
+            "rank": 14
+          },
+          "o_avail_yds": {
+            "value": 0.2964,
+            "rank": 13
+          },
+          "d_avail_yds": {
+            "value": 0.5123,
+            "rank": 10
+          },
+          "o_start_fp": {
+            "value": 35.33,
+            "rank": 2
+          },
+          "d_start_fp": {
+            "value": 26.36,
+            "rank": 3
+          },
+          "o_early_epa": {
+            "value": -0.1009,
+            "rank": 11
+          },
+          "d_early_epa": {
+            "value": 0.2919,
+            "rank": 14
+          },
+          "o_third_succ": {
+            "value": 0.3846,
+            "rank": 6
+          },
+          "d_third_succ": {
+            "value": 0.4,
+            "rank": 10
+          },
+          "o_third_dist": {
+            "value": 7.1,
+            "rank": 3
+          },
+          "d_third_dist": {
+            "value": 5.62,
+            "rank": 15
+          }
+        }
+      },
+      "swacfamu": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.3686,
+            "rank": 14
+          },
+          "o_epa": {
+            "value": -0.4701,
+            "rank": 15
+          },
+          "d_epa": {
+            "value": -0.1015,
+            "rank": 5
+          },
+          "o_success": {
+            "value": 0.2333,
+            "rank": 15
+          },
+          "d_success": {
+            "value": 0.4961,
+            "rank": 14
+          },
+          "o_success_pass": {
+            "value": 0.2817,
+            "rank": 15
+          },
+          "d_success_pass": {
+            "value": 0.4074,
+            "rank": 11
+          },
+          "o_success_rush": {
+            "value": 0.1633,
+            "rank": 15
+          },
+          "d_success_rush": {
+            "value": 0.56,
+            "rank": 14
+          },
+          "net_epa_drive": {
+            "value": -1.4287,
+            "rank": 13
+          },
+          "o_epa_drive": {
+            "value": -1.8803,
+            "rank": 15
+          },
+          "d_epa_drive": {
+            "value": -0.4516,
+            "rank": 5
+          },
+          "net_fp": {
+            "value": 1.08,
+            "rank": 7
+          },
+          "o_epa_pass": {
+            "value": -0.2136,
+            "rank": 12
+          },
+          "d_epa_pass": {
+            "value": -0.3818,
+            "rank": 2
+          },
+          "o_epa_rush": {
+            "value": -0.8417,
+            "rank": 15
+          },
+          "d_epa_rush": {
+            "value": 0.1003,
+            "rank": 8
+          },
+          "o_avail_yds": {
+            "value": 0.1701,
+            "rank": 15
+          },
+          "d_avail_yds": {
+            "value": 0.563,
+            "rank": 11
+          },
+          "o_start_fp": {
+            "value": 29.66,
+            "rank": 9
+          },
+          "d_start_fp": {
+            "value": 28.58,
+            "rank": 7
+          },
+          "o_early_epa": {
+            "value": -0.5056,
+            "rank": 15
+          },
+          "d_early_epa": {
+            "value": 0.062,
+            "rank": 7
+          },
+          "o_third_succ": {
+            "value": 0.2121,
+            "rank": 14
+          },
+          "d_third_succ": {
+            "value": 0.25,
+            "rank": 2
+          },
+          "o_third_dist": {
+            "value": 8.9,
+            "rank": 12
+          },
+          "d_third_dist": {
+            "value": 7.26,
+            "rank": 10
+          }
+        }
+      },
+      "swacgsu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.055,
+            "rank": 9
+          },
+          "o_epa": {
+            "value": -0.0074,
+            "rank": 10
+          },
+          "d_epa": {
+            "value": 0.0476,
+            "rank": 9
+          },
+          "o_success": {
+            "value": 0.3396,
+            "rank": 10
+          },
+          "d_success": {
+            "value": 0.4516,
+            "rank": 9
+          },
+          "o_success_pass": {
+            "value": 0.36,
+            "rank": 9
+          },
+          "d_success_pass": {
+            "value": 0.4074,
+            "rank": 11
+          },
+          "o_success_rush": {
+            "value": 0.3214,
+            "rank": 10
+          },
+          "d_success_rush": {
+            "value": 0.4857,
+            "rank": 9
+          },
+          "net_epa_drive": {
+            "value": -0.3714,
+            "rank": 10
+          },
+          "o_epa_drive": {
+            "value": -0.0434,
+            "rank": 10
+          },
+          "d_epa_drive": {
+            "value": 0.328,
+            "rank": 9
+          },
+          "net_fp": {
+            "value": -2.67,
+            "rank": 12
+          },
+          "o_epa_pass": {
+            "value": 0.127,
+            "rank": 4
+          },
+          "d_epa_pass": {
+            "value": 0.0685,
+            "rank": 11
+          },
+          "o_epa_rush": {
+            "value": -0.1274,
+            "rank": 13
+          },
+          "d_epa_rush": {
+            "value": 0.0315,
+            "rank": 6
+          },
+          "o_avail_yds": {
+            "value": 0.3679,
+            "rank": 12
+          },
+          "d_avail_yds": {
+            "value": 0.4675,
+            "rank": 8
+          },
+          "o_start_fp": {
+            "value": 27.22,
+            "rank": 13
+          },
+          "d_start_fp": {
+            "value": 29.89,
+            "rank": 8
+          },
+          "o_early_epa": {
+            "value": -0.1012,
+            "rank": 12
+          },
+          "d_early_epa": {
+            "value": 0.0629,
+            "rank": 8
+          },
+          "o_third_succ": {
+            "value": 0.5,
+            "rank": 3
+          },
+          "d_third_succ": {
+            "value": 0.4667,
+            "rank": 13
+          },
+          "o_third_dist": {
+            "value": 8.9,
+            "rank": 12
+          },
+          "d_third_dist": {
+            "value": 7.25,
+            "rank": 11
+          }
+        }
+      },
+      "swacjsu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.29,
+            "rank": 2
+          },
+          "o_epa": {
+            "value": 0.2247,
+            "rank": 2
+          },
+          "d_epa": {
+            "value": -0.0653,
+            "rank": 6
+          },
+          "o_success": {
+            "value": 0.5102,
+            "rank": 2
+          },
+          "d_success": {
+            "value": 0.3824,
+            "rank": 6
+          },
+          "o_success_pass": {
+            "value": 0.3684,
+            "rank": 7
+          },
+          "d_success_pass": {
+            "value": 0.3125,
+            "rank": 4
+          },
+          "o_success_rush": {
+            "value": 0.6,
+            "rank": 1
+          },
+          "d_success_rush": {
+            "value": 0.4444,
+            "rank": 6
+          },
+          "net_epa_drive": {
+            "value": 1.321,
+            "rank": 2
+          },
+          "o_epa_drive": {
+            "value": 0.9175,
+            "rank": 3
+          },
+          "d_epa_drive": {
+            "value": -0.4035,
+            "rank": 6
+          },
+          "net_fp": {
+            "value": 5.05,
+            "rank": 4
+          },
+          "o_epa_pass": {
+            "value": 0.1914,
+            "rank": 2
+          },
+          "d_epa_pass": {
+            "value": -0.2857,
+            "rank": 3
+          },
+          "o_epa_rush": {
+            "value": 0.2458,
+            "rank": 2
+          },
+          "d_epa_rush": {
+            "value": 0.1307,
+            "rank": 10
+          },
+          "o_avail_yds": {
+            "value": 0.458,
+            "rank": 9
+          },
+          "d_avail_yds": {
+            "value": 0.3972,
+            "rank": 5
+          },
+          "o_start_fp": {
+            "value": 32.5,
+            "rank": 5
+          },
+          "d_start_fp": {
+            "value": 27.45,
+            "rank": 5
+          },
+          "o_early_epa": {
+            "value": 0.2666,
+            "rank": 1
+          },
+          "d_early_epa": {
+            "value": -0.1685,
+            "rank": 3
+          },
+          "o_third_succ": {
+            "value": 0.4545,
+            "rank": 4
+          },
+          "d_third_succ": {
+            "value": 0.3889,
+            "rank": 9
+          },
+          "o_third_dist": {
+            "value": 7.7,
+            "rank": 7
+          },
+          "d_third_dist": {
+            "value": 7.62,
+            "rank": 9
+          }
+        }
+      },
+      "swacmvsu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.1144,
+            "rank": 10
+          },
+          "o_epa": {
+            "value": -0.4291,
+            "rank": 14
+          },
+          "d_epa": {
+            "value": -0.3147,
+            "rank": 1
+          },
+          "o_success": {
+            "value": 0.2931,
+            "rank": 14
+          },
+          "d_success": {
+            "value": 0.2593,
+            "rank": 1
+          },
+          "o_success_pass": {
+            "value": 0.3478,
+            "rank": 10
+          },
+          "d_success_pass": {
+            "value": 0.3043,
+            "rank": 3
+          },
+          "o_success_rush": {
+            "value": 0.2571,
+            "rank": 13
+          },
+          "d_success_rush": {
+            "value": 0.2258,
+            "rank": 2
+          },
+          "net_epa_drive": {
+            "value": -0.2483,
+            "rank": 9
+          },
+          "o_epa_drive": {
+            "value": -1.5556,
+            "rank": 14
+          },
+          "d_epa_drive": {
+            "value": -1.3073,
+            "rank": 1
+          },
+          "net_fp": {
+            "value": -2.48,
+            "rank": 9
+          },
+          "o_epa_pass": {
+            "value": -0.1627,
+            "rank": 11
+          },
+          "d_epa_pass": {
+            "value": -0.3911,
+            "rank": 1
+          },
+          "o_epa_rush": {
+            "value": -0.6043,
+            "rank": 14
+          },
+          "d_epa_rush": {
+            "value": -0.258,
+            "rank": 4
+          },
+          "o_avail_yds": {
+            "value": 0.2368,
+            "rank": 14
+          },
+          "d_avail_yds": {
+            "value": 0.4372,
+            "rank": 7
+          },
+          "o_start_fp": {
+            "value": 35.06,
+            "rank": 3
+          },
+          "d_start_fp": {
+            "value": 37.54,
+            "rank": 15
+          },
+          "o_early_epa": {
+            "value": -0.3987,
+            "rank": 14
+          },
+          "d_early_epa": {
+            "value": 0.0373,
+            "rank": 6
+          },
+          "o_third_succ": {
+            "value": 0.3125,
+            "rank": 12
+          },
+          "d_third_succ": {
+            "value": 0.0909,
+            "rank": 1
+          },
+          "o_third_dist": {
+            "value": 10.1,
+            "rank": 15
+          },
+          "d_third_dist": {
+            "value": 9.0,
+            "rank": 3
+          }
+        }
+      },
+      "swacpvamu": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.0961,
+            "rank": 5
+          },
+          "o_epa": {
+            "value": 0.0551,
+            "rank": 5
+          },
+          "d_epa": {
+            "value": -0.041,
+            "rank": 7
+          },
+          "o_success": {
+            "value": 0.4655,
+            "rank": 5
+          },
+          "d_success": {
+            "value": 0.3615,
+            "rank": 5
+          },
+          "o_success_pass": {
+            "value": 0.4386,
+            "rank": 3
+          },
+          "d_success_pass": {
+            "value": 0.2881,
+            "rank": 2
+          },
+          "o_success_rush": {
+            "value": 0.4915,
+            "rank": 8
+          },
+          "d_success_rush": {
+            "value": 0.4225,
+            "rank": 5
+          },
+          "net_epa_drive": {
+            "value": 0.5327,
+            "rank": 5
+          },
+          "o_epa_drive": {
+            "value": 0.2906,
+            "rank": 6
+          },
+          "d_epa_drive": {
+            "value": -0.2421,
+            "rank": 7
+          },
+          "net_fp": {
+            "value": 4.05,
+            "rank": 6
+          },
+          "o_epa_pass": {
+            "value": -0.0314,
+            "rank": 6
+          },
+          "d_epa_pass": {
+            "value": -0.282,
+            "rank": 4
+          },
+          "o_epa_rush": {
+            "value": 0.1386,
+            "rank": 6
+          },
+          "d_epa_rush": {
+            "value": 0.1593,
+            "rank": 11
+          },
+          "o_avail_yds": {
+            "value": 0.529,
+            "rank": 4
+          },
+          "d_avail_yds": {
+            "value": 0.309,
+            "rank": 2
+          },
+          "o_start_fp": {
+            "value": 31.09,
+            "rank": 8
+          },
+          "d_start_fp": {
+            "value": 27.04,
+            "rank": 4
+          },
+          "o_early_epa": {
+            "value": 0.1162,
+            "rank": 6
+          },
+          "d_early_epa": {
+            "value": -0.1261,
+            "rank": 5
+          },
+          "o_third_succ": {
+            "value": 0.3846,
+            "rank": 6
+          },
+          "d_third_succ": {
+            "value": 0.4412,
+            "rank": 11
+          },
+          "o_third_dist": {
+            "value": 8.6,
+            "rank": 11
+          },
+          "d_third_dist": {
+            "value": 7.81,
+            "rank": 7
+          }
+        }
+      },
+      "swacsu": {
+        "games_played": 2,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.2286,
+            "rank": 12
+          },
+          "o_epa": {
+            "value": -0.098,
+            "rank": 12
+          },
+          "d_epa": {
+            "value": 0.1306,
+            "rank": 11
+          },
+          "o_success": {
+            "value": 0.3657,
+            "rank": 9
+          },
+          "d_success": {
+            "value": 0.4273,
+            "rank": 7
+          },
+          "o_success_pass": {
+            "value": 0.3607,
+            "rank": 8
+          },
+          "d_success_pass": {
+            "value": 0.3721,
+            "rank": 7
+          },
+          "o_success_rush": {
+            "value": 0.3699,
+            "rank": 9
+          },
+          "d_success_rush": {
+            "value": 0.4627,
+            "rank": 7
+          },
+          "net_epa_drive": {
+            "value": -1.1219,
+            "rank": 12
+          },
+          "o_epa_drive": {
+            "value": -0.5473,
+            "rank": 13
+          },
+          "d_epa_drive": {
+            "value": 0.5746,
+            "rank": 11
+          },
+          "net_fp": {
+            "value": -6.56,
+            "rank": 15
+          },
+          "o_epa_pass": {
+            "value": -0.2581,
+            "rank": 13
+          },
+          "d_epa_pass": {
+            "value": 0.1388,
+            "rank": 13
+          },
+          "o_epa_rush": {
+            "value": 0.0357,
+            "rank": 10
+          },
+          "d_epa_rush": {
+            "value": 0.1253,
+            "rank": 9
+          },
+          "o_avail_yds": {
+            "value": 0.4097,
+            "rank": 10
+          },
+          "d_avail_yds": {
+            "value": 0.4087,
+            "rank": 6
+          },
+          "o_start_fp": {
+            "value": 27.08,
+            "rank": 14
+          },
+          "d_start_fp": {
+            "value": 33.64,
+            "rank": 13
+          },
+          "o_early_epa": {
+            "value": -0.1356,
+            "rank": 13
+          },
+          "d_early_epa": {
+            "value": 0.2241,
+            "rank": 13
+          },
+          "o_third_succ": {
+            "value": 0.3143,
+            "rank": 11
+          },
+          "d_third_succ": {
+            "value": 0.3333,
+            "rank": 6
+          },
+          "o_third_dist": {
+            "value": 8.1,
+            "rank": 10
+          },
+          "d_third_dist": {
+            "value": 6.95,
+            "rank": 12
+          }
+        }
+      },
+      "swactsu": {
+        "games_played": 3,
+        "fields": {
+          "net_adj_epa": {
+            "value": 0.014,
+            "rank": 1
+          },
+          "o_adj_epa": {
+            "value": 0.0282,
+            "rank": 1
+          },
+          "d_adj_epa": {
+            "value": 0.0142,
+            "rank": 1
+          },
+          "net_epa": {
+            "value": 0.0899,
+            "rank": 6
+          },
+          "o_epa": {
+            "value": 0.189,
+            "rank": 3
+          },
+          "d_epa": {
+            "value": 0.0991,
+            "rank": 10
+          },
+          "o_success": {
+            "value": 0.4343,
+            "rank": 7
+          },
+          "d_success": {
+            "value": 0.4554,
+            "rank": 10
+          },
+          "o_success_pass": {
+            "value": 0.3409,
+            "rank": 11
+          },
+          "d_success_pass": {
+            "value": 0.4054,
+            "rank": 10
+          },
+          "o_success_rush": {
+            "value": 0.5091,
+            "rank": 7
+          },
+          "d_success_rush": {
+            "value": 0.5098,
+            "rank": 11
+          },
+          "net_epa_drive": {
+            "value": 0.4563,
+            "rank": 6
+          },
+          "o_epa_drive": {
+            "value": 1.0116,
+            "rank": 2
+          },
+          "d_epa_drive": {
+            "value": 0.5553,
+            "rank": 10
+          },
+          "net_fp": {
+            "value": -2.63,
+            "rank": 11
+          },
+          "o_epa_pass": {
+            "value": -0.052,
+            "rank": 7
+          },
+          "d_epa_pass": {
+            "value": -0.0169,
+            "rank": 7
+          },
+          "o_epa_rush": {
+            "value": 0.3819,
+            "rank": 1
+          },
+          "d_epa_rush": {
+            "value": 0.2252,
+            "rank": 13
+          },
+          "o_avail_yds": {
+            "value": 0.4674,
+            "rank": 8
+          },
+          "d_avail_yds": {
+            "value": 0.5671,
+            "rank": 13
+          },
+          "o_start_fp": {
+            "value": 28.19,
+            "rank": 12
+          },
+          "d_start_fp": {
+            "value": 30.82,
+            "rank": 9
+          },
+          "o_early_epa": {
+            "value": 0.0152,
+            "rank": 9
+          },
+          "d_early_epa": {
+            "value": 0.0678,
+            "rank": 9
+          },
+          "o_third_succ": {
+            "value": 0.5217,
+            "rank": 1
+          },
+          "d_third_succ": {
+            "value": 0.4565,
+            "rank": 12
+          },
+          "o_third_dist": {
+            "value": 7.5,
+            "rank": 4
+          },
+          "d_third_dist": {
+            "value": 8.79,
+            "rank": 4
+          }
+        }
+      },
+      "swacuapb": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": -0.1232,
+            "rank": 11
+          },
+          "o_epa": {
+            "value": 0.1098,
+            "rank": 4
+          },
+          "d_epa": {
+            "value": 0.233,
+            "rank": 13
+          },
+          "o_success": {
+            "value": 0.4531,
+            "rank": 6
+          },
+          "d_success": {
+            "value": 0.5444,
+            "rank": 15
+          },
+          "o_success_pass": {
+            "value": 0.3333,
+            "rank": 13
+          },
+          "d_success_pass": {
+            "value": 0.5333,
+            "rank": 15
+          },
+          "o_success_rush": {
+            "value": 0.5405,
+            "rank": 3
+          },
+          "d_success_rush": {
+            "value": 0.5556,
+            "rank": 13
+          },
+          "net_epa_drive": {
+            "value": -0.8088,
+            "rank": 11
+          },
+          "o_epa_drive": {
+            "value": 0.502,
+            "rank": 4
+          },
+          "d_epa_drive": {
+            "value": 1.3108,
+            "rank": 13
+          },
+          "net_fp": {
+            "value": 0.74,
+            "rank": 8
+          },
+          "o_epa_pass": {
+            "value": 0.0186,
+            "rank": 5
+          },
+          "d_epa_pass": {
+            "value": 0.4774,
+            "rank": 15
+          },
+          "o_epa_rush": {
+            "value": 0.1764,
+            "rank": 5
+          },
+          "d_epa_rush": {
+            "value": -0.0114,
+            "rank": 5
+          },
+          "o_avail_yds": {
+            "value": 0.5818,
+            "rank": 2
+          },
+          "d_avail_yds": {
+            "value": 0.5907,
+            "rank": 15
+          },
+          "o_start_fp": {
+            "value": 31.86,
+            "rank": 6
+          },
+          "d_start_fp": {
+            "value": 31.12,
+            "rank": 10
+          },
+          "o_early_epa": {
+            "value": 0.1418,
+            "rank": 4
+          },
+          "d_early_epa": {
+            "value": 0.3424,
+            "rank": 15
+          },
+          "o_third_succ": {
+            "value": 0.3846,
+            "rank": 6
+          },
+          "d_third_succ": {
+            "value": 0.375,
+            "rank": 8
+          },
+          "o_third_dist": {
+            "value": 8.0,
+            "rank": 9
+          },
+          "d_third_dist": {
+            "value": 7.64,
+            "rank": 8
+          }
+        }
+      }
+    }
+  },
+  "meetings": {
+    "coverage_from_season": 2019,
+    "series": {
+      "games": 4,
+      "wins": {
+        "swacasu": 4,
+        "swactsu": 0
+      },
+      "current_streak": {
+        "team_id": "swacasu",
+        "games": 4
+      }
+    },
+    "items": [
+      {
+        "game_id": "TSUASU08112025",
+        "game_path_id": "tsuasu25",
+        "date": "2025-11-08",
+        "season": 2025,
+        "away_team_id": "swactsu",
+        "home_team_id": "swacasu",
+        "away_score": 24,
+        "home_score": 42,
+        "venue": {
+          "stadium_name": "ASU Stadium",
+          "city": "Montgomery, AL"
+        },
+        "event_name": "Hall of Fame"
+      },
+      {
+        "game_id": "ASUTSU01102022",
+        "game_path_id": "asutsu22",
+        "date": "2022-10-01",
+        "season": 2022,
+        "away_team_id": "swacasu",
+        "home_team_id": "swactsu",
+        "away_score": 16,
+        "home_score": 13,
+        "venue": {
+          "stadium_name": "Shell Energy Stadium",
+          "city": "Houston, TX"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "TSUASU20112021",
+        "game_path_id": "tsuasu21",
+        "date": "2021-11-20",
+        "season": 2021,
+        "away_team_id": "swactsu",
+        "home_team_id": "swacasu",
+        "away_score": 21,
+        "home_score": 24,
+        "venue": {
+          "stadium_name": null,
+          "city": "Montgomery"
+        },
+        "event_name": "Military Appreciation"
+      },
+      {
+        "game_id": "ASUTSU09112019",
+        "game_path_id": "asutsu19",
+        "date": "2019-11-09",
+        "season": 2019,
+        "away_team_id": "swacasu",
+        "home_team_id": "swactsu",
+        "away_score": 27,
+        "home_score": 21,
+        "venue": {
+          "stadium_name": "Shell Energy Stadium",
+          "city": "Houston, TX"
+        },
+        "event_name": null
+      }
+    ]
+  },
+  "event_history": {
+    "title": "Themed Game",
+    "scope": "shared",
+    "owner_team_id": null,
+    "items": [
+      {
+        "date": "2026-10-31",
+        "season": 2026,
+        "name": "DEFEND THE DEN - BLACK OUT",
+        "game_id": "2026-10-31_swacgsu_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacgsu",
+          "name": "Grambling State"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "W.W. Thorne Stadium",
+          "city": "Houston, TX"
+        }
+      },
+      {
+        "date": "2026-10-10",
+        "season": 2026,
+        "name": "KICK OUT CANCER - PINK OUT",
+        "game_id": "2026-10-10_swacmvsu_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "W.W. Thorne Stadium",
+          "city": "Houston, TX"
+        }
+      },
+      {
+        "date": "2026-10-03",
+        "season": 2026,
+        "name": null,
+        "game_id": "2026-10-03_campbell_at_meacnccu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Campbell"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "O'Kelly-Riddick Stadium",
+          "city": "Durham, NC"
+        }
+      },
+      {
+        "date": "2026-09-26",
+        "season": 2026,
+        "name": "Future Legends / Greek Night / White",
+        "game_id": "SUJSU26092026",
+        "game_path_id": "sujsu26",
+        "away": {
+          "team_id": "swacsu",
+          "name": "Southern"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "away_score": 17,
+        "home_score": 35,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2026-09-19",
+        "season": 2026,
+        "name": "Gold Game",
+        "game_id": "2026-09-19_louisianachristi_at_swacsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Louisiana Christian University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 31,
+        "home_score": 50,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "season": 2026,
+        "name": null,
+        "game_id": "2026-09-12_meacncat_at_meacnccu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacncat",
+          "name": "North Carolina A&T"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 22,
+        "home_score": 30,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "O'Kelly-Riddick Stadium",
+          "city": "Durham, NC"
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "season": 2026,
+        "name": "WEAR BLACK",
+        "game_id": "2026-09-12_swacasu_at_tbd",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Troy University"
+        },
+        "away_score": 17,
+        "home_score": 34,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2026-09-05",
+        "season": 2026,
+        "name": null,
+        "game_id": "2026-09-05_elizabethcitysta_at_meacnccu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Elizabeth City State"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 6,
+        "home_score": 27,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "O'Kelly-Riddick Stadium",
+          "city": "Durham, NC"
+        }
+      },
+      {
+        "date": "2026-08-29",
+        "season": 2026,
+        "name": "Blackout / Throwback",
+        "game_id": "2026-08-29_winstonsalemstat_at_meacnsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Winston-Salem State"
+        },
+        "home": {
+          "team_id": "meacnsu",
+          "name": "Norfolk State University"
+        },
+        "away_score": 0,
+        "home_score": 56,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        }
+      },
+      {
+        "date": "2026-08-29",
+        "season": 2026,
+        "name": "Tiger Club Apprecition Day",
+        "game_id": "2026-08-29_clarkatlantauniv_at_swacgsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Clark Atlanta University"
+        },
+        "home": {
+          "team_id": "swacgsu",
+          "name": "Grambling State University"
+        },
+        "away_score": 7,
+        "home_score": 49,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Eddie G. Robinson Memorial Stadium",
+          "city": "Grambling, LA"
+        }
+      },
+      {
+        "date": "2026-08-29",
+        "season": 2026,
+        "name": "NATURAL STATE KICKOFF CLASSIC",
+        "game_id": "2026-08-29_morehousecollege_at_swacuapb",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Morehouse College"
+        },
+        "home": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas at Pine Bluff"
+        },
+        "away_score": 15,
+        "home_score": 35,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2026-08-27",
+        "season": 2026,
+        "name": "Welcome Back - White Out",
+        "game_id": "2026-08-27_stonybrook_at_meacdsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Stony Brook"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 34,
+        "home_score": 41,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Alumni Stadium",
+          "city": "Dover, DE"
+        }
+      },
+      {
+        "date": "2025-11-22",
+        "season": 2025,
+        "name": "WESTERN WEAR",
+        "game_id": "UAPBASU22112025",
+        "game_path_id": "uapbasu25",
+        "away": {
+          "team_id": "swacuapb",
+          "name": "Arkansas - Pine Bluff"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 13,
+        "home_score": 44,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "ASU Stadium",
+          "city": "Montgomery, AL"
+        }
+      },
+      {
+        "date": "2025-11-08",
+        "season": 2025,
+        "name": "Salute to Service",
+        "game_id": "PVAMUAAMU08112025",
+        "game_path_id": "pvamuaamu25",
+        "away": {
+          "team_id": "swacpvamu",
+          "name": "Prairie View A&M"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 48,
+        "home_score": 5,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2025-11-08",
+        "season": 2025,
+        "name": "Military/Service Workers Day",
+        "game_id": "SUALC08112025",
+        "game_path_id": "sualc25",
+        "away": {
+          "team_id": "swacsu",
+          "name": "Southern University"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "away_score": 17,
+        "home_score": 35,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2025-11-01",
+        "season": 2025,
+        "name": "Heroes Day (Military/Educators/First Responders Appreciation)",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Towson University"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 14,
+        "home_score": 35,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2025-09-27",
+        "season": 2025,
+        "name": "All Roads Lead to Valley (Green Out)",
+        "game_id": "TSUMVSU27092025",
+        "game_path_id": "tsumvsu25",
+        "away": {
+          "team_id": "swactsu",
+          "name": "Texas Southern"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State University"
+        },
+        "away_score": 23,
+        "home_score": 20,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Rice-Totten Stadium",
+          "city": "Itta Bena, MS"
+        }
+      },
+      {
+        "date": "2025-09-20",
+        "season": 2025,
+        "name": "Boots & Buckles with Butch / Suicide Awareness Night",
+        "game_id": "2025-09-20_lane_at_swacaamu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Lane"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 7,
+        "home_score": 49,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2025-09-13",
+        "season": 2025,
+        "name": "Honoring 2024-25 A&T Champions",
+        "game_id": "2025-09-13_fayettevillestat_at_meacnccu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Hampton University"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 19,
+        "home_score": 49,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2025-08-30",
+        "season": 2025,
+        "name": "Buckle Up Challenge",
+        "game_id": "SUMVSU30082025",
+        "game_path_id": "sumvsu25",
+        "away": {
+          "team_id": "swacsu",
+          "name": "Southern"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State University"
+        },
+        "away_score": 34,
+        "home_score": 29,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Rice-Totten Stadium",
+          "city": "Itta Bena, MS"
+        }
+      },
+      {
+        "date": "2024-11-14",
+        "season": 2024,
+        "name": "Student Appreciation",
+        "game_id": "GRAMAAMU14112024",
+        "game_path_id": "gsuaamu24",
+        "away": {
+          "team_id": "swacgsu",
+          "name": "Grambling State"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 17,
+        "home_score": 22,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2024-11-09",
+        "season": 2024,
+        "name": null,
+        "game_id": "MVSUJSU09112024",
+        "game_path_id": "mvsujsu24",
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "away_score": 14,
+        "home_score": 51,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2024-11-09",
+        "season": 2024,
+        "name": "Gold Game",
+        "game_id": "BCUSU09112024",
+        "game_path_id": "bcusu24",
+        "away": {
+          "team_id": "swacbcu",
+          "name": "Bethune-Cookman University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 23,
+        "home_score": 25,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2024-11-02",
+        "season": 2024,
+        "name": null,
+        "game_id": "DSUHU02112024",
+        "game_path_id": "dsuhu24",
+        "away": {
+          "team_id": "meacdsu",
+          "name": "Delaware State"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": 0,
+        "home_score": 38,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2024-11-02",
+        "season": 2024,
+        "name": "Senior Day / Heroes Appreciation Day",
+        "game_id": "SUAAMU02112024",
+        "game_path_id": "suaamu24",
+        "away": {
+          "team_id": "swacsu",
+          "name": "Southern"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 25,
+        "home_score": 20,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2024-10-12",
+        "season": 2024,
+        "name": null,
+        "game_id": "MVSUASU12102024",
+        "game_path_id": "mvsuasu24",
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 17,
+        "home_score": 54,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "ASU Stadium",
+          "city": "Montgomery, AL"
+        }
+      },
+      {
+        "date": "2024-09-14",
+        "season": 2024,
+        "name": "University Day",
+        "game_id": "2024-09-14_meacnccu_at_tbd",
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "University of Delaware"
+        },
+        "away_score": 10,
+        "home_score": 45,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2024-09-14",
+        "season": 2024,
+        "name": "Boots & Buckles Night",
+        "game_id": "2024-09-14_georgetownky_at_swacaamu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Georgetown [KY]"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 16,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2023-11-25",
+        "season": 2023,
+        "name": "NCAA Division I FCS Championship Playoffs",
+        "game_id": "2023-11-25_meacnccu_at_tbd",
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Richmond"
+        },
+        "away_score": 27,
+        "home_score": 49,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2023-11-18",
+        "season": 2023,
+        "name": null,
+        "game_id": "SCSUNSU18112023",
+        "game_path_id": "scsunsu23",
+        "away": {
+          "team_id": "meacscsu",
+          "name": "South Carolina State"
+        },
+        "home": {
+          "team_id": "meacnsu",
+          "name": "Norfolk State University"
+        },
+        "away_score": 44,
+        "home_score": 17,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        }
+      },
+      {
+        "date": "2023-10-28",
+        "season": 2023,
+        "name": "Breast Cancer Awareness/Catch A Cure/HOF",
+        "game_id": "MVSUALC28102023",
+        "game_path_id": "mvsualc23",
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "away_score": 3,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2023-09-30",
+        "season": 2023,
+        "name": "Trailblazers Weekend",
+        "game_id": "FAMUMVSU30092023",
+        "game_path_id": "famumvsu23",
+        "away": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State University"
+        },
+        "away_score": 31,
+        "home_score": 7,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Rice-Totten Stadium",
+          "city": "Itta Bena, MS"
+        }
+      },
+      {
+        "date": "2023-09-16",
+        "season": 2023,
+        "name": "Ken Riley / Youth Day Presented by AT&T",
+        "game_id": "2023-09-16_universityofwest_at_swacfamu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "University of West Florida"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "away_score": 10,
+        "home_score": 31,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Bragg Memorial Stadium",
+          "city": "Tallahassee, FL"
+        }
+      },
+      {
+        "date": "2023-09-16",
+        "season": 2023,
+        "name": null,
+        "game_id": "AAMUSU16092023",
+        "game_path_id": "aamusu23",
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 10,
+        "home_score": 20,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2023-09-09",
+        "season": 2023,
+        "name": "SALUTE TO SERVICE",
+        "game_id": "2023-09-09_miles_at_swacasu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Miles"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 21,
+        "home_score": 17,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "ASU Stadium",
+          "city": "Montgomery, AL"
+        }
+      },
+      {
+        "date": "2023-09-03",
+        "season": 2023,
+        "name": "Denny's Orange Blossom Classic",
+        "game_id": "JSUFAMU03092023",
+        "game_path_id": "famujsu23",
+        "away": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M"
+        },
+        "away_score": 10,
+        "home_score": 28,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2022-11-12",
+        "season": 2022,
+        "name": null,
+        "game_id": "SCSUHU12112022",
+        "game_path_id": "scsuhu22",
+        "away": {
+          "team_id": "meacscsu",
+          "name": "South Carolina State"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": 14,
+        "home_score": 28,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2022-11-12",
+        "season": 2022,
+        "name": "Camouflage/Navy Game",
+        "game_id": "MVSUSU12112022",
+        "game_path_id": "mvsusu22",
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 7,
+        "home_score": 27,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2022-10-15",
+        "season": 2022,
+        "name": null,
+        "game_id": "MVSUASU15102022",
+        "game_path_id": "mvsuasu22",
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 9,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2022-10-15",
+        "season": 2022,
+        "name": "Gold Game",
+        "game_id": "ALCSU15102022",
+        "game_path_id": "alcsu22",
+        "away": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 17,
+        "home_score": 21,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2022-09-24",
+        "season": 2022,
+        "name": "COMMUNITY & TEACHER APPRECIATION DAY",
+        "game_id": "PVAMUASU24092022",
+        "game_path_id": "pvamuasu22",
+        "away": {
+          "team_id": "swacpvamu",
+          "name": "Prairie View A&M"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 24,
+        "home_score": 15,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2021-11-20",
+        "season": 2021,
+        "name": null,
+        "game_id": "2021-11-20_virginialynchbur_at_meachu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Virginia-Lynchburg"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": 6,
+        "home_score": 56,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2021-10-30",
+        "season": 2021,
+        "name": "Trailblazers Weekend",
+        "game_id": "JSUMVSU30102021",
+        "game_path_id": "jsumvsu21",
+        "away": {
+          "team_id": "swacjsu",
+          "name": "Jackson State"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State University"
+        },
+        "away_score": 28,
+        "home_score": 19,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Rice-Totten Stadium",
+          "city": "Itta Bena, MS"
+        }
+      },
+      {
+        "date": "2021-09-26",
+        "season": 2021,
+        "name": "Delta-Bayou Classic",
+        "game_id": "SUMVSU26092021",
+        "game_path_id": "sumvsu21",
+        "away": {
+          "team_id": "swacsu",
+          "name": "Southern"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State University"
+        },
+        "away_score": 38,
+        "home_score": 25,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Mississippi Veterans Memorial Stadium",
+          "city": "Jackson, MS"
+        }
+      },
+      {
+        "date": "2021-09-23",
+        "season": 2021,
+        "name": "Community / Greek & Legendary Night",
+        "game_id": "ALCUAPB23092021",
+        "game_path_id": "alcuapb21",
+        "away": {
+          "team_id": "swacalc",
+          "name": "Alcorn"
+        },
+        "home": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas at Pine Bluff"
+        },
+        "away_score": 39,
+        "home_score": 38,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Simmons Bank Field",
+          "city": "Pine Bluff, AR"
+        }
+      },
+      {
+        "date": "2021-09-18",
+        "season": 2021,
+        "name": "Game Sponsor: Atlantic Union Bank",
+        "game_id": "2021-09-18_elizabethcitysta_at_meacnsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Elizabeth City State"
+        },
+        "home": {
+          "team_id": "meacnsu",
+          "name": "Norfolk State University"
+        },
+        "away_score": 26,
+        "home_score": 63,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        }
+      },
+      {
+        "date": "2021-09-04",
+        "season": 2021,
+        "name": "Recruitment / High School Day",
+        "game_id": "2021-09-04_lane_at_swacuapb",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Lane"
+        },
+        "home": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas at Pine Bluff"
+        },
+        "away_score": 16,
+        "home_score": 34,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Simmons Bank Field",
+          "city": "Pine Bluff, AR"
+        }
+      },
+      {
+        "date": "2019-11-23",
+        "season": 2019,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacmsu",
+          "name": "Morgan State"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": 15,
+        "home_score": 20,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2019-11-16",
+        "season": 2019,
+        "name": "Senior Day & Military/Service Workers Day",
+        "game_id": "AAMUALC16112019",
+        "game_path_id": "aamualc19",
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "away_score": 28,
+        "home_score": 34,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2019-11-16",
+        "season": 2019,
+        "name": null,
+        "game_id": "SUJSU16112019",
+        "game_path_id": "sujsu19",
+        "away": {
+          "team_id": "swacsu",
+          "name": "Southern University"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "away_score": 40,
+        "home_score": 34,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Mississippi Veterans Memorial Stadium",
+          "city": "Jackson, MS"
+        }
+      },
+      {
+        "date": "2019-11-02",
+        "season": 2019,
+        "name": null,
+        "game_id": "UAPBJSU02112019",
+        "game_path_id": "uapbjsu19",
+        "away": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas - Pine Bluff"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "away_score": 12,
+        "home_score": 21,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Mississippi Veterans Memorial Stadium",
+          "city": "Jackson, MS"
+        }
+      },
+      {
+        "date": "2019-10-19",
+        "season": 2019,
+        "name": "Thee I Love Blue Out",
+        "game_id": "2019-10-19_swacjsu_at_swacmvsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "away_score": 31,
+        "home_score": 28,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2019-10-12",
+        "season": 2019,
+        "name": "GOLD GAME",
+        "game_id": "PVAMUSU12102019",
+        "game_path_id": "pvamusu19",
+        "away": {
+          "team_id": "swacpvamu",
+          "name": "Prairie View A&M University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 28,
+        "home_score": 34,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2019-10-05",
+        "season": 2019,
+        "name": "“Beat Out Breast Cancer/Pink Game” and Connection Day",
+        "game_id": "ALCASU05102019",
+        "game_path_id": "alcasu19",
+        "away": {
+          "team_id": "swacalc",
+          "name": "Alcorn State"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 35,
+        "home_score": 7,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2019-09-28",
+        "season": 2019,
+        "name": null,
+        "game_id": "BCUHU28092019",
+        "game_path_id": "bcuhu19",
+        "away": {
+          "team_id": "swacbcu",
+          "name": "Bethune-Cookman"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": 37,
+        "home_score": 29,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2019-09-14",
+        "season": 2019,
+        "name": "CommUniversity Day (Faith and Family Night)",
+        "game_id": "2019-09-14_kennesawstate_at_swacasu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Opponent TBA"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 42,
+        "home_score": 7,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2019-09-14",
+        "season": 2019,
+        "name": "WHITE GAME",
+        "game_id": "2019-09-14_edwardwatersfla_at_swacsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Edward Waters (Fla.)"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 0,
+        "home_score": 61,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2018-11-17",
+        "season": 2018,
+        "name": "Senior Day & Military/Service Workers Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacjsu",
+          "name": "Jackson State"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "away_score": 3,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2018-11-10",
+        "season": 2018,
+        "name": "NSU Day of Service Canned Food Drive",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meachu",
+          "name": "Howard"
+        },
+        "home": {
+          "team_id": "meacnsu",
+          "name": "Norfolk State University"
+        },
+        "away_score": 17,
+        "home_score": 29,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        }
+      },
+      {
+        "date": "2018-11-03",
+        "season": 2018,
+        "name": "Military/First Responder / Appreciation Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Savannah State"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 6,
+        "home_score": 25,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Alumni Stadium",
+          "city": "Dover, DE"
+        }
+      },
+      {
+        "date": "2018-11-03",
+        "season": 2018,
+        "name": "Family Day/Connection Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swactsu",
+          "name": "Texas Southern"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 21,
+        "home_score": 30,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2018-10-13",
+        "season": 2018,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacdsu",
+          "name": "Delaware State"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": 13,
+        "home_score": 55,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2018-09-15",
+        "season": 2018,
+        "name": "Gold Game",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Langston"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 18,
+        "home_score": 33,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2018-09-08",
+        "season": 2018,
+        "name": "Game time is posted as CST. Game time is 7:00 PM EST",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Troy"
+        },
+        "away_score": 7,
+        "home_score": 59,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2018-09-01",
+        "season": 2018,
+        "name": "Marion Nine Labor Day Classic / \"White Out\"",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Tuskegee"
+        },
+        "home": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "away_score": 20,
+        "home_score": 26,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2017-11-11",
+        "season": 2017,
+        "name": "Senior Day & Military/Service Workers Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "away_score": 0,
+        "home_score": 59,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2016-11-05",
+        "season": 2016,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 10,
+        "home_score": 26,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2016-09-24",
+        "season": 2016,
+        "name": "Youth & Campus Organizations Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central"
+        },
+        "home": {
+          "team_id": "meacnsu",
+          "name": "Norfolk State University"
+        },
+        "away_score": 34,
+        "home_score": 31,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        }
+      },
+      {
+        "date": "2015-11-28",
+        "season": 2015,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Texas Southern University*"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 7,
+        "home_score": 38,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2015-11-21",
+        "season": 2015,
+        "name": "Black Out The Eagles",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacnccu",
+          "name": "N.C. Central"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 21,
+        "home_score": 16,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2015-10-17",
+        "season": 2015,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacpvamu",
+          "name": "Prairie View A&M University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 47,
+        "home_score": 42,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2015-09-19",
+        "season": 2015,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 31,
+        "home_score": 50,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2014-11-22",
+        "season": 2014,
+        "name": "Senior Day & Military/Service Workers Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacjsu",
+          "name": "Jackson State"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "away_score": 34,
+        "home_score": 31,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2014-11-15",
+        "season": 2014,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 13,
+        "home_score": 44,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2014-11-08",
+        "season": 2014,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 20,
+        "home_score": 30,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2014-11-01",
+        "season": 2014,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State*"
+        },
+        "away_score": 25,
+        "home_score": 14,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Mississippi Veterans Memorial Stadium",
+          "city": "Jackson, MS"
+        }
+      },
+      {
+        "date": "2014-11-01",
+        "season": 2014,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacasu",
+          "name": "Alabama State University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 21,
+        "home_score": 28,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2014-10-11",
+        "season": 2014,
+        "name": "Parents/Community Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Savannah State"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "away_score": 14,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2014-10-04",
+        "season": 2014,
+        "name": "Fifth Annual Louis Crews Classic / Homecoming 2014",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacgsu",
+          "name": "Grambling State"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 38,
+        "home_score": 28,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2014-10-04",
+        "season": 2014,
+        "name": "Rattler Strong: Pink Game/Public Service Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacmsu",
+          "name": "Morgan State"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "away_score": 24,
+        "home_score": 9,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2014-09-27",
+        "season": 2014,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State*"
+        },
+        "away_score": 42,
+        "home_score": 20,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Rice-Totten Stadium",
+          "city": "Itta Bena, MS"
+        }
+      },
+      {
+        "date": "2014-09-20",
+        "season": 2014,
+        "name": "Lincoln Financial Field",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Temple"
+        },
+        "away_score": 0,
+        "home_score": 59,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2014-09-13",
+        "season": 2014,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Northwestern State University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 51,
+        "home_score": 27,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2014-09-06",
+        "season": 2014,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Tuskegee University*"
+        },
+        "away_score": 30,
+        "home_score": 17,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Alumni Stadium",
+          "city": "Dover, DE"
+        }
+      },
+      {
+        "date": "2014-09-06",
+        "season": 2014,
+        "name": null,
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Central Methodist University (Mo.)"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 14,
+        "home_score": 56,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2013-11-16",
+        "season": 2013,
+        "name": "Community/Senior Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacdsu",
+          "name": "Delaware State"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "away_score": 29,
+        "home_score": 21,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2013-11-16",
+        "season": 2013,
+        "name": "BOLD IN GOLD (HEROES/HS SENIOR DAY)",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Clark Atlanta University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": 0,
+        "home_score": 53,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2013-11-02",
+        "season": 2013,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University*"
+        },
+        "away_score": 19,
+        "home_score": 18,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2013-09-28",
+        "season": 2013,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Texas Southern University*"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 10,
+        "home_score": 12,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2013-08-31",
+        "season": 2013,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Grambling State University*"
+        },
+        "away_score": 23,
+        "home_score": 9,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Eddie G. Robinson Memorial Stadium",
+          "city": "Grambling, LA"
+        }
+      },
+      {
+        "date": "2012-11-10",
+        "season": 2012,
+        "name": "Senior/Sponsor Appreciation Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacscsu",
+          "name": "S.C. State"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 7,
+        "home_score": 17,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2012-11-03",
+        "season": 2012,
+        "name": "Former Athletes Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 3,
+        "home_score": 16,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2012-10-13",
+        "season": 2012,
+        "name": "Parents' Day/Hall of Fame Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacscsu",
+          "name": "SOUTH CAROLINA STATE"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 17,
+        "home_score": 31,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2012-10-13",
+        "season": 2012,
+        "name": "University Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meachu",
+          "name": "Howard"
+        },
+        "home": {
+          "team_id": "meacnccu",
+          "name": "North Carolina Central University"
+        },
+        "away_score": 10,
+        "home_score": 38,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Truist Stadium",
+          "city": "Greensboro, NC"
+        }
+      },
+      {
+        "date": "2012-10-06",
+        "season": 2012,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Mississippi Valley State University*"
+        },
+        "away_score": 35,
+        "home_score": 0,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Rice-Totten Stadium",
+          "city": "Itta Bena, MS"
+        }
+      },
+      {
+        "date": "2012-09-22",
+        "season": 2012,
+        "name": "Faith/Community/Band Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacfamu",
+          "name": "FLORIDA A&M"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 24,
+        "home_score": 22,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2012-09-22",
+        "season": 2012,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Texas Southern University*"
+        },
+        "away_score": 42,
+        "home_score": 13,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Shell Energy Stadium",
+          "city": "Houston, TX"
+        }
+      },
+      {
+        "date": "2012-09-15",
+        "season": 2012,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Prairie View A&M University*"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 30,
+        "home_score": 42,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2012-09-08",
+        "season": 2012,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacuapb",
+          "name": "Arkansas-Pine Bluff*"
+        },
+        "away_score": 14,
+        "home_score": 10,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2012-09-01",
+        "season": 2012,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Tuskegee University*"
+        },
+        "away_score": 7,
+        "home_score": 6,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Legion Field",
+          "city": "Birmingham, AL"
+        }
+      },
+      {
+        "date": "2011-12-10",
+        "season": 2011,
+        "name": "2011 Farmer's SWAC Championship Game",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacgsu",
+          "name": "Grambling State"
+        },
+        "away_score": 15,
+        "home_score": 16,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Legion Field",
+          "city": "Birmingham, AL"
+        }
+      },
+      {
+        "date": "2011-11-19",
+        "season": 2011,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Prairie View A&M University*"
+        },
+        "away_score": 17,
+        "home_score": 15,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2011-11-05",
+        "season": 2011,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University*"
+        },
+        "away_score": 28,
+        "home_score": 14,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Jack Spinks-Marino Casem Stadium",
+          "city": "Lorman, MS"
+        }
+      },
+      {
+        "date": "2011-10-13",
+        "season": 2011,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Texas Southern University*"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 21,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2011-10-08",
+        "season": 2011,
+        "name": "Parents' Day/Hall of Fame Day/Greek Day",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacnsu",
+          "name": "NORFOLK STATE"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 38,
+        "home_score": 21,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2011-10-01",
+        "season": 2011,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas-Pine Bluff*"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": 27,
+        "home_score": 28,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2011-09-24",
+        "season": 2011,
+        "name": "Later Vacated by NCAA Action",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "home": {
+          "team_id": null,
+          "name": "Grambling State University*"
+        },
+        "away_score": 20,
+        "home_score": 14,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Eddie G. Robinson Memorial Stadium",
+          "city": "Grambling, LA"
+        }
+      },
+      {
+        "date": "2011-09-10",
+        "season": 2011,
+        "name": "City of Dover Night",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Opponent TBA"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 27,
+        "home_score": 31,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2010-11-13",
+        "season": 2010,
+        "name": "Youth & Community Night",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Hampton"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "away_score": 12,
+        "home_score": 17,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2010-10-16",
+        "season": 2010,
+        "name": "Public Service Game",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Savannah State"
+        },
+        "home": {
+          "team_id": "swacfamu",
+          "name": "Florida A&M University"
+        },
+        "away_score": 0,
+        "home_score": 31,
+        "result_status": "final",
+        "venue": null
+      }
+    ]
+  }
+}

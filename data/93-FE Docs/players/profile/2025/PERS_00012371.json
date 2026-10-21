@@ -1,0 +1,511 @@
+{
+  "person_id": "PERS_00012371",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00012371",
+    "first_name": "Xavier",
+    "last_name": "Phipps",
+    "team_id": "swactsu",
+    "team_abbreviation": "TXSO",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 81,
+    "position": "Tight End",
+    "position_group": "TE",
+    "raw_position": "TE",
+    "class_year": 1,
+    "class_label": "Freshman",
+    "height": 76,
+    "weight": 230,
+    "home_city": "Houston",
+    "home_state": "TX",
+    "is_in_state": true,
+    "previous_school": "UTEP",
+    "high_school": null,
+    "image_url": "https://datg7il085uh2.cloudfront.net/images/2025/8/26/81-Xavier_Phipps.JPG"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 3.72,
+    "per_game": 1.52,
+    "games_played": 6,
+    "rank_in_position_group": 12,
+    "position_group_total": 47,
+    "conference_rank": 370,
+    "conference_total": 1006,
+    "position_group_mean": 0.32
+  },
+  "season_totals": {
+    "par": 3.72,
+    "total_production": 9.12,
+    "avg_production": 1.52,
+    "games_played": 6,
+    "season_components": {
+      "receiving_production": 9.12,
+      "rushing_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "PVAMUTSU30082025",
+      "game_path_id": "pvamutsu25",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 21-22",
+      "data_state": "played",
+      "par": -0.75,
+      "components": {
+        "receiving_production": 0.15
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "0-0"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2025-09-06_swactsu_at_california",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "California",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 3-35",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2025-09-13_lamar_at_swactsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Lamar",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 7-31",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "TSUMVSU27092025",
+      "game_path_id": "tsumvsu25",
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 23-20",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 6,
+      "game_id": "UAPBTSU04102025",
+      "game_path_id": "uapbtsu25",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 51-7",
+      "data_state": "played",
+      "par": -0.75,
+      "components": {
+        "receiving_production": 0.15
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "0-0"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "TSUGRAM11102025",
+      "game_path_id": "tsugsu25",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 21-20",
+      "data_state": "played",
+      "par": 3.27,
+      "components": {
+        "receiving_production": 4.17
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "2-10"
+        },
+        {
+          "label": "REC TD",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 8,
+      "game_id": "2025-10-18_virginialynchbur_at_swactsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Virginia-Lynchburg",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 61-10",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 10,
+      "game_id": "ALCTSU01112025",
+      "game_path_id": "alctsu25",
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 14-33",
+      "data_state": "played",
+      "par": 2.94,
+      "components": {
+        "receiving_production": 3.84
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "6-46"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 11,
+      "game_id": "TSUASU08112025",
+      "game_path_id": "tsuasu25",
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 24-42",
+      "data_state": "played",
+      "par": -0.39,
+      "components": {
+        "receiving_production": 0.51
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-5"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 12,
+      "game_id": "TSUSU15112025",
+      "game_path_id": "tsusu25",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 35-30",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 13,
+      "game_id": "AAMUTSU22112025",
+      "game_path_id": "aamutsu25",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 24-7",
+      "data_state": "played",
+      "par": -0.6,
+      "components": {
+        "receiving_production": 0.3
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "0-0"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    }
+  ],
+  "spotlight": {
+    "week": 13,
+    "game_id": "AAMUTSU22112025",
+    "game_path_id": "aamutsu25",
+    "opponent_id": "swacaamu",
+    "opponent_name": "AAMU",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 24-7",
+    "par": -0.6,
+    "stat_line": [
+      {
+        "label": "REC",
+        "value": "0-0"
+      },
+      {
+        "label": "REC TD",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 76,
+      "rank": 2,
+      "total": 4,
+      "group": "TE",
+      "group_avg": 76
+    },
+    "weight": {
+      "value": 230,
+      "rank": 2,
+      "total": 4,
+      "group": "TE",
+      "group_avg": 235
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 2
+      },
+      {
+        "class": "So.",
+        "count": 1
+      },
+      {
+        "class": "Jr.",
+        "count": 0
+      },
+      {
+        "class": "Sr.",
+        "count": 0
+      },
+      {
+        "class": "Gr.",
+        "count": 1
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "TES",
+        "rank": 4,
+        "total": 4
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 14
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 48
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 60
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "G5",
+    "previous_school": "UTEP",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 0.0,
+    "distance_tier": "local",
+    "experience_score": 1.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": true,
+        "season": 2025
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": 2026
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2028
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2029
+      }
+    ]
+  }
+}

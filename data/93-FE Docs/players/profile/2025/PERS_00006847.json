@@ -1,0 +1,774 @@
+{
+  "person_id": "PERS_00006847",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00006847",
+    "first_name": "Jalil",
+    "last_name": "Lenore",
+    "team_id": "swacasu",
+    "team_abbreviation": "ALST",
+    "conference": "SWAC",
+    "division": "East",
+    "jersey_number": 33,
+    "position": "Linebacker",
+    "position_group": "LB",
+    "raw_position": "LB",
+    "class_year": 5,
+    "class_label": "Graduate",
+    "height": 73,
+    "weight": 225,
+    "home_city": "Chicago",
+    "home_state": "IL",
+    "is_in_state": false,
+    "previous_school": "Central (oh) State",
+    "high_school": null,
+    "image_url": "https://bamastatesports.com/images/2025/8/7/lenore_jalil_080425.JPG"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 61.635,
+    "per_game": 8.1883,
+    "games_played": 9,
+    "rank_in_position_group": 3,
+    "position_group_total": 143,
+    "conference_rank": 16,
+    "conference_total": 1006,
+    "position_group_mean": 8.93
+  },
+  "season_totals": {
+    "par": 61.635,
+    "total_production": 73.695,
+    "avg_production": 8.1883,
+    "games_played": 9,
+    "season_components": {
+      "hit_production": 32.755,
+      "hawk_production": 7.51,
+      "scrum_production": 33.43
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "2025-08-28_swacasu_at_uab",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "UAB",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 42-52",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "ASUSU06092025",
+      "game_path_id": "asusu25",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 30-7",
+      "data_state": "played",
+      "par": 11.34,
+      "components": {
+        "hit_production": 2.79,
+        "scrum_production": 9.89
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 3
+        },
+        {
+          "label": "TFL",
+          "value": 1.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 1,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "forced_fumble",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": -2,
+            "quarter": 3,
+            "game_clock": "08:57"
+          },
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": -3,
+            "quarter": 4,
+            "game_clock": "07:18"
+          }
+        ]
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2025-09-13_miles_at_swacasu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Miles",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 37-9",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "ASUFAMU27092025",
+      "game_path_id": "asufamu25",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 42-14",
+      "data_state": "played",
+      "par": -0.12,
+      "components": {
+        "hit_production": 1.22
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 5
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "BCUASU04102025",
+      "game_path_id": "bcuasu25",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 52-35",
+      "data_state": "played",
+      "par": 1.83,
+      "components": {
+        "hit_production": 3.17
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 5
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 1,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": null,
+            "quarter": 3,
+            "game_clock": "12:07"
+          }
+        ]
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "ASUJSU11102025",
+      "game_path_id": "asujsu25",
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 34-38",
+      "data_state": "played",
+      "par": 12.11,
+      "components": {
+        "hit_production": 3.56,
+        "scrum_production": 9.89
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 14
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 1,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "forced_fumble",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": 17,
+            "quarter": 4,
+            "game_clock": "06:59"
+          }
+        ]
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "AAMUASU25102025",
+      "game_path_id": "aamuasu25",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 56-13",
+      "data_state": "played",
+      "par": 9.23,
+      "components": {
+        "hit_production": 10.57
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 4
+        },
+        {
+          "label": "TFL",
+          "value": 1.5
+        },
+        {
+          "label": "SACK",
+          "value": 1.5
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.5,
+          "sacks": 1.5,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 0.5,
+            "zone": null,
+            "depth": -12,
+            "quarter": 2,
+            "game_clock": "08:57"
+          },
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -7,
+            "quarter": 2,
+            "game_clock": "05:22"
+          }
+        ]
+      }
+    },
+    {
+      "week": 10,
+      "game_id": "ASUPVAMU01112025",
+      "game_path_id": "asupvamu25",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 31-28",
+      "data_state": "played",
+      "par": 3.11,
+      "components": {
+        "hit_production": 4.45
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 10
+        },
+        {
+          "label": "TFL",
+          "value": 1.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "right",
+            "depth": -8,
+            "quarter": 2,
+            "game_clock": "15:00"
+          }
+        ]
+      }
+    },
+    {
+      "week": 11,
+      "game_id": "TSUASU08112025",
+      "game_path_id": "tsuasu25",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 42-24",
+      "data_state": "played",
+      "par": 3.77,
+      "components": {
+        "hit_production": 4.11,
+        "hawk_production": 1.0
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 9
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 1,
+          "forced_fumbles": 0,
+          "pass_breakups": 1,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": null,
+            "quarter": 3,
+            "game_clock": "13:12"
+          },
+          {
+            "type": "pass_breakup",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": 4,
+            "quarter": 3,
+            "game_clock": "13:12"
+          }
+        ]
+      }
+    },
+    {
+      "week": 12,
+      "game_id": "ASUMVSU16112025",
+      "game_path_id": "asumvsu25",
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 41-3",
+      "data_state": "played",
+      "par": 20.61,
+      "components": {
+        "hit_production": 1.78,
+        "hawk_production": 6.51,
+        "scrum_production": 13.65
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 3
+        },
+        {
+          "label": "TFL",
+          "value": 0.5
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0.5,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 1
+        },
+        "events": [
+          {
+            "type": "tfl",
+            "credit": 0.5,
+            "zone": "left",
+            "depth": -3,
+            "quarter": 1,
+            "game_clock": "15:00"
+          },
+          {
+            "type": "interception",
+            "credit": 1.0,
+            "zone": null,
+            "depth": 8,
+            "quarter": 3,
+            "game_clock": "12:15"
+          }
+        ]
+      }
+    },
+    {
+      "week": 13,
+      "game_id": "UAPBASU22112025",
+      "game_path_id": "uapbasu25",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 44-13",
+      "data_state": "played",
+      "par": -0.24,
+      "components": {
+        "hit_production": 1.1
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 5
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 14,
+      "game_id": "2025-11-27_tuskegee_at_swacasu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Tuskegee",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 58-21",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    }
+  ],
+  "spotlight": {
+    "week": 13,
+    "game_id": "UAPBASU22112025",
+    "game_path_id": "uapbasu25",
+    "opponent_id": "swacuapb",
+    "opponent_name": "UAPB",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 44-13",
+    "par": -0.24,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 5
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 73,
+      "rank": 2,
+      "total": 12,
+      "group": "LB",
+      "group_avg": 72.1
+    },
+    "weight": {
+      "value": 225,
+      "rank": 1,
+      "total": 12,
+      "group": "LB",
+      "group_avg": 212.3
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 4
+      },
+      {
+        "class": "So.",
+        "count": 3
+      },
+      {
+        "class": "Jr.",
+        "count": 2
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 1
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "LBS",
+        "rank": 9,
+        "total": 12
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 16
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 49
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 39
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "D2",
+    "previous_school": "Central (oh) State",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 660.3,
+    "distance_tier": "national",
+    "experience_score": 5.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Graduate",
+        "is_current": true,
+        "season": 2025
+      }
+    ]
+  }
+}

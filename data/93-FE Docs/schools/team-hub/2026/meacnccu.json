@@ -1,0 +1,438 @@
+{
+  "team_id": "meacnccu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 7,
+  "generated_at": "2026-10-20T01:35:10-05:00",
+  "header": {
+    "conference": "MEAC",
+    "division": "",
+    "division_label": "MEAC",
+    "season": 2026,
+    "team_abbreviation": "NCCU",
+    "school_name": "North Carolina Central University",
+    "avg_par": 1.0,
+    "roster_count": 101,
+    "transfer_count": 31,
+    "transfer_rate": 30.7,
+    "upperclass_pct": 44.6
+  },
+  "conference_record": {
+    "conference_label": "0-0",
+    "conference_wins": 0,
+    "conference_losses": 0,
+    "overall_label": "2-5",
+    "overall_wins": 2,
+    "overall_losses": 5,
+    "overall_ties": 0,
+    "division_rank": "4th - MEAC",
+    "last_5": [
+      {
+        "week": 2,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "meacncat",
+        "opponent_short": "NCAT",
+        "score_team": 30,
+        "score_opponent": 22,
+        "score": "W 30-22",
+        "game_path_id": null
+      },
+      {
+        "week": 3,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "GWEB",
+        "score_team": 20,
+        "score_opponent": 44,
+        "score": "L 20-44",
+        "game_path_id": null
+      },
+      {
+        "week": 4,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "ECU",
+        "score_team": 9,
+        "score_opponent": 42,
+        "score": "L 9-42",
+        "game_path_id": null
+      },
+      {
+        "week": 5,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "CAMP",
+        "score_team": 31,
+        "score_opponent": 38,
+        "score": "L 31-38",
+        "game_path_id": null
+      },
+      {
+        "week": 6,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "W&M",
+        "score_team": 14,
+        "score_opponent": 17,
+        "score": "L 14-17",
+        "game_path_id": null
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "2026-10-10_williammary_at_meacnccu",
+    "game_path_id": null,
+    "week": 6,
+    "date": "2026-10-10",
+    "opponent_id": null,
+    "opponent_name": "William & Mary",
+    "result": "L",
+    "score_team": 14,
+    "score_opponent": 17,
+    "score": "L 14-17",
+    "venue": {
+      "stadium_name": "O'Kelly-Riddick Stadium",
+      "venue_label": "O'Kelly-Riddick Stadium",
+      "city": "Durham",
+      "neutral_site_name": null
+    },
+    "tag": "Homecoming",
+    "headline": "L 14-17 vs W&M",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": null
+  },
+  "next_game": {
+    "game_id": "2026-10-23_meacnccu_at_meacdsu",
+    "preview_path_id": "2026-10-23_meacnccu_at_meacdsu",
+    "date": "2026-10-23",
+    "kickoff": "17:00",
+    "opponent_id": "meacdsu",
+    "opponent_name": "Del State",
+    "opponent_short_name": "DSU",
+    "opponent_mascot": "Hornets",
+    "opponent_logo": null,
+    "home_away": "away",
+    "venue": {
+      "stadium_name": "Alumni Stadium",
+      "venue_label": "Alumni Stadium",
+      "city": "Dover",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "",
+    "headline": "Travels to DSU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": null
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00007520",
+      "name": "Trei Oliver",
+      "role": "Head Coach",
+      "role_title": "Head Coach, Football",
+      "role_group": "head_coach",
+      "image_url": "https://nccueaglepride.com/images/2018/12/13/TreiOliver_NCCUfootball_2018_4x6.jpg",
+      "tenure_year": 8,
+      "metric": null
+    },
+    {
+      "coach_id": "PERS_00007505",
+      "name": "Chris Barnette",
+      "role": "Offensive Coordinator",
+      "role_title": "Assistant Head Coach, Football (Offensive Coordinator)",
+      "role_group": "coordinator",
+      "image_url": "https://nccueaglepride.com/images/2026/3/4/Barnette_Chris.jpg",
+      "tenure_year": 1,
+      "metric": null
+    },
+    {
+      "coach_id": "PERS_00006715",
+      "name": "Elijah Coleman",
+      "role": "Defensive Coordinator",
+      "role_title": "Assistant Coach, Football (Recruiting Coordinator, Cornerbacks)",
+      "role_group": "coordinator",
+      "image_url": "https://nccueaglepride.com/images/2026/3/4/Coleman_Elijah.jpg",
+      "tenure_year": 1,
+      "metric": null
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 15,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 48.5,
+            "display": "48.5%",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 131.0,
+            "display": "131.0",
+            "rank": 13,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 215.0,
+            "display": "215.0",
+            "rank": 6,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 2.0,
+            "display": "2.00",
+            "rank": 5,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 22.22,
+            "display": "22.2%",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 100.0,
+            "display": "100.0%",
+            "rank": 1,
+            "total": 14,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 15.09,
+            "display": "15.1%",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 18.06,
+            "display": "18.1%",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.0,
+            "display": "2.00",
+            "rank": 7,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 44.44,
+            "display": "44.4%",
+            "rank": 7,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.0404,
+            "display": "-0.04",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 35.7,
+            "display": "35.7%",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 42.9,
+            "display": "42.9%",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 100.0,
+            "display": "100.0%",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 37.5,
+            "display": "37.5",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 16.7,
+            "display": "16.7%",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 13.5,
+            "display": "13.5",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "rushing",
+    "key": "power_success_rate",
+    "label": "POWER SUCC %",
+    "value": 100.0,
+    "display": "100.0%",
+    "rank": 1,
+    "total": 14,
+    "sentence": "Power success rate"
+  },
+  "star_impact": {
+    "person_id": "PERS_00009821",
+    "full_name": "Zarion Walters",
+    "last_name": "Walters",
+    "position": "DL",
+    "class_year": "Jr.",
+    "image_url": "https://nccueaglepride.com/images/2026/8/5/Walters_Zarion.jpg",
+    "from_game": {
+      "game_id": "NCCUTSU29082026",
+      "game_path_id": "nccutsu26",
+      "week": 0,
+      "opponent_name": "TSU",
+      "result": "L",
+      "score": "L 30-42"
+    },
+    "game_par": 15.46,
+    "season_par": 15.46,
+    "par_per_game": 15.46,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": "6"
+      },
+      {
+        "label": "TFL",
+        "value": "3"
+      },
+      {
+        "label": "SACK",
+        "value": "2"
+      }
+    ],
+    "profile_url": "/player/PERS_00009821"
+  }
+}

@@ -1,0 +1,1401 @@
+{
+  "game_id": "2026-10-24_swacsu_at_swactsu",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:24:11-05:00",
+  "status": "scheduled",
+  "played_game_path_id": null,
+  "date": "2026-10-24",
+  "week": 8,
+  "week_label": "Week 8",
+  "kickoff": {
+    "at": null,
+    "label": null,
+    "tbd": true
+  },
+  "venue": {
+    "stadium_name": "NRG Stadium",
+    "city": "Houston, TX",
+    "sponsor": null,
+    "neutral_site": false,
+    "neutral_site_name": null
+  },
+  "event": {
+    "kind": "homecoming",
+    "name": "Homecoming",
+    "type_id": "homecoming",
+    "type_label": "Homecoming",
+    "owner_team_id": "swactsu"
+  },
+  "flags": {
+    "is_rivalry": false,
+    "is_homecoming": true,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false
+  },
+  "away": {
+    "team_id": "swacsu",
+    "record_entering": "3-4",
+    "conference_record_entering": "1-2",
+    "conference": "SWAC",
+    "coaches": {
+      "head_coach": "Marshall Faulk",
+      "offensive_coordinator": "Kenneth Merchant",
+      "defensive_coordinator": "Todd Lyght"
+    },
+    "quarterback": {
+      "person_id": "PERS_00013798",
+      "name": "Christian Johnson",
+      "last_name": "Johnson",
+      "image_url": "https://gojagsports.com/images/2026/8/23/_10_Christian_Johnson_7dCnH.JPG",
+      "games_played": 3,
+      "line": {
+        "cmp": 42,
+        "att": 78,
+        "yds": 534,
+        "td": 2,
+        "int": 1,
+        "sacks": 5
+      },
+      "air_yards": {
+        "attempts": 65,
+        "adot": 9.83,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0154
+          },
+          {
+            "yards": -4,
+            "share": 0.0154
+          },
+          {
+            "yards": -3,
+            "share": 0.0308
+          },
+          {
+            "yards": -2,
+            "share": 0.0154
+          },
+          {
+            "yards": -1,
+            "share": 0.0308
+          },
+          {
+            "yards": 0,
+            "share": 0.0462
+          },
+          {
+            "yards": 1,
+            "share": 0.0615
+          },
+          {
+            "yards": 2,
+            "share": 0.0923
+          },
+          {
+            "yards": 3,
+            "share": 0.0
+          },
+          {
+            "yards": 4,
+            "share": 0.0154
+          },
+          {
+            "yards": 5,
+            "share": 0.0615
+          },
+          {
+            "yards": 6,
+            "share": 0.0769
+          },
+          {
+            "yards": 7,
+            "share": 0.0615
+          },
+          {
+            "yards": 8,
+            "share": 0.0462
+          },
+          {
+            "yards": 9,
+            "share": 0.0154
+          },
+          {
+            "yards": 10,
+            "share": 0.0769
+          },
+          {
+            "yards": 11,
+            "share": 0.0154
+          },
+          {
+            "yards": 12,
+            "share": 0.0154
+          },
+          {
+            "yards": 13,
+            "share": 0.0308
+          },
+          {
+            "yards": 14,
+            "share": 0.0308
+          },
+          {
+            "yards": 15,
+            "share": 0.0615
+          },
+          {
+            "yards": 16,
+            "share": 0.0
+          },
+          {
+            "yards": 17,
+            "share": 0.0
+          },
+          {
+            "yards": 18,
+            "share": 0.0308
+          },
+          {
+            "yards": 19,
+            "share": 0.0
+          },
+          {
+            "yards": 20,
+            "share": 0.0
+          },
+          {
+            "yards": 21,
+            "share": 0.0
+          },
+          {
+            "yards": 22,
+            "share": 0.0
+          },
+          {
+            "yards": 23,
+            "share": 0.0154
+          },
+          {
+            "yards": 24,
+            "share": 0.0154
+          },
+          {
+            "yards": 25,
+            "share": 0.0
+          },
+          {
+            "yards": 26,
+            "share": 0.0308
+          },
+          {
+            "yards": 27,
+            "share": 0.0
+          },
+          {
+            "yards": 28,
+            "share": 0.0
+          },
+          {
+            "yards": 29,
+            "share": 0.0154
+          },
+          {
+            "yards": 30,
+            "share": 0.0769
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0187
+          },
+          {
+            "yards": -4,
+            "share": 0.0135
+          },
+          {
+            "yards": -3,
+            "share": 0.027
+          },
+          {
+            "yards": -2,
+            "share": 0.0292
+          },
+          {
+            "yards": -1,
+            "share": 0.027
+          },
+          {
+            "yards": 0,
+            "share": 0.0959
+          },
+          {
+            "yards": 1,
+            "share": 0.036
+          },
+          {
+            "yards": 2,
+            "share": 0.03
+          },
+          {
+            "yards": 3,
+            "share": 0.0524
+          },
+          {
+            "yards": 4,
+            "share": 0.0629
+          },
+          {
+            "yards": 5,
+            "share": 0.0659
+          },
+          {
+            "yards": 6,
+            "share": 0.0479
+          },
+          {
+            "yards": 7,
+            "share": 0.0524
+          },
+          {
+            "yards": 8,
+            "share": 0.03
+          },
+          {
+            "yards": 9,
+            "share": 0.0352
+          },
+          {
+            "yards": 10,
+            "share": 0.0315
+          },
+          {
+            "yards": 11,
+            "share": 0.0255
+          },
+          {
+            "yards": 12,
+            "share": 0.018
+          },
+          {
+            "yards": 13,
+            "share": 0.021
+          },
+          {
+            "yards": 14,
+            "share": 0.0277
+          },
+          {
+            "yards": 15,
+            "share": 0.0315
+          },
+          {
+            "yards": 16,
+            "share": 0.0187
+          },
+          {
+            "yards": 17,
+            "share": 0.0157
+          },
+          {
+            "yards": 18,
+            "share": 0.0105
+          },
+          {
+            "yards": 19,
+            "share": 0.0112
+          },
+          {
+            "yards": 20,
+            "share": 0.015
+          },
+          {
+            "yards": 21,
+            "share": 0.012
+          },
+          {
+            "yards": 22,
+            "share": 0.0045
+          },
+          {
+            "yards": 23,
+            "share": 0.0105
+          },
+          {
+            "yards": 24,
+            "share": 0.0112
+          },
+          {
+            "yards": 25,
+            "share": 0.009
+          },
+          {
+            "yards": 26,
+            "share": 0.0067
+          },
+          {
+            "yards": 27,
+            "share": 0.0052
+          },
+          {
+            "yards": 28,
+            "share": 0.0075
+          },
+          {
+            "yards": 29,
+            "share": 0.0082
+          },
+          {
+            "yards": 30,
+            "share": 0.0749
+          }
+        ],
+        "deep_30_share": 0.0769,
+        "league_deep_30_share": 0.0749
+      }
+    }
+  },
+  "home": {
+    "team_id": "swactsu",
+    "record_entering": "1-5",
+    "conference_record_entering": "0-3",
+    "conference": "SWAC",
+    "coaches": {
+      "head_coach": "Cris Dishman",
+      "offensive_coordinator": "Steven Smith",
+      "defensive_coordinator": "Scott Vestal"
+    },
+    "quarterback": {
+      "person_id": "PERS_00011135",
+      "name": "Cam'Ron McCoy",
+      "last_name": "McCoy",
+      "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/McCoy__Cam_ron__0.JPG",
+      "games_played": 4,
+      "line": {
+        "cmp": 53,
+        "att": 98,
+        "yds": 864,
+        "td": 7,
+        "int": 1,
+        "sacks": 14
+      },
+      "air_yards": {
+        "attempts": 89,
+        "adot": 13.04,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0112
+          },
+          {
+            "yards": -4,
+            "share": 0.0
+          },
+          {
+            "yards": -3,
+            "share": 0.0337
+          },
+          {
+            "yards": -2,
+            "share": 0.0112
+          },
+          {
+            "yards": -1,
+            "share": 0.0225
+          },
+          {
+            "yards": 0,
+            "share": 0.1011
+          },
+          {
+            "yards": 1,
+            "share": 0.0112
+          },
+          {
+            "yards": 2,
+            "share": 0.0337
+          },
+          {
+            "yards": 3,
+            "share": 0.0225
+          },
+          {
+            "yards": 4,
+            "share": 0.0674
+          },
+          {
+            "yards": 5,
+            "share": 0.0674
+          },
+          {
+            "yards": 6,
+            "share": 0.0337
+          },
+          {
+            "yards": 7,
+            "share": 0.0562
+          },
+          {
+            "yards": 8,
+            "share": 0.0225
+          },
+          {
+            "yards": 9,
+            "share": 0.0
+          },
+          {
+            "yards": 10,
+            "share": 0.0
+          },
+          {
+            "yards": 11,
+            "share": 0.0337
+          },
+          {
+            "yards": 12,
+            "share": 0.0
+          },
+          {
+            "yards": 13,
+            "share": 0.0225
+          },
+          {
+            "yards": 14,
+            "share": 0.0337
+          },
+          {
+            "yards": 15,
+            "share": 0.0337
+          },
+          {
+            "yards": 16,
+            "share": 0.0449
+          },
+          {
+            "yards": 17,
+            "share": 0.0225
+          },
+          {
+            "yards": 18,
+            "share": 0.0337
+          },
+          {
+            "yards": 19,
+            "share": 0.0
+          },
+          {
+            "yards": 20,
+            "share": 0.0337
+          },
+          {
+            "yards": 21,
+            "share": 0.0112
+          },
+          {
+            "yards": 22,
+            "share": 0.0112
+          },
+          {
+            "yards": 23,
+            "share": 0.0
+          },
+          {
+            "yards": 24,
+            "share": 0.0225
+          },
+          {
+            "yards": 25,
+            "share": 0.0225
+          },
+          {
+            "yards": 26,
+            "share": 0.0225
+          },
+          {
+            "yards": 27,
+            "share": 0.0
+          },
+          {
+            "yards": 28,
+            "share": 0.0112
+          },
+          {
+            "yards": 29,
+            "share": 0.0112
+          },
+          {
+            "yards": 30,
+            "share": 0.1348
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0187
+          },
+          {
+            "yards": -4,
+            "share": 0.0135
+          },
+          {
+            "yards": -3,
+            "share": 0.027
+          },
+          {
+            "yards": -2,
+            "share": 0.0292
+          },
+          {
+            "yards": -1,
+            "share": 0.027
+          },
+          {
+            "yards": 0,
+            "share": 0.0959
+          },
+          {
+            "yards": 1,
+            "share": 0.036
+          },
+          {
+            "yards": 2,
+            "share": 0.03
+          },
+          {
+            "yards": 3,
+            "share": 0.0524
+          },
+          {
+            "yards": 4,
+            "share": 0.0629
+          },
+          {
+            "yards": 5,
+            "share": 0.0659
+          },
+          {
+            "yards": 6,
+            "share": 0.0479
+          },
+          {
+            "yards": 7,
+            "share": 0.0524
+          },
+          {
+            "yards": 8,
+            "share": 0.03
+          },
+          {
+            "yards": 9,
+            "share": 0.0352
+          },
+          {
+            "yards": 10,
+            "share": 0.0315
+          },
+          {
+            "yards": 11,
+            "share": 0.0255
+          },
+          {
+            "yards": 12,
+            "share": 0.018
+          },
+          {
+            "yards": 13,
+            "share": 0.021
+          },
+          {
+            "yards": 14,
+            "share": 0.0277
+          },
+          {
+            "yards": 15,
+            "share": 0.0315
+          },
+          {
+            "yards": 16,
+            "share": 0.0187
+          },
+          {
+            "yards": 17,
+            "share": 0.0157
+          },
+          {
+            "yards": 18,
+            "share": 0.0105
+          },
+          {
+            "yards": 19,
+            "share": 0.0112
+          },
+          {
+            "yards": 20,
+            "share": 0.015
+          },
+          {
+            "yards": 21,
+            "share": 0.012
+          },
+          {
+            "yards": 22,
+            "share": 0.0045
+          },
+          {
+            "yards": 23,
+            "share": 0.0105
+          },
+          {
+            "yards": 24,
+            "share": 0.0112
+          },
+          {
+            "yards": 25,
+            "share": 0.009
+          },
+          {
+            "yards": 26,
+            "share": 0.0067
+          },
+          {
+            "yards": 27,
+            "share": 0.0052
+          },
+          {
+            "yards": 28,
+            "share": 0.0075
+          },
+          {
+            "yards": 29,
+            "share": 0.0082
+          },
+          {
+            "yards": 30,
+            "share": 0.0749
+          }
+        ],
+        "deep_30_share": 0.1348,
+        "league_deep_30_share": 0.0749
+      }
+    }
+  },
+  "stats": {
+    "season": 2026,
+    "basis": "current_season",
+    "through_week": 7,
+    "ranked_teams": 15,
+    "teams": {
+      "swacsu": {
+        "games_played": 4,
+        "fields": {
+          "net_adj_epa": {
+            "value": -0.0144,
+            "rank": 9
+          },
+          "o_adj_epa": {
+            "value": -0.0269,
+            "rank": 10
+          },
+          "d_adj_epa": {
+            "value": -0.0124,
+            "rank": 5
+          },
+          "net_epa": {
+            "value": -0.0453,
+            "rank": 10
+          },
+          "o_epa": {
+            "value": -0.0621,
+            "rank": 12
+          },
+          "d_epa": {
+            "value": -0.0168,
+            "rank": 6
+          },
+          "o_success": {
+            "value": 0.3529,
+            "rank": 12
+          },
+          "d_success": {
+            "value": 0.4378,
+            "rank": 8
+          },
+          "o_early_succ": {
+            "value": 0.3401,
+            "rank": 13
+          },
+          "d_early_succ": {
+            "value": 0.4595,
+            "rank": 10
+          },
+          "o_late_succ": {
+            "value": 0.3867,
+            "rank": 9
+          },
+          "d_late_succ": {
+            "value": 0.3542,
+            "rank": 5
+          },
+          "o_pts_drive": {
+            "value": 1.383,
+            "rank": 14
+          },
+          "d_pts_drive": {
+            "value": 2.5532,
+            "rank": 11
+          },
+          "o_yds_drive": {
+            "value": 28.96,
+            "rank": 10
+          },
+          "d_yds_drive": {
+            "value": 32.43,
+            "rank": 7
+          },
+          "o_3andout": {
+            "value": 0.2979,
+            "rank": 11
+          },
+          "d_3andout": {
+            "value": 0.2553,
+            "rank": 6
+          },
+          "o_expl_drive": {
+            "value": 0.1702,
+            "rank": 10
+          },
+          "d_expl_drive": {
+            "value": 0.3617,
+            "rank": 12
+          },
+          "o_start_fp": {
+            "value": 26.09,
+            "rank": 15
+          },
+          "d_start_fp": {
+            "value": 33.91,
+            "rank": 12
+          },
+          "o_third_dist": {
+            "value": 7.1,
+            "rank": 3
+          },
+          "d_third_dist": {
+            "value": 7.05,
+            "rank": 11
+          },
+          "o_ppg": {
+            "value": 18.0,
+            "rank": 15
+          },
+          "d_ppg": {
+            "value": 30.0,
+            "rank": 9
+          },
+          "to_margin": {
+            "value": 3,
+            "rank": 3
+          },
+          "o_turnovers": {
+            "value": 2,
+            "rank": 3
+          },
+          "pen_ypg": {
+            "value": 46.25,
+            "rank": 2
+          },
+          "o_ypg": {
+            "value": 349.5,
+            "rank": 11
+          },
+          "o_pass_ypg": {
+            "value": 172.0,
+            "rank": 9
+          },
+          "o_rush_ypg": {
+            "value": 177.5,
+            "rank": 10
+          },
+          "o_havoc_rate": {
+            "value": 0.1029,
+            "rank": 1
+          },
+          "d_havoc_rate": {
+            "value": 0.1245,
+            "rank": 13
+          },
+          "o_expl_rate": {
+            "value": 0.0809,
+            "rank": 14
+          },
+          "d_expl_rate": {
+            "value": 0.1545,
+            "rank": 11
+          },
+          "o_rz_td": {
+            "value": 0.5,
+            "rank": 13
+          },
+          "d_rz_td": {
+            "value": 0.7143,
+            "rank": 9
+          }
+        }
+      },
+      "swactsu": {
+        "games_played": 4,
+        "fields": {
+          "net_adj_epa": {
+            "value": 0.0121,
+            "rank": 3
+          },
+          "o_adj_epa": {
+            "value": 0.0287,
+            "rank": 3
+          },
+          "d_adj_epa": {
+            "value": 0.0167,
+            "rank": 9
+          },
+          "net_epa": {
+            "value": 0.1099,
+            "rank": 3
+          },
+          "o_epa": {
+            "value": 0.1968,
+            "rank": 2
+          },
+          "d_epa": {
+            "value": 0.0869,
+            "rank": 11
+          },
+          "o_success": {
+            "value": 0.4229,
+            "rank": 6
+          },
+          "d_success": {
+            "value": 0.439,
+            "rank": 9
+          },
+          "o_early_succ": {
+            "value": 0.4103,
+            "rank": 8
+          },
+          "d_early_succ": {
+            "value": 0.4439,
+            "rank": 7
+          },
+          "o_late_succ": {
+            "value": 0.4655,
+            "rank": 2
+          },
+          "d_late_succ": {
+            "value": 0.4219,
+            "rank": 10
+          },
+          "o_pts_drive": {
+            "value": 2.3654,
+            "rank": 7
+          },
+          "d_pts_drive": {
+            "value": 3.0,
+            "rank": 12
+          },
+          "o_yds_drive": {
+            "value": 31.15,
+            "rank": 6
+          },
+          "d_yds_drive": {
+            "value": 33.21,
+            "rank": 10
+          },
+          "o_3andout": {
+            "value": 0.25,
+            "rank": 7
+          },
+          "d_3andout": {
+            "value": 0.1923,
+            "rank": 10
+          },
+          "o_expl_drive": {
+            "value": 0.3077,
+            "rank": 6
+          },
+          "d_expl_drive": {
+            "value": 0.2885,
+            "rank": 9
+          },
+          "o_start_fp": {
+            "value": 30.77,
+            "rank": 9
+          },
+          "d_start_fp": {
+            "value": 34.63,
+            "rank": 13
+          },
+          "o_third_dist": {
+            "value": 7.6,
+            "rank": 7
+          },
+          "d_third_dist": {
+            "value": 9.56,
+            "rank": 2
+          },
+          "o_ppg": {
+            "value": 32.5,
+            "rank": 6
+          },
+          "d_ppg": {
+            "value": 40.8,
+            "rank": 12
+          },
+          "to_margin": {
+            "value": -2,
+            "rank": 10
+          },
+          "o_turnovers": {
+            "value": 5,
+            "rank": 6
+          },
+          "pen_ypg": {
+            "value": 89.75,
+            "rank": 12
+          },
+          "o_ypg": {
+            "value": 422.2,
+            "rank": 6
+          },
+          "o_pass_ypg": {
+            "value": 221.2,
+            "rank": 5
+          },
+          "o_rush_ypg": {
+            "value": 201.0,
+            "rank": 7
+          },
+          "o_havoc_rate": {
+            "value": 0.1976,
+            "rank": 12
+          },
+          "d_havoc_rate": {
+            "value": 0.1568,
+            "rank": 8
+          },
+          "o_expl_rate": {
+            "value": 0.1621,
+            "rank": 4
+          },
+          "d_expl_rate": {
+            "value": 0.1533,
+            "rank": 10
+          },
+          "o_rz_td": {
+            "value": 0.7143,
+            "rank": 7
+          },
+          "d_rz_td": {
+            "value": 0.7407,
+            "rank": 10
+          }
+        }
+      }
+    }
+  },
+  "top_players": {
+    "swacsu": [
+      {
+        "person_id": "PERS_00013798",
+        "name": "C.Johnson",
+        "last_name": "Johnson",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_10_Christian_Johnson_7dCnH.JPG",
+        "position": "QB",
+        "games_played": 3,
+        "production_score": 46.2,
+        "production_per_game": 15.4
+      },
+      {
+        "person_id": "PERS_00011257",
+        "name": "H.Brister III",
+        "last_name": "Brister",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_3_Herman_Brister_III_l9abc.JPG",
+        "position": "DB",
+        "games_played": 4,
+        "production_score": 35.07,
+        "production_per_game": 8.77
+      },
+      {
+        "person_id": "PERS_00012282",
+        "name": "T.Holly",
+        "last_name": "Holly",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_6_Trey_STye2.JPG",
+        "position": "RB",
+        "games_played": 4,
+        "production_score": 28.14,
+        "production_per_game": 7.04
+      },
+      {
+        "person_id": "PERS_00011261",
+        "name": "T.Lee",
+        "last_name": "Lee",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_7_Ty_Lee_NDHTS.JPG",
+        "position": "DB",
+        "games_played": 4,
+        "production_score": 23.03,
+        "production_per_game": 5.76
+      },
+      {
+        "person_id": "PERS_00013809",
+        "name": "B.Jennings",
+        "last_name": "Jennings",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_18_Bryson_Jennings_9Kpdw.JPG",
+        "position": "DL",
+        "games_played": 3,
+        "production_score": 22.0,
+        "production_per_game": 7.33
+      },
+      {
+        "person_id": "PERS_00009483",
+        "name": "C.Givens",
+        "last_name": "Givens",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_1_Ckleby_Givens_G77B2.JPEG",
+        "position": "DL",
+        "games_played": 2,
+        "production_score": 15.62,
+        "production_per_game": 7.81
+      },
+      {
+        "person_id": "PERS_00012293",
+        "name": "M.Williams II",
+        "last_name": "Williams",
+        "image_url": "https://gojagsports.com/images/2026/8/26/_24_Micheal_Williams_II_HHaht_dSf9Q.JPG",
+        "position": "DB",
+        "games_played": 4,
+        "production_score": 13.19,
+        "production_per_game": 3.3
+      },
+      {
+        "person_id": "PERS_00013789",
+        "name": "D.Smith",
+        "last_name": "Smith",
+        "image_url": "https://gojagsports.com/images/2026/8/23/_2_Daejawn_xnurm.JPG",
+        "position": "WR",
+        "games_played": 4,
+        "production_score": 13.08,
+        "production_per_game": 3.27
+      }
+    ],
+    "swactsu": [
+      {
+        "person_id": "PERS_00011135",
+        "name": "C.McCoy",
+        "last_name": "McCoy",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/McCoy__Cam_ron__0.JPG",
+        "position": "QB",
+        "games_played": 4,
+        "production_score": 83.76,
+        "production_per_game": 20.94
+      },
+      {
+        "person_id": "PERS_00013864",
+        "name": "J.Thompson",
+        "last_name": "Thompson",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Thomson__Jordan__15.JPG",
+        "position": "DL",
+        "games_played": 4,
+        "production_score": 59.67,
+        "production_per_game": 14.92
+      },
+      {
+        "person_id": "PERS_00012335",
+        "name": "G.Lawrence",
+        "last_name": "Lawrence",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Lawrence__Garfield__6.JPG",
+        "position": "DL",
+        "games_played": 4,
+        "production_score": 27.25,
+        "production_per_game": 6.81
+      },
+      {
+        "person_id": "PERS_00008581",
+        "name": "J.Williams",
+        "last_name": "Williams",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Williams__Jacob__11.JPG",
+        "position": "LB",
+        "games_played": 4,
+        "production_score": 22.82,
+        "production_per_game": 5.71
+      },
+      {
+        "person_id": "PERS_00014197",
+        "name": "A.Renfro",
+        "last_name": "Renfro",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Renfro_Jr.__Athean__28.JPG",
+        "position": "RB",
+        "games_played": 4,
+        "production_score": 19.32,
+        "production_per_game": 4.83
+      },
+      {
+        "person_id": "PERS_00012353",
+        "name": "F.Wells",
+        "last_name": "Wells",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Wells__Fabian__13.JPG",
+        "position": "DB",
+        "games_played": 4,
+        "production_score": 18.34,
+        "production_per_game": 4.58
+      },
+      {
+        "person_id": "PERS_00012355",
+        "name": "D.Jones",
+        "last_name": "Jones",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Jones__Donovan__20.JPG",
+        "position": "LB",
+        "games_played": 4,
+        "production_score": 16.29,
+        "production_per_game": 4.07
+      },
+      {
+        "person_id": "PERS_00010467",
+        "name": "T.Rayborn",
+        "last_name": "Rayborn",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2026/8/24/Rayborn_IV__Thurman__0.JPG",
+        "position": "DL",
+        "games_played": 2,
+        "production_score": 15.45,
+        "production_per_game": 7.72
+      }
+    ]
+  },
+  "meetings": {
+    "coverage_from_season": 2019,
+    "series": {
+      "games": 6,
+      "wins": {
+        "swacsu": 3,
+        "swactsu": 3
+      },
+      "current_streak": {
+        "team_id": "swactsu",
+        "games": 1
+      }
+    },
+    "items": [
+      {
+        "game_id": "TSUSU15112025",
+        "game_path_id": "tsusu25",
+        "date": "2025-11-15",
+        "season": 2025,
+        "away_team_id": "swactsu",
+        "home_team_id": "swacsu",
+        "away_score": 35,
+        "home_score": 30,
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "SUTSU12102024",
+        "game_path_id": "sutsu24",
+        "date": "2024-10-12",
+        "season": 2024,
+        "away_team_id": "swacsu",
+        "home_team_id": "swactsu",
+        "away_score": 22,
+        "home_score": 19,
+        "venue": {
+          "stadium_name": "Shell Energy Stadium",
+          "city": "Houston, TX"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "TSUSU28102023",
+        "game_path_id": "tsusu23",
+        "date": "2023-10-28",
+        "season": 2023,
+        "away_team_id": "swactsu",
+        "home_team_id": "swacsu",
+        "away_score": 17,
+        "home_score": 23,
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "SUTSU17092022",
+        "game_path_id": "sutsu22",
+        "date": "2022-09-17",
+        "season": 2022,
+        "away_team_id": "swacsu",
+        "home_team_id": "swactsu",
+        "away_score": 0,
+        "home_score": 24,
+        "venue": {
+          "stadium_name": "Choctaw Stadium",
+          "city": "Arlington, TX"
+        },
+        "event_name": "Arlington Football Showdown"
+      },
+      {
+        "game_id": "TSUSU09102021",
+        "game_path_id": "tsusu21",
+        "date": "2021-10-09",
+        "season": 2021,
+        "away_team_id": "swactsu",
+        "home_team_id": "swacsu",
+        "away_score": 35,
+        "home_score": 31,
+        "venue": {
+          "stadium_name": "Choctaw Stadium",
+          "city": "Arlington, TX"
+        },
+        "event_name": "Arlington Football Showdown"
+      },
+      {
+        "game_id": "SUTSU19102019",
+        "game_path_id": "sutsu19",
+        "date": "2019-10-19",
+        "season": 2019,
+        "away_team_id": "swacsu",
+        "home_team_id": "swactsu",
+        "away_score": 28,
+        "home_score": 21,
+        "venue": {
+          "stadium_name": "Cotton Bowl",
+          "city": "Dallas, TX"
+        },
+        "event_name": "State Fair Showdown"
+      }
+    ]
+  },
+  "event_history": {
+    "title": "Texas Southern University Homecoming",
+    "scope": "team",
+    "owner_team_id": "swactsu",
+    "items": [
+      {
+        "date": "2025-10-18",
+        "season": 2025,
+        "name": "Homecoming",
+        "game_id": "2025-10-18_virginialynchbur_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Virginia University of Lynchburg"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": 10,
+        "home_score": 61,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2023-09-30",
+        "season": 2023,
+        "name": "Homecoming",
+        "game_id": "2023-09-30_lincolnca_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Lincoln (CA)"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": 7,
+        "home_score": 52,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2022-10-29",
+        "season": 2022,
+        "name": "Homecoming",
+        "game_id": "2022-10-29_lincolnca_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Lincoln University CA"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": 2,
+        "home_score": 37,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2021-10-02",
+        "season": 2021,
+        "name": "Homecoming",
+        "game_id": "2021-10-02_northamerican_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "North American University"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": 0,
+        "home_score": 69,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2019-10-12",
+        "season": 2019,
+        "name": "Homecoming Game",
+        "game_id": "2019-10-12_missourist_at_swactsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Missouri S&T"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": 23,
+        "home_score": 20,
+        "result_status": "final",
+        "venue": null
+      },
+      {
+        "date": "2013-10-19",
+        "season": 2013,
+        "name": "Homecoming",
+        "game_id": null,
+        "game_path_id": null,
+        "away": {
+          "team_id": null,
+          "name": "Alcorn State / HC"
+        },
+        "home": {
+          "team_id": "swactsu",
+          "name": "Texas Southern University"
+        },
+        "away_score": 20,
+        "home_score": 13,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Shell Energy Stadium",
+          "city": "Houston, TX"
+        }
+      }
+    ]
+  }
+}

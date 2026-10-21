@@ -1,0 +1,609 @@
+{
+  "person_id": "PERS_00000468",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00000468",
+    "first_name": "John",
+    "last_name": "Robinson",
+    "team_id": "swacaamu",
+    "team_abbreviation": "AAMU",
+    "conference": "SWAC",
+    "division": "East",
+    "jersey_number": 53,
+    "position": "Linebacker",
+    "position_group": "LB",
+    "raw_position": "LB",
+    "class_year": 3,
+    "class_label": "Junior",
+    "height": 71,
+    "weight": 205,
+    "home_city": "Semmes",
+    "home_state": "AL",
+    "is_in_state": true,
+    "previous_school": "Miles College",
+    "high_school": null,
+    "image_url": "https://aamusports.com/images/2026/7/13/26JohnRobinson.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 29.155,
+    "per_game": 7.111,
+    "games_played": 5,
+    "rank_in_position_group": 5,
+    "position_group_total": 101,
+    "conference_rank": 31,
+    "conference_total": 713,
+    "position_group_mean": 5.41
+  },
+  "season_totals": {
+    "par": 29.155,
+    "total_production": 35.555,
+    "avg_production": 7.111,
+    "games_played": 5,
+    "season_components": {
+      "hit_production": 19.905,
+      "hawk_production": 2.0,
+      "scrum_production": 13.65
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "HUAAMU29082026",
+      "game_path_id": "huaamu26",
+      "opponent_id": "meachu",
+      "opponent_name": "Howard",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 24-31",
+      "data_state": "played",
+      "par": 1.16,
+      "components": {
+        "hit_production": 2.44
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 10
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_miles_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Miles",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 38-23",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_tennesseestate_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Tennessee State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 30-3",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_bowiestate_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Bowie State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 45-3",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "AAMUFAMU26092026",
+      "game_path_id": "aamufamu26",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 40-21",
+      "data_state": "played",
+      "par": 2.77,
+      "components": {
+        "hit_production": 3.05,
+        "hawk_production": 1.0
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 5
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 1,
+          "forced_fumbles": 0,
+          "pass_breakups": 1,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": null,
+            "quarter": 2,
+            "game_clock": "15:00"
+          },
+          {
+            "type": "pass_breakup",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": 5,
+            "quarter": 4,
+            "game_clock": "13:07"
+          }
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "AAMUJSU03102026",
+      "game_path_id": "aamujsu26",
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 28-31",
+      "data_state": "played",
+      "par": 1.84,
+      "components": {
+        "hit_production": 2.12,
+        "hawk_production": 1.0
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 8
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 1,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "pass_breakup",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": 9,
+            "quarter": 1,
+            "game_clock": "03:38"
+          }
+        ]
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "BCUAAMU10102026",
+      "game_path_id": "bcuaamu26",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 55-17",
+      "data_state": "played",
+      "par": 8.01,
+      "components": {
+        "hit_production": 9.29
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 8
+        },
+        {
+          "label": "TFL",
+          "value": 1.5
+        },
+        {
+          "label": "SACK",
+          "value": 1.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.5,
+          "sacks": 1.0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -6,
+            "quarter": 1,
+            "game_clock": "06:42"
+          },
+          {
+            "type": "tfl",
+            "credit": 0.5,
+            "zone": "right",
+            "depth": -1,
+            "quarter": 1,
+            "game_clock": "03:06"
+          }
+        ]
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "GRAMAAMU17102026",
+      "game_path_id": "gsuaamu26",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 61-31",
+      "data_state": "played",
+      "par": 15.38,
+      "components": {
+        "hit_production": 3.01,
+        "scrum_production": 13.65
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 4
+        },
+        {
+          "label": "TFL",
+          "value": 1.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 1.0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "middle",
+            "depth": -1,
+            "quarter": 3,
+            "game_clock": "15:00"
+          }
+        ]
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "2026-10-31_swacaamu_at_swacasu",
+      "game_path_id": null,
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-07_swacaamu_at_swacpvamu",
+      "game_path_id": null,
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swactsu_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_swacaamu_at_swacmvsu",
+      "game_path_id": null,
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 7,
+    "game_id": "GRAMAAMU17102026",
+    "game_path_id": "gsuaamu26",
+    "opponent_id": "swacgsu",
+    "opponent_name": "Grambling",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 61-31",
+    "par": 15.38,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 4
+      },
+      {
+        "label": "TFL",
+        "value": 1.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 71,
+      "rank": 11,
+      "total": 13,
+      "group": "LB",
+      "group_avg": 72.5
+    },
+    "weight": {
+      "value": 205,
+      "rank": 8,
+      "total": 13,
+      "group": "LB",
+      "group_avg": 210.3
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 4
+      },
+      {
+        "class": "So.",
+        "count": 6
+      },
+      {
+        "class": "Jr.",
+        "count": 2
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "LBS",
+        "rank": 6,
+        "total": 13
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 10
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 59
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 58
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "D2",
+    "previous_school": "Miles College",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 285.5,
+    "distance_tier": "regional",
+    "experience_score": 3.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": true,
+        "season": 2026
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2028
+      }
+    ]
+  }
+}

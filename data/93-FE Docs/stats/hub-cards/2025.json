@@ -1,0 +1,629 @@
+{
+ "season": 2025,
+ "generated_at": "2026-10-20T01:37:41-05:00",
+ "through_week": null,
+ "cards": [
+  {
+   "card_id": "win_levers_2025",
+   "archetype": "win_levers",
+   "title": "What Wins",
+   "headline": "Offense yards per attempt is the strongest link to winning.",
+   "why": "Correlation with win percentage, fitted over 109 team-seasons.",
+   "stat": {
+    "value": 0.599,
+    "display": "+0.60",
+    "label": "Correlation with win %",
+    "team_id": null
+   },
+   "viz": {
+    "kind": "correlation_bars",
+    "entries": [
+     {
+      "label": "Offense yards per attempt",
+      "short": "Off. YPA",
+      "r": 0.599
+     },
+     {
+      "label": "Defense yards per attempt",
+      "short": "Def. YPA",
+      "r": -0.5927
+     },
+     {
+      "label": "Defense explosive pass rate",
+      "short": "Def. Explosive pass",
+      "r": -0.5855
+     },
+     {
+      "label": "Offense explosive pass rate",
+      "short": "Off. Explosive pass",
+      "r": 0.5322
+     },
+     {
+      "label": "Offense completion rate",
+      "short": "Off. Comp.",
+      "r": 0.5093
+     },
+     {
+      "label": "Defense completion rate",
+      "short": "Def. Comp.",
+      "r": -0.4846
+     },
+     {
+      "label": "Defense pressure rate",
+      "short": "Def. Pressure",
+      "r": 0.4712
+     },
+     {
+      "label": "Offense pressure rate",
+      "short": "Off. Pressure",
+      "r": -0.4647
+     },
+     {
+      "label": "Defense rushing success rate",
+      "short": "Def. Rush success",
+      "r": -0.4555
+     },
+     {
+      "label": "Defense rushing opportunity rate",
+      "short": "Def. Rush opp.",
+      "r": -0.4067
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "league_map_2025",
+   "archetype": "league_map",
+   "title": "League Map",
+   "headline": "Bama State is furthest toward winning on both of the season's strongest levers.",
+   "why": "Offense yards per attempt against defense yards per attempt.",
+   "stat": {
+    "value": 94.1,
+    "display": "94th percentile",
+    "label": "Average of the two lever percentiles",
+    "team_id": "swacasu"
+   },
+   "viz": {
+    "kind": "scatter_map",
+    "x": {
+     "label": "Offense yards per attempt",
+     "unit": "num",
+     "better": "high"
+    },
+    "y": {
+     "label": "Defense yards per attempt",
+     "unit": "num",
+     "better": "low"
+    },
+    "league": {
+     "x": 7.6197,
+     "y": 7.698
+    },
+    "points": [
+     {
+      "team_id": "meacdsu",
+      "x": 7.3303,
+      "y": 8.5772
+     },
+     {
+      "team_id": "meachu",
+      "x": 6.285,
+      "y": 8.8356
+     },
+     {
+      "team_id": "meacmsu",
+      "x": 6.6612,
+      "y": 7.7692
+     },
+     {
+      "team_id": "meacnccu",
+      "x": 8.3877,
+      "y": 7.0782
+     },
+     {
+      "team_id": "meacnsu",
+      "x": 8.3529,
+      "y": 8.5844
+     },
+     {
+      "team_id": "meacscsu",
+      "x": 9.8326,
+      "y": 7.7361
+     },
+     {
+      "team_id": "swacaamu",
+      "x": 6.6385,
+      "y": 9.722
+     },
+     {
+      "team_id": "swacalc",
+      "x": 6.956,
+      "y": 6.6262
+     },
+     {
+      "team_id": "swacasu",
+      "x": 9.6169,
+      "y": 5.8783
+     },
+     {
+      "team_id": "swacbcu",
+      "x": 8.4239,
+      "y": 7.8586
+     },
+     {
+      "team_id": "swacfamu",
+      "x": 7.3758,
+      "y": 7.5904
+     },
+     {
+      "team_id": "swacgsu",
+      "x": 6.2627,
+      "y": 7.0707
+     },
+     {
+      "team_id": "swacjsu",
+      "x": 9.5821,
+      "y": 7.5474
+     },
+     {
+      "team_id": "swacmvsu",
+      "x": 6.2305,
+      "y": 7.9637
+     },
+     {
+      "team_id": "swacpvamu",
+      "x": 9.2359,
+      "y": 5.4578
+     },
+     {
+      "team_id": "swacsu",
+      "x": 6.3225,
+      "y": 7.7329
+     },
+     {
+      "team_id": "swactsu",
+      "x": 6.9486,
+      "y": 8.0097
+     },
+     {
+      "team_id": "swacuapb",
+      "x": 6.7124,
+      "y": 8.5258
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "metric_of_week_2025",
+   "archetype": "metric_of_week",
+   "title": "Metric of the Week",
+   "headline": "Bama State leads the league in offense rushing success rate.",
+   "why": "Higher is better; the league average is 43.4%.",
+   "stat": {
+    "value": 0.547,
+    "display": "54.7%",
+    "label": "Offense rushing success rate",
+    "team_id": "swacasu"
+   },
+   "viz": {
+    "kind": "distribution",
+    "metric": "Offense rushing success rate",
+    "unit": "pct",
+    "league": 0.4339,
+    "entries": [
+     {
+      "team_id": "swacasu",
+      "value": 0.547,
+      "record": "10-2"
+     },
+     {
+      "team_id": "swacjsu",
+      "value": 0.5153,
+      "record": "9-3"
+     },
+     {
+      "team_id": "swacalc",
+      "value": 0.5,
+      "record": "5-7"
+     },
+     {
+      "team_id": "swactsu",
+      "value": 0.4767,
+      "record": "6-5"
+     },
+     {
+      "team_id": "swacbcu",
+      "value": 0.4732,
+      "record": "6-6"
+     },
+     {
+      "team_id": "meacscsu",
+      "value": 0.4583,
+      "record": "10-3"
+     },
+     {
+      "team_id": "swacsu",
+      "value": 0.4524,
+      "record": "2-10"
+     },
+     {
+      "team_id": "meacnccu",
+      "value": 0.4423,
+      "record": "8-4"
+     },
+     {
+      "team_id": "swacpvamu",
+      "value": 0.4396,
+      "record": "10-4"
+     },
+     {
+      "team_id": "meacnsu",
+      "value": 0.432,
+      "record": "1-11"
+     },
+     {
+      "team_id": "swacfamu",
+      "value": 0.4296,
+      "record": "5-7"
+     },
+     {
+      "team_id": "swacaamu",
+      "value": 0.4154,
+      "record": "4-8"
+     },
+     {
+      "team_id": "meacdsu",
+      "value": 0.4098,
+      "record": "8-4"
+     },
+     {
+      "team_id": "meacmsu",
+      "value": 0.4096,
+      "record": "4-8"
+     },
+     {
+      "team_id": "swacuapb",
+      "value": 0.3978,
+      "record": "4-8"
+     },
+     {
+      "team_id": "swacmvsu",
+      "value": 0.3525,
+      "record": "2-10"
+     },
+     {
+      "team_id": "meachu",
+      "value": 0.3293,
+      "record": "5-7"
+     },
+     {
+      "team_id": "swacgsu",
+      "value": 0.3285,
+      "record": "7-5"
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "record_ahead_2025",
+   "archetype": "record_ahead",
+   "title": "Doesn't Add Up",
+   "headline": "Del State has a better record than its rating earns.",
+   "why": "Ranked 5th by record and 12th by team rating.",
+   "stat": {
+    "value": 7,
+    "display": "7 places",
+    "label": "Gap between record rank and rating rank",
+    "team_id": "meacdsu"
+   },
+   "viz": {
+    "kind": "rank_gap",
+    "record_rank": 5,
+    "rating_rank": 12,
+    "total": 18,
+    "record": "8-4",
+    "rating_display": "-0.017"
+   }
+  },
+  {
+   "card_id": "rating_ahead_2025",
+   "archetype": "rating_ahead",
+   "title": "Doesn't Add Up",
+   "headline": "Norfolk has a better rating than its record shows.",
+   "why": "Ranked 18th by record and 8th by team rating.",
+   "stat": {
+    "value": 10,
+    "display": "10 places",
+    "label": "Gap between record rank and rating rank",
+    "team_id": "meacnsu"
+   },
+   "viz": {
+    "kind": "rank_gap",
+    "record_rank": 18,
+    "rating_rank": 8,
+    "total": 18,
+    "record": "1-11",
+    "rating_display": "-0.010"
+   }
+  },
+  {
+   "card_id": "dead_metric_2025",
+   "archetype": "dead_metric",
+   "title": "Doesn't Matter",
+   "headline": "Defense power stop rate barely moves the win column.",
+   "why": "Against offense yards per attempt, the strongest lever.",
+   "stat": {
+    "value": 0.0294,
+    "display": "+0.03",
+    "label": "Correlation with win %",
+    "team_id": null
+   },
+   "viz": {
+    "kind": "dumbbell",
+    "rows": [
+     {
+      "label": "Defense power stop rate",
+      "r": 0.0294,
+      "tone": "muted"
+     },
+     {
+      "label": "Offense yards per attempt",
+      "r": 0.599,
+      "tone": "accent"
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "statistical_twins_2025",
+   "archetype": "statistical_twins",
+   "title": "Statistical Twins",
+   "headline": "Bama State and PVAMU are the closest match in the league.",
+   "why": "Across the 8 strongest win levers, they differ by 13.2 percentile points on average.",
+   "stat": {
+    "value": 13.2,
+    "display": "13.2 pts",
+    "label": "Average percentile gap",
+    "team_id": null
+   },
+   "viz": {
+    "kind": "twin_bars",
+    "a": "swacasu",
+    "b": "swacpvamu",
+    "axes": [
+     {
+      "label": "Offense yards per attempt",
+      "a": 94.1,
+      "b": 82.4
+     },
+     {
+      "label": "Defense yards per attempt",
+      "a": 94.1,
+      "b": 100.0
+     },
+     {
+      "label": "Defense explosive pass rate",
+      "a": 94.1,
+      "b": 100.0
+     },
+     {
+      "label": "Offense explosive pass rate",
+      "a": 94.1,
+      "b": 100.0
+     },
+     {
+      "label": "Offense completion rate",
+      "a": 88.2,
+      "b": 64.7
+     },
+     {
+      "label": "Defense completion rate",
+      "a": 76.5,
+      "b": 94.1
+     },
+     {
+      "label": "Defense pressure rate",
+      "a": 52.9,
+      "b": 82.4
+     },
+     {
+      "label": "Offense pressure rate",
+      "a": 100.0,
+      "b": 94.1
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "team_fingerprint_2025",
+   "archetype": "team_fingerprint",
+   "title": "Team Fingerprint",
+   "headline": "PVAMU is the furthest from average in the league.",
+   "why": "Across the 8 strongest win levers, it sits 40 percentile points from the middle on average.",
+   "stat": {
+    "value": 39.7,
+    "display": "40 pts",
+    "label": "Average distance from the 50th percentile",
+    "team_id": "swacpvamu"
+   },
+   "viz": {
+    "kind": "radar",
+    "team_id": "swacpvamu",
+    "axes": [
+     {
+      "label": "Off. YPA",
+      "value": 82.4
+     },
+     {
+      "label": "Def. YPA",
+      "value": 100.0
+     },
+     {
+      "label": "Def. Explosive pass",
+      "value": 100.0
+     },
+     {
+      "label": "Off. Explosive pass",
+      "value": 100.0
+     },
+     {
+      "label": "Off. Comp.",
+      "value": 64.7
+     },
+     {
+      "label": "Def. Comp.",
+      "value": 94.1
+     },
+     {
+      "label": "Def. Pressure",
+      "value": 82.4
+     },
+     {
+      "label": "Off. Pressure",
+      "value": 94.1
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "production_leader_2025",
+   "archetype": "production_leader",
+   "title": "Production Leader",
+   "headline": "Cameron Peters leads the league in production.",
+   "why": "PVAMU, QB, 10 games.",
+   "stat": {
+    "value": 198.48,
+    "display": "198.5",
+    "label": "Season production",
+    "team_id": "swacpvamu"
+   },
+   "viz": {
+    "kind": "rank_bars",
+    "person": {
+     "name": "Cameron Peters",
+     "last_name": "Peters",
+     "image_url": "https://pvpanthers.com/images/2025/7/23/11_Cameron_Petis.jpg",
+     "team_id": "swacpvamu",
+     "position": "QB"
+    },
+    "entries": [
+     {
+      "label": "Cameron Peters",
+      "team_id": "swacpvamu",
+      "value": 198.48,
+      "is_subject": true
+     },
+     {
+      "label": "RJ Johnson III",
+      "team_id": "swacfamu",
+      "value": 176.12,
+      "is_subject": false
+     },
+     {
+      "label": "Jaylon Tolbert",
+      "team_id": "swacalc",
+      "value": 155.79,
+      "is_subject": false
+     },
+     {
+      "label": "Walker Harris",
+      "team_id": "meacnccu",
+      "value": 145.4,
+      "is_subject": false
+     },
+     {
+      "label": "Cam'Ron Ransom",
+      "team_id": "swacbcu",
+      "value": 134.4,
+      "is_subject": false
+     },
+     {
+      "label": "KJ Cooper",
+      "team_id": "swactsu",
+      "value": 129.02,
+      "is_subject": false
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "conference_gap_2025",
+   "archetype": "conference_gap",
+   "title": "SWAC vs MEAC",
+   "headline": "The conferences split most on defense stuff rate, and the MEAC is ahead.",
+   "why": "Higher is better; the gap is 1.2 standard deviations across the league.",
+   "stat": {
+    "value": 0.0472,
+    "display": "4.7 pts",
+    "label": "Gap between the conference averages",
+    "team_id": null
+   },
+   "viz": {
+    "kind": "conference_split",
+    "metric": "Defense stuff rate",
+    "unit": "pct",
+    "better": "high",
+    "groups": [
+     {
+      "label": "SWAC",
+      "value": 0.1743,
+      "teams": 12
+     },
+     {
+      "label": "MEAC",
+      "value": 0.2215,
+      "teams": 6
+     }
+    ]
+   }
+  },
+  {
+   "card_id": "parity_index_2025",
+   "archetype": "parity_index",
+   "title": "Parity Index",
+   "headline": "Win percentage is spread tighter than usual this season.",
+   "why": "The 3rd most even of 6 seasons.",
+   "stat": {
+    "value": 0.2175,
+    "display": "0.217",
+    "label": "Standard deviation of win %",
+    "team_id": null
+   },
+   "viz": {
+    "kind": "season_trend",
+    "entries": [
+     {
+      "label": "2019",
+      "value": 0.2259,
+      "highlight": false
+     },
+     {
+      "label": "2021",
+      "value": 0.1933,
+      "highlight": false
+     },
+     {
+      "label": "2022",
+      "value": 0.2195,
+      "highlight": false
+     },
+     {
+      "label": "2023",
+      "value": 0.2184,
+      "highlight": false
+     },
+     {
+      "label": "2024",
+      "value": 0.2136,
+      "highlight": false
+     },
+     {
+      "label": "2025",
+      "value": 0.2175,
+      "highlight": true
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,401 @@
+{
+  "person_id": "PERS_00012124",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00012124",
+    "first_name": "Alex",
+    "last_name": "Valbuena",
+    "team_id": "swacjsu",
+    "team_abbreviation": "JKST",
+    "conference": "SWAC",
+    "division": "East",
+    "jersey_number": 62,
+    "position": "Offensive Line",
+    "position_group": "OL",
+    "raw_position": "OL",
+    "class_year": 5,
+    "class_label": "Graduate",
+    "height": 72,
+    "weight": 275,
+    "home_city": "Antioch",
+    "home_state": "TN",
+    "is_in_state": false,
+    "previous_school": "Tennessee State",
+    "high_school": null,
+    "image_url": "https://gojsutigers.com/images/2026/7/14/VALBUENA_ALEX.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 2.13,
+    "per_game": 3.48,
+    "games_played": 1,
+    "rank_in_position_group": 1,
+    "position_group_total": 7,
+    "conference_rank": 251,
+    "conference_total": 713,
+    "position_group_mean": 0.58
+  },
+  "season_totals": {
+    "par": 2.13,
+    "total_production": 3.48,
+    "avg_production": 3.48,
+    "games_played": 1,
+    "season_components": {
+      "receiving_production": 3.48,
+      "rushing_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "2026-08-29_swacjsu_at_tennesseestate",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Tennessee State",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 26-24",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_edwardwaters_at_swacjsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Edward Waters",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 66-14",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_tuskegee_at_swacjsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Tuskegee",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 41-7",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "SUJSU26092026",
+      "game_path_id": "sujsu26",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 35-17",
+      "data_state": "played",
+      "par": 2.13,
+      "components": {
+        "receiving_production": 3.48
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-4"
+        },
+        {
+          "label": "REC TD",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "AAMUJSU03102026",
+      "game_path_id": "aamujsu26",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 31-28",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 6,
+      "game_id": "JSUGRAM10102026",
+      "game_path_id": "jsugsu26",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 38-45",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 7,
+      "game_id": "FAMUJSU17102026",
+      "game_path_id": "famujsu26",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 27-17",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 8,
+      "game_id": "2026-10-24_swacjsu_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-07_swacmvsu_at_swacjsu",
+      "game_path_id": null,
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swacjsu_at_swacasu",
+      "game_path_id": null,
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_swacjsu_at_swacalc",
+      "game_path_id": null,
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 4,
+    "game_id": "SUJSU26092026",
+    "game_path_id": "sujsu26",
+    "opponent_id": "swacsu",
+    "opponent_name": "Southern",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 35-17",
+    "par": 2.13,
+    "stat_line": [
+      {
+        "label": "REC",
+        "value": "1-4"
+      },
+      {
+        "label": "REC TD",
+        "value": 1
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 72,
+      "rank": 14,
+      "total": 14,
+      "group": "OL",
+      "group_avg": 76.4
+    },
+    "weight": {
+      "value": 275,
+      "rank": 12,
+      "total": 14,
+      "group": "OL",
+      "group_avg": 305.7
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 2
+      },
+      {
+        "class": "So.",
+        "count": 3
+      },
+      {
+        "class": "Jr.",
+        "count": 4
+      },
+      {
+        "class": "Sr.",
+        "count": 2
+      },
+      {
+        "class": "Gr.",
+        "count": 3
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "OLS",
+        "rank": 3,
+        "total": 14
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 20
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 56
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 32
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "FCS",
+    "previous_school": "Tennessee State",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": null,
+    "distance_tier": null,
+    "experience_score": 5.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Graduate",
+        "is_current": true,
+        "season": 2026
+      }
+    ]
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "person_id": "PERS_00011009",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00011009",
+    "first_name": "Dairo",
+    "last_name": "Melendez",
+    "team_id": "swacbcu",
+    "team_abbreviation": "BCU",
+    "conference": "SWAC",
+    "division": "East",
+    "jersey_number": 99,
+    "position": "Defensive Line",
+    "position_group": "DL",
+    "raw_position": "DL",
+    "class_year": 3,
+    "class_label": "Junior",
+    "height": 73,
+    "weight": 290,
+    "home_city": "Miami",
+    "home_state": "FL",
+    "is_in_state": true,
+    "previous_school": "Coastal Carolina",
+    "high_school": "Immaculata-la Salle Hs",
+    "image_url": "https://bcuathletics.com/images/2026/8/25/MELENDEZ_DAIRO.png"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": -2.795,
+    "per_game": 0.53,
+    "games_played": 2,
+    "rank_in_position_group": 138,
+    "position_group_total": 144,
+    "conference_rank": 664,
+    "conference_total": 713,
+    "position_group_mean": 4.54
+  },
+  "season_totals": {
+    "par": -2.795,
+    "total_production": 1.06,
+    "avg_production": 0.53,
+    "games_played": 2,
+    "season_components": {
+      "hit_production": 1.06,
+      "hawk_production": 0,
+      "scrum_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "2026-09-03_swacbcu_at_ucf",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "UCF",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 6-73",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_stetson_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Stetson",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 43-18",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_virginialynchbur_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Virginia-Lynchburg",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 62-3",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "SCSUBCU26092026",
+      "game_path_id": "scsubcu26",
+      "opponent_id": "meacscsu",
+      "opponent_name": "SC State",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 21-31",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 5,
+      "game_id": "ASUBCU03102026",
+      "game_path_id": "asubcu26",
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 16-10",
+      "data_state": "played",
+      "par": -1.4,
+      "components": {
+        "hit_production": 0.53
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 1
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "BCUAAMU10102026",
+      "game_path_id": "bcuaamu26",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 17-55",
+      "data_state": "played",
+      "par": -1.4,
+      "components": {
+        "hit_production": 0.53
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 1
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "BCUMVSU17102026",
+      "game_path_id": "bcumvsu26",
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 34-14",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 8,
+      "game_id": "2026-10-24_swacjsu_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 9,
+      "game_id": "2026-10-31_swacbcu_at_swacuapb",
+      "game_path_id": null,
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-07_swacbcu_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swacgsu_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_swacfamu_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 6,
+    "game_id": "BCUAAMU10102026",
+    "game_path_id": "bcuaamu26",
+    "opponent_id": "swacaamu",
+    "opponent_name": "AAMU",
+    "home_away": "away",
+    "result": "L",
+    "score": "L 17-55",
+    "par": -1.4,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 1
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 73,
+      "rank": 11,
+      "total": 17,
+      "group": "DL",
+      "group_avg": 74.1
+    },
+    "weight": {
+      "value": 290,
+      "rank": 5,
+      "total": 17,
+      "group": "DL",
+      "group_avg": 269
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 8
+      },
+      {
+        "class": "So.",
+        "count": 4
+      },
+      {
+        "class": "Jr.",
+        "count": 4
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "DLS",
+        "rank": 3,
+        "total": 17
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 14
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 43
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 76
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "G5",
+    "previous_school": "Coastal Carolina",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 242.2,
+    "distance_tier": "regional",
+    "experience_score": 3.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": true,
+        "season": 2026
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2028
+      }
+    ]
+  }
+}

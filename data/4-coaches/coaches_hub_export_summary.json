@@ -1,0 +1,127 @@
+{
+  "dataset": "coaches_hub_frontend_exports",
+  "generated_at": "2026-05-10T17:34:13.248156-05:00",
+  "source": "12-roster-pipeline/5-coach-ecosystem",
+  "target": "92-frontend/4-coaches",
+  "seasons": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "season_payloads": [
+    {
+      "season": 2021,
+      "schools": 18,
+      "network_edges": 225,
+      "movement_edges": 42,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    },
+    {
+      "season": 2022,
+      "schools": 18,
+      "network_edges": 262,
+      "movement_edges": 78,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    },
+    {
+      "season": 2023,
+      "schools": 16,
+      "network_edges": 215,
+      "movement_edges": 79,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    },
+    {
+      "season": 2024,
+      "schools": 18,
+      "network_edges": 260,
+      "movement_edges": 106,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    },
+    {
+      "season": 2025,
+      "schools": 18,
+      "network_edges": 302,
+      "movement_edges": 63,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    }
+  ],
+  "position_impact": {
+    "rows": 329,
+    "rows_with_deltas": 208,
+    "rows_with_position_coach": 105,
+    "confidence_counts": {
+      "high": 64,
+      "low": 1,
+      "medium": 144,
+      "unknown": 120
+    },
+    "qa_errors": 0,
+    "qa_warnings": 224,
+    "attribution_scope": "contextual_staff_season",
+    "causation_claim": false
+  },
+  "files": [
+    {
+      "path": "4-coaches/coaches_hub_payload_index.json",
+      "type": "coaches_hub_index"
+    },
+    {
+      "path": "4-coaches/coaches_hub_payload_2021.json",
+      "type": "coaches_hub_season_payload",
+      "season": 2021
+    },
+    {
+      "path": "4-coaches/coaches_hub_payload_2022.json",
+      "type": "coaches_hub_season_payload",
+      "season": 2022
+    },
+    {
+      "path": "4-coaches/coaches_hub_payload_2023.json",
+      "type": "coaches_hub_season_payload",
+      "season": 2023
+    },
+    {
+      "path": "4-coaches/coaches_hub_payload_2024.json",
+      "type": "coaches_hub_season_payload",
+      "season": 2024
+    },
+    {
+      "path": "4-coaches/coaches_hub_payload_2025.json",
+      "type": "coaches_hub_season_payload",
+      "season": 2025
+    },
+    {
+      "path": "4-coaches/coach_position_impact_by_school_season.json",
+      "type": "coach_position_impact"
+    },
+    {
+      "path": "4-coaches/coach_position_impact_qa.json",
+      "type": "coach_position_impact_qa"
+    },
+    {
+      "path": "4-coaches/coach_movement_summary_by_school_season.json",
+      "type": "coach_movement_summary"
+    },
+    {
+      "path": "4-coaches/coach_relationships_v1.json",
+      "type": "coach_relationship_edges"
+    },
+    {
+      "path": "4-coaches/coach_movement_edges_v1.json",
+      "type": "coach_movement_edges"
+    }
+  ],
+  "guardrails": [
+    "Position impact is contextual staff-season association, not a causal coach grade.",
+    "Payloads expose safe labels and source notes for frontend display.",
+    "Mentor/coaching-tree claims are excluded unless explicitly sourced elsewhere.",
+    "Same-season unverified movement is excluded from frontend-safe movement edges."
+  ]
+}

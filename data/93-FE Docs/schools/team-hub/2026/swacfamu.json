@@ -1,0 +1,426 @@
+{
+  "team_id": "swacfamu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 7,
+  "generated_at": "2026-10-20T01:35:10-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "East",
+    "division_label": "SWAC EAST",
+    "season": 2026,
+    "team_abbreviation": "FAMU",
+    "school_name": "Florida A&M University",
+    "avg_par": 2.7,
+    "roster_count": 93,
+    "transfer_count": 55,
+    "transfer_rate": 59.1,
+    "upperclass_pct": 53.8
+  },
+  "conference_record": {
+    "conference_label": "1-2",
+    "conference_wins": 1,
+    "conference_losses": 2,
+    "overall_label": "2-5",
+    "overall_wins": 2,
+    "overall_losses": 5,
+    "overall_ties": 0,
+    "division_rank": "6th - SWAC East",
+    "last_5": [
+      {
+        "week": 2,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "MIA",
+        "score_team": 7,
+        "score_opponent": 77,
+        "score": "L 7-77",
+        "game_path_id": null
+      },
+      {
+        "week": 3,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "TNST",
+        "score_team": 26,
+        "score_opponent": 29,
+        "score": "L 26-29",
+        "game_path_id": null
+      },
+      {
+        "week": 4,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacaamu",
+        "opponent_short": "AAMU",
+        "score_team": 21,
+        "score_opponent": 40,
+        "score": "L 21-40",
+        "game_path_id": "aamufamu26"
+      },
+      {
+        "week": 6,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacasu",
+        "opponent_short": "ALST",
+        "score_team": 28,
+        "score_opponent": 27,
+        "score": "W 28-27",
+        "game_path_id": "famuasu26"
+      },
+      {
+        "week": 7,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 17,
+        "score_opponent": 27,
+        "score": "L 17-27",
+        "game_path_id": "famujsu26"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "FAMUJSU17102026",
+    "game_path_id": "famujsu26",
+    "week": 7,
+    "date": "2026-10-17",
+    "opponent_id": "swacjsu",
+    "opponent_name": "J-State",
+    "result": "L",
+    "score_team": 17,
+    "score_opponent": 27,
+    "score": "L 17-27",
+    "venue": {
+      "stadium_name": "Mississippi Veterans Memorial Stadium",
+      "venue_label": "Mississippi Veterans Memorial Stadium",
+      "city": "Jackson",
+      "neutral_site_name": null
+    },
+    "tag": "Homecoming",
+    "headline": "L 17-27 vs JKST",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.4589
+  },
+  "next_game": {
+    "game_id": "2026-10-24_swacuapb_at_swacfamu",
+    "preview_path_id": "2026-10-24_swacuapb_at_swacfamu",
+    "date": "2026-10-24",
+    "kickoff": "TBA",
+    "opponent_id": "swacuapb",
+    "opponent_name": "UAPB",
+    "opponent_short_name": "UAPB",
+    "opponent_mascot": "Golden Lions",
+    "opponent_logo": null,
+    "home_away": "home",
+    "venue": {
+      "stadium_name": "Bragg Memorial Stadium",
+      "venue_label": "Bragg Memorial Stadium",
+      "city": "Tallahassee",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "Homecoming",
+    "headline": "Hosts UAPB at Bragg Memorial Stadium",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5595
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00012468",
+      "name": "Quinn Fordham Gray Sr.",
+      "role": "Head Coach",
+      "role_title": "Head Football Coach",
+      "role_group": "head_coach",
+      "image_url": "https://www.famuathletics.com/images/2026/2/24/Gray.png",
+      "tenure_year": 2,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": -0.001,
+        "display": "-0.00",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00014007",
+      "name": "Nicholas Sewak",
+      "role": "Offensive Coordinator",
+      "role_title": "Co-Offensive Coordinator | Offensive Line",
+      "role_group": "coordinator",
+      "image_url": "https://www.famuathletics.com/images/2026/4/6/SEWAK.png",
+      "tenure_year": 1,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.0788,
+        "display": "-0.08",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00014008",
+      "name": "Elijah Haggard",
+      "role": "Defensive Coordinator",
+      "role_title": "Special Teams Coordinator | Interior Defensive Line",
+      "role_group": "coordinator",
+      "image_url": "https://www.famuathletics.com/images/2026/4/6/HAGGARD_WS-1.png",
+      "tenure_year": 1,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.0779,
+        "display": "+0.08",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 15,
+    "available_units": [
+      "passing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 47.8,
+            "display": "47.8%",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 196.5,
+            "display": "196.5",
+            "rank": 7,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.5,
+            "display": "1.50",
+            "rank": 8,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 1.75,
+            "display": "1.75",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 9.34,
+            "display": "9.3%",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 22.12,
+            "display": "22.1%",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 0.25,
+            "display": "0.25",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 2.25,
+            "display": "2.25",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 31.3,
+            "display": "31.3%",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.242,
+            "display": "-0.24",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 28.3,
+            "display": "28.3%",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 51.2,
+            "display": "51.2%",
+            "rank": 12,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 75.0,
+            "display": "75.0%",
+            "rank": 6,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 42.6,
+            "display": "42.6",
+            "rank": 3,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 38.9,
+            "display": "38.9%",
+            "rank": 4,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 23.3,
+            "display": "23.3",
+            "rank": 8,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "defensive_havoc",
+    "key": "turnovers_forced_per_game",
+    "label": "TO FORCED/GM",
+    "value": 2.25,
+    "display": "2.25",
+    "rank": 1,
+    "total": 15,
+    "sentence": "Turnovers forced per game"
+  },
+  "star_impact": {
+    "person_id": "PERS_00008188",
+    "full_name": "Andre Powell Jr.",
+    "last_name": "Powell",
+    "position": "DB",
+    "class_year": "Gr.",
+    "image_url": "https://www.famuathletics.com/images/2026/8/6/Andre_Powekk.jpg",
+    "from_game": {
+      "game_id": "FAMUJSU17102026",
+      "game_path_id": "famujsu26",
+      "week": 7,
+      "opponent_name": "J-State",
+      "result": "L",
+      "score": "L 17-27"
+    },
+    "game_par": 18.35,
+    "season_par": 29.5,
+    "par_per_game": 7.38,
+    "stat_line": [
+      {
+        "label": "FF",
+        "value": "1"
+      },
+      {
+        "label": "TKL",
+        "value": "6"
+      },
+      {
+        "label": "TFL",
+        "value": "1"
+      },
+      {
+        "label": "SACK",
+        "value": "1"
+      }
+    ],
+    "profile_url": "/player/PERS_00008188"
+  }
+}

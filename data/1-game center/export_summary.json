@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-08-13T14:15:40.609823-05:00",
+  "started_at": "2026-08-13T14:15:18.061297-05:00",
+  "status": "ok",
+  "builders": [
+    {
+      "module": "assign_weeks",
+      "status": "ok"
+    },
+    {
+      "module": "classify_games",
+      "status": "ok"
+    },
+    {
+      "module": "build_game_center_hub",
+      "status": "ok"
+    },
+    {
+      "module": "build_week_central",
+      "status": "ok"
+    },
+    {
+      "module": "build_conference_slate",
+      "status": "ok"
+    },
+    {
+      "module": "build_season_schedule_board",
+      "status": "ok"
+    },
+    {
+      "module": "build_team_schedules",
+      "status": "ok"
+    },
+    {
+      "module": "build_standings_race",
+      "status": "ok"
+    },
+    {
+      "module": "build_games_hub",
+      "status": "ok"
+    },
+    {
+      "module": "build_contextual_averages",
+      "status": "ok"
+    },
+    {
+      "module": "validate_game_center_payloads",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "team_id": "meacscsu",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "MEAC",
+    "division": "",
+    "division_label": "MEAC",
+    "season": 2025,
+    "team_abbreviation": "SCSU",
+    "school_name": "South Carolina State University",
+    "avg_par": 10.0,
+    "roster_count": 106,
+    "transfer_count": 58,
+    "transfer_rate": 54.7,
+    "upperclass_pct": 56.6
+  },
+  "conference_record": {
+    "conference_label": "5-0",
+    "conference_wins": 5,
+    "conference_losses": 0,
+    "overall_label": "10-3",
+    "overall_wins": 10,
+    "overall_losses": 3,
+    "overall_ties": 0,
+    "division_rank": "1st - MEAC",
+    "last_5": [
+      {
+        "week": 10,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "meacmsu",
+        "opponent_short": "MSU",
+        "score_team": 36,
+        "score_opponent": 30,
+        "score": "W 36-30",
+        "game_path_id": "msuscsu25"
+      },
+      {
+        "week": 11,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "meachu",
+        "opponent_short": "HOW",
+        "score_team": 42,
+        "score_opponent": 12,
+        "score": "W 42-12",
+        "game_path_id": "huscsu25"
+      },
+      {
+        "week": 12,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "meacnccu",
+        "opponent_short": "NCCU",
+        "score_team": 34,
+        "score_opponent": 27,
+        "score": "W 34-27",
+        "game_path_id": "scsunccu25"
+      },
+      {
+        "week": 13,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "meacdsu",
+        "opponent_short": "DSU",
+        "score_team": 28,
+        "score_opponent": 17,
+        "score": "W 28-17",
+        "game_path_id": "scsudsu25"
+      },
+      {
+        "week": 16,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacpvamu",
+        "opponent_short": "PVAMU",
+        "score_team": 40,
+        "score_opponent": 38,
+        "score": "W 40-38",
+        "game_path_id": "scsupvamu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "SCSUPVAMU13122025",
+    "game_path_id": "scsupvamu25",
+    "week": 16,
+    "date": "2025-12-13",
+    "opponent_id": "swacpvamu",
+    "opponent_name": "PVAMU",
+    "result": "W",
+    "score_team": 40,
+    "score_opponent": 38,
+    "score": "W 40-38",
+    "venue": {
+      "stadium_name": "Mercedes-Benz Stadium",
+      "venue_label": "Celebration Bowl",
+      "city": "Atlanta",
+      "neutral_site_name": "Celebration Bowl"
+    },
+    "tag": "Celebration Bowl",
+    "headline": "W 40-38 vs PVAMU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": true,
+    "win_probability": 0.4622
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 10-3, 1st - MEAC.",
+    "record": "10-3",
+    "wins": 10,
+    "losses": 3,
+    "conference_record": "5-0",
+    "conference_wins": 5,
+    "conference_losses": 0,
+    "division_finish": "1st - MEAC",
+    "avg_par": 10.0,
+    "games_played": 13
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00001813",
+      "name": "Chennis Berry",
+      "role": "Head Coach",
+      "role_title": "Head Football Coach",
+      "role_group": "head_coach",
+      "image_url": "https://www.scsuathletics.com/images/2024/2/14/Chennis_B__1_.jpg",
+      "tenure_year": 2,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": -0.0545,
+        "display": "-0.05",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00001658",
+      "name": "Kevin King",
+      "role": "Defensive Coordinator",
+      "role_title": "Passing Game Coordinator, Safeties Coach",
+      "role_group": "coordinator",
+      "image_url": "https://www.scsuathletics.com/images/2024/2/1/Kevin_King.JPG",
+      "tenure_year": 2,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": -0.0359,
+        "display": "-0.04",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 63.0,
+            "display": "63.0%",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 318.9,
+            "display": "318.9",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 2.143,
+            "display": "2.14",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.857,
+            "display": "0.86",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 161.7,
+            "display": "161.7",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 2.429,
+            "display": "2.43",
+            "rank": 2,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 19.9,
+            "display": "19.9%",
+            "rank": 11,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 65.71,
+            "display": "65.7%",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 20.35,
+            "display": "20.3%",
+            "rank": 2,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 14.39,
+            "display": "14.4%",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.571,
+            "display": "2.57",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.571,
+            "display": "1.57",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 45.76,
+            "display": "45.8%",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.1184,
+            "display": "+0.12",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 50.0,
+            "display": "50.0%",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 72.1,
+            "display": "72.1%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 83.3,
+            "display": "83.3%",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 45.0,
+            "display": "45.0",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 17.6,
+            "display": "17.6%",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 19.4,
+            "display": "19.4",
+            "rank": 11,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "passing",
+    "key": "pass_yards_per_game",
+    "label": "PASS YDS/GM",
+    "value": 318.9,
+    "display": "318.9",
+    "rank": 1,
+    "total": 18,
+    "sentence": "Passing yards per game"
+  },
+  "star_impact": {
+    "person_id": "PERS_00007868",
+    "full_name": "Jordan Smith",
+    "last_name": "Smith",
+    "position": "WR",
+    "class_year": "Gr.",
+    "image_url": "https://www.scsuathletics.com/images/2025/9/1/Smith__Jordan.jpg",
+    "from_game": {
+      "game_id": "SCSUPVAMU13122025",
+      "game_path_id": "scsupvamu25",
+      "week": 16,
+      "opponent_name": "PVAMU",
+      "result": "W",
+      "score": "W 40-38"
+    },
+    "game_par": 17.31,
+    "season_par": 61.41,
+    "par_per_game": 8.77,
+    "stat_line": [
+      {
+        "label": "CAR",
+        "value": "5"
+      },
+      {
+        "label": "RUSH YDS",
+        "value": "28"
+      },
+      {
+        "label": "RUSH TD",
+        "value": "1"
+      },
+      {
+        "label": "REC",
+        "value": "9-152"
+      },
+      {
+        "label": "REC TD",
+        "value": "2"
+      }
+    ],
+    "profile_url": "/player/PERS_00007868"
+  }
+}

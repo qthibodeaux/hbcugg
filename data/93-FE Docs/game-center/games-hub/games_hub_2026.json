@@ -1,0 +1,5405 @@
+{
+  "season": 2026,
+  "generated_at": "2026-10-20T01:25:03-05:00",
+  "current_week": 8,
+  "weeks": [
+    {
+      "week": 0,
+      "label": "Week 0",
+      "start_date": "2026-07-03",
+      "end_date": "2026-08-31"
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "start_date": "2026-09-01",
+      "end_date": "2026-09-07"
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-14"
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "start_date": "2026-09-15",
+      "end_date": "2026-09-21"
+    },
+    {
+      "week": 4,
+      "label": "Week 4",
+      "start_date": "2026-09-22",
+      "end_date": "2026-09-28"
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "start_date": "2026-09-29",
+      "end_date": "2026-10-05"
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "start_date": "2026-10-06",
+      "end_date": "2026-10-12"
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "start_date": "2026-10-13",
+      "end_date": "2026-10-19"
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "start_date": "2026-10-20",
+      "end_date": "2026-10-26"
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "start_date": "2026-10-27",
+      "end_date": "2026-11-02"
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "start_date": "2026-11-03",
+      "end_date": "2026-11-09"
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-16"
+    },
+    {
+      "week": 12,
+      "label": "Week 12",
+      "start_date": "2026-11-17",
+      "end_date": "2026-11-23"
+    },
+    {
+      "week": 13,
+      "label": "Week 13",
+      "start_date": "2026-11-24",
+      "end_date": "2026-11-30"
+    }
+  ],
+  "summary": {
+    "games": 144,
+    "final": 101,
+    "scheduled": 43
+  },
+  "games": [
+    {
+      "game_id": "2026-08-27_stonybrook_at_meacdsu",
+      "schedule_game_id": "2026-08-27_stonybrook_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-27",
+      "date_label": "Aug 27",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Stony Brook",
+        "short_name": "STONY",
+        "score": 34
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 41
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacdsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Alumni Stadium",
+        "city": "Dover",
+        "venue_label": "Alumni Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-27_swacmvsu_at_nicholls",
+      "schedule_game_id": "2026-08-27_swacmvsu_at_nicholls",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-27",
+      "date_label": "Aug 27",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 10
+      },
+      "home": {
+        "team_id": null,
+        "name": "Nicholls",
+        "short_name": "NICH",
+        "score": 44
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "John L. Guidry Stadium",
+        "city": "Thibodaux, Louisiana",
+        "venue_label": "John L. Guidry Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "ASUSU29082026",
+      "schedule_game_id": "2026-08-29_swacasu_at_swacsu",
+      "game_path_id": "asusu26",
+      "preview_path_id": null,
+      "route": "/game/asusu26",
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": "2:03 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 30
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 17
+      },
+      "neutral_site": true,
+      "winner_team_id": "swacasu",
+      "event": {
+        "kind": "classic",
+        "name": "Birmingham Football Classic"
+      },
+      "venue": {
+        "stadium_name": "Legion Field",
+        "city": "Birmingham",
+        "venue_label": "Legion Field"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "NCCUTSU29082026",
+      "schedule_game_id": "2026-08-29_meacnccu_at_swactsu",
+      "game_path_id": "nccutsu26",
+      "preview_path_id": null,
+      "route": "/game/nccutsu26",
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": "6:09 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 30
+      },
+      "home": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 42
+      },
+      "neutral_site": false,
+      "winner_team_id": "swactsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "W.W. Thorne Stadium",
+        "city": "Houston",
+        "venue_label": "W.W. Thorne Stadium"
+      },
+      "conference_scope": "cross_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "HUAAMU29082026",
+      "schedule_game_id": "2026-08-29_meachu_at_swacaamu",
+      "game_path_id": "huaamu26",
+      "preview_path_id": null,
+      "route": "/game/huaamu26",
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": "7:38 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 31
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 24
+      },
+      "neutral_site": true,
+      "winner_team_id": "meachu",
+      "event": {
+        "kind": "classic",
+        "name": "MEAC/SWAC Challenge"
+      },
+      "venue": {
+        "stadium_name": "Center Parc Stadium",
+        "city": "Atlanta",
+        "venue_label": "Center Parc Stadium"
+      },
+      "conference_scope": "cross_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-08-29_meacmsu_at_meacncat",
+      "schedule_game_id": "2026-08-29_meacmsu_at_meacncat",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 17
+      },
+      "home": {
+        "team_id": "meacncat",
+        "name": "NC A&T",
+        "short_name": "NCAT",
+        "score": 7
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacmsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Truist Stadium",
+        "city": "Greensboro",
+        "venue_label": "Truist Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_savannahstate_at_meacscsu",
+      "schedule_game_id": "2026-08-29_savannahstate_at_meacscsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Savannah State",
+        "short_name": "SAVST",
+        "score": 0
+      },
+      "home": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 87
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacscsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "venue_label": "Oliver C. Dawson Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_swacpvamu_at_tarletonstate",
+      "schedule_game_id": "2026-08-29_swacpvamu_at_tarletonstate",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": "8:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 30
+      },
+      "home": {
+        "team_id": null,
+        "name": "Tarleton State",
+        "short_name": "TARLETON",
+        "score": 49
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Memorial Stadium",
+        "city": "Stephenville, Texas",
+        "venue_label": "Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_albanystate_at_swacfamu",
+      "schedule_game_id": "2026-08-29_albanystate_at_swacfamu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Albany State",
+        "short_name": "ALBST",
+        "score": 7
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 20
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacfamu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Bragg Memorial Stadium",
+        "city": "Tallahassee",
+        "venue_label": "Bragg Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_clarkatlanta_at_swacgsu",
+      "schedule_game_id": "2026-08-29_clarkatlanta_at_swacgsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Clark Atlanta",
+        "short_name": "CAU",
+        "score": 7
+      },
+      "home": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 49
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacgsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Eddie G. Robinson Memorial Stadium",
+        "city": "Grambling",
+        "venue_label": "Eddie G. Robinson Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_miles_at_swacalc",
+      "schedule_game_id": "2026-08-29_miles_at_swacalc",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Miles",
+        "short_name": "MILES",
+        "score": 7
+      },
+      "home": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 56
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacalc",
+      "event": null,
+      "venue": {
+        "stadium_name": "Jack Spinks-Marino Casem Stadium",
+        "city": "Lorman",
+        "venue_label": "Jack Spinks-Marino Casem Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_morehouse_at_swacuapb",
+      "schedule_game_id": "2026-08-29_morehouse_at_swacuapb",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Morehouse",
+        "short_name": "MORE",
+        "score": 15
+      },
+      "home": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 35
+      },
+      "neutral_site": true,
+      "winner_team_id": "swacuapb",
+      "event": null,
+      "venue": {
+        "stadium_name": "War Memorial Stadium",
+        "city": "Little Rock, AR",
+        "venue_label": "War Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_swacjsu_at_tennesseestate",
+      "schedule_game_id": "2026-08-29_swacjsu_at_tennesseestate",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 26
+      },
+      "home": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "score": 24
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacjsu",
+      "event": {
+        "kind": "classic",
+        "name": "John Merritt Classic"
+      },
+      "venue": {
+        "stadium_name": null,
+        "city": "Nashville, Tenn.",
+        "venue_label": "Nashville, Tenn."
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-08-29_winstonsalemstat_at_meacnsu",
+      "schedule_game_id": "2026-08-29_winstonsalemstat_at_meacnsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 0,
+      "week_label": "Week 0",
+      "date": "2026-08-29",
+      "date_label": "Aug 29",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Winston-Salem State",
+        "short_name": "WSSU",
+        "score": 0
+      },
+      "home": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 56
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacnsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "William \"Dick\" Price Stadium",
+        "city": "Norfolk",
+        "venue_label": "William \"Dick\" Price Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-03_swacbcu_at_ucf",
+      "schedule_game_id": "2026-09-03_swacbcu_at_ucf",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-03",
+      "date_label": "Sep 3",
+      "kickoff_label": "7:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 6
+      },
+      "home": {
+        "team_id": null,
+        "name": "UCF",
+        "short_name": "UCF",
+        "score": 73
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Orlando, FL",
+        "venue_label": "Orlando, FL"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-03_swacuapb_at_missouri",
+      "schedule_game_id": "2026-09-03_swacuapb_at_missouri",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-03",
+      "date_label": "Sep 3",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 14
+      },
+      "home": {
+        "team_id": null,
+        "name": "Missouri",
+        "short_name": "MIZ",
+        "score": 54
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Columbia, MO",
+        "venue_label": "Columbia, MO"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_elizabethcitysta_at_meacnccu",
+      "schedule_game_id": "2026-09-05_elizabethcitysta_at_meacnccu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Elizabeth City State",
+        "short_name": "ECSU",
+        "score": 6
+      },
+      "home": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 27
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacnccu",
+      "event": {
+        "kind": "classic",
+        "name": "Hall of Fame Game"
+      },
+      "venue": {
+        "stadium_name": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "venue_label": "O'Kelly-Riddick Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_meacdsu_at_williammary",
+      "schedule_game_id": "2026-09-05_meacdsu_at_williammary",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 15
+      },
+      "home": {
+        "team_id": null,
+        "name": "William & Mary",
+        "short_name": "W&M",
+        "score": 22
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Williamsburg, VA",
+        "venue_label": "Williamsburg, VA"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_richmond_at_meachu",
+      "schedule_game_id": "2026-09-05_richmond_at_meachu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Richmond",
+        "short_name": "RICH",
+        "score": 28
+      },
+      "home": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 21
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Greene Stadium",
+        "city": "Washington",
+        "venue_label": "Greene Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_meacmsu_at_arizonastate",
+      "schedule_game_id": "2026-09-05_meacmsu_at_arizonastate",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": "10:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 7
+      },
+      "home": {
+        "team_id": null,
+        "name": "Arizona State",
+        "short_name": "AZST",
+        "score": 70
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Tempe, AZ",
+        "venue_label": "Tempe, AZ"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_centralstate_at_swacgsu",
+      "schedule_game_id": "2026-09-05_centralstate_at_swacgsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Central State",
+        "short_name": "CENTST",
+        "score": 26
+      },
+      "home": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 48
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacgsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Eddie G. Robinson Memorial Stadium",
+        "city": "Grambling",
+        "venue_label": "Eddie G. Robinson Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_edwardwaters_at_swacjsu",
+      "schedule_game_id": "2026-09-05_edwardwaters_at_swacjsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Edward Waters",
+        "short_name": "EWU",
+        "score": 14
+      },
+      "home": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 66
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacjsu",
+      "event": {
+        "kind": "classic",
+        "name": "Labor Day Classic"
+      },
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "venue_label": "Mississippi Veterans Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_kentuckystate_at_swacsu",
+      "schedule_game_id": "2026-09-05_kentuckystate_at_swacsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Kentucky State",
+        "short_name": "KYSU",
+        "score": 15
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 34
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacsu",
+      "event": {
+        "kind": "classic",
+        "name": "Pete Richardson Classic"
+      },
+      "venue": {
+        "stadium_name": "A.W. Mumford Stadium",
+        "city": "Baton Rouge",
+        "venue_label": "A.W. Mumford Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_lane_at_swacasu",
+      "schedule_game_id": "2026-09-05_lane_at_swacasu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Lane",
+        "short_name": "LANE",
+        "score": 0
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 34
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacasu",
+      "event": {
+        "kind": "classic",
+        "name": "Labor Day Classic"
+      },
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_meacnsu_at_olddominion",
+      "schedule_game_id": "2026-09-05_meacnsu_at_olddominion",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 10
+      },
+      "home": {
+        "team_id": null,
+        "name": "Old Dominion",
+        "short_name": "ODU",
+        "score": 31
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "S.B. Ballard Stadium",
+        "city": "Norfolk, VA",
+        "venue_label": "S.B. Ballard Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_miles_at_swacaamu",
+      "schedule_game_id": "2026-09-05_miles_at_swacaamu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Miles",
+        "short_name": "MILES",
+        "score": 23
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 38
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacaamu",
+      "event": {
+        "kind": "classic",
+        "name": "Louis Crews Classic"
+      },
+      "venue": {
+        "stadium_name": "Louis Crews Stadium",
+        "city": "Normal",
+        "venue_label": "Louis Crews Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_swacalc_at_southernmiss",
+      "schedule_game_id": "2026-09-05_swacalc_at_southernmiss",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 3
+      },
+      "home": {
+        "team_id": null,
+        "name": "Southern Miss",
+        "short_name": "USM",
+        "score": 49
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Hattiesburg, Miss.",
+        "venue_label": "Hattiesburg, Miss."
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-05_swacmvsu_at_sacramentostate",
+      "schedule_game_id": "2026-09-05_swacmvsu_at_sacramentostate",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-05",
+      "date_label": "Sep 5",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 0
+      },
+      "home": {
+        "team_id": null,
+        "name": "Sacramento State",
+        "short_name": "SAC",
+        "score": 52
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "SCSUFAMU06092026",
+      "schedule_game_id": "2026-09-06_meacscsu_at_swacfamu",
+      "game_path_id": "scsufamu26",
+      "preview_path_id": null,
+      "route": "/game/scsufamu26",
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-06",
+      "date_label": "Sep 6",
+      "kickoff_label": "4:43 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 31
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 13
+      },
+      "neutral_site": true,
+      "winner_team_id": "meacscsu",
+      "event": {
+        "kind": "classic",
+        "name": "Orange Blossom Classic"
+      },
+      "venue": {
+        "stadium_name": "Hard Rock Stadium",
+        "city": "Miami Gardens",
+        "venue_label": "Hard Rock Stadium"
+      },
+      "conference_scope": "cross_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "TSUPVAMU06092026",
+      "schedule_game_id": "2026-09-06_swactsu_at_swacpvamu",
+      "game_path_id": "tsupvamu26",
+      "preview_path_id": null,
+      "route": "/game/tsupvamu26",
+      "week": 1,
+      "week_label": "Week 1",
+      "date": "2026-09-06",
+      "date_label": "Sep 6",
+      "kickoff_label": "11:33 AM",
+      "status": "final",
+      "away": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 14
+      },
+      "home": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 52
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacpvamu",
+      "event": {
+        "kind": "classic",
+        "name": "Labor Day Classic"
+      },
+      "venue": {
+        "stadium_name": "Panther Stadium at Blackshear Field",
+        "city": "Prairie View",
+        "venue_label": "Panther Stadium at Blackshear Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-09-10_swacfamu_at_miami",
+      "schedule_game_id": "2026-09-10_swacfamu_at_miami",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-10",
+      "date_label": "Sep 10",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 7
+      },
+      "home": {
+        "team_id": null,
+        "name": "Miami",
+        "short_name": "MIA",
+        "score": 77
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Miami Gardens, Fla.",
+        "venue_label": "Miami Gardens, Fla."
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-11_meacnsu_at_virginia",
+      "schedule_game_id": "2026-09-11_meacnsu_at_virginia",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-11",
+      "date_label": "Sep 11",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 3
+      },
+      "home": {
+        "team_id": null,
+        "name": "Virginia",
+        "short_name": "UVA",
+        "score": 59
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Scott Stadium",
+        "city": "Charlottesville, VA",
+        "venue_label": "Scott Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "UAPBALC12092026",
+      "schedule_game_id": "2026-09-12_swacuapb_at_swacalc",
+      "game_path_id": "uapbalc26",
+      "preview_path_id": null,
+      "route": "/game/uapbalc26",
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "6:05 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 51
+      },
+      "home": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 53
+      },
+      "neutral_site": true,
+      "winner_team_id": "swacalc",
+      "event": {
+        "kind": "classic",
+        "name": "Southern Heritage Classic"
+      },
+      "venue": {
+        "stadium_name": "Simmons Bank Liberty Stadium",
+        "city": "Memphis",
+        "venue_label": "Simmons Bank Liberty Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-09-12_meachu_at_indiana",
+      "schedule_game_id": "2026-09-12_meachu_at_indiana",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "12:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 0
+      },
+      "home": {
+        "team_id": null,
+        "name": "Indiana",
+        "short_name": "IND",
+        "score": 55
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Bloomington, IN",
+        "venue_label": "Bloomington, IN"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_meacncat_at_meacnccu",
+      "schedule_game_id": "2026-09-12_meacncat_at_meacnccu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "12:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacncat",
+        "name": "NC A&T",
+        "short_name": "NCAT",
+        "score": 22
+      },
+      "home": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 30
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacnccu",
+      "event": null,
+      "venue": {
+        "stadium_name": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "venue_label": "O'Kelly-Riddick Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_bowiestate_at_meacdsu",
+      "schedule_game_id": "2026-09-12_bowiestate_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "3:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Bowie State",
+        "short_name": "BOWIE",
+        "score": 6
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 21
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacdsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Alumni Stadium",
+        "city": "Dover",
+        "venue_label": "Alumni Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_stetson_at_swacbcu",
+      "schedule_game_id": "2026-09-12_stetson_at_swacbcu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "4:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Stetson",
+        "short_name": "STET",
+        "score": 18
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 43
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacbcu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "venue_label": "Daytona Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_virginialynchbur_at_meacmsu",
+      "schedule_game_id": "2026-09-12_virginialynchbur_at_meacmsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Virginia-Lynchburg",
+        "short_name": "VUL",
+        "score": 0
+      },
+      "home": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 55
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacmsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Hughes Stadium",
+        "city": "Baltimore",
+        "venue_label": "Hughes Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_virginiastate_at_meacscsu",
+      "schedule_game_id": "2026-09-12_virginiastate_at_meacscsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Virginia State",
+        "short_name": "VSU",
+        "score": 0
+      },
+      "home": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 66
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacscsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "venue_label": "Oliver C. Dawson Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_swacpvamu_at_baylor",
+      "schedule_game_id": "2026-09-12_swacpvamu_at_baylor",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "7:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 3
+      },
+      "home": {
+        "team_id": null,
+        "name": "Baylor",
+        "short_name": "BAY",
+        "score": 44
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "McLane Stadium",
+        "city": "Waco, Texas",
+        "venue_label": "McLane Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_lincolnpa_at_swacmvsu",
+      "schedule_game_id": "2026-09-12_lincolnpa_at_swacmvsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Lincoln (PA)",
+        "short_name": "LINCPA",
+        "score": 20
+      },
+      "home": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 31
+      },
+      "neutral_site": true,
+      "winner_team_id": "swacmvsu",
+      "event": {
+        "kind": "classic",
+        "name": "Chicago (Football) Classic"
+      },
+      "venue": {
+        "stadium_name": "Soldier Field",
+        "city": "Chicago, Illinois",
+        "venue_label": "Soldier Field"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_swacasu_at_troy",
+      "schedule_game_id": "2026-09-12_swacasu_at_troy",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 17
+      },
+      "home": {
+        "team_id": null,
+        "name": "Troy",
+        "short_name": "TROY",
+        "score": 34
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Troy, AL",
+        "venue_label": "Troy, AL"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_swacgsu_at_tcu",
+      "schedule_game_id": "2026-09-12_swacgsu_at_tcu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 7
+      },
+      "home": {
+        "team_id": null,
+        "name": "TCU",
+        "short_name": "TCU",
+        "score": 63
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Fort Worth, TX",
+        "venue_label": "Fort Worth, TX"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_swacsu_at_houston",
+      "schedule_game_id": "2026-09-12_swacsu_at_houston",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 6
+      },
+      "home": {
+        "team_id": null,
+        "name": "Houston",
+        "short_name": "HOU",
+        "score": 77
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "TDECU Stadium",
+        "city": "Houston, TX",
+        "venue_label": "TDECU Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_swactsu_at_utep",
+      "schedule_game_id": "2026-09-12_swactsu_at_utep",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 10
+      },
+      "home": {
+        "team_id": null,
+        "name": "UTEP",
+        "short_name": "UTEP",
+        "score": 51
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "El Paso, Texas",
+        "venue_label": "El Paso, Texas"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-12_tennesseestate_at_swacaamu",
+      "schedule_game_id": "2026-09-12_tennesseestate_at_swacaamu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 2,
+      "week_label": "Week 2",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "score": 3
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 30
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacaamu",
+      "event": {
+        "kind": "classic",
+        "name": "The Legacy Series"
+      },
+      "venue": {
+        "stadium_name": "Louis Crews Stadium",
+        "city": "Normal",
+        "venue_label": "Louis Crews Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_virginialynchbur_at_swacbcu",
+      "schedule_game_id": "2026-09-19_virginialynchbur_at_swacbcu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": "4:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Virginia-Lynchburg",
+        "short_name": "VUL",
+        "score": 3
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 62
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacbcu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "venue_label": "Daytona Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_meacmsu_at_towson",
+      "schedule_game_id": "2026-09-19_meacmsu_at_towson",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 41
+      },
+      "home": {
+        "team_id": null,
+        "name": "Towson",
+        "short_name": "TOW",
+        "score": 26
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacmsu",
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Towson, MD",
+        "venue_label": "Towson, MD"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_meacnccu_at_gardnerwebb",
+      "schedule_game_id": "2026-09-19_meacnccu_at_gardnerwebb",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 20
+      },
+      "home": {
+        "team_id": null,
+        "name": "Gardner-Webb",
+        "short_name": "GWEB",
+        "score": 44
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Spangler Stadium",
+        "city": "Boiling Springs, NC",
+        "venue_label": "Spangler Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_meacdsu_at_southflorida",
+      "schedule_game_id": "2026-09-19_meacdsu_at_southflorida",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": "7:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 17
+      },
+      "home": {
+        "team_id": null,
+        "name": "South Florida",
+        "short_name": "USF",
+        "score": 59
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Tampa, FL",
+        "venue_label": "Tampa, FL"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_meacscsu_at_furman",
+      "schedule_game_id": "2026-09-19_meacscsu_at_furman",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": "7:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 20
+      },
+      "home": {
+        "team_id": null,
+        "name": "Furman",
+        "short_name": "FUR",
+        "score": 17
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacscsu",
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Greenville, SC",
+        "venue_label": "Greenville, SC"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_stephenfaustin_at_swacpvamu",
+      "schedule_game_id": "2026-09-19_stephenfaustin_at_swacpvamu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": "7:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Stephen F. Austin",
+        "short_name": "SFA",
+        "score": 31
+      },
+      "home": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 10
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Panther Stadium at Blackshear Field",
+        "city": "Prairie View",
+        "venue_label": "Panther Stadium at Blackshear Field"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_bowiestate_at_swacaamu",
+      "schedule_game_id": "2026-09-19_bowiestate_at_swacaamu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Bowie State",
+        "short_name": "BOWIE",
+        "score": 3
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 45
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacaamu",
+      "event": {
+        "kind": "classic",
+        "name": "Hall of Fame Game"
+      },
+      "venue": {
+        "stadium_name": "Louis Crews Stadium",
+        "city": "Normal",
+        "venue_label": "Louis Crews Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_centralstate_at_swacuapb",
+      "schedule_game_id": "2026-09-19_centralstate_at_swacuapb",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Central State",
+        "short_name": "CENTST",
+        "score": 35
+      },
+      "home": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 41
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacuapb",
+      "event": null,
+      "venue": {
+        "stadium_name": "Simmons Bank Field",
+        "city": "Pine Bluff",
+        "venue_label": "Simmons Bank Field"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_deltastate_at_swacmvsu",
+      "schedule_game_id": "2026-09-19_deltastate_at_swacmvsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Delta State",
+        "short_name": "DELTA",
+        "score": 21
+      },
+      "home": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 6
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": {
+        "kind": "classic",
+        "name": "Delta/Delta-Bayou Classic"
+      },
+      "venue": {
+        "stadium_name": "Rice-Totten Stadium",
+        "city": "Itta Bena",
+        "venue_label": "Rice-Totten Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_hampton_at_meacnsu",
+      "schedule_game_id": "2026-09-19_hampton_at_meacnsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Hampton",
+        "short_name": "HAMP",
+        "score": 21
+      },
+      "home": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 42
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacnsu",
+      "event": {
+        "kind": "classic",
+        "name": "Battle of the Bay"
+      },
+      "venue": {
+        "stadium_name": "William \"Dick\" Price Stadium",
+        "city": "Norfolk",
+        "venue_label": "William \"Dick\" Price Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_louisianachristi_at_swacsu",
+      "schedule_game_id": "2026-09-19_louisianachristi_at_swacsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Louisiana Christian",
+        "short_name": "LCU",
+        "score": 31
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 50
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "A.W. Mumford Stadium",
+        "city": "Baton Rouge",
+        "venue_label": "A.W. Mumford Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_swacalc_at_northalabama",
+      "schedule_game_id": "2026-09-19_swacalc_at_northalabama",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 20
+      },
+      "home": {
+        "team_id": null,
+        "name": "North Alabama",
+        "short_name": "UNA",
+        "score": 38
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Florence, Ala.",
+        "venue_label": "Florence, Ala."
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_tennesseestate_at_swacfamu",
+      "schedule_game_id": "2026-09-19_tennesseestate_at_swacfamu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "score": 29
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 26
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Bragg Memorial Stadium",
+        "city": "Tallahassee",
+        "venue_label": "Bragg Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-19_tuskegee_at_swacjsu",
+      "schedule_game_id": "2026-09-19_tuskegee_at_swacjsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 3,
+      "week_label": "Week 3",
+      "date": "2026-09-19",
+      "date_label": "Sep 19",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Tuskegee",
+        "short_name": "TUSK",
+        "score": 7
+      },
+      "home": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 41
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacjsu",
+      "event": {
+        "kind": "classic",
+        "name": "W.C. Gorden Classic"
+      },
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "venue_label": "Mississippi Veterans Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-25_meachu_at_rutgers",
+      "schedule_game_id": "2026-09-25_meachu_at_rutgers",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-25",
+      "date_label": "Sep 25",
+      "kickoff_label": "7:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 7
+      },
+      "home": {
+        "team_id": null,
+        "name": "Rutgers",
+        "short_name": "RUTG",
+        "score": 58
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Piscataway, NJ",
+        "venue_label": "Piscataway, NJ"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "TSUALC26092026",
+      "schedule_game_id": "2026-09-26_swactsu_at_swacalc",
+      "game_path_id": "tsualc26",
+      "preview_path_id": null,
+      "route": "/game/tsualc26",
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "3:08 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 40
+      },
+      "home": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 43
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacalc",
+      "event": null,
+      "venue": {
+        "stadium_name": "Jack Spinks-Marino Casem Stadium",
+        "city": "Lorman",
+        "venue_label": "Jack Spinks-Marino Casem Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "MVSUASU26092026",
+      "schedule_game_id": "2026-09-26_swacmvsu_at_swacasu",
+      "game_path_id": "mvsuasu26",
+      "preview_path_id": null,
+      "route": "/game/mvsuasu26",
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "5:05 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 15
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 41
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacasu",
+      "event": null,
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "PVAMUGRAM26092026",
+      "schedule_game_id": "2026-09-26_swacpvamu_at_swacgsu",
+      "game_path_id": "pvamugsu26",
+      "preview_path_id": null,
+      "route": "/game/pvamugsu26",
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "6:02 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 21
+      },
+      "home": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 14
+      },
+      "neutral_site": true,
+      "winner_team_id": "swacpvamu",
+      "event": {
+        "kind": "classic",
+        "name": "State Fair Classic/Showdown"
+      },
+      "venue": {
+        "stadium_name": "Cotton Bowl",
+        "city": "Dallas",
+        "venue_label": "Cotton Bowl"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "SUJSU26092026",
+      "schedule_game_id": "2026-09-26_swacsu_at_swacjsu",
+      "game_path_id": "sujsu26",
+      "preview_path_id": null,
+      "route": "/game/sujsu26",
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "6:02 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 17
+      },
+      "home": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 35
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacjsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "venue_label": "Mississippi Veterans Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "SCSUBCU26092026",
+      "schedule_game_id": "2026-09-26_meacscsu_at_swacbcu",
+      "game_path_id": "scsubcu26",
+      "preview_path_id": null,
+      "route": "/game/scsubcu26",
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "7:05 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 31
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 21
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacscsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "venue_label": "Daytona Stadium"
+      },
+      "conference_scope": "cross_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "AAMUFAMU26092026",
+      "schedule_game_id": "2026-09-26_swacaamu_at_swacfamu",
+      "game_path_id": "aamufamu26",
+      "preview_path_id": null,
+      "route": "/game/aamufamu26",
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "7:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 40
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 21
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacaamu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Bragg Memorial Stadium",
+        "city": "Tallahassee",
+        "venue_label": "Bragg Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-09-26_meacnccu_at_eastcarolina",
+      "schedule_game_id": "2026-09-26_meacnccu_at_eastcarolina",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "4:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 9
+      },
+      "home": {
+        "team_id": null,
+        "name": "East Carolina",
+        "short_name": "ECU",
+        "score": 42
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Dowdy-Ficklen Stadium",
+        "city": "Greenville, N.C.",
+        "venue_label": "Dowdy-Ficklen Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-26_towson_at_meacdsu",
+      "schedule_game_id": "2026-09-26_towson_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Towson",
+        "short_name": "TOW",
+        "score": 28
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 33
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacdsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Alumni Stadium",
+        "city": "Dover",
+        "venue_label": "Alumni Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-09-26_meacnsu_at_chicagostate",
+      "schedule_game_id": "2026-09-26_meacnsu_at_chicagostate",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 4,
+      "week_label": "Week 4",
+      "date": "2026-09-26",
+      "date_label": "Sep 26",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 43
+      },
+      "home": {
+        "team_id": null,
+        "name": "Chicago State",
+        "short_name": "CHIST",
+        "score": 20
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacnsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "SeatGeek Stadium",
+        "city": "Chicago, IL",
+        "venue_label": "SeatGeek Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "PVAMUMVSU03102026",
+      "schedule_game_id": "2026-10-03_swacpvamu_at_swacmvsu",
+      "game_path_id": "pvamumvsu26",
+      "preview_path_id": null,
+      "route": "/game/pvamumvsu26",
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "2:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 27
+      },
+      "home": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 28
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacmvsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Rice-Totten Stadium",
+        "city": "Itta Bena",
+        "venue_label": "Rice-Totten Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "ALCGRAM03102026",
+      "schedule_game_id": "2026-10-03_swacalc_at_swacgsu",
+      "game_path_id": "alcgsu26",
+      "preview_path_id": null,
+      "route": "/game/alcgsu26",
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "2:08 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 59
+      },
+      "home": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 63
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacgsu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Eddie G. Robinson Memorial Stadium",
+        "city": "Grambling",
+        "venue_label": "Eddie G. Robinson Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "ASUBCU03102026",
+      "schedule_game_id": "2026-10-03_swacasu_at_swacbcu",
+      "game_path_id": "asubcu26",
+      "preview_path_id": null,
+      "route": "/game/asubcu26",
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "4:07 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 10
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 16
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacbcu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "venue_label": "Daytona Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "AAMUJSU03102026",
+      "schedule_game_id": "2026-10-03_swacaamu_at_swacjsu",
+      "game_path_id": "aamujsu26",
+      "preview_path_id": null,
+      "route": "/game/aamujsu26",
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "4:08 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 28
+      },
+      "home": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 31
+      },
+      "neutral_site": true,
+      "winner_team_id": "swacjsu",
+      "event": {
+        "kind": "classic",
+        "name": "Gulf Coast Challenge"
+      },
+      "venue": {
+        "stadium_name": "Ladd-Peebles Stadium",
+        "city": "Mobile",
+        "venue_label": "Ladd-Peebles Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "UAPBSU03102026",
+      "schedule_game_id": "2026-10-03_swacuapb_at_swacsu",
+      "game_path_id": "uapbsu26",
+      "preview_path_id": null,
+      "route": "/game/uapbsu26",
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "6:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 41
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 10
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacuapb",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "A.W. Mumford Stadium",
+        "city": "Baton Rouge",
+        "venue_label": "A.W. Mumford Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-03_meacmsu_at_villanova",
+      "schedule_game_id": "2026-10-03_meacmsu_at_villanova",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "1:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 38
+      },
+      "home": {
+        "team_id": null,
+        "name": "Villanova",
+        "short_name": "NOVA",
+        "score": 35
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacmsu",
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Villanova, PA",
+        "venue_label": "Villanova, PA"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-03_thecitadel_at_meacscsu",
+      "schedule_game_id": "2026-10-03_thecitadel_at_meacscsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "2:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "The Citadel",
+        "short_name": "CIT",
+        "score": 34
+      },
+      "home": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 31
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "venue_label": "Oliver C. Dawson Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-03_meachu_at_hampton",
+      "schedule_game_id": "2026-10-03_meachu_at_hampton",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "3:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 27
+      },
+      "home": {
+        "team_id": null,
+        "name": "Hampton",
+        "short_name": "HAMP",
+        "score": 13
+      },
+      "neutral_site": true,
+      "winner_team_id": "meachu",
+      "event": {
+        "kind": "classic",
+        "name": "Battle of the Real HU"
+      },
+      "venue": {
+        "stadium_name": "Audi Field",
+        "city": "Washington",
+        "venue_label": "Audi Field"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-03_meacdsu_at_ualbany",
+      "schedule_game_id": "2026-10-03_meacdsu_at_ualbany",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "3:30 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 3
+      },
+      "home": {
+        "team_id": null,
+        "name": "UAlbany",
+        "short_name": "UALBANY",
+        "score": 28
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Albany, NY",
+        "venue_label": "Albany, NY"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-03_campbell_at_meacnccu",
+      "schedule_game_id": "2026-10-03_campbell_at_meacnccu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": "6:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Campbell",
+        "short_name": "CAMP",
+        "score": 38
+      },
+      "home": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 31
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "venue_label": "O'Kelly-Riddick Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-03_meacnsu_at_robertmorris",
+      "schedule_game_id": "2026-10-03_meacnsu_at_robertmorris",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 31
+      },
+      "home": {
+        "team_id": null,
+        "name": "Robert Morris",
+        "short_name": "RMU",
+        "score": 33
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Joe Walton Stadium",
+        "city": "Moon Township, PA",
+        "venue_label": "Joe Walton Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-03_swactsu_at_floridaatlantic",
+      "schedule_game_id": "2026-10-03_swactsu_at_floridaatlantic",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 5,
+      "week_label": "Week 5",
+      "date": "2026-10-03",
+      "date_label": "Oct 3",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 10
+      },
+      "home": {
+        "team_id": null,
+        "name": "Florida Atlantic",
+        "short_name": "FAU",
+        "score": 66
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Boca Raton, Fla.",
+        "venue_label": "Boca Raton, Fla."
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "FAMUASU09102026",
+      "schedule_game_id": "2026-10-09_swacfamu_at_swacasu",
+      "game_path_id": "famuasu26",
+      "preview_path_id": null,
+      "route": "/game/famuasu26",
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-09",
+      "date_label": "Oct 9",
+      "kickoff_label": "11:06 AM",
+      "status": "final",
+      "away": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 28
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 27
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacfamu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "MVSUTSU10102026",
+      "schedule_game_id": "2026-10-10_swacmvsu_at_swactsu",
+      "game_path_id": "mvsutsu26",
+      "preview_path_id": null,
+      "route": "/game/mvsutsu26",
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "2:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 38
+      },
+      "home": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 34
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacmvsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "W.W. Thorne Stadium",
+        "city": "Houston",
+        "venue_label": "W.W. Thorne Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "SUPVAMU10102026",
+      "schedule_game_id": "2026-10-10_swacsu_at_swacpvamu",
+      "game_path_id": "supvamu26",
+      "preview_path_id": null,
+      "route": "/game/supvamu26",
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "3:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 28
+      },
+      "home": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 14
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Panther Stadium at Blackshear Field",
+        "city": "Prairie View",
+        "venue_label": "Panther Stadium at Blackshear Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "JSUGRAM10102026",
+      "schedule_game_id": "2026-10-10_swacjsu_at_swacgsu",
+      "game_path_id": "jsugsu26",
+      "preview_path_id": null,
+      "route": "/game/jsugsu26",
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "4:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 38
+      },
+      "home": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 45
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacgsu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Eddie G. Robinson Memorial Stadium",
+        "city": "Grambling",
+        "venue_label": "Eddie G. Robinson Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-10_robertmorris_at_meacmsu",
+      "schedule_game_id": "2026-10-10_robertmorris_at_meacmsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "12:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Robert Morris",
+        "short_name": "RMU",
+        "score": 27
+      },
+      "home": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 28
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacmsu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Hughes Stadium",
+        "city": "Baltimore",
+        "venue_label": "Hughes Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "BCUAAMU10102026",
+      "schedule_game_id": "2026-10-10_swacbcu_at_swacaamu",
+      "game_path_id": "bcuaamu26",
+      "preview_path_id": null,
+      "route": "/game/bcuaamu26",
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "12:07 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 17
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 55
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacaamu",
+      "event": null,
+      "venue": {
+        "stadium_name": "Louis Crews Stadium",
+        "city": "Normal",
+        "venue_label": "Louis Crews Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-10_franklinpierce_at_meacdsu",
+      "schedule_game_id": "2026-10-10_franklinpierce_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "1:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Franklin Pierce",
+        "short_name": "FPU",
+        "score": 0
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 34
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacdsu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Alumni Stadium",
+        "city": "Dover",
+        "venue_label": "Alumni Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-10_meachu_at_penn",
+      "schedule_game_id": "2026-10-10_meachu_at_penn",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "1:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 20
+      },
+      "home": {
+        "team_id": null,
+        "name": "Penn",
+        "short_name": "PENN",
+        "score": 24
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Philadelphia, PA",
+        "venue_label": "Philadelphia, PA"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-10_williammary_at_meacnccu",
+      "schedule_game_id": "2026-10-10_williammary_at_meacnccu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": "1:00 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "William & Mary",
+        "short_name": "W&M",
+        "score": 17
+      },
+      "home": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 14
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "venue_label": "O'Kelly-Riddick Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-10_arkansasbaptist_at_swacalc",
+      "schedule_game_id": "2026-10-10_arkansasbaptist_at_swacalc",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Arkansas Baptist",
+        "short_name": "ARKBAP",
+        "score": 7
+      },
+      "home": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 63
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacalc",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Jack Spinks-Marino Casem Stadium",
+        "city": "Lorman",
+        "venue_label": "Jack Spinks-Marino Casem Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-10_meacscsu_at_charlestonsouthe",
+      "schedule_game_id": "2026-10-10_meacscsu_at_charlestonsouthe",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 39
+      },
+      "home": {
+        "team_id": null,
+        "name": "Charleston Southern",
+        "short_name": "CHSO",
+        "score": 49
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": null,
+        "city": "Charleston, SC",
+        "venue_label": "Charleston, SC"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-10_virginialynchbur_at_meacnsu",
+      "schedule_game_id": "2026-10-10_virginialynchbur_at_meacnsu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 6,
+      "week_label": "Week 6",
+      "date": "2026-10-10",
+      "date_label": "Oct 10",
+      "kickoff_label": null,
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Virginia-Lynchburg",
+        "short_name": "VUL",
+        "score": 0
+      },
+      "home": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 62
+      },
+      "neutral_site": false,
+      "winner_team_id": "meacnsu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "William \"Dick\" Price Stadium",
+        "city": "Norfolk",
+        "venue_label": "William \"Dick\" Price Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "FAMUJSU17102026",
+      "schedule_game_id": "2026-10-17_swacfamu_at_swacjsu",
+      "game_path_id": "famujsu26",
+      "preview_path_id": null,
+      "route": "/game/famujsu26",
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "2:04 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 17
+      },
+      "home": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 27
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacjsu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "venue_label": "Mississippi Veterans Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "ALCPVAMU17102026",
+      "schedule_game_id": "2026-10-17_swacalc_at_swacpvamu",
+      "game_path_id": "alcpvamu26",
+      "preview_path_id": null,
+      "route": "/game/alcpvamu26",
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "2:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 38
+      },
+      "home": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 41
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacpvamu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Panther Stadium at Blackshear Field",
+        "city": "Prairie View",
+        "venue_label": "Panther Stadium at Blackshear Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "ASUUAPB17102026",
+      "schedule_game_id": "2026-10-17_swacasu_at_swacuapb",
+      "game_path_id": "asuuapb26",
+      "preview_path_id": null,
+      "route": "/game/asuuapb26",
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "2:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 21
+      },
+      "home": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 15
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacasu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Simmons Bank Field",
+        "city": "Pine Bluff",
+        "venue_label": "Simmons Bank Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "GRAMAAMU17102026",
+      "schedule_game_id": "2026-10-17_swacgsu_at_swacaamu",
+      "game_path_id": "gsuaamu26",
+      "preview_path_id": null,
+      "route": "/game/gsuaamu26",
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "2:06 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 31
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 61
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacaamu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Louis Crews Stadium",
+        "city": "Normal",
+        "venue_label": "Louis Crews Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "BCUMVSU17102026",
+      "schedule_game_id": "2026-10-17_swacbcu_at_swacmvsu",
+      "game_path_id": "bcumvsu26",
+      "preview_path_id": null,
+      "route": "/game/bcumvsu26",
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "2:08 PM",
+      "status": "final",
+      "away": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 34
+      },
+      "home": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 14
+      },
+      "neutral_site": false,
+      "winner_team_id": "swacbcu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Rice-Totten Stadium",
+        "city": "Itta Bena",
+        "venue_label": "Rice-Totten Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-17_morehouse_at_meachu",
+      "schedule_game_id": "2026-10-17_morehouse_at_meachu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "3:30 PM",
+      "status": "final",
+      "away": {
+        "team_id": null,
+        "name": "Morehouse",
+        "short_name": "MORE",
+        "score": 17
+      },
+      "home": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 31
+      },
+      "neutral_site": false,
+      "winner_team_id": "meachu",
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Greene Stadium",
+        "city": "Washington",
+        "venue_label": "Greene Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-17_meacmsu_at_tennesseestate",
+      "schedule_game_id": "2026-10-17_meacmsu_at_tennesseestate",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 7,
+      "week_label": "Week 7",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "6:30 PM",
+      "status": "final",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 16
+      },
+      "home": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "score": 25
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Nissan Stadium",
+        "city": "Nashville, TN",
+        "venue_label": "Nissan Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-23_meacnccu_at_meacdsu",
+      "schedule_game_id": "2026-10-23_meacnccu_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-23_meacnccu_at_meacdsu",
+      "route": "/game/preview/2026-10-23_meacnccu_at_meacdsu",
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-23",
+      "date_label": "Oct 23",
+      "kickoff_label": "5:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Alumni Stadium",
+        "city": "Dover",
+        "venue_label": "Alumni Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-24_swacjsu_at_swacbcu",
+      "schedule_game_id": "2026-10-24_swacjsu_at_swacbcu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-24_swacjsu_at_swacbcu",
+      "route": "/game/preview/2026-10-24_swacjsu_at_swacbcu",
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "kickoff_label": "1:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "venue_label": "Daytona Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-24_meacnsu_at_meacscsu",
+      "schedule_game_id": "2026-10-24_meacnsu_at_meacscsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-24_meacnsu_at_meacscsu",
+      "route": "/game/preview/2026-10-24_meacnsu_at_meacscsu",
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "kickoff_label": "1:30 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "venue_label": "Oliver C. Dawson Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-24_meachu_at_meacmsu",
+      "schedule_game_id": "2026-10-24_meachu_at_meacmsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-24_meachu_at_meacmsu",
+      "route": "/game/preview/2026-10-24_meachu_at_meacmsu",
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "kickoff_label": "3:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Hughes Stadium",
+        "city": "Baltimore",
+        "venue_label": "Hughes Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-24_swacpvamu_at_easttexasam",
+      "schedule_game_id": "2026-10-24_swacpvamu_at_easttexasam",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "kickoff_label": "6:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": null,
+        "name": "East Texas A&M",
+        "short_name": "ETAMU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Memorial Stadium",
+        "city": "Commerce, Texas",
+        "venue_label": "Memorial Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-10-24_swacsu_at_swactsu",
+      "schedule_game_id": "2026-10-24_swacsu_at_swactsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-24_swacsu_at_swactsu",
+      "route": "/game/preview/2026-10-24_swacsu_at_swactsu",
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "NRG Stadium",
+        "city": "Houston",
+        "venue_label": "NRG Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-24_swacuapb_at_swacfamu",
+      "schedule_game_id": "2026-10-24_swacuapb_at_swacfamu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-24_swacuapb_at_swacfamu",
+      "route": "/game/preview/2026-10-24_swacuapb_at_swacfamu",
+      "week": 8,
+      "week_label": "Week 8",
+      "date": "2026-10-24",
+      "date_label": "Oct 24",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": {
+        "kind": "homecoming",
+        "name": "Homecoming"
+      },
+      "venue": {
+        "stadium_name": "Bragg Memorial Stadium",
+        "city": "Tallahassee",
+        "venue_label": "Bragg Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-29_meacscsu_at_meacmsu",
+      "schedule_game_id": "2026-10-29_meacscsu_at_meacmsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-29_meacscsu_at_meacmsu",
+      "route": "/game/preview/2026-10-29_meacscsu_at_meacmsu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-29",
+      "date_label": "Oct 29",
+      "kickoff_label": "7:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Hughes Stadium",
+        "city": "Baltimore",
+        "venue_label": "Hughes Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_meachu_at_meacnccu",
+      "schedule_game_id": "2026-10-31_meachu_at_meacnccu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_meachu_at_meacnccu",
+      "route": "/game/preview/2026-10-31_meachu_at_meacnccu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": "2:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "venue_label": "O'Kelly-Riddick Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_meacnsu_at_meacdsu",
+      "schedule_game_id": "2026-10-31_meacnsu_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_meacnsu_at_meacdsu",
+      "route": "/game/preview/2026-10-31_meacnsu_at_meacdsu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": "2:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": null
+      },
+      "neutral_site": true,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Lincoln Financial Field",
+        "city": "Philadelphia",
+        "venue_label": "Lincoln Financial Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_swacaamu_at_swacasu",
+      "schedule_game_id": "2026-10-31_swacaamu_at_swacasu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_swacaamu_at_swacasu",
+      "route": "/game/preview/2026-10-31_swacaamu_at_swacasu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": null
+      },
+      "neutral_site": true,
+      "winner_team_id": null,
+      "event": {
+        "kind": "classic",
+        "name": "Magic City Classic"
+      },
+      "venue": {
+        "stadium_name": "Legion Field",
+        "city": "Birmingham",
+        "venue_label": "Legion Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_swacalc_at_swacmvsu",
+      "schedule_game_id": "2026-10-31_swacalc_at_swacmvsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_swacalc_at_swacmvsu",
+      "route": "/game/preview/2026-10-31_swacalc_at_swacmvsu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Rice-Totten Stadium",
+        "city": "Itta Bena",
+        "venue_label": "Rice-Totten Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_swacbcu_at_swacuapb",
+      "schedule_game_id": "2026-10-31_swacbcu_at_swacuapb",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_swacbcu_at_swacuapb",
+      "route": "/game/preview/2026-10-31_swacbcu_at_swacuapb",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Simmons Bank Field",
+        "city": "Pine Bluff",
+        "venue_label": "Simmons Bank Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_swacgsu_at_swactsu",
+      "schedule_game_id": "2026-10-31_swacgsu_at_swactsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_swacgsu_at_swactsu",
+      "route": "/game/preview/2026-10-31_swacgsu_at_swactsu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": null
+      },
+      "home": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "W.W. Thorne Stadium",
+        "city": "Houston",
+        "venue_label": "W.W. Thorne Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-10-31_swacsu_at_swacfamu",
+      "schedule_game_id": "2026-10-31_swacsu_at_swacfamu",
+      "game_path_id": null,
+      "preview_path_id": "2026-10-31_swacsu_at_swacfamu",
+      "route": "/game/preview/2026-10-31_swacsu_at_swacfamu",
+      "week": 9,
+      "week_label": "Week 9",
+      "date": "2026-10-31",
+      "date_label": "Oct 31",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Bragg Memorial Stadium",
+        "city": "Tallahassee",
+        "venue_label": "Bragg Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-05_meacscsu_at_meachu",
+      "schedule_game_id": "2026-11-05_meacscsu_at_meachu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-05_meacscsu_at_meachu",
+      "route": "/game/preview/2026-11-05_meacscsu_at_meachu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-05",
+      "date_label": "Nov 5",
+      "kickoff_label": "7:30 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Greene Stadium",
+        "city": "Washington",
+        "venue_label": "Greene Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_meacmsu_at_meacdsu",
+      "schedule_game_id": "2026-11-07_meacmsu_at_meacdsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_meacmsu_at_meacdsu",
+      "route": "/game/preview/2026-11-07_meacmsu_at_meacdsu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": "1:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Alumni Stadium",
+        "city": "Dover",
+        "venue_label": "Alumni Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_swacaamu_at_swacpvamu",
+      "schedule_game_id": "2026-11-07_swacaamu_at_swacpvamu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_swacaamu_at_swacpvamu",
+      "route": "/game/preview/2026-11-07_swacaamu_at_swacpvamu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": "2:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Panther Stadium at Blackshear Field",
+        "city": "Prairie View",
+        "venue_label": "Panther Stadium at Blackshear Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_meacnccu_at_meacnsu",
+      "schedule_game_id": "2026-11-07_meacnccu_at_meacnsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_meacnccu_at_meacnsu",
+      "route": "/game/preview/2026-11-07_meacnccu_at_meacnsu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "William \"Dick\" Price Stadium",
+        "city": "Norfolk",
+        "venue_label": "William \"Dick\" Price Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_swacasu_at_swactsu",
+      "schedule_game_id": "2026-11-07_swacasu_at_swactsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_swacasu_at_swactsu",
+      "route": "/game/preview/2026-11-07_swacasu_at_swactsu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": null
+      },
+      "home": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "W.W. Thorne Stadium",
+        "city": "Houston",
+        "venue_label": "W.W. Thorne Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_swacbcu_at_swacsu",
+      "schedule_game_id": "2026-11-07_swacbcu_at_swacsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_swacbcu_at_swacsu",
+      "route": "/game/preview/2026-11-07_swacbcu_at_swacsu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "A.W. Mumford Stadium",
+        "city": "Baton Rouge",
+        "venue_label": "A.W. Mumford Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_swacfamu_at_swacalc",
+      "schedule_game_id": "2026-11-07_swacfamu_at_swacalc",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_swacfamu_at_swacalc",
+      "route": "/game/preview/2026-11-07_swacfamu_at_swacalc",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Jack Spinks-Marino Casem Stadium",
+        "city": "Lorman",
+        "venue_label": "Jack Spinks-Marino Casem Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_swacmvsu_at_swacjsu",
+      "schedule_game_id": "2026-11-07_swacmvsu_at_swacjsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_swacmvsu_at_swacjsu",
+      "route": "/game/preview/2026-11-07_swacmvsu_at_swacjsu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "venue_label": "Mississippi Veterans Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-07_swacuapb_at_swacgsu",
+      "schedule_game_id": "2026-11-07_swacuapb_at_swacgsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-07_swacuapb_at_swacgsu",
+      "route": "/game/preview/2026-11-07_swacuapb_at_swacgsu",
+      "week": 10,
+      "week_label": "Week 10",
+      "date": "2026-11-07",
+      "date_label": "Nov 7",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Eddie G. Robinson Memorial Stadium",
+        "city": "Grambling",
+        "venue_label": "Eddie G. Robinson Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_meacnsu_at_meacmsu",
+      "schedule_game_id": "2026-11-14_meacnsu_at_meacmsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_meacnsu_at_meacmsu",
+      "route": "/game/preview/2026-11-14_meacnsu_at_meacmsu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": "12:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Hughes Stadium",
+        "city": "Baltimore",
+        "venue_label": "Hughes Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_meacdsu_at_meachu",
+      "schedule_game_id": "2026-11-14_meacdsu_at_meachu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_meacdsu_at_meachu",
+      "route": "/game/preview/2026-11-14_meacdsu_at_meachu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": "1:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Greene Stadium",
+        "city": "Washington",
+        "venue_label": "Greene Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_swacgsu_at_swacbcu",
+      "schedule_game_id": "2026-11-14_swacgsu_at_swacbcu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_swacgsu_at_swacbcu",
+      "route": "/game/preview/2026-11-14_swacgsu_at_swacbcu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": "1:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "venue_label": "Daytona Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_meacnccu_at_meacscsu",
+      "schedule_game_id": "2026-11-14_meacnccu_at_meacscsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_meacnccu_at_meacscsu",
+      "route": "/game/preview/2026-11-14_meacnccu_at_meacscsu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": "1:30 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "venue_label": "Oliver C. Dawson Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_swacalc_at_swacsu",
+      "schedule_game_id": "2026-11-14_swacalc_at_swacsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_swacalc_at_swacsu",
+      "route": "/game/preview/2026-11-14_swacalc_at_swacsu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "A.W. Mumford Stadium",
+        "city": "Baton Rouge",
+        "venue_label": "A.W. Mumford Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_swacjsu_at_swacasu",
+      "schedule_game_id": "2026-11-14_swacjsu_at_swacasu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_swacjsu_at_swacasu",
+      "route": "/game/preview/2026-11-14_swacjsu_at_swacasu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_swacmvsu_at_swacfamu",
+      "schedule_game_id": "2026-11-14_swacmvsu_at_swacfamu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_swacmvsu_at_swacfamu",
+      "route": "/game/preview/2026-11-14_swacmvsu_at_swacfamu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Bragg Memorial Stadium",
+        "city": "Tallahassee",
+        "venue_label": "Bragg Memorial Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_swacpvamu_at_swacuapb",
+      "schedule_game_id": "2026-11-14_swacpvamu_at_swacuapb",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_swacpvamu_at_swacuapb",
+      "route": "/game/preview/2026-11-14_swacpvamu_at_swacuapb",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Simmons Bank Field",
+        "city": "Pine Bluff",
+        "venue_label": "Simmons Bank Field"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-14_swactsu_at_swacaamu",
+      "schedule_game_id": "2026-11-14_swactsu_at_swacaamu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-14_swactsu_at_swacaamu",
+      "route": "/game/preview/2026-11-14_swactsu_at_swacaamu",
+      "week": 11,
+      "week_label": "Week 11",
+      "date": "2026-11-14",
+      "date_label": "Nov 14",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Louis Crews Stadium",
+        "city": "Normal",
+        "venue_label": "Louis Crews Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_meacdsu_at_meacscsu",
+      "schedule_game_id": "2026-11-21_meacdsu_at_meacscsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_meacdsu_at_meacscsu",
+      "route": "/game/preview/2026-11-21_meacdsu_at_meacscsu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": "1:30 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "venue_label": "Oliver C. Dawson Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_meacmsu_at_meacnccu",
+      "schedule_game_id": "2026-11-21_meacmsu_at_meacnccu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_meacmsu_at_meacnccu",
+      "route": "/game/preview/2026-11-21_meacmsu_at_meacnccu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": "2:00 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "venue_label": "O'Kelly-Riddick Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_swacfamu_at_swacbcu",
+      "schedule_game_id": "2026-11-21_swacfamu_at_swacbcu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_swacfamu_at_swacbcu",
+      "route": "/game/preview/2026-11-21_swacfamu_at_swacbcu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": "3:30 PM",
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": null
+      },
+      "neutral_site": true,
+      "winner_team_id": null,
+      "event": {
+        "kind": "classic",
+        "name": "Florida Classic"
+      },
+      "venue": {
+        "stadium_name": "Camping World Stadium",
+        "city": "Orlando",
+        "venue_label": "Camping World Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_meachu_at_meacnsu",
+      "schedule_game_id": "2026-11-21_meachu_at_meacnsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_meachu_at_meacnsu",
+      "route": "/game/preview/2026-11-21_meachu_at_meacnsu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": null
+      },
+      "home": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "William \"Dick\" Price Stadium",
+        "city": "Norfolk",
+        "venue_label": "William \"Dick\" Price Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_swacaamu_at_swacmvsu",
+      "schedule_game_id": "2026-11-21_swacaamu_at_swacmvsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_swacaamu_at_swacmvsu",
+      "route": "/game/preview/2026-11-21_swacaamu_at_swacmvsu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Rice-Totten Stadium",
+        "city": "Itta Bena",
+        "venue_label": "Rice-Totten Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_swacjsu_at_swacalc",
+      "schedule_game_id": "2026-11-21_swacjsu_at_swacalc",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_swacjsu_at_swacalc",
+      "route": "/game/preview/2026-11-21_swacjsu_at_swacalc",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "Jack Spinks-Marino Casem Stadium",
+        "city": "Lorman",
+        "venue_label": "Jack Spinks-Marino Casem Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_swacpvamu_at_swacasu",
+      "schedule_game_id": "2026-11-21_swacpvamu_at_swacasu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_swacpvamu_at_swacasu",
+      "route": "/game/preview/2026-11-21_swacpvamu_at_swacasu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-21_swacuapb_at_swactsu",
+      "schedule_game_id": "2026-11-21_swacuapb_at_swactsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-21_swacuapb_at_swactsu",
+      "route": "/game/preview/2026-11-21_swacuapb_at_swactsu",
+      "week": 12,
+      "week_label": "Week 12",
+      "date": "2026-11-21",
+      "date_label": "Nov 21",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": null
+      },
+      "home": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": null,
+      "venue": {
+        "stadium_name": "W.W. Thorne Stadium",
+        "city": "Houston",
+        "venue_label": "W.W. Thorne Stadium"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    },
+    {
+      "game_id": "2026-11-26_tuskegee_at_swacasu",
+      "schedule_game_id": "2026-11-26_tuskegee_at_swacasu",
+      "game_path_id": null,
+      "preview_path_id": null,
+      "route": null,
+      "week": 13,
+      "week_label": "Week 13",
+      "date": "2026-11-26",
+      "date_label": "Nov 26",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": null,
+        "name": "Tuskegee",
+        "short_name": "TUSK",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": null
+      },
+      "neutral_site": false,
+      "winner_team_id": null,
+      "event": {
+        "kind": "classic",
+        "name": "Turkey Day Classic"
+      },
+      "venue": {
+        "stadium_name": "ASU Stadium",
+        "city": "Montgomery",
+        "venue_label": "ASU Stadium"
+      },
+      "conference_scope": "non_conference",
+      "game_type": "non_conference",
+      "is_covered_matchup": false
+    },
+    {
+      "game_id": "2026-11-28_swacgsu_at_swacsu",
+      "schedule_game_id": "2026-11-28_swacgsu_at_swacsu",
+      "game_path_id": null,
+      "preview_path_id": "2026-11-28_swacgsu_at_swacsu",
+      "route": "/game/preview/2026-11-28_swacgsu_at_swacsu",
+      "week": 13,
+      "week_label": "Week 13",
+      "date": "2026-11-28",
+      "date_label": "Nov 28",
+      "kickoff_label": null,
+      "status": "scheduled",
+      "away": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": null
+      },
+      "home": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": null
+      },
+      "neutral_site": true,
+      "winner_team_id": null,
+      "event": {
+        "kind": "classic",
+        "name": "Bayou Classic"
+      },
+      "venue": {
+        "stadium_name": "Caesars Superdome",
+        "city": "New Orleans",
+        "venue_label": "Caesars Superdome"
+      },
+      "conference_scope": "conference",
+      "game_type": "regular_conference",
+      "is_covered_matchup": true
+    }
+  ]
+}

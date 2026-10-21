@@ -1,0 +1,455 @@
+{
+  "team_id": "swacjsu",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "East",
+    "division_label": "SWAC EAST",
+    "season": 2025,
+    "team_abbreviation": "JKST",
+    "school_name": "Jackson State University",
+    "avg_par": 9.7,
+    "roster_count": 97,
+    "transfer_count": 53,
+    "transfer_rate": 54.6,
+    "upperclass_pct": 57.7
+  },
+  "conference_record": {
+    "conference_label": "7-1",
+    "conference_wins": 7,
+    "conference_losses": 1,
+    "overall_label": "9-3",
+    "overall_wins": 9,
+    "overall_losses": 3,
+    "overall_ties": 0,
+    "division_rank": "1st - SWAC East",
+    "last_5": [
+      {
+        "week": 10,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacfamu",
+        "opponent_short": "FAMU",
+        "score_team": 41,
+        "score_opponent": 16,
+        "score": "W 41-16",
+        "game_path_id": "jsufamu25"
+      },
+      {
+        "week": 11,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacmvsu",
+        "opponent_short": "MVSU",
+        "score_team": 42,
+        "score_opponent": 3,
+        "score": "W 42-3",
+        "game_path_id": "jsumvsu25"
+      },
+      {
+        "week": 12,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacbcu",
+        "opponent_short": "BCU",
+        "score_team": 28,
+        "score_opponent": 13,
+        "score": "W 28-13",
+        "game_path_id": "bcujsu25"
+      },
+      {
+        "week": 13,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacalc",
+        "opponent_short": "ALCN",
+        "score_team": 27,
+        "score_opponent": 21,
+        "score": "W 27-21",
+        "game_path_id": "alcjsu25"
+      },
+      {
+        "week": 15,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacpvamu",
+        "opponent_short": "PVAMU",
+        "score_team": 21,
+        "score_opponent": 23,
+        "score": "L 21-23",
+        "game_path_id": "pvamujsu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "PVAMUJSU06122025",
+    "game_path_id": "pvamujsu25",
+    "week": 15,
+    "date": "2025-12-06",
+    "opponent_id": "swacpvamu",
+    "opponent_name": "PVAMU",
+    "result": "L",
+    "score_team": 21,
+    "score_opponent": 23,
+    "score": "L 21-23",
+    "venue": {
+      "stadium_name": "Mississippi Veterans Memorial Stadium",
+      "venue_label": "SWAC Football Championship",
+      "city": "Jackson",
+      "neutral_site_name": null
+    },
+    "tag": "Conference Championship",
+    "headline": "L 21-23 vs PVAMU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": true,
+    "is_celebration_bowl": false,
+    "win_probability": 0.507
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 9-3, 1st - SWAC East.",
+    "record": "9-3",
+    "wins": 9,
+    "losses": 3,
+    "conference_record": "7-1",
+    "conference_wins": 7,
+    "conference_losses": 1,
+    "division_finish": "1st - SWAC East",
+    "avg_par": 9.7,
+    "games_played": 12
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00014112",
+      "name": "T.C. Taylor",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://gojsutigers.com/images/2025/7/1/TAYLOR_TC.png",
+      "tenure_year": 8,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": 0.0061,
+        "display": "+0.01",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00010552",
+      "name": "Rip Kirk",
+      "role": "Offensive Coordinator",
+      "role_title": "co-Offensive Coordinator, Quarterbacks",
+      "role_group": "coordinator",
+      "image_url": "https://gojsutigers.com/images/2025/7/1/KIRK_RIP.png",
+      "tenure_year": 3,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.0164,
+        "display": "-0.02",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00011448",
+      "name": "Javancy Jones",
+      "role": "Defensive Coordinator",
+      "role_title": "Special Teams Coordinator, Outside Linebackers",
+      "role_group": "coordinator",
+      "image_url": "https://gojsutigers.com/images/2025/7/1/JONES_JAVANCY.png",
+      "tenure_year": 2,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.0225,
+        "display": "+0.02",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 64.7,
+            "display": "64.7%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 214.0,
+            "display": "214.0",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 2.0,
+            "display": "2.00",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.333,
+            "display": "0.33",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 261.6,
+            "display": "261.6",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 2.333,
+            "display": "2.33",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 16.32,
+            "display": "16.3%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 82.41,
+            "display": "82.4%",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 16.67,
+            "display": "16.7%",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 12.22,
+            "display": "12.2%",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 1.333,
+            "display": "1.33",
+            "rank": 11,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.556,
+            "display": "1.56",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 48.57,
+            "display": "48.6%",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.1701,
+            "display": "+0.17",
+            "rank": 2,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 50.0,
+            "display": "50.0%",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 69.6,
+            "display": "69.6%",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 62.5,
+            "display": "62.5%",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 35.5,
+            "display": "35.5",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 30.0,
+            "display": "30.0%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 19.5,
+            "display": "19.5",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "rushing",
+    "key": "rush_yards_per_game",
+    "label": "RUSH YDS/GM",
+    "value": 261.6,
+    "display": "261.6",
+    "rank": 1,
+    "total": 18,
+    "sentence": "Rushing yards per game"
+  },
+  "star_impact": {
+    "person_id": "PERS_00011150",
+    "full_name": "Shamar Hawkins",
+    "last_name": "Hawkins",
+    "position": "DB",
+    "class_year": "Sr.",
+    "image_url": "https://gojsutigers.com/images/2025/7/10/5_HAWKINS_SHAMAR.png",
+    "from_game": {
+      "game_id": "PVAMUJSU06122025",
+      "game_path_id": "pvamujsu25",
+      "week": 15,
+      "opponent_name": "PVAMU",
+      "result": "L",
+      "score": "L 21-23"
+    },
+    "game_par": 17.68,
+    "season_par": 23.17,
+    "par_per_game": 2.57,
+    "stat_line": [
+      {
+        "label": "FR",
+        "value": "1"
+      },
+      {
+        "label": "TKL",
+        "value": "8"
+      },
+      {
+        "label": "TFL",
+        "value": "0"
+      },
+      {
+        "label": "SACK",
+        "value": "0"
+      }
+    ],
+    "profile_url": "/player/PERS_00011150"
+  }
+}

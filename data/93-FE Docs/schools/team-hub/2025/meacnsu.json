@@ -1,0 +1,455 @@
+{
+  "team_id": "meacnsu",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "MEAC",
+    "division": "",
+    "division_label": "MEAC",
+    "season": 2025,
+    "team_abbreviation": "NSU",
+    "school_name": "Norfolk State University",
+    "avg_par": 3.8,
+    "roster_count": 116,
+    "transfer_count": 54,
+    "transfer_rate": 46.6,
+    "upperclass_pct": 58.6
+  },
+  "conference_record": {
+    "conference_label": "0-5",
+    "conference_wins": 0,
+    "conference_losses": 5,
+    "overall_label": "1-11",
+    "overall_wins": 1,
+    "overall_losses": 11,
+    "overall_ties": 0,
+    "division_rank": "6th - MEAC",
+    "last_5": [
+      {
+        "week": 9,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "meacscsu",
+        "opponent_short": "SCSU",
+        "score_team": 20,
+        "score_opponent": 51,
+        "score": "L 20-51",
+        "game_path_id": "scsunsu25"
+      },
+      {
+        "week": 10,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "meacdsu",
+        "opponent_short": "DSU",
+        "score_team": 20,
+        "score_opponent": 27,
+        "score": "L 20-27",
+        "game_path_id": "nsudsu25"
+      },
+      {
+        "week": 11,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "meacnccu",
+        "opponent_short": "NCCU",
+        "score_team": 28,
+        "score_opponent": 31,
+        "score": "L 28-31",
+        "game_path_id": "nsunccu25"
+      },
+      {
+        "week": 12,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "meacmsu",
+        "opponent_short": "MSU",
+        "score_team": 28,
+        "score_opponent": 35,
+        "score": "L 28-35",
+        "game_path_id": "msunsu25"
+      },
+      {
+        "week": 13,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "meachu",
+        "opponent_short": "HOW",
+        "score_team": 15,
+        "score_opponent": 44,
+        "score": "L 15-44",
+        "game_path_id": "nsuhu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "NSUHU22112025",
+    "game_path_id": "nsuhu25",
+    "week": 13,
+    "date": "2025-11-22",
+    "opponent_id": "meachu",
+    "opponent_name": "Howard",
+    "result": "L",
+    "score_team": 15,
+    "score_opponent": 44,
+    "score": "L 15-44",
+    "venue": {
+      "stadium_name": "Audi Field",
+      "venue_label": "Audi Field",
+      "city": "Washington",
+      "neutral_site_name": "Senior Day"
+    },
+    "tag": "",
+    "headline": "L 15-44 vs HOW",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5581
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 1-11, 6th - MEAC.",
+    "record": "1-11",
+    "wins": 1,
+    "losses": 11,
+    "conference_record": "0-5",
+    "conference_wins": 0,
+    "conference_losses": 5,
+    "division_finish": "6th - MEAC",
+    "avg_par": 3.8,
+    "games_played": 12
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00012454",
+      "name": "Michael Vick",
+      "role": "Head Coach",
+      "role_title": "Head Football Coach",
+      "role_group": "head_coach",
+      "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2025/1/10/37ee385b9aea4f20a10e508d45c3e1ab.jpg",
+      "tenure_year": 1,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": -0.0018,
+        "display": "-0.00",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00012455",
+      "name": "Brian Sheppard",
+      "role": "Offensive Coordinator",
+      "role_title": "Offensive Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2025/4/9/NSU__Headshots_Football_-__21.jpg",
+      "tenure_year": 1,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.01,
+        "display": "-0.01",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00012456",
+      "name": "Terence Garvin",
+      "role": "Defensive Coordinator",
+      "role_title": "Defensive Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2025/4/9/NSU__Headshots_Football_-__19.jpg",
+      "tenure_year": 1,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.0082,
+        "display": "+0.01",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 58.8,
+            "display": "58.8%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 227.2,
+            "display": "227.2",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 2.4,
+            "display": "2.40",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 174.2,
+            "display": "174.2",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 0.8,
+            "display": "0.80",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 21.36,
+            "display": "21.4%",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 80.0,
+            "display": "80.0%",
+            "rank": 2,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 13.9,
+            "display": "13.9%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 20.19,
+            "display": "20.2%",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.4,
+            "display": "2.40",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 0.8,
+            "display": "0.80",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 44.05,
+            "display": "44.0%",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.0806,
+            "display": "+0.08",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 32.7,
+            "display": "32.7%",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 76.0,
+            "display": "76.0%",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 0.0,
+            "display": "0.0%",
+            "rank": 18,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 38.3,
+            "display": "38.3",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 13.6,
+            "display": "13.6%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 23.7,
+            "display": "23.7",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "passing",
+    "key": "pass_touchdowns_per_game",
+    "label": "PASS TD/GM",
+    "value": 2.4,
+    "display": "2.40",
+    "rank": 1,
+    "total": 18,
+    "sentence": "Passing touchdowns per game"
+  },
+  "star_impact": {
+    "person_id": "PERS_00011661",
+    "full_name": "Nasir Bashir",
+    "last_name": "Bashir",
+    "position": "DB",
+    "class_year": "Jr.",
+    "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2026/7/17/Nasir_Bashir.jpg",
+    "from_game": {
+      "game_id": "NSUHU22112025",
+      "game_path_id": "nsuhu25",
+      "week": 13,
+      "opponent_name": "Howard",
+      "result": "L",
+      "score": "L 15-44"
+    },
+    "game_par": 12.88,
+    "season_par": 11.9,
+    "par_per_game": 3.97,
+    "stat_line": [
+      {
+        "label": "INT",
+        "value": "2"
+      },
+      {
+        "label": "TKL",
+        "value": "3"
+      },
+      {
+        "label": "TFL",
+        "value": "0"
+      },
+      {
+        "label": "SACK",
+        "value": "0"
+      }
+    ],
+    "profile_url": "/player/PERS_00011661"
+  }
+}

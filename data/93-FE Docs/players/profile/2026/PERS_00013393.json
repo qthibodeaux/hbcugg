@@ -1,0 +1,487 @@
+{
+  "person_id": "PERS_00013393",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00013393",
+    "first_name": "Nolan",
+    "last_name": "Chambers",
+    "team_id": "swacalc",
+    "team_abbreviation": "ALCN",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 17,
+    "position": "Wide Receiver",
+    "position_group": "WR",
+    "raw_position": "WR",
+    "class_year": 3,
+    "class_label": "Junior",
+    "height": 73,
+    "weight": 195,
+    "home_city": "Jacksonville",
+    "home_state": "FL",
+    "is_in_state": false,
+    "previous_school": "Butler Cc",
+    "high_school": "Orange Park Hs",
+    "image_url": "https://alcornsports.com/images/2026/8/24/Chambers__Nolan.JPG"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 3.78,
+    "per_game": 2.295,
+    "games_played": 4,
+    "rank_in_position_group": 30,
+    "position_group_total": 111,
+    "conference_rank": 210,
+    "conference_total": 713,
+    "position_group_mean": 2.51
+  },
+  "season_totals": {
+    "par": 3.78,
+    "total_production": 9.18,
+    "avg_production": 2.295,
+    "games_played": 4,
+    "season_components": {
+      "receiving_production": 9.18,
+      "rushing_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "2026-08-29_miles_at_swacalc",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Miles",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 56-7",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_swacalc_at_southernmiss",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Southern Miss",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 3-49",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "UAPBALC12092026",
+      "game_path_id": "uapbalc26",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 53-51",
+      "data_state": "played",
+      "par": 2.85,
+      "components": {
+        "receiving_production": 4.2
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-23"
+        },
+        {
+          "label": "REC TD",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_swacalc_at_northalabama",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "North Alabama",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 20-38",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "TSUALC26092026",
+      "game_path_id": "tsualc26",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 43-40",
+      "data_state": "played",
+      "par": 0.57,
+      "components": {
+        "receiving_production": 1.92
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-32"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "ALCGRAM03102026",
+      "game_path_id": "alcgsu26",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 59-63",
+      "data_state": "played",
+      "par": -1.2,
+      "components": {
+        "receiving_production": 0.15
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "0-0"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "2026-10-10_arkansasbaptist_at_swacalc",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Arkansas Baptist",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 63-7",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "ALCPVAMU17102026",
+      "game_path_id": "alcpvamu26",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 38-41",
+      "data_state": "played",
+      "par": 1.56,
+      "components": {
+        "receiving_production": 2.91
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "2-53"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "2026-10-31_swacalc_at_swacmvsu",
+      "game_path_id": null,
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-07_swacfamu_at_swacalc",
+      "game_path_id": null,
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swacalc_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_swacjsu_at_swacalc",
+      "game_path_id": null,
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 7,
+    "game_id": "ALCPVAMU17102026",
+    "game_path_id": "alcpvamu26",
+    "opponent_id": "swacpvamu",
+    "opponent_name": "PVAMU",
+    "home_away": "away",
+    "result": "L",
+    "score": "L 38-41",
+    "par": 1.56,
+    "stat_line": [
+      {
+        "label": "REC",
+        "value": "2-53"
+      },
+      {
+        "label": "REC TD",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 73,
+      "rank": 4,
+      "total": 15,
+      "group": "WR",
+      "group_avg": 71.9
+    },
+    "weight": {
+      "value": 195,
+      "rank": 3,
+      "total": 15,
+      "group": "WR",
+      "group_avg": 182.6
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 3
+      },
+      {
+        "class": "So.",
+        "count": 2
+      },
+      {
+        "class": "Jr.",
+        "count": 4
+      },
+      {
+        "class": "Sr.",
+        "count": 6
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "WRS",
+        "rank": 12,
+        "total": 15
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 29
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 55
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 37
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "JUCO",
+    "previous_school": "Butler Cc",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 561.6,
+    "distance_tier": "national",
+    "experience_score": 3.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": true,
+        "season": 2026
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2028
+      }
+    ]
+  }
+}

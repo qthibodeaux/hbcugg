@@ -1,0 +1,575 @@
+{
+  "person_id": "PERS_00012056",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00012056",
+    "first_name": "Tyson",
+    "last_name": "George",
+    "team_id": "swacgsu",
+    "team_abbreviation": "GRAM",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 8,
+    "position": "Wide Receiver",
+    "position_group": "WR",
+    "raw_position": "WR",
+    "class_year": 1,
+    "class_label": "Freshman",
+    "height": 71,
+    "weight": 185,
+    "home_city": "Zachary",
+    "home_state": "LA",
+    "is_in_state": true,
+    "previous_school": "Zachary Hs",
+    "high_school": null,
+    "image_url": "https://gsutigers.com/images/2025/8/20/TysonGeorge_PDjiT.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 1.17,
+    "per_game": 1.8262,
+    "games_played": 8,
+    "rank_in_position_group": 57,
+    "position_group_total": 142,
+    "conference_rank": 438,
+    "conference_total": 1006,
+    "position_group_mean": 4.51
+  },
+  "season_totals": {
+    "par": 1.17,
+    "total_production": 14.61,
+    "avg_production": 1.8262,
+    "games_played": 8,
+    "season_components": {
+      "receiving_production": 14.61,
+      "rushing_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "2025-08-30_langston_at_swacgsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Langston",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 55-7",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2025-09-06_swacgsu_at_ohiostate",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Ohio State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 0-70",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2025-09-13_kentuckystate_at_swacgsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Kentucky State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 37-31",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "2025-09-20_easttexasam_at_swacgsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "East Texas A&M",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 31-28",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "GRAMPVAMU27092025",
+      "game_path_id": "gsupvamu25",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 13-28",
+      "data_state": "played",
+      "par": 0.84,
+      "components": {
+        "receiving_production": 2.52
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "4-31"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "TSUGRAM11102025",
+      "game_path_id": "tsugsu25",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 20-21",
+      "data_state": "played",
+      "par": 0.57,
+      "components": {
+        "receiving_production": 2.25
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "2-46"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 8,
+      "game_id": "GRAMUAPB18102025",
+      "game_path_id": "gsuuapb25",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 20-16",
+      "data_state": "played",
+      "par": -0.3,
+      "components": {
+        "receiving_production": 1.38
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-24"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "GRAMJSU25102025",
+      "game_path_id": "gsujsu25",
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 26-24",
+      "data_state": "played",
+      "par": -0.36,
+      "components": {
+        "receiving_production": 1.32
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "2-15"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 10,
+      "game_id": "AAMUGRAM01112025",
+      "game_path_id": "aamugsu25",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 13-10",
+      "data_state": "played",
+      "par": -0.99,
+      "components": {
+        "receiving_production": 0.69
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-6"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 11,
+      "game_id": "BCUGRAM08112025",
+      "game_path_id": "bcugsu25",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 31-23",
+      "data_state": "played",
+      "par": -0.27,
+      "components": {
+        "receiving_production": 1.41
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "1-30"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 12,
+      "game_id": "GRAMALC15112025",
+      "game_path_id": "gsualc25",
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 16-27",
+      "data_state": "played",
+      "par": 0.93,
+      "components": {
+        "receiving_production": 2.61
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "4-34"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 14,
+      "game_id": "SUGRAM29112025",
+      "game_path_id": "sugsu25",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 27-28",
+      "data_state": "played",
+      "par": 0.75,
+      "components": {
+        "receiving_production": 2.43
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "4-33"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    }
+  ],
+  "spotlight": {
+    "week": 14,
+    "game_id": "SUGRAM29112025",
+    "game_path_id": "sugsu25",
+    "opponent_id": "swacsu",
+    "opponent_name": "Southern",
+    "home_away": "home",
+    "result": "L",
+    "score": "L 27-28",
+    "par": 0.75,
+    "stat_line": [
+      {
+        "label": "REC",
+        "value": "4-33"
+      },
+      {
+        "label": "REC TD",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 71,
+      "rank": 10,
+      "total": 16,
+      "group": "WR",
+      "group_avg": 71.9
+    },
+    "weight": {
+      "value": 185,
+      "rank": 3,
+      "total": 16,
+      "group": "WR",
+      "group_avg": 178.2
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 3
+      },
+      {
+        "class": "So.",
+        "count": 0
+      },
+      {
+        "class": "Jr.",
+        "count": 1
+      },
+      {
+        "class": "Sr.",
+        "count": 5
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "WRS",
+        "rank": 16,
+        "total": 16
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 34
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 59
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 57
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": false,
+    "transfer_tier": null,
+    "previous_school": "Zachary Hs",
+    "is_redshirt": true,
+    "redshirt_note": "Redshirt season used.",
+    "distance_miles": 157.7,
+    "distance_tier": "regional",
+    "experience_score": 1.5,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": true,
+        "season": 2025
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": 2026
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2028
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2029
+      }
+    ]
+  }
+}

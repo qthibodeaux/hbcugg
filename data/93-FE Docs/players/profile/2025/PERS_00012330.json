@@ -1,0 +1,418 @@
+{
+  "person_id": "PERS_00012330",
+  "season": 2025,
+  "generated_at": "2026-10-20T01:35:54-05:00",
+  "as_of_week": 16,
+  "identity": {
+    "person_id": "PERS_00012330",
+    "first_name": "Kamren",
+    "last_name": "Blanton",
+    "team_id": "swactsu",
+    "team_abbreviation": "TXSO",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 3,
+    "position": "Safety",
+    "position_group": "DB",
+    "raw_position": "S",
+    "class_year": 3,
+    "class_label": "Junior",
+    "height": 72,
+    "weight": 185,
+    "home_city": "Long Beach",
+    "home_state": "CA",
+    "is_in_state": false,
+    "previous_school": "Long Beach Cc",
+    "high_school": null,
+    "image_url": "https://datg7il085uh2.cloudfront.net/images/2025/8/26/3-Kamren_Bogerty.JPG"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": -0.56,
+    "per_game": 0.28,
+    "games_played": 1,
+    "rank_in_position_group": 178,
+    "position_group_total": 279,
+    "conference_rank": 574,
+    "conference_total": 1006,
+    "position_group_mean": 8.26
+  },
+  "season_totals": {
+    "par": -0.56,
+    "total_production": 0.28,
+    "avg_production": 0.28,
+    "games_played": 1,
+    "season_components": {
+      "hit_production": 0.28,
+      "hawk_production": 0,
+      "scrum_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 1,
+      "game_id": "PVAMUTSU30082025",
+      "game_path_id": "pvamutsu25",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 21-22",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 2,
+      "game_id": "2025-09-06_swactsu_at_california",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "California",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 3-35",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2025-09-13_lamar_at_swactsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Lamar",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 7-31",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "TSUMVSU27092025",
+      "game_path_id": "tsumvsu25",
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 23-20",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 6,
+      "game_id": "UAPBTSU04102025",
+      "game_path_id": "uapbtsu25",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 51-7",
+      "data_state": "played",
+      "par": -0.56,
+      "components": {
+        "hit_production": 0.28
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 2
+        },
+        {
+          "label": "TFL",
+          "value": 0.0
+        },
+        {
+          "label": "SACK",
+          "value": 0.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "TSUGRAM11102025",
+      "game_path_id": "tsugsu25",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 21-20",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 8,
+      "game_id": "2025-10-18_virginialynchbur_at_swactsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Virginia-Lynchburg",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 61-10",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 10,
+      "game_id": "ALCTSU01112025",
+      "game_path_id": "alctsu25",
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 14-33",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "TSUASU08112025",
+      "game_path_id": "tsuasu25",
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 24-42",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "TSUSU15112025",
+      "game_path_id": "tsusu25",
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 35-30",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 13,
+      "game_id": "AAMUTSU22112025",
+      "game_path_id": "aamutsu25",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 24-7",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 6,
+    "game_id": "UAPBTSU04102025",
+    "game_path_id": "uapbtsu25",
+    "opponent_id": "swacuapb",
+    "opponent_name": "UAPB",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 51-7",
+    "par": -0.56,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 2
+      },
+      {
+        "label": "TFL",
+        "value": 0.0
+      },
+      {
+        "label": "SACK",
+        "value": 0.0
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 72,
+      "rank": 8,
+      "total": 18,
+      "group": "DB",
+      "group_avg": 72.1
+    },
+    "weight": {
+      "value": 185,
+      "rank": 5,
+      "total": 18,
+      "group": "DB",
+      "group_avg": 181.9
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 8
+      },
+      {
+        "class": "So.",
+        "count": 2
+      },
+      {
+        "class": "Jr.",
+        "count": 2
+      },
+      {
+        "class": "Sr.",
+        "count": 2
+      },
+      {
+        "class": "Gr.",
+        "count": 4
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "DBS",
+        "rank": 13,
+        "total": 18
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 14
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 48
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 60
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "JUCO",
+    "previous_school": "Long Beach Cc",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 1363.1,
+    "distance_tier": "national",
+    "experience_score": 3.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": true,
+        "season": 2025
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2026
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2027
+      }
+    ]
+  }
+}

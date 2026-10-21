@@ -1,0 +1,1469 @@
+{
+  "season": 2026,
+  "week": 7,
+  "week_label": "Week 7",
+  "label": "Week 7",
+  "compact_label": "Wk 7",
+  "date_range": "Oct 13 - Oct 19",
+  "is_current_week": false,
+  "default_week": 8,
+  "updated_at": "2026-10-20T01:24:00-05:00",
+  "weeks": [
+    {
+      "week": 0,
+      "label": "Week 0",
+      "compact_label": "Wk 0",
+      "game_count": 14
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "compact_label": "Wk 1",
+      "game_count": 16
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "compact_label": "Wk 2",
+      "game_count": 16
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "compact_label": "Wk 3",
+      "game_count": 14
+    },
+    {
+      "week": 4,
+      "label": "Week 4",
+      "compact_label": "Wk 4",
+      "game_count": 10
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "compact_label": "Wk 5",
+      "game_count": 12
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "compact_label": "Wk 6",
+      "game_count": 12
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "compact_label": "Wk 7",
+      "game_count": 7
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "compact_label": "Wk 8",
+      "game_count": 7
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "compact_label": "Wk 9",
+      "game_count": 8
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "compact_label": "Wk 10",
+      "game_count": 9
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "compact_label": "Wk 11",
+      "game_count": 9
+    },
+    {
+      "week": 12,
+      "label": "Week 12",
+      "compact_label": "Wk 12",
+      "game_count": 8
+    },
+    {
+      "week": 13,
+      "label": "Week 13",
+      "compact_label": "Wk 13",
+      "game_count": 2
+    }
+  ],
+  "summary": {
+    "total_games": 7,
+    "hbcu_matchups": 7,
+    "outside_games": 2,
+    "final_games": 7,
+    "preview_games": 0
+  },
+  "games": [
+    {
+      "game_id": "FAMUJSU17102026",
+      "game_path_id": "famujsu26",
+      "route": "/game/famujsu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "02:04 PM",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Homecoming",
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "swacjsu"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 17,
+        "record": "2-4",
+        "conference_record": "1-1"
+      },
+      "home_team": {
+        "team_id": "swacjsu",
+        "name": "J-State",
+        "short_name": "JKST",
+        "score": 27,
+        "record": "5-1",
+        "conference_record": "2-1"
+      },
+      "winner_team_id": "swacjsu",
+      "venue": {
+        "stadium": "Veterans Memorial Stadium",
+        "venue_label": "Mississippi Veterans Memorial Stadium",
+        "city": "Jackson",
+        "neutral_site_name": null,
+        "venue_id": "VEN_mississippi_veterans_memorial_stadium",
+        "name": "Mississippi Veterans Memorial Stadium"
+      },
+      "story_label": "Division game",
+      "brief": {
+        "source": "parsed",
+        "line_score": {
+          "labels": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "away": [
+            7,
+            3,
+            7,
+            0
+          ],
+          "home": [
+            7,
+            5,
+            0,
+            15
+          ]
+        },
+        "mvp": {
+          "name": "Andre Powell Jr.",
+          "player_key": "PERS_00008188",
+          "image_url": "https://www.famuathletics.com/images/2026/8/6/Andre_Powekk.jpg",
+          "position": "DB",
+          "team_id": "swacfamu",
+          "glory": 19.19,
+          "glory_metric": "production_score"
+        },
+        "metrics": [
+          {
+            "key": "team_box.total_yards",
+            "label": "Total yards",
+            "away_value": 327,
+            "home_value": 370,
+            "format": "int"
+          },
+          {
+            "key": "team_box.yards_per_play",
+            "label": "Yards per play",
+            "away_value": 5.5424,
+            "home_value": 4.4048,
+            "format": "dec1"
+          },
+          {
+            "key": "team_box.pass_yards",
+            "label": "Passing yards",
+            "away_value": 163,
+            "home_value": 140,
+            "format": "int"
+          },
+          {
+            "key": "team_box.rush_yards",
+            "label": "Rushing yards",
+            "away_value": 177,
+            "home_value": 235,
+            "format": "int"
+          },
+          {
+            "key": "advanced_team.epa_per_play",
+            "label": "EPA per play",
+            "away_value": -0.1631,
+            "home_value": -0.11,
+            "format": "signed2"
+          },
+          {
+            "key": "advanced_team.success_rate",
+            "label": "Success rate",
+            "away_value": 0.3729,
+            "home_value": 0.369,
+            "format": "pct"
+          },
+          {
+            "key": "advanced_team.explosive_drive_rate",
+            "label": "Explosive drive rate",
+            "away_value": 0.1538,
+            "home_value": 0.125,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.third_down_conversion_rate",
+            "label": "Third down",
+            "away_value": 0.4286,
+            "home_value": 0.3158,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.points_per_drive",
+            "label": "Points per drive",
+            "away_value": 1.3077,
+            "home_value": 1.5625,
+            "format": "dec2"
+          },
+          {
+            "key": "team_box.turnovers_committed",
+            "label": "Turnovers",
+            "away_value": 4,
+            "home_value": 2,
+            "format": "int"
+          }
+        ],
+        "leaders": [
+          {
+            "key": "passing",
+            "label": "Passing",
+            "away": {
+              "name": "Armond Parker",
+              "player_key": "PERS_00013535",
+              "image_url": "https://www.famuathletics.com/images/2026/8/6/Armond_Parker.jpg",
+              "value": 163,
+              "stat_line": "11/28, 163 yds, 0 TD, 3 INT"
+            },
+            "home": {
+              "name": "Jared Lockhart",
+              "player_key": "PERS_00012105",
+              "image_url": "https://gojsutigers.com/images/2026/7/14/LOCKHART_JARED.jpg",
+              "value": 98,
+              "stat_line": "13/24, 98 yds, 1 TD, 1 INT"
+            }
+          },
+          {
+            "key": "rushing",
+            "label": "Rushing",
+            "away": {
+              "name": "Jamal Hailey",
+              "player_key": "PERS_00012016",
+              "image_url": "https://www.famuathletics.com/images/2026/8/6/Jamel_Hailey.jpg",
+              "value": 111,
+              "stat_line": "12 car, 111 yds, 1 TD"
+            },
+            "home": {
+              "name": "Li'Darius Pryor",
+              "player_key": "PERS_00013634",
+              "image_url": "https://gojsutigers.com/images/2026/7/14/PRYOR_LI_DARIUS.jpg",
+              "value": 80,
+              "stat_line": "20 car, 80 yds, 0 TD"
+            }
+          },
+          {
+            "key": "receiving",
+            "label": "Receiving",
+            "away": {
+              "name": "Lawrence Wright",
+              "player_key": "PERS_00012011",
+              "image_url": "https://www.famuathletics.com/images/2026/8/6/Lawrence_Wright.jpg",
+              "value": 58,
+              "stat_line": "2 rec, 58 yds, 0 TD"
+            },
+            "home": {
+              "name": "Jabari Jones",
+              "player_key": "PERS_00012107",
+              "image_url": "https://gojsutigers.com/images/2026/7/14/JONES_JABARI.jpg",
+              "value": 36,
+              "stat_line": "3 rec, 36 yds, 1 TD"
+            }
+          },
+          {
+            "key": "defense",
+            "label": "Defense",
+            "away": {
+              "name": "Andre Powell Jr.",
+              "player_key": "PERS_00008188",
+              "image_url": "https://www.famuathletics.com/images/2026/8/6/Andre_Powekk.jpg",
+              "value": 19.19,
+              "stat_line": "19.2 production (DB)"
+            },
+            "home": {
+              "name": "B.J. Washington",
+              "player_key": "PERS_00010239",
+              "image_url": "https://gojsutigers.com/images/2026/8/8/WASHINGTON_BJ.png",
+              "value": 14.42,
+              "stat_line": "14.4 production (DB)"
+            }
+          },
+          {
+            "key": "production",
+            "label": "Top producer",
+            "away": {
+              "name": "Andre Powell Jr.",
+              "player_key": "PERS_00008188",
+              "image_url": "https://www.famuathletics.com/images/2026/8/6/Andre_Powekk.jpg",
+              "value": 19.19,
+              "stat_line": "19.2 production (DB)"
+            },
+            "home": {
+              "name": "B.J. Washington",
+              "player_key": "PERS_00010239",
+              "image_url": "https://gojsutigers.com/images/2026/8/8/WASHINGTON_BJ.png",
+              "value": 14.42,
+              "stat_line": "14.4 production (DB)"
+            }
+          }
+        ],
+        "warnings": []
+      },
+      "sort_order": 0
+    },
+    {
+      "game_id": "ALCPVAMU17102026",
+      "game_path_id": "alcpvamu26",
+      "route": "/game/alcpvamu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "02:06 PM",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Homecoming",
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "swacpvamu"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 38,
+        "record": "4-3",
+        "conference_record": "2-1"
+      },
+      "home_team": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 41,
+        "record": "2-5",
+        "conference_record": "2-2"
+      },
+      "winner_team_id": "swacpvamu",
+      "venue": {
+        "stadium": "Panther Stadium at Blackshear Field",
+        "venue_label": "Panther Stadium at Blackshear Field",
+        "city": "Prairie View",
+        "neutral_site_name": null,
+        "venue_id": "VEN_panther_stadium_at_blackshear_field",
+        "name": "Panther Stadium at Blackshear Field"
+      },
+      "story_label": "Division game",
+      "brief": {
+        "source": "parsed",
+        "line_score": {
+          "labels": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "away": [
+            7,
+            21,
+            7,
+            3
+          ],
+          "home": [
+            21,
+            10,
+            0,
+            10
+          ]
+        },
+        "mvp": {
+          "name": "Malik Gucake",
+          "player_key": "PERS_00012207",
+          "image_url": "https://pvpanthers.com/images/2026/4/25/FB-6_Malik_Gucake.jpg",
+          "position": "DL",
+          "team_id": "swacpvamu",
+          "glory": 40.77,
+          "glory_metric": "production_score"
+        },
+        "metrics": [
+          {
+            "key": "team_box.total_yards",
+            "label": "Total yards",
+            "away_value": 505,
+            "home_value": 402,
+            "format": "int"
+          },
+          {
+            "key": "team_box.yards_per_play",
+            "label": "Yards per play",
+            "away_value": 7.3188,
+            "home_value": 7.3091,
+            "format": "dec1"
+          },
+          {
+            "key": "team_box.pass_yards",
+            "label": "Passing yards",
+            "away_value": 356,
+            "home_value": 162,
+            "format": "int"
+          },
+          {
+            "key": "team_box.rush_yards",
+            "label": "Rushing yards",
+            "away_value": 179,
+            "home_value": 240,
+            "format": "int"
+          },
+          {
+            "key": "advanced_team.epa_per_play",
+            "label": "EPA per play",
+            "away_value": 0.1969,
+            "home_value": 0.1105,
+            "format": "signed2"
+          },
+          {
+            "key": "advanced_team.success_rate",
+            "label": "Success rate",
+            "away_value": 0.4203,
+            "home_value": 0.4727,
+            "format": "pct"
+          },
+          {
+            "key": "advanced_team.explosive_drive_rate",
+            "label": "Explosive drive rate",
+            "away_value": 0.5,
+            "home_value": 0.2727,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.third_down_conversion_rate",
+            "label": "Third down",
+            "away_value": 0.25,
+            "home_value": 0.3,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.points_per_drive",
+            "label": "Points per drive",
+            "away_value": 3.1667,
+            "home_value": 3.0909,
+            "format": "dec2"
+          },
+          {
+            "key": "team_box.turnovers_committed",
+            "label": "Turnovers",
+            "away_value": 2,
+            "home_value": 2,
+            "format": "int"
+          }
+        ],
+        "leaders": [
+          {
+            "key": "passing",
+            "label": "Passing",
+            "away": {
+              "name": "Jaylon Tolbert",
+              "player_key": "PERS_00007631",
+              "image_url": "https://alcornsports.com/images/2026/8/25/BUCC9563_6ecSX.JPG",
+              "value": 356,
+              "stat_line": "19/39, 356 yds, 5 TD"
+            },
+            "home": {
+              "name": "Tevin Carter",
+              "player_key": "PERS_00012215",
+              "image_url": "https://pvpanthers.com/images/2026/4/21/11_Tevin_Carter.jpg",
+              "value": 150,
+              "stat_line": "14/18, 150 yds, 2 TD, 1 INT"
+            }
+          },
+          {
+            "key": "rushing",
+            "label": "Rushing",
+            "away": {
+              "name": "Fredrick Robertson",
+              "player_key": "PERS_00013383",
+              "image_url": "https://alcornsports.com/images/2026/8/24/BUCC9573_4QL7b.JPG",
+              "value": 105,
+              "stat_line": "15 car, 105 yds, 0 TD"
+            },
+            "home": {
+              "name": "Jahbari Kuykendall",
+              "player_key": "PERS_00010922",
+              "image_url": "https://pvpanthers.com/images/2026/4/21/22_Jahbari_Kuykendall.jpg",
+              "value": 89,
+              "stat_line": "10 car, 89 yds, 0 TD"
+            }
+          },
+          {
+            "key": "receiving",
+            "label": "Receiving",
+            "away": {
+              "name": "Fredrick Robertson",
+              "player_key": "PERS_00013383",
+              "image_url": "https://alcornsports.com/images/2026/8/24/BUCC9573_4QL7b.JPG",
+              "value": 92,
+              "stat_line": "3 rec, 92 yds, 3 TD"
+            },
+            "home": {
+              "name": "Rodny Ojo",
+              "player_key": "PERS_00011222",
+              "image_url": "https://pvpanthers.com/images/2026/4/21/90_Rodny_Oja.jpg",
+              "value": 48,
+              "stat_line": "3 rec, 48 yds, 1 TD"
+            }
+          },
+          {
+            "key": "defense",
+            "label": "Defense",
+            "away": {
+              "name": "Ricardo Butler",
+              "player_key": "PERS_00011838",
+              "image_url": "https://alcornsports.com/images/2026/8/24/Butler__Ricardo_CYAep.JPG",
+              "value": 24.24,
+              "stat_line": "24.2 production (DB)"
+            },
+            "home": {
+              "name": "Malik Gucake",
+              "player_key": "PERS_00012207",
+              "image_url": "https://pvpanthers.com/images/2026/4/25/FB-6_Malik_Gucake.jpg",
+              "value": 40.77,
+              "stat_line": "40.8 production (DL)"
+            }
+          },
+          {
+            "key": "production",
+            "label": "Top producer",
+            "away": {
+              "name": "Jaylon Tolbert",
+              "player_key": "PERS_00007631",
+              "image_url": "https://alcornsports.com/images/2026/8/25/BUCC9563_6ecSX.JPG",
+              "value": 36.41,
+              "stat_line": "36.4 production (QB)"
+            },
+            "home": {
+              "name": "Malik Gucake",
+              "player_key": "PERS_00012207",
+              "image_url": "https://pvpanthers.com/images/2026/4/25/FB-6_Malik_Gucake.jpg",
+              "value": 40.77,
+              "stat_line": "40.8 production (DL)"
+            }
+          }
+        ],
+        "warnings": []
+      },
+      "sort_order": 1
+    },
+    {
+      "game_id": "ASUUAPB17102026",
+      "game_path_id": "asuuapb26",
+      "route": "/game/asuuapb26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "02:06 PM",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Homecoming",
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "swacuapb"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 21,
+        "record": "3-3",
+        "conference_record": "1-2"
+      },
+      "home_team": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 15,
+        "record": "3-2",
+        "conference_record": "1-1"
+      },
+      "winner_team_id": "swacasu",
+      "venue": {
+        "stadium": "Simmons Bank Field",
+        "venue_label": "Simmons Bank Field",
+        "city": "Pine Bluff",
+        "neutral_site_name": null,
+        "venue_id": "VEN_simmons_bank_field",
+        "name": "Simmons Bank Field"
+      },
+      "story_label": "Conference game",
+      "brief": {
+        "source": "parsed",
+        "line_score": {
+          "labels": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "away": [
+            0,
+            14,
+            0,
+            7
+          ],
+          "home": [
+            6,
+            6,
+            0,
+            3
+          ]
+        },
+        "mvp": {
+          "name": "Zach Williams",
+          "player_key": "PERS_00011368",
+          "image_url": "https://bamastatesports.com/images/2026/8/6/WilliamsZach.jpg",
+          "position": "DB",
+          "team_id": "swacasu",
+          "glory": 11.27,
+          "glory_metric": "production_score"
+        },
+        "metrics": [
+          {
+            "key": "team_box.total_yards",
+            "label": "Total yards",
+            "away_value": 228,
+            "home_value": 407,
+            "format": "int"
+          },
+          {
+            "key": "team_box.yards_per_play",
+            "label": "Yards per play",
+            "away_value": 5.561,
+            "home_value": 5.1519,
+            "format": "dec1"
+          },
+          {
+            "key": "team_box.pass_yards",
+            "label": "Passing yards",
+            "away_value": 108,
+            "home_value": 272,
+            "format": "int"
+          },
+          {
+            "key": "team_box.rush_yards",
+            "label": "Rushing yards",
+            "away_value": 120,
+            "home_value": 144,
+            "format": "int"
+          },
+          {
+            "key": "advanced_team.epa_per_play",
+            "label": "EPA per play",
+            "away_value": 0.1519,
+            "home_value": -0.011,
+            "format": "signed2"
+          },
+          {
+            "key": "advanced_team.success_rate",
+            "label": "Success rate",
+            "away_value": 0.5366,
+            "home_value": 0.4684,
+            "format": "pct"
+          },
+          {
+            "key": "advanced_team.explosive_drive_rate",
+            "label": "Explosive drive rate",
+            "away_value": 0.125,
+            "home_value": 0.1111,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.third_down_conversion_rate",
+            "label": "Third down",
+            "away_value": 0.4444,
+            "home_value": 0.375,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.points_per_drive",
+            "label": "Points per drive",
+            "away_value": 2.625,
+            "home_value": 1.6667,
+            "format": "dec2"
+          },
+          {
+            "key": "team_box.turnovers_committed",
+            "label": "Turnovers",
+            "away_value": 1,
+            "home_value": 2,
+            "format": "int"
+          }
+        ],
+        "leaders": [
+          {
+            "key": "passing",
+            "label": "Passing",
+            "away": {
+              "name": "Aaron Frye",
+              "player_key": "PERS_00013431",
+              "image_url": "https://bamastatesports.com/images/2026/8/24/Frye_Aaron_081926-1.jpg",
+              "value": 105,
+              "stat_line": "15/16, 105 yds, 0 TD, 1 INT"
+            },
+            "home": {
+              "name": "Jack Schierholz",
+              "player_key": "PERS_00013910",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_12_Jack_Schierholz.jpg",
+              "value": 243,
+              "stat_line": "21/37, 243 yds, 1 TD, 2 INT"
+            }
+          },
+          {
+            "key": "rushing",
+            "label": "Rushing",
+            "away": {
+              "name": "Jareese Howard",
+              "player_key": "PERS_00013440",
+              "image_url": "https://bamastatesports.com/images/2026/8/24/Howard_Jareese_081926-1.jpg",
+              "value": 70,
+              "stat_line": "7 car, 70 yds, 2 TD"
+            },
+            "home": {
+              "name": "Za’Marion Webber",
+              "player_key": "PERS_00011369",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_5_Za_Marion_Webber.jpg",
+              "value": 37,
+              "stat_line": "6 car, 37 yds, 0 TD"
+            }
+          },
+          {
+            "key": "receiving",
+            "label": "Receiving",
+            "away": {
+              "name": "Kareem Keye",
+              "player_key": "PERS_00010918",
+              "image_url": "https://bamastatesports.com/images/2026/8/6/KeyeKareem.jpg",
+              "value": 35,
+              "stat_line": "5 rec, 35 yds, 0 TD"
+            },
+            "home": {
+              "name": "Demetric Whitlock",
+              "player_key": "PERS_00013913",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_17_Demetric_Whitlock.jpg",
+              "value": 107,
+              "stat_line": "6 rec, 107 yds, 0 TD"
+            }
+          },
+          {
+            "key": "defense",
+            "label": "Defense",
+            "away": {
+              "name": "Zach Williams",
+              "player_key": "PERS_00011368",
+              "image_url": "https://bamastatesports.com/images/2026/8/6/WilliamsZach.jpg",
+              "value": 11.27,
+              "stat_line": "11.3 production (DB)"
+            },
+            "home": {
+              "name": "Michael Henderson",
+              "player_key": "PERS_00012395",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_35_Michael_Henderson.jpg",
+              "value": 6.65,
+              "stat_line": "6.7 production (DB)"
+            }
+          },
+          {
+            "key": "production",
+            "label": "Top producer",
+            "away": {
+              "name": "Zach Williams",
+              "player_key": "PERS_00011368",
+              "image_url": "https://bamastatesports.com/images/2026/8/6/WilliamsZach.jpg",
+              "value": 11.27,
+              "stat_line": "11.3 production (DB)"
+            },
+            "home": {
+              "name": "Jack Schierholz",
+              "player_key": "PERS_00013910",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_12_Jack_Schierholz.jpg",
+              "value": 10.35,
+              "stat_line": "10.3 production (QB)"
+            }
+          }
+        ],
+        "warnings": []
+      },
+      "sort_order": 2
+    },
+    {
+      "game_id": "GRAMAAMU17102026",
+      "game_path_id": "gsuaamu26",
+      "route": "/game/gsuaamu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "02:06 PM",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Homecoming",
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "swacaamu"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 31,
+        "record": "4-2",
+        "conference_record": "2-1"
+      },
+      "home_team": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 61,
+        "record": "5-2",
+        "conference_record": "2-1"
+      },
+      "winner_team_id": "swacaamu",
+      "venue": {
+        "stadium": "Louis Crews Stadium",
+        "venue_label": "Louis Crews Stadium",
+        "city": "Normal",
+        "neutral_site_name": null,
+        "venue_id": "VEN_louis_crews_stadium",
+        "name": "Louis Crews Stadium"
+      },
+      "story_label": "Conference game",
+      "brief": {
+        "source": "parsed",
+        "line_score": {
+          "labels": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "away": [
+            10,
+            7,
+            8,
+            6
+          ],
+          "home": [
+            3,
+            16,
+            35,
+            7
+          ]
+        },
+        "mvp": {
+          "name": "Cornelious Brown IV",
+          "player_key": "PERS_00000446",
+          "image_url": "https://aamusports.com/images/2026/7/13/26CorneliousBrownIV.jpg",
+          "position": "QB",
+          "team_id": "swacaamu",
+          "glory": 36.21,
+          "glory_metric": "production_score"
+        },
+        "metrics": [
+          {
+            "key": "team_box.total_yards",
+            "label": "Total yards",
+            "away_value": 239,
+            "home_value": 669,
+            "format": "int"
+          },
+          {
+            "key": "team_box.yards_per_play",
+            "label": "Yards per play",
+            "away_value": 4.5962,
+            "home_value": 8.4684,
+            "format": "dec1"
+          },
+          {
+            "key": "team_box.pass_yards",
+            "label": "Passing yards",
+            "away_value": 149,
+            "home_value": 433,
+            "format": "int"
+          },
+          {
+            "key": "team_box.rush_yards",
+            "label": "Rushing yards",
+            "away_value": 107,
+            "home_value": 240,
+            "format": "int"
+          },
+          {
+            "key": "advanced_team.epa_per_play",
+            "label": "EPA per play",
+            "away_value": -0.0522,
+            "home_value": 0.3665,
+            "format": "signed2"
+          },
+          {
+            "key": "advanced_team.success_rate",
+            "label": "Success rate",
+            "away_value": 0.2308,
+            "home_value": 0.5443,
+            "format": "pct"
+          },
+          {
+            "key": "advanced_team.explosive_drive_rate",
+            "label": "Explosive drive rate",
+            "away_value": 0.2308,
+            "home_value": 0.4706,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.third_down_conversion_rate",
+            "label": "Third down",
+            "away_value": 0.1667,
+            "home_value": 0.4615,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.points_per_drive",
+            "label": "Points per drive",
+            "away_value": 1.7692,
+            "home_value": 3.5882,
+            "format": "dec2"
+          },
+          {
+            "key": "team_box.turnovers_committed",
+            "label": "Turnovers",
+            "away_value": 1,
+            "home_value": 1,
+            "format": "int"
+          }
+        ],
+        "leaders": [
+          {
+            "key": "passing",
+            "label": "Passing",
+            "away": {
+              "name": "Jacobe Robinson",
+              "player_key": "PERS_00013572",
+              "image_url": "https://gsutigers.com/images/2026/7/8/Jacobe_Robinson.jpg",
+              "value": 131,
+              "stat_line": "7/12, 131 yds, 1 TD, 1 INT"
+            },
+            "home": {
+              "name": "Cornelious Brown IV",
+              "player_key": "PERS_00000446",
+              "image_url": "https://aamusports.com/images/2026/7/13/26CorneliousBrownIV.jpg",
+              "value": 417,
+              "stat_line": "22/38, 417 yds, 5 TD, 1 INT"
+            }
+          },
+          {
+            "key": "rushing",
+            "label": "Rushing",
+            "away": {
+              "name": "Andre Crews",
+              "player_key": "PERS_00011092",
+              "image_url": "https://gsutigers.com/images/2026/7/7/Andre_Crews.jpg",
+              "value": 40,
+              "stat_line": "8 car, 40 yds, 1 TD"
+            },
+            "home": {
+              "name": "Tyler Thomas",
+              "player_key": "PERS_00013351",
+              "image_url": null,
+              "value": 52,
+              "stat_line": "1 car, 52 yds, 1 TD"
+            }
+          },
+          {
+            "key": "receiving",
+            "label": "Receiving",
+            "away": {
+              "name": "Tyson George",
+              "player_key": "PERS_00012056",
+              "image_url": "https://gsutigers.com/images/2026/7/7/Tyson_George.jpg",
+              "value": 93,
+              "stat_line": "7 rec, 93 yds, 1 TD"
+            },
+            "home": {
+              "name": "Jaylan Bean",
+              "player_key": "PERS_00013332",
+              "image_url": "https://aamusports.com/images/2026/7/13/26JaylanBean.jpg",
+              "value": 240,
+              "stat_line": "10 rec, 240 yds, 4 TD"
+            }
+          },
+          {
+            "key": "defense",
+            "label": "Defense",
+            "away": {
+              "name": "DeMone Green",
+              "player_key": "PERS_00013573",
+              "image_url": "https://gsutigers.com/images/2026/7/8/DeMone_Green.jpg",
+              "value": 10.34,
+              "stat_line": "10.3 production (DL)"
+            },
+            "home": {
+              "name": "John Robinson",
+              "player_key": "PERS_00000468",
+              "image_url": "https://aamusports.com/images/2026/7/13/26JohnRobinson.jpg",
+              "value": 16.66,
+              "stat_line": "16.7 production (LB)"
+            }
+          },
+          {
+            "key": "production",
+            "label": "Top producer",
+            "away": {
+              "name": "DeMone Green",
+              "player_key": "PERS_00013573",
+              "image_url": "https://gsutigers.com/images/2026/7/8/DeMone_Green.jpg",
+              "value": 10.34,
+              "stat_line": "10.3 production (DL)"
+            },
+            "home": {
+              "name": "Cornelious Brown IV",
+              "player_key": "PERS_00000446",
+              "image_url": "https://aamusports.com/images/2026/7/13/26CorneliousBrownIV.jpg",
+              "value": 36.21,
+              "stat_line": "36.2 production (QB)"
+            }
+          }
+        ],
+        "warnings": []
+      },
+      "sort_order": 3
+    },
+    {
+      "game_id": "BCUMVSU17102026",
+      "game_path_id": "bcumvsu26",
+      "route": "/game/bcumvsu26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "02:08 PM",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Homecoming",
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "swacmvsu"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 34,
+        "record": "3-3",
+        "conference_record": "1-1"
+      },
+      "home_team": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 14,
+        "record": "3-4",
+        "conference_record": "2-1"
+      },
+      "winner_team_id": "swacbcu",
+      "venue": {
+        "stadium": "Rice-Totten Stadium",
+        "venue_label": "Rice-Totten Stadium",
+        "city": "Itta Bena",
+        "neutral_site_name": null,
+        "venue_id": "VEN_rice_totten_stadium",
+        "name": "Rice-Totten Stadium"
+      },
+      "story_label": "Division game",
+      "brief": {
+        "source": "parsed",
+        "line_score": {
+          "labels": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+          ],
+          "away": [
+            0,
+            14,
+            7,
+            13
+          ],
+          "home": [
+            7,
+            0,
+            0,
+            7
+          ]
+        },
+        "mvp": {
+          "name": "Jaden Davis",
+          "player_key": "PERS_00010123",
+          "image_url": "https://bcuathletics.com/images/2026/8/25/DAVIS_JADEN.png",
+          "position": "DB",
+          "team_id": "swacbcu",
+          "glory": 61.18,
+          "glory_metric": "production_score"
+        },
+        "metrics": [
+          {
+            "key": "team_box.total_yards",
+            "label": "Total yards",
+            "away_value": 304,
+            "home_value": 325,
+            "format": "int"
+          },
+          {
+            "key": "team_box.yards_per_play",
+            "label": "Yards per play",
+            "away_value": 4.2222,
+            "home_value": 5.3279,
+            "format": "dec1"
+          },
+          {
+            "key": "team_box.pass_yards",
+            "label": "Passing yards",
+            "away_value": 146,
+            "home_value": 196,
+            "format": "int"
+          },
+          {
+            "key": "team_box.rush_yards",
+            "label": "Rushing yards",
+            "away_value": 177,
+            "home_value": 166,
+            "format": "int"
+          },
+          {
+            "key": "advanced_team.epa_per_play",
+            "label": "EPA per play",
+            "away_value": -0.0768,
+            "home_value": -0.2483,
+            "format": "signed2"
+          },
+          {
+            "key": "advanced_team.success_rate",
+            "label": "Success rate",
+            "away_value": 0.375,
+            "home_value": 0.3443,
+            "format": "pct"
+          },
+          {
+            "key": "advanced_team.explosive_drive_rate",
+            "label": "Explosive drive rate",
+            "away_value": 0.0714,
+            "home_value": 0.25,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.third_down_conversion_rate",
+            "label": "Third down",
+            "away_value": 0.4667,
+            "home_value": 0.2308,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.points_per_drive",
+            "label": "Points per drive",
+            "away_value": 2.0,
+            "home_value": 0.875,
+            "format": "dec2"
+          },
+          {
+            "key": "team_box.turnovers_committed",
+            "label": "Turnovers",
+            "away_value": 2,
+            "home_value": 4,
+            "format": "int"
+          }
+        ],
+        "leaders": [
+          {
+            "key": "passing",
+            "label": "Passing",
+            "away": {
+              "name": "Tyler Jefferson",
+              "player_key": "PERS_00011998",
+              "image_url": "https://bcuathletics.com/images/2026/8/11/JEFFERSON_TYLER.png",
+              "value": 109,
+              "stat_line": "7/15, 109 yds, 2 TD"
+            },
+            "home": {
+              "name": "Joshua Brown",
+              "player_key": "PERS_00013680",
+              "image_url": "https://mvsusports.com/images/2026/8/2/BROWN_JOSHUA.jpg",
+              "value": 196,
+              "stat_line": "15/34, 196 yds, 1 TD, 3 INT"
+            }
+          },
+          {
+            "key": "rushing",
+            "label": "Rushing",
+            "away": {
+              "name": "Rashon Brown",
+              "player_key": "PERS_00011966",
+              "image_url": "https://bcuathletics.com/images/2026/8/25/BROWN_RASHON.png",
+              "value": 69,
+              "stat_line": "22 car, 69 yds, 0 TD"
+            },
+            "home": {
+              "name": "Norman Taylor",
+              "player_key": "PERS_00012164",
+              "image_url": "https://mvsusports.com/images/2026/8/2/TAYLOR_NORMAN.jpg",
+              "value": 87,
+              "stat_line": "9 car, 87 yds, 0 TD"
+            }
+          },
+          {
+            "key": "receiving",
+            "label": "Receiving",
+            "away": {
+              "name": "Rickie Shaw II",
+              "player_key": "PERS_00011951",
+              "image_url": "https://bcuathletics.com/images/2026/8/25/SHAW_RICKIE.png",
+              "value": 80,
+              "stat_line": "5 rec, 80 yds, 2 TD"
+            },
+            "home": {
+              "name": "Dayvian Bluitt",
+              "player_key": "PERS_00013679",
+              "image_url": "https://mvsusports.com/images/2026/8/2/BLUITT_DAYVION.jpg",
+              "value": 133,
+              "stat_line": "6 rec, 133 yds, 1 TD"
+            }
+          },
+          {
+            "key": "defense",
+            "label": "Defense",
+            "away": {
+              "name": "Jaden Davis",
+              "player_key": "PERS_00010123",
+              "image_url": "https://bcuathletics.com/images/2026/8/25/DAVIS_JADEN.png",
+              "value": 61.18,
+              "stat_line": "61.2 production (DB)"
+            },
+            "home": {
+              "name": "Phillip Jackson",
+              "player_key": "PERS_00013694",
+              "image_url": "https://mvsusports.com/images/2026/8/2/JACKSON_PHILLIP.jpg",
+              "value": 18.97,
+              "stat_line": "19.0 production (DL)"
+            }
+          },
+          {
+            "key": "production",
+            "label": "Top producer",
+            "away": {
+              "name": "Jaden Davis",
+              "player_key": "PERS_00010123",
+              "image_url": "https://bcuathletics.com/images/2026/8/25/DAVIS_JADEN.png",
+              "value": 61.18,
+              "stat_line": "61.2 production (DB)"
+            },
+            "home": {
+              "name": "Phillip Jackson",
+              "player_key": "PERS_00013694",
+              "image_url": "https://mvsusports.com/images/2026/8/2/JACKSON_PHILLIP.jpg",
+              "value": 18.97,
+              "stat_line": "19.0 production (DL)"
+            }
+          }
+        ],
+        "warnings": []
+      },
+      "sort_order": 4
+    },
+    {
+      "game_id": "2026-10-17_morehouse_at_meachu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "15:30",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "Homecoming",
+      "events": [
+        {
+          "event_type_id": "homecoming",
+          "display_name": "Homecoming",
+          "category": "theme_day",
+          "teams": [
+            "meachu"
+          ]
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Morehouse",
+        "short_name": "MORE",
+        "score": 17,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 31,
+        "record": "2-4",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "meachu",
+      "venue": {
+        "stadium": "Greene Stadium",
+        "venue_label": "Greene Stadium",
+        "city": "Washington",
+        "neutral_site_name": null,
+        "venue_id": "VEN_greene_stadium",
+        "name": "Greene Stadium"
+      },
+      "story_label": "HBCU matchup",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 5
+    },
+    {
+      "game_id": "2026-10-17_meacmsu_at_tennesseestate",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-10-17",
+      "date_label": "Oct 17",
+      "kickoff_label": "18:30",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 16,
+        "record": "5-1",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "score": 25,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "Nissan Stadium",
+        "venue_label": "Nissan Stadium",
+        "city": "Nashville, TN",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "HBCU matchup",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 6
+    }
+  ]
+}

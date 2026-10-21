@@ -1,0 +1,1898 @@
+{
+ "season": 2025,
+ "generated_at": "2026-10-20T01:37:06-05:00",
+ "through_week": null,
+ "default_week": 16,
+ "weeks": [
+  {
+   "week": 0,
+   "label": "Week 0",
+   "date_range": {
+    "start": "2025-06-27",
+    "end": "2025-08-25"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-08-23_meacnccu_at_swacsu",
+     "route": "/game/nccusu25",
+     "date": "2025-08-23",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 14
+     },
+     "away": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 31
+     },
+     "winner_id": "meacnccu",
+     "margin": 17,
+     "net_success": 0.0997,
+     "epa_diff": 0.2806,
+     "winner_edge": 0.0997
+    }
+   ]
+  },
+  {
+   "week": 1,
+   "label": "Week 1",
+   "date_range": {
+    "start": "2025-08-26",
+    "end": "2025-09-01"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-08-30_meachu_at_swacfamu",
+     "route": "/game/hufamu25",
+     "date": "2025-08-30",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 9
+     },
+     "away": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 10
+     },
+     "winner_id": "meachu",
+     "margin": 1,
+     "net_success": -0.1396,
+     "epa_diff": -0.0982,
+     "winner_edge": -0.1396
+    },
+    {
+     "schedule_game_id": "2025-08-30_swacpvamu_at_swactsu",
+     "route": "/game/pvamutsu25",
+     "date": "2025-08-30",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 21
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 22
+     },
+     "winner_id": "swacpvamu",
+     "margin": 1,
+     "net_success": -0.0278,
+     "epa_diff": 0.1195,
+     "winner_edge": -0.0278
+    },
+    {
+     "schedule_game_id": "2025-08-30_swacsu_at_swacmvsu",
+     "route": "/game/sumvsu25",
+     "date": "2025-08-30",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 29
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 34
+     },
+     "winner_id": "swacsu",
+     "margin": 5,
+     "net_success": 0.2752,
+     "epa_diff": -0.1262,
+     "winner_edge": 0.2752
+    }
+   ]
+  },
+  {
+   "week": 2,
+   "label": "Week 2",
+   "date_range": {
+    "start": "2025-09-02",
+    "end": "2025-09-08"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-09-06_swacalc_at_swacaamu",
+     "route": "/game/alcaamu25",
+     "date": "2025-09-06",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 41
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 31
+     },
+     "winner_id": "swacaamu",
+     "margin": 10,
+     "net_success": 0.0498,
+     "epa_diff": 0.0426,
+     "winner_edge": 0.0498
+    },
+    {
+     "schedule_game_id": "2025-09-06_swacasu_at_swacsu",
+     "route": "/game/asusu25",
+     "date": "2025-09-06",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 7
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 30
+     },
+     "winner_id": "swacasu",
+     "margin": 23,
+     "net_success": 0.0319,
+     "epa_diff": 0.3225,
+     "winner_edge": 0.0319
+    }
+   ]
+  },
+  {
+   "week": 3,
+   "label": "Week 3",
+   "date_range": {
+    "start": "2025-09-09",
+    "end": "2025-09-15"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-09-13_swacbcu_at_meacscsu",
+     "route": "/game/bcuscsu25",
+     "date": "2025-09-13",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 55
+     },
+     "away": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 41
+     },
+     "winner_id": "meacscsu",
+     "margin": 14,
+     "net_success": 0.0833,
+     "epa_diff": -0.1537,
+     "winner_edge": 0.0833
+    }
+   ]
+  },
+  {
+   "week": 5,
+   "label": "Week 5",
+   "date_range": {
+    "start": "2025-09-23",
+    "end": "2025-09-29"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-09-27_swacaamu_at_swacbcu",
+     "route": "/game/aamubcu25",
+     "date": "2025-09-27",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 41
+     },
+     "away": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 34
+     },
+     "winner_id": "swacbcu",
+     "margin": 7,
+     "net_success": 0.066,
+     "epa_diff": 0.1207,
+     "winner_edge": 0.066
+    },
+    {
+     "schedule_game_id": "2025-09-27_swacalc_at_swacuapb",
+     "route": "/game/alcuapb25",
+     "date": "2025-09-27",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 24
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 20
+     },
+     "winner_id": "swacuapb",
+     "margin": 4,
+     "net_success": -0.1516,
+     "epa_diff": -0.1039,
+     "winner_edge": -0.1516
+    },
+    {
+     "schedule_game_id": "2025-09-27_swacasu_at_swacfamu",
+     "route": "/game/asufamu25",
+     "date": "2025-09-27",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 14
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 42
+     },
+     "winner_id": "swacasu",
+     "margin": 28,
+     "net_success": 0.1639,
+     "epa_diff": 0.26,
+     "winner_edge": 0.1639
+    },
+    {
+     "schedule_game_id": "2025-09-27_swacgsu_at_swacpvamu",
+     "route": "/game/gsupvamu25",
+     "date": "2025-09-27",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 28
+     },
+     "away": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 13
+     },
+     "winner_id": "swacpvamu",
+     "margin": 15,
+     "net_success": 0.1279,
+     "epa_diff": 0.097,
+     "winner_edge": 0.1279
+    },
+    {
+     "schedule_game_id": "2025-09-27_swacjsu_at_swacsu",
+     "route": "/game/jsusu25",
+     "date": "2025-09-27",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 13
+     },
+     "away": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 38
+     },
+     "winner_id": "swacjsu",
+     "margin": 25,
+     "net_success": 0.1592,
+     "epa_diff": 0.4806,
+     "winner_edge": 0.1592
+    },
+    {
+     "schedule_game_id": "2025-09-27_swactsu_at_swacmvsu",
+     "route": "/game/tsumvsu25",
+     "date": "2025-09-27",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 20
+     },
+     "away": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 23
+     },
+     "winner_id": "swactsu",
+     "margin": 3,
+     "net_success": -0.0135,
+     "epa_diff": -0.0459,
+     "winner_edge": -0.0135
+    }
+   ]
+  },
+  {
+   "week": 6,
+   "label": "Week 6",
+   "date_range": {
+    "start": "2025-09-30",
+    "end": "2025-10-06"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-10-04_swacbcu_at_swacasu",
+     "route": "/game/bcuasu25",
+     "date": "2025-10-04",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 52
+     },
+     "away": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 35
+     },
+     "winner_id": "swacasu",
+     "margin": 17,
+     "net_success": 0.0876,
+     "epa_diff": 0.1922,
+     "winner_edge": 0.0876
+    },
+    {
+     "schedule_game_id": "2025-10-04_swacjsu_at_swacaamu",
+     "route": "/game/aamujsu25",
+     "date": "2025-10-04",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 24
+     },
+     "away": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 57
+     },
+     "winner_id": "swacjsu",
+     "margin": 33,
+     "net_success": 0.1689,
+     "epa_diff": 0.2462,
+     "winner_edge": 0.1689
+    },
+    {
+     "schedule_game_id": "2025-10-04_swacpvamu_at_swacalc",
+     "route": "/game/pvamualc25",
+     "date": "2025-10-04",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 12
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 13
+     },
+     "winner_id": "swacpvamu",
+     "margin": 1,
+     "net_success": 0.0091,
+     "epa_diff": 0.1175,
+     "winner_edge": 0.0091
+    },
+    {
+     "schedule_game_id": "2025-10-04_swacuapb_at_swactsu",
+     "route": "/game/uapbtsu25",
+     "date": "2025-10-04",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 51
+     },
+     "away": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 7
+     },
+     "winner_id": "swactsu",
+     "margin": 44,
+     "net_success": 0.0593,
+     "epa_diff": 0.2627,
+     "winner_edge": 0.0593
+    }
+   ]
+  },
+  {
+   "week": 7,
+   "label": "Week 7",
+   "date_range": {
+    "start": "2025-10-07",
+    "end": "2025-10-13"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-10-11_meacnccu_at_swacfamu",
+     "route": "/game/nccufamu25",
+     "date": "2025-10-11",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 7
+     },
+     "away": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 45
+     },
+     "winner_id": "meacnccu",
+     "margin": 38,
+     "net_success": 0.2205,
+     "epa_diff": 0.4384,
+     "winner_edge": 0.2205
+    },
+    {
+     "schedule_game_id": "2025-10-11_swacasu_at_swacjsu",
+     "route": "/game/asujsu25",
+     "date": "2025-10-11",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 38
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 34
+     },
+     "winner_id": "swacjsu",
+     "margin": 4,
+     "net_success": 0.0803,
+     "epa_diff": -0.0608,
+     "winner_edge": 0.0803
+    },
+    {
+     "schedule_game_id": "2025-10-11_swacmvsu_at_swacaamu",
+     "route": "/game/mvsuaamu25",
+     "date": "2025-10-11",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 45
+     },
+     "away": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 25
+     },
+     "winner_id": "swacaamu",
+     "margin": 20,
+     "net_success": 0.169,
+     "epa_diff": 0.0645,
+     "winner_edge": 0.169
+    },
+    {
+     "schedule_game_id": "2025-10-11_swacsu_at_swacbcu",
+     "route": "/game/subcu25",
+     "date": "2025-10-11",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 45
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 14
+     },
+     "winner_id": "swacbcu",
+     "margin": 31,
+     "net_success": 0.2206,
+     "epa_diff": -0.0937,
+     "winner_edge": 0.2206
+    },
+    {
+     "schedule_game_id": "2025-10-11_swactsu_at_swacgsu",
+     "route": "/game/tsugsu25",
+     "date": "2025-10-11",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 20
+     },
+     "away": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 21
+     },
+     "winner_id": "swactsu",
+     "margin": 1,
+     "net_success": -0.0124,
+     "epa_diff": 0.1407,
+     "winner_edge": -0.0124
+    }
+   ]
+  },
+  {
+   "week": 8,
+   "label": "Week 8",
+   "date_range": {
+    "start": "2025-10-14",
+    "end": "2025-10-20"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-10-18_swacalc_at_swacfamu",
+     "route": "/game/alcfamu25",
+     "date": "2025-10-18",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 33
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 28
+     },
+     "winner_id": "swacfamu",
+     "margin": 5,
+     "net_success": 0.04,
+     "epa_diff": 0.1696,
+     "winner_edge": 0.04
+    },
+    {
+     "schedule_game_id": "2025-10-18_swacgsu_at_swacuapb",
+     "route": "/game/gsuuapb25",
+     "date": "2025-10-18",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 16
+     },
+     "away": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 20
+     },
+     "winner_id": "swacgsu",
+     "margin": 4,
+     "net_success": 0.1477,
+     "epa_diff": 0.0799,
+     "winner_edge": 0.1477
+    },
+    {
+     "schedule_game_id": "2025-10-18_swacpvamu_at_swacsu",
+     "route": "/game/pvamusu25",
+     "date": "2025-10-18",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 3
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 24
+     },
+     "winner_id": "swacpvamu",
+     "margin": 21,
+     "net_success": 0.0323,
+     "epa_diff": 0.1299,
+     "winner_edge": 0.0323
+    }
+   ]
+  },
+  {
+   "week": 9,
+   "label": "Week 9",
+   "date_range": {
+    "start": "2025-10-21",
+    "end": "2025-10-27"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-10-25_meacdsu_at_meacnccu",
+     "route": "/game/dsunccu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 26
+     },
+     "away": {
+      "team_id": "meacdsu",
+      "name": "Del State",
+      "short_name": "DSU",
+      "score": 35
+     },
+     "winner_id": "meacdsu",
+     "margin": 9,
+     "net_success": -0.0738,
+     "epa_diff": 0.1551,
+     "winner_edge": -0.0738
+    },
+    {
+     "schedule_game_id": "2025-10-25_meacmsu_at_meachu",
+     "route": "/game/msuhu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 33
+     },
+     "away": {
+      "team_id": "meacmsu",
+      "name": "Morgan",
+      "short_name": "MSU",
+      "score": 27
+     },
+     "winner_id": "meachu",
+     "margin": 6,
+     "net_success": 0.1661,
+     "epa_diff": 0.1152,
+     "winner_edge": 0.1661
+    },
+    {
+     "schedule_game_id": "2025-10-25_meacscsu_at_meacnsu",
+     "route": "/game/scsunsu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacnsu",
+      "name": "Norfolk",
+      "short_name": "NSU",
+      "score": 20
+     },
+     "away": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 51
+     },
+     "winner_id": "meacscsu",
+     "margin": 31,
+     "net_success": 0.2667,
+     "epa_diff": 0.2146,
+     "winner_edge": 0.2667
+    },
+    {
+     "schedule_game_id": "2025-10-25_swacaamu_at_swacasu",
+     "route": "/game/aamuasu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 56
+     },
+     "away": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 13
+     },
+     "winner_id": "swacasu",
+     "margin": 43,
+     "net_success": 0.2936,
+     "epa_diff": 0.4099,
+     "winner_edge": 0.2936
+    },
+    {
+     "schedule_game_id": "2025-10-25_swacfamu_at_swacsu",
+     "route": "/game/famusu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 35
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 43
+     },
+     "winner_id": "swacfamu",
+     "margin": 8,
+     "net_success": 0.0143,
+     "epa_diff": 0.0717,
+     "winner_edge": 0.0143
+    },
+    {
+     "schedule_game_id": "2025-10-25_swacgsu_at_swacjsu",
+     "route": "/game/gsujsu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 24
+     },
+     "away": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 26
+     },
+     "winner_id": "swacgsu",
+     "margin": 2,
+     "net_success": -0.0268,
+     "epa_diff": 0.059,
+     "winner_edge": -0.0268
+    },
+    {
+     "schedule_game_id": "2025-10-25_swacmvsu_at_swacalc",
+     "route": "/game/mvsualc25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 32
+     },
+     "away": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 10
+     },
+     "winner_id": "swacalc",
+     "margin": 22,
+     "net_success": 0.1364,
+     "epa_diff": -0.0048,
+     "winner_edge": 0.1364
+    },
+    {
+     "schedule_game_id": "2025-10-25_swacuapb_at_swacbcu",
+     "route": "/game/uapbbcu25",
+     "date": "2025-10-25",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 31
+     },
+     "away": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 14
+     },
+     "winner_id": "swacbcu",
+     "margin": 17,
+     "net_success": 0.131,
+     "epa_diff": 0.1,
+     "winner_edge": 0.131
+    }
+   ]
+  },
+  {
+   "week": 10,
+   "label": "Week 10",
+   "date_range": {
+    "start": "2025-10-28",
+    "end": "2025-11-03"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-10-30_meacnsu_at_meacdsu",
+     "route": "/game/nsudsu25",
+     "date": "2025-10-30",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacdsu",
+      "name": "Del State",
+      "short_name": "DSU",
+      "score": 27
+     },
+     "away": {
+      "team_id": "meacnsu",
+      "name": "Norfolk",
+      "short_name": "NSU",
+      "score": 20
+     },
+     "winner_id": "meacdsu",
+     "margin": 7,
+     "net_success": -0.0484,
+     "epa_diff": 0.0247,
+     "winner_edge": -0.0484
+    },
+    {
+     "schedule_game_id": "2025-11-01_meacmsu_at_meacscsu",
+     "route": "/game/msuscsu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 36
+     },
+     "away": {
+      "team_id": "meacmsu",
+      "name": "Morgan",
+      "short_name": "MSU",
+      "score": 30
+     },
+     "winner_id": "meacscsu",
+     "margin": 6,
+     "net_success": 0.1217,
+     "epa_diff": -0.0108,
+     "winner_edge": 0.1217
+    },
+    {
+     "schedule_game_id": "2025-11-01_meacnccu_at_meachu",
+     "route": "/game/nccuhu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 14
+     },
+     "away": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 35
+     },
+     "winner_id": "meacnccu",
+     "margin": 21,
+     "net_success": 0.1596,
+     "epa_diff": 0.2769,
+     "winner_edge": 0.1596
+    },
+    {
+     "schedule_game_id": "2025-11-01_swacaamu_at_swacgsu",
+     "route": "/game/aamugsu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 13
+     },
+     "away": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 10
+     },
+     "winner_id": "swacgsu",
+     "margin": 3,
+     "net_success": -0.0093,
+     "epa_diff": 0.0319,
+     "winner_edge": -0.0093
+    },
+    {
+     "schedule_game_id": "2025-11-01_swacalc_at_swactsu",
+     "route": "/game/alctsu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 14
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 33
+     },
+     "winner_id": "swacalc",
+     "margin": 19,
+     "net_success": 0.1719,
+     "epa_diff": 0.2293,
+     "winner_edge": 0.1719
+    },
+    {
+     "schedule_game_id": "2025-11-01_swacasu_at_swacpvamu",
+     "route": "/game/asupvamu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 28
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 31
+     },
+     "winner_id": "swacasu",
+     "margin": 3,
+     "net_success": 0.0034,
+     "epa_diff": 0.1164,
+     "winner_edge": 0.0034
+    },
+    {
+     "schedule_game_id": "2025-11-01_swacjsu_at_swacfamu",
+     "route": "/game/jsufamu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 16
+     },
+     "away": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 41
+     },
+     "winner_id": "swacjsu",
+     "margin": 25,
+     "net_success": 0.1853,
+     "epa_diff": 0.3359,
+     "winner_edge": 0.1853
+    },
+    {
+     "schedule_game_id": "2025-11-01_swacmvsu_at_swacbcu",
+     "route": "/game/mvsubcu25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 42
+     },
+     "away": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 34
+     },
+     "winner_id": "swacbcu",
+     "margin": 8,
+     "net_success": 0.0589,
+     "epa_diff": -0.0102,
+     "winner_edge": 0.0589
+    },
+    {
+     "schedule_game_id": "2025-11-01_swacsu_at_swacuapb",
+     "route": "/game/suuapb25",
+     "date": "2025-11-01",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 40
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 21
+     },
+     "winner_id": "swacuapb",
+     "margin": 19,
+     "net_success": 0.0526,
+     "epa_diff": -0.0835,
+     "winner_edge": 0.0526
+    }
+   ]
+  },
+  {
+   "week": 11,
+   "label": "Week 11",
+   "date_range": {
+    "start": "2025-11-04",
+    "end": "2025-11-10"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-11-07_meacdsu_at_meacmsu",
+     "route": "/game/dsumsu25",
+     "date": "2025-11-07",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacmsu",
+      "name": "Morgan",
+      "short_name": "MSU",
+      "score": 12
+     },
+     "away": {
+      "team_id": "meacdsu",
+      "name": "Del State",
+      "short_name": "DSU",
+      "score": 14
+     },
+     "winner_id": "meacdsu",
+     "margin": 2,
+     "net_success": 0.0492,
+     "epa_diff": -0.1621,
+     "winner_edge": 0.0492
+    },
+    {
+     "schedule_game_id": "2025-11-08_meachu_at_meacscsu",
+     "route": "/game/huscsu25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 42
+     },
+     "away": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 12
+     },
+     "winner_id": "meacscsu",
+     "margin": 30,
+     "net_success": 0.1677,
+     "epa_diff": 0.263,
+     "winner_edge": 0.1677
+    },
+    {
+     "schedule_game_id": "2025-11-08_meacnsu_at_meacnccu",
+     "route": "/game/nsunccu25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 31
+     },
+     "away": {
+      "team_id": "meacnsu",
+      "name": "Norfolk",
+      "short_name": "NSU",
+      "score": 28
+     },
+     "winner_id": "meacnccu",
+     "margin": 3,
+     "net_success": 0.0367,
+     "epa_diff": -0.0758,
+     "winner_edge": 0.0367
+    },
+    {
+     "schedule_game_id": "2025-11-08_swacbcu_at_swacgsu",
+     "route": "/game/bcugsu25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 31
+     },
+     "away": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 23
+     },
+     "winner_id": "swacgsu",
+     "margin": 8,
+     "net_success": 0.0412,
+     "epa_diff": 0.28,
+     "winner_edge": 0.0412
+    },
+    {
+     "schedule_game_id": "2025-11-08_swacfamu_at_swacuapb",
+     "route": "/game/famuuapb25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 28
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 31
+     },
+     "winner_id": "swacfamu",
+     "margin": 3,
+     "net_success": -0.0176,
+     "epa_diff": 0.1605,
+     "winner_edge": -0.0176
+    },
+    {
+     "schedule_game_id": "2025-11-08_swacjsu_at_swacmvsu",
+     "route": "/game/jsumvsu25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 3
+     },
+     "away": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 42
+     },
+     "winner_id": "swacjsu",
+     "margin": 39,
+     "net_success": 0.2791,
+     "epa_diff": 0.5435,
+     "winner_edge": 0.2791
+    },
+    {
+     "schedule_game_id": "2025-11-08_swacpvamu_at_swacaamu",
+     "route": "/game/pvamuaamu25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 5
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 48
+     },
+     "winner_id": "swacpvamu",
+     "margin": 43,
+     "net_success": 0.2493,
+     "epa_diff": 0.6169,
+     "winner_edge": 0.2493
+    },
+    {
+     "schedule_game_id": "2025-11-08_swacsu_at_swacalc",
+     "route": "/game/sualc25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 35
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 17
+     },
+     "winner_id": "swacalc",
+     "margin": 18,
+     "net_success": 0.1515,
+     "epa_diff": 0.1582,
+     "winner_edge": 0.1515
+    },
+    {
+     "schedule_game_id": "2025-11-08_swactsu_at_swacasu",
+     "route": "/game/tsuasu25",
+     "date": "2025-11-08",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 42
+     },
+     "away": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 24
+     },
+     "winner_id": "swacasu",
+     "margin": 18,
+     "net_success": 0.1054,
+     "epa_diff": 0.3015,
+     "winner_edge": 0.1054
+    }
+   ]
+  },
+  {
+   "week": 12,
+   "label": "Week 12",
+   "date_range": {
+    "start": "2025-11-11",
+    "end": "2025-11-17"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-11-14_meacscsu_at_meacnccu",
+     "route": "/game/scsunccu25",
+     "date": "2025-11-14",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 27
+     },
+     "away": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 34
+     },
+     "winner_id": "meacscsu",
+     "margin": 7,
+     "net_success": 0.1069,
+     "epa_diff": -0.0157,
+     "winner_edge": 0.1069
+    },
+    {
+     "schedule_game_id": "2025-11-15_meachu_at_meacdsu",
+     "route": "/game/hudsu25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacdsu",
+      "name": "Del State",
+      "short_name": "DSU",
+      "score": 26
+     },
+     "away": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 13
+     },
+     "winner_id": "meacdsu",
+     "margin": 13,
+     "net_success": 0.128,
+     "epa_diff": 0.3313,
+     "winner_edge": 0.128
+    },
+    {
+     "schedule_game_id": "2025-11-15_meacmsu_at_meacnsu",
+     "route": "/game/msunsu25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacnsu",
+      "name": "Norfolk",
+      "short_name": "NSU",
+      "score": 28
+     },
+     "away": {
+      "team_id": "meacmsu",
+      "name": "Morgan",
+      "short_name": "MSU",
+      "score": 35
+     },
+     "winner_id": "meacmsu",
+     "margin": 7,
+     "net_success": -0.0797,
+     "epa_diff": 0.0172,
+     "winner_edge": -0.0797
+    },
+    {
+     "schedule_game_id": "2025-11-15_swacbcu_at_swacjsu",
+     "route": "/game/bcujsu25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 28
+     },
+     "away": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 13
+     },
+     "winner_id": "swacjsu",
+     "margin": 15,
+     "net_success": 0.1799,
+     "epa_diff": 0.4304,
+     "winner_edge": 0.1799
+    },
+    {
+     "schedule_game_id": "2025-11-15_swacfamu_at_swacaamu",
+     "route": "/game/famuaamu25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 23
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 26
+     },
+     "winner_id": "swacfamu",
+     "margin": 3,
+     "net_success": 0.0019,
+     "epa_diff": 0.1048,
+     "winner_edge": 0.0019
+    },
+    {
+     "schedule_game_id": "2025-11-15_swacgsu_at_swacalc",
+     "route": "/game/gsualc25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 27
+     },
+     "away": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 16
+     },
+     "winner_id": "swacalc",
+     "margin": 11,
+     "net_success": 0.2302,
+     "epa_diff": 0.3056,
+     "winner_edge": 0.2302
+    },
+    {
+     "schedule_game_id": "2025-11-15_swactsu_at_swacsu",
+     "route": "/game/tsusu25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 30
+     },
+     "away": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 35
+     },
+     "winner_id": "swactsu",
+     "margin": 5,
+     "net_success": 0.0241,
+     "epa_diff": 0.1609,
+     "winner_edge": 0.0241
+    },
+    {
+     "schedule_game_id": "2025-11-15_swacuapb_at_swacpvamu",
+     "route": "/game/uapbpvamu25",
+     "date": "2025-11-15",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 56
+     },
+     "away": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 9
+     },
+     "winner_id": "swacpvamu",
+     "margin": 47,
+     "net_success": 0.325,
+     "epa_diff": 0.567,
+     "winner_edge": 0.325
+    },
+    {
+     "schedule_game_id": "2025-11-16_swacasu_at_swacmvsu",
+     "route": "/game/asumvsu25",
+     "date": "2025-11-16",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 3
+     },
+     "away": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 41
+     },
+     "winner_id": "swacasu",
+     "margin": 38,
+     "net_success": 0.2857,
+     "epa_diff": 0.5262,
+     "winner_edge": 0.2857
+    }
+   ]
+  },
+  {
+   "week": 13,
+   "label": "Week 13",
+   "date_range": {
+    "start": "2025-11-18",
+    "end": "2025-11-24"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-11-22_meacnccu_at_meacmsu",
+     "route": "/game/nccumsu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacmsu",
+      "name": "Morgan",
+      "short_name": "MSU",
+      "score": 14
+     },
+     "away": {
+      "team_id": "meacnccu",
+      "name": "NC Central",
+      "short_name": "NCCU",
+      "score": 33
+     },
+     "winner_id": "meacnccu",
+     "margin": 19,
+     "net_success": 0.2063,
+     "epa_diff": 0.1128,
+     "winner_edge": 0.2063
+    },
+    {
+     "schedule_game_id": "2025-11-22_meacnsu_at_meachu",
+     "route": "/game/nsuhu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short_name": "HOW",
+      "score": 44
+     },
+     "away": {
+      "team_id": "meacnsu",
+      "name": "Norfolk",
+      "short_name": "NSU",
+      "score": 15
+     },
+     "winner_id": "meachu",
+     "margin": 29,
+     "net_success": 0.0654,
+     "epa_diff": 0.0998,
+     "winner_edge": 0.0654
+    },
+    {
+     "schedule_game_id": "2025-11-22_meacscsu_at_meacdsu",
+     "route": "/game/scsudsu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "meacdsu",
+      "name": "Del State",
+      "short_name": "DSU",
+      "score": 17
+     },
+     "away": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 28
+     },
+     "winner_id": "meacscsu",
+     "margin": 11,
+     "net_success": 0.0467,
+     "epa_diff": 0.0696,
+     "winner_edge": 0.0467
+    },
+    {
+     "schedule_game_id": "2025-11-22_swacaamu_at_swactsu",
+     "route": "/game/aamutsu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "short_name": "TXSO",
+      "score": 24
+     },
+     "away": {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "short_name": "AAMU",
+      "score": 7
+     },
+     "winner_id": "swactsu",
+     "margin": 17,
+     "net_success": 0.1294,
+     "epa_diff": 0.2667,
+     "winner_edge": 0.1294
+    },
+    {
+     "schedule_game_id": "2025-11-22_swacalc_at_swacjsu",
+     "route": "/game/alcjsu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 27
+     },
+     "away": {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "short_name": "ALCN",
+      "score": 21
+     },
+     "winner_id": "swacjsu",
+     "margin": 6,
+     "net_success": -0.0348,
+     "epa_diff": -0.2555,
+     "winner_edge": -0.0348
+    },
+    {
+     "schedule_game_id": "2025-11-22_swacfamu_at_swacbcu",
+     "route": "/game/famubcu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "short_name": "BCU",
+      "score": 38
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 34
+     },
+     "winner_id": "swacbcu",
+     "margin": 4,
+     "net_success": -0.0268,
+     "epa_diff": -0.0336,
+     "winner_edge": -0.0268
+    },
+    {
+     "schedule_game_id": "2025-11-22_swacmvsu_at_swacpvamu",
+     "route": "/game/mvsupvamu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 59
+     },
+     "away": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 6
+     },
+     "winner_id": "swacpvamu",
+     "margin": 53,
+     "net_success": 0.3094,
+     "epa_diff": 0.6208,
+     "winner_edge": 0.3094
+    },
+    {
+     "schedule_game_id": "2025-11-22_swacuapb_at_swacasu",
+     "route": "/game/uapbasu25",
+     "date": "2025-11-22",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "short_name": "ALST",
+      "score": 44
+     },
+     "away": {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "short_name": "UAPB",
+      "score": 13
+     },
+     "winner_id": "swacasu",
+     "margin": 31,
+     "net_success": 0.0295,
+     "epa_diff": 0.3081,
+     "winner_edge": 0.0295
+    }
+   ]
+  },
+  {
+   "week": 14,
+   "label": "Week 14",
+   "date_range": {
+    "start": "2025-11-25",
+    "end": "2025-12-01"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-11-29_swacfamu_at_swacmvsu",
+     "route": "/game/famumvsu25",
+     "date": "2025-11-29",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "short_name": "MVSU",
+      "score": 35
+     },
+     "away": {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "short_name": "FAMU",
+      "score": 31
+     },
+     "winner_id": "swacmvsu",
+     "margin": 4,
+     "net_success": 0.0108,
+     "epa_diff": 0.2402,
+     "winner_edge": 0.0108
+    },
+    {
+     "schedule_game_id": "2025-11-29_swacsu_at_swacgsu",
+     "route": "/game/sugsu25",
+     "date": "2025-11-29",
+     "status": "final",
+     "conference_game": true,
+     "home": {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "short_name": "GRAM",
+      "score": 27
+     },
+     "away": {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short_name": "SOU",
+      "score": 28
+     },
+     "winner_id": "swacsu",
+     "margin": 1,
+     "net_success": 0.0976,
+     "epa_diff": 0.2701,
+     "winner_edge": 0.0976
+    }
+   ]
+  },
+  {
+   "week": 15,
+   "label": "SWAC Championship",
+   "date_range": {
+    "start": "2025-12-02",
+    "end": "2025-12-08"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-12-06_swacpvamu_at_swacjsu",
+     "route": "/game/pvamujsu25",
+     "date": "2025-12-06",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "short_name": "JKST",
+      "score": 21
+     },
+     "away": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 23
+     },
+     "winner_id": "swacpvamu",
+     "margin": 2,
+     "net_success": -0.015,
+     "epa_diff": 0.0276,
+     "winner_edge": -0.015
+    }
+   ]
+  },
+  {
+   "week": 16,
+   "label": "Celebration Bowl",
+   "date_range": {
+    "start": "2025-12-09",
+    "end": "2025-12-15"
+   },
+   "games": [
+    {
+     "schedule_game_id": "2025-12-13_meacscsu_at_swacpvamu",
+     "route": "/game/scsupvamu25",
+     "date": "2025-12-13",
+     "status": "final",
+     "conference_game": false,
+     "home": {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "short_name": "PVAMU",
+      "score": 38
+     },
+     "away": {
+      "team_id": "meacscsu",
+      "name": "SC State",
+      "short_name": "SCSU",
+      "score": 40
+     },
+     "winner_id": "meacscsu",
+     "margin": 2,
+     "net_success": -0.0456,
+     "epa_diff": -0.0907,
+     "winner_edge": -0.0456
+    }
+   ]
+  }
+ ],
+ "scope": "Games between two of the 18 with play-by-play (a parsed PDF) only. Outside opponents and games without play-by-play are not listed.",
+ "edge_method": "winner_edge = net_success: the winner's success rate minus the loser's, over each side's offensive plays in the game. Negative when the winner was less successful play for play. Success = 50% of the distance on 1st down, 70% on 2nd, 100% on 3rd/4th."
+}

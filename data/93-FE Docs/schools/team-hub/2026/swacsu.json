@@ -1,0 +1,469 @@
+{
+  "team_id": "swacsu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 7,
+  "generated_at": "2026-10-20T01:35:10-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "West",
+    "division_label": "SWAC WEST",
+    "season": 2026,
+    "team_abbreviation": "SOU",
+    "school_name": "Southern University and A&M College",
+    "avg_par": 2.9,
+    "roster_count": 114,
+    "transfer_count": 54,
+    "transfer_rate": 47.4,
+    "upperclass_pct": 39.5
+  },
+  "conference_record": {
+    "conference_label": "1-2",
+    "conference_wins": 1,
+    "conference_losses": 2,
+    "overall_label": "3-4",
+    "overall_wins": 3,
+    "overall_losses": 4,
+    "overall_ties": 0,
+    "division_rank": "5th - SWAC West",
+    "last_5": [
+      {
+        "week": 2,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "HOU",
+        "score_team": 6,
+        "score_opponent": 77,
+        "score": "L 6-77",
+        "game_path_id": null
+      },
+      {
+        "week": 3,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "LCU",
+        "score_team": 50,
+        "score_opponent": 31,
+        "score": "W 50-31",
+        "game_path_id": null
+      },
+      {
+        "week": 4,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 17,
+        "score_opponent": 35,
+        "score": "L 17-35",
+        "game_path_id": "sujsu26"
+      },
+      {
+        "week": 5,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacuapb",
+        "opponent_short": "UAPB",
+        "score_team": 10,
+        "score_opponent": 41,
+        "score": "L 10-41",
+        "game_path_id": "uapbsu26"
+      },
+      {
+        "week": 6,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacpvamu",
+        "opponent_short": "PVAMU",
+        "score_team": 28,
+        "score_opponent": 14,
+        "score": "W 28-14",
+        "game_path_id": "supvamu26"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "SUPVAMU10102026",
+    "game_path_id": "supvamu26",
+    "week": 6,
+    "date": "2026-10-10",
+    "opponent_id": "swacpvamu",
+    "opponent_name": "PVAMU",
+    "result": "W",
+    "score_team": 28,
+    "score_opponent": 14,
+    "score": "W 28-14",
+    "venue": {
+      "stadium_name": "Panther Stadium at Blackshear Field",
+      "venue_label": "Panther Stadium at Blackshear Field",
+      "city": "Prairie View",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "W 28-14 vs PVAMU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.4995
+  },
+  "next_game": {
+    "game_id": "2026-10-24_swacsu_at_swactsu",
+    "preview_path_id": "2026-10-24_swacsu_at_swactsu",
+    "date": "2026-10-24",
+    "kickoff": "TBA",
+    "opponent_id": "swactsu",
+    "opponent_name": "TSU",
+    "opponent_short_name": "TXSO",
+    "opponent_mascot": "Tigers",
+    "opponent_logo": null,
+    "home_away": "away",
+    "venue": {
+      "stadium_name": "NRG Stadium",
+      "venue_label": "NRG Stadium",
+      "city": "Houston",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "Homecoming",
+    "headline": "Travels to TXSO",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.4824
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00014032",
+      "name": "Marshall Faulk",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://gojagsports.com/images/2025/12/5/Screenshot_2025-12-01_at_6.21.59_PM_yLZia.PNG",
+      "tenure_year": 1,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": 0.0373,
+        "display": "+0.04",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00014035",
+      "name": "Kenneth Merchant",
+      "role": "Offensive Coordinator",
+      "role_title": "Offensive Coordinator, Quarterbacks",
+      "role_group": "coordinator",
+      "image_url": null,
+      "tenure_year": 1,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.0007,
+        "display": "-0.00",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00014034",
+      "name": "Todd Lyght",
+      "role": "Defensive Coordinator",
+      "role_title": "Defensive Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://gojagsports.com/images/2026/3/27/Todd_qYtfB.jpg",
+      "tenure_year": 1,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.038,
+        "display": "+0.04",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 15,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 53.3,
+            "display": "53.3%",
+            "rank": 8,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 172.0,
+            "display": "172.0",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 0.75,
+            "display": "0.75",
+            "rank": 13,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.5,
+            "display": "0.50",
+            "rank": 3,
+            "total": 15,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 177.5,
+            "display": "177.5",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 1.25,
+            "display": "1.25",
+            "rank": 12,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 12.85,
+            "display": "12.8%",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 75.0,
+            "display": "75.0%",
+            "rank": 4,
+            "total": 14,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 12.14,
+            "display": "12.1%",
+            "rank": 13,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 10.29,
+            "display": "10.3%",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 12,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.25,
+            "display": "1.25",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 37.6,
+            "display": "37.6%",
+            "rank": 13,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.0622,
+            "display": "-0.06",
+            "rank": 12,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 41.8,
+            "display": "41.8%",
+            "rank": 6,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 49.6,
+            "display": "49.6%",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 75.0,
+            "display": "75.0%",
+            "rank": 6,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 34.1,
+            "display": "34.1",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 6.2,
+            "display": "6.2%",
+            "rank": 12,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 17.4,
+            "display": "17.4",
+            "rank": 13,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "defensive_havoc",
+    "key": "havoc_rate_allowed",
+    "label": "HAVOC ALLOWED",
+    "value": 10.29,
+    "display": "10.3%",
+    "rank": 1,
+    "total": 15,
+    "sentence": "Havoc rate allowed"
+  },
+  "star_impact": {
+    "person_id": "PERS_00011257",
+    "full_name": "Herman Brister III",
+    "last_name": "Brister",
+    "position": "S",
+    "class_year": "Jr.",
+    "image_url": "https://gojagsports.com/images/2026/8/23/_3_Herman_Brister_III_l9abc.JPG",
+    "from_game": {
+      "game_id": "SUPVAMU10102026",
+      "game_path_id": "supvamu26",
+      "week": 6,
+      "opponent_name": "PVAMU",
+      "result": "W",
+      "score": "W 28-14"
+    },
+    "game_par": 30.77,
+    "season_par": 31.71,
+    "par_per_game": 7.93,
+    "stat_line": [
+      {
+        "label": "INT",
+        "value": "2"
+      },
+      {
+        "label": "TKL",
+        "value": "11"
+      },
+      {
+        "label": "TFL",
+        "value": "0"
+      },
+      {
+        "label": "SACK",
+        "value": "0"
+      }
+    ],
+    "profile_url": "/player/PERS_00011257"
+  }
+}

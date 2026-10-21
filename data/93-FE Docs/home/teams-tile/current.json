@@ -1,0 +1,154 @@
+{
+  "season": 2026,
+  "week": 7,
+  "week_label": "Week 7",
+  "generated_at": "2026-10-20T01:36:09-05:00",
+  "source": "current_season",
+  "rotation": [
+    "division_race",
+    "hot_streak",
+    "rivalry",
+    "home_field",
+    "band"
+  ],
+  "items": [
+    {
+      "key": "division_race",
+      "title": "Division Race",
+      "headline": "J-State lead SWAC East at 3-1, AAMU level with them.",
+      "teams": [
+        "swacjsu",
+        "swacaamu"
+      ],
+      "why": "The tightest race at the top of the three groups: tied for first.",
+      "data": {
+        "group_label": "SWAC East",
+        "games_total": 8,
+        "rows": [
+          {
+            "team_id": "swacjsu",
+            "conf_wins": 3,
+            "conf_losses": 1,
+            "record": "6-1"
+          },
+          {
+            "team_id": "swacaamu",
+            "conf_wins": 3,
+            "conf_losses": 1,
+            "record": "6-2"
+          },
+          {
+            "team_id": "swacbcu",
+            "conf_wins": 2,
+            "conf_losses": 1,
+            "record": "4-3"
+          },
+          {
+            "team_id": "swacasu",
+            "conf_wins": 2,
+            "conf_losses": 2,
+            "record": "4-3"
+          },
+          {
+            "team_id": "swacmvsu",
+            "conf_wins": 2,
+            "conf_losses": 2,
+            "record": "3-5"
+          },
+          {
+            "team_id": "swacfamu",
+            "conf_wins": 1,
+            "conf_losses": 2,
+            "record": "2-5"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hot_streak",
+      "title": "Hot Streak",
+      "headline": "AAMU have won 2 straight and sit at 6-2.",
+      "teams": [
+        "swacaamu"
+      ],
+      "why": "Longest active winning streak among the 18.",
+      "data": {
+        "team_id": "swacaamu",
+        "streak": 2,
+        "record": "6-2",
+        "results": [
+          {
+            "result": "W"
+          },
+          {
+            "result": "W"
+          },
+          {
+            "result": "L"
+          },
+          {
+            "result": "W"
+          },
+          {
+            "result": "W"
+          }
+        ]
+      }
+    },
+    {
+      "key": "rivalry",
+      "title": "Rivalry",
+      "headline": "Magic City Classic: AAMU vs Bama State, Oct 31.",
+      "teams": [
+        "swacaamu",
+        "swacasu"
+      ],
+      "why": "The next named series game between two of the 18 (Magic City Classic).",
+      "data": {
+        "event_name": "Magic City Classic",
+        "team_a": "swacaamu",
+        "team_b": "swacasu",
+        "wins_a": 2,
+        "wins_b": 4,
+        "ties": 0,
+        "series_from": 2019,
+        "last_meeting": {
+          "date": "2025-10-25",
+          "a_score": 13,
+          "b_score": 56
+        },
+        "next_meeting": {
+          "date": "2026-10-31",
+          "venue": "Legion Field"
+        }
+      }
+    },
+    {
+      "key": "home_field",
+      "title": "Home Field",
+      "headline": "J-State are 5-0 at home this season.",
+      "teams": [
+        "swacjsu"
+      ],
+      "why": "Best home record among the 18 (two or more home games).",
+      "data": {
+        "team_id": "swacjsu",
+        "home_wins": 5,
+        "home_losses": 0,
+        "image_url": null
+      }
+    },
+    {
+      "key": "band",
+      "title": "The Band",
+      "headline": "",
+      "teams": [
+        "swactsu"
+      ],
+      "why": "TSU host homecoming on Oct 24.",
+      "data": {
+        "team_id": "swactsu"
+      }
+    }
+  ]
+}

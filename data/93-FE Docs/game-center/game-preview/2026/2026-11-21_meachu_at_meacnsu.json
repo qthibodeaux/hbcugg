@@ -1,0 +1,1020 @@
+{
+  "game_id": "2026-11-21_meachu_at_meacnsu",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:24:11-05:00",
+  "status": "scheduled",
+  "played_game_path_id": null,
+  "date": "2026-11-21",
+  "week": 12,
+  "week_label": "Week 12",
+  "kickoff": {
+    "at": null,
+    "label": null,
+    "tbd": true
+  },
+  "venue": {
+    "stadium_name": "William \"Dick\" Price Stadium",
+    "city": "Norfolk, VA",
+    "sponsor": null,
+    "neutral_site": false,
+    "neutral_site_name": null
+  },
+  "event": {
+    "kind": "promotion",
+    "name": "Senior Day",
+    "type_id": "senior_day",
+    "type_label": "Senior Day",
+    "owner_team_id": null
+  },
+  "flags": {
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false
+  },
+  "away": {
+    "team_id": "meachu",
+    "record_entering": "3-4",
+    "conference_record_entering": "0-0",
+    "conference": "MEAC",
+    "coaches": {
+      "head_coach": "Ted White",
+      "offensive_coordinator": "Jimmie Johnson",
+      "defensive_coordinator": "Nicholas Gould"
+    },
+    "quarterback": {
+      "person_id": "PERS_00008792",
+      "name": "Ja'Shawn Scroggins",
+      "last_name": "Scroggins",
+      "image_url": "https://hubison.com/images/2025/8/11/SCROGGINS_JA_AQZF5.jpg",
+      "games_played": 1,
+      "line": {
+        "cmp": 19,
+        "att": 36,
+        "yds": 315,
+        "td": 3,
+        "int": 0,
+        "sacks": 4
+      },
+      "air_yards": {
+        "attempts": 19,
+        "adot": 7.26,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0
+          },
+          {
+            "yards": -4,
+            "share": 0.0
+          },
+          {
+            "yards": -3,
+            "share": 0.0
+          },
+          {
+            "yards": -2,
+            "share": 0.0
+          },
+          {
+            "yards": -1,
+            "share": 0.0
+          },
+          {
+            "yards": 0,
+            "share": 0.3684
+          },
+          {
+            "yards": 1,
+            "share": 0.0
+          },
+          {
+            "yards": 2,
+            "share": 0.0
+          },
+          {
+            "yards": 3,
+            "share": 0.0526
+          },
+          {
+            "yards": 4,
+            "share": 0.1053
+          },
+          {
+            "yards": 5,
+            "share": 0.0
+          },
+          {
+            "yards": 6,
+            "share": 0.0526
+          },
+          {
+            "yards": 7,
+            "share": 0.0
+          },
+          {
+            "yards": 8,
+            "share": 0.0
+          },
+          {
+            "yards": 9,
+            "share": 0.1053
+          },
+          {
+            "yards": 10,
+            "share": 0.0526
+          },
+          {
+            "yards": 11,
+            "share": 0.0
+          },
+          {
+            "yards": 12,
+            "share": 0.0526
+          },
+          {
+            "yards": 13,
+            "share": 0.0
+          },
+          {
+            "yards": 14,
+            "share": 0.0
+          },
+          {
+            "yards": 15,
+            "share": 0.0526
+          },
+          {
+            "yards": 16,
+            "share": 0.0
+          },
+          {
+            "yards": 17,
+            "share": 0.0
+          },
+          {
+            "yards": 18,
+            "share": 0.0
+          },
+          {
+            "yards": 19,
+            "share": 0.0526
+          },
+          {
+            "yards": 20,
+            "share": 0.0
+          },
+          {
+            "yards": 21,
+            "share": 0.0526
+          },
+          {
+            "yards": 22,
+            "share": 0.0
+          },
+          {
+            "yards": 23,
+            "share": 0.0
+          },
+          {
+            "yards": 24,
+            "share": 0.0
+          },
+          {
+            "yards": 25,
+            "share": 0.0
+          },
+          {
+            "yards": 26,
+            "share": 0.0526
+          },
+          {
+            "yards": 27,
+            "share": 0.0
+          },
+          {
+            "yards": 28,
+            "share": 0.0
+          },
+          {
+            "yards": 29,
+            "share": 0.0
+          },
+          {
+            "yards": 30,
+            "share": 0.0
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0187
+          },
+          {
+            "yards": -4,
+            "share": 0.0135
+          },
+          {
+            "yards": -3,
+            "share": 0.027
+          },
+          {
+            "yards": -2,
+            "share": 0.0292
+          },
+          {
+            "yards": -1,
+            "share": 0.027
+          },
+          {
+            "yards": 0,
+            "share": 0.0959
+          },
+          {
+            "yards": 1,
+            "share": 0.036
+          },
+          {
+            "yards": 2,
+            "share": 0.03
+          },
+          {
+            "yards": 3,
+            "share": 0.0524
+          },
+          {
+            "yards": 4,
+            "share": 0.0629
+          },
+          {
+            "yards": 5,
+            "share": 0.0659
+          },
+          {
+            "yards": 6,
+            "share": 0.0479
+          },
+          {
+            "yards": 7,
+            "share": 0.0524
+          },
+          {
+            "yards": 8,
+            "share": 0.03
+          },
+          {
+            "yards": 9,
+            "share": 0.0352
+          },
+          {
+            "yards": 10,
+            "share": 0.0315
+          },
+          {
+            "yards": 11,
+            "share": 0.0255
+          },
+          {
+            "yards": 12,
+            "share": 0.018
+          },
+          {
+            "yards": 13,
+            "share": 0.021
+          },
+          {
+            "yards": 14,
+            "share": 0.0277
+          },
+          {
+            "yards": 15,
+            "share": 0.0315
+          },
+          {
+            "yards": 16,
+            "share": 0.0187
+          },
+          {
+            "yards": 17,
+            "share": 0.0157
+          },
+          {
+            "yards": 18,
+            "share": 0.0105
+          },
+          {
+            "yards": 19,
+            "share": 0.0112
+          },
+          {
+            "yards": 20,
+            "share": 0.015
+          },
+          {
+            "yards": 21,
+            "share": 0.012
+          },
+          {
+            "yards": 22,
+            "share": 0.0045
+          },
+          {
+            "yards": 23,
+            "share": 0.0105
+          },
+          {
+            "yards": 24,
+            "share": 0.0112
+          },
+          {
+            "yards": 25,
+            "share": 0.009
+          },
+          {
+            "yards": 26,
+            "share": 0.0067
+          },
+          {
+            "yards": 27,
+            "share": 0.0052
+          },
+          {
+            "yards": 28,
+            "share": 0.0075
+          },
+          {
+            "yards": 29,
+            "share": 0.0082
+          },
+          {
+            "yards": 30,
+            "share": 0.0749
+          }
+        ],
+        "deep_30_share": 0.0,
+        "league_deep_30_share": 0.0749
+      }
+    }
+  },
+  "home": {
+    "team_id": "meacnsu",
+    "record_entering": "4-3",
+    "conference_record_entering": "0-0",
+    "conference": "MEAC",
+    "coaches": {
+      "head_coach": "Michael Vick",
+      "offensive_coordinator": "Brian Sheppard",
+      "defensive_coordinator": "Steve Adams"
+    },
+    "quarterback": null
+  },
+  "stats": {
+    "season": 2026,
+    "basis": "current_season",
+    "through_week": 7,
+    "ranked_teams": 15,
+    "teams": {
+      "meachu": {
+        "games_played": 1,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": 0.0207,
+            "rank": 6
+          },
+          "o_epa": {
+            "value": 0.0711,
+            "rank": 7
+          },
+          "d_epa": {
+            "value": 0.0504,
+            "rank": 10
+          },
+          "o_success": {
+            "value": 0.3377,
+            "rank": 14
+          },
+          "d_success": {
+            "value": 0.45,
+            "rank": 10
+          },
+          "o_early_succ": {
+            "value": 0.2982,
+            "rank": 14
+          },
+          "d_early_succ": {
+            "value": 0.4898,
+            "rank": 15
+          },
+          "o_late_succ": {
+            "value": 0.45,
+            "rank": 5
+          },
+          "d_late_succ": {
+            "value": 0.2727,
+            "rank": 1
+          },
+          "o_pts_drive": {
+            "value": 2.5833,
+            "rank": 5
+          },
+          "d_pts_drive": {
+            "value": 2.0,
+            "rank": 6
+          },
+          "o_yds_drive": {
+            "value": 36.33,
+            "rank": 4
+          },
+          "d_yds_drive": {
+            "value": 33.75,
+            "rank": 11
+          },
+          "o_3andout": {
+            "value": 0.25,
+            "rank": 7
+          },
+          "d_3andout": {
+            "value": 0.3333,
+            "rank": 2
+          },
+          "o_expl_drive": {
+            "value": 0.1667,
+            "rank": 11
+          },
+          "d_expl_drive": {
+            "value": 0.3333,
+            "rank": 11
+          },
+          "o_start_fp": {
+            "value": 32.75,
+            "rank": 7
+          },
+          "d_start_fp": {
+            "value": 27.08,
+            "rank": 4
+          },
+          "o_third_dist": {
+            "value": 7.5,
+            "rank": 6
+          },
+          "d_third_dist": {
+            "value": 5.9,
+            "rank": 15
+          },
+          "o_ppg": {
+            "value": 31.0,
+            "rank": 7
+          },
+          "d_ppg": {
+            "value": 24.0,
+            "rank": 3
+          },
+          "to_margin": {
+            "value": 1,
+            "rank": 6
+          },
+          "o_turnovers": {
+            "value": 1,
+            "rank": 1
+          },
+          "pen_ypg": {
+            "value": 67.0,
+            "rank": 6
+          },
+          "o_ypg": {
+            "value": 451.0,
+            "rank": 4
+          },
+          "o_pass_ypg": {
+            "value": 322.0,
+            "rank": 2
+          },
+          "o_rush_ypg": {
+            "value": 129.0,
+            "rank": 14
+          },
+          "o_havoc_rate": {
+            "value": 0.1818,
+            "rank": 11
+          },
+          "d_havoc_rate": {
+            "value": 0.15,
+            "rank": 10
+          },
+          "o_expl_rate": {
+            "value": 0.1429,
+            "rank": 6
+          },
+          "d_expl_rate": {
+            "value": 0.1333,
+            "rank": 9
+          },
+          "o_rz_td": {
+            "value": 0.5,
+            "rank": 13
+          },
+          "d_rz_td": {
+            "value": 0.75,
+            "rank": 11
+          }
+        }
+      },
+      "meacnsu": {
+        "games_played": 0,
+        "fields": {
+          "net_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_adj_epa": {
+            "value": null,
+            "rank": null
+          },
+          "net_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_epa": {
+            "value": null,
+            "rank": null
+          },
+          "d_epa": {
+            "value": null,
+            "rank": null
+          },
+          "o_success": {
+            "value": null,
+            "rank": null
+          },
+          "d_success": {
+            "value": null,
+            "rank": null
+          },
+          "o_early_succ": {
+            "value": null,
+            "rank": null
+          },
+          "d_early_succ": {
+            "value": null,
+            "rank": null
+          },
+          "o_late_succ": {
+            "value": null,
+            "rank": null
+          },
+          "d_late_succ": {
+            "value": null,
+            "rank": null
+          },
+          "o_pts_drive": {
+            "value": null,
+            "rank": null
+          },
+          "d_pts_drive": {
+            "value": null,
+            "rank": null
+          },
+          "o_yds_drive": {
+            "value": null,
+            "rank": null
+          },
+          "d_yds_drive": {
+            "value": null,
+            "rank": null
+          },
+          "o_3andout": {
+            "value": null,
+            "rank": null
+          },
+          "d_3andout": {
+            "value": null,
+            "rank": null
+          },
+          "o_expl_drive": {
+            "value": null,
+            "rank": null
+          },
+          "d_expl_drive": {
+            "value": null,
+            "rank": null
+          },
+          "o_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "d_start_fp": {
+            "value": null,
+            "rank": null
+          },
+          "o_third_dist": {
+            "value": null,
+            "rank": null
+          },
+          "d_third_dist": {
+            "value": null,
+            "rank": null
+          },
+          "o_ppg": {
+            "value": null,
+            "rank": null
+          },
+          "d_ppg": {
+            "value": null,
+            "rank": null
+          },
+          "to_margin": {
+            "value": null,
+            "rank": null
+          },
+          "o_turnovers": {
+            "value": null,
+            "rank": null
+          },
+          "pen_ypg": {
+            "value": null,
+            "rank": null
+          },
+          "o_ypg": {
+            "value": null,
+            "rank": null
+          },
+          "o_pass_ypg": {
+            "value": null,
+            "rank": null
+          },
+          "o_rush_ypg": {
+            "value": null,
+            "rank": null
+          },
+          "o_havoc_rate": {
+            "value": null,
+            "rank": null
+          },
+          "d_havoc_rate": {
+            "value": null,
+            "rank": null
+          },
+          "o_expl_rate": {
+            "value": null,
+            "rank": null
+          },
+          "d_expl_rate": {
+            "value": null,
+            "rank": null
+          },
+          "o_rz_td": {
+            "value": null,
+            "rank": null
+          },
+          "d_rz_td": {
+            "value": null,
+            "rank": null
+          }
+        }
+      }
+    }
+  },
+  "top_players": {
+    "meachu": [
+      {
+        "person_id": "PERS_00008792",
+        "name": "J.Scroggins",
+        "last_name": "Scroggins",
+        "image_url": "https://hubison.com/images/2025/8/11/SCROGGINS_JA_AQZF5.jpg",
+        "position": "QB",
+        "games_played": 1,
+        "production_score": 30.33,
+        "production_per_game": 30.33
+      },
+      {
+        "person_id": "PERS_00013081",
+        "name": "R.Roane Jr.",
+        "last_name": "Roane",
+        "image_url": "https://hubison.com/images/2026/8/26/ROANE-JR_RODNEY.jpg",
+        "position": "LB",
+        "games_played": 1,
+        "production_score": 25.56,
+        "production_per_game": 25.56
+      },
+      {
+        "person_id": "PERS_00011533",
+        "name": "A.Foster",
+        "last_name": "Foster",
+        "image_url": "https://hubison.com/images/2025/8/11/FOSTER_AIDAN-2_Ij3cc.jpg",
+        "position": "LB",
+        "games_played": 1,
+        "production_score": 14.89,
+        "production_per_game": 14.89
+      },
+      {
+        "person_id": "PERS_00009745",
+        "name": "N.Clark",
+        "last_name": "Clark",
+        "image_url": "https://hubison.com/images/2025/8/11/CLARKE_NATHANIEL_MSgvd.jpg",
+        "position": "TE",
+        "games_played": 1,
+        "production_score": 6.78,
+        "production_per_game": 6.78
+      },
+      {
+        "person_id": "PERS_00009731",
+        "name": "S.Osborne",
+        "last_name": "Osborne",
+        "image_url": "https://hubison.com/images/2026/8/26/OSBORNE_SE_QUAN.jpg",
+        "position": "WR",
+        "games_played": 1,
+        "production_score": 6.48,
+        "production_per_game": 6.48
+      },
+      {
+        "person_id": "PERS_00008807",
+        "name": "J.Olidge",
+        "last_name": "Olidge",
+        "image_url": "https://hubison.com/images/2025/8/11/OLIDGE_J.AGUSTUS_a6GfW.jpg",
+        "position": "DB",
+        "games_played": 1,
+        "production_score": 3.64,
+        "production_per_game": 3.64
+      },
+      {
+        "person_id": "PERS_00011540",
+        "name": "M.Hopson",
+        "last_name": "Hopson",
+        "image_url": "https://hubison.com/images/2026/8/26/HOPSON_MARKUS.jpg",
+        "position": "WR",
+        "games_played": 1,
+        "production_score": 3.39,
+        "production_per_game": 3.39
+      },
+      {
+        "person_id": "PERS_00009739",
+        "name": "J.Tabe",
+        "last_name": "Tabe",
+        "image_url": "https://hubison.com/images/2026/8/26/TABE_JOSEPH.jpg",
+        "position": "DB",
+        "games_played": 1,
+        "production_score": 3.22,
+        "production_per_game": 3.22
+      }
+    ],
+    "meacnsu": []
+  },
+  "meetings": {
+    "coverage_from_season": 2019,
+    "series": {
+      "games": 6,
+      "wins": {
+        "meachu": 3,
+        "meacnsu": 3
+      },
+      "current_streak": {
+        "team_id": "meachu",
+        "games": 1
+      }
+    },
+    "items": [
+      {
+        "game_id": "NSUHU22112025",
+        "game_path_id": "nsuhu25",
+        "date": "2025-11-22",
+        "season": 2025,
+        "away_team_id": "meacnsu",
+        "home_team_id": "meachu",
+        "away_score": 15,
+        "home_score": 44,
+        "venue": {
+          "stadium_name": "Audi Field",
+          "city": "Washington, DC"
+        },
+        "event_name": "Senior Day"
+      },
+      {
+        "game_id": "HUNSU26102024",
+        "game_path_id": "hunsu24",
+        "date": "2024-10-26",
+        "season": 2024,
+        "away_team_id": "meachu",
+        "home_team_id": "meacnsu",
+        "away_score": 20,
+        "home_score": 21,
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        },
+        "event_name": "Homecoming"
+      },
+      {
+        "game_id": "NSUHU21102023",
+        "game_path_id": "nsuhu23",
+        "date": "2023-10-21",
+        "season": 2023,
+        "away_team_id": "meacnsu",
+        "home_team_id": "meachu",
+        "away_score": 23,
+        "home_score": 27,
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "HUNSU29102022",
+        "game_path_id": "hunsu22",
+        "date": "2022-10-29",
+        "season": 2022,
+        "away_team_id": "meachu",
+        "home_team_id": "meacnsu",
+        "away_score": 49,
+        "home_score": 21,
+        "venue": {
+          "stadium_name": "William \"Dick\" Price Stadium",
+          "city": "Norfolk, VA"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "NSUHU23102021",
+        "game_path_id": "nsuhu21",
+        "date": "2021-10-23",
+        "season": 2021,
+        "away_team_id": "meacnsu",
+        "home_team_id": "meachu",
+        "away_score": 45,
+        "home_score": 31,
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        },
+        "event_name": "Homecoming"
+      },
+      {
+        "game_id": "NSUHU12102019",
+        "game_path_id": "nsuhu19",
+        "date": "2019-10-12",
+        "season": 2019,
+        "away_team_id": "meacnsu",
+        "home_team_id": "meachu",
+        "away_score": 49,
+        "home_score": 21,
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        },
+        "event_name": "Homecoming"
+      }
+    ]
+  },
+  "event_history": {
+    "title": "Senior Day",
+    "scope": "shared",
+    "owner_team_id": null,
+    "items": [
+      {
+        "date": "2026-11-14",
+        "season": 2026,
+        "name": "Senior Day",
+        "game_id": "2026-11-14_meacdsu_at_meachu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacdsu",
+          "name": "Delaware State"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2026-11-14",
+        "season": 2026,
+        "name": "Senior Day / Military Salute",
+        "game_id": "2026-11-14_swactsu_at_swacaamu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swactsu",
+          "name": "Texas Southern"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2026-11-14",
+        "season": 2026,
+        "name": null,
+        "game_id": "2026-11-14_swacalc_at_swacsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "season": 2026,
+        "name": "Senior Night",
+        "game_id": "2026-11-07_meacmsu_at_meacdsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacmsu",
+          "name": "Morgan State"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "Alumni Stadium",
+          "city": "Dover, DE"
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "season": 2026,
+        "name": "Senior Day/ Military Appreciation Day/ High School Day",
+        "game_id": "2026-11-07_swacuapb_at_swacgsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas - Pine Bluff"
+        },
+        "home": {
+          "team_id": "swacgsu",
+          "name": "Grambling State University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "Eddie G. Robinson Memorial Stadium",
+          "city": "Grambling, LA"
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "season": 2026,
+        "name": "Senior Day / High School Day / Black Camo",
+        "game_id": "2026-11-07_swacmvsu_at_swacjsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": null
+      }
+    ]
+  }
+}

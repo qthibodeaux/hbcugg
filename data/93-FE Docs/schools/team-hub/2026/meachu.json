@@ -1,0 +1,442 @@
+{
+  "team_id": "meachu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 7,
+  "generated_at": "2026-10-20T01:35:10-05:00",
+  "header": {
+    "conference": "MEAC",
+    "division": "",
+    "division_label": "MEAC",
+    "season": 2026,
+    "team_abbreviation": "HOW",
+    "school_name": "Howard University",
+    "avg_par": 2.1,
+    "roster_count": 99,
+    "transfer_count": 27,
+    "transfer_rate": 27.3,
+    "upperclass_pct": 47.5
+  },
+  "conference_record": {
+    "conference_label": "0-0",
+    "conference_wins": 0,
+    "conference_losses": 0,
+    "overall_label": "3-4",
+    "overall_wins": 3,
+    "overall_losses": 4,
+    "overall_ties": 0,
+    "division_rank": "2nd - MEAC",
+    "last_5": [
+      {
+        "week": 2,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "IND",
+        "score_team": 0,
+        "score_opponent": 55,
+        "score": "L 0-55",
+        "game_path_id": null
+      },
+      {
+        "week": 4,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "RUTG",
+        "score_team": 7,
+        "score_opponent": 58,
+        "score": "L 7-58",
+        "game_path_id": null
+      },
+      {
+        "week": 5,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "HAMP",
+        "score_team": 27,
+        "score_opponent": 13,
+        "score": "W 27-13",
+        "game_path_id": null
+      },
+      {
+        "week": 6,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "PENN",
+        "score_team": 20,
+        "score_opponent": 24,
+        "score": "L 20-24",
+        "game_path_id": null
+      },
+      {
+        "week": 7,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "MORE",
+        "score_team": 31,
+        "score_opponent": 17,
+        "score": "W 31-17",
+        "game_path_id": null
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "2026-10-17_morehouse_at_meachu",
+    "game_path_id": null,
+    "week": 7,
+    "date": "2026-10-17",
+    "opponent_id": null,
+    "opponent_name": "Morehouse",
+    "result": "W",
+    "score_team": 31,
+    "score_opponent": 17,
+    "score": "W 31-17",
+    "venue": {
+      "stadium_name": "Greene Stadium",
+      "venue_label": "Greene Stadium",
+      "city": "Washington",
+      "neutral_site_name": null
+    },
+    "tag": "Homecoming",
+    "headline": "W 31-17 vs MORE",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": null
+  },
+  "next_game": {
+    "game_id": "2026-10-24_meachu_at_meacmsu",
+    "preview_path_id": "2026-10-24_meachu_at_meacmsu",
+    "date": "2026-10-24",
+    "kickoff": "15:00",
+    "opponent_id": "meacmsu",
+    "opponent_name": "Morgan",
+    "opponent_short_name": "MSU",
+    "opponent_mascot": "Bears",
+    "opponent_logo": null,
+    "home_away": "away",
+    "venue": {
+      "stadium_name": "Hughes Stadium",
+      "venue_label": "Hughes Stadium",
+      "city": "Baltimore",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "",
+    "headline": "Travels to MSU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": null
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00001014",
+      "name": "Ted White",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://hubison.com/images/2026/2/10/White_Ted_wcefO.jpg",
+      "tenure_year": 12,
+      "metric": null
+    },
+    {
+      "coach_id": "PERS_00001016",
+      "name": "Jimmie Johnson",
+      "role": "Offensive Coordinator",
+      "role_title": "Offensive Coordinator | Tight Ends Coach",
+      "role_group": "coordinator",
+      "image_url": "https://hubison.com/images/2026/7/8/Johnson_Jimmie.jpg",
+      "tenure_year": 1,
+      "metric": null
+    },
+    {
+      "coach_id": "PERS_00001018",
+      "name": "Nicholas Gould",
+      "role": "Defensive Coordinator",
+      "role_title": "Recruiting Coordinator | Linebackers Coach",
+      "role_group": "coordinator",
+      "image_url": "https://hubison.com/images/2026/2/10/Gould_Nicholas_C5HNB.jpg",
+      "tenure_year": 5,
+      "metric": null
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 15,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 52.6,
+            "display": "52.6%",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 322.0,
+            "display": "322.0",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 3.0,
+            "display": "3.00",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.0,
+            "display": "0.00",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 129.0,
+            "display": "129.0",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 0.0,
+            "display": "0.00",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 11.43,
+            "display": "11.4%",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 50.0,
+            "display": "50.0%",
+            "rank": 9,
+            "total": 14,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 15.0,
+            "display": "15.0%",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 18.18,
+            "display": "18.2%",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 0.0,
+            "display": "0.00",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 2.0,
+            "display": "2.00",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 37.66,
+            "display": "37.7%",
+            "rank": 12,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.0711,
+            "display": "+0.07",
+            "rank": 7,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 38.9,
+            "display": "38.9%",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 50.0,
+            "display": "50.0%",
+            "rank": 13,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 100.0,
+            "display": "100.0%",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 35.5,
+            "display": "35.5",
+            "rank": 14,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 14.3,
+            "display": "14.3%",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 23.5,
+            "display": "23.5",
+            "rank": 6,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "special_teams",
+    "key": "field_goal_pct",
+    "label": "FG %",
+    "value": 100.0,
+    "display": "100.0%",
+    "rank": 1,
+    "total": 15,
+    "sentence": "Field goal percentage"
+  },
+  "star_impact": {
+    "person_id": "PERS_00008792",
+    "full_name": "Ja'Shawn Scroggins",
+    "last_name": "Scroggins",
+    "position": "QB",
+    "class_year": "Gr.",
+    "image_url": "https://hubison.com/images/2025/8/11/SCROGGINS_JA_AQZF5.jpg",
+    "from_game": {
+      "game_id": "HUAAMU29082026",
+      "game_path_id": "huaamu26",
+      "week": 0,
+      "opponent_name": "AAMU",
+      "result": "W",
+      "score": "W 31-24"
+    },
+    "game_par": 24.85,
+    "season_par": 24.86,
+    "par_per_game": 24.86,
+    "stat_line": [
+      {
+        "label": "CMP/ATT",
+        "value": "19/36"
+      },
+      {
+        "label": "PASS YDS",
+        "value": "315"
+      },
+      {
+        "label": "PASS TD",
+        "value": "3"
+      },
+      {
+        "label": "RUSH",
+        "value": "11-64"
+      }
+    ],
+    "profile_url": "/player/PERS_00008792"
+  }
+}

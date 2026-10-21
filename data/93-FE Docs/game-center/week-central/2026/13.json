@@ -1,0 +1,229 @@
+{
+  "season": 2026,
+  "week": 13,
+  "week_label": "Week 13",
+  "label": "Week 13",
+  "compact_label": "Wk 13",
+  "date_range": "Nov 24 - Nov 30",
+  "is_current_week": false,
+  "default_week": 8,
+  "updated_at": "2026-10-20T01:24:00-05:00",
+  "weeks": [
+    {
+      "week": 0,
+      "label": "Week 0",
+      "compact_label": "Wk 0",
+      "game_count": 14
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "compact_label": "Wk 1",
+      "game_count": 16
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "compact_label": "Wk 2",
+      "game_count": 16
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "compact_label": "Wk 3",
+      "game_count": 14
+    },
+    {
+      "week": 4,
+      "label": "Week 4",
+      "compact_label": "Wk 4",
+      "game_count": 10
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "compact_label": "Wk 5",
+      "game_count": 12
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "compact_label": "Wk 6",
+      "game_count": 12
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "compact_label": "Wk 7",
+      "game_count": 7
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "compact_label": "Wk 8",
+      "game_count": 7
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "compact_label": "Wk 9",
+      "game_count": 8
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "compact_label": "Wk 10",
+      "game_count": 9
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "compact_label": "Wk 11",
+      "game_count": 9
+    },
+    {
+      "week": 12,
+      "label": "Week 12",
+      "compact_label": "Wk 12",
+      "game_count": 8
+    },
+    {
+      "week": 13,
+      "label": "Week 13",
+      "compact_label": "Wk 13",
+      "game_count": 2
+    }
+  ],
+  "summary": {
+    "total_games": 2,
+    "hbcu_matchups": 2,
+    "outside_games": 1,
+    "final_games": 0,
+    "preview_games": 2
+  },
+  "games": [
+    {
+      "game_id": "2026-11-28_swacgsu_at_swacsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "preview",
+      "status_label": "Scheduled",
+      "date": "2026-11-28",
+      "date_label": "Nov 28",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Bayou Classic",
+      "events": [
+        {
+          "event_type_id": "bayou_classic",
+          "display_name": "Bayou Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacsu",
+            "swacgsu"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": null,
+        "record": "4-3",
+        "conference_record": "2-2"
+      },
+      "home_team": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": null,
+        "record": "3-4",
+        "conference_record": "1-2"
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "Caesars Superdome",
+        "venue_label": "Bayou Classic",
+        "city": "New Orleans",
+        "neutral_site_name": "Bayou Classic",
+        "venue_id": "VEN_caesars_superdome",
+        "name": "Caesars Superdome"
+      },
+      "story_label": "Bayou Classic",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 0
+    },
+    {
+      "game_id": "2026-11-26_tuskegee_at_swacasu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "preview",
+      "status_label": "Scheduled",
+      "date": "2026-11-26",
+      "date_label": "Nov 26",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "Turkey Day Classic",
+      "events": [
+        {
+          "event_type_id": "turkey_day_classic",
+          "display_name": "Turkey Day Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacasu"
+          ]
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Tuskegee",
+        "short_name": "TUSK",
+        "score": null,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": null,
+        "record": "4-3",
+        "conference_record": "2-2"
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "ASU Stadium WEAR OLD GOLD",
+        "venue_label": "ASU Stadium",
+        "city": "Montgomery",
+        "neutral_site_name": null,
+        "venue_id": "VEN_asu_stadium",
+        "name": "ASU Stadium"
+      },
+      "story_label": "Turkey Day Classic",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 1
+    }
+  ]
+}

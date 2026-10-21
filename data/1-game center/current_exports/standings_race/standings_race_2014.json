@@ -1,0 +1,1312 @@
+{
+  "season": 2014,
+  "generated_at": "2026-08-13T14:15:32.816412-05:00",
+  "rules": {
+    "swac": {
+      "implemented": [
+        "conference_win_pct",
+        "head_to_head",
+        "division_record"
+      ],
+      "manual_review_if_needed": [
+        "ordered_division_opponents",
+        "non_division_record",
+        "common_non_division_opponents",
+        "head_to_head_point_differential",
+        "coin_flip"
+      ]
+    },
+    "meac": {
+      "implemented": [
+        "conference_win_pct",
+        "head_to_head"
+      ],
+      "manual_review_if_needed": [
+        "non_conference_points",
+        "Sagarin",
+        "coin_toss"
+      ],
+      "note": "MEAC football tied teams can remain co-champions; tiebreakers identify the automatic postseason representative."
+    }
+  },
+  "groups": {
+    "swac_east": {
+      "standings": [
+        {
+          "team_id": "swacbcu",
+          "team": {
+            "team_id": "swacbcu",
+            "name": "Bethune-Cookman",
+            "short_name": "B-CU",
+            "abbreviation": "BCU",
+            "nickname": "Wildcats",
+            "colors": {
+              "primary": "#6F263D",
+              "secondary": "#FFB300",
+              "tertiary": "#373A36",
+              "quaternary": "#72CDF4"
+            }
+          },
+          "record": "10-3",
+          "last5": "WLWWL",
+          "streak": "W1",
+          "conference_record": "5-1",
+          "division_record": "2-1",
+          "wins": 10,
+          "losses": 3,
+          "conf_wins": 5,
+          "conf_losses": 1,
+          "division_wins": 2,
+          "division_losses": 1,
+          "win_pct": 0.7692,
+          "conf_win_pct": 0.8333,
+          "division_win_pct": 0.6667,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 1,
+          "games_back": 0.0
+        },
+        {
+          "team_id": "swacasu",
+          "team": {
+            "team_id": "swacasu",
+            "name": "Alabama State",
+            "short_name": "Bama State",
+            "abbreviation": "ALST",
+            "nickname": "Hornets",
+            "colors": {
+              "primary": "#000000",
+              "secondary": "#FFCC00"
+            }
+          },
+          "record": "10-11",
+          "last5": "WLLWW",
+          "streak": "W1",
+          "conference_record": "9-10",
+          "division_record": "5-3",
+          "wins": 10,
+          "losses": 11,
+          "conf_wins": 9,
+          "conf_losses": 10,
+          "division_wins": 5,
+          "division_losses": 3,
+          "win_pct": 0.4762,
+          "conf_win_pct": 0.4737,
+          "division_win_pct": 0.625,
+          "conference": "swac",
+          "division": "swac_east",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 2,
+          "games_back": 2.5
+        },
+        {
+          "team_id": "swacjsu",
+          "team": {
+            "team_id": "swacjsu",
+            "name": "Jackson State",
+            "short_name": "J-State",
+            "abbreviation": "JKST",
+            "nickname": "Tigers",
+            "colors": {
+              "primary": "#002147",
+              "secondary": "#FFFFFF"
+            }
+          },
+          "record": "7-7",
+          "last5": "WWLLL",
+          "streak": "W2",
+          "conference_record": "4-6",
+          "division_record": "1-3",
+          "wins": 7,
+          "losses": 7,
+          "conf_wins": 4,
+          "conf_losses": 6,
+          "division_wins": 1,
+          "division_losses": 3,
+          "win_pct": 0.5,
+          "conf_win_pct": 0.4,
+          "division_win_pct": 0.25,
+          "conference": "swac",
+          "division": "swac_east",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 3,
+          "games_back": 3.0
+        },
+        {
+          "team_id": "swacaamu",
+          "team": {
+            "team_id": "swacaamu",
+            "name": "Alabama A&M",
+            "short_name": "AAMU",
+            "abbreviation": "AAMU",
+            "nickname": "Bulldogs",
+            "colors": {
+              "primary": "#660000",
+              "secondary": "#FFFFFF"
+            }
+          },
+          "record": "4-9",
+          "last5": "LLLWW",
+          "streak": "L3",
+          "conference_record": "3-7",
+          "division_record": "3-1",
+          "wins": 4,
+          "losses": 9,
+          "conf_wins": 3,
+          "conf_losses": 7,
+          "division_wins": 3,
+          "division_losses": 1,
+          "win_pct": 0.3077,
+          "conf_win_pct": 0.3,
+          "division_win_pct": 0.75,
+          "conference": "swac",
+          "division": "swac_east",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 4,
+          "games_back": 4.0
+        },
+        {
+          "team_id": "swacfamu",
+          "team": {
+            "team_id": "swacfamu",
+            "name": "Florida A&M",
+            "short_name": "FAMU",
+            "abbreviation": "FAMU",
+            "nickname": "Rattlers",
+            "colors": {
+              "primary": "#006747",
+              "secondary": "#F58426",
+              "tertiary": "#000000",
+              "quaternary": "#FFFFFF"
+            }
+          },
+          "record": "3-9",
+          "last5": "LWLLL",
+          "streak": "L1",
+          "conference_record": "2-5",
+          "division_record": "1-3",
+          "wins": 3,
+          "losses": 9,
+          "conf_wins": 2,
+          "conf_losses": 5,
+          "division_wins": 1,
+          "division_losses": 3,
+          "win_pct": 0.25,
+          "conf_win_pct": 0.2857,
+          "division_win_pct": 0.25,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 5,
+          "games_back": 3.5
+        },
+        {
+          "team_id": "swacmvsu",
+          "team": {
+            "team_id": "swacmvsu",
+            "name": "Mississippi Valley State",
+            "short_name": "MVSU",
+            "abbreviation": "MVSU",
+            "nickname": "Delta Devils",
+            "colors": {
+              "primary": "#006633",
+              "secondary": "#CC0000",
+              "tertiary": "#FFFFFF"
+            }
+          },
+          "record": "2-10",
+          "last5": "LLLLL",
+          "streak": "L9",
+          "conference_record": "1-9",
+          "division_record": "1-3",
+          "wins": 2,
+          "losses": 10,
+          "conf_wins": 1,
+          "conf_losses": 9,
+          "division_wins": 1,
+          "division_losses": 3,
+          "win_pct": 0.1667,
+          "conf_win_pct": 0.1,
+          "division_win_pct": 0.25,
+          "conference": "swac",
+          "division": "swac_east",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 6,
+          "games_back": 6.0
+        }
+      ],
+      "finish_matrix": [
+        {
+          "team_id": "swacbcu",
+          "current_rank": 1,
+          "conference_record": "5-1",
+          "games_back": 0.0
+        },
+        {
+          "team_id": "swacasu",
+          "current_rank": 2,
+          "conference_record": "9-10",
+          "games_back": 2.5
+        },
+        {
+          "team_id": "swacjsu",
+          "current_rank": 3,
+          "conference_record": "4-6",
+          "games_back": 3.0
+        },
+        {
+          "team_id": "swacaamu",
+          "current_rank": 4,
+          "conference_record": "3-7",
+          "games_back": 4.0
+        },
+        {
+          "team_id": "swacfamu",
+          "current_rank": 5,
+          "conference_record": "2-5",
+          "games_back": 3.5
+        },
+        {
+          "team_id": "swacmvsu",
+          "current_rank": 6,
+          "conference_record": "1-9",
+          "games_back": 6.0
+        }
+      ],
+      "summary_cards": [
+        {
+          "id": "swac_east-leader",
+          "label": "Leader",
+          "team_id": "swacbcu",
+          "value": "5-1"
+        }
+      ],
+      "completed_games": 24,
+      "remaining_games": 0,
+      "scenario_count": 0,
+      "tiebreaker_trace": [
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        }
+      ],
+      "unresolved_tiebreakers": []
+    },
+    "swac_west": {
+      "standings": [
+        {
+          "team_id": "swacsu",
+          "team": {
+            "team_id": "swacsu",
+            "name": "Southern",
+            "short_name": "Southern",
+            "abbreviation": "SOU",
+            "nickname": "Jaguars",
+            "colors": {
+              "primary": "#336699",
+              "secondary": "#FFCC00",
+              "tertiary": "#002A3A"
+            }
+          },
+          "record": "10-4",
+          "last5": "LWWWW",
+          "streak": "L1",
+          "conference_record": "9-1",
+          "division_record": "4-2",
+          "wins": 10,
+          "losses": 4,
+          "conf_wins": 9,
+          "conf_losses": 1,
+          "division_wins": 4,
+          "division_losses": 2,
+          "win_pct": 0.7143,
+          "conf_win_pct": 0.9,
+          "division_win_pct": 0.6667,
+          "conference": "swac",
+          "division": "swac_west",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 1,
+          "games_back": 0.0
+        },
+        {
+          "team_id": "swacgsu",
+          "team": {
+            "team_id": "swacgsu",
+            "name": "Grambling State",
+            "short_name": "Grambling",
+            "abbreviation": "GRAM",
+            "nickname": "Tigers",
+            "colors": {
+              "primary": "#000000",
+              "secondary": "#FFB81C",
+              "tertiary": "#FFFFFF"
+            }
+          },
+          "record": "8-5",
+          "last5": "LLWWW",
+          "streak": "L2",
+          "conference_record": "8-2",
+          "division_record": "4-1",
+          "wins": 8,
+          "losses": 5,
+          "conf_wins": 8,
+          "conf_losses": 2,
+          "division_wins": 4,
+          "division_losses": 1,
+          "win_pct": 0.6154,
+          "conf_win_pct": 0.8,
+          "division_win_pct": 0.8,
+          "conference": "swac",
+          "division": "swac_west",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "tie"
+            },
+            {
+              "step": "head_to_head",
+              "record": "1-0"
+            },
+            {
+              "step": "division_record",
+              "record": "4-1"
+            },
+            {
+              "step": "remaining_official_steps",
+              "result": "requires_manual_review_if_still_tied",
+              "steps": [
+                "common_opponents",
+                "Sagarin",
+                "coin_flip"
+              ]
+            }
+          ],
+          "head_to_head_record": "1-0",
+          "head_to_head_pct": 1.0,
+          "tiebreaker_status": "resolved_by_available_rules",
+          "rank": 2,
+          "games_back": 1.0
+        },
+        {
+          "team_id": "swacalc",
+          "team": {
+            "team_id": "swacalc",
+            "name": "Alcorn State",
+            "short_name": "Alcorn",
+            "abbreviation": "ALCN",
+            "nickname": "Braves",
+            "colors": {
+              "primary": "#512D6D",
+              "secondary": "#CC8A00",
+              "tertiary": "#898D8D",
+              "quaternary": "#231F20"
+            }
+          },
+          "record": "11-3",
+          "last5": "WLWWW",
+          "streak": "W1",
+          "conference_record": "8-2",
+          "division_record": "4-1",
+          "wins": 11,
+          "losses": 3,
+          "conf_wins": 8,
+          "conf_losses": 2,
+          "division_wins": 4,
+          "division_losses": 1,
+          "win_pct": 0.7857,
+          "conf_win_pct": 0.8,
+          "division_win_pct": 0.8,
+          "conference": "swac",
+          "division": "swac_west",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "tie"
+            },
+            {
+              "step": "head_to_head",
+              "record": "0-1"
+            },
+            {
+              "step": "division_record",
+              "record": "4-1"
+            },
+            {
+              "step": "remaining_official_steps",
+              "result": "requires_manual_review_if_still_tied",
+              "steps": [
+                "common_opponents",
+                "Sagarin",
+                "coin_flip"
+              ]
+            }
+          ],
+          "head_to_head_record": "0-1",
+          "head_to_head_pct": 0.0,
+          "tiebreaker_status": "resolved_by_available_rules",
+          "rank": 3,
+          "games_back": 1.0
+        },
+        {
+          "team_id": "swacpvamu",
+          "team": {
+            "team_id": "swacpvamu",
+            "name": "Prairie View A&M",
+            "short_name": "PVAMU",
+            "abbreviation": "PVAMU",
+            "nickname": "Panthers",
+            "colors": {
+              "primary": "#4F2683",
+              "secondary": "#FFB81C",
+              "tertiary": "#808285",
+              "quaternary": "#000000"
+            }
+          },
+          "record": "6-5",
+          "last5": "WWLWW",
+          "streak": "W2",
+          "conference_record": "6-4",
+          "division_record": "1-4",
+          "wins": 6,
+          "losses": 5,
+          "conf_wins": 6,
+          "conf_losses": 4,
+          "division_wins": 1,
+          "division_losses": 4,
+          "win_pct": 0.5455,
+          "conf_win_pct": 0.6,
+          "division_win_pct": 0.2,
+          "conference": "swac",
+          "division": "swac_west",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 4,
+          "games_back": 3.0
+        },
+        {
+          "team_id": "swacuapb",
+          "team": {
+            "team_id": "swacuapb",
+            "name": "Arkansas-Pine Bluff",
+            "short_name": "UAPB",
+            "abbreviation": "UAPB",
+            "nickname": "Golden Lions",
+            "colors": {
+              "primary": "#000000",
+              "secondary": "#FFCC00"
+            }
+          },
+          "record": "4-7",
+          "last5": "WLLWW",
+          "streak": "W1",
+          "conference_record": "3-6",
+          "division_record": "1-4",
+          "wins": 4,
+          "losses": 7,
+          "conf_wins": 3,
+          "conf_losses": 6,
+          "division_wins": 1,
+          "division_losses": 4,
+          "win_pct": 0.3636,
+          "conf_win_pct": 0.3333,
+          "division_win_pct": 0.2,
+          "conference": "swac",
+          "division": "swac_west",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 5,
+          "games_back": 5.5
+        },
+        {
+          "team_id": "swactsu",
+          "team": {
+            "team_id": "swactsu",
+            "name": "Texas Southern",
+            "short_name": "TSU",
+            "abbreviation": "TXSO",
+            "nickname": "Tigers",
+            "colors": {
+              "primary": "#611010",
+              "secondary": "#A1A1A1",
+              "tertiary": "#000000"
+            }
+          },
+          "record": "5-7",
+          "last5": "LLLLL",
+          "streak": "L5",
+          "conference_record": "3-7",
+          "division_record": "1-4",
+          "wins": 5,
+          "losses": 7,
+          "conf_wins": 3,
+          "conf_losses": 7,
+          "division_wins": 1,
+          "division_losses": 4,
+          "win_pct": 0.4167,
+          "conf_win_pct": 0.3,
+          "division_win_pct": 0.2,
+          "conference": "swac",
+          "division": "swac_west",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 6,
+          "games_back": 6.0
+        }
+      ],
+      "finish_matrix": [
+        {
+          "team_id": "swacsu",
+          "current_rank": 1,
+          "conference_record": "9-1",
+          "games_back": 0.0
+        },
+        {
+          "team_id": "swacgsu",
+          "current_rank": 2,
+          "conference_record": "8-2",
+          "games_back": 1.0
+        },
+        {
+          "team_id": "swacalc",
+          "current_rank": 3,
+          "conference_record": "8-2",
+          "games_back": 1.0
+        },
+        {
+          "team_id": "swacpvamu",
+          "current_rank": 4,
+          "conference_record": "6-4",
+          "games_back": 3.0
+        },
+        {
+          "team_id": "swacuapb",
+          "current_rank": 5,
+          "conference_record": "3-6",
+          "games_back": 5.5
+        },
+        {
+          "team_id": "swactsu",
+          "current_rank": 6,
+          "conference_record": "3-7",
+          "games_back": 6.0
+        }
+      ],
+      "summary_cards": [
+        {
+          "id": "swac_west-leader",
+          "label": "Leader",
+          "team_id": "swacsu",
+          "value": "9-1"
+        }
+      ],
+      "completed_games": 27,
+      "remaining_games": 0,
+      "scenario_count": 0,
+      "tiebreaker_trace": [
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "tie"
+        },
+        {
+          "step": "head_to_head",
+          "record": "1-0"
+        },
+        {
+          "step": "division_record",
+          "record": "4-1"
+        },
+        {
+          "step": "remaining_official_steps",
+          "result": "requires_manual_review_if_still_tied",
+          "steps": [
+            "common_opponents",
+            "Sagarin",
+            "coin_flip"
+          ]
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "tie"
+        },
+        {
+          "step": "head_to_head",
+          "record": "0-1"
+        },
+        {
+          "step": "division_record",
+          "record": "4-1"
+        },
+        {
+          "step": "remaining_official_steps",
+          "result": "requires_manual_review_if_still_tied",
+          "steps": [
+            "common_opponents",
+            "Sagarin",
+            "coin_flip"
+          ]
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        }
+      ],
+      "unresolved_tiebreakers": []
+    },
+    "meac": {
+      "standings": [
+        {
+          "team_id": "meacmsu",
+          "team": {
+            "team_id": "meacmsu",
+            "name": "Morgan State",
+            "short_name": "Morgan",
+            "abbreviation": "MSU",
+            "nickname": "Bears",
+            "colors": {
+              "primary": "#002147",
+              "secondary": "#FF6600",
+              "tertiary": "#888B8D",
+              "quaternary": "#000000"
+            }
+          },
+          "record": "4-0",
+          "last5": "",
+          "streak": "",
+          "conference_record": "3-0",
+          "division_record": "3-0",
+          "wins": 4,
+          "losses": 0,
+          "conf_wins": 3,
+          "conf_losses": 0,
+          "division_wins": 3,
+          "division_losses": 0,
+          "win_pct": 1.0,
+          "conf_win_pct": 1.0,
+          "division_win_pct": 1.0,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "tie"
+            },
+            {
+              "step": "head_to_head",
+              "record": "0-0"
+            },
+            {
+              "step": "non_conference_points",
+              "result": "requires_manual_review_if_still_tied",
+              "rules": [
+                "+6 for non-conference Division I FBS win",
+                "+4 for non-conference Division I FCS win",
+                "-4 for non-Division I loss"
+              ]
+            },
+            {
+              "step": "remaining_official_steps",
+              "result": "requires_manual_review_if_still_tied",
+              "steps": [
+                "Sagarin",
+                "coin_toss"
+              ]
+            }
+          ],
+          "head_to_head_record": "0-0",
+          "head_to_head_pct": 0.0,
+          "tiebreaker_status": "manual_review_needed",
+          "rank": 1,
+          "games_back": 0.0
+        },
+        {
+          "team_id": "meacncat",
+          "team": {
+            "team_id": "meacncat",
+            "name": "North Carolina A&T",
+            "short_name": "NC A&T",
+            "abbreviation": "NCAT",
+            "nickname": "Aggies",
+            "colors": {
+              "primary": "#004B87",
+              "secondary": "#FFCC00",
+              "tertiary": "#000000"
+            }
+          },
+          "record": "3-0",
+          "last5": "",
+          "streak": "",
+          "conference_record": "1-0",
+          "division_record": "1-0",
+          "wins": 3,
+          "losses": 0,
+          "conf_wins": 1,
+          "conf_losses": 0,
+          "division_wins": 1,
+          "division_losses": 0,
+          "win_pct": 1.0,
+          "conf_win_pct": 1.0,
+          "division_win_pct": 1.0,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "tie"
+            },
+            {
+              "step": "head_to_head",
+              "record": "0-0"
+            },
+            {
+              "step": "non_conference_points",
+              "result": "requires_manual_review_if_still_tied",
+              "rules": [
+                "+6 for non-conference Division I FBS win",
+                "+4 for non-conference Division I FCS win",
+                "-4 for non-Division I loss"
+              ]
+            },
+            {
+              "step": "remaining_official_steps",
+              "result": "requires_manual_review_if_still_tied",
+              "steps": [
+                "Sagarin",
+                "coin_toss"
+              ]
+            }
+          ],
+          "head_to_head_record": "0-0",
+          "head_to_head_pct": 0.0,
+          "tiebreaker_status": "manual_review_needed",
+          "rank": 2,
+          "games_back": 1.0
+        },
+        {
+          "team_id": "swacbcu",
+          "team": {
+            "team_id": "swacbcu",
+            "name": "Bethune-Cookman",
+            "short_name": "B-CU",
+            "abbreviation": "BCU",
+            "nickname": "Wildcats",
+            "colors": {
+              "primary": "#6F263D",
+              "secondary": "#FFB300",
+              "tertiary": "#373A36",
+              "quaternary": "#72CDF4"
+            }
+          },
+          "record": "10-3",
+          "last5": "WLWWL",
+          "streak": "W1",
+          "conference_record": "5-1",
+          "division_record": "2-1",
+          "wins": 10,
+          "losses": 3,
+          "conf_wins": 5,
+          "conf_losses": 1,
+          "division_wins": 2,
+          "division_losses": 1,
+          "win_pct": 0.7692,
+          "conf_win_pct": 0.8333,
+          "division_win_pct": 0.6667,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 3,
+          "games_back": 0.0
+        },
+        {
+          "team_id": "meacscsu",
+          "team": {
+            "team_id": "meacscsu",
+            "name": "South Carolina State",
+            "short_name": "SC State",
+            "abbreviation": "SCSU",
+            "nickname": "Bulldogs",
+            "colors": {
+              "primary": "#990000",
+              "secondary": "#002147",
+              "tertiary": "#000000"
+            }
+          },
+          "record": "9-4",
+          "last5": "WLWWW",
+          "streak": "W1",
+          "conference_record": "3-1",
+          "division_record": "1-0",
+          "wins": 9,
+          "losses": 4,
+          "conf_wins": 3,
+          "conf_losses": 1,
+          "division_wins": 1,
+          "division_losses": 0,
+          "win_pct": 0.6923,
+          "conf_win_pct": 0.75,
+          "division_win_pct": 1.0,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 4,
+          "games_back": 0.5
+        },
+        {
+          "team_id": "meachu",
+          "team": {
+            "team_id": "meachu",
+            "name": "Howard",
+            "short_name": "Howard",
+            "abbreviation": "HOW",
+            "nickname": "Bison",
+            "colors": {
+              "primary": "#003A63",
+              "secondary": "#E41937",
+              "tertiary": "#FFFFFF",
+              "quaternary": "#808285"
+            }
+          },
+          "record": "1-3",
+          "last5": "",
+          "streak": "",
+          "conference_record": "1-2",
+          "division_record": "1-2",
+          "wins": 1,
+          "losses": 3,
+          "conf_wins": 1,
+          "conf_losses": 2,
+          "division_wins": 1,
+          "division_losses": 2,
+          "win_pct": 0.25,
+          "conf_win_pct": 0.3333,
+          "division_win_pct": 0.3333,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 5,
+          "games_back": 2.0
+        },
+        {
+          "team_id": "swacfamu",
+          "team": {
+            "team_id": "swacfamu",
+            "name": "Florida A&M",
+            "short_name": "FAMU",
+            "abbreviation": "FAMU",
+            "nickname": "Rattlers",
+            "colors": {
+              "primary": "#006747",
+              "secondary": "#F58426",
+              "tertiary": "#000000",
+              "quaternary": "#FFFFFF"
+            }
+          },
+          "record": "3-9",
+          "last5": "LWLLL",
+          "streak": "L1",
+          "conference_record": "2-5",
+          "division_record": "1-3",
+          "wins": 3,
+          "losses": 9,
+          "conf_wins": 2,
+          "conf_losses": 5,
+          "division_wins": 1,
+          "division_losses": 3,
+          "win_pct": 0.25,
+          "conf_win_pct": 0.2857,
+          "division_win_pct": 0.25,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 6,
+          "games_back": 3.0
+        },
+        {
+          "team_id": "meacnsu",
+          "team": {
+            "team_id": "meacnsu",
+            "name": "Norfolk State",
+            "short_name": "Norfolk",
+            "abbreviation": "NSU",
+            "nickname": "Spartans",
+            "colors": {
+              "primary": "#004B34",
+              "secondary": "#F0B412",
+              "tertiary": "#B6B8B6",
+              "quaternary": "#000000"
+            }
+          },
+          "record": "5-9",
+          "last5": "LLLWW",
+          "streak": "L3",
+          "conference_record": "1-3",
+          "division_record": "0-1",
+          "wins": 5,
+          "losses": 9,
+          "conf_wins": 1,
+          "conf_losses": 3,
+          "division_wins": 0,
+          "division_losses": 1,
+          "win_pct": 0.3571,
+          "conf_win_pct": 0.25,
+          "division_win_pct": 0.0,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 7,
+          "games_back": 2.5
+        },
+        {
+          "team_id": "meacdsu",
+          "team": {
+            "team_id": "meacdsu",
+            "name": "Delaware State",
+            "short_name": "Del State",
+            "abbreviation": "DSU",
+            "nickname": "Hornets",
+            "colors": {
+              "primary": "#EE2F24",
+              "secondary": "#0092BC",
+              "tertiary": "#72CDF4"
+            }
+          },
+          "record": "2-11",
+          "last5": "LLLLL",
+          "streak": "L5",
+          "conference_record": "1-4",
+          "division_record": "0-0",
+          "wins": 2,
+          "losses": 11,
+          "conf_wins": 1,
+          "conf_losses": 4,
+          "division_wins": 0,
+          "division_losses": 0,
+          "win_pct": 0.1538,
+          "conf_win_pct": 0.2,
+          "division_win_pct": 0.0,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 8,
+          "games_back": 3.0
+        },
+        {
+          "team_id": "meacnccu",
+          "team": {
+            "team_id": "meacnccu",
+            "name": "North Carolina Central",
+            "short_name": "NC Central",
+            "abbreviation": "NCCU",
+            "nickname": "Eagles",
+            "colors": {
+              "primary": "#8A191D",
+              "secondary": "#A1A1A1",
+              "tertiary": "#000000"
+            }
+          },
+          "record": "0-1",
+          "last5": "",
+          "streak": "",
+          "conference_record": "0-1",
+          "division_record": "0-1",
+          "wins": 0,
+          "losses": 1,
+          "conf_wins": 0,
+          "conf_losses": 1,
+          "division_wins": 0,
+          "division_losses": 1,
+          "win_pct": 0.0,
+          "conf_win_pct": 0.0,
+          "division_win_pct": 0.0,
+          "conference": "meac",
+          "division": "meac",
+          "tiebreaker_trace": [
+            {
+              "step": "conference_win_pct",
+              "result": "clear"
+            }
+          ],
+          "tiebreaker_status": "clear",
+          "rank": 9,
+          "games_back": 2.0
+        }
+      ],
+      "finish_matrix": [
+        {
+          "team_id": "meacmsu",
+          "current_rank": 1,
+          "conference_record": "3-0",
+          "games_back": 0.0
+        },
+        {
+          "team_id": "meacncat",
+          "current_rank": 2,
+          "conference_record": "1-0",
+          "games_back": 1.0
+        },
+        {
+          "team_id": "swacbcu",
+          "current_rank": 3,
+          "conference_record": "5-1",
+          "games_back": 0.0
+        },
+        {
+          "team_id": "meacscsu",
+          "current_rank": 4,
+          "conference_record": "3-1",
+          "games_back": 0.5
+        },
+        {
+          "team_id": "meachu",
+          "current_rank": 5,
+          "conference_record": "1-2",
+          "games_back": 2.0
+        },
+        {
+          "team_id": "swacfamu",
+          "current_rank": 6,
+          "conference_record": "2-5",
+          "games_back": 3.0
+        },
+        {
+          "team_id": "meacnsu",
+          "current_rank": 7,
+          "conference_record": "1-3",
+          "games_back": 2.5
+        },
+        {
+          "team_id": "meacdsu",
+          "current_rank": 8,
+          "conference_record": "1-4",
+          "games_back": 3.0
+        },
+        {
+          "team_id": "meacnccu",
+          "current_rank": 9,
+          "conference_record": "0-1",
+          "games_back": 2.0
+        }
+      ],
+      "summary_cards": [
+        {
+          "id": "meac-leader",
+          "label": "Leader",
+          "team_id": "meacmsu",
+          "value": "3-0"
+        }
+      ],
+      "completed_games": 14,
+      "remaining_games": 2,
+      "scenario_count": 0,
+      "tiebreaker_trace": [
+        {
+          "step": "conference_win_pct",
+          "result": "tie"
+        },
+        {
+          "step": "head_to_head",
+          "record": "0-0"
+        },
+        {
+          "step": "non_conference_points",
+          "result": "requires_manual_review_if_still_tied",
+          "rules": [
+            "+6 for non-conference Division I FBS win",
+            "+4 for non-conference Division I FCS win",
+            "-4 for non-Division I loss"
+          ]
+        },
+        {
+          "step": "remaining_official_steps",
+          "result": "requires_manual_review_if_still_tied",
+          "steps": [
+            "Sagarin",
+            "coin_toss"
+          ]
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "tie"
+        },
+        {
+          "step": "head_to_head",
+          "record": "0-0"
+        },
+        {
+          "step": "non_conference_points",
+          "result": "requires_manual_review_if_still_tied",
+          "rules": [
+            "+6 for non-conference Division I FBS win",
+            "+4 for non-conference Division I FCS win",
+            "-4 for non-Division I loss"
+          ]
+        },
+        {
+          "step": "remaining_official_steps",
+          "result": "requires_manual_review_if_still_tied",
+          "steps": [
+            "Sagarin",
+            "coin_toss"
+          ]
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        },
+        {
+          "step": "conference_win_pct",
+          "result": "clear"
+        }
+      ],
+      "unresolved_tiebreakers": [
+        "meacmsu",
+        "meacncat"
+      ]
+    }
+  }
+}

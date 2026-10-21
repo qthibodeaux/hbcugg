@@ -1,0 +1,459 @@
+{
+  "team_id": "swacgsu",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "West",
+    "division_label": "SWAC WEST",
+    "season": 2025,
+    "team_abbreviation": "GRAM",
+    "school_name": "Grambling State University",
+    "avg_par": 4.1,
+    "roster_count": 107,
+    "transfer_count": 59,
+    "transfer_rate": 55.1,
+    "upperclass_pct": 54.2
+  },
+  "conference_record": {
+    "conference_label": "4-4",
+    "conference_wins": 4,
+    "conference_losses": 4,
+    "overall_label": "7-5",
+    "overall_wins": 7,
+    "overall_losses": 5,
+    "overall_ties": 0,
+    "division_rank": "4th - SWAC West",
+    "last_5": [
+      {
+        "week": 9,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 26,
+        "score_opponent": 24,
+        "score": "W 26-24",
+        "game_path_id": "gsujsu25"
+      },
+      {
+        "week": 10,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacaamu",
+        "opponent_short": "AAMU",
+        "score_team": 13,
+        "score_opponent": 10,
+        "score": "W 13-10",
+        "game_path_id": "aamugsu25"
+      },
+      {
+        "week": 11,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacbcu",
+        "opponent_short": "BCU",
+        "score_team": 31,
+        "score_opponent": 23,
+        "score": "W 31-23",
+        "game_path_id": "bcugsu25"
+      },
+      {
+        "week": 12,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacalc",
+        "opponent_short": "ALCN",
+        "score_team": 16,
+        "score_opponent": 27,
+        "score": "L 16-27",
+        "game_path_id": "gsualc25"
+      },
+      {
+        "week": 14,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacsu",
+        "opponent_short": "SOU",
+        "score_team": 27,
+        "score_opponent": 28,
+        "score": "L 27-28",
+        "game_path_id": "sugsu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "SUGRAM29112025",
+    "game_path_id": "sugsu25",
+    "week": 14,
+    "date": "2025-11-29",
+    "opponent_id": "swacsu",
+    "opponent_name": "Southern",
+    "result": "L",
+    "score_team": 27,
+    "score_opponent": 28,
+    "score": "L 27-28",
+    "venue": {
+      "stadium_name": "Caesars Superdome",
+      "venue_label": "Bayou Classic",
+      "city": "New Orleans",
+      "neutral_site_name": "Bayou Classic"
+    },
+    "tag": "Bayou Classic",
+    "headline": "L 27-28 vs SOU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5566
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 7-5, 4th - SWAC West.",
+    "record": "7-5",
+    "wins": 7,
+    "losses": 5,
+    "conference_record": "4-4",
+    "conference_wins": 4,
+    "conference_losses": 4,
+    "division_finish": "4th - SWAC West",
+    "avg_par": 4.1,
+    "games_played": 12
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00004567",
+      "name": "Mickey Joseph",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://gsutigers.com/images/2024/2/19/Mickey_Joseph.jpg",
+      "tenure_year": 2,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": 0.0253,
+        "display": "+0.03",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00004572",
+      "name": "Erik Losey",
+      "role": "Offensive Coordinator",
+      "role_title": "Offensive Line, Run Game Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://gsutigers.com/images/2025/7/25/Eric_Losey.jpg",
+      "tenure_year": 1,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.0305,
+        "display": "-0.03",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00004568",
+      "name": "Jason Rollins",
+      "role": "Defensive Coordinator",
+      "role_title": "Defensive Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://gsutigers.com/images/2024/2/22/Jason_Rollins.jpg",
+      "tenure_year": 2,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.0558,
+        "display": "+0.06",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 57.6,
+            "display": "57.6%",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 169.9,
+            "display": "169.9",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.25,
+            "display": "1.25",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 143.4,
+            "display": "143.4",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 0.75,
+            "display": "0.75",
+            "rank": 18,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 25.04,
+            "display": "25.0%",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 47.92,
+            "display": "47.9%",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 15.54,
+            "display": "15.5%",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 15.75,
+            "display": "15.8%",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 3.0,
+            "display": "3.00",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.625,
+            "display": "1.62",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 36.88,
+            "display": "36.9%",
+            "rank": 16,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.1448,
+            "display": "-0.14",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 32.2,
+            "display": "32.2%",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 44.6,
+            "display": "44.6%",
+            "rank": 18,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 75.0,
+            "display": "75.0%",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 37.8,
+            "display": "37.8",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 60.5,
+            "display": "60.5%",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 19.3,
+            "display": "19.3",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "special_teams",
+    "key": "kickoff_touchback_rate",
+    "label": "TOUCHBACK %",
+    "value": 60.5,
+    "display": "60.5%",
+    "rank": 1,
+    "total": 18,
+    "sentence": "Touchback rate"
+  },
+  "star_impact": {
+    "person_id": "PERS_00012054",
+    "full_name": "Tyrell Raby",
+    "last_name": "Raby",
+    "position": "DB",
+    "class_year": "Sr.",
+    "image_url": "https://gsutigers.com/images/2025/8/28/TyrellRaby.jpg",
+    "from_game": {
+      "game_id": "SUGRAM29112025",
+      "game_path_id": "sugsu25",
+      "week": 14,
+      "opponent_name": "Southern",
+      "result": "L",
+      "score": "L 27-28"
+    },
+    "game_par": 15.39,
+    "season_par": 46.76,
+    "par_per_game": 5.84,
+    "stat_line": [
+      {
+        "label": "INT",
+        "value": "1"
+      },
+      {
+        "label": "PD",
+        "value": "1"
+      },
+      {
+        "label": "TKL",
+        "value": "2"
+      },
+      {
+        "label": "TFL",
+        "value": "1"
+      },
+      {
+        "label": "SACK",
+        "value": "1"
+      }
+    ],
+    "profile_url": "/player/PERS_00012054"
+  }
+}

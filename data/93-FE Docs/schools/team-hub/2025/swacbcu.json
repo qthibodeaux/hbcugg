@@ -1,0 +1,455 @@
+{
+  "team_id": "swacbcu",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "East",
+    "division_label": "SWAC EAST",
+    "season": 2025,
+    "team_abbreviation": "BCU",
+    "school_name": "Bethune-Cookman University",
+    "avg_par": 8.7,
+    "roster_count": 94,
+    "transfer_count": 43,
+    "transfer_rate": 45.7,
+    "upperclass_pct": 37.2
+  },
+  "conference_record": {
+    "conference_label": "5-3",
+    "conference_wins": 5,
+    "conference_losses": 3,
+    "overall_label": "6-6",
+    "overall_wins": 6,
+    "overall_losses": 6,
+    "overall_ties": 0,
+    "division_rank": "3rd - SWAC East",
+    "last_5": [
+      {
+        "week": 9,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacuapb",
+        "opponent_short": "UAPB",
+        "score_team": 31,
+        "score_opponent": 14,
+        "score": "W 31-14",
+        "game_path_id": "uapbbcu25"
+      },
+      {
+        "week": 10,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacmvsu",
+        "opponent_short": "MVSU",
+        "score_team": 42,
+        "score_opponent": 34,
+        "score": "W 42-34",
+        "game_path_id": "mvsubcu25"
+      },
+      {
+        "week": 11,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacgsu",
+        "opponent_short": "GRAM",
+        "score_team": 23,
+        "score_opponent": 31,
+        "score": "L 23-31",
+        "game_path_id": "bcugsu25"
+      },
+      {
+        "week": 12,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 13,
+        "score_opponent": 28,
+        "score": "L 13-28",
+        "game_path_id": "bcujsu25"
+      },
+      {
+        "week": 13,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacfamu",
+        "opponent_short": "FAMU",
+        "score_team": 38,
+        "score_opponent": 34,
+        "score": "W 38-34",
+        "game_path_id": "famubcu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "FAMUBCU22112025",
+    "game_path_id": "famubcu25",
+    "week": 13,
+    "date": "2025-11-22",
+    "opponent_id": "swacfamu",
+    "opponent_name": "FAMU",
+    "result": "W",
+    "score_team": 38,
+    "score_opponent": 34,
+    "score": "W 38-34",
+    "venue": {
+      "stadium_name": "Camping World Stadium",
+      "venue_label": "Florida Classic",
+      "city": "Orlando",
+      "neutral_site_name": "Florida Classic"
+    },
+    "tag": "Florida Classic",
+    "headline": "W 38-34 vs FAMU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5425
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 6-6, 3rd - SWAC East.",
+    "record": "6-6",
+    "wins": 6,
+    "losses": 6,
+    "conference_record": "5-3",
+    "conference_wins": 5,
+    "conference_losses": 3,
+    "division_finish": "3rd - SWAC East",
+    "avg_par": 8.7,
+    "games_played": 12
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00010526",
+      "name": "Raymond Woodie Jr.",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://bcuathletics.com/images/2023/3/16/cropped_WOODIE_RAYMOND.png",
+      "tenure_year": 3,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": 0.0168,
+        "display": "+0.02",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00010531",
+      "name": "Brandon Washington",
+      "role": "Offensive Coordinator",
+      "role_title": "Run Game Coordinator, Offensive Line",
+      "role_group": "coordinator",
+      "image_url": "https://bcuathletics.com/images/2023/3/16/cropped_WASHINGTON_BRANDON.png",
+      "tenure_year": 3,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": 0.0424,
+        "display": "+0.04",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00011434",
+      "name": "Otis Mounds",
+      "role": "Defensive Coordinator",
+      "role_title": "Co-Defensive Coordinator, Safeties",
+      "role_group": "coordinator",
+      "image_url": "https://bcuathletics.com/images/2024/8/19/MOUNDS_OTIS.png",
+      "tenure_year": 2,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": -0.0256,
+        "display": "-0.03",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 67.4,
+            "display": "67.4%",
+            "rank": 1,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 258.3,
+            "display": "258.3",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.889,
+            "display": "1.89",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.667,
+            "display": "0.67",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 194.2,
+            "display": "194.2",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 2.333,
+            "display": "2.33",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 18.03,
+            "display": "18.0%",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 58.33,
+            "display": "58.3%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 15.26,
+            "display": "15.3%",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 14.67,
+            "display": "14.7%",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.0,
+            "display": "2.00",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 0.889,
+            "display": "0.89",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 50.58,
+            "display": "50.6%",
+            "rank": 2,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.1461,
+            "display": "+0.15",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 41.1,
+            "display": "41.1%",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 71.2,
+            "display": "71.2%",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 66.7,
+            "display": "66.7%",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 43.1,
+            "display": "43.1",
+            "rank": 2,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 26.8,
+            "display": "26.8%",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 22.6,
+            "display": "22.6",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "passing",
+    "key": "completion_pct",
+    "label": "COMP %",
+    "value": 67.4,
+    "display": "67.4%",
+    "rank": 1,
+    "total": 18,
+    "sentence": "Completion percentage"
+  },
+  "star_impact": {
+    "person_id": "PERS_00010987",
+    "full_name": "Naim Lassiter",
+    "last_name": "Lassiter",
+    "position": "CB",
+    "class_year": "Jr.",
+    "image_url": "https://bcuathletics.com/images/2025/8/8/13_LASSITER_NAIM.png",
+    "from_game": {
+      "game_id": "FAMUBCU22112025",
+      "game_path_id": "famubcu25",
+      "week": 13,
+      "opponent_name": "FAMU",
+      "result": "W",
+      "score": "W 38-34"
+    },
+    "game_par": 26.06,
+    "season_par": 45.14,
+    "par_per_game": 5.64,
+    "stat_line": [
+      {
+        "label": "PD",
+        "value": "2"
+      },
+      {
+        "label": "FF",
+        "value": "1"
+      },
+      {
+        "label": "FR",
+        "value": "1"
+      },
+      {
+        "label": "TKL",
+        "value": "4"
+      }
+    ],
+    "profile_url": "/player/PERS_00010987"
+  }
+}

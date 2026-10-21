@@ -1,0 +1,1347 @@
+{
+  "person_id": "PERS_00000446",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00000446",
+    "first_name": "Cornelious",
+    "last_name": "Brown",
+    "team_id": "swacaamu",
+    "team_abbreviation": "AAMU",
+    "conference": "SWAC",
+    "division": "East",
+    "jersey_number": 10,
+    "position": "Quarterback",
+    "position_group": "QB",
+    "raw_position": "QB",
+    "class_year": 5,
+    "class_label": "Graduate",
+    "height": 77,
+    "weight": 220,
+    "home_city": "Birmingham",
+    "home_state": "AL",
+    "is_in_state": true,
+    "previous_school": "UT Martin",
+    "high_school": null,
+    "image_url": "https://aamusports.com/images/2026/7/13/26CorneliousBrownIV.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 85.775,
+    "per_game": 22.63,
+    "games_played": 5,
+    "rank_in_position_group": 2,
+    "position_group_total": 39,
+    "conference_rank": 2,
+    "conference_total": 713,
+    "position_group_mean": 12.39
+  },
+  "season_totals": {
+    "par": 85.775,
+    "total_production": 113.15,
+    "avg_production": 22.63,
+    "games_played": 5,
+    "season_components": {
+      "passing_production": 98.52,
+      "rushing_production": 14.63
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "HUAAMU29082026",
+      "game_path_id": "huaamu26",
+      "opponent_id": "meachu",
+      "opponent_name": "Howard",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 24-31",
+      "data_state": "played",
+      "par": 17.45,
+      "components": {
+        "passing_production": 18.33,
+        "rushing_production": 4.59
+      },
+      "stat_line": [
+        {
+          "label": "CMP/ATT",
+          "value": "25/41"
+        },
+        {
+          "label": "YDS",
+          "value": 254
+        },
+        {
+          "label": "TD",
+          "value": 2
+        },
+        {
+          "label": "INT",
+          "value": 1
+        },
+        {
+          "label": "RUSH",
+          "value": "4-33"
+        }
+      ],
+      "field_map": {
+        "available": true,
+        "passing": {
+          "available": true,
+          "grid": "3x3",
+          "cells": [
+            {
+              "depth": "short",
+              "direction": "L",
+              "attempts": 6,
+              "completions": 6,
+              "yards": 44
+            },
+            {
+              "depth": "short",
+              "direction": "M",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "short",
+              "direction": "R",
+              "attempts": 5,
+              "completions": 5,
+              "yards": 59
+            },
+            {
+              "depth": "medium",
+              "direction": "L",
+              "attempts": 5,
+              "completions": 5,
+              "yards": 48
+            },
+            {
+              "depth": "medium",
+              "direction": "M",
+              "attempts": 2,
+              "completions": 2,
+              "yards": 15
+            },
+            {
+              "depth": "medium",
+              "direction": "R",
+              "attempts": 4,
+              "completions": 4,
+              "yards": 37
+            },
+            {
+              "depth": "deep",
+              "direction": "L",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "M",
+              "attempts": 2,
+              "completions": 2,
+              "yards": 32
+            },
+            {
+              "depth": "deep",
+              "direction": "R",
+              "attempts": 1,
+              "completions": 1,
+              "yards": 19
+            }
+          ],
+          "uncharted": {
+            "attempts": 16,
+            "completions": 0,
+            "yards": 0,
+            "no_depth": 15,
+            "no_direction": 2
+          }
+        },
+        "rushing": {
+          "available": true,
+          "grid": "1x3",
+          "success_rate": 0.75,
+          "cells": [
+            {
+              "direction": "L",
+              "attempts": 0,
+              "yards": 0,
+              "line_yards": 0.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "M",
+              "attempts": 2,
+              "yards": 11,
+              "line_yards": 9.5,
+              "highlight_yards": 1.5,
+              "touchdowns": 1,
+              "fumbles": 0
+            },
+            {
+              "direction": "R",
+              "attempts": 2,
+              "yards": 22,
+              "line_yards": 9.0,
+              "highlight_yards": 13.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            }
+          ]
+        }
+      },
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_miles_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Miles",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 38-23",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_tennesseestate_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Tennessee State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 30-3",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_bowiestate_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Bowie State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 45-3",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "AAMUFAMU26092026",
+      "game_path_id": "aamufamu26",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 40-21",
+      "data_state": "played",
+      "par": 11.29,
+      "components": {
+        "passing_production": 16.38,
+        "rushing_production": 0.39
+      },
+      "stat_line": [
+        {
+          "label": "CMP/ATT",
+          "value": "18/26"
+        },
+        {
+          "label": "YDS",
+          "value": 198
+        },
+        {
+          "label": "TD",
+          "value": 3
+        },
+        {
+          "label": "INT",
+          "value": 1
+        },
+        {
+          "label": "RUSH",
+          "value": "1-8"
+        }
+      ],
+      "field_map": {
+        "available": true,
+        "passing": {
+          "available": true,
+          "grid": "3x3",
+          "cells": [
+            {
+              "depth": "short",
+              "direction": "L",
+              "attempts": 6,
+              "completions": 4,
+              "yards": 11
+            },
+            {
+              "depth": "short",
+              "direction": "M",
+              "attempts": 5,
+              "completions": 5,
+              "yards": 27
+            },
+            {
+              "depth": "short",
+              "direction": "R",
+              "attempts": 2,
+              "completions": 2,
+              "yards": 9
+            },
+            {
+              "depth": "medium",
+              "direction": "L",
+              "attempts": 4,
+              "completions": 3,
+              "yards": 85
+            },
+            {
+              "depth": "medium",
+              "direction": "M",
+              "attempts": 2,
+              "completions": 2,
+              "yards": 18
+            },
+            {
+              "depth": "medium",
+              "direction": "R",
+              "attempts": 1,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "L",
+              "attempts": 2,
+              "completions": 1,
+              "yards": 29
+            },
+            {
+              "depth": "deep",
+              "direction": "M",
+              "attempts": 1,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "R",
+              "attempts": 2,
+              "completions": 1,
+              "yards": 19
+            }
+          ],
+          "uncharted": {
+            "attempts": 1,
+            "completions": 0,
+            "yards": 0,
+            "no_depth": 0,
+            "no_direction": 1
+          }
+        },
+        "rushing": {
+          "available": true,
+          "grid": "1x3",
+          "success_rate": 1.0,
+          "cells": [
+            {
+              "direction": "L",
+              "attempts": 0,
+              "yards": 0,
+              "line_yards": 0.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "M",
+              "attempts": 1,
+              "yards": 8,
+              "line_yards": 6.0,
+              "highlight_yards": 2.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "R",
+              "attempts": 0,
+              "yards": 0,
+              "line_yards": 0.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            }
+          ]
+        }
+      },
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "AAMUJSU03102026",
+      "game_path_id": "aamujsu26",
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 28-31",
+      "data_state": "played",
+      "par": 21.97,
+      "components": {
+        "passing_production": 23.43,
+        "rushing_production": 4.01
+      },
+      "stat_line": [
+        {
+          "label": "CMP/ATT",
+          "value": "14/30"
+        },
+        {
+          "label": "YDS",
+          "value": 263
+        },
+        {
+          "label": "TD",
+          "value": 3
+        },
+        {
+          "label": "INT",
+          "value": 0
+        },
+        {
+          "label": "RUSH",
+          "value": "7-32"
+        }
+      ],
+      "field_map": {
+        "available": true,
+        "passing": {
+          "available": true,
+          "grid": "3x3",
+          "cells": [
+            {
+              "depth": "short",
+              "direction": "L",
+              "attempts": 3,
+              "completions": 3,
+              "yards": 24
+            },
+            {
+              "depth": "short",
+              "direction": "M",
+              "attempts": 1,
+              "completions": 1,
+              "yards": -1
+            },
+            {
+              "depth": "short",
+              "direction": "R",
+              "attempts": 1,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "medium",
+              "direction": "L",
+              "attempts": 5,
+              "completions": 3,
+              "yards": 26
+            },
+            {
+              "depth": "medium",
+              "direction": "M",
+              "attempts": 5,
+              "completions": 2,
+              "yards": 32
+            },
+            {
+              "depth": "medium",
+              "direction": "R",
+              "attempts": 2,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "L",
+              "attempts": 5,
+              "completions": 3,
+              "yards": 155
+            },
+            {
+              "depth": "deep",
+              "direction": "M",
+              "attempts": 3,
+              "completions": 1,
+              "yards": 13
+            },
+            {
+              "depth": "deep",
+              "direction": "R",
+              "attempts": 5,
+              "completions": 1,
+              "yards": 14
+            }
+          ],
+          "uncharted": {
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0,
+            "no_depth": 0,
+            "no_direction": 0
+          }
+        },
+        "rushing": {
+          "available": true,
+          "grid": "1x3",
+          "success_rate": 0.5714,
+          "cells": [
+            {
+              "direction": "L",
+              "attempts": 3,
+              "yards": 13,
+              "line_yards": 9.1,
+              "highlight_yards": 3.9,
+              "touchdowns": 1,
+              "fumbles": 0
+            },
+            {
+              "direction": "M",
+              "attempts": 2,
+              "yards": 12,
+              "line_yards": 10.0,
+              "highlight_yards": 2.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "R",
+              "attempts": 2,
+              "yards": 7,
+              "line_yards": 7.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 1
+            }
+          ]
+        }
+      },
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "BCUAAMU10102026",
+      "game_path_id": "bcuaamu26",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 55-17",
+      "data_state": "played",
+      "par": 4.34,
+      "components": {
+        "passing_production": 9.15,
+        "rushing_production": 0.66
+      },
+      "stat_line": [
+        {
+          "label": "CMP/ATT",
+          "value": "6/19"
+        },
+        {
+          "label": "YDS",
+          "value": 169
+        },
+        {
+          "label": "TD",
+          "value": 2
+        },
+        {
+          "label": "INT",
+          "value": 1
+        },
+        {
+          "label": "RUSH",
+          "value": "2-12"
+        }
+      ],
+      "field_map": {
+        "available": true,
+        "passing": {
+          "available": true,
+          "grid": "3x3",
+          "cells": [
+            {
+              "depth": "short",
+              "direction": "L",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "short",
+              "direction": "M",
+              "attempts": 1,
+              "completions": 1,
+              "yards": 31
+            },
+            {
+              "depth": "short",
+              "direction": "R",
+              "attempts": 1,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "medium",
+              "direction": "L",
+              "attempts": 3,
+              "completions": 1,
+              "yards": 5
+            },
+            {
+              "depth": "medium",
+              "direction": "M",
+              "attempts": 2,
+              "completions": 1,
+              "yards": 11
+            },
+            {
+              "depth": "medium",
+              "direction": "R",
+              "attempts": 2,
+              "completions": 1,
+              "yards": 6
+            },
+            {
+              "depth": "deep",
+              "direction": "L",
+              "attempts": 2,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "M",
+              "attempts": 3,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "R",
+              "attempts": 4,
+              "completions": 2,
+              "yards": 116
+            }
+          ],
+          "uncharted": {
+            "attempts": 1,
+            "completions": 0,
+            "yards": 0,
+            "no_depth": 0,
+            "no_direction": 1
+          }
+        },
+        "rushing": {
+          "available": true,
+          "grid": "1x3",
+          "success_rate": 1.0,
+          "cells": [
+            {
+              "direction": "L",
+              "attempts": 0,
+              "yards": 0,
+              "line_yards": 0.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "M",
+              "attempts": 0,
+              "yards": 0,
+              "line_yards": 0.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "R",
+              "attempts": 2,
+              "yards": 12,
+              "line_yards": 10.0,
+              "highlight_yards": 2.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            }
+          ]
+        }
+      },
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "GRAMAAMU17102026",
+      "game_path_id": "gsuaamu26",
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 61-31",
+      "data_state": "played",
+      "par": 30.73,
+      "components": {
+        "passing_production": 31.23,
+        "rushing_production": 4.98
+      },
+      "stat_line": [
+        {
+          "label": "CMP/ATT",
+          "value": "22/38"
+        },
+        {
+          "label": "YDS",
+          "value": 417
+        },
+        {
+          "label": "TD",
+          "value": 5
+        },
+        {
+          "label": "INT",
+          "value": 1
+        },
+        {
+          "label": "RUSH",
+          "value": "5-41"
+        }
+      ],
+      "field_map": {
+        "available": true,
+        "passing": {
+          "available": true,
+          "grid": "3x3",
+          "cells": [
+            {
+              "depth": "short",
+              "direction": "L",
+              "attempts": 1,
+              "completions": 1,
+              "yards": 6
+            },
+            {
+              "depth": "short",
+              "direction": "M",
+              "attempts": 1,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "short",
+              "direction": "R",
+              "attempts": 6,
+              "completions": 4,
+              "yards": 16
+            },
+            {
+              "depth": "medium",
+              "direction": "L",
+              "attempts": 6,
+              "completions": 5,
+              "yards": 53
+            },
+            {
+              "depth": "medium",
+              "direction": "M",
+              "attempts": 4,
+              "completions": 2,
+              "yards": 36
+            },
+            {
+              "depth": "medium",
+              "direction": "R",
+              "attempts": 5,
+              "completions": 2,
+              "yards": 29
+            },
+            {
+              "depth": "deep",
+              "direction": "L",
+              "attempts": 4,
+              "completions": 3,
+              "yards": 107
+            },
+            {
+              "depth": "deep",
+              "direction": "M",
+              "attempts": 3,
+              "completions": 1,
+              "yards": 67
+            },
+            {
+              "depth": "deep",
+              "direction": "R",
+              "attempts": 7,
+              "completions": 4,
+              "yards": 103
+            }
+          ],
+          "uncharted": {
+            "attempts": 1,
+            "completions": 0,
+            "yards": 0,
+            "no_depth": 0,
+            "no_direction": 1
+          }
+        },
+        "rushing": {
+          "available": true,
+          "grid": "1x3",
+          "success_rate": 0.8,
+          "cells": [
+            {
+              "direction": "L",
+              "attempts": 2,
+              "yards": 12,
+              "line_yards": 10.0,
+              "highlight_yards": 2.0,
+              "touchdowns": 1,
+              "fumbles": 0
+            },
+            {
+              "direction": "M",
+              "attempts": 1,
+              "yards": 9,
+              "line_yards": 6.5,
+              "highlight_yards": 2.5,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "R",
+              "attempts": 2,
+              "yards": 20,
+              "line_yards": 12.0,
+              "highlight_yards": 8.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            }
+          ]
+        }
+      },
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "2026-10-31_swacaamu_at_swacasu",
+      "game_path_id": null,
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-07_swacaamu_at_swacpvamu",
+      "game_path_id": null,
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swactsu_at_swacaamu",
+      "game_path_id": null,
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_swacaamu_at_swacmvsu",
+      "game_path_id": null,
+      "opponent_id": "swacmvsu",
+      "opponent_name": "MVSU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 7,
+    "game_id": "GRAMAAMU17102026",
+    "game_path_id": "gsuaamu26",
+    "opponent_id": "swacgsu",
+    "opponent_name": "Grambling",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 61-31",
+    "par": 30.73,
+    "stat_line": [
+      {
+        "label": "CMP/ATT",
+        "value": "22/38"
+      },
+      {
+        "label": "YDS",
+        "value": 417
+      },
+      {
+        "label": "TD",
+        "value": 5
+      },
+      {
+        "label": "INT",
+        "value": 1
+      },
+      {
+        "label": "RUSH",
+        "value": "5-41"
+      }
+    ],
+    "epa_total": 18.0,
+    "success_rate": 0.5128,
+    "top_play": null,
+    "field_map": {
+      "available": true,
+      "passing": {
+        "available": true,
+        "grid": "3x3",
+        "cells": [
+          {
+            "depth": "short",
+            "direction": "L",
+            "attempts": 1,
+            "completions": 1,
+            "yards": 6
+          },
+          {
+            "depth": "short",
+            "direction": "M",
+            "attempts": 1,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "short",
+            "direction": "R",
+            "attempts": 6,
+            "completions": 4,
+            "yards": 16
+          },
+          {
+            "depth": "medium",
+            "direction": "L",
+            "attempts": 6,
+            "completions": 5,
+            "yards": 53
+          },
+          {
+            "depth": "medium",
+            "direction": "M",
+            "attempts": 4,
+            "completions": 2,
+            "yards": 36
+          },
+          {
+            "depth": "medium",
+            "direction": "R",
+            "attempts": 5,
+            "completions": 2,
+            "yards": 29
+          },
+          {
+            "depth": "deep",
+            "direction": "L",
+            "attempts": 4,
+            "completions": 3,
+            "yards": 107
+          },
+          {
+            "depth": "deep",
+            "direction": "M",
+            "attempts": 3,
+            "completions": 1,
+            "yards": 67
+          },
+          {
+            "depth": "deep",
+            "direction": "R",
+            "attempts": 7,
+            "completions": 4,
+            "yards": 103
+          }
+        ],
+        "uncharted": {
+          "attempts": 1,
+          "completions": 0,
+          "yards": 0,
+          "no_depth": 0,
+          "no_direction": 1
+        }
+      },
+      "rushing": {
+        "available": true,
+        "grid": "1x3",
+        "success_rate": 0.8,
+        "cells": [
+          {
+            "direction": "L",
+            "attempts": 2,
+            "yards": 12,
+            "line_yards": 10.0,
+            "highlight_yards": 2.0,
+            "touchdowns": 1,
+            "fumbles": 0
+          },
+          {
+            "direction": "M",
+            "attempts": 1,
+            "yards": 9,
+            "line_yards": 6.5,
+            "highlight_yards": 2.5,
+            "touchdowns": 0,
+            "fumbles": 0
+          },
+          {
+            "direction": "R",
+            "attempts": 2,
+            "yards": 20,
+            "line_yards": 12.0,
+            "highlight_yards": 8.0,
+            "touchdowns": 0,
+            "fumbles": 0
+          }
+        ]
+      }
+    }
+  },
+  "field_map": {
+    "available": true,
+    "views": [
+      "passing",
+      "rushing"
+    ],
+    "depth_bands": {
+      "short": "<4",
+      "medium": "4-12",
+      "deep": ">12"
+    },
+    "passing": {
+      "available": true,
+      "grid": "3x3",
+      "cells": [
+        {
+          "depth": "short",
+          "direction": "L",
+          "attempts": 16,
+          "completions": 14,
+          "yards": 85
+        },
+        {
+          "depth": "short",
+          "direction": "M",
+          "attempts": 8,
+          "completions": 7,
+          "yards": 57
+        },
+        {
+          "depth": "short",
+          "direction": "R",
+          "attempts": 15,
+          "completions": 11,
+          "yards": 84
+        },
+        {
+          "depth": "medium",
+          "direction": "L",
+          "attempts": 23,
+          "completions": 17,
+          "yards": 217
+        },
+        {
+          "depth": "medium",
+          "direction": "M",
+          "attempts": 15,
+          "completions": 9,
+          "yards": 112
+        },
+        {
+          "depth": "medium",
+          "direction": "R",
+          "attempts": 14,
+          "completions": 7,
+          "yards": 72
+        },
+        {
+          "depth": "deep",
+          "direction": "L",
+          "attempts": 13,
+          "completions": 7,
+          "yards": 291
+        },
+        {
+          "depth": "deep",
+          "direction": "M",
+          "attempts": 12,
+          "completions": 4,
+          "yards": 112
+        },
+        {
+          "depth": "deep",
+          "direction": "R",
+          "attempts": 19,
+          "completions": 9,
+          "yards": 271
+        }
+      ],
+      "uncharted": {
+        "attempts": 19,
+        "completions": 0,
+        "yards": 0,
+        "no_depth": 15,
+        "no_direction": 5
+      }
+    },
+    "rushing": {
+      "available": true,
+      "grid": "1x3",
+      "cells": [
+        {
+          "direction": "L",
+          "attempts": 5,
+          "yards": 25
+        },
+        {
+          "direction": "M",
+          "attempts": 6,
+          "yards": 40
+        },
+        {
+          "direction": "R",
+          "attempts": 8,
+          "yards": 61
+        }
+      ]
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 77,
+      "rank": 1,
+      "total": 8,
+      "group": "QB",
+      "group_avg": 74.5
+    },
+    "weight": {
+      "value": 220,
+      "rank": 4,
+      "total": 8,
+      "group": "QB",
+      "group_avg": 209.1
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 4
+      },
+      {
+        "class": "So.",
+        "count": 1
+      },
+      {
+        "class": "Jr.",
+        "count": 1
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 1
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "QBS",
+        "rank": 2,
+        "total": 8
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 10
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 59
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 58
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "FCS",
+    "previous_school": "UT Martin",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 81.3,
+    "distance_tier": "local",
+    "experience_score": 5.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Graduate",
+        "is_current": true,
+        "season": 2026
+      }
+    ]
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "team_id": "meacscsu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 7,
+  "generated_at": "2026-10-20T01:35:10-05:00",
+  "header": {
+    "conference": "MEAC",
+    "division": "",
+    "division_label": "MEAC",
+    "season": 2026,
+    "team_abbreviation": "SCSU",
+    "school_name": "South Carolina State University",
+    "avg_par": 2.8,
+    "roster_count": 101,
+    "transfer_count": 48,
+    "transfer_rate": 47.5,
+    "upperclass_pct": 60.4
+  },
+  "conference_record": {
+    "conference_label": "0-0",
+    "conference_wins": 0,
+    "conference_losses": 0,
+    "overall_label": "5-2",
+    "overall_wins": 5,
+    "overall_losses": 2,
+    "overall_ties": 0,
+    "division_rank": "6th - MEAC",
+    "last_5": [
+      {
+        "week": 2,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "VSU",
+        "score_team": 66,
+        "score_opponent": 0,
+        "score": "W 66-0",
+        "game_path_id": null
+      },
+      {
+        "week": 3,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "FUR",
+        "score_team": 20,
+        "score_opponent": 17,
+        "score": "W 20-17",
+        "game_path_id": null
+      },
+      {
+        "week": 4,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacbcu",
+        "opponent_short": "BCU",
+        "score_team": 31,
+        "score_opponent": 21,
+        "score": "W 31-21",
+        "game_path_id": "scsubcu26"
+      },
+      {
+        "week": 5,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": null,
+        "opponent_short": "CIT",
+        "score_team": 31,
+        "score_opponent": 34,
+        "score": "L 31-34",
+        "game_path_id": null
+      },
+      {
+        "week": 6,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": null,
+        "opponent_short": "CHSO",
+        "score_team": 39,
+        "score_opponent": 49,
+        "score": "L 39-49",
+        "game_path_id": null
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "2026-10-10_meacscsu_at_charlestonsouthe",
+    "game_path_id": null,
+    "week": 6,
+    "date": "2026-10-10",
+    "opponent_id": null,
+    "opponent_name": "Charleston Southern",
+    "result": "L",
+    "score_team": 39,
+    "score_opponent": 49,
+    "score": "L 39-49",
+    "venue": {
+      "stadium_name": null,
+      "venue_label": "Charleston, SC",
+      "city": "Charleston, SC",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "L 39-49 vs CHSO",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": null
+  },
+  "next_game": {
+    "game_id": "2026-10-24_meacnsu_at_meacscsu",
+    "preview_path_id": "2026-10-24_meacnsu_at_meacscsu",
+    "date": "2026-10-24",
+    "kickoff": "13:30",
+    "opponent_id": "meacnsu",
+    "opponent_name": "Norfolk",
+    "opponent_short_name": "NSU",
+    "opponent_mascot": "Spartans",
+    "opponent_logo": null,
+    "home_away": "home",
+    "venue": {
+      "stadium_name": "Oliver C. Dawson Stadium",
+      "venue_label": "Oliver C. Dawson Stadium",
+      "city": "Orangeburg",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "",
+    "headline": "Hosts NSU at Oliver C. Dawson Stadium",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": null
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00001813",
+      "name": "Chennis Berry",
+      "role": "Head Coach",
+      "role_title": "Head Football Coach",
+      "role_group": "head_coach",
+      "image_url": "https://www.scsuathletics.com/images/2024/2/14/Chennis_B__1_.jpg",
+      "tenure_year": 3,
+      "metric": null
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 15,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 65.9,
+            "display": "65.9%",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 167.5,
+            "display": "167.5",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 9,
+            "total": 15,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 298.5,
+            "display": "298.5",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 3.0,
+            "display": "3.00",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 14.08,
+            "display": "14.1%",
+            "rank": 3,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 30.0,
+            "display": "30.0%",
+            "rank": 14,
+            "total": 14,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 26.0,
+            "display": "26.0%",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 10.66,
+            "display": "10.7%",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 5.0,
+            "display": "5.00",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 0.5,
+            "display": "0.50",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 50.4,
+            "display": "50.4%",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.0478,
+            "display": "-0.05",
+            "rank": 10,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 23.8,
+            "display": "23.8%",
+            "rank": 15,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 68.6,
+            "display": "68.6%",
+            "rank": 8,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 66.7,
+            "display": "66.7%",
+            "rank": 11,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 43.9,
+            "display": "43.9",
+            "rank": 1,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 41.7,
+            "display": "41.7%",
+            "rank": 2,
+            "total": 15,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 29.2,
+            "display": "29.2",
+            "rank": 3,
+            "total": 15,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "defensive_havoc",
+    "key": "sacks_per_game",
+    "label": "SACKS/GM",
+    "value": 5.0,
+    "display": "5.00",
+    "rank": 1,
+    "total": 15,
+    "sentence": "Sacks per game"
+  },
+  "star_impact": {
+    "person_id": "PERS_00010778",
+    "full_name": "Joshua Barker",
+    "last_name": "Barker",
+    "position": "DL",
+    "class_year": "Sr.",
+    "image_url": "https://www.scsuathletics.com/images/2025/9/1/Barker__Joshua.jpg",
+    "from_game": {
+      "game_id": "SCSUBCU26092026",
+      "game_path_id": "scsubcu26",
+      "week": 4,
+      "opponent_name": "B-CU",
+      "result": "W",
+      "score": "W 31-21"
+    },
+    "game_par": 18.29,
+    "season_par": 28.89,
+    "par_per_game": 14.45,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": "4"
+      },
+      {
+        "label": "TFL",
+        "value": "3.5"
+      },
+      {
+        "label": "SACK",
+        "value": "2.5"
+      }
+    ],
+    "profile_url": "/player/PERS_00010778"
+  }
+}

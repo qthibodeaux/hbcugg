@@ -1,0 +1,2658 @@
+{
+  "season": 2012,
+  "generated_at": "2026-08-13T14:15:31.429449-05:00",
+  "source_files": {
+    "schedule_index": "/hbcugg/data/1-game center/schedules/by_year/2012.json",
+    "game_files_dir": "/hbcugg/data/1-game center/current_exports/games/2012"
+  },
+  "teams": {
+    "meac": [
+      "meacdsu",
+      "meachu",
+      "meacmsu",
+      "meacnccu",
+      "meacnsu",
+      "meacscsu"
+    ],
+    "swac_west": [
+      "swacalc",
+      "swacgsu",
+      "swacpvamu",
+      "swacsu",
+      "swactsu",
+      "swacuapb"
+    ],
+    "swac_east": [
+      "swacaamu",
+      "swacasu",
+      "swacbcu",
+      "swacfamu",
+      "swacjsu",
+      "swacmvsu"
+    ]
+  },
+  "matchups": [
+    {
+      "matchup_id": "swacalc_swacgsu_2012-09-01",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-01",
+      "week": 1,
+      "week_label": "Week 1",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacgsu",
+      "away_score": 22,
+      "home_score": 21,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Shreveport, La.",
+      "venue_city": "Shreveport, La.",
+      "stadium_name": "Shreveport, La.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacgsu",
+            "date": "2012-09-01",
+            "score_team": 22,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacpvamu_swactsu_2012-09-01",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-01",
+      "week": 1,
+      "week_label": "Week 1",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swactsu",
+      "away_score": 41,
+      "home_score": 44,
+      "winner_team_id": "swactsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, Texas - Reliant Stadium",
+      "venue_city": "Houston, Texas - Reliant Stadium",
+      "stadium_name": "Houston, Texas - Reliant Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacpvamu",
+            "opponent_id": "swactsu",
+            "date": "2012-09-01",
+            "score_team": 41,
+            "score_opp": 44,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacscsu_swacbcu_2012-09-08",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-08",
+      "week": 2,
+      "week_label": "Week 2",
+      "away_team_id": "swacbcu",
+      "home_team_id": "meacscsu",
+      "away_score": 27,
+      "home_score": 14,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Orangeburg, SC",
+      "venue_city": "Orangeburg, SC",
+      "stadium_name": "Orangeburg, SC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacscsu",
+            "opponent_id": "swacbcu",
+            "date": "2012-09-08",
+            "score_team": 14,
+            "score_opp": 27,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacuapb_2012-09-08",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-08",
+      "week": 2,
+      "week_label": "Week 2",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacuapb",
+      "away_score": 14,
+      "home_score": 10,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, Ark.Golden Lion StadiumLater Vacated by NCAA Action",
+      "venue_city": "Pine Bluff, Ark.Golden Lion StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Pine Bluff, Ark.Golden Lion StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacuapb",
+            "date": "2012-09-08",
+            "score_team": 14,
+            "score_opp": 10,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swacsu_2012-09-13",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2012-09-13",
+      "week": 2,
+      "week_label": "Week 2",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacsu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LouisianaA.W. Mumford Stadium",
+      "venue_city": "Baton Rouge, LouisianaA.W. Mumford Stadium",
+      "stadium_name": "Baton Rouge, LouisianaA.W. Mumford Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swacsu",
+            "date": "2012-09-13",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacnsu_2012-09-15",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-15",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "meachu",
+      "home_team_id": "meacnsu",
+      "away_score": 37,
+      "home_score": 36,
+      "winner_team_id": "meachu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Norfolk, Va.William \"Dick\" Price Stadium",
+      "venue_city": "Norfolk, Va.William \"Dick\" Price Stadium",
+      "stadium_name": "Norfolk, Va.William \"Dick\" Price Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "meachu",
+            "date": "2012-09-15",
+            "score_team": 36,
+            "score_opp": 37,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacpvamu_2012-09-15",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-15",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacaamu",
+      "away_score": 30,
+      "home_score": 42,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "venue_city": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacpvamu",
+            "date": "2012-09-15",
+            "score_team": 42,
+            "score_opp": 30,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacuapb_2012-09-15",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-15",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacalc",
+      "away_score": 24,
+      "home_score": 6,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.",
+      "venue_city": "Lorman, Miss.",
+      "stadium_name": "Lorman, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacuapb",
+            "date": "2012-09-15",
+            "score_team": 6,
+            "score_opp": 24,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swactsu_2012-09-15",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-15",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swactsu",
+      "away_score": 45,
+      "home_score": 35,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, Texas",
+      "venue_city": "Houston, Texas",
+      "stadium_name": "Houston, Texas",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swactsu",
+            "date": "2012-09-15",
+            "score_team": 45,
+            "score_opp": 35,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacasu_2012-09-20",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-20",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacasu",
+      "away_score": 24,
+      "home_score": 21,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Montgomery, AL",
+      "venue_city": "Montgomery, AL",
+      "stadium_name": "Montgomery, AL",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacasu",
+            "date": "2012-09-20",
+            "score_team": 24,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacuapb_2012-09-20",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-20",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacasu",
+      "away_score": 24,
+      "home_score": 21,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Montgomery, AL",
+      "venue_city": "Montgomery, AL",
+      "stadium_name": "Montgomery, AL",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacuapb",
+            "opponent_id": "swacasu",
+            "date": "2012-09-20",
+            "score_team": 24,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_swacfamu_2012-09-22",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-22",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meacdsu",
+      "away_score": 24,
+      "home_score": 22,
+      "winner_team_id": "swacfamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Dover, DE",
+      "venue_city": "Dover, DE",
+      "stadium_name": "Dover, DE",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meacdsu",
+            "date": "2012-09-22",
+            "score_team": 24,
+            "score_opp": 22,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swactsu_2012-09-22",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-22",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swactsu",
+      "away_score": 42,
+      "home_score": 13,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TXBBVA Compass StadiumLater Vacated by NCAA Action",
+      "venue_city": "Houston, TXBBVA Compass StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Houston, TXBBVA Compass StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swactsu",
+            "date": "2012-09-22",
+            "score_team": 42,
+            "score_opp": 13,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacsu_2012-09-22",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-22",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacjsu",
+      "away_score": 28,
+      "home_score": 21,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, Miss.",
+      "venue_city": "Jackson, Miss.",
+      "stadium_name": "Jackson, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacsu",
+            "date": "2012-09-22",
+            "score_team": 21,
+            "score_opp": 28,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacmsu_meacnccu_2012-09-27",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-27",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "meacmsu",
+      "home_team_id": "meacnccu",
+      "away_score": 21,
+      "home_score": 18,
+      "winner_team_id": "meacmsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Aggie Stadium",
+      "venue_city": "Aggie Stadium",
+      "stadium_name": "Aggie Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "meacmsu",
+            "date": "2012-09-27",
+            "score_team": 18,
+            "score_opp": 21,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnsu_meacscsu_2012-09-29",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-29",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "meacnsu",
+      "home_team_id": "meacscsu",
+      "away_score": 0,
+      "home_score": 14,
+      "winner_team_id": "meacscsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Orangeburg, S.C.",
+      "venue_city": "Orangeburg, S.C.",
+      "stadium_name": "Orangeburg, S.C.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "meacscsu",
+            "date": "2012-09-29",
+            "score_team": 0,
+            "score_opp": 14,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacgsu_2012-09-29",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-29",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacaamu",
+      "away_score": 17,
+      "home_score": 38,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "venue_city": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacgsu",
+            "date": "2012-09-29",
+            "score_team": 38,
+            "score_opp": 17,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacasu_2012-09-29",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-29",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacalc",
+      "away_score": 54,
+      "home_score": 14,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.",
+      "venue_city": "Lorman, Miss.",
+      "stadium_name": "Lorman, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacasu",
+            "date": "2012-09-29",
+            "score_team": 14,
+            "score_opp": 54,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacpvamu_2012-09-29",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-09-29",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacjsu",
+      "away_score": 13,
+      "home_score": 34,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, Miss.",
+      "venue_city": "Jackson, Miss.",
+      "stadium_name": "Jackson, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacpvamu",
+            "date": "2012-09-29",
+            "score_team": 34,
+            "score_opp": 13,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_swacfamu_2012-10-06",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meachu",
+      "away_score": 10,
+      "home_score": 17,
+      "winner_team_id": "meachu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Washington, DC",
+      "venue_city": "Washington, DC",
+      "stadium_name": "Washington, DC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meachu",
+            "date": "2012-10-06",
+            "score_team": 10,
+            "score_opp": 17,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnccu_swacbcu_2012-10-06",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "meacnccu",
+      "home_team_id": "swacbcu",
+      "away_score": 12,
+      "home_score": 28,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Daytona Beach, Fla.",
+      "venue_city": "Daytona Beach, Fla.",
+      "stadium_name": "Daytona Beach, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "swacbcu",
+            "date": "2012-10-06",
+            "score_team": 12,
+            "score_opp": 28,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacmvsu_2012-10-06",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacmvsu",
+      "away_score": 35,
+      "home_score": 0,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, Miss.Rice-Totten StadiumLater Vacated by NCAA Action",
+      "venue_city": "Itta Bena, Miss.Rice-Totten StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Itta Bena, Miss.Rice-Totten StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacmvsu",
+            "date": "2012-10-06",
+            "score_team": 35,
+            "score_opp": 0,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacsu_2012-10-06",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacalc",
+      "away_score": 17,
+      "home_score": 20,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.",
+      "venue_city": "Lorman, Miss.",
+      "stadium_name": "Lorman, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacsu",
+            "date": "2012-10-06",
+            "score_team": 20,
+            "score_opp": 17,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacjsu_2012-10-06",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacasu",
+      "away_score": 24,
+      "home_score": 34,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, AR",
+      "venue_city": "Pine Bluff, AR",
+      "stadium_name": "Pine Bluff, AR",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacjsu",
+            "date": "2012-10-06",
+            "score_team": 34,
+            "score_opp": 24,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacpvamu_2012-10-06",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacpvamu",
+      "away_score": 14,
+      "home_score": 31,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Dallas, TX",
+      "venue_city": "Dallas, TX",
+      "stadium_name": "Dallas, TX",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacpvamu",
+            "date": "2012-10-06",
+            "score_team": 14,
+            "score_opp": 31,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacuapb_2012-10-06",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-06",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacuapb",
+      "away_score": 24,
+      "home_score": 34,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, Ark.",
+      "venue_city": "Pine Bluff, Ark.",
+      "stadium_name": "Pine Bluff, Ark.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacuapb",
+            "date": "2012-10-06",
+            "score_team": 24,
+            "score_opp": 34,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacnccu_2012-10-13",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-13",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "meachu",
+      "home_team_id": "meacnccu",
+      "away_score": 10,
+      "home_score": 38,
+      "winner_team_id": "meacnccu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Aggie Stadium",
+      "venue_city": "Aggie Stadium",
+      "stadium_name": "Aggie Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "meachu",
+            "date": "2012-10-13",
+            "score_team": 38,
+            "score_opp": 10,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacalc_2012-10-13",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-13",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacaamu",
+      "away_score": 20,
+      "home_score": 21,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews Stadium",
+      "venue_city": "Huntsville, Ala.Louis Crews Stadium",
+      "stadium_name": "Huntsville, Ala.Louis Crews Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacalc",
+            "date": "2012-10-13",
+            "score_team": 21,
+            "score_opp": 20,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacmvsu_2012-10-13",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-13",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacmvsu",
+      "away_score": 21,
+      "home_score": 45,
+      "winner_team_id": "swacmvsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, MSRice-Totten Stadium",
+      "venue_city": "Itta Bena, MSRice-Totten Stadium",
+      "stadium_name": "Itta Bena, MSRice-Totten Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacmvsu",
+            "date": "2012-10-13",
+            "score_team": 21,
+            "score_opp": 45,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacsu_swactsu_2012-10-13",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-13",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "swactsu",
+      "home_team_id": "swacsu",
+      "away_score": 7,
+      "home_score": 34,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LAA. W. Mumford StadiumHomecoming",
+      "venue_city": "Baton Rouge, LAA. W. Mumford StadiumHomecoming",
+      "stadium_name": "Baton Rouge, LAA. W. Mumford StadiumHomecoming",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacsu",
+            "opponent_id": "swactsu",
+            "date": "2012-10-13",
+            "score_team": 34,
+            "score_opp": 7,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_meacnccu_2012-10-20",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "meacnccu",
+      "home_team_id": "meacdsu",
+      "away_score": 0,
+      "home_score": 24,
+      "winner_team_id": "meacdsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Dover, Del.",
+      "venue_city": "Dover, Del.",
+      "stadium_name": "Dover, Del.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "meacdsu",
+            "date": "2012-10-20",
+            "score_team": 0,
+            "score_opp": 24,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnsu_swacbcu_2012-10-20",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "meacnsu",
+      "home_team_id": "swacbcu",
+      "away_score": 3,
+      "home_score": 48,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Daytona Beach, Fla.",
+      "venue_city": "Daytona Beach, Fla.",
+      "stadium_name": "Daytona Beach, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "swacbcu",
+            "date": "2012-10-20",
+            "score_team": 3,
+            "score_opp": 48,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacscsu_swacfamu_2012-10-20",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "meacscsu",
+      "home_team_id": "swacfamu",
+      "away_score": 27,
+      "home_score": 20,
+      "winner_team_id": "meacscsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Tallahassee, FL",
+      "venue_city": "Tallahassee, FL",
+      "stadium_name": "Tallahassee, FL",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meacscsu",
+            "date": "2012-10-20",
+            "score_team": 20,
+            "score_opp": 27,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacpvamu_2012-10-20",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacpvamu",
+      "away_score": 37,
+      "home_score": 52,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Prairie View, Texas",
+      "venue_city": "Prairie View, Texas",
+      "stadium_name": "Prairie View, Texas",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacpvamu",
+            "date": "2012-10-20",
+            "score_team": 37,
+            "score_opp": 52,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacsu_2012-10-20",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacsu",
+      "away_score": 50,
+      "home_score": 21,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LAA.W. Mumford Stadium",
+      "venue_city": "Baton Rouge, LAA.W. Mumford Stadium",
+      "stadium_name": "Baton Rouge, LAA.W. Mumford Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacsu",
+            "date": "2012-10-20",
+            "score_team": 50,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacmvsu_2012-10-20",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacjsu",
+      "away_score": 7,
+      "home_score": 14,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, Miss.",
+      "venue_city": "Jackson, Miss.",
+      "stadium_name": "Jackson, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacmvsu",
+            "date": "2012-10-20",
+            "score_team": 14,
+            "score_opp": 7,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacsu_swacuapb_2012-10-20",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-20",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacsu",
+      "away_score": 50,
+      "home_score": 21,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LAA. W. Mumford Stadium\"Healthy Kids\" Day",
+      "venue_city": "Baton Rouge, LAA. W. Mumford Stadium\"Healthy Kids\" Day",
+      "stadium_name": "Baton Rouge, LAA. W. Mumford Stadium\"Healthy Kids\" Day",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacsu",
+            "opponent_id": "swacuapb",
+            "date": "2012-10-20",
+            "score_team": 21,
+            "score_opp": 50,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacscsu_2012-10-27",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "meachu",
+      "home_team_id": "meacscsu",
+      "away_score": 23,
+      "home_score": 41,
+      "winner_team_id": "meacscsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Orangeburg, SC",
+      "venue_city": "Orangeburg, SC",
+      "stadium_name": "Orangeburg, SC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacscsu",
+            "opponent_id": "meachu",
+            "date": "2012-10-27",
+            "score_team": 41,
+            "score_opp": 23,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacncat_meacnsu_2012-10-27",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "meacnsu",
+      "home_team_id": "meacncat",
+      "away_score": 9,
+      "home_score": 30,
+      "winner_team_id": "meacncat",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Greensboro, N.C.",
+      "venue_city": "Greensboro, N.C.",
+      "stadium_name": "Greensboro, N.C.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "meacncat",
+            "date": "2012-10-27",
+            "score_team": 9,
+            "score_opp": 30,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacasu_2012-10-27",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacasu",
+      "away_score": 31,
+      "home_score": 13,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Birmingham, Ala.Legion Field",
+      "venue_city": "Birmingham, Ala.Legion Field",
+      "stadium_name": "Birmingham, Ala.Legion Field",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacasu",
+            "date": "2012-10-27",
+            "score_team": 31,
+            "score_opp": 13,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacmvsu_2012-10-27",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacasu",
+      "away_score": 0,
+      "home_score": 10,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, AR",
+      "venue_city": "Pine Bluff, AR",
+      "stadium_name": "Pine Bluff, AR",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacmvsu",
+            "date": "2012-10-27",
+            "score_team": 10,
+            "score_opp": 0,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swactsu_2012-10-27",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swactsu",
+      "away_score": 20,
+      "home_score": 23,
+      "winner_team_id": "swactsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TX",
+      "venue_city": "Houston, TX",
+      "stadium_name": "Houston, TX",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swactsu",
+            "date": "2012-10-27",
+            "score_team": 20,
+            "score_opp": 23,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swacuapb_2012-10-27",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacuapb",
+      "away_score": 0,
+      "home_score": 10,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, ArkansasGolden Lion Stadium",
+      "venue_city": "Pine Bluff, ArkansasGolden Lion Stadium",
+      "stadium_name": "Pine Bluff, ArkansasGolden Lion Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swacuapb",
+            "date": "2012-10-27",
+            "score_team": 0,
+            "score_opp": 10,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacpvamu_swacsu_2012-10-27",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-10-27",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacsu",
+      "away_score": 49,
+      "home_score": 29,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Shreveport, La. - Independence",
+      "venue_city": "Shreveport, La. - Independence",
+      "stadium_name": "Shreveport, La. - Independence",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacpvamu",
+            "opponent_id": "swacsu",
+            "date": "2012-10-27",
+            "score_team": 49,
+            "score_opp": 29,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacmsu_swacbcu_2012-11-03",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacbcu",
+      "home_team_id": "meacmsu",
+      "away_score": 24,
+      "home_score": 13,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baltimore, Md.",
+      "venue_city": "Baltimore, Md.",
+      "stadium_name": "Baltimore, Md.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacbcu",
+            "opponent_id": "meacmsu",
+            "date": "2012-11-03",
+            "score_team": 24,
+            "score_opp": 13,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacncat_swacfamu_2012-11-03",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meacncat",
+      "away_score": 3,
+      "home_score": 16,
+      "winner_team_id": "meacncat",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Greensboro, NC",
+      "venue_city": "Greensboro, NC",
+      "stadium_name": "Greensboro, NC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meacncat",
+            "date": "2012-11-03",
+            "score_team": 3,
+            "score_opp": 16,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnccu_swacfamu_2012-11-03",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meacnccu",
+      "away_score": 3,
+      "home_score": 16,
+      "winner_team_id": "meacnccu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Aggie Stadium",
+      "venue_city": "Aggie Stadium",
+      "stadium_name": "Aggie Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "swacfamu",
+            "date": "2012-11-03",
+            "score_team": 16,
+            "score_opp": 3,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacsu_2012-11-03",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacaamu",
+      "away_score": 23,
+      "home_score": 24,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "venue_city": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Huntsville, Ala.Louis Crews StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacsu",
+            "date": "2012-11-03",
+            "score_team": 24,
+            "score_opp": 23,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacmvsu_2012-11-03",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacmvsu",
+      "away_score": 9,
+      "home_score": 33,
+      "winner_team_id": "swacmvsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, Miss.",
+      "venue_city": "Itta Bena, Miss.",
+      "stadium_name": "Itta Bena, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacmvsu",
+            "date": "2012-11-03",
+            "score_team": 9,
+            "score_opp": 33,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swactsu_2012-11-03",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacasu",
+      "home_team_id": "swactsu",
+      "away_score": 49,
+      "home_score": 3,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TXBBVA Compass Stadium",
+      "venue_city": "Houston, TXBBVA Compass Stadium",
+      "stadium_name": "Houston, TXBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swactsu",
+            "date": "2012-11-03",
+            "score_team": 49,
+            "score_opp": 3,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacjsu_2012-11-03",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacgsu",
+      "away_score": 53,
+      "home_score": 17,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "venue_city": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "stadium_name": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacjsu",
+            "date": "2012-11-03",
+            "score_team": 17,
+            "score_opp": 53,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swactsu_swacuapb_2012-11-03",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-03",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swactsu",
+      "away_score": 49,
+      "home_score": 3,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TXBBVA Compass Stadium",
+      "venue_city": "Houston, TXBBVA Compass Stadium",
+      "stadium_name": "Houston, TXBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacuapb",
+            "opponent_id": "swactsu",
+            "date": "2012-11-03",
+            "score_team": 49,
+            "score_opp": 3,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnccu_meacscsu_2012-11-10",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-10",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "meacscsu",
+      "home_team_id": "meacnccu",
+      "away_score": 7,
+      "home_score": 17,
+      "winner_team_id": "meacnccu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Aggie Stadium",
+      "venue_city": "Aggie Stadium",
+      "stadium_name": "Aggie Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "meacscsu",
+            "date": "2012-11-10",
+            "score_team": 17,
+            "score_opp": 7,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacjsu_2012-11-10",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-10",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacjsu",
+      "away_score": 35,
+      "home_score": 21,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, Miss.Veterans Memorial Stadium",
+      "venue_city": "Jackson, Miss.Veterans Memorial Stadium",
+      "stadium_name": "Jackson, Miss.Veterans Memorial Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacjsu",
+            "date": "2012-11-10",
+            "score_team": 35,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swactsu_2012-11-10",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-10",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swactsu",
+      "home_team_id": "swacalc",
+      "away_score": 24,
+      "home_score": 34,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.",
+      "venue_city": "Lorman, Miss.",
+      "stadium_name": "Lorman, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swactsu",
+            "date": "2012-11-10",
+            "score_team": 34,
+            "score_opp": 24,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacgsu_2012-11-10",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-10",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacgsu",
+      "away_score": 24,
+      "home_score": 17,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Grambling, LAReed Green Coliseum",
+      "venue_city": "Grambling, LAReed Green Coliseum",
+      "stadium_name": "Grambling, LAReed Green Coliseum",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacgsu",
+            "date": "2012-11-10",
+            "score_team": 24,
+            "score_opp": 17,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacuapb_2012-11-10",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-10",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacgsu",
+      "away_score": 24,
+      "home_score": 17,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "venue_city": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "stadium_name": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacuapb",
+            "date": "2012-11-10",
+            "score_team": 17,
+            "score_opp": 24,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swacpvamu_2012-11-10",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2012-11-10",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacmvsu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, MississippiRice-Totten Stadium at Chuck Prophet Field",
+      "venue_city": "Itta Bena, MississippiRice-Totten Stadium at Chuck Prophet Field",
+      "stadium_name": "Itta Bena, MississippiRice-Totten Stadium at Chuck Prophet Field",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swacpvamu",
+            "date": "2012-11-10",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnccu_meacnccu_2012-11-17",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-17",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "meacnccu",
+      "home_team_id": "meacnccu",
+      "away_score": 22,
+      "home_score": 16,
+      "winner_team_id": "meacnccu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Durham, N.C.",
+      "venue_city": "Durham, N.C.",
+      "stadium_name": "Durham, N.C.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnccu",
+            "opponent_id": "meacnccu",
+            "date": "2012-11-17",
+            "score_team": 22,
+            "score_opp": 16,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacjsu_2012-11-17",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-17",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacalc",
+      "away_score": 37,
+      "home_score": 11,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.",
+      "venue_city": "Lorman, Miss.",
+      "stadium_name": "Lorman, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacjsu",
+            "date": "2012-11-17",
+            "score_team": 11,
+            "score_opp": 37,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacpvamu_2012-11-17",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-17",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacasu",
+      "away_score": 41,
+      "home_score": 42,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, AR",
+      "venue_city": "Pine Bluff, AR",
+      "stadium_name": "Pine Bluff, AR",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacpvamu",
+            "date": "2012-11-17",
+            "score_team": 42,
+            "score_opp": 41,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacbcu_swacfamu_2012-11-17",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-17",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacfamu",
+      "home_team_id": "swacbcu",
+      "away_score": 16,
+      "home_score": 21,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Orlando, FL",
+      "venue_city": "Orlando, FL",
+      "stadium_name": "Orlando, FL",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "swacbcu",
+            "date": "2012-11-17",
+            "score_team": 16,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swactsu_2012-11-17",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2012-11-17",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swactsu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TexasBBVA Compass Stadium",
+      "venue_city": "Houston, TexasBBVA Compass Stadium",
+      "stadium_name": "Houston, TexasBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swactsu",
+            "date": "2012-11-17",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacpvamu_swacuapb_2012-11-17",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-17",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacuapb",
+      "away_score": 41,
+      "home_score": 42,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, Ark.",
+      "venue_city": "Pine Bluff, Ark.",
+      "stadium_name": "Pine Bluff, Ark.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacpvamu",
+            "opponent_id": "swacuapb",
+            "date": "2012-11-17",
+            "score_team": 41,
+            "score_opp": 42,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacsu_2012-11-24",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2012-11-24",
+      "week": 13,
+      "week_label": "Week 13",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacsu",
+      "away_score": 33,
+      "home_score": 38,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "New Orleans, LAMercedes Benz Superdome",
+      "venue_city": "New Orleans, LAMercedes Benz Superdome",
+      "stadium_name": "New Orleans, LAMercedes Benz Superdome",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacsu",
+            "date": "2012-11-24",
+            "score_team": 33,
+            "score_opp": 38,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    }
+  ],
+  "special_games": [
+    {
+      "matchup_id": "swacasu_swacjsu_2012-12-08",
+      "conference": "SWAC",
+      "division_scope": null,
+      "game_type": "swac_championship",
+      "status": "final",
+      "date": "2012-12-08",
+      "week": 15,
+      "week_label": "Week 15",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacjsu",
+      "away_score": 24,
+      "home_score": 21,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Birmingham, ALLegion Field",
+      "venue_city": "Birmingham, ALLegion Field",
+      "stadium_name": "Birmingham, ALLegion Field",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacjsu",
+            "date": "2012-12-08",
+            "score_team": 24,
+            "score_opp": 21,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacuapb_2012-12-08",
+      "conference": "SWAC",
+      "division_scope": null,
+      "game_type": "swac_championship",
+      "status": "final",
+      "date": "2012-12-08",
+      "week": 15,
+      "week_label": "Week 15",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacuapb",
+      "away_score": 21,
+      "home_score": 24,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Birmingham, Ala.",
+      "venue_city": "Birmingham, Ala.",
+      "stadium_name": "Birmingham, Ala.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacuapb",
+            "date": "2012-12-08",
+            "score_team": 21,
+            "score_opp": 24,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    }
+  ],
+  "data_quality": {
+    "errors": [],
+    "warnings": [],
+    "warnings_count": 0,
+    "score_mismatches_count": 0,
+    "missing_game_pages_count": 65
+  }
+}

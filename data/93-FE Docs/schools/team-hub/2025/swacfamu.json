@@ -1,0 +1,444 @@
+{
+  "team_id": "swacfamu",
+  "season": 2025,
+  "season_state": "in_progress",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "East",
+    "division_label": "SWAC EAST",
+    "season": 2025,
+    "team_abbreviation": "FAMU",
+    "school_name": "Florida A&M University",
+    "avg_par": 5.5,
+    "roster_count": 117,
+    "transfer_count": 73,
+    "transfer_rate": 62.4,
+    "upperclass_pct": 54.7
+  },
+  "conference_record": {
+    "conference_label": "4-4",
+    "conference_wins": 4,
+    "conference_losses": 4,
+    "overall_label": "5-7",
+    "overall_wins": 5,
+    "overall_losses": 7,
+    "overall_ties": 0,
+    "division_rank": "4th - SWAC East",
+    "last_5": [
+      {
+        "week": 10,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 16,
+        "score_opponent": 41,
+        "score": "L 16-41",
+        "game_path_id": "jsufamu25"
+      },
+      {
+        "week": 11,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacuapb",
+        "opponent_short": "UAPB",
+        "score_team": 31,
+        "score_opponent": 28,
+        "score": "W 31-28",
+        "game_path_id": "famuuapb25"
+      },
+      {
+        "week": 12,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacaamu",
+        "opponent_short": "AAMU",
+        "score_team": 26,
+        "score_opponent": 23,
+        "score": "W 26-23",
+        "game_path_id": "famuaamu25"
+      },
+      {
+        "week": 13,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacbcu",
+        "opponent_short": "BCU",
+        "score_team": 34,
+        "score_opponent": 38,
+        "score": "L 34-38",
+        "game_path_id": "famubcu25"
+      },
+      {
+        "week": 14,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacmvsu",
+        "opponent_short": "MVSU",
+        "score_team": 31,
+        "score_opponent": 35,
+        "score": "L 31-35",
+        "game_path_id": "famumvsu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "FAMUMVSU29112025",
+    "game_path_id": "famumvsu25",
+    "week": 14,
+    "date": "2025-11-29",
+    "opponent_id": "swacmvsu",
+    "opponent_name": "MVSU",
+    "result": "L",
+    "score_team": 31,
+    "score_opponent": 35,
+    "score": "L 31-35",
+    "venue": {
+      "stadium_name": "Rice-Totten Stadium",
+      "venue_label": "Rice-Totten Stadium",
+      "city": "Itta Bena",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "L 31-35 vs MVSU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.6162
+  },
+  "next_game": null,
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00012468",
+      "name": "Quinn Fordham Gray Sr.",
+      "role": "Head Coach",
+      "role_title": "Head Football Coach",
+      "role_group": "head_coach",
+      "image_url": "https://www.famuathletics.com/images/2026/2/24/Gray.png",
+      "tenure_year": 1,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": -0.06,
+        "display": "-0.06",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00011437",
+      "name": "Henry Burris",
+      "role": "Offensive Coordinator",
+      "role_title": "Co-Offensive Coordinator | Quarterbacks",
+      "role_group": "coordinator",
+      "image_url": "https://www.famuathletics.com/images/2024/4/9/Burris__Henry-2.jpg",
+      "tenure_year": 2,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.002,
+        "display": "-0.00",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00009616",
+      "name": "Andre Pope",
+      "role": "Defensive Coordinator",
+      "role_title": "Defensive Pass Game Coordinator | Defensive Backs",
+      "role_group": "coordinator",
+      "image_url": "https://www.famuathletics.com/images/2024/4/11/_.jpg",
+      "tenure_year": 2,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": -0.058,
+        "display": "-0.06",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 62.4,
+            "display": "62.4%",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 225.7,
+            "display": "225.7",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.4,
+            "display": "1.40",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.7,
+            "display": "0.70",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 167.0,
+            "display": "167.0",
+            "rank": 11,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 1.5,
+            "display": "1.50",
+            "rank": 11,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 20.97,
+            "display": "21.0%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 36.67,
+            "display": "36.7%",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 13.91,
+            "display": "13.9%",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 17.93,
+            "display": "17.9%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 1.3,
+            "display": "1.30",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 0.7,
+            "display": "0.70",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 43.58,
+            "display": "43.6%",
+            "rank": 10,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.0961,
+            "display": "+0.10",
+            "rank": 7,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 35.4,
+            "display": "35.4%",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 70.8,
+            "display": "70.8%",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 78.9,
+            "display": "78.9%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 42.2,
+            "display": "42.2",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 49.1,
+            "display": "49.1%",
+            "rank": 3,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 21.1,
+            "display": "21.1",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "special_teams",
+    "key": "kickoff_touchback_rate",
+    "label": "TOUCHBACK %",
+    "value": 49.1,
+    "display": "49.1%",
+    "rank": 3,
+    "total": 18,
+    "sentence": "Touchback rate"
+  },
+  "star_impact": {
+    "person_id": "PERS_00011036",
+    "full_name": "Thad Franklin, Jr.",
+    "last_name": "Franklin",
+    "position": "RB",
+    "class_year": "Sr.",
+    "image_url": "https://www.famuathletics.com/images/2024/7/30/Franklin_Jr__Thad.jpg",
+    "from_game": {
+      "game_id": "FAMUMVSU29112025",
+      "game_path_id": "famumvsu25",
+      "week": 14,
+      "opponent_name": "MVSU",
+      "result": "L",
+      "score": "L 31-35"
+    },
+    "game_par": 7.7,
+    "season_par": 17.28,
+    "par_per_game": 1.73,
+    "stat_line": [
+      {
+        "label": "CAR",
+        "value": "15"
+      },
+      {
+        "label": "RUSH YDS",
+        "value": "101"
+      },
+      {
+        "label": "RUSH TD",
+        "value": "1"
+      },
+      {
+        "label": "REC",
+        "value": "4-41"
+      }
+    ],
+    "profile_url": "/player/PERS_00011036"
+  }
+}

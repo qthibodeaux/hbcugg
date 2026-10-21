@@ -1,0 +1,1198 @@
+{
+  "season": 2026,
+  "week": 2,
+  "week_label": "Week 2",
+  "label": "Week 2",
+  "compact_label": "Wk 2",
+  "date_range": "Sep 8 - Sep 14",
+  "is_current_week": false,
+  "default_week": 8,
+  "updated_at": "2026-10-20T01:24:00-05:00",
+  "weeks": [
+    {
+      "week": 0,
+      "label": "Week 0",
+      "compact_label": "Wk 0",
+      "game_count": 14
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "compact_label": "Wk 1",
+      "game_count": 16
+    },
+    {
+      "week": 2,
+      "label": "Week 2",
+      "compact_label": "Wk 2",
+      "game_count": 16
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "compact_label": "Wk 3",
+      "game_count": 14
+    },
+    {
+      "week": 4,
+      "label": "Week 4",
+      "compact_label": "Wk 4",
+      "game_count": 10
+    },
+    {
+      "week": 5,
+      "label": "Week 5",
+      "compact_label": "Wk 5",
+      "game_count": 12
+    },
+    {
+      "week": 6,
+      "label": "Week 6",
+      "compact_label": "Wk 6",
+      "game_count": 12
+    },
+    {
+      "week": 7,
+      "label": "Week 7",
+      "compact_label": "Wk 7",
+      "game_count": 7
+    },
+    {
+      "week": 8,
+      "label": "Week 8",
+      "compact_label": "Wk 8",
+      "game_count": 7
+    },
+    {
+      "week": 9,
+      "label": "Week 9",
+      "compact_label": "Wk 9",
+      "game_count": 8
+    },
+    {
+      "week": 10,
+      "label": "Week 10",
+      "compact_label": "Wk 10",
+      "game_count": 9
+    },
+    {
+      "week": 11,
+      "label": "Week 11",
+      "compact_label": "Wk 11",
+      "game_count": 9
+    },
+    {
+      "week": 12,
+      "label": "Week 12",
+      "compact_label": "Wk 12",
+      "game_count": 8
+    },
+    {
+      "week": 13,
+      "label": "Week 13",
+      "compact_label": "Wk 13",
+      "game_count": 2
+    }
+  ],
+  "summary": {
+    "total_games": 16,
+    "hbcu_matchups": 6,
+    "outside_games": 15,
+    "final_games": 16,
+    "preview_games": 0
+  },
+  "games": [
+    {
+      "game_id": "UAPBALC12092026",
+      "game_path_id": "uapbalc26",
+      "route": "/game/uapbalc26",
+      "has_game_page": true,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "06:05 PM",
+      "tv": null,
+      "is_covered_matchup": true,
+      "tag": "Southern Heritage Classic",
+      "events": [
+        {
+          "event_type_id": "southern_heritage_classic",
+          "display_name": "Southern Heritage Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacalc",
+            "swacuapb"
+          ]
+        }
+      ],
+      "conference_game": true,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacuapb",
+        "name": "UAPB",
+        "short_name": "UAPB",
+        "score": 51,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": "swacalc",
+        "name": "Alcorn",
+        "short_name": "ALCN",
+        "score": 53,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "swacalc",
+      "venue": {
+        "stadium": "Simmons Bank Liberty Stadium",
+        "venue_label": "Southern Heritage Classic",
+        "city": "Memphis",
+        "neutral_site_name": "Southern Heritage Classic",
+        "venue_id": "VEN_simmons_bank_liberty_stadium",
+        "name": "Simmons Bank Liberty Stadium"
+      },
+      "story_label": "Southern Heritage Classic",
+      "brief": {
+        "source": "parsed",
+        "line_score": {
+          "labels": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4",
+            "OT1",
+            "OT2"
+          ],
+          "away": [
+            3,
+            14,
+            7,
+            14,
+            7,
+            6
+          ],
+          "home": [
+            12,
+            6,
+            0,
+            20,
+            7,
+            8
+          ]
+        },
+        "mvp": {
+          "name": "Jaylon Tolbert",
+          "player_key": "PERS_00007631",
+          "image_url": "https://alcornsports.com/images/2026/8/25/BUCC9563_6ecSX.JPG",
+          "position": "QB",
+          "team_id": "swacalc",
+          "glory": 31.88,
+          "glory_metric": "production_score"
+        },
+        "metrics": [
+          {
+            "key": "team_box.total_yards",
+            "label": "Total yards",
+            "away_value": 425,
+            "home_value": 699,
+            "format": "int"
+          },
+          {
+            "key": "team_box.yards_per_play",
+            "label": "Yards per play",
+            "away_value": 6.6406,
+            "home_value": 7.7667,
+            "format": "dec1"
+          },
+          {
+            "key": "team_box.pass_yards",
+            "label": "Passing yards",
+            "away_value": 167,
+            "home_value": 485,
+            "format": "int"
+          },
+          {
+            "key": "team_box.rush_yards",
+            "label": "Rushing yards",
+            "away_value": 263,
+            "home_value": 214,
+            "format": "int"
+          },
+          {
+            "key": "advanced_team.epa_per_play",
+            "label": "EPA per play",
+            "away_value": 0.1553,
+            "home_value": 0.2882,
+            "format": "signed2"
+          },
+          {
+            "key": "advanced_team.success_rate",
+            "label": "Success rate",
+            "away_value": 0.4531,
+            "home_value": 0.5444,
+            "format": "pct"
+          },
+          {
+            "key": "advanced_team.explosive_drive_rate",
+            "label": "Explosive drive rate",
+            "away_value": 0.4286,
+            "home_value": 0.4375,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.third_down_conversion_rate",
+            "label": "Third down",
+            "away_value": 0.3333,
+            "home_value": 0.3571,
+            "format": "pct"
+          },
+          {
+            "key": "team_box.points_per_drive",
+            "label": "Points per drive",
+            "away_value": 3.1429,
+            "home_value": 3.3125,
+            "format": "dec2"
+          },
+          {
+            "key": "team_box.turnovers_committed",
+            "label": "Turnovers",
+            "away_value": 2,
+            "home_value": 2,
+            "format": "int"
+          }
+        ],
+        "leaders": [
+          {
+            "key": "passing",
+            "label": "Passing",
+            "away": {
+              "name": "Garrison Davis",
+              "player_key": "PERS_00012387",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_15_Garrison_Davis.jpg",
+              "value": 167,
+              "stat_line": "12/24, 167 yds, 4 TD, 1 INT"
+            },
+            "home": {
+              "name": "Jaylon Tolbert",
+              "player_key": "PERS_00007631",
+              "image_url": "https://alcornsports.com/images/2026/8/25/BUCC9563_6ecSX.JPG",
+              "value": 485,
+              "stat_line": "32/45, 485 yds, 5 TD, 2 INT"
+            }
+          },
+          {
+            "key": "rushing",
+            "label": "Rushing",
+            "away": {
+              "name": "Jaylen Jennings",
+              "player_key": "PERS_00011361",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_1_Jaylen_Jennings.jpg",
+              "value": 98,
+              "stat_line": "16 car, 98 yds, 1 TD"
+            },
+            "home": {
+              "name": "Ernest Temple",
+              "player_key": "PERS_00013396",
+              "image_url": "https://alcornsports.com/images/2026/8/24/BUCC9572_E6mwl.JPG",
+              "value": 144,
+              "stat_line": "28 car, 144 yds, 2 TD"
+            }
+          },
+          {
+            "key": "receiving",
+            "label": "Receiving",
+            "away": {
+              "name": "D’Avery Robinson",
+              "player_key": "PERS_00011355",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_2_D_Avery_Robinson.jpg",
+              "value": 89,
+              "stat_line": "4 rec, 89 yds, 2 TD"
+            },
+            "home": {
+              "name": "Tyree Kelly",
+              "player_key": "PERS_00013382",
+              "image_url": "https://alcornsports.com/images/2026/8/24/BUCC9596_FmWaf.JPG",
+              "value": 151,
+              "stat_line": "6 rec, 151 yds, 2 TD"
+            }
+          },
+          {
+            "key": "defense",
+            "label": "Defense",
+            "away": {
+              "name": "Michael Henderson",
+              "player_key": "PERS_00012395",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_35_Michael_Henderson.jpg",
+              "value": 26.5,
+              "stat_line": "26.5 production (DB)"
+            },
+            "home": {
+              "name": "Mahamadou Diarra",
+              "player_key": "PERS_00009996",
+              "image_url": "https://alcornsports.com/images/2026/8/24/Diarra__Mahamadou.JPG",
+              "value": 14.49,
+              "stat_line": "14.5 production (LB)"
+            }
+          },
+          {
+            "key": "production",
+            "label": "Top producer",
+            "away": {
+              "name": "Michael Henderson",
+              "player_key": "PERS_00012395",
+              "image_url": "https://uapblionsroar.com/images/2026/8/11/FB_Headshots_35_Michael_Henderson.jpg",
+              "value": 26.5,
+              "stat_line": "26.5 production (DB)"
+            },
+            "home": {
+              "name": "Jaylon Tolbert",
+              "player_key": "PERS_00007631",
+              "image_url": "https://alcornsports.com/images/2026/8/25/BUCC9563_6ecSX.JPG",
+              "value": 31.88,
+              "stat_line": "31.9 production (QB)"
+            }
+          }
+        ],
+        "warnings": []
+      },
+      "sort_order": 0
+    },
+    {
+      "game_id": "2026-09-10_swacfamu_at_miami",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-10",
+      "date_label": "Sep 10",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacfamu",
+        "name": "FAMU",
+        "short_name": "FAMU",
+        "score": 7,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Miami",
+        "short_name": "MIA",
+        "score": 77,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "Miami Gardens, Fla.",
+        "venue_label": "Miami Gardens, Fla.",
+        "city": "Miami Gardens, Fla.",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 1
+    },
+    {
+      "game_id": "2026-09-11_meacnsu_at_virginia",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-11",
+      "date_label": "Sep 11",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "meacnsu",
+        "name": "Norfolk",
+        "short_name": "NSU",
+        "score": 3,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Virginia",
+        "short_name": "UVA",
+        "score": 59,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "Scott Stadium",
+        "venue_label": "Scott Stadium",
+        "city": "Charlottesville, VA",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 2
+    },
+    {
+      "game_id": "2026-09-12_meachu_at_indiana",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "12:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "meachu",
+        "name": "Howard",
+        "short_name": "HOW",
+        "score": 0,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Indiana",
+        "short_name": "IND",
+        "score": 55,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "Bloomington, IN",
+        "venue_label": "Bloomington, IN",
+        "city": "Bloomington, IN",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 3
+    },
+    {
+      "game_id": "2026-09-12_meacncat_at_meacnccu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "12:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "Family/Parents Day",
+      "events": [
+        {
+          "event_type_id": "family_day",
+          "display_name": "Family/Parents Day",
+          "category": "theme_day",
+          "teams": [
+            "meacnccu"
+          ]
+        },
+        {
+          "event_type_id": "themed_game",
+          "display_name": "Themed Game",
+          "category": "theme_day",
+          "teams": [
+            "meacnccu"
+          ],
+          "label": "Eagle Aggie Classic"
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "meacncat",
+        "name": "NC A&T",
+        "short_name": "NCAT",
+        "score": 22,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "meacnccu",
+        "name": "NC Central",
+        "short_name": "NCCU",
+        "score": 30,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "meacnccu",
+      "venue": {
+        "stadium": "O'Kelly-Riddick Stadium",
+        "venue_label": "O'Kelly-Riddick Stadium",
+        "city": "Durham",
+        "neutral_site_name": null,
+        "venue_id": "VEN_o_kelly_riddick_stadium",
+        "name": "O'Kelly-Riddick Stadium"
+      },
+      "story_label": "HBCU matchup",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 4
+    },
+    {
+      "game_id": "2026-09-12_bowiestate_at_meacdsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "15:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "Community Day",
+      "events": [
+        {
+          "event_type_id": "community_day",
+          "display_name": "Community Day",
+          "category": "theme_day",
+          "teams": [
+            "meacdsu"
+          ]
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Bowie State",
+        "short_name": "BOWIE",
+        "score": 6,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "meacdsu",
+        "name": "Del State",
+        "short_name": "DSU",
+        "score": 21,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "meacdsu",
+      "venue": {
+        "stadium": "Alumni Stadium",
+        "venue_label": "Alumni Stadium",
+        "city": "Dover",
+        "neutral_site_name": null,
+        "venue_id": "VEN_alumni_stadium",
+        "name": "Alumni Stadium"
+      },
+      "story_label": "HBCU matchup",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 5
+    },
+    {
+      "game_id": "2026-09-12_stetson_at_swacbcu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "16:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Stetson",
+        "short_name": "STET",
+        "score": 18,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "swacbcu",
+        "name": "B-CU",
+        "short_name": "BCU",
+        "score": 43,
+        "record": "0-1",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "swacbcu",
+      "venue": {
+        "stadium": "Daytona Stadium",
+        "venue_label": "Daytona Stadium",
+        "city": "Daytona Beach",
+        "neutral_site_name": null,
+        "venue_id": "VEN_daytona_stadium",
+        "name": "Daytona Stadium"
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 6
+    },
+    {
+      "game_id": "2026-09-12_virginiastate_at_meacscsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "18:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Virginia State",
+        "short_name": "VSU",
+        "score": 0,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "meacscsu",
+        "name": "SC State",
+        "short_name": "SCSU",
+        "score": 66,
+        "record": "2-0",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "meacscsu",
+      "venue": {
+        "stadium": "Oliver C. Dawson Stadium|Willie Jeffries Field",
+        "venue_label": "Oliver C. Dawson Stadium",
+        "city": "Orangeburg",
+        "neutral_site_name": null,
+        "venue_id": "VEN_oliver_c_dawson_stadium",
+        "name": "Oliver C. Dawson Stadium"
+      },
+      "story_label": "HBCU matchup",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 7
+    },
+    {
+      "game_id": "2026-09-12_virginialynchbur_at_meacmsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "18:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Virginia-Lynchburg",
+        "short_name": "VUL",
+        "score": 0,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "meacmsu",
+        "name": "Morgan",
+        "short_name": "MSU",
+        "score": 55,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "meacmsu",
+      "venue": {
+        "stadium": null,
+        "venue_label": "Hughes Stadium",
+        "city": "Baltimore",
+        "neutral_site_name": null,
+        "venue_id": "VEN_hughes_stadium",
+        "name": "Hughes Stadium"
+      },
+      "story_label": "HBCU matchup",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 8
+    },
+    {
+      "game_id": "2026-09-12_swacpvamu_at_baylor",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "19:00",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacpvamu",
+        "name": "PVAMU",
+        "short_name": "PVAMU",
+        "score": 3,
+        "record": "1-1",
+        "conference_record": "1-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Baylor",
+        "short_name": "BAY",
+        "score": 44,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "McLane Stadium",
+        "venue_label": "McLane Stadium",
+        "city": "Waco, Texas",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 9
+    },
+    {
+      "game_id": "2026-09-12_swacasu_at_troy",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "Themed Game",
+      "events": [
+        {
+          "event_type_id": "themed_game",
+          "display_name": "Themed Game",
+          "category": "theme_day",
+          "teams": [
+            "swacasu"
+          ],
+          "label": "Wear Black"
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacasu",
+        "name": "Bama State",
+        "short_name": "ALST",
+        "score": 17,
+        "record": "2-0",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Troy",
+        "short_name": "TROY",
+        "score": 34,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "WEAR BLACK",
+        "venue_label": "WEAR BLACK",
+        "city": "Troy, AL",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 10
+    },
+    {
+      "game_id": "2026-09-12_swacgsu_at_tcu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacgsu",
+        "name": "Grambling",
+        "short_name": "GRAM",
+        "score": 7,
+        "record": "2-0",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "TCU",
+        "short_name": "TCU",
+        "score": 63,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "Fort Worth, TX",
+        "venue_label": "Fort Worth, TX",
+        "city": "Fort Worth, TX",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 11
+    },
+    {
+      "game_id": "2026-09-12_lincolnpa_at_swacmvsu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "Chicago (Football) Classic",
+      "events": [
+        {
+          "event_type_id": "chicago_football_classic",
+          "display_name": "Chicago (Football) Classic",
+          "category": "recurring_series",
+          "teams": [
+            "swacmvsu"
+          ]
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Lincoln (PA)",
+        "short_name": "LINCPA",
+        "score": 20,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "swacmvsu",
+        "name": "MVSU",
+        "short_name": "MVSU",
+        "score": 31,
+        "record": "0-2",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "swacmvsu",
+      "venue": {
+        "stadium": "Chicago, Illinois Soldier Field",
+        "venue_label": "Chicago (Football) Classic",
+        "city": "Chicago, Illinois Soldier Field",
+        "neutral_site_name": "Chicago (Football) Classic",
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Chicago (Football) Classic",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 12
+    },
+    {
+      "game_id": "2026-09-12_swacsu_at_houston",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swacsu",
+        "name": "Southern",
+        "short_name": "SOU",
+        "score": 6,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "Houston",
+        "short_name": "HOU",
+        "score": 77,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "TDECU Stadium",
+        "venue_label": "TDECU Stadium",
+        "city": "Houston, TX",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 13
+    },
+    {
+      "game_id": "2026-09-12_swactsu_at_utep",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": null,
+      "events": [],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": "swactsu",
+        "name": "TSU",
+        "short_name": "TXSO",
+        "score": 10,
+        "record": "1-1",
+        "conference_record": "0-1"
+      },
+      "home_team": {
+        "team_id": null,
+        "name": "UTEP",
+        "short_name": "UTEP",
+        "score": 51,
+        "record": null,
+        "conference_record": null
+      },
+      "winner_team_id": null,
+      "venue": {
+        "stadium": "El Paso, Texas",
+        "venue_label": "El Paso, Texas",
+        "city": "El Paso, Texas",
+        "neutral_site_name": null,
+        "venue_id": null,
+        "name": null
+      },
+      "story_label": "Non-conference",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 14
+    },
+    {
+      "game_id": "2026-09-12_tennesseestate_at_swacaamu",
+      "game_path_id": null,
+      "route": null,
+      "has_game_page": false,
+      "status": "final",
+      "status_label": "Final",
+      "date": "2026-09-12",
+      "date_label": "Sep 12",
+      "kickoff_label": "TBA",
+      "tv": null,
+      "is_covered_matchup": false,
+      "tag": "The Legacy Series",
+      "events": [
+        {
+          "event_type_id": "legacy_series",
+          "display_name": "The Legacy Series",
+          "category": "recurring_series",
+          "teams": [
+            "swacaamu"
+          ]
+        }
+      ],
+      "conference_game": false,
+      "bowl_game": false,
+      "away_team": {
+        "team_id": null,
+        "name": "Tennessee State",
+        "short_name": "TNST",
+        "score": 3,
+        "record": null,
+        "conference_record": null
+      },
+      "home_team": {
+        "team_id": "swacaamu",
+        "name": "AAMU",
+        "short_name": "AAMU",
+        "score": 30,
+        "record": "1-1",
+        "conference_record": "0-0"
+      },
+      "winner_team_id": "swacaamu",
+      "venue": {
+        "stadium": "Louis Crews Stadium Organization Night",
+        "venue_label": "Louis Crews Stadium",
+        "city": "Normal",
+        "neutral_site_name": null,
+        "venue_id": "VEN_louis_crews_stadium",
+        "name": "Louis Crews Stadium"
+      },
+      "story_label": "The Legacy Series",
+      "brief": {
+        "source": "schedule_fallback",
+        "line_score": null,
+        "mvp": null,
+        "metrics": null,
+        "leaders": null,
+        "warnings": []
+      },
+      "sort_order": 15
+    }
+  ]
+}

@@ -1,0 +1,2268 @@
+{
+  "season": 2026,
+  "generated_at": "2026-05-15T10:16:33.090Z",
+  "context": {
+    "phase": "offseason",
+    "week": 0,
+    "display_record_season": 2025,
+    "next_game_season": 2026
+  },
+  "teams": {
+    "meacdsu": {
+      "team_id": "meacdsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "8-4",
+        "wins": 8,
+        "losses": 4,
+        "ties": 0,
+        "conference": "4-1 conference",
+        "conference_wins": 4,
+        "conference_losses": 1,
+        "division_rank": "2nd - MEAC",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-27-meacdsu-stony-brook",
+        "date": "2026-08-27",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Stony Brook",
+        "opponent_short_name": "Stony Brook",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "Alumni Stadium",
+        "city_state": "Dover, DE",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W12bcujsu",
+        "date": "2025-11-15",
+        "opponent_id": "meachu",
+        "opponent_name": "Howard",
+        "opponent_logo": "/hbcugg/assets/meachu.svg",
+        "result": "W",
+        "score_team": 26,
+        "score_opponent": 13,
+        "score": "26-13",
+        "home_away": "home",
+        "venue": "Alumni Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W12bcujsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00007639",
+        "player_key": "meacdsu25100012",
+        "full_name": "Marquis Gillis",
+        "first_name": "Marquis",
+        "last_name": "Gillis",
+        "position": "RB",
+        "position_group": "Ball Carrier",
+        "class_year": "Gr.",
+        "jersey_number": "6",
+        "image_url": "https://dsuhornets.com/images/2025/7/29/Marquis_Gillis_DgCOa.jpg",
+        "profile_url": "/player/PERS_00007639",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 16.955
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 16.955
+          },
+          {
+            "label": "Games",
+            "value": 2
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00012609",
+        "name": "DeSean Jackson",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0.182,
+        "coach_profile_url": "/coaches/PERS_00012609"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DL",
+              "value": 1
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "262.5",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "meachu": {
+      "team_id": "meachu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "3-3",
+        "wins": 3,
+        "losses": 3,
+        "ties": 0,
+        "conference": "2-3 conference",
+        "conference_wins": 2,
+        "conference_losses": 3,
+        "division_rank": "4th - MEAC",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-04-18-meachu-spring-game",
+        "date": "2026-04-18",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Spring Game",
+        "opponent_short_name": "Spring Game",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "away",
+        "venue": "Greene Stadium",
+        "city_state": "Washington, DC",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W12hudsu",
+        "date": "2025-11-22",
+        "opponent_id": "meacnsu",
+        "opponent_name": "Norfolk State",
+        "opponent_logo": "/hbcugg/assets/meacnsu.svg",
+        "result": "W",
+        "score_team": 50,
+        "score_opponent": 13,
+        "score": "50-13",
+        "home_away": "home",
+        "venue": "Audi Field",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W12hudsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00008878",
+        "player_key": "meachu25100036",
+        "full_name": "CJ Wesley",
+        "first_name": "CJ",
+        "last_name": "Wesley",
+        "position": "DL",
+        "position_group": "DL",
+        "class_year": "Jr.",
+        "jersey_number": "18",
+        "image_url": "https://hubison.com/images/2025/8/11/WESLEY_CHARLES_NpZZ1.jpg",
+        "profile_url": "/player/PERS_00008878",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 15.355
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 15.355
+          },
+          {
+            "label": "Games",
+            "value": 3
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00007555",
+        "name": "Larry Scott",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 7,
+        "start_year": 2019,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.704,
+        "coach_profile_url": "/coaches/PERS_00007555"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 19
+            },
+            {
+              "label": "DL",
+              "value": 19
+            },
+            {
+              "label": "OL",
+              "value": 18
+            },
+            {
+              "label": "WR",
+              "value": 15
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "202.2",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "meacmsu": {
+      "team_id": "meacmsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "4-8",
+        "wins": 4,
+        "losses": 8,
+        "ties": 0,
+        "conference": "1-4 conference",
+        "conference_wins": 1,
+        "conference_losses": 4,
+        "division_rank": "5th - MEAC",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-meacmsu-north-carolina-a-t-state-university",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "North Carolina A&T State University",
+        "opponent_short_name": "North Carolina A&T State University",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "away",
+        "venue": "Greensboro, NC",
+        "city_state": "Greensboro, NC",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13nccumsu",
+        "date": "2025-11-22",
+        "opponent_id": "meacnccu",
+        "opponent_name": "North Carolina Central",
+        "opponent_logo": "/hbcugg/assets/meacnccu.svg",
+        "result": "L",
+        "score_team": 14,
+        "score_opponent": 27,
+        "score": "14-27",
+        "home_away": "home",
+        "venue": "Hughes Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13nccumsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00007766",
+        "player_key": "meacmsu25100060",
+        "full_name": "Erick Hunter",
+        "first_name": "Erick",
+        "last_name": "Hunter",
+        "position": "DEF",
+        "position_group": "Unknown",
+        "class_year": "Sr.",
+        "jersey_number": "40",
+        "image_url": "https://morganstatebears.com/images/2025/8/13/HUNTER_Erick-1.jpg",
+        "profile_url": "/player/PERS_00007766",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 19.72
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 19.72
+          },
+          {
+            "label": "Games",
+            "value": 2
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00003780",
+        "name": "Damon Wilson",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 4,
+        "start_year": 2022,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.81,
+        "coach_profile_url": "/coaches/PERS_00003780"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "Unknown",
+              "value": 110
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "186.8",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "meacnccu": {
+      "team_id": "meacnccu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "8-4",
+        "wins": 8,
+        "losses": 4,
+        "ties": 0,
+        "conference": "3-2 conference",
+        "conference_wins": 3,
+        "conference_losses": 2,
+        "division_rank": "3rd - MEAC",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-04-11-meacnccu-maroon-gray-game",
+        "date": "2026-04-11",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Maroon & Gray Game",
+        "opponent_short_name": "Maroon & Gray Game",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "O'Kelly-Riddick Stadium",
+        "city_state": "Durham, N.C.",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13nccumsu",
+        "date": "2025-11-22",
+        "opponent_id": "meacmsu",
+        "opponent_name": "Morgan State",
+        "opponent_logo": "/hbcugg/assets/meacmsu.svg",
+        "result": "W",
+        "score_team": 27,
+        "score_opponent": 14,
+        "score": "27-14",
+        "home_away": "away",
+        "venue": "Hughes Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13nccumsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00007804",
+        "player_key": "meacnccu25100005",
+        "full_name": "Walker Harris",
+        "first_name": "Walker",
+        "last_name": "Harris",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "Sr.",
+        "jersey_number": "3",
+        "image_url": "https://ncataggies.com/images/2025/4/3/Harris_Walker.jpg",
+        "profile_url": "/player/PERS_00007804",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 109.73
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 109.73
+          },
+          {
+            "label": "Games",
+            "value": 7
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00007579",
+        "name": "Trei Oliver",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 7,
+        "start_year": 2019,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.55,
+        "coach_profile_url": "/coaches/PERS_00007579"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 25
+            },
+            {
+              "label": "OL",
+              "value": 16
+            },
+            {
+              "label": "WR",
+              "value": 15
+            },
+            {
+              "label": "DL",
+              "value": 11
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "276.6",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "meacnsu": {
+      "team_id": "meacnsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "1-11",
+        "wins": 1,
+        "losses": 11,
+        "ties": 0,
+        "conference": "0-5 conference",
+        "conference_wins": 0,
+        "conference_losses": 5,
+        "division_rank": "6th - MEAC",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-04-11-meacnsu-spring-game",
+        "date": "2026-04-11",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Spring Game",
+        "opponent_short_name": "Spring Game",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "William \"Dick\" Price Stadium",
+        "city_state": "Norfolk, Va.",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W12hudsu",
+        "date": "2025-11-22",
+        "opponent_id": "meachu",
+        "opponent_name": "Howard",
+        "opponent_logo": "/hbcugg/assets/meachu.svg",
+        "result": "L",
+        "score_team": 13,
+        "score_opponent": 50,
+        "score": "13-50",
+        "home_away": "away",
+        "venue": "Audi Field",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W12hudsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00009033",
+        "player_key": "meacnsu25100036",
+        "full_name": "Jaylen Williams",
+        "first_name": "Jaylen",
+        "last_name": "Williams",
+        "position": "DL",
+        "position_group": "DL",
+        "class_year": "Jr.",
+        "jersey_number": "24",
+        "image_url": null,
+        "profile_url": "/player/PERS_00009033",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 11.855
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 11.855
+          },
+          {
+            "label": "Games",
+            "value": 2
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00012634",
+        "name": "Michael Vick",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0.182,
+        "coach_profile_url": "/coaches/PERS_00012634"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 21
+            },
+            {
+              "label": "WR",
+              "value": 18
+            },
+            {
+              "label": "OL",
+              "value": 18
+            },
+            {
+              "label": "DL",
+              "value": 17
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "183.4",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "meacscsu": {
+      "team_id": "meacscsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "9-3",
+        "wins": 9,
+        "losses": 3,
+        "ties": 0,
+        "conference": "5-0 conference",
+        "conference_wins": 5,
+        "conference_losses": 0,
+        "division_rank": "1st - MEAC",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-meacscsu-savannah-state",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Savannah State",
+        "opponent_short_name": "Savannah State",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "Oliver C. Dawson Stadium|Willie Jeffries Field",
+        "city_state": "Orangeburg, SC",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13scsudsu",
+        "date": "2025-11-22",
+        "opponent_id": "meacdsu",
+        "opponent_name": "Delaware State",
+        "opponent_logo": "/hbcugg/assets/meacdsu.svg",
+        "result": "L",
+        "score_team": 28,
+        "score_opponent": 17,
+        "score": "28-17",
+        "home_away": "away",
+        "venue": "Alumni Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13scsudsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00007927",
+        "player_key": "meacscsu25100011",
+        "full_name": "Jordan Smith",
+        "first_name": "Jordan",
+        "last_name": "Smith",
+        "position": "WR",
+        "position_group": "Pass Catcher",
+        "class_year": "Gr.",
+        "jersey_number": "5",
+        "image_url": "https://www.scsuathletics.com/images/2025/9/1/Smith__Jordan.jpg",
+        "profile_url": "/player/PERS_00007927",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 97.565
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 97.565
+          },
+          {
+            "label": "Games",
+            "value": 7
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00001831",
+        "name": "Chennis Berry",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 2,
+        "start_year": 2024,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.667,
+        "coach_profile_url": "/coaches/PERS_00001831"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "Unknown",
+              "value": 100
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "325.3",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacaamu": {
+      "team_id": "swacaamu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "4-9",
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "conference": "2-7 conference",
+        "conference_wins": 2,
+        "conference_losses": 7,
+        "division_rank": "6th - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacaamu-meachu",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": "meachu",
+        "opponent_name": "Howard",
+        "opponent_short_name": "Howard",
+        "opponent_mascot": "Bison",
+        "opponent_logo": "/hbcugg/assets/meachu.svg",
+        "home_away": "away",
+        "venue": "Center Parc Stadium",
+        "city_state": "Atlanta, GA",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13aamutsu",
+        "date": "2025-11-22",
+        "opponent_id": "swactsu",
+        "opponent_name": "Texas Southern",
+        "opponent_logo": "/hbcugg/assets/swactsu.svg",
+        "result": "L",
+        "score_team": 7,
+        "score_opponent": 24,
+        "score": "7-24",
+        "home_away": "away",
+        "venue": "Shell Energy Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13aamutsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00011981",
+        "player_key": "swacaamu25100004",
+        "full_name": "Jorhdan Brown",
+        "first_name": "Jorhdan",
+        "last_name": "Brown",
+        "position": "DL",
+        "position_group": "DL",
+        "class_year": "Jr.",
+        "jersey_number": "96",
+        "image_url": "https://aamusports.com/images/2025/8/6/96_Jorhdan-Brown.jpg",
+        "profile_url": "/player/PERS_00011981",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 71.265
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 71.265
+          },
+          {
+            "label": "Games",
+            "value": 7
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00001070",
+        "name": "Sam Shade",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0.278,
+        "coach_profile_url": "/coaches/PERS_00001070"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 22
+            },
+            {
+              "label": "DL",
+              "value": 20
+            },
+            {
+              "label": "WR",
+              "value": 19
+            },
+            {
+              "label": "OL",
+              "value": 18
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "214.7",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacalc": {
+      "team_id": "swacalc",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "5-8",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "conference": "4-5 conference",
+        "conference_wins": 4,
+        "conference_losses": 5,
+        "division_rank": "5th - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacalc-miles",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Miles",
+        "opponent_short_name": "Miles",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "Wear Gold",
+        "city_state": "Lorman, Miss.",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "alcjsu25",
+        "date": "2025-11-22",
+        "opponent_id": "swacjsu",
+        "opponent_name": "Jackson State",
+        "opponent_logo": "/hbcugg/assets/swacjsu.svg",
+        "result": "L",
+        "score_team": 21,
+        "score_opponent": 27,
+        "score": "21-27",
+        "home_away": "away",
+        "venue": "Veterans Memorial",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/alcjsu25"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00010115",
+        "player_key": "swacalc25100008",
+        "full_name": "Stemarion Edwards",
+        "first_name": "Stemarion",
+        "last_name": "Edwards",
+        "position": "DEF",
+        "position_group": "DEF",
+        "class_year": "Gr.",
+        "jersey_number": "3",
+        "image_url": "https://alcornsports.com/images/2025/8/17/EDWARDS_STEMARION.JPG",
+        "profile_url": "/player/PERS_00010115",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 16.555
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 16.555
+          },
+          {
+            "label": "Games",
+            "value": 3
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00005961",
+        "name": "Cedric Thomas",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 2,
+        "start_year": 2024,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Under Pressure",
+        "staff_return_rate": 0.7,
+        "coach_profile_url": "/coaches/PERS_00005961"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 1
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "219.8",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacasu": {
+      "team_id": "swacasu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "10-3",
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "conference": "9-1 conference",
+        "conference_wins": 9,
+        "conference_losses": 1,
+        "division_rank": "1st - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacasu-swacsu",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": "swacsu",
+        "opponent_name": "Southern",
+        "opponent_short_name": "Southern",
+        "opponent_mascot": "Jaguars",
+        "opponent_logo": "/hbcugg/assets/swacsu.svg",
+        "home_away": "away",
+        "venue": "Birmingham, AL",
+        "city_state": "Birmingham, AL",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13uapbasu",
+        "date": "2025-11-22",
+        "opponent_id": "swacuapb",
+        "opponent_name": "Arkansas-Pine Bluff",
+        "opponent_logo": "/hbcugg/assets/swacuapb.svg",
+        "result": "W",
+        "score_team": 44,
+        "score_opponent": 13,
+        "score": "44-13",
+        "home_away": "home",
+        "venue": "ASU Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13uapbasu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00008616",
+        "player_key": "swacasu25100003",
+        "full_name": "Andrew Body",
+        "first_name": "Andrew",
+        "last_name": "Body",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "Jr.",
+        "jersey_number": "1",
+        "image_url": "https://gobamastatesports.com/images/2025/8/7/body_andrew_080425.JPG",
+        "profile_url": "/player/PERS_00008616",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 85.17
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 85.17
+          },
+          {
+            "label": "Games",
+            "value": 6
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00001908",
+        "name": "Eddie Robinson, Jr.",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 4,
+        "start_year": 2022,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Rising",
+        "staff_return_rate": 0.679,
+        "coach_profile_url": "/coaches/PERS_00001908"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 18
+            },
+            {
+              "label": "WR",
+              "value": 14
+            },
+            {
+              "label": "OL",
+              "value": 14
+            },
+            {
+              "label": "DL",
+              "value": 11
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "232.9",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacbcu": {
+      "team_id": "swacbcu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "6-7",
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "conference": "5-3 conference",
+        "conference_wins": 5,
+        "conference_losses": 3,
+        "division_rank": "3rd - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-04-17-swacbcu-spring-game",
+        "date": "2026-04-17",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Spring Game",
+        "opponent_short_name": "Spring Game",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "Daytona Stadium",
+        "city_state": "Daytona Beach, FL",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "bcujsu25",
+        "date": "2025-11-15",
+        "opponent_id": "swacjsu",
+        "opponent_name": "Jackson State",
+        "opponent_logo": "/hbcugg/assets/swacjsu.svg",
+        "result": "L",
+        "score_team": 13,
+        "score_opponent": 28,
+        "score": "13-28",
+        "home_away": "away",
+        "venue": "Mississippi Memorial",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/bcujsu25"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00010186",
+        "player_key": "swacbcu25100003",
+        "full_name": "Cam'Ron Ransom",
+        "first_name": "Cam'Ron",
+        "last_name": "Ransom",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "Sr.",
+        "jersey_number": "1",
+        "image_url": "https://bcuathletics.com/images/2025/8/8/1_RANSOM_CAM.png",
+        "profile_url": "/player/PERS_00010186",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 43.22
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 43.22
+          },
+          {
+            "label": "Games",
+            "value": 4
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00010658",
+        "name": "Raymond Woodie Jr.",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 3,
+        "start_year": 2023,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.684,
+        "coach_profile_url": "/coaches/PERS_00010658"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 18
+            },
+            {
+              "label": "OL",
+              "value": 17
+            },
+            {
+              "label": "WR",
+              "value": 14
+            },
+            {
+              "label": "DL",
+              "value": 14
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "270.2",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacfamu": {
+      "team_id": "swacfamu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "5-8",
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "conference": "4-4 conference",
+        "conference_wins": 4,
+        "conference_losses": 4,
+        "division_rank": "4th - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacfamu-albany-state",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Albany State",
+        "opponent_short_name": "Albany State",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "Ken Riley Field at Bragg Memorial Stadium",
+        "city_state": "Tallahassee, Fla.",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W14famumvsu",
+        "date": "2025-11-29",
+        "opponent_id": "swacmvsu",
+        "opponent_name": "Mississippi Valley State",
+        "opponent_logo": "/hbcugg/assets/swacmvsu.svg",
+        "result": "L",
+        "score_team": 31,
+        "score_opponent": 35,
+        "score": "31-35",
+        "home_away": "neutral",
+        "venue": "Rice-Totten Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W14famumvsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00012178",
+        "player_key": "swacfamu25ESPN00001",
+        "full_name": "RJ Johnson III",
+        "first_name": "RJ",
+        "last_name": "Johnson",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "So.",
+        "jersey_number": "12",
+        "image_url": "https://www.famuathletics.com/images/2025/8/11/Johnson_RJ.png",
+        "profile_url": "/player/PERS_00012178",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 35.66
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 35.66
+          },
+          {
+            "label": "Games",
+            "value": 4
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00012648",
+        "name": "Quinn Fordham Gray Sr.",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0.333,
+        "coach_profile_url": "/coaches/PERS_00012648"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 21
+            },
+            {
+              "label": "DL",
+              "value": 20
+            },
+            {
+              "label": "WR",
+              "value": 17
+            },
+            {
+              "label": "OL",
+              "value": 16
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "226.3",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacgsu": {
+      "team_id": "swacgsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "8-5",
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "conference": "4-4 conference",
+        "conference_wins": 4,
+        "conference_losses": 4,
+        "division_rank": "3rd - SWAC West",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-04-18-swacgsu-swacgsu",
+        "date": "2026-04-18",
+        "kickoff": "TBD",
+        "opponent_id": "swacgsu",
+        "opponent_name": "Grambling State",
+        "opponent_short_name": "Grambling",
+        "opponent_mascot": "Tigers",
+        "opponent_logo": "/hbcugg/assets/swacgsu.svg",
+        "home_away": "home",
+        "venue": "Eddie G. Robinson Memorial Stadium",
+        "city_state": "Eddie G. Robinson Memorial Stadium",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W14sugsu",
+        "date": "2025-11-29",
+        "opponent_id": "swacsu",
+        "opponent_name": "Southern",
+        "opponent_logo": "/hbcugg/assets/swacsu.svg",
+        "result": "L",
+        "score_team": 27,
+        "score_opponent": 28,
+        "score": "27-28",
+        "home_away": "home",
+        "venue": "Caesars Superdome",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W14sugsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00012233",
+        "player_key": "swacgsu25100021",
+        "full_name": "Warren Robinson",
+        "first_name": "Warren",
+        "last_name": "Robinson",
+        "position": "DE",
+        "position_group": "DL",
+        "class_year": "Sr.",
+        "jersey_number": "10",
+        "image_url": "https://gsutigers.com/images/2025/9/4/WarrenRobinson.jpg",
+        "profile_url": "/player/PERS_00012233",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 22.595
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 22.595
+          },
+          {
+            "label": "Games",
+            "value": 2
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00004606",
+        "name": "Mickey Joseph",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 2,
+        "start_year": 2024,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.5,
+        "coach_profile_url": "/coaches/PERS_00004606"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 24
+            },
+            {
+              "label": "DL",
+              "value": 17
+            },
+            {
+              "label": "WR",
+              "value": 15
+            },
+            {
+              "label": "OL",
+              "value": 14
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "172",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacjsu": {
+      "team_id": "swacjsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "7-2",
+        "wins": 7,
+        "losses": 2,
+        "ties": 0,
+        "conference": "7-1 conference",
+        "conference_wins": 7,
+        "conference_losses": 1,
+        "division_rank": "2nd - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacjsu-tennessee-state",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Tennessee State",
+        "opponent_short_name": "Tennessee State",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "away",
+        "venue": "Nashville, Tenn.",
+        "city_state": "Nashville, Tenn.",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "alcjsu25",
+        "date": "2025-11-22",
+        "opponent_id": "swacalc",
+        "opponent_name": "Alcorn State",
+        "opponent_logo": "/hbcugg/assets/swacalc.svg",
+        "result": "W",
+        "score_team": 27,
+        "score_opponent": 21,
+        "score": "27-21",
+        "home_away": "home",
+        "venue": "Veterans Memorial",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/alcjsu25"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00010372",
+        "player_key": "swacjsu25100029",
+        "full_name": "JaCobian Morgan",
+        "first_name": "JaCobian",
+        "last_name": "Morgan",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "Gr.",
+        "jersey_number": "15",
+        "image_url": "https://gojsutigers.com/images/2025/7/10/15_MORGAN_JACOBIAN.png",
+        "profile_url": "/player/PERS_00010372",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 34.11
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 34.11
+          },
+          {
+            "label": "Games",
+            "value": 3
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00003238",
+        "name": "T.C. Taylor",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 3,
+        "start_year": 2023,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Under Pressure",
+        "staff_return_rate": 0.778,
+        "coach_profile_url": "/coaches/PERS_00003238"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "OL",
+              "value": 18
+            },
+            {
+              "label": "DL",
+              "value": 16
+            },
+            {
+              "label": "DB",
+              "value": 16
+            },
+            {
+              "label": "WR",
+              "value": 11
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "251.8",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacmvsu": {
+      "team_id": "swacmvsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "2-12",
+        "wins": 2,
+        "losses": 12,
+        "ties": 0,
+        "conference": "1-9 conference",
+        "conference_wins": 1,
+        "conference_losses": 9,
+        "division_rank": "7th - SWAC East",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-27-swacmvsu-nicholls",
+        "date": "2026-08-27",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Nicholls",
+        "opponent_short_name": "Nicholls",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "away",
+        "venue": "Thibodaux, Louisiana John L. Guidry Stadium",
+        "city_state": "Thibodaux, Louisiana John L. Guidry Stadium",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13mvsupvamu",
+        "date": "2025-11-22",
+        "opponent_id": "swacpvamu",
+        "opponent_name": "Prairie View A&M",
+        "opponent_logo": "/hbcugg/assets/swacpvamu.svg",
+        "result": "L",
+        "score_team": 6,
+        "score_opponent": 59,
+        "score": "6-59",
+        "home_away": "away",
+        "venue": "Panther Stadium at Blackshear Field",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13mvsupvamu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00012321",
+        "player_key": "swacmvsu25100012",
+        "full_name": "Josh Brown",
+        "first_name": "Josh",
+        "last_name": "Brown",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "Jr.",
+        "jersey_number": "12",
+        "image_url": "https://mvsusports.com/images/2025/8/23/Josh_Brown.jpg",
+        "profile_url": "/player/PERS_00012321",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 77.66
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 77.66
+          },
+          {
+            "label": "Games",
+            "value": 8
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00001098",
+        "name": "Terrell Buckley",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0.048,
+        "coach_profile_url": "/coaches/PERS_00001098"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 20
+            },
+            {
+              "label": "WR",
+              "value": 13
+            },
+            {
+              "label": "DL",
+              "value": 12
+            },
+            {
+              "label": "LB",
+              "value": 12
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "205.1",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacpvamu": {
+      "team_id": "swacpvamu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "10-3",
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "conference": "7-1 conference",
+        "conference_wins": 7,
+        "conference_losses": 1,
+        "division_rank": "1st - SWAC West",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-04-17-swacpvamu-purple-gold-spring-game",
+        "date": "2026-04-17",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Purple & Gold Spring Game",
+        "opponent_short_name": "Purple & Gold Spring Game",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "Panther Stadium",
+        "city_state": "Prairie View, Texas",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W15pvamujsu",
+        "date": "2025-12-06",
+        "opponent_id": "swacjsu",
+        "opponent_name": "Jackson State",
+        "opponent_logo": "/hbcugg/assets/swacjsu.svg",
+        "result": "L",
+        "score_team": 23,
+        "score_opponent": 21,
+        "score": "23-21",
+        "home_away": "away",
+        "venue": "Veterans Memorial Stadium",
+        "game_label": "Final",
+        "review_headline": "Postseason finale",
+        "recap_url": "/game/W15pvamujsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00011369",
+        "player_key": "swacpvamu25100004",
+        "full_name": "Cameron Peters",
+        "first_name": "Cameron",
+        "last_name": "Peters",
+        "position": "QB",
+        "position_group": "QB",
+        "class_year": "Sr.",
+        "jersey_number": "4",
+        "image_url": "https://pvpanthers.com/images/2025/7/23/11_Cameron_Petis.jpg",
+        "profile_url": "/player/PERS_00011369",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 163.86
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 163.86
+          },
+          {
+            "label": "Games",
+            "value": 10
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00012662",
+        "name": "Tremaine Jackson",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0,
+        "coach_profile_url": "/coaches/PERS_00012662"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 15
+            },
+            {
+              "label": "OL",
+              "value": 15
+            },
+            {
+              "label": "LB",
+              "value": 11
+            },
+            {
+              "label": "WR",
+              "value": 10
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "274.8",
+          "sub": "Passing yards/game",
+          "stat_type": "passing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacsu": {
+      "team_id": "swacsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "2-11",
+        "wins": 2,
+        "losses": 11,
+        "ties": 0,
+        "conference": "2-8 conference",
+        "conference_wins": 2,
+        "conference_losses": 8,
+        "division_rank": "5th - SWAC West",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacsu-swacasu",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": "swacasu",
+        "opponent_name": "Alabama State",
+        "opponent_short_name": "Bama State",
+        "opponent_mascot": "Hornets",
+        "opponent_logo": "/hbcugg/assets/swacasu.svg",
+        "home_away": "home",
+        "venue": "Legion Field",
+        "city_state": "Birmingham, AL",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W14sugsu",
+        "date": "2025-11-29",
+        "opponent_id": "swacgsu",
+        "opponent_name": "Grambling State",
+        "opponent_logo": "/hbcugg/assets/swacgsu.svg",
+        "result": "W",
+        "score_team": 28,
+        "score_opponent": 27,
+        "score": "28-27",
+        "home_away": "away",
+        "venue": "Caesars Superdome",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W14sugsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00009588",
+        "player_key": "swacsu25100088",
+        "full_name": "Zac Yassine",
+        "first_name": "Zac",
+        "last_name": "Yassine",
+        "position": "DT",
+        "position_group": "Defensive Line",
+        "class_year": "Sr.",
+        "jersey_number": "91",
+        "image_url": "https://gojagsports.com/images/2025/8/14/_91_Zac_Yassine.jpg",
+        "profile_url": "/player/PERS_00009588",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 46.645
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 46.645
+          },
+          {
+            "label": "Games",
+            "value": 4
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00011614",
+        "name": "Fred McNair",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 1,
+        "start_year": 2025,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "New Era",
+        "staff_return_rate": 0.75,
+        "coach_profile_url": "/coaches/PERS_00011614"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 20
+            },
+            {
+              "label": "DL",
+              "value": 16
+            },
+            {
+              "label": "OL",
+              "value": 14
+            },
+            {
+              "label": "WR",
+              "value": 12
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "170.5",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swactsu": {
+      "team_id": "swactsu",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "6-5",
+        "wins": 6,
+        "losses": 5,
+        "ties": 0,
+        "conference": "5-3 conference",
+        "conference_wins": 5,
+        "conference_losses": 3,
+        "division_rank": "2nd - SWAC West",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swactsu-meacnccu",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": "meacnccu",
+        "opponent_name": "North Carolina Central",
+        "opponent_short_name": "NC Central",
+        "opponent_mascot": "Eagles",
+        "opponent_logo": "/hbcugg/assets/meacnccu.svg",
+        "home_away": "home",
+        "venue": "Shell Energy Stadium",
+        "city_state": "Houston, TX",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W13aamutsu",
+        "date": "2025-11-22",
+        "opponent_id": "swacaamu",
+        "opponent_name": "Alabama A&M",
+        "opponent_logo": "/hbcugg/assets/swacaamu.svg",
+        "result": "W",
+        "score_team": 24,
+        "score_opponent": 7,
+        "score": "24-7",
+        "home_away": "home",
+        "venue": "Shell Energy Stadium",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W13aamutsu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00012528",
+        "player_key": "swactsu25100044",
+        "full_name": "Matthew Cooks",
+        "first_name": "Matthew",
+        "last_name": "Cooks",
+        "position": "DEF",
+        "position_group": "DEF",
+        "class_year": "Jr.",
+        "jersey_number": "33",
+        "image_url": "https://datg7il085uh2.cloudfront.net/images/2025/8/26/33-Matthew_Cooper.JPG",
+        "profile_url": "/player/PERS_00012528",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 31.115
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 31.115
+          },
+          {
+            "label": "Games",
+            "value": 4
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00001116",
+        "name": "Cris Dishman",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 2,
+        "start_year": 2024,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.955,
+        "coach_profile_url": "/coaches/PERS_00001116"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "RB",
+              "value": 5
+            },
+            {
+              "label": "LB",
+              "value": 5
+            },
+            {
+              "label": "WR",
+              "value": 4
+            },
+            {
+              "label": "DL",
+              "value": 3
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "196",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    },
+    "swacuapb": {
+      "team_id": "swacuapb",
+      "record": {
+        "season": 2025,
+        "label": "2025 Final",
+        "overall": "4-8",
+        "wins": 4,
+        "losses": 8,
+        "ties": 0,
+        "conference": "2-6 conference",
+        "conference_wins": 2,
+        "conference_losses": 6,
+        "division_rank": "4th - SWAC West",
+        "record_context": "offseason_previous_year"
+      },
+      "next_game": {
+        "next_game_available": true,
+        "season": 2026,
+        "game_id": "2026-08-29-swacuapb-morehouse-college",
+        "date": "2026-08-29",
+        "kickoff": "TBD",
+        "opponent_id": null,
+        "opponent_name": "Morehouse College",
+        "opponent_short_name": "Morehouse College",
+        "opponent_mascot": null,
+        "opponent_logo": null,
+        "home_away": "home",
+        "venue": "War Memorial Stadium",
+        "city_state": "Little Rock, AR",
+        "tag": "Season Opener",
+        "broadcast": null
+      },
+      "previous_game": {
+        "season": 2025,
+        "game_id": "W12uapbpvamu",
+        "date": "2025-11-15",
+        "opponent_id": "swacpvamu",
+        "opponent_name": "Prairie View A&M",
+        "opponent_logo": "/hbcugg/assets/swacpvamu.svg",
+        "result": "L",
+        "score_team": 9,
+        "score_opponent": 56,
+        "score": "9-56",
+        "home_away": "away",
+        "venue": "Panther Stadium at Blackshear Field",
+        "game_label": "Final",
+        "review_headline": "Season finale",
+        "recap_url": "/game/W12uapbpvamu"
+      },
+      "player_spotlight": {
+        "player_id": "PERS_00011518",
+        "player_key": "swacuapb25100025",
+        "full_name": "Jaylen Jennings",
+        "first_name": "Jaylen",
+        "last_name": "Jennings",
+        "position": "RB",
+        "position_group": "RB",
+        "class_year": "Jr.",
+        "jersey_number": "25",
+        "image_url": "https://uapblionsroar.com/images/2025/8/28/IMG_9513.jpeg",
+        "profile_url": "/player/PERS_00011518",
+        "spotlight_label": "PAR Leader",
+        "rank_label": "#1 Team PAR",
+        "primary_stat": {
+          "label": "PAR",
+          "value": 14.105
+        },
+        "stat_strip": [
+          {
+            "label": "PAR",
+            "value": 14.105
+          },
+          {
+            "label": "Games",
+            "value": 2
+          }
+        ],
+        "reason_codes": [
+          "team_par_leader"
+        ]
+      },
+      "head_coach": {
+        "coach_id": "PERS_00001850",
+        "name": "Alonzo Hampton",
+        "title": "Head Coach",
+        "image_url": null,
+        "tenure_year": 3,
+        "start_year": 2023,
+        "previous_stop": null,
+        "alma_mater": null,
+        "stock_label": "Stable",
+        "staff_return_rate": 0.44,
+        "coach_profile_url": "/coaches/PERS_00001850"
+      },
+      "why_cards": {
+        "roster_depth": {
+          "slot_type": "placeholder_roster_depth",
+          "title": "Roster Depth",
+          "items": [
+            {
+              "label": "DB",
+              "value": 18
+            },
+            {
+              "label": "WR",
+              "value": 14
+            },
+            {
+              "label": "OL",
+              "value": 14
+            },
+            {
+              "label": "DL",
+              "value": 11
+            }
+          ],
+          "future_behavior": "variable Why Engine card selected by team context"
+        },
+        "top_stat": {
+          "slot_type": "placeholder_top_stat",
+          "label": "Top Stat",
+          "value": "175.2",
+          "sub": "Rushing yards/game",
+          "stat_type": "rushing",
+          "future_behavior": "variable Why Engine card selected by team context"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "season": 2026,
+  "generated_at": "2026-08-13T14:15:32.853267-05:00",
+  "rules": {
+    "swac": {
+      "implemented": [
+        "conference_win_pct",
+        "head_to_head",
+        "division_record"
+      ],
+      "manual_review_if_needed": [
+        "ordered_division_opponents",
+        "non_division_record",
+        "common_non_division_opponents",
+        "head_to_head_point_differential",
+        "coin_flip"
+      ]
+    },
+    "meac": {
+      "implemented": [
+        "conference_win_pct",
+        "head_to_head"
+      ],
+      "manual_review_if_needed": [
+        "non_conference_points",
+        "Sagarin",
+        "coin_toss"
+      ],
+      "note": "MEAC football tied teams can remain co-champions; tiebreakers identify the automatic postseason representative."
+    }
+  },
+  "groups": {
+    "swac_east": {
+      "standings": [],
+      "finish_matrix": [],
+      "summary_cards": [
+        {
+          "id": "swac_east-leader",
+          "label": "Leader",
+          "team_id": null,
+          "value": "0-0"
+        }
+      ],
+      "completed_games": 0,
+      "remaining_games": 24,
+      "scenario_count": 0,
+      "tiebreaker_trace": [],
+      "unresolved_tiebreakers": []
+    },
+    "swac_west": {
+      "standings": [],
+      "finish_matrix": [],
+      "summary_cards": [
+        {
+          "id": "swac_west-leader",
+          "label": "Leader",
+          "team_id": null,
+          "value": "0-0"
+        }
+      ],
+      "completed_games": 0,
+      "remaining_games": 25,
+      "scenario_count": 0,
+      "tiebreaker_trace": [],
+      "unresolved_tiebreakers": []
+    },
+    "meac": {
+      "standings": [],
+      "finish_matrix": [],
+      "summary_cards": [
+        {
+          "id": "meac-leader",
+          "label": "Leader",
+          "team_id": null,
+          "value": "0-0"
+        }
+      ],
+      "completed_games": 0,
+      "remaining_games": 15,
+      "scenario_count": 0,
+      "tiebreaker_trace": [],
+      "unresolved_tiebreakers": []
+    }
+  }
+}

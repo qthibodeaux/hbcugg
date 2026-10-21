@@ -1,0 +1,432 @@
+{
+  "team_id": "swacuapb",
+  "season": 2025,
+  "season_state": "complete",
+  "as_of_week": 16,
+  "generated_at": "2026-10-20T01:35:09-05:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "West",
+    "division_label": "SWAC WEST",
+    "season": 2025,
+    "team_abbreviation": "UAPB",
+    "school_name": "University of Arkansas at Pine Bluff",
+    "avg_par": 5.6,
+    "roster_count": 95,
+    "transfer_count": 47,
+    "transfer_rate": 49.5,
+    "upperclass_pct": 52.6
+  },
+  "conference_record": {
+    "conference_label": "2-6",
+    "conference_wins": 2,
+    "conference_losses": 6,
+    "overall_label": "4-8",
+    "overall_wins": 4,
+    "overall_losses": 8,
+    "overall_ties": 0,
+    "division_rank": "5th - SWAC West",
+    "last_5": [
+      {
+        "week": 9,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacbcu",
+        "opponent_short": "BCU",
+        "score_team": 14,
+        "score_opponent": 31,
+        "score": "L 14-31",
+        "game_path_id": "uapbbcu25"
+      },
+      {
+        "week": 10,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacsu",
+        "opponent_short": "SOU",
+        "score_team": 40,
+        "score_opponent": 21,
+        "score": "W 40-21",
+        "game_path_id": "suuapb25"
+      },
+      {
+        "week": 11,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacfamu",
+        "opponent_short": "FAMU",
+        "score_team": 28,
+        "score_opponent": 31,
+        "score": "L 28-31",
+        "game_path_id": "famuuapb25"
+      },
+      {
+        "week": 12,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacpvamu",
+        "opponent_short": "PVAMU",
+        "score_team": 9,
+        "score_opponent": 56,
+        "score": "L 9-56",
+        "game_path_id": "uapbpvamu25"
+      },
+      {
+        "week": 13,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacasu",
+        "opponent_short": "ALST",
+        "score_team": 13,
+        "score_opponent": 44,
+        "score": "L 13-44",
+        "game_path_id": "uapbasu25"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "UAPBASU22112025",
+    "game_path_id": "uapbasu25",
+    "week": 13,
+    "date": "2025-11-22",
+    "opponent_id": "swacasu",
+    "opponent_name": "Bama State",
+    "result": "L",
+    "score_team": 13,
+    "score_opponent": 44,
+    "score": "L 13-44",
+    "venue": {
+      "stadium_name": "ASU Stadium",
+      "venue_label": "ASU Stadium",
+      "city": "Montgomery",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "L 13-44 vs ALST",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.3683
+  },
+  "next_game": null,
+  "season_summary": {
+    "headline": "Finished 4-8, 5th - SWAC West.",
+    "record": "4-8",
+    "wins": 4,
+    "losses": 8,
+    "conference_record": "2-6",
+    "conference_wins": 2,
+    "conference_losses": 6,
+    "division_finish": "5th - SWAC West",
+    "avg_par": 5.6,
+    "games_played": 12
+  },
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00001835",
+      "name": "Alonzo Hampton",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://uapblionsroar.com/images/2023/6/22/Coach_Alonzo_Hampton.png",
+      "tenure_year": 3,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": -0.0107,
+        "display": "-0.01",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00001836",
+      "name": "Jeff Burrow",
+      "role": "Defensive Coordinator",
+      "role_title": "Defensive Coordinator, Defensive Back",
+      "role_group": "coordinator",
+      "image_url": "https://uapblionsroar.com/images/2024/9/4/DSC08016.jpg",
+      "tenure_year": 4,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.0249,
+        "display": "+0.02",
+        "scope": "vs 2024",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 57.9,
+            "display": "57.9%",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 195.5,
+            "display": "195.5",
+            "rank": 12,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.25,
+            "display": "1.25",
+            "rank": 14,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.75,
+            "display": "0.75",
+            "rank": 9,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 154.1,
+            "display": "154.1",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 1.125,
+            "display": "1.12",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 16.98,
+            "display": "17.0%",
+            "rank": 5,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 75.0,
+            "display": "75.0%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 11.63,
+            "display": "11.6%",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 10.91,
+            "display": "10.9%",
+            "rank": 4,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 1.0,
+            "display": "1.00",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 0.875,
+            "display": "0.88",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 40.28,
+            "display": "40.3%",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.0235,
+            "display": "-0.02",
+            "rank": 15,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 36.8,
+            "display": "36.8%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 70.8,
+            "display": "70.8%",
+            "rank": 6,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 60.0,
+            "display": "60.0%",
+            "rank": 13,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 40.1,
+            "display": "40.1",
+            "rank": 8,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 3.1,
+            "display": "3.1%",
+            "rank": 18,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 16.9,
+            "display": "16.9",
+            "rank": 17,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "defensive_havoc",
+    "key": "havoc_rate_allowed",
+    "label": "HAVOC ALLOWED",
+    "value": 10.91,
+    "display": "10.9%",
+    "rank": 4,
+    "total": 18,
+    "sentence": "Havoc rate allowed"
+  },
+  "star_impact": {
+    "person_id": "PERS_00011361",
+    "full_name": "Jaylen Jennings",
+    "last_name": "Jennings",
+    "position": "RB",
+    "class_year": "Jr.",
+    "image_url": "https://uapblionsroar.com/images/2025/8/28/IMG_9513.jpeg",
+    "from_game": {
+      "game_id": "UAPBASU22112025",
+      "game_path_id": "uapbasu25",
+      "week": 13,
+      "opponent_name": "Bama State",
+      "result": "L",
+      "score": "L 13-44"
+    },
+    "game_par": 7.21,
+    "season_par": 39.45,
+    "par_per_game": 4.93,
+    "stat_line": [
+      {
+        "label": "CAR",
+        "value": "25"
+      },
+      {
+        "label": "RUSH YDS",
+        "value": "133"
+      },
+      {
+        "label": "RUSH TD",
+        "value": "1"
+      }
+    ],
+    "profile_url": "/player/PERS_00011361"
+  }
+}

@@ -1,0 +1,538 @@
+{
+  "person_id": "PERS_00010778",
+  "season": 2026,
+  "generated_at": "2026-10-20T01:36:03-05:00",
+  "as_of_week": 7,
+  "identity": {
+    "person_id": "PERS_00010778",
+    "first_name": "Joshua",
+    "last_name": "Barker",
+    "team_id": "meacscsu",
+    "team_abbreviation": "SCSU",
+    "conference": "MEAC",
+    "division": null,
+    "jersey_number": 0,
+    "position": "Defensive Line",
+    "position_group": "DL",
+    "raw_position": "DL",
+    "class_year": 4,
+    "class_label": "Senior",
+    "height": 69,
+    "weight": 225,
+    "home_city": "Kennesaw",
+    "home_state": "GA",
+    "is_in_state": false,
+    "previous_school": "Benedict",
+    "high_school": null,
+    "image_url": "https://www.scsuathletics.com/images/2025/9/1/Barker__Joshua.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 28.89,
+    "per_game": 16.3725,
+    "games_played": 2,
+    "rank_in_position_group": 5,
+    "position_group_total": 144,
+    "conference_rank": 32,
+    "conference_total": 713,
+    "position_group_mean": 4.54
+  },
+  "season_totals": {
+    "par": 28.89,
+    "total_production": 32.745,
+    "avg_production": 16.3725,
+    "games_played": 2,
+    "season_components": {
+      "hit_production": 32.745,
+      "hawk_production": 0,
+      "scrum_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "2026-08-29_savannahstate_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Savannah State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 87-0",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "SCSUFAMU06092026",
+      "game_path_id": "scsufamu26",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 31-13",
+      "data_state": "played",
+      "par": 10.6,
+      "components": {
+        "hit_production": 12.53
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 3
+        },
+        {
+          "label": "TFL",
+          "value": 2.0
+        },
+        {
+          "label": "SACK",
+          "value": 2.0
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 2.0,
+          "sacks": 2.0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -8,
+            "quarter": 2,
+            "game_clock": "01:31"
+          },
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -6,
+            "quarter": 4,
+            "game_clock": "07:07"
+          }
+        ]
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_virginiastate_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Virginia State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 66-0",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_meacscsu_at_furman",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Furman",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 20-17",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "SCSUBCU26092026",
+      "game_path_id": "scsubcu26",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 31-21",
+      "data_state": "played",
+      "par": 18.29,
+      "components": {
+        "hit_production": 20.21
+      },
+      "stat_line": [
+        {
+          "label": "TKL",
+          "value": 4
+        },
+        {
+          "label": "TFL",
+          "value": 3.5
+        },
+        {
+          "label": "SACK",
+          "value": 2.5
+        },
+        {
+          "label": "INT",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 3.5,
+          "sacks": 2.5,
+          "qb_hurries": 2,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": [
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -6,
+            "quarter": 1,
+            "game_clock": "07:48"
+          },
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": null,
+            "quarter": 2,
+            "game_clock": "15:00"
+          },
+          {
+            "type": "sack",
+            "credit": 0.5,
+            "zone": null,
+            "depth": -11,
+            "quarter": 2,
+            "game_clock": "09:47"
+          },
+          {
+            "type": "qb_hurry",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": null,
+            "quarter": 3,
+            "game_clock": "14:52"
+          },
+          {
+            "type": "tfl",
+            "credit": 1.0,
+            "zone": "left",
+            "depth": -3,
+            "quarter": 3,
+            "game_clock": "14:52"
+          },
+          {
+            "type": "sack",
+            "credit": 1.0,
+            "zone": null,
+            "depth": -6,
+            "quarter": 4,
+            "game_clock": "01:50"
+          }
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "2026-10-03_thecitadel_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "The Citadel",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 31-34",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "2026-10-10_meacscsu_at_charlestonsouthe",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Charleston Southern",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 39-49",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 8,
+      "game_id": "2026-10-24_meacnsu_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": "meacnsu",
+      "opponent_name": "Norfolk",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 9,
+      "game_id": "2026-10-29_meacscsu_at_meacmsu",
+      "game_path_id": null,
+      "opponent_id": "meacmsu",
+      "opponent_name": "Morgan",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "2026-11-05_meacscsu_at_meachu",
+      "game_path_id": null,
+      "opponent_id": "meachu",
+      "opponent_name": "Howard",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_meacnccu_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": "meacnccu",
+      "opponent_name": "NC Central",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 12,
+      "game_id": "2026-11-21_meacdsu_at_meacscsu",
+      "game_path_id": null,
+      "opponent_id": "meacdsu",
+      "opponent_name": "Del State",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 4,
+    "game_id": "SCSUBCU26092026",
+    "game_path_id": "scsubcu26",
+    "opponent_id": "swacbcu",
+    "opponent_name": "B-CU",
+    "home_away": "away",
+    "result": "W",
+    "score": "W 31-21",
+    "par": 18.29,
+    "stat_line": [
+      {
+        "label": "TKL",
+        "value": 4
+      },
+      {
+        "label": "TFL",
+        "value": 3.5
+      },
+      {
+        "label": "SACK",
+        "value": 2.5
+      },
+      {
+        "label": "INT",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 69,
+      "rank": 14,
+      "total": 14,
+      "group": "DL",
+      "group_avg": 73.9
+    },
+    "weight": {
+      "value": 225,
+      "rank": 11,
+      "total": 14,
+      "group": "DL",
+      "group_avg": 251.2
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 4
+      },
+      {
+        "class": "So.",
+        "count": 2
+      },
+      {
+        "class": "Jr.",
+        "count": 7
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "DLS",
+        "rank": 7,
+        "total": 14
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 12
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 48
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 36
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "D2",
+    "previous_school": "Benedict",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 218.6,
+    "distance_tier": "regional",
+    "experience_score": 4.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": true,
+        "season": 2026
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2027
+      }
+    ]
+  }
+}
