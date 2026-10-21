@@ -21,7 +21,7 @@ const EpaBreakdown = ({ rows, accent }) => (
       <Grid templateColumns="minmax(0, 1.4fr) repeat(3, minmax(0, 1fr))" columnGap="16px" pb="6px">
         <Box />
         <Head align="center">Dropback EPA</Head>
-        <Head align="center">Designed Run EPA</Head>
+        <Head align="center">Run EPA</Head>
         <Head align="center">Offense EPA</Head>
       </Grid>
       {rows.map((r) => {

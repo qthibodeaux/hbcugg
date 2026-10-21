@@ -4,7 +4,8 @@ import { Box, Flex, Spinner, Text } from "@chakra-ui/react";
 import { Activity, BarChart3, User } from "lucide-react";
 import PageShell from "../../components/layouts/PageShell";
 import { useLayoutDensity } from "../../hooks/useLayoutDensity";
-import { useAllPlayers, usePlayerProfileDoc, usePlayerStatsEnriched } from "../../hooks/useSWACData";
+import { useAllPlayersByYear, usePlayerProfileDoc } from "../../hooks/useSWACData";
+import { useFootballCurrentContext } from "../../hooks/useFootballCurrentContext";
 import teamsData from "../../data/teams.json";
 import PlayerProfileBanner from "../../components/organisms/player/PlayerProfileBanner";
 import { PlayerProfileControlStripV2 } from "../../components/organisms/test/PlayerProfileControlStripV2";
@@ -79,13 +80,33 @@ const PlayerDetailPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [imgErr, setImgErr] = useState(false);
 
-  const { players: statPlayers, isLoading: statsLoading } = usePlayerStatsEnriched();
-  const { players: rosterPlayers, isLoading: rosterLoading } = useAllPlayers();
-
-  const isLoading = statsLoading || rosterLoading;
+  // The season on screen is the football current season (shared/football_current_context.json),
+  // so the page follows each weekly drop. The roster rows for that season carry
+  // PAR, games played and production, so one source covers what the old
+  // 2025-only "stats enriched" file did; the profile document adds the rest.
+  const { currentSeason: season } = useFootballCurrentContext();
+  const { players: seasonRows, isLoading } = useAllPlayersByYear(season);
+  // The hook returns a fresh array each render; the roster itself is static.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const rosterPlayers = useMemo(() => seasonRows, [seasonRows.length]);
+  const statPlayers = useMemo(
+    () => rosterPlayers.map((p) => ({ ...p, name_display: p.full_name, team: p.team_id, position: p.position_abbr ?? p.position })),
+    [rosterPlayers],
+  );
 
   const player = useMemo(() => {
-    if (location.state?.player) return location.state.player;
+    if (location.state?.player) {
+      // A card from a 2025-based list hands over last season's row; swap in this
+      // season's row for the same person (id, else name + team) when there is one.
+      const given = location.state.player;
+      const givenTeam = String(given.team ?? given.team_id ?? "").toLowerCase().replace(/25$/, "");
+      const givenName = String(given.name_display ?? given.full_name ?? "").toLowerCase();
+      return (
+        statPlayers.find((p) => given.person_id && p.person_id === given.person_id) ??
+        statPlayers.find((p) => givenName && String(p.name_display ?? "").toLowerCase() === givenName && String(p.team ?? "").toLowerCase() === givenTeam) ??
+        given
+      );
+    }
     if (!playerKey) return null;
 
     const decoded = decodeURIComponent(playerKey);
@@ -139,23 +160,19 @@ const PlayerDetailPage = () => {
 
   const rosterEntry = useMemo(() => {
     if (!player) return null;
-    return rosterPlayers.find(
-      (p) =>
-        (p.full_name ?? "").toLowerCase() ===
-        (player.name_display ?? player.full_name ?? "").toLowerCase(),
+    return (
+      rosterPlayers.find((p) => player.person_id && p.person_id === player.person_id) ??
+      rosterPlayers.find(
+        (p) =>
+          (p.full_name ?? "").toLowerCase() === (player.name_display ?? player.full_name ?? "").toLowerCase(),
+      )
     );
   }, [player, rosterPlayers]);
 
-  // BACKEND_RESPONSE_SPEC.md §4.2 — one-player, one-document. Only Cameron
-  // Peters (PERS_00011214, PVAMU/2025) exists on disk today; every other
-  // player 404s and `profileDoc` is null, falling through to the
-  // client-side roster/stats merge below unchanged.
-  // player_stats_2025_enriched.json's person_id is a stale generation (see
-  // BACKEND_CHANGE_NOTES.md §5 — confirmed: Cameron Peters is PERS_00003846
-  // there vs the current PERS_00011214 in player_seasons_2025.json and the
-  // parsed games). rosterEntry agrees with the current build; prefer it,
-  // same pattern as height/weight/hometown above.
-  const { doc: profileDoc } = usePlayerProfileDoc(2025, rosterEntry?.person_id ?? player?.person_id);
+  // BACKEND_RESPONSE_SPEC.md §4.2 — one-player, one-document, for the season on
+  // screen (players/profile/{season}/{person_id}.json). A player without one
+  // 404s and `profileDoc` is null, falling through to the roster merge below.
+  const { doc: profileDoc } = usePlayerProfileDoc(season, rosterEntry?.person_id ?? player?.person_id);
   const identity = profileDoc?.identity;
 
   const height = identity?.height ?? rosterEntry?.height ?? player?.height;
@@ -220,6 +237,9 @@ const PlayerDetailPage = () => {
         result: g.score,
         par: g.par,
         statFields: (g.stat_line ?? []).map((s) => ({ label: s.label, value: String(s.value) })),
+        // The game's havoc plays (games[].havoc) as the backend sends them; the
+        // spatial chart draws these and nothing else.
+        havoc: g.havoc ?? null,
         fieldMap: g.field_map,
       }));
   }, [profileDoc]);

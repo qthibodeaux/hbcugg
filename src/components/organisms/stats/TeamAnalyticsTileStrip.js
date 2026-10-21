@@ -636,7 +636,7 @@ const MapBody = ({ hub, season }) => {
       top={
         <>
           <Rotator count={presets.length} onTick={() => setI((v) => (v + 1) % presets.length)} />
-          <TileTitle>Scatter</TileTitle>
+          <TileTitle>Charts</TileTitle>
         </>
       }
     >

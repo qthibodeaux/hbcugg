@@ -47,6 +47,27 @@ export const teamAccent = (id) => {
   return isBlackish(c.primary) && c.secondary ? c.secondary : c.primary;
 };
 
+// The two teams' inks for one matchup. When the colours are too close to tell
+// apart (Alcorn and PVAMU are both purple), the home team keeps its colour and
+// the away team takes its secondary.
+const rgbOf = (hex) => {
+  const raw = String(hex ?? "").replace("#", "");
+  if (raw.length !== 6) return null;
+  return [0, 2, 4].map((i) => parseInt(raw.slice(i, i + 2), 16));
+};
+const tooClose = (a, b) => {
+  const x = rgbOf(a);
+  const y = rgbOf(b);
+  if (!x || !y) return false;
+  return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]) < 110;
+};
+export const matchupInks = (awayId, homeId) => {
+  const home = teamAccent(homeId);
+  const away = teamAccent(awayId);
+  const awaySecondary = teamMeta(awayId)?.colors?.secondary;
+  return { home, away: tooClose(away, home) && awaySecondary ? awaySecondary : away };
+};
+
 // ─── Formatting ──────────────────────────────────────────────────────────────
 export const DASH = "—";
 export const num = (v) => (v == null ? DASH : String(v));
@@ -139,9 +160,39 @@ export const OFFENSE_ROWS = [
   { key: "to", fallbackMax: 4, label: "Turnovers", fmt: num, path: "team_box.turnovers_committed", read: (g, t) => asNum(g?.team_box?.[t]?.turnovers_committed), lowerIsBetter: true },
 ];
 
-export const buildOffenseRows = (game, leagueAvg) => {
+// The poster splits the board in two (2026-10-19): the box-score counts on the
+// left, our advanced reads on the right. Counting rows read team_box,
+// time_of_possession and penalty_profile straight off the game file.
+const mmss = (sec) => (sec == null ? DASH : `${Math.floor(sec / 60)}:${String(Math.round(sec % 60)).padStart(2, "0")}`);
+const box = (g, t) => g?.team_box?.[t] ?? {};
+export const COUNTING_ROWS = [
+  { key: "totYds", fallbackMax: 600, label: "Total Yards", fmt: num, path: "team_box.total_yards", read: (g, t) => asNum(box(g, t).total_yards) },
+  {
+    key: "passYds", fallbackMax: 400, label: "Passing Yards", fmt: num, path: "team_box.pass_yards", read: (g, t) => asNum(box(g, t).pass_yards),
+    sub: (g, t) => (box(g, t).pass_attempts != null ? `${box(g, t).pass_completions ?? 0} / ${box(g, t).pass_attempts}` : null),
+  },
+  {
+    key: "rushYds", fallbackMax: 300, label: "Rushing Yards", fmt: num, path: "team_box.rush_yards", read: (g, t) => asNum(box(g, t).rush_yards),
+    sub: (g, t) => (box(g, t).rush_attempts != null ? `${box(g, t).rush_attempts} car` : null),
+  },
+  OFFENSE_ROWS.find((r) => r.key === "ypp"),
+  OFFENSE_ROWS.find((r) => r.key === "third"),
+  OFFENSE_ROWS.find((r) => r.key === "fourth"),
+  OFFENSE_ROWS.find((r) => r.key === "to"),
+  {
+    key: "pen", fallbackMax: 12, label: "Penalties", fmt: num, path: "penalty_profile.discipline_overview.accepted_count", lowerIsBetter: true,
+    read: (g, t) => asNum(g?.penalty_profile?.[t]?.discipline_overview?.accepted_count),
+    sub: (g, t) => { const y = g?.penalty_profile?.[t]?.discipline_overview?.accepted_yards; return y != null ? `${Math.round(y)} yds` : null; },
+  },
+  { key: "top", fallbackMax: 2400, label: "Time of Possession", fmt: mmss, path: "time_of_possession.seconds", read: (g, t) => asNum(g?.time_of_possession?.teams?.[t]?.seconds) },
+  { key: "sacks", fallbackMax: 6, label: "Sacks Allowed", fmt: num, path: "team_box.sacks_allowed", read: (g, t) => asNum(box(g, t).sacks_allowed), lowerIsBetter: true },
+];
+const ADVANCED_KEYS = ["epaTotal", "epaPlay", "sr", "passSr", "rushSr", "series", "expl", "rzEpa", "ypd", "start"];
+export const ADVANCED_ROWS = ADVANCED_KEYS.map((k) => OFFENSE_ROWS.find((r) => r.key === k));
+
+const buildRows = (defs, game, leagueAvg) => {
   const h = buildHeader(game);
-  return OFFENSE_ROWS.map((row) => ({
+  return defs.map((row) => ({
     key: row.key,
     label: row.label,
     fmt: row.fmt,
@@ -154,6 +205,9 @@ export const buildOffenseRows = (game, leagueAvg) => {
     league: leagueEntry(leagueAvg, row.path),
   }));
 };
+export const buildOffenseRows = (game, leagueAvg) => buildRows(OFFENSE_ROWS, game, leagueAvg);
+export const buildCountingRows = (game, leagueAvg) => buildRows(COUNTING_ROWS, game, leagueAvg);
+export const buildAdvancedRows = (game, leagueAvg) => buildRows(ADVANCED_ROWS, game, leagueAvg);
 
 // ─── Image 2 — Drives & situations ───────────────────────────────────────────
 export const buildEpaBreakdown = (game) => {
@@ -203,6 +257,7 @@ const productionOf = (game, teamId) => {
 export const buildBoxscore = (game, teamId) => {
   const ist = game?.individual_stats?.[teamId] ?? {};
   const prod = productionOf(game, teamId);
+  const byCall = game?.metadata?.pass_spotting?.incompletion_depth === "unspotted";
 
   const passers = rowsOf(ist.passing).filter((r) => r.name !== "TEAM").map((r) => ({
     key: r.player_key ?? r.name,
@@ -216,7 +271,9 @@ export const buildBoxscore = (game, teamId) => {
     epa: asNum(r.epa_total),
     epaPer: asNum(r.epa_per_play),
     production: prod(r.player_key, r.name, "passing_production"),
-    grid: r.direction_breakdown ?? null,
+    // The crew's-call grid when the crew never spotted incompletions (see ZONE_DEPTHS).
+    grid: byCall && r.call_breakdown ? r.call_breakdown : r.direction_breakdown ?? null,
+    gridByCall: byCall && !!r.call_breakdown,
   })).sort((a, b) => (b.attempts ?? 0) - (a.attempts ?? 0));
 
   const rushers = rowsOf(ist.rushing).filter((r) => r.name !== "TEAM").map((r) => ({
@@ -268,11 +325,20 @@ export const buildBoxscore = (game, teamId) => {
   };
 };
 
-/** The zone grid: rows deep → short, columns left → right, straight off `direction_breakdown`. */
+/**
+ * The zone grid: rows deep → short, columns left → right, straight off
+ * `direction_breakdown` — or, when `metadata.pass_spotting.incompletion_depth`
+ * is "unspotted", off `call_breakdown`: the crew's own call, two rows (Short /
+ * Deep) with no air-yard ranges (CALL_ZONE_DEPTHS).
+ */
 export const ZONE_DEPTHS = [
   { key: "deep", label: "Deep", range: "13+" },
   { key: "medium", label: "Med", range: "4–12" },
   { key: "short", label: "Short", range: "< 4" },
+];
+export const CALL_ZONE_DEPTHS = [
+  { key: "deep", label: "Deep", range: null },
+  { key: "short", label: "Short", range: null },
 ];
 export const ZONE_LANES = [
   { key: "left", label: "Left" },

@@ -9,7 +9,7 @@ import {
   resolveImage,
   resolveImages,
 } from "./WeekCentralBriefBlocks";
-import { CalendarDays, ExternalLink, MapPin, Trophy } from "lucide-react";
+import { ArrowRight, CalendarDays, MapPin, Trophy } from "lucide-react";
 import { Link } from "react-router-dom";
 import teamsData from "../../../data/teams.json";
 import { cleanName } from "../../../utils/gameHelpers";
@@ -528,14 +528,36 @@ const UpcomingBrief = ({ selectedGame, selectedColor, selectedAccent }) => {
             </Grid>
           </Box>
 
-          {selectedGame?.route && (
-            <Box mt="auto" pt={4}>
-              <Box as={Link} to={selectedGame.route} display="inline-flex" alignItems="center" gap={2} px={4} py={2.5} borderRadius="md" bg="white" color="black">
-                <Text fontSize="9px" fontWeight="black" textTransform="uppercase">Open Game Center</Text>
-                <ExternalLink size={13} />
+          {/* The way in: the game page once it exists, else the preview (every
+              game between two of the 18 has one, filed under its game_id). One
+              bar, edge to edge across the panel, right under the pregame status. */}
+          {(() => {
+            const to = selectedGame?.route ?? (raw.is_covered_matchup && raw.game_id ? `/game/preview/${raw.game_id}` : null);
+            if (!to) return null;
+            return (
+              <Box mt={4} flexShrink={0}>
+                <Flex
+                  as={Link}
+                  to={to}
+                  mx={{ base: -3, xl: -4 }}
+                  h="3rem"
+                  align="center"
+                  justify="center"
+                  gap="0.5rem"
+                  bg="white"
+                  color="black"
+                  textDecoration="none"
+                  _hover={{ bg: selectedAccent, color: "black", textDecoration: "none" }}
+                  transition="background 0.15s"
+                >
+                  <Text fontSize="0.9rem" fontWeight="black" textTransform="uppercase" letterSpacing="0.12em">
+                    {selectedGame?.route ? "Go to game" : "Go to preview"}
+                  </Text>
+                  <ArrowRight size={18} strokeWidth={3} />
+                </Flex>
               </Box>
-            </Box>
-          )}
+            );
+          })()}
         </Flex>
       </Flex>
     </Panel>
@@ -597,6 +619,27 @@ export const WeekCentralBrief = ({
           )}
 
           {game.lineScore.length > 0 && <LineScoreTable game={game} selectedAccent={selectedAccent} />}
+
+          {/* The way into the full game: one bar, edge to edge across the panel. */}
+          {selectedGame?.route && (
+            <Flex
+              as={Link}
+              to={selectedGame.route}
+              mx={{ base: -3, xl: -4 }}
+              h="3rem"
+              align="center"
+              justify="center"
+              gap="0.5rem"
+              bg="white"
+              color="black"
+              textDecoration="none"
+              _hover={{ bg: selectedAccent, color: "black", textDecoration: "none" }}
+              transition="background 0.15s"
+            >
+              <Text fontSize="0.9rem" fontWeight="black" textTransform="uppercase" letterSpacing="0.12em">Go to game</Text>
+              <ArrowRight size={18} strokeWidth={3} />
+            </Flex>
+          )}
 
           <BriefPerformers
             performers={game.performers}

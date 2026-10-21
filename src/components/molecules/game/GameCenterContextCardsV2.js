@@ -23,8 +23,11 @@ const Big = ({ children, size = 18, color = "white", ...rest }) => (
     {children}
   </Text>
 );
+// Supporting type (records, dates, venues). Mobile turns on --ctx-m (set by the
+// mobile page), which scales it 1.3x and floors it in rem so it reads at a
+// glance on a half-width card; desktop is unchanged.
 const Small = ({ children, color = DIM, size = 4, ...rest }) => (
-  <Text fontSize={`${size}cqmin`} fontWeight="black" color={color} textTransform="uppercase" letterSpacing="0.1em" lineHeight={1.15} lineClamp={1} {...rest}>
+  <Text fontSize={`max(calc(${size}cqmin * (1 + 0.3 * var(--ctx-m, 0))), calc(var(--ctx-m, 0) * 0.72rem))`} fontWeight="black" color={color} textTransform="uppercase" letterSpacing="0.1em" lineHeight={1.15} lineClamp={1} {...rest}>
     {children}
   </Text>
 );
@@ -43,7 +46,7 @@ const Shell = ({ title, why, mark, accent = "#A855F7", placeholder, children }) 
         {placeholder ? <Text ml="auto" fontSize="3cqmin" fontWeight="black" color={GOLD} letterSpacing="0.1em">MOCK</Text> : null}
       </Flex>
       <Flex direction="column" flex={1} minH={0}>{children}</Flex>
-      {why ? <Text fontSize="3.8cqmin" fontWeight="bold" color="rgba(255,255,255,0.6)" lineHeight={1.3} lineClamp={2}>{why}</Text> : null}
+      {why ? <Text fontSize="max(calc(3.8cqmin * (1 + 0.3 * var(--ctx-m, 0))), calc(var(--ctx-m, 0) * 0.78rem))" fontWeight="bold" color="rgba(255,255,255,0.6)" lineHeight={1.3} lineClamp={2}>{why}</Text> : null}
     </Flex>
   </Box>
 );

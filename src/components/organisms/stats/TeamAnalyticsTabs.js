@@ -18,8 +18,10 @@ import {
 } from "recharts";
 import { useTeamAnalyticsGames } from "../../../hooks/useTeamAnalyticsData";
 import { ExportCardButton } from "./ExportCardButton";
+import { TeamBarChart } from "./TeamBarChart";
+import { DownDistanceCharts } from "../downDistance/DownDistanceCharts";
 import { AlertTriangle } from "lucide-react";
-import { SCATTER_AXES, SCATTER_PRESETS, scatterSeries, presetFor, fmtAxis } from "../../../pages/analytics/scatterPresets";
+import { ADV_AXIS_GROUPS, SCATTER_AXES, SCATTER_PRESETS, SCATTER_SECTIONS, scatterSeries, presetFor, fmtAxis } from "../../../pages/analytics/scatterPresets";
 import {
   TAPE_GROUPS,
   HEAD_TO_HEAD_ROWS,
@@ -512,8 +514,11 @@ export const MapTab = ({ hub, season }) => {
   // click and simply leaves no preset lit.
   // Every preset is a button: the four standard charts first, then the
   // originals. One without data this season just plots nothing.
-  const standard = SCATTER_PRESETS.filter((c) => c.standard);
-  const originals = SCATTER_PRESETS.filter((c) => !c.standard);
+  // Standard charts by section (Team, Rushing), then the originals as "More".
+  const groups = [
+    ...SCATTER_SECTIONS.map((sec) => ({ id: sec.id, label: sec.label, presets: SCATTER_PRESETS.filter((c) => c.standard && c.section === sec.id) })),
+    { id: "more", label: "More", presets: SCATTER_PRESETS.filter((c) => !c.standard) },
+  ].filter((g) => g.presets.length);
   const [xKey, setXKey] = useState(SCATTER_PRESETS[0].x);
   const [yKey, setYKey] = useState(SCATTER_PRESETS[0].y);
   const [presetId, setPresetId] = useState(SCATTER_PRESETS[0].id);
@@ -544,6 +549,19 @@ export const MapTab = ({ hub, season }) => {
   const chartRef = useRef(null);
   const { isMobile: m } = useLayoutDensity();
 
+  // Bar mode: one measure, every team in scope, ranked. Same axis catalog as
+  // the scatter; Highest / Lowest sets the order.
+  const [mode, setMode] = useState("scatter");
+  const [barKey, setBarKey] = useState("adv:d:explosive_rate");
+  const [barDesc, setBarDesc] = useState(true);
+  const barSeries = useMemo(() => scatterSeries(hub, season, barKey, barKey), [hub, season, barKey]);
+  const barAxis = barSeries.x;
+  const barPoints = barSeries.points
+    .filter((p) => scopeDef.match(hub.teams[p.id]?.identity ?? {}))
+    .map((p) => ({ ...p, value: p.x, identity: hub.teams[p.id]?.identity }))
+    .sort((a, b) => (barDesc ? b.value - a.value : a.value - b.value));
+  const barTitle = `${barDesc ? "Highest" : "Lowest"} ${barAxis.label}`;
+
   const customAxes = () => {
     setXKey(hub.levers.find((l) => l.side === "o")?.field ?? xKey);
     setYKey(hub.levers.find((l) => l.side === "d")?.field ?? yKey);
@@ -560,7 +578,14 @@ export const MapTab = ({ hub, season }) => {
             <option key={a.key} value={a.key} style={{ background: "#141416" }}>{a.label}</option>
           ))}
         </optgroup>
-        <optgroup label="Metrics" style={{ background: "#141416" }}>
+        {ADV_AXIS_GROUPS.map((g) => (
+          <optgroup key={g.label} label={g.label} style={{ background: "#141416" }}>
+            {g.options.map((a) => (
+              <option key={a.key} value={a.key} style={{ background: "#141416" }}>{a.label}</option>
+            ))}
+          </optgroup>
+        ))}
+        <optgroup label="Win levers" style={{ background: "#141416" }}>
           {hub.levers.map((l) => (
             <option key={l.field} value={l.field} style={{ background: "#141416" }}>
               {l.label} (r {l.r > 0 ? "+" : ""}{l.r})
@@ -574,22 +599,70 @@ export const MapTab = ({ hub, season }) => {
   return (
     <SectionFlush.Provider value={m}>
     <Flex direction="column" gap={m ? 0 : 4}>
-      <Section title="Charts" right={m ? null : <Kicker>{activePreset ? activePreset.label : "Custom"}</Kicker>}>
-        {m ? (
+      <Section title="Charts" right={m || mode !== "scatter" ? null : <Kicker>{activePreset ? activePreset.label : "Custom"}</Kicker>}>
+        {/* Scatter | Bar | Down & Distance — which kind of chart. Down & Distance
+            is the backend's one-off thread export (TEMPORARY, desktop only). */}
+        <Flex gap="1px" mb={m ? "0.75rem" : 4} {...(m ? { mx: "-0.75rem", mt: "-0.25rem" } : {})}>
+          {[["scatter", "Scatter"], ["bar", "Bar"], ...(m ? [] : [["dd", "Down & Distance"]])].map(([id, label], i, all) => (
+            <Box
+              key={id}
+              as="button"
+              type="button"
+              onClick={() => setMode(id)}
+              flex={m ? 1 : undefined}
+              px={m ? 0 : 5}
+              py={m ? "0.7rem" : 2}
+              borderRadius={m ? 0 : i === 0 ? "md 0 0 md" : i === all.length - 1 ? "0 md md 0" : 0}
+              bg={mode === id ? "brand.500" : "whiteAlpha.100"}
+              _hover={mode === id ? undefined : { bg: "whiteAlpha.200" }}
+            >
+              <Text fontSize={m ? "0.78rem" : "11px"} fontWeight="900" color={mode === id ? "white" : "whiteAlpha.700"} textTransform="uppercase" letterSpacing="0.1em">{label}</Text>
+            </Box>
+          ))}
+        </Flex>
+
+        {mode === "dd" ? (
+          <DownDistanceCharts />
+        ) : mode === "bar" ? (
+          <>
+            <Grid templateColumns={m ? "minmax(0, 1fr)" : "minmax(0, 2fr) minmax(0, 1fr)"} gap={m ? "0.5rem" : 4} alignItems="end">
+              <AxisPicker value={barKey} onChange={setBarKey} label="Measure" />
+              <Flex gap="1px">
+                {[[true, "Highest"], [false, "Lowest"]].map(([d, label]) => (
+                  <Box key={label} as="button" type="button" onClick={() => setBarDesc(d)} flex={1} py={m ? "0.5rem" : 1.5}
+                    borderRadius={m ? 0 : d ? "md 0 0 md" : "0 md md 0"} bg={barDesc === d ? "brand.500" : "whiteAlpha.100"}>
+                    <Text fontSize={m ? "0.75rem" : "10px"} fontWeight="900" color={barDesc === d ? "white" : "whiteAlpha.700"} textTransform="uppercase" letterSpacing="0.08em">{label}</Text>
+                  </Box>
+                ))}
+              </Flex>
+            </Grid>
+            <Flex gap={2} wrap="wrap" mt={4}>
+              {SCATTER_SCOPES.map((sc) => (
+                <ScopeButton key={sc.id} active={scope === sc.id} onClick={() => setScope(sc.id)}>{sc.label}</ScopeButton>
+              ))}
+            </Flex>
+          </>
+        ) : m ? (
           <>
             {/* Mobile: every chart in one swipeable row, edge to edge. */}
             <Flex mx="-0.75rem" px="0.75rem" gap="1px" overflowX="auto" style={{ scrollbarWidth: "none", scrollSnapType: "x proximity" }}>
-              {[...standard, ...originals].map((c) => {
-                const on = activePreset?.id === c.id;
-                return (
-                  <Box key={c.id} as="button" type="button" onClick={() => { setXKey(c.x); setYKey(c.y); setPresetId(c.id); }}
-                    flexShrink={0} px="0.85rem" py="0.7rem" bg={on ? "brand.500" : "whiteAlpha.100"} style={{ scrollSnapAlign: "start" }}>
-                    <Text fontSize="0.72rem" fontWeight="900" color={on ? "white" : "whiteAlpha.700"} textTransform="uppercase" letterSpacing="0.06em" whiteSpace="nowrap">
-                      {c.label}
-                    </Text>
-                  </Box>
-                );
-              })}
+              {groups.map((g, gi) => [
+                // Each section opens with its name, a step apart from the last.
+                <Flex key={`h-${g.id}`} flexShrink={0} align="center" pl={gi ? "0.9rem" : "0.2rem"} pr="0.5rem" style={{ scrollSnapAlign: "start" }}>
+                  <Text fontSize="0.62rem" fontWeight="900" color="brand.400" textTransform="uppercase" letterSpacing="0.14em" whiteSpace="nowrap">{g.label}</Text>
+                </Flex>,
+                ...g.presets.map((c) => {
+                  const on = activePreset?.id === c.id;
+                  return (
+                    <Box key={c.id} as="button" type="button" onClick={() => { setXKey(c.x); setYKey(c.y); setPresetId(c.id); }}
+                      flexShrink={0} px="0.85rem" py="0.7rem" bg={on ? "brand.500" : "whiteAlpha.100"}>
+                      <Text fontSize="0.72rem" fontWeight="900" color={on ? "white" : "whiteAlpha.700"} textTransform="uppercase" letterSpacing="0.06em" whiteSpace="nowrap">
+                        {c.label}
+                      </Text>
+                    </Box>
+                  );
+                }),
+              ])}
               <Box as="button" type="button" onClick={customAxes} flexShrink={0} px="0.85rem" py="0.7rem" bg={!activePreset ? "brand.500" : "whiteAlpha.100"}>
                 <Text fontSize="0.72rem" fontWeight="900" color={!activePreset ? "white" : "whiteAlpha.700"} textTransform="uppercase" letterSpacing="0.06em" whiteSpace="nowrap">
                   Custom ✎
@@ -617,9 +690,10 @@ export const MapTab = ({ hub, season }) => {
           </>
         ) : (
         <>
-        {[standard, originals].map((group, gi) => (
-          <Flex key={gi} gap={2} wrap="wrap" mt={gi ? 2 : 0}>
-            {group.map((c) => (
+        {groups.map((g, gi) => (
+          <Flex key={g.id} align="center" gap={2} wrap="wrap" mt={gi ? 2.5 : 0}>
+            <Kicker w="4.5rem" flexShrink={0} color="brand.400">{g.label}</Kicker>
+            {g.presets.map((c) => (
               <ScopeButton key={c.id} active={activePreset?.id === c.id} onClick={() => { setXKey(c.x); setYKey(c.y); setPresetId(c.id); }}>
                 {c.label}
               </ScopeButton>
@@ -642,17 +716,29 @@ export const MapTab = ({ hub, season }) => {
         )}
       </Section>
 
+      {mode !== "dd" && (
       <Section
         ref={chartRef}
-        title={m ? (activePreset?.label ?? "Custom") : `${y.label} × ${x.label} · ${season}`}
+        title={mode === "bar" ? `${barTitle} · ${season}` : m ? (activePreset?.label ?? "Custom") : `${y.label} × ${x.label} · ${season}`}
         right={
           <Flex align="center" gap={3}>
-            {!m && <Kicker>Dashed = {series.centerLabel}</Kicker>}
-            <ExportCardButton target={chartRef} filename={() => `scatter-${season}-${y.key}-vs-${x.key}.png`.replace(/[^a-z0-9._-]+/gi, "-")} />
+            {!m && mode === "scatter" && <Kicker>Dashed = {series.centerLabel}</Kicker>}
+            <ExportCardButton
+              target={chartRef}
+              filename={() => (mode === "bar" ? `bar-${season}-${barDesc ? "highest" : "lowest"}-${barKey}.png` : `scatter-${season}-${y.key}-vs-${x.key}.png`).replace(/[^a-z0-9._-]+/gi, "-")}
+            />
           </Flex>
         }
       >
-        {points.length === 0 ? (
+        {mode === "bar" ? (
+          barPoints.length === 0 ? (
+            <Flex h="240px" mt={2} align="center" justify="center" border="1px dashed" borderColor="whiteAlpha.200" borderRadius="md">
+              <Text fontSize="sm" fontWeight="800" color="whiteAlpha.500">No {season} data for this measure yet.</Text>
+            </Flex>
+          ) : (
+            <TeamBarChart points={barPoints} fmt={(v) => fmtAxis(v, barAxis.unit)} mobile={m} />
+          )
+        ) : points.length === 0 ? (
           <Flex h={{ base: "340px", lg: "500px" }} mt={2} align="center" justify="center" border="1px dashed" borderColor="whiteAlpha.200" borderRadius="md">
             <Text fontSize="sm" fontWeight="800" color="whiteAlpha.500">No {season} data for this chart yet.</Text>
           </Flex>
@@ -821,10 +907,13 @@ export const MapTab = ({ hub, season }) => {
         </Flex>
         )}
       </Section>
+      )}
 
-      <Section title={`${scopeDef.label} · the numbers`} right={m ? null : <Kicker>{points.length} teams</Kicker>}>
-        <ScatterTable points={points} x={x} y={y} />
-      </Section>
+      {mode === "scatter" && (
+        <Section title={`${scopeDef.label} · the numbers`} right={m ? null : <Kicker>{points.length} teams</Kicker>}>
+          <ScatterTable points={points} x={x} y={y} />
+        </Section>
+      )}
     </Flex>
     </SectionFlush.Provider>
   );

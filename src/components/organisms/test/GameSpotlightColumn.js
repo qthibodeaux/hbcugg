@@ -172,9 +172,9 @@ const StatRow = ({ fields, primary, secondary }) => (
 export const GameReadout = ({ game, visible, primary, secondary }) => {
   const badge = game?.tier ? BADGE_CONFIG[game.tier] : null;
   const Icon = badge?.icon;
-  const isWin = game.result?.startsWith("W");
+  const isWin = String(game?.result ?? "").startsWith("W");
   const resultColor = isWin ? "#68D391" : "#F56565";
-  const [resultLetter, score] = game.result.split(" ");
+  const [resultLetter = "—", score = ""] = String(game?.result ?? "").split(" ");
   // Real games carry stat_line[] ([{label,value}], position-agnostic) —
   // use it directly rather than buildStatFields, which only knows the
   // defensive keys the original mock data happened to use.
@@ -276,7 +276,7 @@ const BarTooltip = ({ active, payload, primary }) => {
         {g.week} · {abbreviateOpponent(g.vs)}
       </Text>
       <Text fontSize="0.72rem" fontWeight="950" fontFamily="mono" color={primary}>
-        {g.par.toFixed(1)} PAR
+        {Number(g.par ?? 0).toFixed(1)} PAR
       </Text>
     </Box>
   );
@@ -306,14 +306,24 @@ const WeekTick = ({ x, y, payload, index, activeIndex, primary, games }) => {
 
 const YTick = ({ x, y, payload }) => (
   <text x={x} y={y} dy={3} textAnchor="end" fontSize={8} fontWeight={700} fill="rgba(255,255,255,0.45)">
-    {payload.value.toFixed(0)}
+    {Number(payload.value ?? 0).toFixed(0)}
   </text>
 );
 
 export const SeasonBarChart = ({ games, activeIndex, primary, secondary, onSelect }) => {
-  const maxPar = Math.max(...games.map((g) => g.par), 1);
-  const activeGame = games[activeIndex];
+  const parOf = (g) => (Number.isFinite(Number(g?.par)) ? Number(g.par) : 0);
+  const maxPar = Math.max(...games.map(parOf), 1);
+  const minPar = Math.min(...games.map(parOf), 0);
+  // Guarded: the timer or a tap can leave activeIndex past the array (or not a
+  // number at all), and an unguarded read here threw on phones.
+  const activeGame = games[activeIndex] ?? games[0];
   const midPar = maxPar / 2;
+  // Recharts 3 does not reliably hand a plain index to a bar's onClick
+  // (touch especially). Resolve the tapped game from whatever arrives.
+  const pick = (entry, i) => {
+    const idx = Number.isInteger(i) ? i : games.indexOf(entry?.payload ?? entry);
+    if (idx >= 0 && idx < games.length) onSelect(idx);
+  };
 
   return (
     <Flex direction="column" h="full" p="clamp(0.6rem, 1vw, 0.9rem)" position="relative" overflow="hidden">
@@ -325,7 +335,7 @@ export const SeasonBarChart = ({ games, activeIndex, primary, secondary, onSelec
           </Text>
         </Flex>
         <Text fontSize="0.62rem" fontWeight="900" color={primary}>
-          {activeGame.par.toFixed(1)} PAR
+          {parOf(activeGame).toFixed(1)} PAR
         </Text>
       </Flex>
 
@@ -341,15 +351,15 @@ export const SeasonBarChart = ({ games, activeIndex, primary, secondary, onSelec
               tick={<WeekTick activeIndex={activeIndex} primary={primary} games={games} />}
             />
             <YAxis
-              domain={[0, maxPar]}
-              ticks={[0, midPar, maxPar]}
+              domain={[minPar, maxPar]}
+              ticks={minPar < 0 ? [minPar, 0, maxPar] : [0, midPar, maxPar]}
               axisLine={false}
               tickLine={false}
               width={22}
               tick={<YTick />}
             />
             <Tooltip cursor={{ fill: "rgba(255,255,255,0.06)" }} content={<BarTooltip primary={primary} />} />
-            <Bar dataKey="par" radius={[2, 2, 0, 0]} onClick={(_, i) => onSelect(i)} activeBar={false} isAnimationActive={false}>
+            <Bar dataKey="par" radius={[2, 2, 0, 0]} onClick={pick} activeBar={false} isAnimationActive={false}>
               {games.map((g, i) => (
                 <Cell key={`${g.week}-${i}`} fill={i === activeIndex ? primary : `${secondary}55`} style={{ cursor: "pointer" }} />
               ))}

@@ -1,0 +1,1903 @@
+{
+ "title": "SWAC down & distance: 2026 through Week 7",
+ "season": 2026,
+ "through_week": 7,
+ "generated_at": "2026-10-20T22:18:17+00:00",
+ "scope": "Games between two of the 18 SWAC/MEAC programs (the games with play-by-play), SWAC teams shown. Garbage time excluded. Sacks are pass plays. Kneels are not plays.",
+ "definitions": {
+  "success": "50% of the distance on 1st down, 70% on 2nd, 100% on 3rd or 4th.",
+  "conversion": "A first down kept, or a touchdown. A turnover is never a conversion.",
+  "shot": "A pass thrown 20+ air yards (air yards to the catch, throw-to or interception spot).",
+  "drive_opener": "The first offensive snap of a drive.",
+  "behind_the_chains": "A 1st down that ends in 2nd & 11 or longer (losses, sacks, penalties).",
+  "back_on_schedule": "A 2nd & 7+ that becomes a first down or a 3rd & 3-or-less.",
+  "short_of_the_sticks": "A 3rd & 5+ throw whose air yards are less than the distance to go.",
+  "short_yardage": "3rd or 4th down with 2 or fewer to go.",
+  "late_and_close": "4th quarter within 8 points, or overtime.",
+  "win_probability_added": "The change in win probability on the snap, summed over a team's 3rd and 4th downs and divided by its games, in percentage points (fit_wp_v2).",
+  "swac_avg": "All SWAC offenses' snaps counted together, then divided once."
+ },
+ "slides": [
+  {
+   "slide": 1,
+   "post": 1,
+   "id": "first_snap",
+   "title": "The first snap tells on you",
+   "chart": {
+    "type": "bar_horizontal",
+    "sort": "value_desc",
+    "value": {
+     "key": "opener_yards",
+     "label": "Yards on the first snap of a drive",
+     "format": "number_1dp",
+     "reference": {
+      "value": 5.94,
+      "label": "SWAC avg"
+     }
+    },
+    "tick": {
+     "key": "opener_negative_pct",
+     "label": "Openers that lose yards",
+     "format": "percent"
+    }
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "opener_yards": 8.11,
+     "opener_success_pct": 44.4,
+     "opener_negative_pct": 4.8,
+     "openers": 63,
+     "first_down_penalties": 5,
+     "first_down_behind_pct": 14.4,
+     "first_down_run_stuff_pct": 12.2,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "opener_yards": 9.71,
+     "opener_success_pct": 52.7,
+     "opener_negative_pct": 7.3,
+     "openers": 55,
+     "first_down_penalties": 14,
+     "first_down_behind_pct": 22.2,
+     "first_down_run_stuff_pct": 22.0,
+     "highlight": true
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "opener_yards": 5.26,
+     "opener_success_pct": 47.2,
+     "opener_negative_pct": 13.2,
+     "openers": 53,
+     "first_down_penalties": 3,
+     "first_down_behind_pct": 12.0,
+     "first_down_run_stuff_pct": 19.0,
+     "highlight": true
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "opener_yards": 4.02,
+     "opener_success_pct": 43.2,
+     "opener_negative_pct": 9.1,
+     "openers": 44,
+     "first_down_penalties": 6,
+     "first_down_behind_pct": 17.9,
+     "first_down_run_stuff_pct": 24.7,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "opener_yards": 5.11,
+     "opener_success_pct": 37.7,
+     "opener_negative_pct": 17.0,
+     "openers": 53,
+     "first_down_penalties": 3,
+     "first_down_behind_pct": 28.0,
+     "first_down_run_stuff_pct": 34.5,
+     "highlight": false
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "opener_yards": 4.84,
+     "opener_success_pct": 34.1,
+     "opener_negative_pct": 18.2,
+     "openers": 44,
+     "first_down_penalties": 7,
+     "first_down_behind_pct": 29.2,
+     "first_down_run_stuff_pct": 22.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "opener_yards": 7.19,
+     "opener_success_pct": 34.0,
+     "opener_negative_pct": 13.2,
+     "openers": 53,
+     "first_down_penalties": 10,
+     "first_down_behind_pct": 20.0,
+     "first_down_run_stuff_pct": 16.7,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "opener_yards": 3.73,
+     "opener_success_pct": 34.5,
+     "opener_negative_pct": 23.6,
+     "openers": 55,
+     "first_down_penalties": 11,
+     "first_down_behind_pct": 30.5,
+     "first_down_run_stuff_pct": 32.8,
+     "highlight": true
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "opener_yards": 6.02,
+     "opener_success_pct": 42.1,
+     "opener_negative_pct": 21.1,
+     "openers": 57,
+     "first_down_penalties": 5,
+     "first_down_behind_pct": 22.0,
+     "first_down_run_stuff_pct": 25.4,
+     "highlight": true
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "opener_yards": 2.98,
+     "opener_success_pct": 36.4,
+     "opener_negative_pct": 13.6,
+     "openers": 44,
+     "first_down_penalties": 6,
+     "first_down_behind_pct": 16.3,
+     "first_down_run_stuff_pct": 17.3,
+     "highlight": false
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "opener_yards": 6.94,
+     "opener_success_pct": 38.3,
+     "opener_negative_pct": 12.8,
+     "openers": 47,
+     "first_down_penalties": 10,
+     "first_down_behind_pct": 32.0,
+     "first_down_run_stuff_pct": 19.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "opener_yards": 5.97,
+     "opener_success_pct": 48.4,
+     "opener_negative_pct": 3.2,
+     "openers": 31,
+     "first_down_penalties": 7,
+     "first_down_behind_pct": 16.9,
+     "first_down_run_stuff_pct": 11.9,
+     "highlight": false
+    }
+   ],
+   "callouts": [
+    "MVSU: 11 offensive penalties on 1st down (most in the SWAC); 31% of its 1st downs end in 2nd & 11+",
+    "Bama State: 12% of 1st downs end in 2nd & 11+, 3 penalties"
+   ]
+  },
+  {
+   "slide": 2,
+   "post": 1,
+   "id": "first_down_shots",
+   "title": "Who takes 1st-down shots",
+   "chart": {
+    "type": "dot_strip",
+    "sort": "shots_desc",
+    "dots": {
+     "attempts_key": "shots",
+     "hits_key": "shots_completed",
+     "label": "Each dot = a 1st-down throw of 20+ air yards; filled = completed"
+    },
+    "side_label": {
+     "key": "shot_rate_pct",
+     "label": "of 1st-down throws",
+     "format": "percent"
+    }
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "shots": 6,
+     "shots_completed": 2,
+     "shot_yards": 137,
+     "shot_rate_pct": 9.8,
+     "air_yards_per_attempt": 8.4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "shots": 14,
+     "shots_completed": 8,
+     "shot_yards": 342,
+     "shot_rate_pct": 23.3,
+     "air_yards_per_attempt": 11.0,
+     "highlight": true
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "shots": 3,
+     "shots_completed": 1,
+     "shot_yards": 23,
+     "shot_rate_pct": 6.5,
+     "air_yards_per_attempt": 5.7,
+     "highlight": false
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "shots": 2,
+     "shots_completed": 1,
+     "shot_yards": 35,
+     "shot_rate_pct": 9.1,
+     "air_yards_per_attempt": 5.3,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "shots": 4,
+     "shots_completed": 1,
+     "shot_yards": 26,
+     "shot_rate_pct": 14.8,
+     "air_yards_per_attempt": 7.4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "shots": 6,
+     "shots_completed": 0,
+     "shot_yards": 0,
+     "shot_rate_pct": 17.6,
+     "air_yards_per_attempt": 9.3,
+     "highlight": true
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "shots": 3,
+     "shots_completed": 1,
+     "shot_yards": 70,
+     "shot_rate_pct": 8.3,
+     "air_yards_per_attempt": 8.4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "shots": 8,
+     "shots_completed": 3,
+     "shot_yards": 89,
+     "shot_rate_pct": 19.5,
+     "air_yards_per_attempt": 9.9,
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "shots": 3,
+     "shots_completed": 2,
+     "shot_yards": 85,
+     "shot_rate_pct": 5.6,
+     "air_yards_per_attempt": 5.8,
+     "highlight": true
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "shots": 3,
+     "shots_completed": 0,
+     "shot_yards": 0,
+     "shot_rate_pct": 13.0,
+     "air_yards_per_attempt": 9.3,
+     "highlight": false
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "shots": 11,
+     "shots_completed": 5,
+     "shot_yards": 172,
+     "shot_rate_pct": 36.7,
+     "air_yards_per_attempt": 14.3,
+     "highlight": true
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "shots": 7,
+     "shots_completed": 2,
+     "shot_yards": 82,
+     "shot_rate_pct": 20.6,
+     "air_yards_per_attempt": 10.6,
+     "highlight": false
+    }
+   ],
+   "summary": {
+    "swac_shots": 70,
+    "swac_completed": 26,
+    "swac_shot_rate_pct": 15.0
+   }
+  },
+  {
+   "slide": 3,
+   "post": 2,
+   "id": "climb_back",
+   "title": "2nd & long: who climbs back",
+   "chart": {
+    "type": "bar_horizontal",
+    "sort": "value_desc",
+    "value": {
+     "key": "back_on_schedule_pct",
+     "label": "2nd & 7+ that become a first down or a 3rd & 3-or-less",
+     "format": "percent",
+     "reference": {
+      "value": 33.9,
+      "label": "SWAC avg"
+     }
+    },
+    "color": {
+     "key": "run_rate_pct",
+     "label": "Run rate on 2nd & 7+",
+     "scale": "diverging_at_50"
+    }
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "second_and_long": 67,
+     "back_on_schedule_pct": 41.8,
+     "run_rate_pct": 38.8,
+     "second_and_11_plus": 15,
+     "back_from_11_plus_pct": 40.0,
+     "defense_back_allowed_pct": 31.0,
+     "highlight": true
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "second_and_long": 64,
+     "back_on_schedule_pct": 39.1,
+     "run_rate_pct": 26.6,
+     "second_and_11_plus": 22,
+     "back_from_11_plus_pct": 31.8,
+     "defense_back_allowed_pct": 46.8,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "second_and_long": 58,
+     "back_on_schedule_pct": 36.2,
+     "run_rate_pct": 70.7,
+     "second_and_11_plus": 13,
+     "back_from_11_plus_pct": 7.7,
+     "defense_back_allowed_pct": 26.3,
+     "highlight": true
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "second_and_long": 53,
+     "back_on_schedule_pct": 37.7,
+     "run_rate_pct": 52.8,
+     "second_and_11_plus": 15,
+     "back_from_11_plus_pct": 13.3,
+     "defense_back_allowed_pct": 34.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "second_and_long": 53,
+     "back_on_schedule_pct": 20.8,
+     "run_rate_pct": 34.0,
+     "second_and_11_plus": 21,
+     "back_from_11_plus_pct": 28.6,
+     "defense_back_allowed_pct": 31.6,
+     "highlight": true
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "second_and_long": 50,
+     "back_on_schedule_pct": 40.0,
+     "run_rate_pct": 44.0,
+     "second_and_11_plus": 22,
+     "back_from_11_plus_pct": 45.5,
+     "defense_back_allowed_pct": 49.1,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "second_and_long": 59,
+     "back_on_schedule_pct": 37.3,
+     "run_rate_pct": 44.1,
+     "second_and_11_plus": 19,
+     "back_from_11_plus_pct": 21.1,
+     "defense_back_allowed_pct": 26.5,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "second_and_long": 58,
+     "back_on_schedule_pct": 22.4,
+     "run_rate_pct": 41.4,
+     "second_and_11_plus": 25,
+     "back_from_11_plus_pct": 16.0,
+     "defense_back_allowed_pct": 41.7,
+     "highlight": true
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "second_and_long": 58,
+     "back_on_schedule_pct": 32.8,
+     "run_rate_pct": 56.9,
+     "second_and_11_plus": 23,
+     "back_from_11_plus_pct": 17.4,
+     "defense_back_allowed_pct": 22.7,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "second_and_long": 51,
+     "back_on_schedule_pct": 21.6,
+     "run_rate_pct": 47.1,
+     "second_and_11_plus": 14,
+     "back_from_11_plus_pct": 14.3,
+     "defense_back_allowed_pct": 34.0,
+     "highlight": true
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "second_and_long": 51,
+     "back_on_schedule_pct": 29.4,
+     "run_rate_pct": 29.4,
+     "second_and_11_plus": 25,
+     "back_from_11_plus_pct": 20.0,
+     "defense_back_allowed_pct": 28.1,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "second_and_long": 39,
+     "back_on_schedule_pct": 48.7,
+     "run_rate_pct": 33.3,
+     "second_and_11_plus": 11,
+     "back_from_11_plus_pct": 54.5,
+     "defense_back_allowed_pct": 36.1,
+     "highlight": true
+    }
+   ],
+   "callouts": [
+    "Bama State runs on 71% of 2nd & long; from 2nd & 11+ it has climbed back once in 13 tries",
+    "Defense: PVAMU lets offenses climb back from 2nd & long 23% of the time; Grambling 49%"
+   ]
+  },
+  {
+   "slide": 4,
+   "post": 2,
+   "id": "free_play",
+   "title": "The free play nobody uses",
+   "chart": {
+    "type": "stat_card",
+    "headline": {
+     "big": 132,
+     "big_label": "snaps of 2nd & 3-or-less",
+     "small": 5,
+     "small_label": "deep shots (20+ air yards)"
+    },
+    "sub": "SWAC teams run on 69% of them and move the chains 67%"
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "second_and_short": 13,
+     "shots": 3,
+     "run_rate_pct": 23.1,
+     "conv_pct": 69.2,
+     "highlight": true
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "second_and_short": 18,
+     "shots": 0,
+     "run_rate_pct": 72.2,
+     "conv_pct": 61.1,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "second_and_short": 12,
+     "shots": 0,
+     "run_rate_pct": 75.0,
+     "conv_pct": 75.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "second_and_short": 13,
+     "shots": 0,
+     "run_rate_pct": 84.6,
+     "conv_pct": 46.2,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "second_and_short": 10,
+     "shots": 0,
+     "run_rate_pct": 40.0,
+     "conv_pct": 60.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "second_and_short": 6,
+     "shots": 0,
+     "run_rate_pct": 100.0,
+     "conv_pct": 66.7,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "second_and_short": 10,
+     "shots": 0,
+     "run_rate_pct": 70.0,
+     "conv_pct": 70.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "second_and_short": 7,
+     "shots": 1,
+     "run_rate_pct": 57.1,
+     "conv_pct": 71.4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "second_and_short": 14,
+     "shots": 0,
+     "run_rate_pct": 78.6,
+     "conv_pct": 78.6,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "second_and_short": 11,
+     "shots": 0,
+     "run_rate_pct": 90.9,
+     "conv_pct": 81.8,
+     "highlight": false
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "second_and_short": 8,
+     "shots": 1,
+     "run_rate_pct": 75.0,
+     "conv_pct": 75.0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "second_and_short": 10,
+     "shots": 0,
+     "run_rate_pct": 70.0,
+     "conv_pct": 60.0,
+     "highlight": false
+    }
+   ],
+   "callouts": [
+    "AAMU took 3 of the 5 and throws on 77% of its 2nd & shorts"
+   ]
+  },
+  {
+   "slide": 5,
+   "post": 3,
+   "id": "past_the_sticks",
+   "title": "3rd & 5+: throw it past the sticks",
+   "chart": {
+    "type": "scatter",
+    "x": {
+     "key": "short_of_sticks_pct",
+     "label": "Throws short of the line to gain",
+     "format": "percent",
+     "min": 20,
+     "max": 80,
+     "reference": {
+      "value": 49.2,
+      "label": "SWAC avg"
+     }
+    },
+    "y": {
+     "key": "conv_pct",
+     "label": "Converted",
+     "format": "percent",
+     "min": 0,
+     "max": 55,
+     "reference": {
+      "value": 29.2,
+      "label": "SWAC avg"
+     }
+    },
+    "point": "team logo",
+    "label": {
+     "key": "attempts",
+     "suffix": " dropbacks"
+    }
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "short_of_sticks_pct": 41.9,
+     "conv_pct": 36.4,
+     "air_yards_per_attempt": 10.8,
+     "attempts": 33,
+     "sacks": 0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "short_of_sticks_pct": 35.7,
+     "conv_pct": 44.1,
+     "air_yards_per_attempt": 13.5,
+     "attempts": 34,
+     "sacks": 1,
+     "highlight": true
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "short_of_sticks_pct": 60.0,
+     "conv_pct": 16.7,
+     "air_yards_per_attempt": 7.5,
+     "attempts": 24,
+     "sacks": 4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "short_of_sticks_pct": 50.0,
+     "conv_pct": 20.0,
+     "air_yards_per_attempt": 11.6,
+     "attempts": 20,
+     "sacks": 8,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "short_of_sticks_pct": 53.6,
+     "conv_pct": 36.7,
+     "air_yards_per_attempt": 12.0,
+     "attempts": 30,
+     "sacks": 2,
+     "highlight": false
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "short_of_sticks_pct": 57.9,
+     "conv_pct": 45.0,
+     "air_yards_per_attempt": 9.7,
+     "attempts": 20,
+     "sacks": 1,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "short_of_sticks_pct": 60.9,
+     "conv_pct": 20.0,
+     "air_yards_per_attempt": 6.6,
+     "attempts": 25,
+     "sacks": 2,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "short_of_sticks_pct": 52.9,
+     "conv_pct": 13.3,
+     "air_yards_per_attempt": 12.2,
+     "attempts": 30,
+     "sacks": 5,
+     "highlight": true
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "short_of_sticks_pct": 72.2,
+     "conv_pct": 21.7,
+     "air_yards_per_attempt": 6.8,
+     "attempts": 23,
+     "sacks": 2,
+     "highlight": true
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "short_of_sticks_pct": 39.4,
+     "conv_pct": 35.1,
+     "air_yards_per_attempt": 11.4,
+     "attempts": 37,
+     "sacks": 1,
+     "highlight": false
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "short_of_sticks_pct": 47.4,
+     "conv_pct": 28.0,
+     "air_yards_per_attempt": 12.7,
+     "attempts": 25,
+     "sacks": 4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "short_of_sticks_pct": 25.0,
+     "conv_pct": 21.4,
+     "air_yards_per_attempt": 13.0,
+     "attempts": 14,
+     "sacks": 2,
+     "highlight": false
+    }
+   ],
+   "callouts": [
+    "Half of all SWAC throws on 3rd & 5+ land short of the line to gain",
+    "B-CU's defense allows 3 of 25 on 3rd & 5+ dropbacks (6 sacks, 3 takeaways); its offense has been sacked 8 times in 20"
+   ]
+  },
+  {
+   "slide": 6,
+   "post": 3,
+   "id": "where_third_down_starts",
+   "title": "Where 3rd down starts",
+   "chart": {
+    "type": "stacked_bar_horizontal",
+    "sort": "long_share_desc",
+    "segments": [
+     {
+      "key": "short",
+      "label": "3rd & 1-2"
+     },
+     {
+      "key": "medium",
+      "label": "3rd & 3-6"
+     },
+     {
+      "key": "long",
+      "label": "3rd & 7+"
+     }
+    ],
+    "end_label": {
+     "key": "avg_to_go",
+     "label": "avg to go",
+     "format": "number_1dp"
+    },
+    "reference": {
+     "value": 7.9,
+     "label": "SWAC avg 3rd & 7.9"
+    }
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "short": 11,
+     "medium": 14,
+     "long": 30,
+     "long_share_pct": 54.5,
+     "avg_to_go": 7.0,
+     "conv_pct": 43.6,
+     "short_yardage_att": 13,
+     "short_yardage_conv_pct": 69.2,
+     "short_yardage_run_pct": 84.6,
+     "defense_short_yardage_stuffs": 3,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "short": 8,
+     "medium": 15,
+     "long": 34,
+     "long_share_pct": 59.6,
+     "avg_to_go": 8.4,
+     "conv_pct": 42.1,
+     "short_yardage_att": 12,
+     "short_yardage_conv_pct": 66.7,
+     "short_yardage_run_pct": 75.0,
+     "defense_short_yardage_stuffs": 0,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "short": 6,
+     "medium": 24,
+     "long": 24,
+     "long_share_pct": 44.4,
+     "avg_to_go": 6.6,
+     "conv_pct": 31.5,
+     "short_yardage_att": 11,
+     "short_yardage_conv_pct": 63.6,
+     "short_yardage_run_pct": 100.0,
+     "defense_short_yardage_stuffs": 8,
+     "highlight": true
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "short": 12,
+     "medium": 14,
+     "long": 27,
+     "long_share_pct": 50.9,
+     "avg_to_go": 7.8,
+     "conv_pct": 39.6,
+     "short_yardage_att": 12,
+     "short_yardage_conv_pct": 75.0,
+     "short_yardage_run_pct": 83.3,
+     "defense_short_yardage_stuffs": 4,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "short": 2,
+     "medium": 18,
+     "long": 33,
+     "long_share_pct": 62.3,
+     "avg_to_go": 7.8,
+     "conv_pct": 28.3,
+     "short_yardage_att": 3,
+     "short_yardage_conv_pct": 0.0,
+     "short_yardage_run_pct": 0.0,
+     "defense_short_yardage_stuffs": 5,
+     "highlight": true
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "short": 5,
+     "medium": 20,
+     "long": 19,
+     "long_share_pct": 43.2,
+     "avg_to_go": 7.7,
+     "conv_pct": 47.7,
+     "short_yardage_att": 6,
+     "short_yardage_conv_pct": 50.0,
+     "short_yardage_run_pct": 100.0,
+     "defense_short_yardage_stuffs": 3,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "short": 12,
+     "medium": 19,
+     "long": 29,
+     "long_share_pct": 48.3,
+     "avg_to_go": 7.8,
+     "conv_pct": 41.7,
+     "short_yardage_att": 16,
+     "short_yardage_conv_pct": 75.0,
+     "short_yardage_run_pct": 93.8,
+     "defense_short_yardage_stuffs": 4,
+     "highlight": true
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "short": 4,
+     "medium": 14,
+     "long": 39,
+     "long_share_pct": 68.4,
+     "avg_to_go": 10.7,
+     "conv_pct": 33.3,
+     "short_yardage_att": 5,
+     "short_yardage_conv_pct": 60.0,
+     "short_yardage_run_pct": 80.0,
+     "defense_short_yardage_stuffs": 4,
+     "highlight": true
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "short": 11,
+     "medium": 14,
+     "long": 30,
+     "long_share_pct": 54.5,
+     "avg_to_go": 8.0,
+     "conv_pct": 34.5,
+     "short_yardage_att": 14,
+     "short_yardage_conv_pct": 57.1,
+     "short_yardage_run_pct": 85.7,
+     "defense_short_yardage_stuffs": 3,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "short": 12,
+     "medium": 16,
+     "long": 35,
+     "long_share_pct": 55.6,
+     "avg_to_go": 7.4,
+     "conv_pct": 41.3,
+     "short_yardage_att": 15,
+     "short_yardage_conv_pct": 60.0,
+     "short_yardage_run_pct": 73.3,
+     "defense_short_yardage_stuffs": 2,
+     "highlight": false
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "short": 7,
+     "medium": 15,
+     "long": 27,
+     "long_share_pct": 55.1,
+     "avg_to_go": 8.0,
+     "conv_pct": 42.9,
+     "short_yardage_att": 8,
+     "short_yardage_conv_pct": 75.0,
+     "short_yardage_run_pct": 100.0,
+     "defense_short_yardage_stuffs": 2,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "short": 6,
+     "medium": 8,
+     "long": 22,
+     "long_share_pct": 61.1,
+     "avg_to_go": 7.2,
+     "conv_pct": 41.7,
+     "short_yardage_att": 8,
+     "short_yardage_conv_pct": 37.5,
+     "short_yardage_run_pct": 75.0,
+     "defense_short_yardage_stuffs": 1,
+     "highlight": false
+    }
+   ],
+   "callouts": [
+    "J-State runs on 94% of its 3rd/4th & 2-or-less and converts 75%",
+    "FAMU has thrown on all three of its own and failed all three",
+    "Bama State's defense: 8 short-yardage stuffs, most in the SWAC"
+   ]
+  },
+  {
+   "slide": 7,
+   "post": 4,
+   "id": "fourth_and_short_map",
+   "title": "4th & 1 or 2: who leaves yards on the table",
+   "chart": {
+    "type": "field_map",
+    "field": "half field turned sideways: own goal line on the left, the opponent's 20 on the right (red zone left off)",
+    "x": {
+     "key": "yards_to_goal",
+     "label": "Yards to the goal line",
+     "reversed": true,
+     "min": 20,
+     "max": 100
+    },
+    "y": {
+     "key": "team",
+     "label": "one row per team"
+    },
+    "color": {
+     "key": "decision",
+     "values": {
+      "go": "green",
+      "fg": "orange",
+      "punt": "gray"
+     }
+    },
+    "marker": {
+     "go_converted": "filled",
+     "go_failed": "hollow"
+    }
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 0,
+     "q": 1,
+     "clock": "14:53",
+     "to_go": 2,
+     "yards_to_goal": 80,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 0,
+     "q": 1,
+     "clock": "07:23",
+     "to_go": 2,
+     "yards_to_goal": 69,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 0,
+     "q": 1,
+     "clock": "03:14",
+     "to_go": 1,
+     "yards_to_goal": 66,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 0,
+     "q": 2,
+     "clock": "12:23",
+     "to_go": 1,
+     "yards_to_goal": 51,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 4,
+     "q": 4,
+     "clock": "03:55",
+     "to_go": 1,
+     "yards_to_goal": 51,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 5,
+     "q": 1,
+     "clock": "14:53",
+     "to_go": 1,
+     "yards_to_goal": 57,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 6,
+     "q": 2,
+     "clock": "13:55",
+     "to_go": 2,
+     "yards_to_goal": 56,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "week": 7,
+     "q": 1,
+     "clock": "09:30",
+     "to_go": 1,
+     "yards_to_goal": 54,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "week": 2,
+     "q": 3,
+     "clock": "13:24",
+     "to_go": 1,
+     "yards_to_goal": 80,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "week": 4,
+     "q": 1,
+     "clock": "04:28",
+     "to_go": 1,
+     "yards_to_goal": 61,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "week": 5,
+     "q": 3,
+     "clock": "14:47",
+     "to_go": 2,
+     "yards_to_goal": 21,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "week": 4,
+     "q": 2,
+     "clock": "00:30",
+     "to_go": 2,
+     "yards_to_goal": 24,
+     "decision": "fg",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "week": 4,
+     "q": 3,
+     "clock": "12:20",
+     "to_go": 2,
+     "yards_to_goal": 54,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "week": 5,
+     "q": 3,
+     "clock": "13:26",
+     "to_go": 2,
+     "yards_to_goal": 58,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "week": 6,
+     "q": 3,
+     "clock": "04:04",
+     "to_go": 1,
+     "yards_to_goal": 21,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "week": 6,
+     "q": 4,
+     "clock": "06:03",
+     "to_go": 1,
+     "yards_to_goal": 51,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "week": 7,
+     "q": 3,
+     "clock": "11:45",
+     "to_go": 1,
+     "yards_to_goal": 76,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "week": 4,
+     "q": 4,
+     "clock": "13:16",
+     "to_go": 2,
+     "yards_to_goal": 51,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "week": 7,
+     "q": 1,
+     "clock": "05:56",
+     "to_go": 1,
+     "yards_to_goal": 80,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "week": 7,
+     "q": 4,
+     "clock": "02:40",
+     "to_go": 1,
+     "yards_to_goal": 82,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "week": 4,
+     "q": 1,
+     "clock": "08:19",
+     "to_go": 2,
+     "yards_to_goal": 60,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "week": 4,
+     "q": 2,
+     "clock": "07:09",
+     "to_go": 1,
+     "yards_to_goal": 67,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "week": 6,
+     "q": 2,
+     "clock": "12:10",
+     "to_go": 1,
+     "yards_to_goal": 50,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "week": 6,
+     "q": 3,
+     "clock": "06:44",
+     "to_go": 1,
+     "yards_to_goal": 52,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "week": 7,
+     "q": 2,
+     "clock": "14:51",
+     "to_go": 2,
+     "yards_to_goal": 72,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "week": 7,
+     "q": 4,
+     "clock": "15:00",
+     "to_go": 1,
+     "yards_to_goal": 82,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "week": 6,
+     "q": 1,
+     "clock": "11:36",
+     "to_go": 2,
+     "yards_to_goal": 47,
+     "decision": "punt",
+     "converted": null,
+     "highlight": true
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "week": 6,
+     "q": 2,
+     "clock": "12:03",
+     "to_go": 1,
+     "yards_to_goal": 52,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "week": 4,
+     "q": 1,
+     "clock": "14:53",
+     "to_go": 1,
+     "yards_to_goal": 55,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "week": 5,
+     "q": 3,
+     "clock": "14:53",
+     "to_go": 1,
+     "yards_to_goal": 79,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "week": 5,
+     "q": 3,
+     "clock": "03:54",
+     "to_go": 1,
+     "yards_to_goal": 22,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "week": 7,
+     "q": 2,
+     "clock": "02:29",
+     "to_go": 1,
+     "yards_to_goal": 37,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "week": 6,
+     "q": 2,
+     "clock": "07:44",
+     "to_go": 1,
+     "yards_to_goal": 74,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "week": 6,
+     "q": 2,
+     "clock": "00:58",
+     "to_go": 1,
+     "yards_to_goal": 41,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "week": 7,
+     "q": 3,
+     "clock": "08:38",
+     "to_go": 2,
+     "yards_to_goal": 65,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "week": 4,
+     "q": 2,
+     "clock": "15:00",
+     "to_go": 2,
+     "yards_to_goal": 65,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "week": 4,
+     "q": 2,
+     "clock": "02:43",
+     "to_go": 1,
+     "yards_to_goal": 53,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "week": 4,
+     "q": 4,
+     "clock": "14:44",
+     "to_go": 1,
+     "yards_to_goal": 49,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "week": 5,
+     "q": 4,
+     "clock": "02:03",
+     "to_go": 2,
+     "yards_to_goal": 43,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "week": 0,
+     "q": 4,
+     "clock": "09:12",
+     "to_go": 2,
+     "yards_to_goal": 62,
+     "decision": "go",
+     "converted": false,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "week": 5,
+     "q": 1,
+     "clock": "14:09",
+     "to_go": 2,
+     "yards_to_goal": 25,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "week": 6,
+     "q": 1,
+     "clock": "09:20",
+     "to_go": 1,
+     "yards_to_goal": 77,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "week": 6,
+     "q": 2,
+     "clock": "13:29",
+     "to_go": 2,
+     "yards_to_goal": 78,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "week": 7,
+     "q": 1,
+     "clock": "06:45",
+     "to_go": 1,
+     "yards_to_goal": 52,
+     "decision": "go",
+     "converted": true,
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "week": 7,
+     "q": 3,
+     "clock": "08:11",
+     "to_go": 2,
+     "yards_to_goal": 62,
+     "decision": "punt",
+     "converted": null,
+     "highlight": false
+    }
+   ],
+   "teams": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "short_decisions": 9,
+     "short_go": 2,
+     "short_yardage_conv_pct": 69.2,
+     "short_yardage_att": 13
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "short_decisions": 5,
+     "short_go": 4,
+     "short_yardage_conv_pct": 66.7,
+     "short_yardage_att": 12
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "short_decisions": 9,
+     "short_go": 5,
+     "short_yardage_conv_pct": 63.6,
+     "short_yardage_att": 11
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "short_decisions": 4,
+     "short_go": 0,
+     "short_yardage_conv_pct": 75.0,
+     "short_yardage_att": 12
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "short_decisions": 6,
+     "short_go": 1,
+     "short_yardage_conv_pct": 0.0,
+     "short_yardage_att": 3
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "short_decisions": 2,
+     "short_go": 1,
+     "short_yardage_conv_pct": 50.0,
+     "short_yardage_att": 6
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "short_decisions": 5,
+     "short_go": 4,
+     "short_yardage_conv_pct": 75.0,
+     "short_yardage_att": 16
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "short_decisions": 3,
+     "short_go": 1,
+     "short_yardage_conv_pct": 60.0,
+     "short_yardage_att": 5
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "short_decisions": 4,
+     "short_go": 3,
+     "short_yardage_conv_pct": 57.1,
+     "short_yardage_att": 14
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "short_decisions": 6,
+     "short_go": 3,
+     "short_yardage_conv_pct": 60.0,
+     "short_yardage_att": 15
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "short_decisions": 1,
+     "short_go": 1,
+     "short_yardage_conv_pct": 75.0,
+     "short_yardage_att": 8
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "short_decisions": 4,
+     "short_go": 2,
+     "short_yardage_conv_pct": 37.5,
+     "short_yardage_att": 8
+    }
+   ],
+   "callouts": [
+    "AAMU converts 9 of 13 on 3rd/4th & 2-or-less, and has punted three times on 4th & 1-2 between its own 43 and midfield",
+    "FAMU has punted twice from the same stretch; 8 punts on 4th & 1-2 from a team's own 40 or beyond, league-wide",
+    "Most of the 4th & short field goals came in the final 30 seconds of a half"
+   ]
+  },
+  {
+   "slide": 8,
+   "post": 4,
+   "id": "money_down_quadrant",
+   "title": "3rd & 4th down: who wins it, who gives it back",
+   "chart": {
+    "type": "scatter",
+    "x": {
+     "key": "offense_wpa_per_game",
+     "label": "Offense: win probability added per game on 3rd & 4th down (% pts)",
+     "format": "signed_number_1dp",
+     "reference": {
+      "value": 26.6,
+      "label": "SWAC avg"
+     }
+    },
+    "y": {
+     "key": "defense_wpa_per_game",
+     "label": "Defense: win probability saved per game on 3rd & 4th down (% pts)",
+     "format": "signed_number_1dp",
+     "reference": {
+      "value": -24.1,
+      "label": "SWAC avg"
+     }
+    },
+    "quadrants": {
+     "top_right": "Wins both sides",
+     "bottom_right": "Wins it, gives it back",
+     "top_left": "Defense carries it",
+     "bottom_left": "Loses both"
+    },
+    "point": "team logo"
+   },
+   "points": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "offense_wpa_per_game": 22.8,
+     "defense_wpa_per_game": -29.0,
+     "games": 5,
+     "money_down_conv_pct": 43.9,
+     "fourth_down_go": 2,
+     "fourth_down_go_conv": 1,
+     "late_close_att": 7,
+     "late_close_conv": 3,
+     "defense_short_yardage_allowed": "9/14",
+     "highlight": false
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "offense_wpa_per_game": 56.0,
+     "defense_wpa_per_game": -54.9,
+     "games": 4,
+     "money_down_conv_pct": 46.3,
+     "fourth_down_go": 10,
+     "fourth_down_go_conv": 7,
+     "late_close_att": 20,
+     "late_close_conv": 8,
+     "defense_short_yardage_allowed": "7/7",
+     "highlight": true
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "offense_wpa_per_game": 3.7,
+     "defense_wpa_per_game": -11.5,
+     "games": 5,
+     "money_down_conv_pct": 32.2,
+     "fourth_down_go": 5,
+     "fourth_down_go_conv": 2,
+     "late_close_att": 7,
+     "late_close_conv": 1,
+     "defense_short_yardage_allowed": "7/17",
+     "highlight": false
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "offense_wpa_per_game": 23.8,
+     "defense_wpa_per_game": 5.1,
+     "games": 4,
+     "money_down_conv_pct": 40.7,
+     "fourth_down_go": 1,
+     "fourth_down_go_conv": 1,
+     "late_close_att": 6,
+     "late_close_conv": 1,
+     "defense_short_yardage_allowed": "5/9",
+     "highlight": true
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "offense_wpa_per_game": 12.7,
+     "defense_wpa_per_game": -5.2,
+     "games": 4,
+     "money_down_conv_pct": 27.6,
+     "fourth_down_go": 5,
+     "fourth_down_go_conv": 1,
+     "late_close_att": 4,
+     "late_close_conv": 1,
+     "defense_short_yardage_allowed": "6/12",
+     "highlight": false
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "offense_wpa_per_game": 36.3,
+     "defense_wpa_per_game": -21.6,
+     "games": 4,
+     "money_down_conv_pct": 46.8,
+     "fourth_down_go": 3,
+     "fourth_down_go_conv": 1,
+     "late_close_att": 4,
+     "late_close_conv": 1,
+     "defense_short_yardage_allowed": "12/16",
+     "highlight": false
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "offense_wpa_per_game": 34.9,
+     "defense_wpa_per_game": -37.8,
+     "games": 4,
+     "money_down_conv_pct": 46.2,
+     "fourth_down_go": 5,
+     "fourth_down_go_conv": 5,
+     "late_close_att": 6,
+     "late_close_conv": 4,
+     "defense_short_yardage_allowed": "5/9",
+     "highlight": true
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "offense_wpa_per_game": 24.6,
+     "defense_wpa_per_game": -0.4,
+     "games": 4,
+     "money_down_conv_pct": 33.9,
+     "fourth_down_go": 2,
+     "fourth_down_go_conv": 1,
+     "late_close_att": 2,
+     "late_close_conv": 1,
+     "defense_short_yardage_allowed": "3/8",
+     "highlight": false
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "offense_wpa_per_game": 0.2,
+     "defense_wpa_per_game": -29.9,
+     "games": 5,
+     "money_down_conv_pct": 37.1,
+     "fourth_down_go": 7,
+     "fourth_down_go_conv": 4,
+     "late_close_att": 13,
+     "late_close_conv": 3,
+     "defense_short_yardage_allowed": "7/11",
+     "highlight": true
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "offense_wpa_per_game": 30.8,
+     "defense_wpa_per_game": -4.9,
+     "games": 4,
+     "money_down_conv_pct": 40.0,
+     "fourth_down_go": 7,
+     "fourth_down_go_conv": 2,
+     "late_close_att": 5,
+     "late_close_conv": 3,
+     "defense_short_yardage_allowed": "5/7",
+     "highlight": false
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "offense_wpa_per_game": 43.5,
+     "defense_wpa_per_game": -53.5,
+     "games": 4,
+     "money_down_conv_pct": 45.1,
+     "fourth_down_go": 2,
+     "fourth_down_go_conv": 2,
+     "late_close_att": 7,
+     "late_close_conv": 3,
+     "defense_short_yardage_allowed": "8/11",
+     "highlight": false
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "offense_wpa_per_game": 29.3,
+     "defense_wpa_per_game": -45.0,
+     "games": 3,
+     "money_down_conv_pct": 43.9,
+     "fourth_down_go": 5,
+     "fourth_down_go_conv": 3,
+     "late_close_att": 8,
+     "late_close_conv": 3,
+     "defense_short_yardage_allowed": "6/8",
+     "highlight": false
+    }
+   ],
+   "callouts": [
+    "J-State: 5 for 5 on 4th down, 3 of them in its own half; 4 of 6 on 3rd/4th down late and close",
+    "PVAMU: 3 of 13 on 3rd/4th down late and close",
+    "Alcorn: 10 fourth-down goes, 7 converted -- and its defense has allowed 7 of 7 short-yardage tries"
+   ]
+  }
+ ]
+}

@@ -2,7 +2,7 @@ import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import { Poster, PosterTitle, PosterBanner, PosterSection, CARD_BG, HAIRLINE, Head, Shaded, shadeVsLeague } from "./PosterChrome";
 import {
   buildHeader, buildBoxscore, leagueEntry, teamAccent, teamLogo, teamShort, teamName,
-  shortName, num, rate1, signed1, signed2, pct0, DASH, ZONE_DEPTHS, ZONE_LANES, zoneCell,
+  shortName, num, rate1, signed1, signed2, pct0, DASH, ZONE_DEPTHS, CALL_ZONE_DEPTHS, ZONE_LANES, zoneCell,
 } from "./exportData";
 import { PASS_ZONE_YPA_SCALE, heatAccent, heatFill } from "../page/boxscore/ProductionPrimitives";
 import { getTeamColor, getTeamSecondary } from "../../organisms/test/QGameBoxScore";
@@ -89,7 +89,8 @@ const Table = ({ columns, rows, total, accent, rowKey, gap = "14px" }) => {
  * Heat is the page's: same team heat colour, same fixed yds/att scale, same
  * neutral cell under two attempts (heatFill in ProductionPrimitives).
  */
-const ZoneGrid = ({ grid, heat }) => {
+const ZoneGrid = ({ grid, heat, byCall = false }) => {
+  const depths = byCall ? CALL_ZONE_DEPTHS : ZONE_DEPTHS;
   return (
     <Box>
       <Grid templateColumns="64px repeat(3, minmax(0, 1fr))" gap="8px" alignItems="center">
@@ -97,11 +98,11 @@ const ZoneGrid = ({ grid, heat }) => {
         {ZONE_LANES.map((l) => (
           <Text key={l.key} textAlign="center" fontSize="12px" fontWeight="900" color="rgba(255,255,255,0.45)" textTransform="uppercase" letterSpacing="0.14em">{l.label}</Text>
         ))}
-        {ZONE_DEPTHS.map((d) => (
+        {depths.map((d) => (
           <Box key={d.key} display="contents">
             <Box>
               <Text fontSize="12px" fontWeight="900" color="rgba(255,255,255,0.6)" textTransform="uppercase" letterSpacing="0.1em" lineHeight={1.1}>{d.label}</Text>
-              <Text fontSize="10px" fontWeight="700" color="rgba(255,255,255,0.3)">{d.range}</Text>
+              {d.range && <Text fontSize="10px" fontWeight="700" color="rgba(255,255,255,0.3)">{d.range}</Text>}
             </Box>
             {ZONE_LANES.map((l) => {
               const c = zoneCell(grid, d.key, l.key);
@@ -121,6 +122,12 @@ const ZoneGrid = ({ grid, heat }) => {
           </Box>
         ))}
       </Grid>
+      {/* Throws the crew left unplaceable — counted, never spread into cells. */}
+      {(grid?.uncharted?.attempts ?? 0) > 0 && (
+        <Text mt="10px" fontSize="12px" fontWeight="900" color="rgba(255,255,255,0.5)" textTransform="uppercase" letterSpacing="0.1em">
+          {grid.uncharted.attempts} not charted
+        </Text>
+      )}
     </Box>
   );
 };
@@ -144,7 +151,9 @@ export const BoxscorePoster = ({ game, leagueAvg, teamId, innerRef }) => {
   // The Passing card shows one quarterback: the top performer by passing production
   // (ties and missing ratings fall back to the order the file gives). The zone
   // grid beside the tiles is that same passer's.
-  const lead = [...box.passers].sort((a, b) => (b.production ?? -Infinity) - (a.production ?? -Infinity))[0] ?? null;
+  // The QB who played the game: most attempts, production only to break a tie.
+  // (By production alone a 0/1 backup at 0.1 beat a 28-attempt starter at -5.8.)
+  const lead = [...box.passers].sort((a, b) => (b.attempts ?? 0) - (a.attempts ?? 0) || (b.production ?? -Infinity) - (a.production ?? -Infinity))[0] ?? null;
 
   // Passing stats sit in tiles, four to a row, so the zone grid gets 2/5 of the card.
   const passTiles = (r) => [
@@ -227,7 +236,7 @@ export const BoxscorePoster = ({ game, leagueAvg, teamId, innerRef }) => {
                   </Box>
                 ))}
               </Flex>
-              <ZoneGrid grid={lead?.grid ?? null} heat={heatAccent(getTeamColor(teamId), getTeamSecondary(teamId))} />
+              <ZoneGrid grid={lead?.grid ?? null} byCall={!!lead?.gridByCall} heat={heatAccent(getTeamColor(teamId), getTeamSecondary(teamId))} />
             </Grid>
           </PosterSection>
         </Card>

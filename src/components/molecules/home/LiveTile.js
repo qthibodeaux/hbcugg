@@ -1,6 +1,7 @@
 import { createContext, useContext, useRef, useState } from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // LIVE TILE — one Windows-8-style tile for the home hero.
@@ -61,6 +62,8 @@ const TILE_CSS = `
   .hl-x-fade-out  { animation: hlFadeOut ${SLIDE_MS}ms ease both; }
   .hl-x-fade-in   { animation: hlFadeIn ${SLIDE_MS}ms ease both; }
   .hl-tick  { animation: hlTick var(--hl-rotate, 7000ms) linear infinite; }
+  /* A tile holds still under the pointer, so it can't flip under a click. */
+  .hl-tile:hover .hl-tick { animation-play-state: paused; }
   .hl-pulse { animation: hlPulse 1.6s ease-in-out infinite; }
   .hl-mount { animation: hlMount 0.6s cubic-bezier(0.16, 1, 0.3, 1) both; animation-delay: var(--hl-mount-delay, 0ms); }
   @media (prefers-reduced-motion: reduce) {
@@ -163,7 +166,38 @@ export const Mark = ({ logo, label, size = 10 }) =>
 
 export const TileStyles = () => <style>{TILE_CSS}</style>;
 
-const LiveTile = ({ href, hrefs, faces, rotateMs = 7000, transition = "slide", mountDelay = 0, accent = TILE_BRAND, variant = "standard", onClick }) => {
+// The tile's call to action: a full-width bar along the bottom naming where a
+// tap goes right now — the face's own page (a game, a player, a school, a
+// team's profile), or the hub for a face about the whole league. It changes
+// with the face. Dark at rest, filled with the accent when the tile is hovered.
+const CtaBar = ({ cta, accent, mobile }) => {
+  const Icon = cta.icon;
+  return (
+    <Flex
+      flexShrink={0}
+      position="relative"
+      zIndex={1}
+      align="center"
+      gap={mobile ? "0.45rem" : "0.65rem"}
+      px={mobile ? "0.6rem" : "1rem"}
+      h={mobile ? "2.2rem" : "2.75rem"}
+      bg="rgba(255,255,255,0.06)"
+      borderTop="1px solid"
+      borderColor="whiteAlpha.100"
+      color="white"
+      transition="background 0.15s"
+      _groupHover={{ bg: accent }}
+    >
+      {Icon && <Box w={mobile ? "0.95rem" : "1.15rem"} h={mobile ? "0.95rem" : "1.15rem"} flexShrink={0} color={accent} _groupHover={{ color: "white" }}><Icon size="100%" strokeWidth={2.5} /></Box>}
+      <Text flex={1} minW={0} fontSize={mobile ? "0.72rem" : "0.9rem"} fontWeight="black" textTransform="uppercase" letterSpacing="0.08em" lineClamp={1}>
+        {cta.label}
+      </Text>
+      <Box w={mobile ? "0.95rem" : "1.15rem"} h={mobile ? "0.95rem" : "1.15rem"} flexShrink={0}><ArrowRight size="100%" strokeWidth={2.8} /></Box>
+    </Flex>
+  );
+};
+
+const LiveTile = ({ href, hrefs, faces, rotateMs = 7000, transition = "slide", mountDelay = 0, accent = TILE_BRAND, variant = "standard", onClick, cta = null, ctas = null }) => {
   const mobile = variant === "mobile";
   const [n, setN] = useState(0);
   const count = faces.length;
@@ -174,7 +208,7 @@ const LiveTile = ({ href, hrefs, faces, rotateMs = 7000, transition = "slide", m
       as={Link}
       to={hrefs?.[cycle] ?? href}
       onClick={onClick}
-      className="hl-mount"
+      className="group hl-tile hl-mount"
       style={{
         "--hl-mount-delay": `${mountDelay}ms`,
         "--hl-pad": mobile ? "3cqmin" : "5cqmin",
@@ -217,6 +251,7 @@ const LiveTile = ({ href, hrefs, faces, rotateMs = 7000, transition = "slide", m
         </TileVariantContext.Provider>
       </Flex>
 
+      {(ctas?.[cycle] ?? cta) && <CtaBar cta={ctas?.[cycle] ?? cta} accent={accent} mobile={mobile} />}
     </Box>
   );
 };

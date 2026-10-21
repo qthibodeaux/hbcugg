@@ -157,13 +157,14 @@ const BarChartColumn = ({ games, activeIndex, primary, secondary, onSelect }) =>
   </Box>
 );
 
-const SpatialColumn = ({ player, primary, secondary, gameOverride, fieldMap, fieldMapViews, depthBands, productionComponents }) => (
+const SpatialColumn = ({ player, primary, secondary, gameOverride, havoc, fieldMap, fieldMapViews, depthBands, productionComponents }) => (
   <Box h="full" gridRow={{ md: "1 / 3" }} position="relative" overflow="hidden">
     <PlayerProductionMap
       player={player}
       primary={primary}
       secondary={secondary}
       gameOverride={gameOverride}
+      havoc={havoc}
       fieldMap={fieldMap}
       fieldMapViews={fieldMapViews}
       depthBands={depthBands}
@@ -286,6 +287,7 @@ export const PlayerProfileControlStripV2 = ({
           primary={primary}
           secondary={secondary}
           gameOverride={activeGame.stats}
+          havoc={activeGame.havoc}
           fieldMap={activeGame.fieldMap}
           fieldMapViews={fieldMapViews}
           depthBands={depthBands}

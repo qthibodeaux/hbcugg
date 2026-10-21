@@ -3,6 +3,8 @@ import { Navigate, useParams } from "react-router-dom";
 import PageShell from "../../components/layouts/PageShell";
 import { HistorySheet } from "../../components/game/preview/PreviewTables";
 import { GamePreviewScout } from "../../components/game/preview/GamePreviewScout";
+import { GamePreviewScoutMobile } from "../../components/game/preview/GamePreviewScoutMobile";
+import { useLayoutDensity } from "../../hooks/useLayoutDensity";
 import { useGamePreview } from "../../hooks/useGamePreview";
 import { useGamePreviewScout } from "../../hooks/useGamePreviewScout";
 
@@ -21,6 +23,7 @@ const GamePreviewPage = () => {
   // The scout section (banner, strips, season sheets, QBs, unit matchups,
   // leaders) with its own Export; meeting history stays below it.
   const scout = useGamePreviewScout(model);
+  const { isMobile } = useLayoutDensity();
 
   if (playedStem) return <Navigate to={`/game/${playedStem}`} replace />;
 
@@ -29,6 +32,21 @@ const GamePreviewPage = () => {
   }
   if (notFound) {
     return <Message><Text color="text.muted">We couldn’t find that game on the schedule.</Text></Message>;
+  }
+
+  // Phones: their own tree, not PageShell — banner, sticky jump header, then
+  // the sections flush. History rides along as the last section.
+  if (isMobile) {
+    const hasHistory = (model?.meetings?.length ?? 0) > 0 || (model?.eventHistory?.items?.length ?? 0) > 0;
+    return (
+      <Box minH="100vh" bg="bg.primary" pt="var(--app-header-height)" pb="2.5rem">
+        {scout ? (
+          <GamePreviewScoutMobile m={scout} history={hasHistory ? <HistorySheet model={model} /> : null} />
+        ) : (
+          <Box px="0.75rem" py="1rem"><HistorySheet model={model} /></Box>
+        )}
+      </Box>
+    );
   }
 
   const body = (

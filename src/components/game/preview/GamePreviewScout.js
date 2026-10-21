@@ -38,14 +38,14 @@ const lift = (hex, t) => { const c = rgb(hex); return c ? `#${c.map((v) => Math.
 // The school's colour that reads on near-black: the primary when it is bright
 // enough, else a coloured secondary / accent (never plain white or black),
 // else the primary lifted. JSU → its blue, GSU → its gold.
-const brandOf = (id) => {
+export const brandOf = (id) => {
   const c = META[id]?.colors ?? {};
   if (c.primary && lum(c.primary) >= 70 && chroma(c.primary) > 40) return c.primary;
   const hue = [c.secondary, c.accent].find((x) => x && lum(x) >= 70 && chroma(x) > 40);
   if (hue) return hue;
   return c.primary ? lift(c.primary, 0.45) : BRAND;
 };
-const inkOn = (hex) => (lum(hex) > 150 ? "#0B0B0D" : "#FFFFFF");
+export const inkOn = (hex) => (lum(hex) > 150 ? "#0B0B0D" : "#FFFFFF");
 
 const Kicker = ({ children, color = DIM, ...rest }) => (
   <Text fontSize="0.62rem" fontWeight="900" color={color} textTransform="uppercase" letterSpacing="0.14em" lineHeight={1.2} {...rest}>{children}</Text>
@@ -138,7 +138,7 @@ const Banner = ({ m }) => {
 };
 
 // ── 3 · Strip ────────────────────────────────────────────────────────────────
-const STRIP = [["off_epa", "Off EPA / play"], ["def_epa", "Def EPA / play"], ["ppg", "Points / game"], ["allowed", "Allowed / game"], ["to_margin", "Turnover margin"]];
+export const STRIP = [["off_epa", "Off EPA / play"], ["def_epa", "Def EPA / play"], ["ppg", "Points / game"], ["allowed", "Allowed / game"], ["to_margin", "Turnover margin"]];
 const Strip = ({ side }) => {
   const color = brandOf(side.team_id);
   return (
@@ -158,8 +158,8 @@ const Strip = ({ side }) => {
 };
 
 // ── 4a · Sheets — counting | efficiency, rank of 18 ─────────────────────────
-const COUNTING = [["ypg", "Yds / game"], ["pass_ypg", "Pass yds / game"], ["rush_ypg", "Rush yds / game"], ["turnovers", "Turnovers"], ["pen_ypg", "Pen yds / game"]];
-const EFFICIENCY = [["net_epa", "Net EPA / play"], ["o_success", "Off success rate"], ["d_success", "Def success rate"], ["net_epa_drive", "Net EPA / drive"], ["net_fp", "Net field position"]];
+export const COUNTING = [["ypg", "Yds / game"], ["pass_ypg", "Pass yds / game"], ["rush_ypg", "Rush yds / game"], ["turnovers", "Turnovers"], ["pen_ypg", "Pen yds / game"]];
+export const EFFICIENCY = [["net_epa", "Net EPA / play"], ["o_success", "Off success rate"], ["d_success", "Def success rate"], ["net_epa_drive", "Net EPA / drive"], ["net_fp", "Net field position"]];
 const SheetCol = ({ title, rows, data, color, total }) => (
   <Box minW={0}>
     <Kicker mb={2}>{title}</Kicker>
@@ -200,7 +200,7 @@ const Sheets = ({ side, total }) => {
 // ── 4b · Quarterback — the line and the air-yards curve ─────────────────────
 // Share of a QB's attempts at each air-yard distance (how far past the line
 // the ball travelled in the air), against every League attempt.
-const AirYards = ({ ay, color }) => {
+export const AirYards = ({ ay, color }) => {
   const W = 300, H = 150, PADL = 26, PADB = 18, PADT = 8;
   const all = [...ay.bins, ...ay.league_bins].map((b) => b.share);
   const max = Math.max(...all, 0.01);
@@ -229,6 +229,42 @@ const AirYards = ({ ay, color }) => {
     </svg>
   );
 };
+// The QB's season passing, depth x direction — the same 3x3 the export
+// poster carries: completions / attempts and yards per zone, shaded by
+// completion rate. Page sizes in rem.
+const GRID_DEPTHS = [["deep", "Deep", ">12"], ["medium", "Med", "4-12"], ["short", "Short", "<4"]];
+const GRID_DIRS = [["L", "Left"], ["M", "Middle"], ["R", "Right"]];
+export const PassGrid = ({ cells, color }) => {
+  const at = (depth, dir) => cells.find((x) => x.depth === depth && x.direction === dir);
+  return (
+    <Grid templateColumns="3rem repeat(3, minmax(0,1fr))" gap="0.3rem" alignItems="stretch">
+      <Box />
+      {GRID_DIRS.map(([k, label]) => <Kicker key={k} textAlign="center">{label}</Kicker>)}
+      {GRID_DEPTHS.map(([dk, label, range]) => (
+        <Fragment key={dk}>
+          <Flex direction="column" justify="center">
+            <Kicker color="white">{label}</Kicker>
+            <Kicker fontSize="0.55rem">{range}</Kicker>
+          </Flex>
+          {GRID_DIRS.map(([k]) => {
+            const x = at(dk, k);
+            const att = x?.attempts ?? 0;
+            const rate = att ? x.completions / att : 0;
+            return (
+              <Flex key={k} direction="column" align="center" justify="center" h="3.2rem" borderRadius="0.35rem"
+                bg={att ? withAlpha(color, 0.15 + rate * 0.65) : "rgba(255,255,255,0.04)"}
+                border={att ? `1px solid ${withAlpha(color, 0.5)}` : "1px solid rgba(255,255,255,0.06)"}>
+                <Text fontSize="1rem" fontWeight="900" fontFamily="mono" lineHeight={1} color={att ? "white" : "rgba(255,255,255,0.35)"}>{att ? `${x.completions}/${att}` : "—"}</Text>
+                {att ? <Text fontSize="0.7rem" fontWeight="700" fontFamily="mono" lineHeight={1} mt="0.25rem" color="rgba(255,255,255,0.75)">{x.yards}y</Text> : null}
+              </Flex>
+            );
+          })}
+        </Fragment>
+      ))}
+    </Grid>
+  );
+};
+
 const Quarterback = ({ side }) => {
   const qb = side.qb;
   const color = brandOf(side.team_id);
@@ -254,30 +290,11 @@ const Quarterback = ({ side }) => {
           </Box>
         ))}
       </Grid>
-      {ay && <>
-      <Box mt={4}>
-        <Text fontSize="0.8rem" fontWeight="900" color="white">Where his passes travel</Text>
-        <Flex gap={3} mt={1} wrap="wrap">
-          <Flex align="center" gap={1}><Box w="0.9rem" h="2px" bg={color} /><Kicker fontSize="0.52rem">{teamShort(side.team_id)}</Kicker></Flex>
-          <Flex align="center" gap={1}><Box w="0.9rem" h="0" borderTop="2px dashed rgba(255,255,255,0.6)" /><Kicker fontSize="0.52rem">League</Kicker></Flex>
-        </Flex>
-      </Box>
-      <Grid templateColumns="minmax(0,1fr) 5rem" gap={3} mt={2} flex={1} minH="9rem">
-        <Box minH={0}><AirYards ay={ay} color={color} /></Box>
-        <Flex direction="column" minH={0}>
-          <Kicker fontSize="0.52rem" textAlign="center" mb={1.5}>Throws 30+ yds</Kicker>
-          <Flex align="flex-end" justify="center" gap={2} flex={1} minH={0}>
-            {[[ay.deep_30_share, color, teamShort(side.team_id)], [ay.league_deep_30_share, "rgba(255,255,255,0.35)", "Lg"]].map(([v, c, lab]) => (
-              <Flex key={lab} direction="column" align="center" justify="flex-end" h="full" gap={1}>
-                <Text fontSize="0.65rem" fontWeight="900" color="white">{(v * 100).toFixed(1)}%</Text>
-                <Box w="1.4rem" bg={c} borderRadius="sm" style={{ height: `${Math.max(6, v * 900)}%` }} />
-                <Kicker fontSize="0.5rem">{lab}</Kicker>
-              </Flex>
-            ))}
-          </Flex>
-        </Flex>
-      </Grid>
-      </>}
+      {qb.pass_map?.cells && (
+        <Box mt={4} flex={1}>
+          <PassGrid cells={qb.pass_map.cells} color={color} />
+        </Box>
+      )}
     </Panel>
   );
 };

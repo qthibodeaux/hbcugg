@@ -214,7 +214,8 @@ const ZONE_WEIGHTS = [
   { key: "right", label: "RIGHT", carryShare: 0.28, yardShare: 0.32, olShare: 0.58 },
 ];
 
-const zoneStatsFor = (zone) => {
+const zoneStatsFor = (zone, noData = false) => {
+  if (noData) return [{ label: "CAR", value: "—" }, { label: "YDS", value: "—" }];
   const stats = [
     { label: "CAR", value: zone.carries },
     { label: "YDS", value: zone.netYards },
@@ -224,7 +225,11 @@ const zoneStatsFor = (zone) => {
   return stats;
 };
 
-const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverride }) => {
+// `real` is the running back's own view: lanes come from the game's profile block
+// (field_map.rushing — attempts, yards, line / highlight yards, TD, fumbles per
+// lane, and the game's success rate), with a dash where there is none. Without
+// `real` (the OL view, which reuses this grid) the older estimates remain.
+const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverride, real = false, rushing = null }) => {
   const rush = Math.max(0, getComponent(player, "rushing_production"));
 
   const gameCarries = Number(gameOverride?.carries ?? gameOverride?.rushing_attempts ?? 0);
@@ -238,7 +243,7 @@ const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverri
   const baseTd = hasGame ? gameTd : Math.round(clamp(rush * 0.08, 0, 3));
   const baseFumbles = hasGame ? gameFumbles : (rush > 14 ? 1 : 0);
 
-  const zones = ZONE_WEIGHTS.map((z) => {
+  const legacyZones = ZONE_WEIGHTS.map((z) => {
     const netYards = Math.round(baseYards * z.yardShare);
     const olYards = Math.round(netYards * z.olShare);
     return {
@@ -251,28 +256,47 @@ const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverri
       fumbles: 0,
     };
   });
-  if (baseTd > 0) zones.reduce((a, b) => (b.netYards > a.netYards ? b : a)).td = baseTd;
-  if (baseFumbles > 0) zones.reduce((a, b) => (b.netYards < a.netYards ? b : a)).fumbles = baseFumbles;
+  if (baseTd > 0) legacyZones.reduce((a, b) => (b.netYards > a.netYards ? b : a)).td = baseTd;
+  if (baseFumbles > 0) legacyZones.reduce((a, b) => (b.netYards < a.netYards ? b : a)).fumbles = baseFumbles;
 
-  const nets = zones.map((z) => z.netYards);
-  const max = Math.max(0, ...nets) + 5;
-  const hasNegative = nets.some((n) => n < 0);
-  const min = hasNegative ? Math.min(0, ...nets) - 5 : 0;
+  const noData = real && !rushing?.available;
+  const zones = real
+    ? [["left", "LEFT", "L"], ["middle", "MIDDLE", "M"], ["right", "RIGHT", "R"]].map(([key, label, dir]) => {
+        const c = rushing?.available ? rushing.cells?.find((x) => x.direction === dir) : null;
+        return {
+          key,
+          label,
+          carries: Number(c?.attempts ?? 0),
+          netYards: Number(c?.yards ?? 0),
+          olYards: Number(c?.line_yards ?? 0),
+          highlightYards: Number(c?.highlight_yards ?? 0),
+          td: Number(c?.touchdowns ?? 0),
+          fumbles: Number(c?.fumbles ?? 0),
+        };
+      })
+    : legacyZones.map((z) => ({ ...z, highlightYards: z.netYards - z.olYards }));
+  // The line segment grows from zero to the line yards, the highlight segment
+  // stacks on it; a lane's bar ends at the sum.
+  zones.forEach((z) => { z.barTop = z.olYards + z.highlightYards; });
+
+  const extents = zones.flatMap((z) => [z.olYards, z.barTop, z.netYards]);
+  const max = Math.max(0, ...extents) + 5;
+  const hasNegative = extents.some((n) => n < 0);
+  const min = hasNegative ? Math.min(0, ...extents) - 5 : 0;
   const span = max - min || 1;
   const pctFor = (v) => ((v - min) / span) * 100;
   const zeroPct = pctFor(0);
 
   const totalCarries = zones.reduce((s, z) => s + z.carries, 0);
   const totalYards = zones.reduce((s, z) => s + z.netYards, 0);
-  const totalOlYards = zones.reduce((s, z) => s + z.olYards, 0);
-  const totalHighlightYards = totalYards - totalOlYards;
+  const totalHighlightYards = zones.reduce((s, z) => s + z.highlightYards, 0);
   const totalTd = zones.reduce((s, z) => s + z.td, 0);
   const totalFumbles = zones.reduce((s, z) => s + z.fumbles, 0);
   const yardsPerCarry = totalCarries > 0 ? totalYards / totalCarries : 0;
   const highlightYardsPerCarry = totalCarries > 0 ? totalHighlightYards / totalCarries : 0;
   // Estimated pending real per-carry success/failure data — scales with production
   // the same way other mock-derived fields in this file do (see OLCombinedMap).
-  const successRate = clamp(38 + rush * 1.3, 30, 72);
+  const successRate = real ? (rushing?.success_rate != null ? Number(rushing.success_rate) * 100 : null) : clamp(38 + rush * 1.3, 30, 72);
 
   const axisTicks = hasNegative ? [max, 0, min] : [max, Math.round(max / 2), 0];
 
@@ -285,9 +309,10 @@ const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverri
   bottomStats.push(
     { label: "YD/CAR", value: metric(yardsPerCarry, 1) },
     { label: "HLT/CAR", value: metric(highlightYardsPerCarry, 1) },
-    { label: "SUCCESS%", value: `${metric(successRate, 0)}%` },
+    { label: "SUCCESS%", value: successRate == null ? "—" : `${metric(successRate, 0)}%` },
   );
   if (totalFumbles > 0) bottomStats.push({ label: "FB", value: totalFumbles });
+  if (noData) bottomStats = [{ label: "RUSHES", value: "—" }, { label: "YARDS", value: "—" }];
   if (bottomOverride) bottomStats = bottomOverride;
 
   return (
@@ -386,8 +411,8 @@ const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverri
               position="absolute"
               left={0}
               right={0}
-              bottom={`${pctFor(Math.min(zone.olYards, zone.netYards))}%`}
-              h={`${Math.abs(pctFor(zone.netYards) - pctFor(zone.olYards))}%`}
+              bottom={`${pctFor(Math.min(zone.olYards, zone.barTop))}%`}
+              h={`${Math.abs(pctFor(zone.barTop) - pctFor(zone.olYards))}%`}
               bg={secondary}
             />
           </Box>
@@ -395,7 +420,7 @@ const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverri
 
         {/* Row 3 — per-zone CAR/YDS stats */}
         {zones.map((zone, i) => {
-          const stats = zoneStatsFor(zone);
+          const stats = zoneStatsFor(zone, noData);
           const cols = stats.length >= 4 ? 2 : stats.length;
           return (
             <Flex key={`f-${zone.key}`} gridColumn={i + 2} gridRow={3} align="center" px="0.35rem" pb="0.3rem" pt="0.2rem">
@@ -429,63 +454,39 @@ const RushingLaneMap = ({ player, primary, secondary, gameOverride, bottomOverri
 // HAVOC SPATIAL LOG (DEFENSE)
 // ═══════════════════════════════════════════════════════════════
 
-// gameOverride — a single game's real box-score shape (tfl, sacks, qb_hurries,
-// forced_fumbles, passes_defended), e.g. from public/data/1-game center/games/{year}/*.json's
-// individual_stats[team].defense[player] entries. Falls back to season-level
-// estimates when a specific game isn't selected.
-//
-// PIPELINE NOTE: real per-play zone (left/middle/right) + depth-off-LOS
-// coordinates don't exist yet. Once a real per-play feed exists, each event
-// gets a real x/y. Until then, every event is placed using the ordinal rule
-// confirmed for the zone-only case: split each zone's third of the x-axis
-// into N equal slots (N = events in that zone) and center each event in its
-// slot, in chronological order — this is also exactly what the real-x
-// version falls back to for any play where we only know the zone.
-const HAVOC_EVENT_DEFS = [
-  { key: "tfl", label: "TFL", baseDepth: -3, spread: 3 },
-  { key: "sacks", label: "SACK", baseDepth: -6, spread: 3.5 },
-  { key: "qb_hurries", label: "QBH", baseDepth: -2, spread: 2 },
-  { key: "forced_fumbles", label: "FF", baseDepth: -1, spread: 3 },
-  { key: "passes_defended", label: "PD", baseDepth: 9, spread: 7 },
+// havoc — the selected game's block from the player profile (games[].havoc):
+//   { available, totals, events: [{ type, zone, depth, ... }] } | null
+// Every dot is one event the backend sent, at the zone and depth it sent. Nothing
+// is estimated: no block (or `available: false`) draws an empty field and a dash,
+// a game with no havoc plays says so. Within a zone's third the dots take equal
+// slots in the order sent (the backend gives a zone, not an x). Request:
+// src/pages/players/md/Player Profile Game Maps Backend Request.md.
+const HAVOC_TYPES = [
+  { type: "tfl", label: "TFL" },
+  { type: "sack", label: "SACK" },
+  { type: "qb_hurry", label: "QBH" },
+  { type: "forced_fumble", label: "FF" },
+  { type: "pass_breakup", label: "PD" },
+  { type: "interception", label: "INT" },
 ];
 const ZONE_RANGE = { left: [0, 100 / 3], middle: [100 / 3, 200 / 3], right: [200 / 3, 100] };
 const ZONE_ORDER = ["left", "middle", "right"];
 
-const HavocSpatialMap = ({ player, primary, secondary, gameOverride }) => {
-  const total = Math.max(1, Number(player?.total_production ?? player?.par ?? 8));
-  const counts = {
-    tfl: Math.round(Number(gameOverride?.tfl ?? player?.season_totals?.tfl ?? player?.tfl ?? Math.max(0, total * 0.15))),
-    sacks: Math.round(Number(gameOverride?.sacks ?? player?.season_totals?.sck ?? player?.sck ?? Math.max(0, total * 0.1))),
-    qb_hurries: Math.round(Number(gameOverride?.qb_hurries ?? Math.max(0, total * 0.12))),
-    forced_fumbles: Math.round(Number(gameOverride?.forced_fumbles ?? player?.season_totals?.ff ?? player?.ff ?? Math.max(0, total * 0.05))),
-    passes_defended: Math.round(Number(gameOverride?.passes_defended ?? player?.season_totals?.pd ?? player?.pd ?? Math.max(0, total * 0.08))),
-  };
-  const COLORS = { tfl: secondary, sacks: primary, qb_hurries: "#63B3ED", forced_fumbles: "#F56565", passes_defended: "#4299E1" };
+const HavocSpatialMap = ({ primary, secondary, havoc }) => {
+  const COLORS = { tfl: secondary, sack: primary, qb_hurry: "#63B3ED", forced_fumble: "#F56565", pass_breakup: "#4299E1", interception: "#68D391" };
+  const all = havoc?.available ? havoc.events ?? [] : [];
 
-  let order = 0;
-  const events = [];
-  HAVOC_EVENT_DEFS.forEach((def, ti) => {
-    const count = counts[def.key];
-    for (let i = 0; i < count; i++) {
-      events.push({
-        id: `${def.key}-${i}`,
-        label: def.label,
-        color: COLORS[def.key],
-        zone: ZONE_ORDER[(i + ti) % 3],
-        depth: def.baseDepth + (count > 1 ? (i - (count - 1) / 2) * (def.spread / (count - 1)) : 0),
-        order: order++,
-      });
-    }
-  });
+  // Events the backend located (a zone and a depth) are drawn; the rest still count in the legend.
+  const events = all
+    .filter((e) => ZONE_ORDER.includes(e.zone) && e.depth != null && Number.isFinite(Number(e.depth)))
+    .map((e, i) => ({ id: `${e.type}-${i}`, type: e.type, zone: e.zone, depth: Number(e.depth), color: COLORS[e.type] ?? "#FFFFFF" }));
 
-  // Ordinal X — equal slots within each zone's third, centered, in order.
   const byZone = { left: [], middle: [], right: [] };
   events.forEach((e) => byZone[e.zone].push(e));
-  Object.values(byZone).forEach((list) => {
-    const [start, end] = ZONE_RANGE[list[0]?.zone ?? "left"];
-    const width = end - start;
+  Object.entries(byZone).forEach(([zone, list]) => {
+    const [start, end] = ZONE_RANGE[zone];
     list.forEach((e, i) => {
-      e.x = start + ((i + 0.5) / list.length) * width;
+      e.x = start + ((i + 0.5) / list.length) * (end - start);
     });
   });
 
@@ -502,11 +503,10 @@ const HavocSpatialMap = ({ player, primary, secondary, gameOverride }) => {
     if (y !== 0) yardLines.push(y);
   }
 
-  const legend = HAVOC_EVENT_DEFS.filter((def) => counts[def.key] > 0).map((def) => ({
-    label: def.label,
-    color: COLORS[def.key],
-    count: counts[def.key],
-  }));
+  // Legend: what the box score credits — the events' own credits added up, so a
+  // shared half-TFL reads 0.5 like the stat line, not one play.
+  const creditOf = (type) => all.filter((e) => e.type === type).reduce((n, e) => n + (Number(e.credit) || 1), 0);
+  const legend = HAVOC_TYPES.map((t) => ({ label: t.label, color: COLORS[t.type], count: Math.round(creditOf(t.type) * 10) / 10 })).filter((l) => l.count > 0);
 
   return (
     <Flex direction="column" h="full" w="full" p="0.4rem">
@@ -551,6 +551,12 @@ const HavocSpatialMap = ({ player, primary, secondary, gameOverride }) => {
         <Text position="absolute" left="0.3rem" top={`${losTop}%`} transform="translateY(-100%)" fontSize="0.5rem" fontWeight="900" color="rgba(255,255,255,0.75)" textTransform="uppercase">
           LOS
         </Text>
+
+        {all.length === 0 && (
+          <Text position="absolute" left={0} right={0} top="62%" textAlign="center" fontSize="0.5rem" fontWeight="800" color="rgba(255,255,255,0.45)" textTransform="uppercase" letterSpacing="0.1em">
+            {havoc?.available ? "No havoc plays" : "—"}
+          </Text>
+        )}
 
         {/* Event dots — one per occurrence, positioned by zone-slot (x) and real depth (y) */}
         {events.map((e) => (
@@ -983,7 +989,7 @@ const ProductionKindUnavailable = ({ kind }) => (
 // MAIN EXPORT — Position Router
 // ═══════════════════════════════════════════════════════════════
 
-export const PlayerProductionMap = ({ player, primary, secondary, gameOverride, fieldMap, fieldMapViews, depthBands, productionComponents }) => {
+export const PlayerProductionMap = ({ player, primary, secondary, gameOverride, havoc, fieldMap, fieldMapViews, depthBands, productionComponents }) => {
   const position = getPosition(player);
 
   // fieldMap is the active game's {passing, rushing} block (or undefined
@@ -1017,10 +1023,10 @@ export const PlayerProductionMap = ({ player, primary, secondary, gameOverride, 
     return <PassingGridMap player={player} primary={primary} secondary={secondary} fieldMap={fieldMap?.passing?.cells} depthBands={depthBands} />;
   }
   if (POSITION_GROUPS.RUN.has(position)) {
-    return <RushingLaneMap player={player} primary={primary} secondary={secondary} gameOverride={gameOverride} />;
+    return <RushingLaneMap real rushing={fieldMap?.rushing} player={player} primary={primary} secondary={secondary} gameOverride={gameOverride} />;
   }
   if (POSITION_GROUPS.DEF.has(position)) {
-    return <HavocSpatialMap player={player} primary={primary} secondary={secondary} gameOverride={gameOverride} />;
+    return <HavocSpatialMap primary={primary} secondary={secondary} havoc={havoc} />;
   }
   if (POSITION_GROUPS.K.has(position)) {
     return <KickDistanceMap player={player} primary={primary} secondary={secondary} />;

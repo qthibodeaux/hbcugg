@@ -39,145 +39,24 @@ const DIRS = [
 ];
 
 
-/**
- * Line yards on one carry, per the legend on Connelly's college advanced box score
- * (inspo/abs2.jpg): "a line gets 100% credit for 0-3 yards in a carry, 50% for 4-6,
- * 125% for losses." The 125% is stale — his own printed figures are 120% (Chase
- * Brice, 1 carry for -1, prints LY/Carry -1.20; Mac Jones, 1 for -2, prints -2.40),
- * so we follow the numbers. The 4.5 ceiling falls out of the tiers rather than being
- * a separate cap rule: three yards at full credit plus three at half.
- */
-const lineYardsOn = (gain) =>
-  gain <= 0 ? 1.2 * gain : Math.min(gain, 3) + 0.5 * Math.max(0, Math.min(gain, 6) - 3);
-
-
-/**
- * Split one lane's carries into three pieces that sum exactly to its yardage.
- *
- * The 120% loss weight cannot be used for the split itself: a -4 carry would take
- * -4.8 of line credit, leaving a phantom +0.8 of "highlight" on a play where the back
- * did nothing. So losses are carried whole in their own segment and the line/highlight
- * split is taken over the gaining carries only. That keeps stuff + line + highlight
- * identically equal to the lane's real yards, which is the property the chart rests
- * on. The 120% weighting stays where it belongs — in the LY/Car figure on the table,
- * which rates the line rather than accounting for the yards.
- */
-const splitLane = (carries) => {
-  const gains = carries.filter((c) => c > 0);
-  const line = gains.reduce((s, c) => s + lineYardsOn(c), 0);
-  const gained = gains.reduce((s, c) => s + c, 0);
-  return {
-    stuff: carries.filter((c) => c <= 0).reduce((s, c) => s + c, 0), // ≤ 0, drawn below the axis
-    line,
-    highlight: gained - line,
-  };
-};
-
 // ═══════════════════════════════════════════════════════════════════════════════
-// MOCK — which carry went which way
+// LANES — straight off each rusher's `direction_breakdown`
 // ═══════════════════════════════════════════════════════════════════════════════
-// The gains are real: every RUSH action in the play-by-play carries `net_yards` and a
-// `rusher`, and the join hits on 795 of 795 rushing rows. Their DIRECTION is not real
-// — `rushDirection` is null on all 5,064 RUSH actions in 2025, and direction survives
-// only as the aggregate {attempts, yards} triple in `direction_breakdown` (reqs ask
-// #8). So we partition a rusher's own carries into three groups that reproduce that
-// aggregate exactly, and read the phase split off the groups. The totals printed under
-// each bar are real; which carries built them is invented.
-
-const sum = (list) => list.reduce((s, c) => s + c, 0);
-
-/** Largest-remainder spread of `diff` across `values`, so the total lands exactly. */
-const spread = (values, diff) => {
-  if (!diff || values.length === 0) return values;
-  const base = Math.trunc(diff / values.length);
-  const rem = diff - base * values.length;
-  const step = rem > 0 ? 1 : -1;
-  return values.map((v, i) => v + base + (i < Math.abs(rem) ? step : 0));
-};
-
-/**
- * Partition `gains` into per-direction groups matching each target's attempt count and
- * yardage. Greedy fill by remaining need per slot, then trade carries between lanes
- * while a trade reduces total error. Measured across all 795 rushing rows in 2025:
- * 698 (88%) land exactly. The rest are infeasible — no partition of that carry set
- * hits those three sums — so the leftover is spread across the lane's carries rather
- * than dumped on one, which keeps the bar's total honest without inventing a 50-yard
- * run. Median distortion where that happens is 0.5 yards per carry, p90 2.0.
- */
-const assignLanes = (gains, targets) => {
-  const need = targets.reduce((s, t) => s + t.att, 0);
-  const total = targets.reduce((s, t) => s + t.yards, 0);
-
-  let pool = [...gains].sort((a, b) => b - a);
-  // The play-by-play runs ahead of individual_stats on 15% of rows, almost always by a
-  // single carry (see reqs ask #8b), and direction_breakdown disagrees with its own row
-  // on another 4.4%. Trim or pad to the attempt count the bars will print, taking
-  // extras off the middle of the distribution where they distort least, then true the
-  // sum up so the lanes are reachable at all.
-  while (pool.length > need) pool.splice(Math.floor(pool.length / 2), 1);
-  while (pool.length < need) pool.splice(Math.floor(pool.length / 2), 0, 0);
-  pool = spread(pool, total - sum(pool));
-
-  const lanes = targets.map((t) => ({ ...t, carries: [] }));
-  pool.forEach((gain) => {
-    let best = null;
-    lanes.forEach((lane) => {
-      if (lane.carries.length >= lane.att) return;
-      const perSlot = (lane.yards - sum(lane.carries)) / (lane.att - lane.carries.length);
-      if (!best || perSlot > best.perSlot) best = { lane, perSlot };
-    });
-    if (best) best.lane.carries.push(gain);
-  });
-
-  const errOf = (l) => sum(l.carries) - l.yards;
-  for (let iter = 0; iter < 300; iter += 1) {
-    let best = null;
-    lanes.forEach((A) => {
-      lanes.forEach((B) => {
-        if (A === B) return;
-        const ea = errOf(A);
-        const eb = errOf(B);
-        A.carries.forEach((a, i) => {
-          B.carries.forEach((b, j) => {
-            const d = a - b;
-            if (d === 0) return;
-            // Trading a out of A for b closes A's error by d and opens B's by the same.
-            const win = Math.abs(ea) + Math.abs(eb) - (Math.abs(ea - d) + Math.abs(eb + d));
-            if (win > 1e-9 && (!best || win > best.win)) best = { win, A, i, B, j, a, b };
-          });
-        });
-      });
-    });
-    if (!best) break;
-    best.A.carries[best.i] = best.b;
-    best.B.carries[best.j] = best.a;
-  }
-
-  return lanes.map((l) => {
-    const carries = spread(l.carries, l.yards - sum(l.carries));
-    return { key: l.key, label: l.label, att: l.att, yards: l.yards, carries, ...splitLane(carries) };
-  });
-};
+// The backend ships, per rusher and per lane (left / middle / right, as the crew
+// writes it), the carries, the yards and the success rate. That is what the three
+// columns draw — nothing more. Which carries went which way is not in the file,
+// so no per-carry split (line vs highlight) is built here; the earlier version
+// partitioned the play-by-play gains to fake one.
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // DATA
 // ═══════════════════════════════════════════════════════════════════════════════
 // Real, straight off the export:
-//   • per rusher — attempts, yards, touchdowns, fumbles, yards_per_carry, and (2019-2025
-//     only) a `direction_breakdown` of {left, middle, right} × {attempts, yards}
-//   • per rusher — every carry's net yardage, off the play-by-play RUSH actions
-//   • per team  — line_yards_per_rush, highlight_yards_per_rush, rush_opportunity_rate,
-//     stuff_rate, stopped_run_rate on `advanced_team` (100% populated, 144 team-games,
-//     2019-2025; the 2026 export does not carry these at team level — see reqs ask #8b)
-//
-// MOCK for 2019-2025 only (reqs ask #8): which direction each carry went, partitioned
-// from `direction_breakdown`'s aggregate. The 2026 export tags a real `direction` on
-// every RUSH action — when it's there, every carry is placed by its own real direction
-// and the partition step never runs; `long` still ships as null everywhere.
+//   • per rusher — attempts, yards, touchdowns, fumbles, yards_per_carry and the rate
+//     fields, plus `direction_breakdown`: {left, middle, right} × {attempts, yards,
+//     success_rate}, which the lane chart draws as is
+//   • per team  — `rushing_splits[team].total`, Connelly's six rushing columns
 
-/** A role field on an action is a plain string pre-2026, {name_raw, team, player_id}
- *  on 2026+. Reading `.name_raw` off a string returns undefined, so this covers both. */
-const roleName = (role) => (typeof role === "string" ? role : role?.name_raw ?? null);
 
 const buildRushingData = (game, teamId) => {
   const stats = game?.individual_stats?.[teamId];
@@ -189,51 +68,26 @@ const buildRushingData = (game, teamId) => {
 
   const rows = (stats.rushing ?? []).filter((r) => r.name !== "TEAM");
 
-  // Per-rusher carry ledger off the play-by-play — every gain, whether it moved the
-  // chains, and (2026+) which direction it actually went. Success rate and the whole
-  // phase split are counted from here.
-  const ledger = {};
-  (game.play_by_play ?? []).forEach((play) => {
-    const cleanTeam = play.offense_team ? String(play.offense_team).replace(/25$/, "") : "";
-    if (play.play_type !== "RUSH" || cleanTeam !== teamId) return;
-    const action = (play.actions ?? []).find((a) => a.type === "RUSH");
-    const name = roleName(action?.rusher);
-    if (!name) return;
-    const bucket = ledger[name] ?? { gains: [], dirGains: { left: [], middle: [], right: [] }, tagged: 0 };
-    const gain = action.net_yards || 0;
-    bucket.gains.push(gain);
-    if (action.direction && bucket.dirGains[action.direction]) {
-      bucket.dirGains[action.direction].push(gain);
-      bucket.tagged += 1;
-    }
-    ledger[name] = bucket;
-  });
-
   const rushers = rows.map((r) => {
     const attempts = r.attempts ?? 0;
     const yards = r.yards ?? 0;
     const dir = r.direction_breakdown ?? {};
-    const led = ledger[r.name];
-    const gains = led?.gains ?? [];
 
-    // Real per-carry direction, when every one of this rusher's carries carries it —
-    // no partition, no mock, the bar draws exactly what happened. Falls back to
-    // splitting `direction_breakdown`'s aggregate for every season before 2026.
-    const hasRealDirection = gains.length > 0 && led.tagged === gains.length;
-    const lanes = hasRealDirection
-      ? DIRS.map((d) => {
-          const carries = led.dirGains[d.key];
-          return { key: d.key, label: d.label, att: carries.length, yards: sum(carries), carries, ...splitLane(carries) };
-        })
-      : assignLanes(
-          gains,
-          DIRS.map((d) => ({
-            key: d.key,
-            label: d.label,
-            att: dir?.[d.key]?.attempts ?? 0,
-            yards: dir?.[d.key]?.yards ?? 0,
-          }))
-        );
+    const hasLanes = DIRS.some((d) => dir?.[d.key]);
+    const lanes = hasLanes
+      ? DIRS.map((d) => ({
+          key: d.key,
+          label: d.label,
+          att: dir?.[d.key]?.attempts ?? 0,
+          yards: dir?.[d.key]?.yards ?? 0,
+          successRate: dir?.[d.key]?.success_rate ?? null,
+          // Shipped 2026-10-18: line + highlight = the lane's yards; stuffed =
+          // carries for zero or less. Null until a game file carries them.
+          line: dir?.[d.key]?.line_yards ?? null,
+          highlight: dir?.[d.key]?.highlight_yards ?? null,
+          stuffed: dir?.[d.key]?.stuffed ?? null,
+        }))
+      : null;
 
     return {
       key: r.player_key,
@@ -243,8 +97,7 @@ const buildRushingData = (game, teamId) => {
       touchdowns: r.touchdowns ?? 0,
       fumbles: r.fumbles ?? 0,
       ypc: r.yards_per_carry ?? (attempts > 0 ? yards / attempts : 0),
-      // Straight field reads off the rushing row (all shipped on 2026). The lane chart
-      // below still splits the per-carry ledger for its own line/highlight stacking.
+      // Straight field reads off the rushing row (all shipped on 2026).
       successRate: r.success_rate ?? null,
       lineYards: r.line_yards_per_carry ?? null,
       oppRate: r.opportunity_rate ?? null,
@@ -410,8 +263,9 @@ const STUFF_COLOR = "#C0453A";
 const LANE_GAP = "0.5rem";
 
 const LaneChart = ({ lanes, heat }) => {
-  const posMax = Math.max(0.001, ...lanes.map((l) => Math.max(0, l.line) + Math.max(0, l.highlight)));
-  const negMax = Math.max(0, ...lanes.map((l) => Math.abs(Math.min(0, l.stuff))));
+  if (!lanes) return null;
+  const posMax = Math.max(0.001, ...lanes.map((l) => Math.max(0, l.yards)));
+  const negMax = Math.max(0, ...lanes.map((l) => Math.abs(Math.min(0, l.yards))));
   const domain = posMax + negMax;
   const zeroTop = (posMax / domain) * 100;
   const h = (v) => (Math.abs(v) / domain) * 100;
@@ -420,63 +274,41 @@ const LaneChart = ({ lanes, heat }) => {
     <Box>
       <Grid templateColumns="repeat(3, minmax(0, 1fr))" gap={LANE_GAP}>
         {lanes.map((l) => (
-          <Text
-            key={`v-${l.key}`}
-            textAlign="center"
-            fontFamily="mono"
-            fontWeight="950"
-            color="white"
-            lineHeight={1}
-            fontSize="clamp(0.75rem, 1.05vw, 0.95rem)"
-          >
+          <Text key={`v-${l.key}`} textAlign="center" fontFamily="mono" fontWeight="950" color="white" lineHeight={1} fontSize="clamp(0.75rem, 1.05vw, 0.95rem)">
             {l.att > 0 ? `${l.yards}y` : "—"}
           </Text>
         ))}
       </Grid>
 
       <Box position="relative" h="clamp(3rem, 4.5vw, 4rem)" mt={1}>
-        {/* The axis, drawn once across all three lanes so it reads as a baseline
-            rather than three unrelated ticks. */}
-        <Box
-          position="absolute"
-          left={0}
-          right={0}
-          h="0.0625rem"
-          bg="rgba(255,255,255,0.3)"
-          zIndex={2}
-          style={{ top: `${zeroTop}%` }}
-        />
+        <Box position="absolute" left={0} right={0} h="0.0625rem" bg="rgba(255,255,255,0.3)" zIndex={2} style={{ top: `${zeroTop}%` }} />
         <Grid templateColumns="repeat(3, minmax(0, 1fr))" gap={LANE_GAP} h="full">
           {lanes.map((l) => {
-            const lineH = h(l.line);
-            const hlH = h(l.highlight);
-            const stuffH = h(l.stuff);
+            const up = l.yards >= 0;
+            const barH = h(l.yards);
+            // The backend's split, when it ships: line yards (lighter) under
+            // highlight yards (solid), stacked to the lane's total.
+            const split = up && l.line != null && l.highlight != null && l.yards > 0;
+            if (split) {
+              const lineH = h(Math.max(0, l.line));
+              const hlH = Math.max(0, barH - lineH);
+              return (
+                <Box key={l.key} position="relative" h="full">
+                  <Box position="absolute" left="16%" right="16%" bg={heat} opacity={0.42} style={{ top: `${zeroTop - lineH}%`, height: `${lineH}%` }} />
+                  <Box position="absolute" left="16%" right="16%" bg={heat} borderRadius="0.125rem 0.125rem 0 0" style={{ top: `${zeroTop - lineH - hlH}%`, height: `${hlH}%` }} />
+                </Box>
+              );
+            }
             return (
               <Box key={l.key} position="relative" h="full">
-                <Box
-                  position="absolute"
-                  left="16%"
-                  right="16%"
-                  bg={heat}
-                  opacity={0.42}
-                  style={{ top: `${zeroTop - lineH}%`, height: `${lineH}%` }}
-                />
-                <Box
-                  position="absolute"
-                  left="16%"
-                  right="16%"
-                  bg={heat}
-                  borderRadius="0.125rem 0.125rem 0 0"
-                  style={{ top: `${zeroTop - lineH - hlH}%`, height: `${hlH}%` }}
-                />
-                {stuffH > 0 && (
+                {barH > 0 && (
                   <Box
                     position="absolute"
                     left="16%"
                     right="16%"
-                    bg={STUFF_COLOR}
-                    borderRadius="0 0 0.125rem 0.125rem"
-                    style={{ top: `${zeroTop}%`, height: `${stuffH}%` }}
+                    bg={up ? heat : STUFF_COLOR}
+                    borderRadius={up ? "0.125rem 0.125rem 0 0" : "0 0 0.125rem 0.125rem"}
+                    style={up ? { top: `${zeroTop - barH}%`, height: `${barH}%` } : { top: `${zeroTop}%`, height: `${barH}%` }}
                   />
                 )}
               </Box>
@@ -491,30 +323,12 @@ const LaneChart = ({ lanes, heat }) => {
             <Text fontSize="clamp(0.45rem, 0.62vw, 0.58rem)" fontWeight="900" color="rgba(255,255,255,0.55)" textTransform="uppercase" letterSpacing="0.1em" lineClamp={1}>
               {l.label}
             </Text>
-            {/* The carry count travels with every lane. Zero-yard carries contribute
-                nothing visible to a yardage bar, so without this the chart understates
-                how often he was stopped. */}
             <Text fontSize="clamp(0.4rem, 0.55vw, 0.52rem)" fontWeight="800" color="rgba(255,255,255,0.32)" mt="0.125rem">
-              {l.att} car
+              {l.att} car{l.att > 0 && l.successRate != null ? ` · ${Math.round(l.successRate * 100)}% succ` : ""}{l.stuffed ? ` · ${l.stuffed} stuffed` : ""}
             </Text>
           </Box>
         ))}
       </Grid>
-
-      <Flex mt={2.5} pt={2} borderTop="0.0625rem solid" borderColor="whiteAlpha.100" gap="0.625rem" wrap="wrap">
-        {[
-          [STUFF_COLOR, 1, "Lost"],
-          [heat, 0.42, "Line"],
-          [heat, 1, "Highlight"],
-        ].map(([color, opacity, label]) => (
-          <Flex key={label} align="center" gap="0.3125rem" minW={0}>
-            <Box w="0.4375rem" h="0.4375rem" borderRadius="0.125rem" bg={color} opacity={opacity} flexShrink={0} />
-            <Text fontSize="clamp(0.4rem, 0.55vw, 0.52rem)" fontWeight="800" color="rgba(255,255,255,0.45)" textTransform="uppercase" letterSpacing="0.08em" lineClamp={1}>
-              {label}
-            </Text>
-          </Flex>
-        ))}
-      </Flex>
     </Box>
   );
 };

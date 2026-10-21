@@ -344,8 +344,20 @@ const MobileGameCell = ({ game, teamId }) => {
   );
 };
 
-const SeasonScheduleMobileGrid = ({ group, model }) => {
+// A week counts as a conference week when a team in view plays another team
+// in view (MEAC vs MEAC) — a game against a SWAC school does not count, even
+// though the data flags those as conference games.
+const isGroupGame = (g, teamIds) => {
+  if (!g || g.state === "idle") return false;
+  const opp = resolveOpponent(g);
+  return !!opp && teamIds.some((id) => TEAM_BY_ID[id] === opp);
+};
+
+const SeasonScheduleMobileGrid = ({ group, model, confWeeksOnly = false }) => {
   const teamIds = model.teamIds ?? group.teams;
+  const weeks = confWeeksOnly
+    ? model.weeks.filter((w) => teamIds.some((id) => isGroupGame(model.byTeamWeek[id]?.[w.week], teamIds)))
+    : model.weeks;
   return (
   <Box overflow="auto">
     <Grid templateColumns={`2.75rem repeat(${teamIds.length}, minmax(0, 1fr))`} minW="0">
@@ -361,7 +373,7 @@ const SeasonScheduleMobileGrid = ({ group, model }) => {
         );
       })}
 
-      {model.weeks.map((week) => [
+      {weeks.map((week) => [
         <Flex key={`week-${week.week}`} position="sticky" left={0} zIndex={2} align="center" justify="center" bg="bg.secondary" borderRight="1px solid" borderTop="1px solid" borderColor="whiteAlpha.100">
           <Text fontSize="0.6rem" color="white" fontWeight="black" textTransform="uppercase" whiteSpace="nowrap" lineHeight={1}>
             {week.week}
@@ -391,6 +403,8 @@ const SeasonSchedulePage = () => {
     isError,
   } = useSeasonScheduleData({ routeYear: params.year });
   const { isMobile } = useLayoutDensity();
+  // Mobile, MEAC only: show just the conference weeks (the header row stays).
+  const [confWeeksOnly, setConfWeeksOnly] = useState(false);
 
   const bannerProps = {
     season,
@@ -415,7 +429,17 @@ const SeasonSchedulePage = () => {
             <Text color="text.muted">Unable to load season schedule.</Text>
           </Flex>
         )}
-        {!isLoading && !isError && <SeasonScheduleMobileGrid group={group} model={model} />}
+        {!isLoading && !isError && groupId === "meac" && (
+          <Flex borderTop="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.100">
+            {[[false, "All weeks"], [true, "MEAC weeks"]].map(([on, text]) => (
+              <Box key={text} as="button" type="button" onClick={() => setConfWeeksOnly(on)} flex={1} py="0.55rem"
+                bg={confWeeksOnly === on ? ACCENT : "transparent"} borderLeft={on ? "1px solid" : "none"} borderColor="whiteAlpha.100">
+                <Text fontSize="0.65rem" fontWeight="black" color="white" textAlign="center" textTransform="uppercase" letterSpacing="0.06em">{text}</Text>
+              </Box>
+            ))}
+          </Flex>
+        )}
+        {!isLoading && !isError && <SeasonScheduleMobileGrid group={group} model={model} confWeeksOnly={groupId === "meac" && confWeeksOnly} />}
       </Box>
     );
   }

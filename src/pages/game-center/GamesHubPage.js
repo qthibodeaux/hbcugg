@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { Box, Flex, Grid, Image, Spinner, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import PageShell from "../../components/layouts/PageShell";
@@ -65,17 +66,26 @@ const ROW_H = {
   venue: "1.875rem", // two lines of 9px at 1.2, plus the 4px gap under the rule
 };
 
-const TeamLogo = ({ team, size }) => (
-  <Box w={size} h={size} flexShrink={0} display="flex" alignItems="center" justifyContent="center">
-    {team?.logo ? (
-      <Image src={team.logo} alt="" w="full" h="full" objectFit="contain" />
-    ) : (
-      // Non-league opponents (Towson, Arkansas, Delaware) ship a name but no
-      // logo. A neutral dot holds the column so names stay aligned down the grid.
-      <Box w="0.375rem" h="0.375rem" borderRadius="full" bg="whiteAlpha.300" />
-    )}
-  </Box>
-);
+// Only the 18 have logos. An outside opponent still gets a guessed asset path
+// from the team resolver, so it is checked against the 18 first, and any logo
+// that fails to load falls back too.
+const LEAGUE_IDS = new Set(teamsData.teams.map((t) => t.exportId.replace(/25$/, "")));
+
+const TeamLogo = ({ team, size }) => {
+  const [broken, setBroken] = useState(false);
+  const isLeague = LEAGUE_IDS.has(team?.teamId) || LEAGUE_IDS.has(team?.id);
+  return (
+    <Box w={size} h={size} flexShrink={0} display="flex" alignItems="center" justifyContent="center">
+      {team?.logo && isLeague && !broken ? (
+        <Image src={team.logo} alt="" w="full" h="full" objectFit="contain" onError={() => setBroken(true)} />
+      ) : (
+        // Outside opponents ship a name but no logo. A neutral dot holds the
+        // column so names stay aligned down the grid.
+        <Box w="0.375rem" h="0.375rem" borderRadius="full" bg="whiteAlpha.300" />
+      )}
+    </Box>
+  );
+};
 
 const TeamRow = ({ team, score, isWinner, showScore, mobile = false }) => (
   <Flex align="center" gap={mobile ? 1 : 1.5} minW={0} h={ROW_H.team}>
@@ -106,7 +116,7 @@ const TeamRow = ({ team, score, isWinner, showScore, mobile = false }) => (
   </Flex>
 );
 
-const GameTile = ({ game, cardBg, mobile = false }) => {
+const GameTile = ({ game, cardBg, mobile = false, shine = null }) => {
   const { homeTeam = {}, awayTeam = {} } = game;
   const played = Boolean(game.isFinal);
   const winnerIs = (team) => played && game.winnerTeamId && team?.teamId === game.winnerTeamId;
@@ -116,7 +126,8 @@ const GameTile = ({ game, cardBg, mobile = false }) => {
 
   return (
       <Flex
-        className="game-card"
+        className={shine ? "game-card gh-shine" : "game-card"}
+        style={shine ? { "--gh-shine": shine.color, "--gh-delay": `${shine.delay}ms` } : undefined}
         direction="column"
         flex="1"
         px={mobile ? 1 : 2}
@@ -168,8 +179,10 @@ const GameTile = ({ game, cardBg, mobile = false }) => {
  * The label prints only where the week turns over — everywhere else that row is
  * empty at the same height, which is what keeps the cards aligned across a row.
  */
-const GameCell = ({ game, tint, weekLabel, mobile = false }) => (
+const GameCell = ({ game, tint, weekLabel, mobile = false, cellRef = undefined, shine = null }) => (
   <Flex
+    ref={cellRef}
+    style={{ scrollMarginTop: "calc(var(--app-header-height) + 0.75rem)" }}
     as={game.route ? Link : "div"}
     to={game.route ?? undefined}
     direction="column"
@@ -192,7 +205,7 @@ const GameCell = ({ game, tint, weekLabel, mobile = false }) => (
         </Text>
       )}
     </Flex>
-    <GameTile game={game} cardBg={tint.card} mobile={mobile} />
+    <GameTile game={game} cardBg={tint.card} mobile={mobile} shine={shine} />
   </Flex>
 );
 
@@ -215,8 +228,42 @@ const withWeeks = (games) => {
   });
 };
 
-const GamesGrid = ({ games, mobile = false }) => (
+// A one-time shine on load: the last week played (purple) and the week after
+// it (gold) light their card edges once, rippling left to right, then settle
+// back. CSS only — it runs when a card mounts and never repeats on its own.
+const SHINE_CSS = `
+  @keyframes ghShine {
+    0%   { box-shadow: 0 0 0 0 transparent; border-color: rgba(255,255,255,0.2); }
+    25%  { box-shadow: 0 0 0 2px var(--gh-shine), 0 0 18px var(--gh-shine); border-color: var(--gh-shine); }
+    100% { box-shadow: 0 0 0 0 transparent; border-color: rgba(255,255,255,0.2); }
+  }
+  .gh-shine { animation: ghShine 1.6s ease-out both; animation-delay: var(--gh-delay, 0ms); }
+  @media (prefers-reduced-motion: reduce) { .gh-shine { animation: none; } }
+`;
+const SHINE = { recent: "#A855F7", upcoming: "#F6C344" };
+
+// The last week that has a final: the page opens there.
+const lastPlayedWeek = (games) =>
+  games.reduce((max, g) => {
+    const w = getGameWeek(g);
+    return g.isFinal && Number.isFinite(w) && (max == null || w > max) ? w : max;
+  }, null);
+
+const GamesGrid = ({ games, mobile = false, jumpRef = undefined }) => {
+  const target = lastPlayedWeek(games);
+  // The week after the last one played that actually has games.
+  const next = games.map(getGameWeek).filter((w) => Number.isFinite(w) && (target == null || w > target)).sort((a, b) => a - b)[0] ?? null;
+  const order = {};
+  const shineFor = (game) => {
+    const w = getGameWeek(game);
+    const kind = w === target ? "recent" : w === next ? "upcoming" : null;
+    if (!kind) return null;
+    const i = (order[kind] = (order[kind] ?? -1) + 1);
+    return { color: SHINE[kind], delay: (kind === "upcoming" ? 450 : 0) + i * 55 };
+  };
+  return (
   <Box bg="bg.secondary" border={mobile ? "none" : "1px solid"} borderColor="whiteAlpha.100" borderRadius={mobile ? "0" : "xl"} overflow="hidden">
+    <style>{SHINE_CSS}</style>
     {games.length === 0 ? (
       <Flex justify="center" align="center" minH="120px" m={2} border="1px dashed" borderColor="whiteAlpha.200" borderRadius="lg">
         <Text color="text.muted" fontWeight="bold">No games match the current filters.</Text>
@@ -238,12 +285,21 @@ const GamesGrid = ({ games, mobile = false }) => (
         alignItems="stretch"
       >
         {withWeeks(games).map(({ game, tint, weekLabel }) => (
-          <GameCell key={game.id} game={game} tint={tint} weekLabel={weekLabel} mobile={mobile} />
+          <GameCell
+            key={game.id}
+            game={game}
+            tint={tint}
+            weekLabel={weekLabel}
+            mobile={mobile}
+            cellRef={weekLabel && getGameWeek(game) === target ? jumpRef : undefined}
+            shine={shineFor(game)}
+          />
         ))}
       </Grid>
     )}
   </Box>
-);
+  );
+};
 
 const GamesHubPage = () => {
   const {
@@ -263,6 +319,18 @@ const GamesHubPage = () => {
   } = useGamesHubData();
 
   const { isMobile } = useLayoutDensity();
+
+  // On load, and on each season switch, scroll to the last week played. A ref
+  // callback on that week's first cell does it the moment the cell mounts —
+  // no effect; `jumped` keeps it to once per season so filtering never yanks
+  // the page.
+  const jumped = useRef(null);
+  const jumpRef = (el) => {
+    if (!el || jumped.current === season) return;
+    jumped.current = season;
+    requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
+  };
+
   const banner = (
     <GamesHubBanner
       seasons={GAME_CENTER_SEASONS}
@@ -291,7 +359,7 @@ const GamesHubPage = () => {
             <Spinner color="brand.500" size="lg" />
           </Flex>
         ) : (
-          <GamesGrid games={filteredGames} mobile />
+          <GamesGrid games={filteredGames} mobile jumpRef={jumpRef} />
         )}
       </Box>
     );
@@ -309,7 +377,7 @@ const GamesHubPage = () => {
             <Spinner color="brand.500" size="lg" />
           </Flex>
         ) : (
-          <GamesGrid games={filteredGames} />
+          <GamesGrid games={filteredGames} jumpRef={jumpRef} />
         )
       }
     >

@@ -96,3 +96,17 @@ score: integer | null                   // final games only
 ## Freshness
 
 Rebuild after each week's games are parsed, in the same run as the games index, so status, scores and routes always match it.
+
+---
+
+## Addendum (2026-10-16): outside-opponent `short_name`
+
+Outside opponents (`team_id: null`) ship `short_name` equal to `name` ("Stony Brook", "Elizabeth City State"). The field is the tile's label and needs the short form, the same rule as above.
+
+```text
+Side.short_name: string                 // 18: teams.json short name ("PVAMU")
+                                        // outside: the school's common abbreviation, <= 8 characters
+                                        //   ("STONY", "ECSU", "TARLETON", "UCF", "W&M")
+```
+
+Same field, same rule, in every payload that carries an outside opponent's short form: `games_hub_{season}.json` (`away` / `home`), `team-schedules` (`opponent.short_name`, `opponent.display_short`), `schedule_board_{season}.json` (`opponent_short`), `week-central` (`away_team` / `home_team.short_name`).

@@ -32,21 +32,32 @@ const teamMeta = (id) => TEAM_META[String(id ?? "").replace(/25$/, "")] ?? null;
 const teamLabel = (id) => teamMeta(id)?.bannerShort ?? teamMeta(id)?.shortName ?? String(id ?? "").toUpperCase();
 const teamLogo = (id) => teamMeta(id)?.logo ?? `/assets/${String(id ?? "").replace(/25$/, "")}.svg`;
 
+// House palette (2026-10-19): purple, forest green, teal blue, burnt orange
+// and red, so every segment is its own colour.
+const PURPLE = "#7E22CE";
+const FOREST = "#1F7A3F";
+const TEAL = "#0E7C86";
+const BURNT = "#CC5500";
+const RED = "#E53E3E";
+
+// Chains: green for an early conversion through orange for 4th, red for none.
 const CHAINS_SEGMENTS = [
-  { key: "1st", label: "1st down", color: "#6DBE45" },
-  { key: "2nd", label: "2nd down", color: "#3B7DD8" },
-  { key: "3rd", label: "3rd down", color: "#F0932B" },
-  { key: "4th", label: "4th down", color: "#7B3FA0" },
-  { key: "none", label: "No conversion", color: "#C8686B" },
+  { key: "1st", label: "1st down", color: FOREST },
+  { key: "2nd", label: "2nd down", color: PURPLE },
+  { key: "3rd", label: "3rd down", color: TEAL },
+  { key: "4th", label: "4th down", color: BURNT },
+  { key: "none", label: "No conversion", color: RED },
 ];
 
+// Results: TD green, first down purple, FG teal, punt orange, turnover red;
+// "other" stays a quiet grey.
 const RESULT_SEGMENTS = [
-  { key: "td", label: "TD", color: "#3CA36A" },
-  { key: "first_down", label: "First Down", color: "#3B7DD8" },
-  { key: "fg", label: "FG", color: "#E8B23A" },
-  { key: "punt", label: "Punt", color: "#8C8C8C" },
-  { key: "turnover", label: "TO", color: "#C94B4B" },
-  { key: "other", label: "Other", color: "#4A4A50" },
+  { key: "td", label: "TD", color: FOREST },
+  { key: "first_down", label: "First Down", color: PURPLE },
+  { key: "fg", label: "FG", color: TEAL },
+  { key: "punt", label: "Punt", color: BURNT },
+  { key: "turnover", label: "TO", color: RED },
+  { key: "other", label: "Other", color: "#3F3F46" },
 ];
 
 const toShares = (counts, segments) => {
@@ -85,12 +96,15 @@ const StackedBar = ({ shares }) => {
   );
 };
 
+// One line, always. The two cards sit side by side and their bars line up only if
+// both legends are the same height; "No conversion" used to push the first card's
+// legend onto a second line, dropping its bars below the other card's.
 const Legend = ({ segments }) => (
-  <Flex gap="clamp(0.75rem, 1.4vw, 1.5rem)" rowGap="0.5rem" flexWrap="wrap" flexShrink={0}>
+  <Flex gap="clamp(0.4rem, 0.8vw, 0.9rem)" flexWrap="nowrap" justify="space-between" flexShrink={0} minW={0}>
     {segments.map((seg) => (
-      <Flex key={seg.key} align="center" gap="0.45rem">
-        <Box w="clamp(0.75rem, 1vw, 1rem)" h="clamp(0.75rem, 1vw, 1rem)" bg={seg.color} borderRadius="3px" flexShrink={0} />
-        <Text fontSize="clamp(0.68rem, 0.9vw, 0.9rem)" fontWeight="800" color="rgba(255,255,255,0.6)" whiteSpace="nowrap">
+      <Flex key={seg.key} align="center" gap="0.3rem" flexShrink={0}>
+        <Box w="clamp(0.6rem, 0.8vw, 0.9rem)" h="clamp(0.6rem, 0.8vw, 0.9rem)" bg={seg.color} borderRadius="3px" flexShrink={0} />
+        <Text fontSize="clamp(0.6rem, 0.78vw, 0.82rem)" fontWeight="800" color="rgba(255,255,255,0.6)" whiteSpace="nowrap">
           {seg.label}
         </Text>
       </Flex>

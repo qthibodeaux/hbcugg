@@ -65,6 +65,16 @@ const Side = ({ team, align, winner }) => {
   );
 };
 
+// Text on a team-colour fill: dark on a light fill (JSU's white, Southern's
+// light blue), white otherwise — so the pill's label never vanishes.
+const inkOnFill = (hex) => {
+  const raw = String(hex ?? "").replace("#", "");
+  if (raw.length !== 6) return "white";
+  const [r, g, b] = [0, 2, 4].map((i) => parseInt(raw.slice(i, i + 2), 16) / 255);
+  const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return lum > 0.6 ? "#0B0B0D" : "white";
+};
+
 /** The scoreboard strip, after the game page banner. */
 export const PosterBanner = ({ header }) => {
   const { away, home, winnerId, margin, date, weekLabel, status, isOT } = header;
@@ -83,7 +93,7 @@ export const PosterBanner = ({ header }) => {
 
         <Flex direction="column" align="center" flexShrink={0} px="18px" borderX="1px solid" borderColor={HAIRLINE} minW="170px" position="relative" zIndex={1}>
           <Box px="12px" py="3px" bg={winnerId ? teamAccent(winnerId) : "rgba(255,255,255,0.15)"} borderRadius="4px">
-            <Text fontSize="11px" fontWeight="950" textTransform="uppercase" letterSpacing="0.18em" color="white">
+            <Text fontSize="11px" fontWeight="950" textTransform="uppercase" letterSpacing="0.18em" color={winnerId ? inkOnFill(teamAccent(winnerId)) : "white"}>
               {status === "final" ? `Final${isOT ? " / OT" : ""}` : String(status ?? "").toUpperCase()}
             </Text>
           </Box>

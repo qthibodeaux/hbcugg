@@ -4,6 +4,17 @@
 
 ---
 
+## ⛔ Folder Boundary — CRITICAL
+
+**Every agent working in `hbcugg1` edits files inside `hbcugg1` only. Never create, edit, move, rename or delete anything outside this folder. No exceptions.**
+
+- **Outside folders are read-only.** That includes the backend (`parser4\` and everything under it: `93-FE Docs`, `92-frontend`, `90-Output`, `999-frontendfeedback`) and any other project.
+- **To ask the backend for something, write the note here**, in the right `src/pages/**/md/` folder (e.g. `Backend Notes YYYY-MM-DD.md`). The user carries it over. Never write into `parser4`.
+- **Never run backend scripts** that write files (`publish_fe_docs.py`, builders, exporters). Tell the user what needs running.
+- **Scratch work stays inside your session or this folder.** Don't leave scripts or temp files in other project folders.
+
+---
+
 ## Project Overview
 
 **HBCU GridIron Glory** is a React-based football analytics platform for Historically Black Colleges and Universities (HBCU). It covers 12 SWAC + 6 MEAC programs with team dashboards, player analytics, game center, coaches, officials, scheduling, roster intelligence, and performance tools.

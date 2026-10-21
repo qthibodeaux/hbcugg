@@ -109,10 +109,13 @@ const TeamHubSwitcherSheetBlock = ({ item, team, pathname, onNavigate }) => {
       <Box position="relative" zIndex={1}>
         {showGrid ? (
           <Box position="relative">
+            {/* minmax(0, 1fr): a plain 1fr won't shrink below a logo's natural
+                width, which pushed the sixth column off a phone screen. Flush
+                wall, the Team Schedules mobile look: no gaps, square tiles. */}
             <Grid
-              templateColumns="repeat(6, 1fr)"
-              gap="0.4rem"
-              p="0.75rem"
+              templateColumns="repeat(6, minmax(0, 1fr))"
+              gap={0}
+              p={0}
               opacity={gridReady ? 1 : 0}
               transition="opacity 0.2s ease"
               pointerEvents={gridReady ? "auto" : "none"}
@@ -127,22 +130,25 @@ const TeamHubSwitcherSheetBlock = ({ item, team, pathname, onNavigate }) => {
                     onNavigate();
                   }}
                   aspectRatio="1"
-                  borderRadius="md"
-                  p="0.3rem"
+                  minW={0}
+                  borderRadius="0"
+                  p="0.35rem"
                   display="flex"
                   alignItems="center"
                   justifyContent="center"
                   bg={t.id === item.teamId ? "whiteAlpha.300" : "blackAlpha.400"}
                   border="1px solid"
-                  borderColor={t.id === item.teamId ? secondary : "whiteAlpha.150"}
+                  borderColor={t.id === item.teamId ? secondary : "whiteAlpha.100"}
+                  borderBottomWidth="0.2rem"
+                  borderBottomColor={t.colors?.primary ?? "whiteAlpha.300"}
                   opacity={t.id === item.teamId ? 1 : 0.85}
                   title={t.name}
                 >
                   <Image
                     src={t.logo}
                     alt={t.name}
-                    w="full"
-                    h="full"
+                    w="80%"
+                    h="80%"
                     objectFit="contain"
                     onLoad={handleTileSettled}
                     onError={handleTileSettled}
@@ -156,16 +162,16 @@ const TeamHubSwitcherSheetBlock = ({ item, team, pathname, onNavigate }) => {
                 <Grid
                   position="absolute"
                   inset="0"
-                  templateColumns="repeat(6, 1fr)"
-                  gap="0.4rem"
-                  p="0.75rem"
+                  templateColumns="repeat(6, minmax(0, 1fr))"
+                  gap={0}
+                  p={0}
                   pointerEvents="none"
                 >
                   {item.teams.map((t) => (
                     <Box
                       key={t.id}
                       aspectRatio="1"
-                      borderRadius="md"
+                      borderRadius="0"
                       style={{
                         background: "linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.22) 50%, rgba(255,255,255,0.06) 75%)",
                         backgroundSize: "300% 100%",

@@ -6,6 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { system } from "./theme";
 import MainLayout from "./components/layouts/MainLayout";
+import RouteErrorBoundary from "./components/layouts/RouteErrorBoundary";
 import Header from "./components/organisms/Header";
 import MobileMenu from "./components/organisms/nav/MobileMenu";
 import Home from "./pages/Home";
@@ -90,6 +91,7 @@ function App() {
               
               <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
+              <RouteErrorBoundary>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/game-center" element={<GameCenterPage />} />
@@ -162,6 +164,7 @@ function App() {
                 {!IS_DEMO && <Route path="/lab/tested-designs" element={<TestedDesignsPage />} />}
                 {!IS_DEMO && <Route path="/lab/grid" element={<GridTestPage />} />}
               </Routes>
+              </RouteErrorBoundary>
             </MainLayout>
           </Router>
       </ChakraProvider>

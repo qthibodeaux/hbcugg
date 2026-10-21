@@ -290,14 +290,12 @@ const DivisionStandingsRow = ({ row, index, accent }) => {
 
 const exportName = (kind, group) => `${kind}-${String(group.label ?? group.id).toLowerCase().replace(/[^a-z0-9]+/g, "-")}.png`;
 
-const DivisionStandingsCard = ({ group }) => {
-  const cardRef = useRef(null);
-  if (!group?.rows?.length) return null;
+// The card's content, shared by the page and the export frame.
+const DivisionTableBody = ({ group, action = null }) => {
   const leader = group.rows[0];
   const leaderTeam = TEAM_BY_ID[leader.id];
-
   return (
-    <Box ref={cardRef} h="100%" w="full" bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100" borderRadius="xl" overflow="hidden" position="relative">
+    <>
       <Box position="absolute" inset={0} bg={`linear-gradient(135deg, ${leaderTeam.colors.primary}33 0%, transparent 54%)`} />
       <Flex position="relative" direction="column" h="100%" p="1rem" gap="0.5rem">
         <Flex align="center" justify="space-between" flexShrink={0}>
@@ -310,7 +308,7 @@ const DivisionStandingsCard = ({ group }) => {
             </Text>
           </Box>
           <Flex align="center" gap="0.5rem">
-            <ExportCardButton compact target={cardRef} filename={exportName("division-table", group)} />
+            {action}
             <TeamLogo team={leaderTeam} size="2.125rem" />
             <Box textAlign="right">
               <Text fontSize="0.7rem" color="text.muted" fontWeight="black" textTransform="uppercase">
@@ -329,6 +327,32 @@ const DivisionStandingsCard = ({ group }) => {
           ))}
         </Flex>
       </Flex>
+    </>
+  );
+};
+
+// Exports draw the MOBILE versions (the table and the square finish grid) in a
+// phone-width frame held off screen — saved at 2x, the same look at any
+// screen width.
+const EXPORT_W = "420px";
+const ExportFrame = ({ frameRef, children }) => (
+  <Box position="fixed" left="-20000px" top={0} aria-hidden="true" pointerEvents="none">
+    <Box ref={frameRef} w={EXPORT_W} bg="#0B0B0D" pb="0.6rem">
+      {children}
+    </Box>
+  </Box>
+);
+
+const DivisionStandingsCard = ({ group }) => {
+  const posterRef = useRef(null);
+  if (!group?.rows?.length) return null;
+
+  return (
+    <Box h="100%" w="full" bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100" borderRadius="xl" overflow="hidden" position="relative">
+      <DivisionTableBody group={group} action={<ExportCardButton compact target={posterRef} filename={exportName("division-table", group)} />} />
+      <ExportFrame frameRef={posterRef}>
+        <DivisionTableMobile group={group} />
+      </ExportFrame>
     </Box>
   );
 };
@@ -606,8 +630,12 @@ const MatrixControl = ({ active, disabled = false, children, onClick }) => (
   </Box>
 );
 
+// The purple ring on a team that controls its own destiny.
+const DESTINY_RING = "inset 0 0 0 2px #A855F7";
+
 const DivisionFinishMatrix = ({ group }) => {
   const cardRef = useRef(null);
+  const posterRef = useRef(null);
   return (
   <Box ref={cardRef} bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100" borderRadius="xl" overflow="hidden">
     <style>{`
@@ -628,8 +656,15 @@ const DivisionFinishMatrix = ({ group }) => {
           {group.label}
         </Text>
       </Box>
-      <ExportCardButton target={cardRef} filename={exportName("finish-matrix", group)} />
+      <ExportCardButton target={posterRef} filename={exportName("finish-matrix", group)} />
     </Flex>
+    <ExportFrame frameRef={posterRef}>
+      <Box px="0.6rem" py="0.5rem" borderBottom="1px solid" borderColor="whiteAlpha.150">
+        <Text fontSize="0.55rem" color={group.accent} fontWeight="black" textTransform="uppercase" letterSpacing="0.12em">Finish Matrix</Text>
+        <Text fontSize="1.1rem" color="white" fontWeight="black" textTransform="uppercase" lineHeight={1}>{group.label}</Text>
+      </Box>
+      <DivisionFinishMatrixMobile group={group} />
+    </ExportFrame>
     <Flex px={5} py={3} gap={5} bg="blackAlpha.300" borderBottom="1px solid" borderColor="whiteAlpha.100" wrap="wrap">
       <Text fontSize="sm" color="text.secondary"><Text as="span" color="white" fontWeight="black">Teams:</Text> {group.rows.length}</Text>
       <Text fontSize="sm" color="text.secondary"><Text as="span" color="white" fontWeight="black">Completed Games:</Text> {group.completedGames}</Text>
@@ -654,7 +689,7 @@ const DivisionFinishMatrix = ({ group }) => {
           const team = TEAM_BY_ID[matrixRow.teamId];
           return (
             <Box key={matrixRow.teamId} display="contents">
-              <Flex align="center" gap={2} minW={0} px={4} py={3} bg="blackAlpha.200" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.100">
+              <Flex align="center" gap={2} minW={0} px={4} py={3} bg="blackAlpha.200" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.100" boxShadow={matrixRow.controlsDestiny ? DESTINY_RING : "none"}>
                 <TeamLogo team={team} size="1.5rem" />
                 <Box className="finish-matrix-team-name" minW={0}>
                   <Text fontSize="sm" color="white" fontWeight="black" lineClamp={1}>
@@ -850,6 +885,9 @@ const mapFinishMatrix = (groupPayload, sourceRows) => {
       teamId: row.team_id,
       values,
       counts,
+      // Wins out → wins the division, whatever anyone else does. The backend's
+      // flag off its scenario run (Backend Notes 2026-10-19 §3); never worked out here.
+      controlsDestiny: row.controls_destiny === true,
     };
   }).sort(byFinish);
 };
@@ -874,7 +912,8 @@ const modelFromStandingsRace = (payload) => {
         cl: Number(row.conf_losses ?? 0),
         pct: Number(row.win_pct ?? 0),
         cpct: Number(row.conf_win_pct ?? 0),
-        diff: Number(row.point_diff ?? row.points_for ?? 0) - Number(row.points_against ?? 0),
+        // The backend's point_diff when it ships one; scored minus allowed until then.
+        diff: row.point_diff != null ? Number(row.point_diff) : Number(row.points_for ?? 0) - Number(row.points_against ?? 0),
         // row.last5/recent_form/form: whichever field name the backend ships first.
         // None exist in the export today — this always falls through to dashes
         // until the backend adds one. See BACKEND_PIPELINE_TODO.md.
@@ -921,16 +960,16 @@ const DivisionLeaderCardMobile = ({ def, group }) => {
 // Desktop keeps its existing labels untouched.
 const MOBILE_TEAM_SHORT_NAME = {
   swacasu: "Bama State",
-  swacjsu: "J-State",
-  swacbcu: "B-CU",
+  swacjsu: "J State",
+  swacbcu: "Bethune",
   swacfamu: "Florida A&M",
   swacaamu: "Alabama A&M",
   swacmvsu: "Valley",
   swacpvamu: "Prairie View",
-  swactsu: "Texas So.",
+  swactsu: "Texas Southern",
   swacgsu: "Grambling",
   swacalc: "Alcorn",
-  swacuapb: "UAPB",
+  swacuapb: "Pine Bluff",
   swacsu: "Southern",
   meacscsu: "SC State",
   meacdsu: "Del State",
@@ -989,16 +1028,19 @@ const DivisionStandingsRowMobile = ({ row, index, accent }) => {
             <Text fontSize="1rem" fontWeight="black" fontStyle="italic" color="white" textTransform="uppercase" letterSpacing="-0.01em" lineHeight={1} lineClamp={1}>
               {mobileTeamLabel(team)}
             </Text>
-            <Text fontSize="0.55rem" color="whiteAlpha.650" fontWeight="black" textTransform="uppercase" letterSpacing="0.04em" mt="0.15rem">
-              {recordText(row.w, row.l)} · {row.diff > 0 ? "+" : ""}{row.diff}
-            </Text>
           </Box>
         </Flex>
 
         <Flex align="center" gap="0.5rem" flexShrink={0}>
-          <Text fontSize="1rem" fontWeight="black" color="white" lineHeight={1}>
-            {recordText(row.cw, row.cl)}
-          </Text>
+          {/* Conference record, the overall record beside it in parentheses. */}
+          <Flex align="baseline" gap="0.3rem">
+            <Text fontSize="1rem" fontWeight="black" color="white" lineHeight={1}>
+              {recordText(row.cw, row.cl)}
+            </Text>
+            <Text fontSize="0.75rem" fontWeight="black" color="whiteAlpha.600" lineHeight={1}>
+              ({recordText(row.w, row.l)})
+            </Text>
+          </Flex>
           <FormBoxes form={row.last5} />
         </Flex>
       </Flex>
@@ -1069,7 +1111,7 @@ const DivisionFinishMatrixMobile = ({ group }) => {
           const team = TEAM_BY_ID[matrixRow.teamId];
           return (
             <Box key={matrixRow.teamId} display="contents">
-              <Flex align="center" justify="center" aspectRatio="1" bg="blackAlpha.200" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.100">
+              <Flex align="center" justify="center" aspectRatio="1" bg="blackAlpha.200" borderRight="1px solid" borderBottom="1px solid" borderColor="whiteAlpha.100" boxShadow={matrixRow.controlsDestiny ? DESTINY_RING : "none"}>
                 <TeamLogo team={team} size="1.5rem" />
               </Flex>
               {matrixRow.values.map((value, index) => (

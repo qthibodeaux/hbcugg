@@ -103,87 +103,62 @@ const TeamStatTable = ({ data }) => {
 
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// TARGET MAP
+// TARGET MAP — the backend's grid (RESPONSE_BACKEND_2026-10-16_passing_grid)
 // ═══════════════════════════════════════════════════════════════════════════════
-// The zone grid runs on MOCK data. The real one can't be trusted enough to design
-// around: `passDepth` is absent on 8% of 2025 pass actions (350 of 4,302) and there
-// is no direction field at all — it's regexed out of `raw_text`, and when the regex
-// misses (4%) the play is silently filed under "middle". See reqs ask #7; once the
-// backend ships pass_depth + pass_direction this swaps to the real grid, and whatever
-// it reports as genuinely unplaceable needs surfacing rather than absorbing.
+// Each passer / receiver row in the game file carries `direction_breakdown`:
+// depth (air yards to the catch / target / interception spot: short < 4,
+// medium 4-12, deep 13+) x lane (left / middle / right, as the crew writes it),
+// plus `uncharted` — throws with no depth (a crew that never spots
+// incompletions) or no lane (interceptions). Cells + uncharted = every attempt.
+// Read straight off the file; nothing is spread or guessed. A row with no
+// breakdown (older seasons) shows no grid.
 //
-// The mock is seeded from each player's actual volume, so cell totals still add up
-// to the completions, attempts and yards shown in the table they were clicked from.
+// Some crews never spot incompletions (RESPONSE_BACKEND_2026-10-19_call_grid).
+// The file says so — `metadata.pass_spotting.incompletion_depth: "unspotted"`
+// — and then the grid is `call_breakdown` instead: placed by the crew's own
+// call ("pass incomplete short left"), two rows, Short and Deep, no air-yard
+// ranges (the crew's "short" runs to ~19 yards).
 
 const DEPTHS = [
-  { key: "deep", label: "Deep", range: "> 12", mid: 16, catch: 0.38, w: [0.05, 0.04, 0.06] },
-  { key: "medium", label: "Med", range: "4 – 12", mid: 8, catch: 0.58, w: [0.1, 0.08, 0.11] },
-  { key: "short", label: "Short", range: "< 4", mid: 2, catch: 0.72, w: [0.19, 0.18, 0.19] },
+  { key: "deep", label: "Deep", range: "> 12" },
+  { key: "medium", label: "Med", range: "4 – 12" },
+  { key: "short", label: "Short", range: "< 4" },
+];
+const CALL_DEPTHS = [
+  { key: "deep", label: "Deep", range: null },
+  { key: "short", label: "Short", range: null },
 ];
 const DIRS = ["Left", "Middle", "Right"];
+const LANES = ["left", "middle", "right"];
+// Above this share of uncharted throws the grid misleads more than it shows.
+const HIDE_UNCHARTED_SHARE = 0.2;
 
-/** Stable per-player seed so a given player's map never reshuffles between renders. */
-const seedOf = (key) => {
-  const str = String(key ?? "");
-  let h = 0;
-  for (let i = 0; i < str.length; i += 1) h = (h * 31 + str.charCodeAt(i)) >>> 0;
-  return h;
-};
-
-/** Largest-remainder split of `total` across `weights`, so the parts sum exactly. */
-const distribute = (total, weights) => {
-  const sum = weights.reduce((a, b) => a + b, 0) || 1;
-  const exact = weights.map((w) => (total * w) / sum);
-  const out = exact.map((v) => Math.floor(v));
-  let left = total - out.reduce((a, b) => a + b, 0);
-  const order = exact
-    .map((v, i) => ({ i, frac: v - Math.floor(v) }))
-    .sort((x, y) => y.frac - x.frac);
-  for (let n = 0; n < order.length && left > 0; n += 1, left -= 1) out[order[n].i] += 1;
-  return out;
-};
-
-const buildMockZones = (player) => {
+const realZones = (game, teamId, player) => {
   const isPasser = player._type === "passer";
-  const attempts = (isPasser ? player.attempts : player.targets) || 0;
-  const catches = (isPasser ? player.completions : player.receptions) || 0;
-  const yards = player.yards || 0;
-
-  const charted = attempts;
-
-  const shift = seedOf(player.key) % 9;
-  const flat = DEPTHS.flatMap((d) => d.w);
-  const rotated = flat.map((_, i) => flat[(i + shift) % 9]);
-
-  const att = distribute(charted, rotated);
-  const comp = distribute(
-    Math.min(catches, charted),
-    att.map((a, i) => a * DEPTHS[Math.floor(i / 3)].catch),
-  ).map((c, i) => Math.min(c, att[i]));
-
-  // Capping each cell at its own attempts can strand a completion (3 of 840 players
-  // in 2025 hit this). Hand the shortfall to whichever cells still have room, so the
-  // grid always totals the completions shown in the table it was clicked from.
-  let short = Math.min(catches, charted) - comp.reduce((x, y) => x + y, 0);
-  for (let i = 0; i < comp.length && short > 0; i += 1) {
-    const give = Math.min(att[i] - comp[i], short);
-    comp[i] += give;
-    short -= give;
-  }
-
-  const yds = distribute(
-    yards,
-    comp.map((c, i) => c * DEPTHS[Math.floor(i / 3)].mid),
-  );
-
-  const cells = att.map((a, i) => ({ att: a, comp: comp[i], yards: a > 0 ? yds[i] : 0 }));
-  const chartedAtt = att.reduce((x, y) => x + y, 0);
-  const adot = chartedAtt > 0
-    ? att.reduce((acc, a, i) => acc + a * DEPTHS[Math.floor(i / 3)].mid, 0) / chartedAtt
-    : 0;
-  const peakIdx = cells.reduce((best, c, i) => (c.att > cells[best].att ? i : best), 0);
-
-  return { cells, adot, peak: cells[peakIdx].att > 1 ? peakIdx : -1 };
+  const rows = game?.individual_stats?.[teamId]?.[isPasser ? "passing" : "receiving"] ?? [];
+  const row = rows.find((r) => r.player_key === player.key) ?? rows.find((r) => r.name === player.name);
+  const byCall = game?.metadata?.pass_spotting?.incompletion_depth === "unspotted" && !!row?.call_breakdown;
+  const bd = byCall ? row.call_breakdown : row?.direction_breakdown;
+  if (!bd) return null;
+  const depths = byCall ? CALL_DEPTHS : DEPTHS;
+  const [attK, compK] = isPasser ? ["attempts", "completions"] : ["targets", "receptions"];
+  const cells = depths.flatMap((d) => LANES.map((lane) => {
+    const c = bd[d.key]?.[lane] ?? {};
+    return { att: Number(c[attK] ?? 0), comp: Number(c[compK] ?? 0), yards: Number(c.yards ?? 0) };
+  }));
+  const u = bd.uncharted ?? {};
+  const uncharted = Number(u.attempts ?? u.targets ?? 0);
+  const total = cells.reduce((n, c) => n + c.att, 0) + uncharted;
+  return {
+    depths,
+    cells,
+    adot: typeof row.adot === "number" ? row.adot : null,
+    uncharted,
+    noDepth: Number(u.no_depth ?? 0),
+    noLane: Number(u.no_direction ?? 0),
+    total,
+    hidden: total > 0 && uncharted / total > HIDE_UNCHARTED_SHARE,
+  };
 };
 
 const ZoneCell = ({ cell, heat }) => {
@@ -220,9 +195,9 @@ const ZoneCell = ({ cell, heat }) => {
   );
 };
 
-const SpotlightZoneWidget = ({ player, accent, heat, teamId, identity, productionRows }) => {
-  const zones = useMemo(() => (player ? buildMockZones(player) : null), [player]);
-  if (!player || !zones) return null;
+const SpotlightZoneWidget = ({ game, player, accent, heat, teamId, identity, productionRows }) => {
+  const zones = useMemo(() => (player ? realZones(game, teamId, player) : null), [game, teamId, player]);
+  if (!player) return null;
 
   const isPasser = player._type === "passer";
   // The interception cost the backend books inside passing_production — shown
@@ -237,7 +212,7 @@ const SpotlightZoneWidget = ({ player, accent, heat, teamId, identity, productio
         ["Sacks", player.sacks_taken],
         ["INT", Number.isFinite(intCost) && intCost !== 0 ? `${player.interceptions} (${intCost.toFixed(1)})` : player.interceptions],
         ["TD", player.touchdowns],
-        ["aDOT", rate(zones.adot)],
+        ["aDOT", rate(zones?.adot)],
         // Third row — QB only, all four straight field reads. EPA/play ships on
         // 2026 rows, third-down and deep splits on 2019-2025 rows, and success
         // rate on neither yet, so part of this row dashes out on any given game.
@@ -254,7 +229,7 @@ const SpotlightZoneWidget = ({ player, accent, heat, teamId, identity, productio
         ["Yd/ Ch", rate(player.ydsPerCatch)],
         ["Yd/ Tg", rate(player.ydsPerTarget)],
         ["TD", player.touchdowns],
-        ["aDOT", rate(zones.adot)],
+        ["aDOT", rate(zones?.adot)],
         // Third row — receiver only. All five are pending backend fields and dash
         // out today; they fill in on their own as the fields land.
         ["YAC", num(player.yardsAfterCatch)],
@@ -276,30 +251,41 @@ const SpotlightZoneWidget = ({ player, accent, heat, teamId, identity, productio
       roleFallback={isPasser ? "QB" : "WR"}
       chips={chips}
     >
-      <Grid templateColumns="clamp(2rem, 3vw, 2.5rem) repeat(3, minmax(0, 1fr))" gap={1}>
-        <Box />
-        {DIRS.map((d) => (
-          <Text key={d} fontSize="clamp(0.45rem, 0.62vw, 0.58rem)" fontWeight="900" color="rgba(255,255,255,0.4)" textTransform="uppercase" letterSpacing="0.1em" textAlign="center">
-            {d}
-          </Text>
-        ))}
-        {DEPTHS.map((depth, row) => (
-          <Fragment key={depth.key}>
-            <Flex direction="column" justify="center" minW={0}>
-              <Text fontSize="clamp(0.45rem, 0.62vw, 0.58rem)" fontWeight="900" color="rgba(255,255,255,0.5)" textTransform="uppercase" letterSpacing="0.08em" lineHeight={1.2}>
-                {depth.label}
-              </Text>
-              <Text fontSize="clamp(0.4rem, 0.55vw, 0.5rem)" fontWeight="700" color="rgba(255,255,255,0.28)" lineHeight={1.3}>
-                {depth.range}
-              </Text>
-            </Flex>
-            {DIRS.map((_, col) => {
-              const i = row * 3 + col;
-              return <ZoneCell key={i} cell={zones.cells[i]} heat={heat} />;
-            })}
-          </Fragment>
-        ))}
-      </Grid>
+      {zones && !zones.hidden && (
+        <Grid templateColumns="clamp(2rem, 3vw, 2.5rem) repeat(3, minmax(0, 1fr))" gap={1}>
+          <Box />
+          {DIRS.map((d) => (
+            <Text key={d} fontSize="clamp(0.45rem, 0.62vw, 0.58rem)" fontWeight="900" color="rgba(255,255,255,0.4)" textTransform="uppercase" letterSpacing="0.1em" textAlign="center">
+              {d}
+            </Text>
+          ))}
+          {zones.depths.map((depth, row) => (
+            <Fragment key={depth.key}>
+              <Flex direction="column" justify="center" minW={0}>
+                <Text fontSize="clamp(0.45rem, 0.62vw, 0.58rem)" fontWeight="900" color="rgba(255,255,255,0.5)" textTransform="uppercase" letterSpacing="0.08em" lineHeight={1.2}>
+                  {depth.label}
+                </Text>
+                {depth.range && (
+                  <Text fontSize="clamp(0.4rem, 0.55vw, 0.5rem)" fontWeight="700" color="rgba(255,255,255,0.28)" lineHeight={1.3}>
+                    {depth.range}
+                  </Text>
+                )}
+              </Flex>
+              {DIRS.map((_, col) => {
+                const i = row * 3 + col;
+                return <ZoneCell key={i} cell={zones.cells[i]} heat={heat} />;
+              })}
+            </Fragment>
+          ))}
+        </Grid>
+      )}
+      {/* Throws the crew left unplaceable, counted — never spread into cells. */}
+      {zones && zones.uncharted > 0 && (
+        <Text mt={1} fontSize="clamp(0.5rem, 0.66vw, 0.62rem)" fontWeight="900" color="rgba(255,255,255,0.55)" textTransform="uppercase" letterSpacing="0.06em">
+          {zones.hidden ? `${zones.uncharted} of ${zones.total} not charted` : `${zones.uncharted} not charted`}
+          {zones.noLane > 0 && zones.noDepth === 0 ? " (INT)" : ""}
+        </Text>
+      )}
     </SpotlightCard>
   );
 };
@@ -311,7 +297,7 @@ const SpotlightZoneWidget = ({ player, accent, heat, teamId, identity, productio
 const signed2 = (n) => (n == null ? "—" : `${n > 0 ? "+" : ""}${n.toFixed(2)}`);
 const signed1 = (n) => (n == null ? "—" : `${n > 0 ? "+" : ""}${n.toFixed(1)}`);
 
-const TeamPassingBlock = ({ gameScores, teamId, data, identity, productionRows, leagueKeys, hideLabel = false }) => {
+const TeamPassingBlock = ({ game, gameScores, teamId, data, identity, productionRows, leagueKeys, hideLabel = false }) => {
   const color = getTeamColor(teamId);
   const heat = heatAccent(color, getTeamSecondary(teamId));
 
@@ -341,7 +327,7 @@ const TeamPassingBlock = ({ gameScores, teamId, data, identity, productionRows, 
         <TeamStatTable data={data} />
 
         {/* Row 2 — player spotlight, full-bleed band */}
-        <SpotlightZoneWidget player={activePlayer} accent={color} heat={heat} teamId={teamId} identity={identity} productionRows={productionRows} />
+        <SpotlightZoneWidget game={game} player={activePlayer} accent={color} heat={heat} teamId={teamId} identity={identity} productionRows={productionRows} />
 
         {/* Row 3 — player production tables, full width */}
         <Box minW={0}>
@@ -407,7 +393,7 @@ export const PassingProductionClean = ({ game, playerSeasons, priorPlayerSeasons
     return (
       <Box w="full">
         <MobileTeamSwitch title="Passing Production" awayId={awayId} homeId={homeId} value={team} onChange={setShown} />
-        {isHome ? <TeamPassingBlock gameScores={productionScores} hideLabel teamId={homeId} data={homeData} identity={identity} productionRows={productionScores?.[homeId]} leagueKeys={leagueKeys} /> : <TeamPassingBlock gameScores={productionScores} hideLabel teamId={awayId} data={awayData} identity={identity} productionRows={productionScores?.[awayId]} leagueKeys={leagueKeys} />}
+        {isHome ? <TeamPassingBlock game={game} gameScores={productionScores} hideLabel teamId={homeId} data={homeData} identity={identity} productionRows={productionScores?.[homeId]} leagueKeys={leagueKeys} /> : <TeamPassingBlock game={game} gameScores={productionScores} hideLabel teamId={awayId} data={awayData} identity={identity} productionRows={productionScores?.[awayId]} leagueKeys={leagueKeys} />}
       </Box>
     );
   }
@@ -415,8 +401,8 @@ export const PassingProductionClean = ({ game, playerSeasons, priorPlayerSeasons
   return (
     <Box w="full" mt={8} mb={12}>
       <Grid templateColumns={{ base: "1fr", xl: "1fr 1fr" }} gap={1.5}>
-        <TeamPassingBlock gameScores={productionScores} teamId={awayId} data={awayData} identity={identity} productionRows={productionScores?.[awayId]} leagueKeys={leagueKeys} />
-        <TeamPassingBlock gameScores={productionScores} teamId={homeId} data={homeData} identity={identity} productionRows={productionScores?.[homeId]} leagueKeys={leagueKeys} />
+        <TeamPassingBlock game={game} gameScores={productionScores} teamId={awayId} data={awayData} identity={identity} productionRows={productionScores?.[awayId]} leagueKeys={leagueKeys} />
+        <TeamPassingBlock game={game} gameScores={productionScores} teamId={homeId} data={homeData} identity={identity} productionRows={productionScores?.[homeId]} leagueKeys={leagueKeys} />
       </Grid>
     </Box>
   );

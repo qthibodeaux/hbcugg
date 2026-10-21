@@ -6,7 +6,7 @@ export const TEAM_ANALYTICS_TABS = [
   { id: "week", label: "Week Review" },
   { id: "profile", label: "Team Profile" },
   { id: "board", label: "Leader Board" },
-  { id: "map", label: "Scatter" },
+  { id: "map", label: "Charts" },
   { id: "matchup", label: "Matchup" },
   { id: "lab", label: "Rating Lab" },
   { id: "trends", label: "Trends" },

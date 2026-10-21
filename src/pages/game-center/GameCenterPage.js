@@ -12,6 +12,7 @@ import { useGameCenterHubData } from "../../hooks/useGameCenterHubData";
 import { renderContextCard } from "../../components/molecules/game/GameCenterContextCard";
 import { useLayoutDensity } from "../../hooks/useLayoutDensity";
 import { IS_DEMO } from "../../config/demo";
+import { WeekRecapExport } from "../../components/game/recap/WeekRecapExport";
 
 // TEMPORARY — the lab lost its header link; this gets us there until launch.0.
 const LabButton = () => (
@@ -67,7 +68,7 @@ const OffSeasonMessage = ({ season }) => {
 // Mobile — separate render tree, not PageShell. PageShell's grid (fixed row
 // units, page padding) is a desktop concern; mobile pages get built fresh
 // here component by component as they're ready. Only the banner is ready so far.
-const GameCenterMobile = ({ season, isLoading, isEmpty, featuredGames, scheduleRailCards, standings }) => (
+const GameCenterMobile = ({ season, isLoading, isEmpty, featuredGames, scheduleRailCards, standings, contextCards = [] }) => (
   <Box minH="100vh" bg="bg.primary" pt="var(--app-header-height)">
     {!IS_DEMO && <LabButton />}
     {isLoading ? (
@@ -75,7 +76,11 @@ const GameCenterMobile = ({ season, isLoading, isEmpty, featuredGames, scheduleR
         <Spinner color="brand.500" size="lg" />
       </Flex>
     ) : (<>
-      <BannerGameCenter />
+      {/* The week's "How Saturday Was Won" export rides the banner. */}
+      <Box position="relative">
+        <BannerGameCenter />
+        <WeekRecapExport />
+      </Box>
       {isEmpty ? (
         <Box px={4} py={6}>
           <OffSeasonMessage season={season} />
@@ -88,8 +93,10 @@ const GameCenterMobile = ({ season, isLoading, isEmpty, featuredGames, scheduleR
         </Grid>
 
         {standings && (
-          <Grid templateColumns="repeat(2, minmax(0, 1fr))" gap="0" alignItems="start">
-            <Box>
+          <Grid templateColumns="repeat(2, minmax(0, 1fr))" gap="0" alignItems="stretch">
+            {/* The rail is a size container (it scales off its own box), so it
+                needs a height: it stretches to the standings column beside it. */}
+            <Box minH={0} minW={0}>
               <GameCenterResultsRail cards={scheduleRailCards} />
             </Box>
             <Flex direction="column" gap="0">
@@ -97,6 +104,23 @@ const GameCenterMobile = ({ season, isLoading, isEmpty, featuredGames, scheduleR
               <TopThreeStandingsCardMobile title="SWAC East" rows={standings.swacEast.rows} metric={standings.swacEast.metric} />
               <TopThreeStandingsCardMobile title="MEAC" rows={standings.meac.rows} metric={standings.meac.metric} />
             </Flex>
+          </Grid>
+        )}
+
+        {/* Context cards, in the backend's order: the first full width (2:1, the
+            desktop's double-wide), the rest two across as squares. Flush and
+            square-cornered; each card sizes itself off its box. */}
+        {contextCards.length > 0 && (
+          <Grid templateColumns="repeat(2, minmax(0, 1fr))" gap="0" style={{ "--ctx-m": 1 }} css={{ "& > div > div, & > div > a > div": { borderRadius: 0 } }}>
+            {contextCards.map((card, index) => {
+              const rendered = renderContextCard(card);
+              if (!rendered) return null;
+              return (
+                <Box key={card.id} gridColumn={index === 0 ? "span 2" : undefined} aspectRatio={index === 0 ? "2 / 1" : "1 / 1"} minW={0}>
+                  {rendered}
+                </Box>
+              );
+            })}
           </Grid>
         )}
       </>)}
@@ -125,6 +149,7 @@ const GameCenterPage = () => {
         featuredGames={featuredGames}
         scheduleRailCards={scheduleRailCards}
         standings={standings}
+        contextCards={contextCards}
       />
     );
   }
@@ -141,7 +166,10 @@ const GameCenterPage = () => {
       ) : (<>
         {/* ── Row 1: Banner ── the hub is a live document; no season control. */}
         <PageShell.Slot cols={4}>
-          <BannerGameCenter />
+          <Box position="relative" h="full">
+            <BannerGameCenter />
+            <WeekRecapExport />
+          </Box>
         </PageShell.Slot>
 
         {isEmpty ? (

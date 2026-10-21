@@ -1,10 +1,11 @@
 import { useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Flex, Grid, Spinner, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Spinner, Text } from "@chakra-ui/react";
 import PageShell from "../../components/layouts/PageShell";
 import CountingStatsBanner from "../../components/organisms/stats/CountingStatsBanner";
 import { CountingTabGrid } from "../../components/molecules/stats/CountingTabRow";
 import { CountingTable } from "../../components/organisms/stats/CountingTable";
+import { WeekLeadersExport } from "../../components/organisms/stats/WeekLeadersExport";
 import { useCountingPlayerStats, useCountingSeason } from "../../hooks/useSWACData";
 import { useCountingIndex } from "../../hooks/useCountingStats";
 import {
@@ -92,18 +93,22 @@ const PlayerCountingStatsPage = () => {
   return (
     <PageShell listContent={body}>
       <PageShell.Slot cols={4}>
-        <CountingStatsBanner
-          title="Player Stats"
-          ghost="LEADERS"
-          season={season}
-          setSeason={setSeason}
-          seasons={countingSeasons}
-          conference={conference}
-          setConference={setConference}
-          side={side}
-          setSide={setSide}
-          sides={PLAYER_STATS_SIDES.map((s) => ({ value: s.id, label: s.label }))}
-        />
+        <Box position="relative" w="full" h="full">
+          <CountingStatsBanner
+            title="Player Stats"
+            ghost="LEADERS"
+            season={season}
+            setSeason={setSeason}
+            seasons={countingSeasons}
+            conference={conference}
+            setConference={setConference}
+            side={side}
+            setSide={setSide}
+            sides={PLAYER_STATS_SIDES.map((s) => ({ value: s.id, label: s.label }))}
+          />
+          {/* Week and season leaders as posters (offense / defense), for the season on screen. */}
+          <WeekLeadersExport side={side} season={season} />
+        </Box>
       </PageShell.Slot>
 
       <PageShell.Slot cols={4}>

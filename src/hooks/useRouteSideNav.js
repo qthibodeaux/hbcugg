@@ -520,15 +520,26 @@ export const useRouteSideNav = (navigate) => {
     // sub-items. The page owns ?tab=; this just mirrors it.
     if (pathname.startsWith("/player-analytics")) {
       const onQbMap = tab === "qb-map";
-      items = items.map((i) => (i.id === "player-analytics" && onQbMap ? { ...i, active: false } : i));
-      items = injectList(items, "player-analytics", [{
-        id: "player-analytics-qb-map",
-        label: "QB MAP",
-        path: "/player-analytics?tab=qb-map",
-        indent: true,
-        active: onQbMap,
-        onClick: () => navigate("/player-analytics?tab=qb-map"),
-      }]);
+      const onRushing = tab === "rushing";
+      items = items.map((i) => (i.id === "player-analytics" && (onQbMap || onRushing) ? { ...i, active: false } : i));
+      items = injectList(items, "player-analytics", [
+        {
+          id: "player-analytics-qb-map",
+          label: "QB MAP",
+          path: "/player-analytics?tab=qb-map",
+          indent: true,
+          active: onQbMap,
+          onClick: () => navigate("/player-analytics?tab=qb-map"),
+        },
+        {
+          id: "player-analytics-rushing",
+          label: "RUSHING",
+          path: "/player-analytics?tab=rushing",
+          indent: true,
+          active: onRushing,
+          onClick: () => navigate("/player-analytics?tab=rushing"),
+        },
+      ]);
     }
 
     // Game Injection (for Game Center)

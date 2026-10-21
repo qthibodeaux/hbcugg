@@ -4,6 +4,7 @@ import { Box, Text, Flex, Grid, Image } from "@chakra-ui/react";
 import { Lock } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
 import PlayerAnalyticsQbMap from "../../components/organisms/PlayerAnalyticsQbMap";
+import PlayerAnalyticsRushing from "../../components/organisms/PlayerAnalyticsRushing";
 import { usePlayerStatsEnriched } from "../../hooks/useSWACData";
 import teamsData from "../../data/teams.json";
 import PlayerAnalyticsBanner from "../../components/organisms/PlayerAnalyticsBanner";
@@ -30,6 +31,7 @@ const TEAM_BY_ID = teamsData.teams.reduce((acc, t) => {
 const TABS = [
   { id: "player", label: "Player", enabled: true },
   { id: "qb-map", label: "QB Map", enabled: true },
+  { id: "rushing", label: "Rushing", enabled: true },
   { id: "team", label: "Team", enabled: false },
   { id: "scatter", label: "Scatter", enabled: false },
   { id: "scout", label: "Scout", enabled: false },
@@ -224,6 +226,7 @@ const PlayerAnalyticsPage = () => {
       </Flex>
 
       {activeTab === "qb-map" && <PlayerAnalyticsQbMap division={division} />}
+      {activeTab === "rushing" && <PlayerAnalyticsRushing />}
 
       {/* Body */}
       {activeTab === "player" && !activePlayer && (

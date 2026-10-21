@@ -628,8 +628,9 @@ export const SpotlightCard = ({
       >
         <Box minW={0}>
           <Flex align="baseline" gap={1.5} minW={0} mb={1.5}>
-            <Text fontSize="clamp(0.85rem, 1.15vw, 1.15rem)" fontWeight="950" color="white" textTransform="uppercase" letterSpacing="-0.01em" lineHeight={1.05} lineClamp={1}>
-              {first} {last}
+            {/* Last name only, never cut off — a long one wraps rather than "ARMOND…". */}
+            <Text minW={0} fontSize="clamp(0.85rem, 1.15vw, 1.15rem)" fontWeight="950" color="white" textTransform="uppercase" letterSpacing="-0.01em" lineHeight={1.05} overflowWrap="anywhere" title={`${first} ${last}`.trim()}>
+              {last || first}
             </Text>
             <Text fontSize="clamp(0.45rem, 0.6vw, 0.55rem)" fontWeight="900" color={accent} textTransform="uppercase" letterSpacing="0.12em" flexShrink={0}>
               {position}

@@ -506,6 +506,30 @@ On `defense`, the penalty fields are fouls **committed by this team's defense**,
 
 ---
 
+## 12. Rushing scatter charts (2026-10-16)
+
+Four rushing charts join the standard scatters. Power & Stuffs runs on fields already in **ADVANCED** (`stuff_rate`, `power_success`). The other three need these, added to **ADVANCED** `offense`, every season:
+
+```text
+ADVANCED.offense += {
+  # 1st & 10 — this offense's snaps on 1st and 10
+  f10_run_rate: float | null              // runs ÷ (runs + dropbacks) on 1st & 10
+  f10_rush_success_rate: float | null     // run success on 1st & 10 (50%-of-distance rule)
+
+  # QB share — designed runs and scrambles by the team's quarterbacks
+  qb_share_of_carries: float | null       // QB carries ÷ team carries
+  qb_share_of_rush_yards: float | null    // QB rush yards ÷ team rush yards
+
+  # Late strength — run success by half, same rule as success_rate_rush
+  rush_success_first_half: float | null
+  rush_success_second_half: float | null
+}
+```
+
+Rates are 0–1, counted over the season's League plays and divided once, garbage time excluded, the same basis as `success_rate_rush`. A team with no League game ships nulls.
+
+---
+
 ## 9. Index of asks
 
 | # | Ask | File | Tabs |
