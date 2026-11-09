@@ -13,7 +13,7 @@ import { teamLogo, teamMeta, teamShort, withAlpha } from "../../game/export/expo
 // ─────────────────────────────────────────────────────────────────────────────
 
 const GOOD = "#22C55E";
-const GOLD = "#EAB308";
+const GOLD = "#5A9F68"; // the brand's secondary green (was burnt orange, then gold)
 const DIM = "rgba(255,255,255,0.55)";
 
 const PTM_CSS = `

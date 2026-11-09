@@ -16,7 +16,8 @@ import { useLayoutDensity } from "../../../hooks/useLayoutDensity";
 //
 // Controls: season dropdown, conference scope pills (All / SWAC / MEAC), and —
 // on the player page only — the Offense / Defense side pills that pick which
-// tab set is showing.
+// tab set is showing, and a Season / Week switch with a week picker (`views`,
+// `weekPicker`) for the weekly top performers.
 
 const GRADIENT = `linear-gradient(115deg, #C084FC 0%, #6D28D9 36%, ${BANNER_STRIP_BG} 84%)`;
 
@@ -46,17 +47,29 @@ const Title = ({ title, ghost }) => (
   </>
 );
 
-const Controls = ({ season, setSeason, seasons, conference, setConference, side, setSide, sides }) => (
+const Controls = ({ season, setSeason, seasons, conference, setConference, side, setSide, sides, views, weekPicker }) => (
   <>
-    <BannerDropdown
-      label="Season"
-      value={String(season)}
-      onChange={(v) => setSeason(Number(v))}
-      options={seasons.map((y) => ({ value: String(y), label: String(y) }))}
-      minW="6rem"
-    />
-    <BannerSegmentedPills options={CONFERENCES} value={conference} onChange={setConference} />
+    {seasons && (
+      <BannerDropdown
+        label="Season"
+        value={String(season)}
+        onChange={(v) => setSeason(Number(v))}
+        options={seasons.map((y) => ({ value: String(y), label: String(y) }))}
+        minW="6rem"
+      />
+    )}
+    {setConference && <BannerSegmentedPills options={CONFERENCES} value={conference} onChange={setConference} />}
     {sides && <BannerSegmentedPills options={sides} value={side} onChange={setSide} />}
+    {views && <BannerSegmentedPills options={views.options} value={views.value} onChange={views.onChange} />}
+    {views?.value === "week" && weekPicker && (
+      <BannerDropdown
+        label="Week"
+        value={String(weekPicker.value)}
+        onChange={(v) => weekPicker.onChange(Number(v))}
+        options={weekPicker.weeks.map((w) => ({ value: String(w), label: String(w) }))}
+        minW="5rem"
+      />
+    )}
   </>
 );
 

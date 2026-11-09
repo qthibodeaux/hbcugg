@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Download, X } from "lucide-react";
 import teamsData from "../../../data/teams.json";
 import { downloadDataUrl } from "../../game/export/exportImage";
 import { teamLogo } from "../../game/export/exportData";
-import { paletteOf, posterVars } from "../../game/recap/WeekRecapExport";
+import { paletteOf, posterVars } from "../../molecules/export/posterPalette";
 import { useLeadersFile, useLeadersIndex } from "../../../hooks/usePlayerLeaders";
 import { useColorScheme } from "../../../theme/colorScheme";
 

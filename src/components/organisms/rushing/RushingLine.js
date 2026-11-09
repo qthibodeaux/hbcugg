@@ -48,7 +48,7 @@ export const RushingLine = ({ tidbit, teamId }) => {
       <svg viewBox={`0 0 ${LINE_W} ${LINE_H}`} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} role="img" aria-label={tidbit.y}>
         {yTicks.map((t) => (
           <g key={t}>
-            <line x1={left} x2={right} y1={py(t)} y2={py(t)} stroke={bySeason && t === 0 ? "rgba(255,255,255,0.5)" : "rgba(255,255,255,0.06)"} strokeDasharray={bySeason && t === 0 ? "7 6" : undefined} />
+            <line x1={left} x2={right} y1={py(t)} y2={py(t)} stroke={bySeason && t === 0 ? "rgba(var(--gg-fg), 0.5)" : "rgba(var(--gg-fg), 0.06)"} strokeDasharray={bySeason && t === 0 ? "7 6" : undefined} />
             <text x={left - 12} y={py(t) + 5} textAnchor="end" fontSize="15" fontWeight="800" fill="#A1A1AA">{yText(t)}</text>
           </g>
         ))}
@@ -58,15 +58,15 @@ export const RushingLine = ({ tidbit, teamId }) => {
         {gap != null && (
           <text x={px(gap)} y={(top + bottom) / 2} textAnchor="middle" fontSize="14" fontWeight="800" fill="#71717A">no 2020 fall season</text>
         )}
-        <text x={left} y={top - 22} fontSize="17" fontWeight="900" fill="#F4F4F5">{tidbit.y} ↑</text>
+        <text x={left} y={top - 22} fontSize="17" fontWeight="900" fill="var(--gg-text-primary)">{tidbit.y} ↑</text>
 
         {segments.map((seg, i) => (
           <polyline key={i} points={seg.map((p) => `${px(p.x)},${py(p.y)}`).join(" ")} fill="none" stroke={color} strokeWidth="4" strokeLinejoin="round" strokeLinecap="round" />
         ))}
         {pts.map((p) => (
           <g key={p.x}>
-            <circle cx={px(p.x)} cy={py(p.y)} r="9" fill={color} stroke="#0B0B0D" strokeWidth="3" />
-            <text x={px(p.x)} y={py(p.y) - 22} textAnchor="middle" fontSize="18" fontWeight="900" fill="#F4F4F5" stroke="#0B0B0D" strokeWidth="4" paintOrder="stroke">{p.top}</text>
+            <circle cx={px(p.x)} cy={py(p.y)} r="9" fill={color} stroke="var(--gg-bg-primary)" strokeWidth="3" />
+            <text x={px(p.x)} y={py(p.y) - 22} textAnchor="middle" fontSize="18" fontWeight="900" fill="var(--gg-ink)" stroke="var(--gg-bg-primary)" strokeWidth="4" paintOrder="stroke">{p.top}</text>
             {p.sub && <text x={px(p.x)} y={py(p.y) + 32} textAnchor="middle" fontSize="14" fontWeight="800" fill="#A1A1AA">{p.sub}</text>}
           </g>
         ))}

@@ -13,7 +13,7 @@ import { teamLogo, teamMeta, teamShort, withAlpha } from "../../game/export/expo
 // else is read from the item's `data`. TEAM_FACES[item.key] is the whole API.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const GOLD = "#EAB308";
+const GOLD = "#5A9F68"; // the brand's secondary green (was burnt orange, then gold)
 const INK = "rgba(255,255,255,0.88)";
 const FAINT = "rgba(255,255,255,0.14)";
 const DIM = "rgba(255,255,255,0.45)";

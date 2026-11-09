@@ -200,3 +200,30 @@ export const buildScheduleModel = (payload, group, includeNonConference) => {
 
   return { weeks, byTeamWeek };
 };
+
+// Shared display facts; desktop/mobile renderers retain their own sizing rules.
+// Called only for populated, non-idle cells.
+export const getScheduleCellDetails = (game, teamId) => {
+  const opponent = resolveOpponent(game);
+  const team = TEAM_BY_ID[teamId];
+  const isAway = game.home_away === "away";
+  const hasScore = game.state === "final" || game.status === "final" || (game.score_team != null && game.score_opp != null);
+  const won = game.result === "W" || (game.score && String(game.score).startsWith("W"));
+  return {
+    opponent,
+    isAway,
+    hasScore,
+    winner: won ? team : opponent,
+    score: scoreLabel(game, hasScore),
+    isConf: game.conf_game || String(game.game_type ?? "").includes("conference"),
+  };
+};
+
+// A week counts as a conference week when a team in view plays another team
+// in view (MEAC vs MEAC) — a game against a SWAC school does not count, even
+// though the data flags those as conference games.
+export const isGroupGame = (g, teamIds) => {
+  if (!g || g.state === "idle") return false;
+  const opp = resolveOpponent(g);
+  return !!opp && teamIds.some((id) => TEAM_BY_ID[id] === opp);
+};

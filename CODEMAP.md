@@ -1,5 +1,7 @@
 # HBCU Gridiron Glory — Code Map
 
+Cleanup progress and priorities: [CLEANUP_MAP.md](CLEANUP_MAP.md). Full source review inventory: [CLEANUP_INVENTORY.md](CLEANUP_INVENTORY.md).
+
 React + Chakra UI v3 + React Query + React Router v7. Dark theme, URL-driven state, component lab workflow.
 
 ---

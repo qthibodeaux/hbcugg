@@ -71,22 +71,29 @@ const toShares = (counts, segments) => {
 // the bars grow with the slot instead of sitting as thin strips in an empty card.
 const BAR_H = "clamp(2.25rem, 4.5vw, 3.75rem)";
 
-const StackedBar = ({ shares }) => {
+// The Drives poster sets these two cards side by side at half of an 68.75rem image, so it
+// asks for `poster` sizes: fixed px, not the page's viewport clamps, which ran too big there.
+const SIZES = {
+  page: { bar: BAR_H, pct: "clamp(0.8rem, 1.3vw, 1.35rem)", minShare: 0.06, gap: "clamp(0.4rem, 0.8vw, 0.9rem)", swatch: "clamp(0.6rem, 0.8vw, 0.9rem)", legend: "clamp(0.6rem, 0.78vw, 0.82rem)", pad: "clamp(0.875rem, 1.4vw, 1.5rem)", stack: "clamp(0.75rem, 1.2vw, 1.25rem)", rows: "clamp(0.625rem, 1vw, 1rem)", teamCol: "minmax(4.5rem, 7rem)", logo: "clamp(1.4rem, 2vw, 2rem)", team: "clamp(0.9rem, 1.3vw, 1.35rem)" },
+  poster: { bar: "1.75rem", pct: "0.8125rem", minShare: 0.1, gap: "0.5rem", swatch: "0.5625rem", legend: "0.625rem", pad: "0.75rem", stack: "0.5rem", rows: "0.3125rem", teamCol: "5rem", logo: "1.25rem", team: "0.9375rem" },
+};
+
+const StackedBar = ({ shares, S = SIZES.page }) => {
   if (!shares) {
     return (
-      <Flex h="full" minH={BAR_H} w="full" bg="rgba(255,255,255,0.04)" borderRadius="lg" align="center" justify="center" border="0.0625rem dashed" borderColor="rgba(255,255,255,0.12)">
-        <Text fontSize="clamp(0.6rem, 0.8vw, 0.8rem)" fontWeight="800" color="rgba(255,255,255,0.3)" textTransform="uppercase" letterSpacing="0.14em">
+      <Flex h="full" minH={S.bar} w="full" bg="line.track" borderRadius="lg" align="center" justify="center" border="0.0625rem dashed" borderColor="line.subtle">
+        <Text fontSize="clamp(0.6rem, 0.8vw, 0.8rem)" fontWeight="800" color="text.muted" textTransform="uppercase" letterSpacing="0.14em">
           —
         </Text>
       </Flex>
     );
   }
   return (
-    <Flex h="full" minH={BAR_H} w="full" borderRadius="lg" overflow="hidden">
+    <Flex h="full" minH={S.bar} w="full" borderRadius="lg" overflow="hidden">
       {shares.filter((s) => s.share > 0).map((s) => (
         <Flex key={s.key} w={`${s.share * 100}%`} bg={s.color} align="center" justify="center" minW={0} flexShrink={0} px="0.25rem">
-          {s.share >= 0.06 && (
-            <Text fontSize="clamp(0.8rem, 1.3vw, 1.35rem)" fontWeight="950" color="white" lineHeight={1} textShadow="0 1px 3px rgba(0,0,0,0.55)" whiteSpace="nowrap" letterSpacing="-0.01em">
+          {s.share >= S.minShare && (
+            <Text fontSize={S.pct} fontWeight="950" color="white" lineHeight={1} textShadow="0 0.0625rem 0.1875rem rgba(0,0,0,0.55)" whiteSpace="nowrap" letterSpacing="-0.01em">
               {Math.round(s.share * 100)}%
             </Text>
           )}
@@ -99,12 +106,12 @@ const StackedBar = ({ shares }) => {
 // One line, always. The two cards sit side by side and their bars line up only if
 // both legends are the same height; "No conversion" used to push the first card's
 // legend onto a second line, dropping its bars below the other card's.
-const Legend = ({ segments }) => (
-  <Flex gap="clamp(0.4rem, 0.8vw, 0.9rem)" flexWrap="nowrap" justify="space-between" flexShrink={0} minW={0}>
+const Legend = ({ segments, S = SIZES.page }) => (
+  <Flex gap={S.gap} flexWrap="nowrap" justify="space-between" flexShrink={0} minW={0}>
     {segments.map((seg) => (
       <Flex key={seg.key} align="center" gap="0.3rem" flexShrink={0}>
-        <Box w="clamp(0.6rem, 0.8vw, 0.9rem)" h="clamp(0.6rem, 0.8vw, 0.9rem)" bg={seg.color} borderRadius="3px" flexShrink={0} />
-        <Text fontSize="clamp(0.6rem, 0.78vw, 0.82rem)" fontWeight="800" color="rgba(255,255,255,0.6)" whiteSpace="nowrap">
+        <Box w={S.swatch} h={S.swatch} bg={seg.color} borderRadius="0.1875rem" flexShrink={0} />
+        <Text fontSize={S.legend} fontWeight="800" color="text.secondary" whiteSpace="nowrap">
           {seg.label}
         </Text>
       </Flex>
@@ -112,7 +119,8 @@ const Legend = ({ segments }) => (
   </Flex>
 );
 
-const SeriesCard = ({ title, segments, awayId, homeId, awayCounts, homeCounts, accent }) => {
+const SeriesCard = ({ title, segments, awayId, homeId, awayCounts, homeCounts, accent, poster = false }) => {
+  const S = poster ? SIZES.poster : SIZES.page;
   const rows = [
     { id: awayId, shares: toShares(awayCounts, segments) },
     { id: homeId, shares: toShares(homeCounts, segments) },
@@ -120,36 +128,36 @@ const SeriesCard = ({ title, segments, awayId, homeId, awayCounts, homeCounts, a
   const hasData = rows.some((r) => r.shares);
 
   return (
-    <Box w="full" h="full" bg="var(--part-bg, #141416)" borderRadius="xl" position="relative" overflow="hidden">
-      <Box p="clamp(0.875rem, 1.4vw, 1.5rem)" h="full" display="flex" flexDirection="column" gap="clamp(0.75rem, 1.2vw, 1.25rem)">
+    <Box w="full" h="full" bg="var(--part-bg, var(--gg-bg-card))" borderRadius="xl" position="relative" overflow="hidden">
+      <Box p={S.pad} h="full" display="flex" flexDirection="column" gap={S.stack}>
         {/* Eyebrow — house standard: accent dot, label, hairline. */}
-        <Flex align="center" justify="space-between" pb="0.5rem" borderBottom="0.0625rem solid" borderColor="whiteAlpha.100" flexShrink={0}>
+        <Flex align="center" justify="space-between" pb="0.5rem" borderBottom="0.0625rem solid" borderColor="line.subtle" flexShrink={0}>
           <Flex align="center" gap="0.5rem">
             <Box w="0.375rem" h="0.375rem" bg={accent} borderRadius="full" flexShrink={0} />
-            <Text fontSize="clamp(0.68rem, 0.85vw, 0.85rem)" fontWeight="black" color="rgba(255,255,255,0.55)" textTransform="uppercase" letterSpacing="0.16em" lineHeight={1.1}>
+            <Text fontSize="clamp(0.68rem, 0.85vw, 0.85rem)" fontWeight="black" color="text.secondary" textTransform="uppercase" letterSpacing="0.16em" lineHeight={1.1}>
               {title}
             </Text>
           </Flex>
           {!hasData && (
-            <Text fontSize="clamp(0.45rem, 0.55vw, 0.55rem)" fontWeight="800" color="rgba(255,255,255,0.3)" textTransform="uppercase" letterSpacing="0.14em">
+            <Text fontSize="clamp(0.45rem, 0.55vw, 0.55rem)" fontWeight="800" color="text.muted" textTransform="uppercase" letterSpacing="0.14em">
               No series data on file
             </Text>
           )}
         </Flex>
 
-        <Legend segments={segments} />
+        <Legend segments={segments} S={S} />
 
         {/* Rows take the rest of the card equally; the bar stretches to the row. */}
-        <Flex direction="column" gap="clamp(0.625rem, 1vw, 1rem)" flex="1" minH={0}>
+        <Flex direction="column" gap={S.rows} flex="1" minH={0}>
           {rows.map((row) => (
-            <Grid key={row.id} templateColumns="minmax(4.5rem, 7rem) minmax(0, 1fr)" columnGap="clamp(0.625rem, 1.2vw, 1.25rem)" alignItems="stretch" flex="1" minH={BAR_H}>
+            <Grid key={row.id} templateColumns={`${S.teamCol} minmax(0, 1fr)`} columnGap={S.gap} alignItems="stretch" flex="1" minH={S.bar}>
               <Flex align="center" gap="0.5rem" minW={0}>
-                <Image src={teamLogo(row.id)} alt="" boxSize="clamp(1.4rem, 2vw, 2rem)" objectFit="contain" flexShrink={0} />
-                <Text fontSize="clamp(0.9rem, 1.3vw, 1.35rem)" fontWeight="950" color="white" lineClamp={1} letterSpacing="-0.01em">
+                <Image src={teamLogo(row.id)} alt="" boxSize={S.logo} objectFit="contain" flexShrink={0} />
+                <Text fontSize={S.team} fontWeight="950" color="text.primary" lineClamp={1} letterSpacing="-0.01em">
                   {teamLabel(row.id)}
                 </Text>
               </Flex>
-              <StackedBar shares={row.shares} />
+              <StackedBar shares={row.shares} S={S} />
             </Grid>
           ))}
         </Flex>
@@ -158,7 +166,7 @@ const SeriesCard = ({ title, segments, awayId, homeId, awayCounts, homeCounts, a
   );
 };
 
-export const ChainsMovedCard = ({ seriesSummary, awayId, homeId, accent }) => (
+export const ChainsMovedCard = ({ seriesSummary, awayId, homeId, accent, poster }) => (
   <SeriesCard
     title="When did they move the chains?"
     segments={CHAINS_SEGMENTS}
@@ -167,10 +175,11 @@ export const ChainsMovedCard = ({ seriesSummary, awayId, homeId, accent }) => (
     awayCounts={seriesSummary?.[awayId]?.chains_moved_on ?? null}
     homeCounts={seriesSummary?.[homeId]?.chains_moved_on ?? null}
     accent={accent}
+    poster={poster}
   />
 );
 
-export const SeriesResultsCard = ({ seriesSummary, awayId, homeId, accent }) => (
+export const SeriesResultsCard = ({ seriesSummary, awayId, homeId, accent, poster }) => (
   <SeriesCard
     title="Series Results"
     segments={RESULT_SEGMENTS}
@@ -179,5 +188,6 @@ export const SeriesResultsCard = ({ seriesSummary, awayId, homeId, accent }) => 
     awayCounts={seriesSummary?.[awayId]?.results ?? null}
     homeCounts={seriesSummary?.[homeId]?.results ?? null}
     accent={accent}
+    poster={poster}
   />
 );

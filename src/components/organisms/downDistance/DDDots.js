@@ -15,22 +15,22 @@ export const DDDots = ({ slide }) => {
 
   return (
     <Flex direction="column" h="100%" minH={0}>
-      <Grid templateColumns={ROW_COLS} columnGap="14px" alignItems="end" pb="10px" borderBottom="1px solid rgba(255,255,255,0.14)">
+      <Grid templateColumns={ROW_COLS} columnGap="14px" alignItems="end" pb="10px" borderBottom="1px solid rgba(var(--gg-fg), 0.14)">
         <Box />
         <Flex align="center" gap="16px">
-          <Flex align="center" gap="6px"><Box w="14px" h="14px" borderRadius="full" bg={PURPLE} /><Text fontSize="13px" fontWeight="900" color="rgba(255,255,255,0.75)" textTransform="uppercase" letterSpacing="0.08em">Completed</Text></Flex>
-          <Flex align="center" gap="6px"><Box w="14px" h="14px" borderRadius="full" border={`2px solid ${PURPLE}`} /><Text fontSize="13px" fontWeight="900" color="rgba(255,255,255,0.75)" textTransform="uppercase" letterSpacing="0.08em">Incomplete</Text></Flex>
-          {sum && <Text fontSize="13px" fontWeight="900" color="rgba(255,255,255,0.5)" textTransform="uppercase" letterSpacing="0.08em">SWAC: {sum.swac_completed} of {sum.swac_shots}</Text>}
+          <Flex align="center" gap="6px"><Box w="14px" h="14px" borderRadius="full" bg={PURPLE} /><Text fontSize="13px" fontWeight="900" color="rgba(var(--gg-fg), 0.75)" textTransform="uppercase" letterSpacing="0.08em">Completed</Text></Flex>
+          <Flex align="center" gap="6px"><Box w="14px" h="14px" borderRadius="full" border={`2px solid ${PURPLE}`} /><Text fontSize="13px" fontWeight="900" color="rgba(var(--gg-fg), 0.75)" textTransform="uppercase" letterSpacing="0.08em">Incomplete</Text></Flex>
+          {sum && <Text fontSize="13px" fontWeight="900" color="rgba(var(--gg-fg), 0.5)" textTransform="uppercase" letterSpacing="0.08em">SWAC: {sum.swac_completed} of {sum.swac_shots}</Text>}
         </Flex>
-        <Text fontSize="13px" fontWeight="900" color="rgba(255,255,255,0.55)" textTransform="uppercase" letterSpacing="0.08em" textAlign="right">Shot rate</Text>
+        <Text fontSize="13px" fontWeight="900" color="rgba(var(--gg-fg), 0.55)" textTransform="uppercase" letterSpacing="0.08em" textAlign="right">Shot rate</Text>
       </Grid>
 
       <Flex direction="column" flex={1} minH={0}>
         {rows.map((p) => (
-          <Grid key={p.team_id} flex={1} minH="34px" templateColumns={ROW_COLS} columnGap="14px" alignItems="center" borderBottom="1px solid rgba(255,255,255,0.05)" opacity={anyHl && !p.highlight ? 0.42 : 1}>
+          <Grid key={p.team_id} flex={1} minH="34px" templateColumns={ROW_COLS} columnGap="14px" alignItems="center" borderBottom="1px solid rgba(var(--gg-fg), 0.05)" opacity={anyHl && !p.highlight ? 0.42 : 1}>
             <Flex align="center" gap="10px" minW={0}>
               <Image src={TEAM_BY_V5[p.team_id]?.logo} alt="" w="34px" h="34px" objectFit="contain" flexShrink={0} />
-              <Text fontSize="19px" fontWeight="900" color="white" textTransform="uppercase" whiteSpace="nowrap">{shortOf(p.team_id)}</Text>
+              <Text fontSize="19px" fontWeight="900" color="var(--gg-ink)" textTransform="uppercase" whiteSpace="nowrap">{shortOf(p.team_id)}</Text>
             </Flex>
             {/* Dots on a shared scale, so a row's length is its count. */}
             <Flex align="center" gap="0" minW={0}>
@@ -39,9 +39,9 @@ export const DDDots = ({ slide }) => {
                   <Box w="22px" h="22px" borderRadius="full" bg={i < p.shots_completed ? PURPLE : "transparent"} border={`2.5px solid ${PURPLE}`} />
                 </Box>
               ))}
-              {p.shots === 0 && <Text fontSize="16px" fontWeight="800" color="rgba(255,255,255,0.4)">0</Text>}
+              {p.shots === 0 && <Text fontSize="16px" fontWeight="800" color="rgba(var(--gg-fg), 0.4)">0</Text>}
             </Flex>
-            <Text fontSize="20px" fontWeight="950" color="white" fontVariantNumeric="tabular-nums" textAlign="right">{pct0(p.shot_rate_pct)}</Text>
+            <Text fontSize="20px" fontWeight="950" color="var(--gg-ink)" fontVariantNumeric="tabular-nums" textAlign="right">{pct0(p.shot_rate_pct)}</Text>
           </Grid>
         ))}
       </Flex>

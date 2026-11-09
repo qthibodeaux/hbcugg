@@ -1,13 +1,8 @@
-import React from "react";
 import {
   Box,
   Flex,
   Text,
   VStack,
-  // eslint-disable-next-line no-unused-vars
-  HStack,
-  // eslint-disable-next-line no-unused-vars
-  Grid,
 } from "@chakra-ui/react";
 
 /**

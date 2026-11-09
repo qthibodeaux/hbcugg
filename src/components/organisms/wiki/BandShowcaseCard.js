@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
+import { useBandPlayback } from './useBandPlayback';
 import { Box, Flex, Grid, HStack, Text, VStack } from '@chakra-ui/react';
 import { WikiCtx } from './WikiCtx';
 
@@ -14,44 +15,13 @@ const PLACEHOLDER_TRACK = {
 
 const BandShowcaseCard = () => {
   const wikiData = React.useContext(WikiCtx);
-  const audioRef = useRef(null);
-  const [trackIdx, setTrackIdx] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
   const rawTracks = wikiData.marching_band?.tracks || [];
   const tracks = rawTracks.length > 0 ? rawTracks : [PLACEHOLDER_TRACK];
-  const track = tracks[trackIdx] || tracks[0];
+  const {
+    audioRef, trackIdx, isPlaying, progress, currentTime, duration, track,
+    selectTrack, togglePlay, handleTimeUpdate, handleLoadedMetadata, handleEnded, handleScrub,
+  } = useBandPlayback(tracks);
 
-  const selectTrack = (i) => {
-    if (i === trackIdx) return;
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
-    setIsPlaying(false);
-    setProgress(0);
-    setCurrentTime(0);
-    setDuration(0);
-    setTrackIdx(i);
-  };
-  const togglePlay = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) { audioRef.current.pause(); } else { audioRef.current.play(); }
-    setIsPlaying(p => !p);
-  };
-  const handleTimeUpdate = () => {
-    if (!audioRef.current) return;
-    const ct = audioRef.current.currentTime;
-    const dur = audioRef.current.duration || 0;
-    setCurrentTime(ct);
-    setProgress(dur > 0 ? (ct / dur) * 100 : 0);
-  };
-  const handleLoadedMetadata = () => { if (audioRef.current) setDuration(audioRef.current.duration); };
-  const handleEnded = () => setIsPlaying(false);
-  const handleScrub = (e) => {
-    if (!audioRef.current || !audioRef.current.duration) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    audioRef.current.currentTime = ((e.clientX - rect.left) / rect.width) * audioRef.current.duration;
-  };
   const fmt = (s) => {
     if (!s || isNaN(s)) return '0:00';
     return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;

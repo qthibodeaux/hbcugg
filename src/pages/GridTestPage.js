@@ -6,12 +6,7 @@ import { WeekCentralGameCardA } from "../components/organisms/test/WeekCentralGa
 import { GameCard2x1SplitBanner } from "../components/organisms/test/GameCard2x1_SplitBanner";
 import { GameCard2x1StackedOverlay } from "../components/organisms/test/GameCard2x1_StackedOverlay";
 import { GameCard2x1HeroStrip } from "../components/organisms/test/GameCard2x1_HeroStrip";
-import {
-  GameOfWeekSpotlight,
-  StoryCard,
-  StatCarouselCard,
-  TeamPerformanceStrip,
-} from "../components/molecules/game/GamesHubCards";
+import { GameOfWeekSpotlight, StoryCard, StatCarouselCard, TeamPerformanceStrip } from "../components/molecules/game/gamesHubCards/LegacyGridCards";
 
 // ─── Mock data (extracted from real schedule/teams data) ─────────────────────
 const MOCK_TEAM_DATA = {

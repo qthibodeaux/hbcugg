@@ -1,15 +1,21 @@
 import { useQuery } from "@tanstack/react-query";
 import { FE_DOCS_BASE, fetchJson } from "../utils/gameCenterPayloads";
 import { demoSeasons } from "../config/demo";
+import teamsData from "../data/teams.json";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Counting stats — the backend's weekly files (Counting Stats Fetch Contract,
 // src/pages/stats/md). stats/counting/{index, team_, player_, penalties_}.
 // Totals cover League games only (two of the 18, play-by-play); the files say
-// so in `tier` / `tier_note`. These hooks only fetch and pass through.
+// so in `tier` / `tier_note`. These hooks only fetch and pass through, except
+// team names: the backend's codes (TXSO, JKST...) never print. Our teams.json
+// abbreviation (`shortName`) replaces `short` on every team row.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const COUNTING_BASE = `${FE_DOCS_BASE}/stats/counting`;
+
+const ABBR = Object.fromEntries(teamsData.teams.map((t) => [String(t.exportId).replace(/25$/, ""), t.shortName]));
+const withOurShort = (rows) => rows.map((t) => (ABBR[t.team_id] ? { ...t, short: ABBR[t.team_id] } : t));
 
 const useFile = (key, path, enabled = true) =>
   useQuery({ queryKey: ["counting", key], queryFn: () => fetchJson(`${COUNTING_BASE}/${path}`), enabled, staleTime: 5 * 60 * 1000, retry: false });
@@ -28,7 +34,7 @@ export const useCountingSeason = (picked) => {
 export const useCountingTeamStats = (season) => {
   const { data, isLoading, isError, error } = useFile(`team-${season}`, `team_${season}.json`, season != null);
   return {
-    teams: data?.teams ?? [],
+    teams: withOurShort(data?.teams ?? []),
     source: data ? "backend" : null,
     tier: data?.tier ?? null,
     tierNote: data?.tier_note ?? null,

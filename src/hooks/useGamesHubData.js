@@ -26,6 +26,9 @@ export const useGamesHubData = () => {
     [seasonData, weekFilter, teamFilter, conferenceFilter, statusFilter],
   );
 
+  // The whole season, unfiltered: the week poster is the same whatever the page's filters say.
+  const allGames = useMemo(() => buildGamesHubModel({ seasonData }).filteredGames, [seasonData]);
+
   const setSeason = (value) => {
     setSeasonOverride(String(value));
     setWeekFilter("all");
@@ -48,6 +51,7 @@ export const useGamesHubData = () => {
     isLoading: isLoading || isCurrentContextLoading,
     isError,
     error,
+    allGames,
     ...model,
   };
 };

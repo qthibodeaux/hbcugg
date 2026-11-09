@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useQueries, useQuery } from "@tanstack/react-query";
-import { FE_DOCS_BASE, fetchJson } from "../utils/gameCenterPayloads";
+import { FE_DOCS_BASE, fetchJson, gameCenterPaths } from "../utils/gameCenterPayloads";
 import { useCountingPlayerStats, useCountingTeamStats } from "./useCountingStats";
 import { TEAM_ANALYTICS_BASE, useTeamAnalyticsUsage } from "./useTeamAnalyticsData";
 import { usePlayerProfileDoc } from "./useSWACData";
@@ -32,6 +32,19 @@ export const useGamePreviewScout = (model) => {
     })),
   });
 
+  // Each team's schedule: the last six results for the short preview.
+  const schedules = useQueries({
+    queries: ids.map((id) => ({
+      queryKey: ["team-schedule-file", String(season), id],
+      queryFn: () => fetchJson(gameCenterPaths.teamSchedule(season, id)),
+      enabled: season != null,
+      staleTime: 5 * 60 * 1000,
+      retry: false,
+    })),
+  });
+  const schedA = schedules[0]?.data ?? null;
+  const schedB = schedules[1]?.data ?? null;
+
   // The QB's season passing field map (depth x direction) lives on his profile.
   const profA = usePlayerProfileDoc(season, model?.raw?.away?.quarterback?.person_id).doc;
   const profB = usePlayerProfileDoc(season, model?.raw?.home?.quarterback?.person_id).doc;
@@ -46,9 +59,10 @@ export const useGamePreviewScout = (model) => {
         usage: usage.teams,
         hubs: Object.fromEntries(ids.map((id, i) => [id, [hubA, hubB][i]])),
         fieldMaps: Object.fromEntries(ids.map((id, i) => [id, [profA, profB][i]?.field_map?.passing ?? null])),
+        schedules: Object.fromEntries(ids.map((id, i) => [id, [schedA, schedB][i]])),
       }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [model, counting.teams, players.players, advanced.data, usage.teams, hubA, hubB, profA, profB],
+    [model, counting.teams, players.players, advanced.data, usage.teams, hubA, hubB, profA, profB, schedA, schedB],
   );
 };
 

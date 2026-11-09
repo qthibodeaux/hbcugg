@@ -2,7 +2,7 @@ import { Box, Text, Button, Flex } from "@chakra-ui/react";
 import { useTeams } from "../../hooks/useTeams";
 import { useNavigate } from "react-router-dom";
 import { SchoolDirectoryFusion } from "../../components/molecules/schools/SchoolDirectory";
-import { BannerSchools } from "../../components/organisms/test/BannerPages";
+import { BannerSchools } from "../../components/molecules/banners/SchoolsBanner";
 
 const Schools = () => {
 	const { data: teams = [] } = useTeams();

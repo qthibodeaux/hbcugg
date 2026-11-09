@@ -97,6 +97,7 @@ hbcugg/
 | `/coaches/:coachId` | CoachDetailPage | Coach profile |
 | `/officials` | OfficialsPage | Officials directory |
 | `/stats` | StatsPage | League stats |
+| `/stats/deep-dive` | DeepDiveStatsPage | Deep Dive: one subject told through export posters (receivers first) |
 | `/schedule` | SchedulePage | Season schedule |
 | `/game-center` | GameCenterPage | Game center hub |
 | `/game-center/games` | GamesHubPage | Games hub |

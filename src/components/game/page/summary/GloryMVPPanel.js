@@ -32,7 +32,7 @@ export const GloryMVPPanel = ({ awayId, homeId, productionScores, imageMap }) =>
           <Text fontSize="sm" fontWeight="black" color="text.primary">{cleanName(mvp.name)}</Text>
           <Text fontSize="xs" color="text.muted">{mvp.position} · {getTeamLabel(mvpTeamId)}</Text>
           <Text fontSize="2xl" fontWeight="black" color="brand.400" lineHeight={1.1} mt={1}>{fmt(mvp.production_total, 1)}</Text>
-          <Text fontSize="9px" color="text.muted" textTransform="uppercase" letterSpacing="wider">Production Score</Text>
+          <Text fontSize="9px" color="text.muted" textTransform="uppercase" letterSpacing="wider">PAR</Text>
         </Box>
       </Flex>
       {mvp.components && Object.entries(mvp.components).map(([k, v]) => (

@@ -18,14 +18,14 @@ const Home = () => {
       <HomeHero />
 
       {/* CONTENT SECTIONS - All Centered */}
-      <Box py={{ base: 0, md: 16 }} bg="bg.primary">
+      <Box pt={{ base: 0, md: 6 }} pb={{ base: 0, md: 16 }} bg="bg.primary">
         <Container maxW="1200px" mx="auto" px={{ base: 0, md: 6 }}>
           
           <GloryTeamOfWeek />
 
       {/* ALL TEAMS BANNER */}
-      <Box px={{ base: 0, md: 8 }} pb={{ base: 0, md: 12 }}>
-        <Container maxW="1200px" px={{ base: 0, md: 4 }}>
+      <Box pb={{ base: 0, md: 4 }}>
+        <Container maxW="none" px={0}>
           <Box
             bg="brand.500"
             py={{ base: 6, md: 8 }}

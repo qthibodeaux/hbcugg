@@ -5,6 +5,9 @@ import { fetchJson, gameCenterPaths } from "../utils/gameCenterPayloads";
 import { buildTeamScheduleModel, DEFAULT_TEAM } from "../utils/teamScheduleModel";
 import { useFootballCurrentContext } from "./useFootballCurrentContext";
 
+const DEFAULT_FILTER = "all";
+const toV5TeamId = (exportId) => exportId?.replace(/25$/, "") ?? null;
+
 // ─── Scoped fetch, with a transport fallback ─────────────────────────────────
 //
 // The page shows one team. The request should return one team (~28 KB), not
@@ -56,7 +59,7 @@ export const useTeamScheduleData = ({ fixedTeamId = null } = {}) => {
   const queryClient = useQueryClient();
   const [teamIdState, setTeamId] = useState(DEFAULT_TEAM);
   const [seasonOverride, setSeasonOverride] = useState(null);
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState(DEFAULT_FILTER);
   const teamId = fixedTeamId ?? teamIdState;
   const season = seasonOverride ?? currentSeason ?? GAME_CENTER_DEFAULT_SEASON;
 
@@ -75,13 +78,13 @@ export const useTeamScheduleData = ({ fixedTeamId = null } = {}) => {
 
   const setSeason = (value) => {
     setSeasonOverride(Number(value));
-    setActiveFilter("all");
+    setActiveFilter(DEFAULT_FILTER);
   };
 
   const handleTeamChange = (newId) => {
     if (fixedTeamId) return;
     setTeamId(newId ?? null);
-    setActiveFilter("all");
+    setActiveFilter(DEFAULT_FILTER);
   };
 
   return {
@@ -108,7 +111,7 @@ export const useTeamScheduleData = ({ fixedTeamId = null } = {}) => {
 // Schedules page for the same team+season never double-fetches.
 export const useTeamRecentGames = (exportId, season, count = 5) => {
   const queryClient = useQueryClient();
-  const teamId = exportId?.replace(/25$/, "") ?? null;
+  const teamId = toV5TeamId(exportId);
 
   const { data: teamEntry, isLoading } = useQuery({
     queryKey: ["team-schedule", season, teamId],
@@ -117,12 +120,19 @@ export const useTeamRecentGames = (exportId, season, count = 5) => {
     enabled: !!teamId && !!season,
   });
 
-  const { completed } = buildTeamScheduleModel({ teamEntry, teamId, activeFilter: "all" });
+  const completed = useMemo(
+    () => buildTeamScheduleModel({ teamEntry, teamId, activeFilter: DEFAULT_FILTER }).completed,
+    [teamEntry, teamId]
+  );
+  const recentGames = useMemo(
+    () => completed.slice(-count).reverse(),
+    [completed, count]
+  );
 
   return {
     // completed is sorted oldest -> newest; take the last `count` and flip
     // so the most recent game reads first.
-    recentGames: completed.slice(-count).reverse(),
+    recentGames,
     isLoading,
   };
 };

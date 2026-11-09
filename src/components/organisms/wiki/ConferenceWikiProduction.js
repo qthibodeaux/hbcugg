@@ -117,7 +117,7 @@ const LEGACY_STATS = [
 
 const MEMBERSHIP = {
   swacEast: ["Alabama A&M", "Alabama State", "Bethune-Cookman", "Florida A&M", "Jackson State", "Mississippi Valley State"],
-  swacWest: ["Alcorn State", "Grambling State", "Prairie View A&M", "Southern", "Texas Southern", "Arkansas-Pine Bluff"],
+  swacWest: ["Alcorn State", "Grambling State", "Prairie View A&M", "Southern", "Texas Southern", "Arkansas Pine Bluff"],
   meacFootball: ["Delaware State", "Howard", "Morgan State", "North Carolina Central", "Norfolk State", "South Carolina State"],
   meacNonFootball: ["Coppin State", "Maryland Eastern Shore"],
   formerContext: ["Florida A&M", "Bethune-Cookman", "North Carolina A&T", "Hampton"],

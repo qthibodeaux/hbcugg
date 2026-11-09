@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 import { Layers, Map, Radar as RadarIcon, Scale, SlidersHorizontal, TrendingUp, Zap } from "lucide-react";
 import PageShell from "../../layouts/PageShell";
-import { PlayerProductionMap } from "../test/PlayerProductionMaps";
+import { PlayerProductionMap } from "../../molecules/player/productionMaps/PlayerProductionMap";
 import {
   buildCalledUponShare,
   buildOpponentAdjusted,

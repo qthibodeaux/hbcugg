@@ -4,16 +4,13 @@ import { House, Navigation } from 'lucide-react';
 import PageShell from '../../components/layouts/PageShell';
 import { GameLink } from '../../components/game/GameLink';
 import { BannerTeamDetailPage } from '../../components/organisms/test/BannerTeamDetail';
-import { BannerTeamSchedules } from '../../components/organisms/test/BannerPages';
-import { TeamScheduleBannerA } from '../../components/organisms/test/TeamScheduleBannerA';
+import { BannerTeamSchedules } from "../../components/molecules/banners/TeamSchedulesBanner";
+import { TeamScheduleBannerA } from '../../components/molecules/schedule/teamScheduleBanner/TeamScheduleBanner';
 import { useTeamScheduleData } from '../../hooks/useTeamScheduleData';
 import { getTeam, SCHEDULE_FILTERS } from '../../utils/teamScheduleModel';
 import { useLayoutDensity } from '../../hooks/useLayoutDensity';
 import { getShortOpponentName } from '../../utils/opponentName';
 
-// ─────────────────────────────────────────────────────────────────────────────
-// CONSTANTS
-// ─────────────────────────────────────────────────────────────────────────────
 // ─────────────────────────────────────────────────────────────────────────────
 // HELPERS
 // ─────────────────────────────────────────────────────────────────────────────
@@ -38,11 +35,6 @@ const getWeekFromStem = (stem) => {
 const getWeekFromGame = (game) => {
   if (game.week) return Number(game.week);
   return getWeekFromStem(game.parsed_game_stem);
-};
-
-const fmtDate = (d) => {
-  const parts = fmtDateParts(d);
-  return `${parts.month}${parts.day ? ` ${parts.day}` : ''}`;
 };
 
 const getGameLabel = (game, opponent) => {
@@ -78,6 +70,46 @@ const getVenueDetails = (game) => {
   };
 };
 
+const getResultDetails = (game, isComplete) => {
+  const won = isComplete && game.result === 'W';
+  const lost = isComplete && game.result === 'L';
+
+  return {
+    resultColor: won ? 'green.400' : lost ? 'red.400' : 'text.muted',
+    resultLabel: won
+      ? `W ${game.score_team}-${game.score_opp}`
+      : lost
+      ? `L ${game.score_team}-${game.score_opp}`
+      : null,
+    scoreBg: won ? 'rgba(34,197,94,0.16)' : lost ? 'rgba(248,113,113,0.16)' : 'whiteAlpha.100',
+    scoreBorder: won ? 'green.400' : lost ? 'red.300' : 'whiteAlpha.200',
+  };
+};
+
+const buildGameRowViewModel = (game) => {
+  const isComplete = !!game.result;
+  const isCorpus = game.has_parsed_game && game.parsed_game_stem;
+  const opponent = getTeam(game.opponent_id);
+
+  return {
+    isComplete,
+    isCorpus,
+    opponent,
+    opponentLogo: opponent ? `/assets/${opponent.exportId.replace(/25$/, '')}.svg` : null,
+    opponentName: opponent?.name ?? game.opponent_name ?? 'TBD',
+    opponentShort: opponent?.shortName ?? (getShortOpponentName(game.opponent_name) || 'TBD'),
+    accent: opponent?.colors?.secondary ?? opponent?.colors?.accent ?? '#E53E3E',
+    dateParts: fmtDateParts(game.date),
+    gameLabel: getGameLabel(game, opponent),
+    tag: getTag(game, opponent),
+    venue: getVenueDetails(game),
+    week: getWeekFromGame(game) ?? '-',
+    isAway: game.home_away === 'away',
+    homeAway: game.home_away === 'away' ? 'Away' : 'Home',
+    ...getResultDetails(game, isComplete),
+  };
+};
+
 const InitialMark = ({ label }) => (
   <Flex
     w={{ base: '50px', md: '58px', xl: '76px' }}
@@ -96,136 +128,8 @@ const InitialMark = ({ label }) => (
   </Flex>
 );
 
-// ─────────────────────────────────────────────────────────────────────────────
-// TELEMETRY LIST ROW
-// ─────────────────────────────────────────────────────────────────────────────
-const GameRowOld = ({ game, teamId }) => {
-  const isComplete = !!game.result;
-  const isCorpus = game.has_parsed_game && game.parsed_game_stem;
-  const isHome = game.home_away === 'home';
-
-  const opponent = getTeam(game.opponent_id);
-  const opponentLogo = opponent
-    ? `/assets/${opponent.exportId.replace(/25$/, '')}.svg`
-    : null;
-  const opponentLabel = opponent?.shortName ?? game.opponent_name ?? 'TBD';
-
-  const won = isComplete && game.result === 'W';
-  const lost = isComplete && game.result === 'L';
-  const resultColor = won ? 'green.400' : lost ? 'red.400' : 'text.muted';
-  const resultLabel = won
-    ? `W ${game.score_team}–${game.score_opp}`
-    : lost
-    ? `L ${game.score_team}–${game.score_opp}`
-    : null;
-
-  const inner = (
-    <Flex align="center" gap={4} px={4} py={4}
-      borderBottom="1px solid" borderColor="whiteAlpha.100"
-      _hover={isCorpus ? { bg: 'whiteAlpha.50' } : {}}
-      style={{ transition: 'background 0.15s' }}>
-
-      {/* Week badge */}
-      <Box flexShrink={0} w="52px">
-        <Box px={2} py={1} bg="whiteAlpha.100" borderRadius="md" textAlign="center" mb={1}>
-          <Text fontSize="10px" fontWeight="black" color="white">
-            W{getWeekFromGame(game) ?? '—'}
-          </Text>
-        </Box>
-        <Text fontSize="8px" color="text.muted" textAlign="center">
-          {fmtDate(game.date)}
-        </Text>
-      </Box>
-
-      {/* Opponent */}
-      <Flex align="center" gap={3} flex={1}>
-        {opponentLogo ? (
-          <Box w="32px" h="32px" flexShrink={0}>
-            <Image src={opponentLogo} w="32px" h="32px" objectFit="contain"
-              onError={(e) => { e.target.style.display = 'none'; }} />
-          </Box>
-        ) : (
-          <Box w="32px" h="32px" borderRadius="full" bg="whiteAlpha.100" flexShrink={0}
-            display="flex" alignItems="center" justifyContent="center">
-            <Text fontSize="8px" fontWeight="black" color="text.muted">
-              {opponentLabel.slice(0, 3)}
-            </Text>
-          </Box>
-        )}
-        <Box>
-          <Text fontSize="sm" fontWeight="bold" color="white" lineClamp={1}>
-            {opponentLabel}
-          </Text>
-          <Text fontSize="9px" color="text.muted">
-            {isHome ? 'HOME' : 'AWAY'}{game.stadium ? ` - ${game.stadium}` : ''}
-          </Text>
-        </Box>
-      </Flex>
-
-      {/* Tags */}
-      <Flex gap={1} flexShrink={0}>
-        {game.conf_game && (
-          <Box px={2} py={0.5} borderRadius="sm" bg="whiteAlpha.100">
-            <Text fontSize="8px" fontWeight="black" color="text.muted">CONF</Text>
-          </Box>
-        )}
-        {game.bowl_game && (
-          <Box px={2} py={0.5} borderRadius="sm" bg="rgba(229,62,62,0.15)">
-            <Text fontSize="8px" fontWeight="black" color="brand.400">BOWL</Text>
-          </Box>
-        )}
-      </Flex>
-
-      {/* Result / action */}
-      <Box flexShrink={0} textAlign="right" w="120px">
-        {isComplete ? (
-          <>
-            <Text fontSize="md" fontWeight="black" color={resultColor}>{resultLabel}</Text>
-            {isCorpus && (
-              <Text fontSize="8px" color="brand.400" textTransform="uppercase"
-                letterSpacing="0.1em" mt={0.5}>View Recap -&gt;</Text>
-            )}
-          </>
-        ) : (
-          <Text fontSize="9px" color="text.muted" textTransform="uppercase"
-            letterSpacing="0.1em">Upcoming</Text>
-        )}
-      </Box>
-    </Flex>
-  );
-
-  return isCorpus
-    ? <Box as={GameLink} gameStem={game.parsed_game_stem} fromSection="team" display="block">{inner}</Box>
-    : inner;
-};
-
-GameRowOld.displayName = 'GameRowOld';
-
-const TeamScheduleGameRowStandard = ({ game }) => {
-  const isComplete = !!game.result;
-  const isCorpus = game.has_parsed_game && game.parsed_game_stem;
-  const opponent = getTeam(game.opponent_id);
-  const opponentLogo = opponent ? `/assets/${opponent.exportId.replace(/25$/, '')}.svg` : null;
-  const opponentName = opponent?.name ?? game.opponent_name ?? 'TBD';
-  const opponentShort = opponent?.shortName ?? (getShortOpponentName(game.opponent_name) || 'TBD');
-  const accent = opponent?.colors?.secondary ?? opponent?.colors?.accent ?? '#E53E3E';
-  const dateParts = fmtDateParts(game.date);
-  const tag = getTag(game, opponent);
-  const venue = getVenueDetails(game);
-  const week = getWeekFromGame(game) ?? '-';
-  const isAway = game.home_away === 'away';
-  const LocationIcon = isAway ? Navigation : House;
-
-  const won = isComplete && game.result === 'W';
-  const lost = isComplete && game.result === 'L';
-  const resultColor = won ? 'green.400' : lost ? 'red.400' : 'text.muted';
-  const resultLabel = won
-    ? `W ${game.score_team}-${game.score_opp}`
-    : lost
-    ? `L ${game.score_team}-${game.score_opp}`
-    : null;
-  const scoreBg = won ? 'rgba(34,197,94,0.16)' : lost ? 'rgba(248,113,113,0.16)' : 'whiteAlpha.100';
-  const scoreBorder = won ? 'green.400' : lost ? 'red.300' : 'whiteAlpha.200';
+const TeamScheduleGameRowStandard = ({ row }) => {
+  const LocationIcon = row.isAway ? Navigation : House;
 
   const inner = (
     <Grid
@@ -243,20 +147,20 @@ const TeamScheduleGameRowStandard = ({ game }) => {
       bg="rgba(20,20,22,0.98)"
       position="relative"
       overflow="hidden"
-      _hover={isCorpus ? { bg: 'whiteAlpha.50' } : {}}
+      _hover={row.isCorpus ? { bg: 'whiteAlpha.50' } : {}}
       style={{ transition: 'background 0.15s' }}
     >
-      {opponent && (
-        <Box position="absolute" left={0} top={0} bottom={0} w={{ base: '4px', xl: '5px' }} bg={accent} />
+      {row.opponent && (
+        <Box position="absolute" left={0} top={0} bottom={0} w={{ base: '4px', xl: '5px' }} bg={row.accent} />
       )}
 
       <Box textAlign="center">
         <Box
           px={2}
           py={{ lg: 2, xl: 2.5 }}
-          bg={opponent ? `${accent}24` : 'whiteAlpha.100'}
+          bg={row.opponent ? `${row.accent}24` : 'whiteAlpha.100'}
           border="1px solid"
-          borderColor={opponent ? `${accent}88` : 'whiteAlpha.100'}
+          borderColor={row.opponent ? `${row.accent}88` : 'whiteAlpha.100'}
           borderRadius="md"
           textAlign="center"
         >
@@ -264,25 +168,25 @@ const TeamScheduleGameRowStandard = ({ game }) => {
             Week
           </Text>
           <Text mt={1} fontSize={{ lg: '2xl', xl: '3xl' }} fontWeight="black" color="white" lineHeight={0.9}>
-            {week}
+            {row.week}
           </Text>
         </Box>
       </Box>
 
       <Box textAlign="center">
         <Text fontSize={{ lg: 'sm', xl: 'md' }} color="white" fontWeight="black" lineHeight={1}>
-          {dateParts.month}
+          {row.dateParts.month}
         </Text>
         <Text mt={1} fontSize={{ lg: 'lg', xl: 'xl' }} color="text.secondary" fontWeight="black" lineHeight={1}>
-          {dateParts.day}
+          {row.dateParts.day}
         </Text>
       </Box>
 
       <Flex align="center" gap={{ base: 2, xl: 4 }} minW={0}>
-        {opponentLogo ? (
+        {row.opponentLogo ? (
           <Box w={{ base: '58px', md: '66px', xl: '82px' }} h={{ base: '58px', md: '66px', xl: '82px' }} flexShrink={0}>
             <Image
-              src={opponentLogo}
+              src={row.opponentLogo}
               w="100%"
               h="100%"
               objectFit="contain"
@@ -290,41 +194,41 @@ const TeamScheduleGameRowStandard = ({ game }) => {
             />
           </Box>
         ) : (
-          <InitialMark label={opponentShort.slice(0, 3)} />
+          <InitialMark label={row.opponentShort.slice(0, 3)} />
         )}
         <Box minW={0}>
           <Text fontSize={{ base: '2xl', md: '3xl', xl: '4xl' }} fontWeight="black" color="white" lineHeight="0.95" letterSpacing="-0.02em" lineClamp={1}>
-            {opponentName}
+            {row.opponentName}
           </Text>
         </Box>
       </Flex>
 
       <Flex display={{ base: 'none', lg: 'flex' }} align="center" gap={2} minW={0}>
-        <LocationIcon size={17} color={opponent ? accent : '#A1A1AA'} />
+        <LocationIcon size={17} color={row.opponent ? row.accent : '#A1A1AA'} />
         <Box minW={0}>
           <Text fontSize={{ lg: 'sm', xl: 'md' }} color="white" fontWeight="black" lineClamp={1}>
-            {isAway ? 'Away' : 'Home'}
+            {row.isAway ? 'Away' : 'Home'}
           </Text>
           <Text mt={1} fontSize={{ lg: '10px', xl: '11px' }} color="text.secondary" fontWeight="bold" lineClamp={1}>
-            {venue.city}
+            {row.venue.city}
           </Text>
           <Text mt={0.5} fontSize={{ lg: '9px', xl: '10px' }} color="text.muted" lineClamp={1}>
-            {venue.stadium}
+            {row.venue.stadium}
           </Text>
         </Box>
       </Flex>
 
-      <Box display={{ base: 'none', lg: 'block' }} justifySelf="start" px={{ lg: 3, xl: 4 }} py={{ lg: 2, xl: 2.5 }} borderRadius="md" bg={opponent ? `${accent}22` : 'whiteAlpha.100'} border="1px solid" borderColor={opponent ? `${accent}88` : 'whiteAlpha.100'}>
-        <Text fontSize={{ lg: '9px', xl: '10px' }} color={opponent ? accent : 'text.muted'} fontWeight="black" textTransform="uppercase" whiteSpace="nowrap">
-          {tag}
+      <Box display={{ base: 'none', lg: 'block' }} justifySelf="start" px={{ lg: 3, xl: 4 }} py={{ lg: 2, xl: 2.5 }} borderRadius="md" bg={row.opponent ? `${row.accent}22` : 'whiteAlpha.100'} border="1px solid" borderColor={row.opponent ? `${row.accent}88` : 'whiteAlpha.100'}>
+        <Text fontSize={{ lg: '9px', xl: '10px' }} color={row.opponent ? row.accent : 'text.muted'} fontWeight="black" textTransform="uppercase" whiteSpace="nowrap">
+          {row.tag}
         </Text>
       </Box>
 
-      <Box justifySelf="end" borderRadius="md" bg={scoreBg} border="1px solid" borderColor={scoreBorder} px={{ base: 2, xl: 3 }} py={{ base: 2, xl: 2.5 }} minW={{ base: '74px', xl: '88px' }} textAlign="center">
-        {isComplete ? (
+      <Box justifySelf="end" borderRadius="md" bg={row.scoreBg} border="1px solid" borderColor={row.scoreBorder} px={{ base: 2, xl: 3 }} py={{ base: 2, xl: 2.5 }} minW={{ base: '74px', xl: '88px' }} textAlign="center">
+        {row.isComplete ? (
           <>
-            <Text fontSize={{ base: 'sm', xl: 'md' }} fontWeight="black" color={resultColor} lineHeight={1}>{resultLabel}</Text>
-            {isCorpus && (
+            <Text fontSize={{ base: 'sm', xl: 'md' }} fontWeight="black" color={row.resultColor} lineHeight={1}>{row.resultLabel}</Text>
+            {row.isCorpus && (
               <Text display={{ base: 'block', xl: 'none' }} fontSize="7px" color="text.secondary" textTransform="uppercase" fontWeight="black" mt={1}>Recap</Text>
             )}
           </>
@@ -334,8 +238,8 @@ const TeamScheduleGameRowStandard = ({ game }) => {
       </Box>
 
       <Flex display={{ base: 'none', xl: 'flex' }} justify="end">
-        {isCorpus ? (
-          <Box borderRadius="md" bg={opponent ? accent : 'brand.500'} px={3} py={2}>
+        {row.isCorpus ? (
+          <Box borderRadius="md" bg={row.opponent ? row.accent : 'brand.500'} px={3} py={2}>
             <Text fontSize="8px" color="black" fontWeight="black" textTransform="uppercase">Recap</Text>
           </Box>
         ) : (
@@ -348,28 +252,7 @@ const TeamScheduleGameRowStandard = ({ game }) => {
   return inner;
 };
 
-const TeamScheduleGameRowCompact = ({ game }) => {
-  const isComplete = !!game.result;
-  const isCorpus = game.has_parsed_game && game.parsed_game_stem;
-  const opponent = getTeam(game.opponent_id);
-  const opponentLogo = opponent ? `/assets/${opponent.exportId.replace(/25$/, '')}.svg` : null;
-  const opponentShort = opponent?.shortName ?? (getShortOpponentName(game.opponent_name) || 'TBD');
-  const accent = opponent?.colors?.secondary ?? opponent?.colors?.accent ?? '#E53E3E';
-  const dateParts = fmtDateParts(game.date);
-  const gameLabel = getGameLabel(game, opponent);
-  const homeAway = game.home_away === 'away' ? 'Away' : 'Home';
-
-  const won = isComplete && game.result === 'W';
-  const lost = isComplete && game.result === 'L';
-  const resultColor = won ? 'green.400' : lost ? 'red.400' : 'text.muted';
-  const resultLabel = won
-    ? `W ${game.score_team}-${game.score_opp}`
-    : lost
-    ? `L ${game.score_team}-${game.score_opp}`
-    : null;
-  const scoreBg = won ? 'rgba(34,197,94,0.16)' : lost ? 'rgba(248,113,113,0.16)' : 'whiteAlpha.100';
-  const scoreBorder = won ? 'green.400' : lost ? 'red.300' : 'whiteAlpha.200';
-
+const TeamScheduleGameRowCompact = ({ row }) => {
   return (
     <Grid
       display={{ base: 'grid', lg: 'none' }}
@@ -384,37 +267,37 @@ const TeamScheduleGameRowCompact = ({ game }) => {
       bg="rgba(20,20,22,0.98)"
       position="relative"
       overflow="hidden"
-      _hover={isCorpus ? { bg: 'whiteAlpha.50' } : {}}
+      _hover={row.isCorpus ? { bg: 'whiteAlpha.50' } : {}}
       style={{ transition: 'background 0.15s' }}
     >
-      {opponent && <Box position="absolute" left={0} top={0} bottom={0} w="4px" bg={accent} />}
+      {row.opponent && <Box position="absolute" left={0} top={0} bottom={0} w="4px" bg={row.accent} />}
 
       <Flex direction="column" align="center" gap={2}>
         <Box
           w={{ base: '52px', md: '60px' }}
           px={2}
           py={1.5}
-          bg={opponent ? `${accent}24` : 'whiteAlpha.100'}
+          bg={row.opponent ? `${row.accent}24` : 'whiteAlpha.100'}
           border="1px solid"
-          borderColor={opponent ? `${accent}88` : 'whiteAlpha.100'}
+          borderColor={row.opponent ? `${row.accent}88` : 'whiteAlpha.100'}
           borderRadius="md"
           textAlign="center"
         >
           <Text fontSize={{ base: '13px', md: '14px' }} fontWeight="black" color="white" lineHeight={1}>
-            W{getWeekFromGame(game) ?? '-'}
+            W{row.week}
           </Text>
         </Box>
         <Box textAlign="center">
-          <Text fontSize={{ base: '10px', md: '11px' }} color="white" fontWeight="black" lineHeight={1}>{dateParts.month}</Text>
-          <Text mt={1} fontSize={{ base: '10px', md: '11px' }} color="text.secondary" fontWeight="black" lineHeight={1}>{dateParts.day}</Text>
+          <Text fontSize={{ base: '10px', md: '11px' }} color="white" fontWeight="black" lineHeight={1}>{row.dateParts.month}</Text>
+          <Text mt={1} fontSize={{ base: '10px', md: '11px' }} color="text.secondary" fontWeight="black" lineHeight={1}>{row.dateParts.day}</Text>
         </Box>
       </Flex>
 
       <Flex align="center" gap={{ base: 2, md: 3 }} minW={0}>
-        {opponentLogo ? (
+        {row.opponentLogo ? (
           <Box w={{ base: '58px', md: '68px' }} h={{ base: '58px', md: '68px' }} flexShrink={0}>
             <Image
-              src={opponentLogo}
+              src={row.opponentLogo}
               w="100%"
               h="100%"
               objectFit="contain"
@@ -422,23 +305,23 @@ const TeamScheduleGameRowCompact = ({ game }) => {
             />
           </Box>
         ) : (
-          <InitialMark label={opponentShort.slice(0, 3)} />
+          <InitialMark label={row.opponentShort.slice(0, 3)} />
         )}
         <Box minW={0}>
           <Text fontSize={{ base: '3xl', md: '4xl' }} fontWeight="black" color="white" lineHeight="0.92" letterSpacing="-0.02em" lineClamp={1}>
-            {opponentShort}
+            {row.opponentShort}
           </Text>
-          <Text mt={1} fontSize={{ base: '9px', md: '10px' }} color={opponent ? accent : 'text.muted'} fontWeight="black" textTransform="uppercase" letterSpacing="0.06em" lineClamp={1}>
-            {gameLabel} / {homeAway}
+          <Text mt={1} fontSize={{ base: '9px', md: '10px' }} color={row.opponent ? row.accent : 'text.muted'} fontWeight="black" textTransform="uppercase" letterSpacing="0.06em" lineClamp={1}>
+            {row.gameLabel} / {row.homeAway}
           </Text>
         </Box>
       </Flex>
 
-      <Box justifySelf="end" borderRadius="md" bg={scoreBg} border="1px solid" borderColor={scoreBorder} px={2} py={2} minW={{ base: '74px', md: '82px' }} textAlign="center">
-        {isComplete ? (
+      <Box justifySelf="end" borderRadius="md" bg={row.scoreBg} border="1px solid" borderColor={row.scoreBorder} px={2} py={2} minW={{ base: '74px', md: '82px' }} textAlign="center">
+        {row.isComplete ? (
           <>
-            <Text fontSize={{ base: 'sm', md: 'md' }} fontWeight="black" color={resultColor} lineHeight={1}>{resultLabel}</Text>
-            {isCorpus && (
+            <Text fontSize={{ base: 'sm', md: 'md' }} fontWeight="black" color={row.resultColor} lineHeight={1}>{row.resultLabel}</Text>
+            {row.isCorpus && (
               <Text fontSize="7px" color="text.secondary" textTransform="uppercase" fontWeight="black" mt={1}>Recap</Text>
             )}
           </>
@@ -451,18 +334,28 @@ const TeamScheduleGameRowCompact = ({ game }) => {
 };
 
 const GameRow = ({ game }) => {
-  const isCorpus = game.has_parsed_game && game.parsed_game_stem;
+  const row = buildGameRowViewModel(game);
   const content = (
     <>
-      <TeamScheduleGameRowCompact game={game} />
-      <TeamScheduleGameRowStandard game={game} />
+      <TeamScheduleGameRowCompact row={row} />
+      <TeamScheduleGameRowStandard row={row} />
     </>
   );
 
-  return isCorpus
+  return row.isCorpus
     ? <Box as={GameLink} gameStem={game.parsed_game_stem} fromSection="team" display="block">{content}</Box>
     : content;
 };
+
+const GameRowsSection = ({ games, keyPrefix }) => (
+  <Box mb={6}>
+    <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100" borderRadius="xl" overflow="hidden">
+      {games.map((game, i) => (
+        <GameRow key={game.parsed_game_stem || `${keyPrefix}-${i}`} game={game} />
+      ))}
+    </Box>
+  </Box>
+);
 
 const ScheduleFilterBar = ({ activeFilter, onChange, accent, total, filteredTotal }) => (
   <Flex
@@ -528,22 +421,21 @@ const TeamSchedulePage = () => {
     isLoading,
     isError,
   } = useTeamScheduleData();
+  const hasTeam = !!teamId;
+  const hasGames = seasonGames.length > 0;
 
   const listContent = (
     <>
+      {hasTeam && isLoading && <Flex justify="center" py={20}><Spinner color="brand.500" size="lg" /></Flex>}
 
-      {!teamId && null}
-
-      {teamId && isLoading && <Flex justify="center" py={20}><Spinner color="brand.500" size="lg" /></Flex>}
-
-      {teamId && isError && (
+      {hasTeam && isError && (
         <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100"
           borderRadius="xl" p={8} textAlign="center">
           <Text color="text.muted">Unable to load schedule for this team.</Text>
         </Box>
       )}
 
-      {teamId && !isLoading && !isError && seasonGames.length > 0 && (
+      {hasTeam && !isLoading && !isError && hasGames && (
         <>
           <ScheduleFilterBar
             activeFilter={activeFilter}
@@ -554,25 +446,11 @@ const TeamSchedulePage = () => {
           />
 
           {completed.length > 0 && (
-            <Box mb={6}>
-              <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100"
-                borderRadius="xl" overflow="hidden">
-                {completed.map((game, i) => (
-                  <GameRow key={game.parsed_game_stem || `comp-${i}`} game={game} />
-                ))}
-              </Box>
-            </Box>
+            <GameRowsSection games={completed} keyPrefix="comp" />
           )}
 
           {upcoming.length > 0 && (
-            <Box mb={6}>
-              <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100"
-                borderRadius="xl" overflow="hidden">
-                {upcoming.map((game, i) => (
-                  <GameRow key={game.parsed_game_stem || `up-${i}`} game={game} />
-                ))}
-              </Box>
-            </Box>
+            <GameRowsSection games={upcoming} keyPrefix="up" />
           )}
 
           {filteredGames.length === 0 && (
@@ -588,7 +466,7 @@ const TeamSchedulePage = () => {
         </>
       )}
 
-      {teamId && !isLoading && !isError && seasonGames.length === 0 && (
+      {hasTeam && !isLoading && !isError && !hasGames && (
         <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100"
           borderRadius="xl" p={12} textAlign="center">
           <Text fontSize="lg" fontWeight="black" color="text.muted"

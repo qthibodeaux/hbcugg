@@ -2,7 +2,7 @@ import { Box, Flex, Grid, Text } from "@chakra-ui/react";
 import { useLayoutDensity } from "../../../hooks/useLayoutDensity";
 import { ArrowLeft } from "lucide-react";
 import { MOCK_SEASON_GAMES, useGameSpotlight, GameReadout, SeasonBarChart } from "./GameSpotlightColumn";
-import { PlayerProductionMap } from "./PlayerProductionMaps";
+import { PlayerProductionMap } from "../../molecules/player/productionMaps/PlayerProductionMap";
 
 // Both mobile content rows share one height so they're equal by
 // construction. Was `auto auto`, which let row 1 grow to fit its eight data
@@ -173,6 +173,29 @@ const SpatialColumn = ({ player, primary, secondary, gameOverride, havoc, fieldM
   </Box>
 );
 
+const GameSpotlightColumns = ({ games, player, primary, secondary, fieldMapViews, depthBands, productionComponents }) => {
+  const { index, setIndex, visible } = useGameSpotlight(games);
+  const activeGame = games[index] ?? games[0];
+
+  return (
+    <>
+      <ReadoutColumn game={activeGame} visible={visible} primary={primary} secondary={secondary} />
+      <BarChartColumn games={games} activeIndex={index} primary={primary} secondary={secondary} onSelect={setIndex} />
+      <SpatialColumn
+        player={player}
+        primary={primary}
+        secondary={secondary}
+        gameOverride={activeGame.stats}
+        havoc={activeGame.havoc}
+        fieldMap={activeGame.fieldMap}
+        fieldMapViews={fieldMapViews}
+        depthBands={depthBands}
+        productionComponents={productionComponents}
+      />
+    </>
+  );
+};
+
 // ═══════════════════════════════════════════════════════════════
 // FLOATING TAB BUTTONS
 // ═══════════════════════════════════════════════════════════════
@@ -226,7 +249,8 @@ export const PlayerProfileControlStripV2 = ({
   activeTab = MOCK_TABS[0].id,
   setActiveTab = () => {},
   onBack = () => {},
-  seasonGames,
+  seasonGames = MOCK_SEASON_GAMES,
+  isLoadingGames = false,
   fieldMapViews,
   depthBands,
   productionComponents,
@@ -234,15 +258,8 @@ export const PlayerProfileControlStripV2 = ({
   const { isMobile } = useLayoutDensity();
   const primary = teamMeta?.colors?.primary ?? "#E53E3E";
   const secondary = teamMeta?.colors?.secondary ?? "#FFFFFF";
-  const games = seasonGames ?? MOCK_SEASON_GAMES;
-  const { index: activeIndex, setIndex, visible } = useGameSpotlight(games);
-  // useGameSpotlight's cycle timer starts against whatever `games` array is
-  // present on mount (MOCK_SEASON_GAMES, 12 items, before a real profile
-  // document loads) and keeps ticking against that length even after
-  // `games` swaps to the real, shorter array — activeIndex can walk past
-  // the new array's last index for a beat. Guard the read rather than the
-  // timer; games[0] always exists once games.length > 0.
-  const activeGame = games[activeIndex] ?? games[0];
+  const hasGames = Boolean(seasonGames?.length);
+  const mobileRows = hasGames ? `${MOBILE_ROW_H} ${MOBILE_ROW_H} auto` : `${MOBILE_ROW_H} auto`;
 
   return (
     <Box
@@ -265,7 +282,7 @@ export const PlayerProfileControlStripV2 = ({
         templateColumns={isMobile
           ? "repeat(2, minmax(0, 1fr))"
           : { base: "1fr", md: "1fr 0.9fr 1fr 1.1fr" }}
-        templateRows={isMobile ? `${MOBILE_ROW_H} ${MOBILE_ROW_H} auto` : "1fr auto"}
+        templateRows={isMobile ? mobileRows : "1fr auto"}
       >
         {/* Row 1: Content */}
         <IdentityBlock
@@ -280,19 +297,29 @@ export const PlayerProfileControlStripV2 = ({
           previousSchool={previousSchool}
           primary={primary}
         />
-        <ReadoutColumn game={activeGame} visible={visible} primary={primary} secondary={secondary} />
-        <BarChartColumn games={games} activeIndex={activeIndex} primary={primary} secondary={secondary} onSelect={setIndex} />
-        <SpatialColumn
-          player={player}
-          primary={primary}
-          secondary={secondary}
-          gameOverride={activeGame.stats}
-          havoc={activeGame.havoc}
-          fieldMap={activeGame.fieldMap}
-          fieldMapViews={fieldMapViews}
-          depthBands={depthBands}
-          productionComponents={productionComponents}
-        />
+        {hasGames ? (
+          <GameSpotlightColumns
+            games={seasonGames}
+            player={player}
+            primary={primary}
+            secondary={secondary}
+            fieldMapViews={fieldMapViews}
+            depthBands={depthBands}
+            productionComponents={productionComponents}
+          />
+        ) : (
+          <Flex
+            gridColumn={isMobile ? undefined : { md: "2 / -1" }}
+            gridRow={isMobile ? undefined : { md: "1 / 3" }}
+            align="center"
+            justify="center"
+            px={3}
+          >
+            <Text color="text.muted" fontSize="xs" textAlign="center">
+              {isLoadingGames ? "Loading game data…" : "No charted games available."}
+            </Text>
+          </Flex>
+        )}
 
         {/* Row 2: Floating tabs — anchored under column 1 (leftmost) only. Columns 2-4
             span both rows (above) so they get the banner's full height instead of

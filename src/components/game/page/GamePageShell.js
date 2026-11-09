@@ -1,7 +1,7 @@
 import { Box, Flex, Spinner, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import PageShell from "../../layouts/PageShell";
-import { GameBannerScoreboardA } from "../../organisms/test/GameBannerScoreboardA";
+import { GameBannerScoreboardA } from "../../molecules/game/scoreboard/GameBannerScoreboard";
 import { SummaryTab } from "./summary/SummaryTab";
 import { DrivesTab } from "./drives/DrivesTab";
 import { BoxScoreTab } from "./boxscore/BoxScoreTab";
@@ -169,7 +169,6 @@ export const GamePageShell = ({
           priorPlayerSeasons={priorPlayerSeasons}
           leagueAvg={leagueAvg}
           productionScores={productionScores}
-          drives={drives}
           driveSummary={driveSummary}
           plays={plays}
         />

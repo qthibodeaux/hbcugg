@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Flex, Text } from "@chakra-ui/react";
 import { Download } from "lucide-react";
-import { downloadDataUrl } from "../../game/export/exportImage";
+import { backgroundOf, downloadDataUrl } from "../../game/export/exportImage";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Export a card as a PNG — the Team Analytics charts (Week Review, Scatter).
@@ -13,7 +13,7 @@ export const exportCardPng = async (node, filename) => {
   const { toPng } = await import("html-to-image");
   const url = await toPng(node, {
     pixelRatio: 2,
-    backgroundColor: "#141416",
+    backgroundColor: backgroundOf(node, "#141416"),
     cacheBust: true,
     filter: (n) => !(n instanceof HTMLElement && n.dataset.exportSkip === "true"),
   });
@@ -52,11 +52,11 @@ export const ExportCardButton = ({ target, filename, compact = false }) => {
       aria-label="Export as image"
       borderRadius="md"
       border="1px solid"
-      borderColor="whiteAlpha.200"
-      color="whiteAlpha.800"
+      borderColor="line.strong"
+      color="text.secondary"
       flexShrink={0}
       opacity={busy ? 0.5 : 1}
-      _hover={busy ? undefined : { bg: "whiteAlpha.100", color: "white" }}
+      _hover={busy ? undefined : { bg: "line", color: "text.primary" }}
     >
       <Download size={14} />
       {!compact && <Text fontSize="11px" fontWeight="900" textTransform="uppercase" letterSpacing="0.1em">{busy ? "Saving" : "Export"}</Text>}

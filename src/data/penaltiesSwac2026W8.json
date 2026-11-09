@@ -1,0 +1,3943 @@
+{
+ "meta": {
+  "title": "Penalties deep dive, 2026 SWAC",
+  "season": 2026,
+  "scope": "SWAC vs SWAC games; accepted flags unless stated",
+  "games": 26,
+  "through_week": 8,
+  "accepted_flags": 415,
+  "accepted_yards": 3712,
+  "generated_at": "2026-10-27T18:31:36-05:00",
+  "keys": "team_id / player_id / game_path_id match the site's other files; the frontend owns team display names"
+ },
+ "sections": {
+  "net_penalty_battle": {
+   "refresh": "weekly (published field)",
+   "source": "stats/counting/penalties_2026.json -> teams[].conference_games",
+   "definition": "Per game in games against SWAC opponents: accepted penalty yards (and flags) on the team's opponents, on the team, and the difference (opponents minus team). Garbage time included.",
+   "rows": [
+    {
+     "team_id": "swacsu",
+     "games": 5,
+     "accepted_per_game": 4.6,
+     "yards_per_game": 40.0,
+     "drawn_accepted_per_game": 6.4,
+     "drawn_yards_per_game": 60.6,
+     "net_accepted_per_game": 1.8,
+     "net_yards_per_game": 20.6
+    },
+    {
+     "team_id": "swacasu",
+     "games": 5,
+     "accepted_per_game": 6.0,
+     "yards_per_game": 60.8,
+     "drawn_accepted_per_game": 8.2,
+     "drawn_yards_per_game": 74.2,
+     "net_accepted_per_game": 2.2,
+     "net_yards_per_game": 13.4
+    },
+    {
+     "team_id": "swactsu",
+     "games": 4,
+     "accepted_per_game": 10.0,
+     "yards_per_game": 82.0,
+     "drawn_accepted_per_game": 9.0,
+     "drawn_yards_per_game": 93.5,
+     "net_accepted_per_game": -1.0,
+     "net_yards_per_game": 11.5
+    },
+    {
+     "team_id": "swacaamu",
+     "games": 4,
+     "accepted_per_game": 7.0,
+     "yards_per_game": 69.25,
+     "drawn_accepted_per_game": 7.5,
+     "drawn_yards_per_game": 78.75,
+     "net_accepted_per_game": 0.5,
+     "net_yards_per_game": 9.5
+    },
+    {
+     "team_id": "swacfamu",
+     "games": 4,
+     "accepted_per_game": 7.75,
+     "yards_per_game": 65.0,
+     "drawn_accepted_per_game": 7.5,
+     "drawn_yards_per_game": 71.75,
+     "net_accepted_per_game": -0.25,
+     "net_yards_per_game": 6.75
+    },
+    {
+     "team_id": "swacuapb",
+     "games": 4,
+     "accepted_per_game": 6.25,
+     "yards_per_game": 47.5,
+     "drawn_accepted_per_game": 6.75,
+     "drawn_yards_per_game": 53.5,
+     "net_accepted_per_game": 0.5,
+     "net_yards_per_game": 6.0
+    },
+    {
+     "team_id": "swacbcu",
+     "games": 4,
+     "accepted_per_game": 6.0,
+     "yards_per_game": 61.25,
+     "drawn_accepted_per_game": 6.5,
+     "drawn_yards_per_game": 62.75,
+     "net_accepted_per_game": 0.5,
+     "net_yards_per_game": 1.5
+    },
+    {
+     "team_id": "swacgsu",
+     "games": 4,
+     "accepted_per_game": 9.5,
+     "yards_per_game": 75.75,
+     "drawn_accepted_per_game": 9.0,
+     "drawn_yards_per_game": 74.75,
+     "net_accepted_per_game": -0.5,
+     "net_yards_per_game": -1.0
+    },
+    {
+     "team_id": "swacpvamu",
+     "games": 5,
+     "accepted_per_game": 8.2,
+     "yards_per_game": 81.0,
+     "drawn_accepted_per_game": 10.2,
+     "drawn_yards_per_game": 70.6,
+     "net_accepted_per_game": 2.0,
+     "net_yards_per_game": -10.4
+    },
+    {
+     "team_id": "swacalc",
+     "games": 4,
+     "accepted_per_game": 11.0,
+     "yards_per_game": 90.25,
+     "drawn_accepted_per_game": 9.5,
+     "drawn_yards_per_game": 74.75,
+     "net_accepted_per_game": -1.5,
+     "net_yards_per_game": -15.5
+    },
+    {
+     "team_id": "swacjsu",
+     "games": 5,
+     "accepted_per_game": 7.4,
+     "yards_per_game": 69.0,
+     "drawn_accepted_per_game": 5.8,
+     "drawn_yards_per_game": 51.4,
+     "net_accepted_per_game": -1.6,
+     "net_yards_per_game": -17.6
+    },
+    {
+     "team_id": "swacmvsu",
+     "games": 4,
+     "accepted_per_game": 13.5,
+     "yards_per_game": 123.5,
+     "drawn_accepted_per_game": 9.75,
+     "drawn_yards_per_game": 97.25,
+     "net_accepted_per_game": -3.75,
+     "net_yards_per_game": -26.25
+    }
+   ],
+   "all_18_without_garbage_time": {
+    "definition": "Net penalty yards per game in all games between two of the 18 programs, with and without garbage-time plays.",
+    "rows": [
+     {
+      "team_id": "meacnccu",
+      "games": 2,
+      "net_yards_per_game": 66.0,
+      "net_yards_per_game_without_garbage_time": 66.0
+     },
+     {
+      "team_id": "meachu",
+      "games": 2,
+      "net_yards_per_game": 27.0,
+      "net_yards_per_game_without_garbage_time": 27.0
+     },
+     {
+      "team_id": "swacsu",
+      "games": 5,
+      "net_yards_per_game": 20.6,
+      "net_yards_per_game_without_garbage_time": 20.6
+     },
+     {
+      "team_id": "swacasu",
+      "games": 5,
+      "net_yards_per_game": 13.4,
+      "net_yards_per_game_without_garbage_time": 12.4
+     },
+     {
+      "team_id": "swacfamu",
+      "games": 5,
+      "net_yards_per_game": 13.2,
+      "net_yards_per_game_without_garbage_time": 13.2
+     },
+     {
+      "team_id": "swacaamu",
+      "games": 5,
+      "net_yards_per_game": 9.4,
+      "net_yards_per_game_without_garbage_time": 14.4
+     },
+     {
+      "team_id": "swacbcu",
+      "games": 5,
+      "net_yards_per_game": 8.4,
+      "net_yards_per_game_without_garbage_time": 8.4
+     },
+     {
+      "team_id": "swacuapb",
+      "games": 4,
+      "net_yards_per_game": 6.0,
+      "net_yards_per_game_without_garbage_time": 6.0
+     },
+     {
+      "team_id": "swacgsu",
+      "games": 4,
+      "net_yards_per_game": -1.0,
+      "net_yards_per_game_without_garbage_time": -7.25
+     },
+     {
+      "team_id": "swactsu",
+      "games": 5,
+      "net_yards_per_game": -9.2,
+      "net_yards_per_game_without_garbage_time": -9.8
+     },
+     {
+      "team_id": "swacpvamu",
+      "games": 5,
+      "net_yards_per_game": -10.4,
+      "net_yards_per_game_without_garbage_time": -9.8
+     },
+     {
+      "team_id": "swacalc",
+      "games": 4,
+      "net_yards_per_game": -15.5,
+      "net_yards_per_game_without_garbage_time": -15.5
+     },
+     {
+      "team_id": "meacscsu",
+      "games": 3,
+      "net_yards_per_game": -16.67,
+      "net_yards_per_game_without_garbage_time": -16.67
+     },
+     {
+      "team_id": "swacjsu",
+      "games": 5,
+      "net_yards_per_game": -17.6,
+      "net_yards_per_game_without_garbage_time": -17.6
+     },
+     {
+      "team_id": "meacnsu",
+      "games": 1,
+      "net_yards_per_game": -25.0,
+      "net_yards_per_game_without_garbage_time": -25.0
+     },
+     {
+      "team_id": "swacmvsu",
+      "games": 4,
+      "net_yards_per_game": -26.25,
+      "net_yards_per_game_without_garbage_time": -25.0
+     },
+     {
+      "team_id": "meacdsu",
+      "games": 1,
+      "net_yards_per_game": -40.0,
+      "net_yards_per_game_without_garbage_time": -40.0
+     },
+     {
+      "team_id": "meacmsu",
+      "games": 1,
+      "net_yards_per_game": -63.0,
+      "net_yards_per_game_without_garbage_time": -63.0
+     }
+    ]
+   }
+  },
+  "officiating_crews": {
+   "refresh": "snapshot",
+   "definition": "A crew is a group of officials who work games together: SWAC games that share 3 or more officials belong to the same crew. Core officials worked a majority of the crew's games. ratio_to_swac = the crew's per-game count of a foul / the SWAC per-game count (fouls the crew called 4+ times; listed at 1.3+ or 0.7 and below).",
+   "swac_flags_per_game": 16.0,
+   "crews": [
+    {
+     "crew_id": "crew_01",
+     "core_officials": [
+      "PINKARD,NATHAN",
+      "MORGAN,MARTIN",
+      "RAINES,BRIAN",
+      "HAMILTON,LARRY",
+      "FLEMING,COREY",
+      "FORD,TALMADGE",
+      "COPELAND,CECIL"
+     ],
+     "referees": [
+      "PINKARD,NATHAN"
+     ],
+     "games": 5,
+     "game_path_ids": [
+      "alcpvamu26",
+      "bcuaamu26",
+      "jsubcu26",
+      "pvamumvsu26",
+      "tsupvamu26"
+     ],
+     "flags_per_game": 17.0,
+     "flags_by_game": [
+      15,
+      10,
+      7,
+      31,
+      22
+     ],
+     "home_team_flags": 41,
+     "away_team_flags": 44,
+     "defense_share": 0.376,
+     "pre_snap_share": 0.447
+    },
+    {
+     "crew_id": "crew_02",
+     "core_officials": [
+      "GREEN,CHARLES",
+      "SPEARS,DEREK",
+      "PINCHBACK,SHEV",
+      "KING,COREY",
+      "HARRIS,JESSE"
+     ],
+     "referees": [
+      "GREEN,CHARLES"
+     ],
+     "games": 4,
+     "game_path_ids": [
+      "aamujsu26",
+      "asusu26",
+      "famujsu26",
+      "tsualc26"
+     ],
+     "flags_per_game": 18.0,
+     "flags_by_game": [
+      17,
+      18,
+      16,
+      21
+     ],
+     "home_team_flags": 44,
+     "away_team_flags": 28,
+     "defense_share": 0.333,
+     "pre_snap_share": 0.333
+    },
+    {
+     "crew_id": "crew_03",
+     "core_officials": [
+      "QUINN,DION",
+      "MCCANTS,KENNETH",
+      "HAY,BEN",
+      "WALKER,JARVIS",
+      "GILLS,MARIO"
+     ],
+     "referees": [
+      "GARMOND,KENITH",
+      "WALKER,JARVIS"
+     ],
+     "games": 4,
+     "game_path_ids": [
+      "gsuaamu26",
+      "mvsutsu26",
+      "uapbalc26",
+      "uapbfamu26"
+     ],
+     "flags_per_game": 17.8,
+     "flags_by_game": [
+      15,
+      24,
+      19,
+      13
+     ],
+     "home_team_flags": 36,
+     "away_team_flags": 35,
+     "defense_share": 0.366,
+     "pre_snap_share": 0.408
+    },
+    {
+     "crew_id": "crew_04",
+     "core_officials": [
+      "MYERS,Y N,III",
+      "SMITH,DEREK",
+      "PORTER,JAMAL",
+      "ROGERS,JAMES",
+      "PHILPART,JOSHUA",
+      "DAY,VERNON",
+      "LOWE,CURTIS"
+     ],
+     "referees": [
+      "MYERS,Y N,III"
+     ],
+     "games": 4,
+     "game_path_ids": [
+      "bcumvsu26",
+      "famuasu26",
+      "pvamugsu26",
+      "uapbsu26"
+     ],
+     "flags_per_game": 16.2,
+     "flags_by_game": [
+      22,
+      16,
+      17,
+      10
+     ],
+     "home_team_flags": 39,
+     "away_team_flags": 26,
+     "defense_share": 0.308,
+     "pre_snap_share": 0.385
+    },
+    {
+     "crew_id": "crew_05",
+     "core_officials": [
+      "DANIELS,IVAN",
+      "DILLON,ASHTON",
+      "HARRIS,DANIEL",
+      "MCLAURIN,WILLIE",
+      "COMBS,TOREY",
+      "THOMAS,MALCOLM"
+     ],
+     "referees": [
+      "DANIELS,IVAN"
+     ],
+     "games": 3,
+     "game_path_ids": [
+      "aamufamu26",
+      "jsugsu26",
+      "sutsu26"
+     ],
+     "flags_per_game": 13.3,
+     "flags_by_game": [
+      16,
+      15,
+      9
+     ],
+     "home_team_flags": 26,
+     "away_team_flags": 14,
+     "defense_share": 0.525,
+     "pre_snap_share": 0.4
+    },
+    {
+     "crew_id": "crew_06",
+     "core_officials": [
+      "DUSH,JASON",
+      "ROUSE,TONY",
+      "RUSSELL,JAVON",
+      "VENIA,JARED",
+      "GARRETT,JABRIEN",
+      "CULBERSON,QUINCY"
+     ],
+     "referees": [
+      "CROWELL,JAMES",
+      "SMITH,ROYCE"
+     ],
+     "games": 2,
+     "game_path_ids": [
+      "asubcu26",
+      "mvsuasu26"
+     ],
+     "flags_per_game": 13.5,
+     "flags_by_game": [
+      11,
+      16
+     ],
+     "home_team_flags": 13,
+     "away_team_flags": 14,
+     "defense_share": 0.444,
+     "pre_snap_share": 0.296
+    },
+    {
+     "crew_id": "crew_07",
+     "core_officials": [
+      "LIVINGSTON,TRENNIS",
+      "CRAWFORD,DARREN",
+      "BOONE,DAVID",
+      "PARKER,JASON",
+      "MORTON,CRAIG"
+     ],
+     "referees": [
+      "LIVINGSTON,TRENNIS"
+     ],
+     "games": 2,
+     "game_path_ids": [
+      "sujsu26",
+      "supvamu26"
+     ],
+     "flags_per_game": 9.0,
+     "flags_by_game": [
+      11,
+      7
+     ],
+     "home_team_flags": 12,
+     "away_team_flags": 6,
+     "defense_share": 0.389,
+     "pre_snap_share": 0.444
+    },
+    {
+     "crew_id": "crew_08",
+     "core_officials": [
+      "WALKER,JARVIS"
+     ],
+     "referees": [
+      "WALKER,JARVIS"
+     ],
+     "games": 1,
+     "game_path_ids": [
+      "alcgsu26"
+     ],
+     "flags_per_game": 27.0,
+     "flags_by_game": [
+      27
+     ],
+     "home_team_flags": 14,
+     "away_team_flags": 13,
+     "defense_share": 0.407,
+     "pre_snap_share": 0.519
+    },
+    {
+     "crew_id": "crew_09",
+     "core_officials": [
+      "STOKES,CAMEO"
+     ],
+     "referees": [
+      "STOKES,CAMEO"
+     ],
+     "games": 1,
+     "game_path_ids": [
+      "asuuapb26"
+     ],
+     "flags_per_game": 10.0,
+     "flags_by_game": [
+      10
+     ],
+     "home_team_flags": 6,
+     "away_team_flags": 4,
+     "defense_share": 0.4,
+     "pre_snap_share": 0.3
+    }
+   ],
+   "fouls_vs_swac_rate": [
+    {
+     "crew_id": "crew_01",
+     "foul": "delay_of_game",
+     "count": 9,
+     "per_game": 1.8,
+     "swac_per_game": 1.08,
+     "ratio_to_swac": 1.67
+    },
+    {
+     "crew_id": "crew_02",
+     "foul": "block_in_the_back",
+     "count": 4,
+     "per_game": 1.0,
+     "swac_per_game": 0.27,
+     "ratio_to_swac": 3.71
+    },
+    {
+     "crew_id": "crew_02",
+     "foul": "unsportsmanlike_conduct",
+     "count": 7,
+     "per_game": 1.75,
+     "swac_per_game": 0.73,
+     "ratio_to_swac": 2.39
+    },
+    {
+     "crew_id": "crew_02",
+     "foul": "facemask",
+     "count": 5,
+     "per_game": 1.25,
+     "swac_per_game": 0.62,
+     "ratio_to_swac": 2.03
+    },
+    {
+     "crew_id": "crew_02",
+     "foul": "personal_foul",
+     "count": 8,
+     "per_game": 2.0,
+     "swac_per_game": 1.19,
+     "ratio_to_swac": 1.68
+    },
+    {
+     "crew_id": "crew_03",
+     "foul": "holding",
+     "count": 19,
+     "per_game": 4.75,
+     "swac_per_game": 3.5,
+     "ratio_to_swac": 1.36
+    },
+    {
+     "crew_id": "crew_03",
+     "foul": "offside",
+     "count": 6,
+     "per_game": 1.5,
+     "swac_per_game": 1.12,
+     "ratio_to_swac": 1.34
+    },
+    {
+     "crew_id": "crew_04",
+     "foul": "holding",
+     "count": 20,
+     "per_game": 5.0,
+     "swac_per_game": 3.5,
+     "ratio_to_swac": 1.43
+    },
+    {
+     "crew_id": "crew_05",
+     "foul": "pass_interference",
+     "count": 10,
+     "per_game": 3.33,
+     "swac_per_game": 1.81,
+     "ratio_to_swac": 1.84
+    },
+    {
+     "crew_id": "crew_05",
+     "foul": "offside",
+     "count": 5,
+     "per_game": 1.67,
+     "swac_per_game": 1.12,
+     "ratio_to_swac": 1.49
+    },
+    {
+     "crew_id": "crew_05",
+     "foul": "holding",
+     "count": 4,
+     "per_game": 1.33,
+     "swac_per_game": 3.5,
+     "ratio_to_swac": 0.38
+    },
+    {
+     "crew_id": "crew_08",
+     "foul": "offside",
+     "count": 4,
+     "per_game": 4.0,
+     "swac_per_game": 1.12,
+     "ratio_to_swac": 3.59
+    },
+    {
+     "crew_id": "crew_08",
+     "foul": "false_start",
+     "count": 8,
+     "per_game": 8.0,
+     "swac_per_game": 3.27,
+     "ratio_to_swac": 2.45
+    },
+    {
+     "crew_id": "crew_08",
+     "foul": "holding",
+     "count": 5,
+     "per_game": 5.0,
+     "swac_per_game": 3.5,
+     "ratio_to_swac": 1.43
+    }
+   ]
+  },
+  "cost_by_foul": {
+   "refresh": "snapshot",
+   "definition": "Accepted flags by foul. epa_given = expected points the flagged team lost on flags that wiped out the snap. auto_first_downs_given = flags that gave the other team a first down. first_downs_erased = offensive flags that wiped out a play that had gained a first down. crucial and decisive as defined under team_cost.",
+   "rows": [
+    {
+     "foul": "pass_interference",
+     "flags": 47,
+     "yards": 593,
+     "epa_given": 81.3,
+     "epa_given_per_flag": 1.73,
+     "auto_first_downs_given": 41,
+     "first_downs_erased": 3,
+     "crucial": 15,
+     "decisive": 10
+    },
+    {
+     "foul": "holding",
+     "flags": 91,
+     "yards": 875,
+     "epa_given": 68.1,
+     "epa_given_per_flag": 1.22,
+     "auto_first_downs_given": 9,
+     "first_downs_erased": 12,
+     "crucial": 20,
+     "decisive": 0
+    },
+    {
+     "foul": "false_start",
+     "flags": 85,
+     "yards": 424,
+     "epa_given": 57.7,
+     "epa_given_per_flag": 0.68,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 19,
+     "decisive": 0
+    },
+    {
+     "foul": "offside",
+     "flags": 29,
+     "yards": 150,
+     "epa_given": 21.9,
+     "epa_given_per_flag": 0.81,
+     "auto_first_downs_given": 4,
+     "first_downs_erased": 0,
+     "crucial": 11,
+     "decisive": 0
+    },
+    {
+     "foul": "delay_of_game",
+     "flags": 28,
+     "yards": 140,
+     "epa_given": 19.9,
+     "epa_given_per_flag": 0.71,
+     "auto_first_downs_given": 1,
+     "first_downs_erased": 0,
+     "crucial": 14,
+     "decisive": 0
+    },
+    {
+     "foul": "personal_foul",
+     "flags": 31,
+     "yards": 453,
+     "epa_given": 18.5,
+     "epa_given_per_flag": 1.54,
+     "auto_first_downs_given": 23,
+     "first_downs_erased": 0,
+     "crucial": 9,
+     "decisive": 2
+    },
+    {
+     "foul": "roughing_the_passer",
+     "flags": 12,
+     "yards": 168,
+     "epa_given": 12.6,
+     "epa_given_per_flag": 1.8,
+     "auto_first_downs_given": 10,
+     "first_downs_erased": 0,
+     "crucial": 1,
+     "decisive": 1
+    },
+    {
+     "foul": "illegal_substitution",
+     "flags": 13,
+     "yards": 62,
+     "epa_given": 10.3,
+     "epa_given_per_flag": 0.79,
+     "auto_first_downs_given": 1,
+     "first_downs_erased": 0,
+     "crucial": 6,
+     "decisive": 0
+    },
+    {
+     "foul": "facemask",
+     "flags": 16,
+     "yards": 208,
+     "epa_given": 6.8,
+     "epa_given_per_flag": 1.69,
+     "auto_first_downs_given": 14,
+     "first_downs_erased": 0,
+     "crucial": 3,
+     "decisive": 3
+    },
+    {
+     "foul": "roughing_holder",
+     "flags": 1,
+     "yards": 15,
+     "epa_given": 3.8,
+     "epa_given_per_flag": 3.84,
+     "auto_first_downs_given": 1,
+     "first_downs_erased": 0,
+     "crucial": 1,
+     "decisive": 1
+    },
+    {
+     "foul": "running_into_the_kicker",
+     "flags": 2,
+     "yards": 5,
+     "epa_given": 3.4,
+     "epa_given_per_flag": 3.4,
+     "auto_first_downs_given": 1,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 0
+    },
+    {
+     "foul": "ineligible_downfield",
+     "flags": 5,
+     "yards": 25,
+     "epa_given": 2.8,
+     "epa_given_per_flag": 0.57,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 3,
+     "crucial": 2,
+     "decisive": 0
+    },
+    {
+     "foul": "horse_collar",
+     "flags": 4,
+     "yards": 48,
+     "epa_given": 2.6,
+     "epa_given_per_flag": 1.28,
+     "auto_first_downs_given": 4,
+     "first_downs_erased": 0,
+     "crucial": 1,
+     "decisive": 0
+    },
+    {
+     "foul": "illegal_formation",
+     "flags": 4,
+     "yards": 20,
+     "epa_given": 2.1,
+     "epa_given_per_flag": 1.04,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 1,
+     "crucial": 1,
+     "decisive": 0
+    },
+    {
+     "foul": "illegal_shift",
+     "flags": 3,
+     "yards": 15,
+     "epa_given": 1.6,
+     "epa_given_per_flag": 0.54,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 1,
+     "decisive": 0
+    },
+    {
+     "foul": "block_in_the_back",
+     "flags": 7,
+     "yards": 70,
+     "epa_given": 1.3,
+     "epa_given_per_flag": 1.31,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 0
+    },
+    {
+     "foul": "targeting",
+     "flags": 1,
+     "yards": 15,
+     "epa_given": 1.3,
+     "epa_given_per_flag": 1.29,
+     "auto_first_downs_given": 1,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 1
+    },
+    {
+     "foul": "unnecessary_roughness",
+     "flags": 9,
+     "yards": 111,
+     "epa_given": 0.9,
+     "epa_given_per_flag": 0.46,
+     "auto_first_downs_given": 3,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 2
+    },
+    {
+     "foul": "illegal_snap",
+     "flags": 3,
+     "yards": 15,
+     "epa_given": 0.7,
+     "epa_given_per_flag": 0.33,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 1,
+     "decisive": 0
+    },
+    {
+     "foul": "unsportsmanlike_conduct",
+     "flags": 19,
+     "yards": 266,
+     "epa_given": 0.0,
+     "epa_given_per_flag": null,
+     "auto_first_downs_given": 8,
+     "first_downs_erased": 0,
+     "crucial": 9,
+     "decisive": 1
+    },
+    {
+     "foul": "illegal_use_of_hands",
+     "flags": 2,
+     "yards": 12,
+     "epa_given": 0.0,
+     "epa_given_per_flag": null,
+     "auto_first_downs_given": 2,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 1
+    },
+    {
+     "foul": "illegal_forward_pass",
+     "flags": 1,
+     "yards": 5,
+     "epa_given": 0.0,
+     "epa_given_per_flag": null,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 0
+    },
+    {
+     "foul": "intentional_grounding",
+     "flags": 1,
+     "yards": 16,
+     "epa_given": 0.0,
+     "epa_given_per_flag": null,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 0,
+     "decisive": 0
+    },
+    {
+     "foul": "illegal_touching",
+     "flags": 1,
+     "yards": 1,
+     "epa_given": 0.0,
+     "epa_given_per_flag": null,
+     "auto_first_downs_given": 0,
+     "first_downs_erased": 0,
+     "crucial": 1,
+     "decisive": 0
+    }
+   ]
+  },
+  "team_cost": {
+   "refresh": "snapshot",
+   "definition": "Per team, its own accepted flags. crucial = a flag on 3rd or 4th down, in the red zone, on goal-to-go or in the two-minute drill, with the game within 8 points, outside garbage time. decisive = a defensive flag that gave an automatic first down on a drive that went on to score at least the final margin for the team that won.",
+   "rows": [
+    {
+     "team_id": "swacmvsu",
+     "games": 4,
+     "flags_per_game": 13.5,
+     "yards_per_game": 123.5,
+     "pre_snap_share": 0.352,
+     "epa_lost_per_game": -9.71,
+     "crucial_flags": 15,
+     "crucial_share": 0.278,
+     "decisive_flags": 0,
+     "first_downs_erased": 3,
+     "auto_first_downs_given": 15
+    },
+    {
+     "team_id": "swactsu",
+     "games": 4,
+     "flags_per_game": 10.0,
+     "yards_per_game": 82.0,
+     "pre_snap_share": 0.525,
+     "epa_lost_per_game": -9.49,
+     "crucial_flags": 9,
+     "crucial_share": 0.225,
+     "decisive_flags": 3,
+     "first_downs_erased": 3,
+     "auto_first_downs_given": 11
+    },
+    {
+     "team_id": "swacgsu",
+     "games": 4,
+     "flags_per_game": 9.5,
+     "yards_per_game": 75.8,
+     "pre_snap_share": 0.526,
+     "epa_lost_per_game": -8.43,
+     "crucial_flags": 10,
+     "crucial_share": 0.263,
+     "decisive_flags": 2,
+     "first_downs_erased": 1,
+     "auto_first_downs_given": 12
+    },
+    {
+     "team_id": "swacpvamu",
+     "games": 5,
+     "flags_per_game": 8.2,
+     "yards_per_game": 81.0,
+     "pre_snap_share": 0.293,
+     "epa_lost_per_game": -7.65,
+     "crucial_flags": 10,
+     "crucial_share": 0.244,
+     "decisive_flags": 1,
+     "first_downs_erased": 4,
+     "auto_first_downs_given": 13
+    },
+    {
+     "team_id": "swacalc",
+     "games": 4,
+     "flags_per_game": 11.0,
+     "yards_per_game": 90.2,
+     "pre_snap_share": 0.455,
+     "epa_lost_per_game": -6.42,
+     "crucial_flags": 13,
+     "crucial_share": 0.295,
+     "decisive_flags": 4,
+     "first_downs_erased": 1,
+     "auto_first_downs_given": 10
+    },
+    {
+     "team_id": "swacfamu",
+     "games": 4,
+     "flags_per_game": 7.75,
+     "yards_per_game": 65.0,
+     "pre_snap_share": 0.484,
+     "epa_lost_per_game": -6.21,
+     "crucial_flags": 9,
+     "crucial_share": 0.29,
+     "decisive_flags": 1,
+     "first_downs_erased": 0,
+     "auto_first_downs_given": 9
+    },
+    {
+     "team_id": "swacaamu",
+     "games": 4,
+     "flags_per_game": 7.0,
+     "yards_per_game": 69.2,
+     "pre_snap_share": 0.321,
+     "epa_lost_per_game": -5.3,
+     "crucial_flags": 8,
+     "crucial_share": 0.286,
+     "decisive_flags": 3,
+     "first_downs_erased": 4,
+     "auto_first_downs_given": 13
+    },
+    {
+     "team_id": "swacbcu",
+     "games": 4,
+     "flags_per_game": 6.0,
+     "yards_per_game": 61.2,
+     "pre_snap_share": 0.25,
+     "epa_lost_per_game": -4.95,
+     "crucial_flags": 9,
+     "crucial_share": 0.375,
+     "decisive_flags": 0,
+     "first_downs_erased": 1,
+     "auto_first_downs_given": 10
+    },
+    {
+     "team_id": "swacasu",
+     "games": 5,
+     "flags_per_game": 6.0,
+     "yards_per_game": 60.8,
+     "pre_snap_share": 0.267,
+     "epa_lost_per_game": -4.83,
+     "crucial_flags": 6,
+     "crucial_share": 0.2,
+     "decisive_flags": 0,
+     "first_downs_erased": 0,
+     "auto_first_downs_given": 12
+    },
+    {
+     "team_id": "swacuapb",
+     "games": 4,
+     "flags_per_game": 6.25,
+     "yards_per_game": 47.5,
+     "pre_snap_share": 0.48,
+     "epa_lost_per_game": -4.32,
+     "crucial_flags": 11,
+     "crucial_share": 0.44,
+     "decisive_flags": 3,
+     "first_downs_erased": 2,
+     "auto_first_downs_given": 3
+    },
+    {
+     "team_id": "swacjsu",
+     "games": 5,
+     "flags_per_game": 7.4,
+     "yards_per_game": 69.0,
+     "pre_snap_share": 0.27,
+     "epa_lost_per_game": -4.32,
+     "crucial_flags": 9,
+     "crucial_share": 0.243,
+     "decisive_flags": 4,
+     "first_downs_erased": 0,
+     "auto_first_downs_given": 8
+    },
+    {
+     "team_id": "swacsu",
+     "games": 5,
+     "flags_per_game": 4.6,
+     "yards_per_game": 40.0,
+     "pre_snap_share": 0.565,
+     "epa_lost_per_game": -2.89,
+     "crucial_flags": 6,
+     "crucial_share": 0.261,
+     "decisive_flags": 1,
+     "first_downs_erased": 0,
+     "auto_first_downs_given": 7
+    }
+   ]
+  },
+  "game_swinging_flags": {
+   "refresh": "snapshot",
+   "definition": "win_probability_change = the change in the flagged team's win probability on a flag that wiped out the snap (0.24 = 24 points); empty when the play stood, because the change then belongs mostly to the play. Largest 15 drops among wiped snaps, and every decisive flag.",
+   "largest_win_probability_swings": [
+    {
+     "game_path_id": "jsugsu26",
+     "week": 6,
+     "team_id": "swacjsu",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00013620",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "02:00",
+     "down": 1,
+     "distance": 10,
+     "yards": 1,
+     "snap_wiped": true,
+     "win_probability_change": -0.2433,
+     "drive_points": 7,
+     "final_margin": 7,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 45,
+     "away_team_id": "swacjsu",
+     "away_score": 38,
+     "play_text": "1st and 10 at JSU32 (02:00) No Huddle-Shotgun Robinson,Jacobe pass complete deep right to Dickerson,Nae'Saan caught at JSU05, for 30 yards to the JSU02 (Marshall,Swipe), 1ST DOWN, PENALTY JSU Pass Interference (Marshall,"
+    },
+    {
+     "game_path_id": "sutsu26",
+     "week": 8,
+     "team_id": "swactsu",
+     "opponent_team_id": "swacsu",
+     "player_id": "PERS_00012347",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "04:36",
+     "down": 4,
+     "distance": 4,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.2108,
+     "drive_points": 7,
+     "final_margin": 3,
+     "decisive": false,
+     "home_team_id": "swactsu",
+     "home_score": 24,
+     "away_team_id": "swacsu",
+     "away_score": 21,
+     "play_text": "4th and 4 at TSU26 No Huddle-Shotgun Johnson,Christian pass intercepted by Murray Jr,Quinton at , Touchback PENALTY TSU Pass Interference (Philen,Malachi) 24 yards from TSU26 to TSU02, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "mvsutsu26",
+     "week": 6,
+     "team_id": "swacmvsu",
+     "opponent_team_id": "swactsu",
+     "player_id": "PERS_00001090",
+     "foul": "personal_foul",
+     "foul_label": "Personal foul",
+     "quarter": 4,
+     "clock": "00:32",
+     "down": 1,
+     "distance": 10,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.1342,
+     "drive_points": 0,
+     "final_margin": 4,
+     "decisive": false,
+     "home_team_id": "swactsu",
+     "home_score": 34,
+     "away_team_id": "swacmvsu",
+     "away_score": 38,
+     "play_text": "1st and 10 at MVS43 Shotgun McCoy,Cam'Ron sacked for loss of 0 yards to the MVSU43 (Clark Jr.,Deondri) PENALTY MVSU Personal Foul (Clark Jr.,Deondri) 15 yards from MVSU43 to MVSU28, 1ST DOWN."
+    },
+    {
+     "game_path_id": "alcpvamu26",
+     "week": 7,
+     "team_id": "swacalc",
+     "opponent_team_id": "swacpvamu",
+     "player_id": null,
+     "foul": "personal_foul",
+     "foul_label": "Personal foul",
+     "quarter": 4,
+     "clock": "05:41",
+     "down": 3,
+     "distance": 1,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.1218,
+     "drive_points": 3,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacpvamu",
+     "home_score": 41,
+     "away_team_id": "swacalc",
+     "away_score": 38,
+     "play_text": "3rd and 1 at PVU42 No Huddle-Shotgun Turner-Knox,Zayvion rush middle for 7 yards gain to the PVU49 (Diarra,Mahamadou; Ruffin,Elijah) PENALTY ASU Personal Foul 15 yards from PVU42 to ASU43, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "pvamumvsu26",
+     "week": 5,
+     "team_id": "swacpvamu",
+     "opponent_team_id": "swacmvsu",
+     "player_id": "PERS_00011224",
+     "foul": "roughing_holder",
+     "foul_label": "Roughing holder",
+     "quarter": 4,
+     "clock": "05:27",
+     "down": 3,
+     "distance": 19,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.1138,
+     "drive_points": 7,
+     "final_margin": 1,
+     "decisive": true,
+     "home_team_id": "swacmvsu",
+     "home_score": 28,
+     "away_team_id": "swacpvamu",
+     "away_score": 27,
+     "play_text": "3rd and 19 at MVS26 No Huddle-Shotgun Brown,Josh pass incomplete short left to Brownlow,Caleb thrown to MVSU26 PENALTY PVAM Roughing Holder (Zachery,Eric) 15 yards from MVSU26 to MVSU41, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "tsualc26",
+     "week": 4,
+     "team_id": "swactsu",
+     "opponent_team_id": "swacalc",
+     "player_id": "PERS_00011115",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "02:00",
+     "down": 2,
+     "distance": 16,
+     "yards": 12,
+     "snap_wiped": true,
+     "win_probability_change": -0.1023,
+     "drive_points": 3,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacalc",
+     "home_score": 43,
+     "away_team_id": "swactsu",
+     "away_score": 40,
+     "play_text": "2nd and 16 at TSU23 No Huddle-Shotgun Tolbert,Jaylon pass incomplete short middle to Wright,Armon thrown to TSU10 PENALTY TSU Pass Interference (Williams,Joel) 12 yards from TSU23 to TSU11, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "alcpvamu26",
+     "week": 7,
+     "team_id": "swacpvamu",
+     "opponent_team_id": "swacalc",
+     "player_id": "PERS_00013726",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 3,
+     "clock": "11:42",
+     "down": 4,
+     "distance": 3,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.087,
+     "drive_points": 7,
+     "final_margin": 3,
+     "decisive": false,
+     "home_team_id": "swacpvamu",
+     "home_score": 41,
+     "away_team_id": "swacalc",
+     "away_score": 38,
+     "play_text": "4th and 3 at PVU41 PENALTY PVU Pass Interference (Davis,JJ) 15 yards from PVU41 to PVU26, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "team_id": "swacgsu",
+     "opponent_team_id": "swacalc",
+     "player_id": "PERS_00012074",
+     "foul": "personal_foul",
+     "foul_label": "Personal foul",
+     "quarter": 3,
+     "clock": "07:31",
+     "down": 1,
+     "distance": 10,
+     "yards": 12,
+     "snap_wiped": true,
+     "win_probability_change": -0.0845,
+     "drive_points": 0,
+     "final_margin": 4,
+     "decisive": false,
+     "home_team_id": "swacgsu",
+     "home_score": 63,
+     "away_team_id": "swacalc",
+     "away_score": 59,
+     "play_text": "1st and 10 at GSU25 No Huddle-Shotgun Ford,D'Shaun rush middle for 0 yards to the Gram25 (Daniel,Jordan) PENALTY Gram Personal Foul (Boston,Kenneth) 12 yards from Gram25 to Gram13."
+    },
+    {
+     "game_path_id": "asuuapb26",
+     "week": 7,
+     "team_id": "swacasu",
+     "opponent_team_id": "swacuapb",
+     "player_id": "PERS_00013434",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "07:32",
+     "down": 4,
+     "distance": 2,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0839,
+     "drive_points": 3,
+     "final_margin": 6,
+     "decisive": false,
+     "home_team_id": "swacuapb",
+     "home_score": 15,
+     "away_team_id": "swacasu",
+     "away_score": 21,
+     "play_text": "4th and 2 at ASU34 No Huddle-Shotgun Schierholz,Jack pass incomplete deep left to Robinson,D'Avery thrown to ASU10 PENALTY ASU Pass Interference (Russell,Omari) 15 yards from ASU34 to ASU19, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "pvamumvsu26",
+     "week": 5,
+     "team_id": "swacmvsu",
+     "opponent_team_id": "swacpvamu",
+     "player_id": null,
+     "foul": "delay_of_game",
+     "foul_label": "Delay of game",
+     "quarter": 4,
+     "clock": "01:02",
+     "down": 3,
+     "distance": 6,
+     "yards": 5,
+     "snap_wiped": true,
+     "win_probability_change": -0.0825,
+     "drive_points": 0,
+     "final_margin": 1,
+     "decisive": false,
+     "home_team_id": "swacmvsu",
+     "home_score": 28,
+     "away_team_id": "swacpvamu",
+     "away_score": 27,
+     "play_text": "3rd and 6 at MVS47 Kneel down by Brown,Josh at MVSU45 for loss of 2 yards PENALTY MVSU Delay Of Game 5 yards from MVSU47 to MVSU42. NO PLAY."
+    },
+    {
+     "game_path_id": "famuasu26",
+     "week": 6,
+     "team_id": "swacfamu",
+     "opponent_team_id": "swacasu",
+     "player_id": null,
+     "foul": "illegal_substitution",
+     "foul_label": "Illegal substitution",
+     "quarter": 4,
+     "clock": "00:32",
+     "down": 2,
+     "distance": 10,
+     "yards": 5,
+     "snap_wiped": true,
+     "win_probability_change": -0.0808,
+     "drive_points": 0,
+     "final_margin": 1,
+     "decisive": false,
+     "home_team_id": "swacasu",
+     "home_score": 27,
+     "away_team_id": "swacfamu",
+     "away_score": 28,
+     "play_text": "2nd and 10 at ASU29 No Huddle-Shotgun Frye,Aaron pass complete short middle to King,Randall caught at ALST37, for 5 yards to the ALST34 (Howell,Dante) PENALTY FAMU Illegal Substitution 5 yards from ALST29 to ALST34. NO P"
+    },
+    {
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "team_id": "swacalc",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00011838",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "04:31",
+     "down": 3,
+     "distance": 3,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.078,
+     "drive_points": 7,
+     "final_margin": 4,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 63,
+     "away_team_id": "swacalc",
+     "away_score": 59,
+     "play_text": "3rd and 3 at ASU18 No Huddle-Shotgun Frye,Ashton pass incomplete short left to Dickerson,Nae'Saan thrown to Alcn00, 1ST DOWN, PENALTY Alcn Pass Interference (Butler,Ricardo) 15 yards from Alcn18 to Alcn03, 1ST DOWN. NO P"
+    },
+    {
+     "game_path_id": "pvamugsu26",
+     "week": 4,
+     "team_id": "swacgsu",
+     "opponent_team_id": "swacpvamu",
+     "player_id": "PERS_00012069",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 1,
+     "clock": "11:17",
+     "down": 3,
+     "distance": 13,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0719,
+     "drive_points": 0,
+     "final_margin": 7,
+     "decisive": false,
+     "home_team_id": "swacgsu",
+     "home_score": 14,
+     "away_team_id": "swacpvamu",
+     "away_score": 21,
+     "play_text": "3rd and 13 at PVU15 No Huddle-Shotgun Carter,Tevin pass incomplete deep right to Ojo,Rodny thrown to Pvam40 PENALTY Gram Pass Interference (Franklin,Delano) 15 yards from Pvam15 to Pvam30, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "bcumvsu26",
+     "week": 7,
+     "team_id": "swacmvsu",
+     "opponent_team_id": "swacbcu",
+     "player_id": null,
+     "foul": "personal_foul",
+     "foul_label": "Personal foul",
+     "quarter": 2,
+     "clock": "06:35",
+     "down": 3,
+     "distance": 8,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0712,
+     "drive_points": 7,
+     "final_margin": 20,
+     "decisive": false,
+     "home_team_id": "swacmvsu",
+     "home_score": 14,
+     "away_team_id": "swacbcu",
+     "away_score": 34,
+     "play_text": "3rd and 8 at MVS29 No Huddle-Shotgun Jefferson,Tyler pass incomplete short right to Stewart,Kobe thrown to MVSU29 PENALTY MVSU Personal Foul 15 yards from MVSU29 to MVSU14, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "asubcu26",
+     "week": 5,
+     "team_id": "swacbcu",
+     "opponent_team_id": "swacasu",
+     "player_id": "PERS_00011955",
+     "foul": "holding",
+     "foul_label": "Holding",
+     "quarter": 2,
+     "clock": "02:33",
+     "down": 3,
+     "distance": 10,
+     "yards": 10,
+     "snap_wiped": true,
+     "win_probability_change": -0.0711,
+     "drive_points": 3,
+     "final_margin": 6,
+     "decisive": false,
+     "home_team_id": "swacbcu",
+     "home_score": 16,
+     "away_team_id": "swacasu",
+     "away_score": 10,
+     "play_text": "3rd and 10 at BCU27 No Huddle-Shotgun Frye,Aaron pass incomplete deep right to King,Randall thrown to B-CU04 PENALTY B-CU Holding (Williams,Jaden) 10 yards from B-CU27 to B-CU17, 1ST DOWN. NO PLAY."
+    }
+   ],
+   "decisive_flags": [
+    {
+     "game_path_id": "uapbalc26",
+     "week": 2,
+     "team_id": "swacuapb",
+     "opponent_team_id": "swacalc",
+     "player_id": "PERS_00012381",
+     "foul": "unnecessary_roughness",
+     "foul_label": "Unnecessary roughness",
+     "quarter": 4,
+     "clock": "15:00",
+     "down": 1,
+     "distance": 10,
+     "yards": 8,
+     "snap_wiped": false,
+     "win_probability_change": null,
+     "drive_points": 7,
+     "final_margin": 2,
+     "decisive": true,
+     "home_team_id": "swacalc",
+     "home_score": 53,
+     "away_team_id": "swacuapb",
+     "away_score": 51,
+     "play_text": "1st and 10 at APB25 No Huddle-Shotgun Tolbert,Jaylon pass complete short right to Ebron,Jamarr caught at APB25, for 9 yards to the APB16 (Hilliard,Danarius) PENALTY APB UNR: Unnecessary Roughness (Hilliard,Danarius) 8 ya"
+    },
+    {
+     "game_path_id": "uapbalc26",
+     "week": 2,
+     "team_id": "swacuapb",
+     "opponent_team_id": "swacalc",
+     "player_id": "PERS_00013918",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "15:00",
+     "down": 2,
+     "distance": 9,
+     "yards": 8,
+     "snap_wiped": true,
+     "win_probability_change": -0.0161,
+     "drive_points": 8,
+     "final_margin": 2,
+     "decisive": true,
+     "home_team_id": "swacalc",
+     "home_score": 53,
+     "away_team_id": "swacuapb",
+     "away_score": 51,
+     "play_text": "2nd and 9 at APB10 No Huddle-Shotgun Tolbert,Jaylon pass incomplete short right to Chambers,Nolan thrown to APB00 PENALTY APB Pass Interference (Boulden,Bryson) 8 yards from APB10 to APB02, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "pvamugsu26",
+     "week": 4,
+     "team_id": "swacgsu",
+     "opponent_team_id": "swacpvamu",
+     "player_id": "PERS_00014191",
+     "foul": "unnecessary_roughness",
+     "foul_label": "Unnecessary roughness",
+     "quarter": 3,
+     "clock": "11:05",
+     "down": 1,
+     "distance": 10,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.026,
+     "drive_points": 7,
+     "final_margin": 7,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 14,
+     "away_team_id": "swacpvamu",
+     "away_score": 21,
+     "play_text": "1st and 10 at PVU27 PENALTY Pvam False Start (Williams,David) Gram UNR: Unnecessary Roughness (Bush,Jason) 20 yards from Pvam27 to Pvam37, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "pvamugsu26",
+     "week": 4,
+     "team_id": "swacgsu",
+     "opponent_team_id": "swacpvamu",
+     "player_id": "PERS_00013600",
+     "foul": "unsportsmanlike_conduct",
+     "foul_label": "Unsportsmanlike conduct",
+     "quarter": 4,
+     "clock": "14:44",
+     "down": 2,
+     "distance": 8,
+     "yards": 14,
+     "snap_wiped": false,
+     "win_probability_change": null,
+     "drive_points": 7,
+     "final_margin": 7,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 14,
+     "away_team_id": "swacpvamu",
+     "away_score": 21,
+     "play_text": "2nd and 8 at GSU27 No Huddle-Shotgun Carter,Tevin pass complete short right to Jones,Travon caught at Gram23, for 8 yards to the Gram19 (Banks,Katrevrick) PENALTY Gram UNS: Unsportsmanlike Conduct (Bethea,Aaris) 14 yards"
+    },
+    {
+     "game_path_id": "tsualc26",
+     "week": 4,
+     "team_id": "swactsu",
+     "opponent_team_id": "swacalc",
+     "player_id": "PERS_00011115",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "02:00",
+     "down": 2,
+     "distance": 16,
+     "yards": 12,
+     "snap_wiped": true,
+     "win_probability_change": -0.1023,
+     "drive_points": 3,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacalc",
+     "home_score": 43,
+     "away_team_id": "swactsu",
+     "away_score": 40,
+     "play_text": "2nd and 16 at TSU23 No Huddle-Shotgun Tolbert,Jaylon pass incomplete short middle to Wright,Armon thrown to TSU10 PENALTY TSU Pass Interference (Williams,Joel) 12 yards from TSU23 to TSU11, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "aamujsu26",
+     "week": 5,
+     "team_id": "swacaamu",
+     "opponent_team_id": "swacjsu",
+     "player_id": null,
+     "foul": "personal_foul",
+     "foul_label": "Personal foul",
+     "quarter": 2,
+     "clock": "02:00",
+     "down": 2,
+     "distance": 7,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0527,
+     "drive_points": 3,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacjsu",
+     "home_score": 31,
+     "away_team_id": "swacaamu",
+     "away_score": 28,
+     "play_text": "2nd and 7 at AAM37 No Huddle-Shotgun Lockhart,Jared pass incomplete deep middle to Rembert,Nate thrown to AAMU00 broken up by Hudson-Davis,Jeremiah PENALTY AAMU Personal Foul 15 yards from AAMU37 to AAMU22, 1ST DOWN. NO "
+    },
+    {
+     "game_path_id": "aamujsu26",
+     "week": 5,
+     "team_id": "swacaamu",
+     "opponent_team_id": "swacjsu",
+     "player_id": "PERS_00000468",
+     "foul": "targeting",
+     "foul_label": "Targeting",
+     "quarter": 3,
+     "clock": "03:54",
+     "down": 1,
+     "distance": 10,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.024,
+     "drive_points": 7,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacjsu",
+     "home_score": 31,
+     "away_team_id": "swacaamu",
+     "away_score": 28,
+     "play_text": "1st and 10 at JSU28 No Huddle-Shotgun Lockhart,Jared pass incomplete short middle to Riley, Jr.,Jency thrown to JKST35 PENALTY AAMU Targeting (Robinson,John) 15 yards from JKST28 to JKST43, 1ST DOWN. NO PLAY.Alabama A&M "
+    },
+    {
+     "game_path_id": "aamujsu26",
+     "week": 5,
+     "team_id": "swacaamu",
+     "opponent_team_id": "swacjsu",
+     "player_id": null,
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "08:16",
+     "down": 1,
+     "distance": 10,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0261,
+     "drive_points": 7,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacjsu",
+     "home_score": 31,
+     "away_team_id": "swacaamu",
+     "away_score": 28,
+     "play_text": "1st and 10 at AAM44 No Huddle-Shotgun Lockhart,Jared pass incomplete deep right to Kemmerlin,Trevon thrown to AAMU03 PENALTY AAMU Pass Interference (Hudson-Davis,Jeremiah) 15 yards from AAMU44 to AAMU29, 1ST DOWN. NO PLA"
+    },
+    {
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "team_id": "swacalc",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00011827",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 2,
+     "clock": "06:44",
+     "down": 1,
+     "distance": 6,
+     "yards": 4,
+     "snap_wiped": true,
+     "win_probability_change": -0.0049,
+     "drive_points": 7,
+     "final_margin": 4,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 63,
+     "away_team_id": "swacalc",
+     "away_score": 59,
+     "play_text": "1st and 6 at ASU6 No Huddle-Shotgun Frye,Ashton pass incomplete short right to Dickerson,Nae'Saan thrown to Alcn00 PENALTY Alcn Pass Interference (Anderson,Jakobie) 4 yards from Alcn06 to Alcn02, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "team_id": "swacalc",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00013387",
+     "foul": "roughing_the_passer",
+     "foul_label": "Roughing the passer",
+     "quarter": 4,
+     "clock": "14:04",
+     "down": 2,
+     "distance": 10,
+     "yards": 10,
+     "snap_wiped": false,
+     "win_probability_change": null,
+     "drive_points": 7,
+     "final_margin": 4,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 63,
+     "away_team_id": "swacalc",
+     "away_score": 59,
+     "play_text": "2nd and 10 at GSU35 No Huddle-Shotgun Frye,Ashton pass complete short right to Eaton Jr,Byron caught at Gram44, for 45 yards to the Alcn20 (Butler,Ricardo), 1ST DOWN, PENALTY Alcn Roughing The Passer (Daniel,Jordan) 10 y"
+    },
+    {
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "team_id": "swacalc",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00011838",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "04:31",
+     "down": 3,
+     "distance": 3,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.078,
+     "drive_points": 7,
+     "final_margin": 4,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 63,
+     "away_team_id": "swacalc",
+     "away_score": 59,
+     "play_text": "3rd and 3 at ASU18 No Huddle-Shotgun Frye,Ashton pass incomplete short left to Dickerson,Nae'Saan thrown to Alcn00, 1ST DOWN, PENALTY Alcn Pass Interference (Butler,Ricardo) 15 yards from Alcn18 to Alcn03, 1ST DOWN. NO P"
+    },
+    {
+     "game_path_id": "pvamumvsu26",
+     "week": 5,
+     "team_id": "swacpvamu",
+     "opponent_team_id": "swacmvsu",
+     "player_id": "PERS_00011224",
+     "foul": "roughing_holder",
+     "foul_label": "Roughing holder",
+     "quarter": 4,
+     "clock": "05:27",
+     "down": 3,
+     "distance": 19,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.1138,
+     "drive_points": 7,
+     "final_margin": 1,
+     "decisive": true,
+     "home_team_id": "swacmvsu",
+     "home_score": 28,
+     "away_team_id": "swacpvamu",
+     "away_score": 27,
+     "play_text": "3rd and 19 at MVS26 No Huddle-Shotgun Brown,Josh pass incomplete short left to Brownlow,Caleb thrown to MVSU26 PENALTY PVAM Roughing Holder (Zachery,Eric) 15 yards from MVSU26 to MVSU41, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "jsugsu26",
+     "week": 6,
+     "team_id": "swacjsu",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00013633",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 2,
+     "clock": "09:15",
+     "down": 3,
+     "distance": 5,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0325,
+     "drive_points": 7,
+     "final_margin": 7,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 45,
+     "away_team_id": "swacjsu",
+     "away_score": 38,
+     "play_text": "3rd and 5 at GSU30 (09:15) No Huddle-Shotgun Frye,Ashton pass incomplete deep left to Davis,Christopher thrown to JSU45 QB hurried by Johnson Jr.,Michael PENALTY JSU Pass Interference (Israel,Samson) 15 yards from GSU30 "
+    },
+    {
+     "game_path_id": "jsugsu26",
+     "week": 6,
+     "team_id": "swacjsu",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00012109",
+     "foul": "facemask",
+     "foul_label": "Facemask",
+     "quarter": 3,
+     "clock": "03:42",
+     "down": 2,
+     "distance": 15,
+     "yards": 14,
+     "snap_wiped": false,
+     "win_probability_change": null,
+     "drive_points": 7,
+     "final_margin": 7,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 45,
+     "away_team_id": "swacjsu",
+     "away_score": 38,
+     "play_text": "2nd and 15 at JSU33 (03:42) No Huddle-Shotgun Robinson,Jacobe rush middle for 4 yards gain to the JSU29 (Bass,Keith) PENALTY JSU Face Mask (Sallis,Kam) 14 yards from JSU29 to JSU15, 1ST DOWN."
+    },
+    {
+     "game_path_id": "jsugsu26",
+     "week": 6,
+     "team_id": "swacjsu",
+     "opponent_team_id": "swacgsu",
+     "player_id": "PERS_00013620",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "02:00",
+     "down": 1,
+     "distance": 10,
+     "yards": 1,
+     "snap_wiped": true,
+     "win_probability_change": -0.2433,
+     "drive_points": 7,
+     "final_margin": 7,
+     "decisive": true,
+     "home_team_id": "swacgsu",
+     "home_score": 45,
+     "away_team_id": "swacjsu",
+     "away_score": 38,
+     "play_text": "1st and 10 at JSU32 (02:00) No Huddle-Shotgun Robinson,Jacobe pass complete deep right to Dickerson,Nae'Saan caught at JSU05, for 30 yards to the JSU02 (Marshall,Swipe), 1ST DOWN, PENALTY JSU Pass Interference (Marshall,"
+    },
+    {
+     "game_path_id": "mvsutsu26",
+     "week": 6,
+     "team_id": "swactsu",
+     "opponent_team_id": "swacmvsu",
+     "player_id": "PERS_00013864",
+     "foul": "facemask",
+     "foul_label": "Facemask",
+     "quarter": 4,
+     "clock": "13:08",
+     "down": 3,
+     "distance": 6,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0279,
+     "drive_points": 7,
+     "final_margin": 4,
+     "decisive": true,
+     "home_team_id": "swactsu",
+     "home_score": 34,
+     "away_team_id": "swacmvsu",
+     "away_score": 38,
+     "play_text": "3rd and 6 at MVS34 No Huddle-Shotgun Brown,Josh sacked for loss of 0 yards to the MVSU34 (Thompson,Jordan) PENALTY TSU Face Mask (Thompson,Jordan) 15 yards from MVSU34 to MVSU49, 1ST DOWN."
+    },
+    {
+     "game_path_id": "mvsutsu26",
+     "week": 6,
+     "team_id": "swactsu",
+     "opponent_team_id": "swacmvsu",
+     "player_id": "PERS_00011305",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 4,
+     "clock": "13:08",
+     "down": 1,
+     "distance": 10,
+     "yards": 14,
+     "snap_wiped": true,
+     "win_probability_change": -0.0209,
+     "drive_points": 7,
+     "final_margin": 4,
+     "decisive": true,
+     "home_team_id": "swactsu",
+     "home_score": 34,
+     "away_team_id": "swacmvsu",
+     "away_score": 38,
+     "play_text": "1st and 10 at TSU28 No Huddle-Shotgun Brown,Josh pass incomplete deep left to Bluitt,Dayvian thrown to TSU00, 1ST DOWN, PENALTY TSU Pass Interference (Hinson,MJ) 14 yards from TSU28 to TSU14, 1ST DOWN."
+    },
+    {
+     "game_path_id": "alcpvamu26",
+     "week": 7,
+     "team_id": "swacalc",
+     "opponent_team_id": "swacpvamu",
+     "player_id": null,
+     "foul": "personal_foul",
+     "foul_label": "Personal foul",
+     "quarter": 4,
+     "clock": "05:41",
+     "down": 3,
+     "distance": 1,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.1218,
+     "drive_points": 3,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacpvamu",
+     "home_score": 41,
+     "away_team_id": "swacalc",
+     "away_score": 38,
+     "play_text": "3rd and 1 at PVU42 No Huddle-Shotgun Turner-Knox,Zayvion rush middle for 7 yards gain to the PVU49 (Diarra,Mahamadou; Ruffin,Elijah) PENALTY ASU Personal Foul 15 yards from PVU42 to ASU43, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "asuuapb26",
+     "week": 7,
+     "team_id": "swacuapb",
+     "opponent_team_id": "swacasu",
+     "player_id": "PERS_00013957",
+     "foul": "facemask",
+     "foul_label": "Facemask",
+     "quarter": 3,
+     "clock": "06:00",
+     "down": 1,
+     "distance": 10,
+     "yards": 8,
+     "snap_wiped": true,
+     "win_probability_change": -0.025,
+     "drive_points": 7,
+     "final_margin": 6,
+     "decisive": true,
+     "home_team_id": "swacuapb",
+     "home_score": 15,
+     "away_team_id": "swacasu",
+     "away_score": 21,
+     "play_text": "1st and 10 at APB16 Shotgun Keye,Kareem rush right for 0 yards to the UAPB16 (Walker,Nate; Sims,KJ) PENALTY UAPB Face Mask (Wilks,Keiyhaun) 8 yards from UAPB16 to UAPB08, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "sutsu26",
+     "week": 8,
+     "team_id": "swacsu",
+     "opponent_team_id": "swactsu",
+     "player_id": "PERS_00011259",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 2,
+     "clock": "09:43",
+     "down": 1,
+     "distance": 27,
+     "yards": 15,
+     "snap_wiped": true,
+     "win_probability_change": -0.0301,
+     "drive_points": 7,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swactsu",
+     "home_score": 24,
+     "away_team_id": "swacsu",
+     "away_score": 21,
+     "play_text": "1st and 27 at SUB30 No Huddle-Shotgun McCoy,Cam'Ron pass incomplete deep middle to Claville,Zyion thrown to SU00 PENALTY SU Pass Interference (Carter,Landon) 15 yards from SU30 to SU15, 1ST DOWN. NO PLAY."
+    },
+    {
+     "game_path_id": "jsubcu26",
+     "week": 8,
+     "team_id": "swacjsu",
+     "opponent_team_id": "swacbcu",
+     "player_id": "PERS_00013651",
+     "foul": "illegal_use_of_hands",
+     "foul_label": "Illegal use of hands",
+     "quarter": 2,
+     "clock": "03:14",
+     "down": 1,
+     "distance": 10,
+     "yards": 10,
+     "snap_wiped": false,
+     "win_probability_change": null,
+     "drive_points": 3,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacbcu",
+     "home_score": 24,
+     "away_team_id": "swacjsu",
+     "away_score": 21,
+     "play_text": "1st and 10 at BCU47 No Huddle-Shotgun Brown,Rashon rush left for 2 yards gain to the B-CU49 (Kirk,Jeremiah; Clayton,Duke) PENALTY JSU Illegal Use Of Hands (Kirk,Jeremiah) 10 yards from B-CU49 to JSU41, 1ST DOWN."
+    },
+    {
+     "game_path_id": "uapbfamu26",
+     "week": 8,
+     "team_id": "swacfamu",
+     "opponent_team_id": "swacuapb",
+     "player_id": "PERS_00013556",
+     "foul": "pass_interference",
+     "foul_label": "Pass interference",
+     "quarter": 2,
+     "clock": "04:46",
+     "down": 3,
+     "distance": 3,
+     "yards": 5,
+     "snap_wiped": true,
+     "win_probability_change": -0.0348,
+     "drive_points": 7,
+     "final_margin": 3,
+     "decisive": true,
+     "home_team_id": "swacfamu",
+     "home_score": 28,
+     "away_team_id": "swacuapb",
+     "away_score": 31,
+     "play_text": "3rd and 3 at UAP30 Shotgun Schierholz,Jack pass incomplete short middle to Robinson,D'Avery thrown to UAPB35 PENALTY FAMU Pass Interference (Johnson,Ryan) 5 yards from UAPB30 to UAPB35, 1ST DOWN. NO PLAY."
+    }
+   ]
+  },
+  "bounce_back": {
+   "refresh": "snapshot",
+   "definition": "After an accepted offensive flag on its own drive, whether the offense still gained a first down or scored before the drive ended. normal_rate = the same from that down and distance when no offensive flag came before it (null where that situation almost only follows a flag).",
+   "total": {
+    "flags": 183,
+    "recovered": 102,
+    "rate": 0.557
+   },
+   "by_team": [
+    {
+     "team_id": "swacaamu",
+     "flags": 12,
+     "recovered": 10,
+     "rate": 0.833
+    },
+    {
+     "team_id": "swactsu",
+     "flags": 16,
+     "recovered": 13,
+     "rate": 0.812
+    },
+    {
+     "team_id": "swacalc",
+     "flags": 25,
+     "recovered": 19,
+     "rate": 0.76
+    },
+    {
+     "team_id": "swacuapb",
+     "flags": 14,
+     "recovered": 10,
+     "rate": 0.714
+    },
+    {
+     "team_id": "swacgsu",
+     "flags": 16,
+     "recovered": 10,
+     "rate": 0.625
+    },
+    {
+     "team_id": "swacmvsu",
+     "flags": 23,
+     "recovered": 11,
+     "rate": 0.478
+    },
+    {
+     "team_id": "swacpvamu",
+     "flags": 18,
+     "recovered": 8,
+     "rate": 0.444
+    },
+    {
+     "team_id": "swacfamu",
+     "flags": 14,
+     "recovered": 6,
+     "rate": 0.429
+    },
+    {
+     "team_id": "swacjsu",
+     "flags": 15,
+     "recovered": 6,
+     "rate": 0.4
+    },
+    {
+     "team_id": "swacbcu",
+     "flags": 11,
+     "recovered": 4,
+     "rate": 0.364
+    },
+    {
+     "team_id": "swacsu",
+     "flags": 12,
+     "recovered": 4,
+     "rate": 0.333
+    },
+    {
+     "team_id": "swacasu",
+     "flags": 7,
+     "recovered": 1,
+     "rate": 0.143
+    }
+   ],
+   "by_situation_after_flag": [
+    {
+     "down_and_distance": "1&11-15",
+     "flags": 44,
+     "recovered": 31,
+     "rate": 0.705,
+     "normal_rate": null
+    },
+    {
+     "down_and_distance": "1&16+",
+     "flags": 37,
+     "recovered": 24,
+     "rate": 0.649,
+     "normal_rate": null
+    },
+    {
+     "down_and_distance": "2&11-15",
+     "flags": 29,
+     "recovered": 15,
+     "rate": 0.517,
+     "normal_rate": 0.469
+    },
+    {
+     "down_and_distance": "2&16+",
+     "flags": 26,
+     "recovered": 10,
+     "rate": 0.385,
+     "normal_rate": 0.455
+    },
+    {
+     "down_and_distance": "3&16+",
+     "flags": 13,
+     "recovered": 3,
+     "rate": 0.231,
+     "normal_rate": 0.306
+    },
+    {
+     "down_and_distance": "3&7-10",
+     "flags": 9,
+     "recovered": 3,
+     "rate": 0.333,
+     "normal_rate": 0.466
+    },
+    {
+     "down_and_distance": "2&7-10",
+     "flags": 7,
+     "recovered": 5,
+     "rate": 0.714,
+     "normal_rate": 0.635
+    },
+    {
+     "down_and_distance": "3&11-15",
+     "flags": 7,
+     "recovered": 2,
+     "rate": 0.286,
+     "normal_rate": 0.304
+    },
+    {
+     "down_and_distance": "1&7-10",
+     "flags": 5,
+     "recovered": 4,
+     "rate": 0.8,
+     "normal_rate": 0.738
+    },
+    {
+     "down_and_distance": "4&7-10",
+     "flags": 3,
+     "recovered": 2,
+     "rate": 0.667,
+     "normal_rate": 0.542
+    }
+   ],
+   "by_foul": [
+    {
+     "foul": "false_start",
+     "flags": 76,
+     "recovered": 46,
+     "rate": 0.605
+    },
+    {
+     "foul": "holding",
+     "flags": 60,
+     "recovered": 31,
+     "rate": 0.517
+    },
+    {
+     "foul": "delay_of_game",
+     "flags": 12,
+     "recovered": 7,
+     "rate": 0.583
+    },
+    {
+     "foul": "pass_interference",
+     "flags": 6,
+     "recovered": 2,
+     "rate": 0.333
+    },
+    {
+     "foul": "personal_foul",
+     "flags": 5,
+     "recovered": 2,
+     "rate": 0.4
+    },
+    {
+     "foul": "ineligible_downfield",
+     "flags": 5,
+     "recovered": 5,
+     "rate": 1.0
+    },
+    {
+     "foul": "unsportsmanlike_conduct",
+     "flags": 3,
+     "recovered": 2,
+     "rate": 0.667
+    }
+   ]
+  },
+  "third_down_flags": {
+   "refresh": "snapshot",
+   "definition": "Accepted flags on 3rd down. Offense: the team's own flags on its drive, whether that series still moved the chains, whether the drive scored. Defense: flags on the team's defense, whether the opponent's series continued, whether that drive scored.",
+   "offense": [
+    {
+     "team_id": "swacmvsu",
+     "flags": 8,
+     "series_continued": 1,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacpvamu",
+     "flags": 4,
+     "series_continued": 0,
+     "drives_scored": 0
+    },
+    {
+     "team_id": "swacalc",
+     "flags": 4,
+     "series_continued": 3,
+     "drives_scored": 3
+    },
+    {
+     "team_id": "swacjsu",
+     "flags": 4,
+     "series_continued": 0,
+     "drives_scored": 0
+    },
+    {
+     "team_id": "swacaamu",
+     "flags": 4,
+     "series_continued": 2,
+     "drives_scored": 2
+    },
+    {
+     "team_id": "swacsu",
+     "flags": 3,
+     "series_continued": 1,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacuapb",
+     "flags": 2,
+     "series_continued": 0,
+     "drives_scored": 0
+    },
+    {
+     "team_id": "swacgsu",
+     "flags": 2,
+     "series_continued": 0,
+     "drives_scored": 0
+    },
+    {
+     "team_id": "swactsu",
+     "flags": 1,
+     "series_continued": 0,
+     "drives_scored": 0
+    },
+    {
+     "team_id": "swacfamu",
+     "flags": 1,
+     "series_continued": 0,
+     "drives_scored": 0
+    },
+    {
+     "team_id": "swacbcu",
+     "flags": 1,
+     "series_continued": 0,
+     "drives_scored": 0
+    }
+   ],
+   "defense": [
+    {
+     "team_id": "swacmvsu",
+     "flags": 6,
+     "series_continued": 5,
+     "drives_scored": 3
+    },
+    {
+     "team_id": "swacasu",
+     "flags": 4,
+     "series_continued": 3,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacjsu",
+     "flags": 4,
+     "series_continued": 3,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacbcu",
+     "flags": 4,
+     "series_continued": 4,
+     "drives_scored": 2
+    },
+    {
+     "team_id": "swactsu",
+     "flags": 3,
+     "series_continued": 3,
+     "drives_scored": 2
+    },
+    {
+     "team_id": "swacfamu",
+     "flags": 3,
+     "series_continued": 2,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacalc",
+     "flags": 3,
+     "series_continued": 3,
+     "drives_scored": 3
+    },
+    {
+     "team_id": "swacpvamu",
+     "flags": 3,
+     "series_continued": 3,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacgsu",
+     "flags": 2,
+     "series_continued": 2,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacsu",
+     "flags": 2,
+     "series_continued": 2,
+     "drives_scored": 1
+    },
+    {
+     "team_id": "swacuapb",
+     "flags": 1,
+     "series_continued": 0,
+     "drives_scored": 0
+    }
+   ]
+  },
+  "habits_and_direction": {
+   "refresh": "snapshot",
+   "definition": "Accepted flags per game in date order. flags_spread = standard deviation across games. first/second half = the first and last half of the team's games (the middle game of five is in neither). direction = 'fewer' or 'more' when the halves differ by 2+ flags a game and the per-game change agrees (0.75+ a game); otherwise null. most_common_foul = the foul with the most accepted flags (ties: called in more games); most_common_foul_flags = its count; most_common_foul_games = in how many of the team's games it was called.",
+   "game_log": [
+    {
+     "team_id": "swacpvamu",
+     "game_path_id": "tsupvamu26",
+     "week": 1,
+     "date": "2026-09-06",
+     "opponent_team_id": "swactsu",
+     "flags": 8,
+     "yards": 91,
+     "pre_snap_flags": 1,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacpvamu",
+     "game_path_id": "pvamugsu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacgsu",
+     "flags": 7,
+     "yards": 62,
+     "pre_snap_flags": 3,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacpvamu",
+     "game_path_id": "pvamumvsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacmvsu",
+     "flags": 16,
+     "yards": 159,
+     "pre_snap_flags": 5,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacpvamu",
+     "game_path_id": "supvamu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacsu",
+     "flags": 4,
+     "yards": 35,
+     "pre_snap_flags": 1,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacpvamu",
+     "game_path_id": "alcpvamu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacalc",
+     "flags": 6,
+     "yards": 58,
+     "pre_snap_flags": 2,
+     "crucial_flags": 4
+    },
+    {
+     "team_id": "swacjsu",
+     "game_path_id": "sujsu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacsu",
+     "flags": 8,
+     "yards": 62,
+     "pre_snap_flags": 3,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacjsu",
+     "game_path_id": "aamujsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacaamu",
+     "flags": 10,
+     "yards": 108,
+     "pre_snap_flags": 1,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacjsu",
+     "game_path_id": "jsugsu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacgsu",
+     "flags": 7,
+     "yards": 60,
+     "pre_snap_flags": 3,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacjsu",
+     "game_path_id": "famujsu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacfamu",
+     "flags": 11,
+     "yards": 105,
+     "pre_snap_flags": 3,
+     "crucial_flags": 5
+    },
+    {
+     "team_id": "swacjsu",
+     "game_path_id": "jsubcu26",
+     "week": 8,
+     "date": "2026-10-24",
+     "opponent_team_id": "swacbcu",
+     "flags": 1,
+     "yards": 10,
+     "pre_snap_flags": 0,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacsu",
+     "game_path_id": "asusu26",
+     "week": 0,
+     "date": "2026-08-29",
+     "opponent_team_id": "swacasu",
+     "flags": 10,
+     "yards": 85,
+     "pre_snap_flags": 5,
+     "crucial_flags": 4
+    },
+    {
+     "team_id": "swacsu",
+     "game_path_id": "sujsu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacjsu",
+     "flags": 3,
+     "yards": 35,
+     "pre_snap_flags": 1,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacsu",
+     "game_path_id": "uapbsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacuapb",
+     "flags": 6,
+     "yards": 50,
+     "pre_snap_flags": 4,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacsu",
+     "game_path_id": "supvamu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacpvamu",
+     "flags": 3,
+     "yards": 15,
+     "pre_snap_flags": 3,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacsu",
+     "game_path_id": "sutsu26",
+     "week": 8,
+     "date": "2026-10-23",
+     "opponent_team_id": "swactsu",
+     "flags": 1,
+     "yards": 15,
+     "pre_snap_flags": 0,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacgsu",
+     "game_path_id": "pvamugsu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacpvamu",
+     "flags": 10,
+     "yards": 90,
+     "pre_snap_flags": 4,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacgsu",
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacalc",
+     "flags": 14,
+     "yards": 117,
+     "pre_snap_flags": 8,
+     "crucial_flags": 5
+    },
+    {
+     "team_id": "swacgsu",
+     "game_path_id": "jsugsu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacjsu",
+     "flags": 8,
+     "yards": 46,
+     "pre_snap_flags": 4,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacgsu",
+     "game_path_id": "gsuaamu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacaamu",
+     "flags": 6,
+     "yards": 50,
+     "pre_snap_flags": 4,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swactsu",
+     "game_path_id": "tsupvamu26",
+     "week": 1,
+     "date": "2026-09-06",
+     "opponent_team_id": "swacpvamu",
+     "flags": 14,
+     "yards": 76,
+     "pre_snap_flags": 12,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swactsu",
+     "game_path_id": "tsualc26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacalc",
+     "flags": 8,
+     "yards": 57,
+     "pre_snap_flags": 4,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swactsu",
+     "game_path_id": "mvsutsu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacmvsu",
+     "flags": 10,
+     "yards": 109,
+     "pre_snap_flags": 3,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swactsu",
+     "game_path_id": "sutsu26",
+     "week": 8,
+     "date": "2026-10-23",
+     "opponent_team_id": "swacsu",
+     "flags": 8,
+     "yards": 86,
+     "pre_snap_flags": 2,
+     "crucial_flags": 4
+    },
+    {
+     "team_id": "swacuapb",
+     "game_path_id": "uapbalc26",
+     "week": 2,
+     "date": "2026-09-12",
+     "opponent_team_id": "swacalc",
+     "flags": 10,
+     "yards": 67,
+     "pre_snap_flags": 5,
+     "crucial_flags": 5
+    },
+    {
+     "team_id": "swacuapb",
+     "game_path_id": "uapbsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacsu",
+     "flags": 4,
+     "yards": 25,
+     "pre_snap_flags": 3,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacuapb",
+     "game_path_id": "asuuapb26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacasu",
+     "flags": 6,
+     "yards": 48,
+     "pre_snap_flags": 2,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacuapb",
+     "game_path_id": "uapbfamu26",
+     "week": 8,
+     "date": "2026-10-24",
+     "opponent_team_id": "swacfamu",
+     "flags": 5,
+     "yards": 50,
+     "pre_snap_flags": 2,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacmvsu",
+     "game_path_id": "mvsuasu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacasu",
+     "flags": 10,
+     "yards": 91,
+     "pre_snap_flags": 4,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacmvsu",
+     "game_path_id": "pvamumvsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacpvamu",
+     "flags": 15,
+     "yards": 109,
+     "pre_snap_flags": 8,
+     "crucial_flags": 4
+    },
+    {
+     "team_id": "swacmvsu",
+     "game_path_id": "mvsutsu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swactsu",
+     "flags": 14,
+     "yards": 141,
+     "pre_snap_flags": 4,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacmvsu",
+     "game_path_id": "bcumvsu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacbcu",
+     "flags": 15,
+     "yards": 153,
+     "pre_snap_flags": 3,
+     "crucial_flags": 6
+    },
+    {
+     "team_id": "swacalc",
+     "game_path_id": "uapbalc26",
+     "week": 2,
+     "date": "2026-09-12",
+     "opponent_team_id": "swacuapb",
+     "flags": 9,
+     "yards": 74,
+     "pre_snap_flags": 3,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacalc",
+     "game_path_id": "tsualc26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swactsu",
+     "flags": 13,
+     "yards": 127,
+     "pre_snap_flags": 5,
+     "crucial_flags": 5
+    },
+    {
+     "team_id": "swacalc",
+     "game_path_id": "alcgsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacgsu",
+     "flags": 13,
+     "yards": 97,
+     "pre_snap_flags": 6,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacalc",
+     "game_path_id": "alcpvamu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacpvamu",
+     "flags": 9,
+     "yards": 63,
+     "pre_snap_flags": 6,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacasu",
+     "game_path_id": "asusu26",
+     "week": 0,
+     "date": "2026-08-29",
+     "opponent_team_id": "swacsu",
+     "flags": 8,
+     "yards": 95,
+     "pre_snap_flags": 2,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacasu",
+     "game_path_id": "mvsuasu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacmvsu",
+     "flags": 6,
+     "yards": 61,
+     "pre_snap_flags": 1,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacasu",
+     "game_path_id": "asubcu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacbcu",
+     "flags": 4,
+     "yards": 35,
+     "pre_snap_flags": 2,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacasu",
+     "game_path_id": "famuasu26",
+     "week": 6,
+     "date": "2026-10-09",
+     "opponent_team_id": "swacfamu",
+     "flags": 8,
+     "yards": 78,
+     "pre_snap_flags": 2,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacasu",
+     "game_path_id": "asuuapb26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacuapb",
+     "flags": 4,
+     "yards": 35,
+     "pre_snap_flags": 1,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacfamu",
+     "game_path_id": "aamufamu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacaamu",
+     "flags": 10,
+     "yards": 103,
+     "pre_snap_flags": 5,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacfamu",
+     "game_path_id": "famuasu26",
+     "week": 6,
+     "date": "2026-10-09",
+     "opponent_team_id": "swacasu",
+     "flags": 8,
+     "yards": 67,
+     "pre_snap_flags": 3,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacfamu",
+     "game_path_id": "famujsu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacjsu",
+     "flags": 5,
+     "yards": 35,
+     "pre_snap_flags": 3,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacfamu",
+     "game_path_id": "uapbfamu26",
+     "week": 8,
+     "date": "2026-10-24",
+     "opponent_team_id": "swacuapb",
+     "flags": 8,
+     "yards": 55,
+     "pre_snap_flags": 4,
+     "crucial_flags": 4
+    },
+    {
+     "team_id": "swacaamu",
+     "game_path_id": "aamufamu26",
+     "week": 4,
+     "date": "2026-09-26",
+     "opponent_team_id": "swacfamu",
+     "flags": 6,
+     "yards": 54,
+     "pre_snap_flags": 2,
+     "crucial_flags": 0
+    },
+    {
+     "team_id": "swacaamu",
+     "game_path_id": "aamujsu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacjsu",
+     "flags": 7,
+     "yards": 90,
+     "pre_snap_flags": 1,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacaamu",
+     "game_path_id": "bcuaamu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacbcu",
+     "flags": 6,
+     "yards": 53,
+     "pre_snap_flags": 2,
+     "crucial_flags": 2
+    },
+    {
+     "team_id": "swacaamu",
+     "game_path_id": "gsuaamu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacgsu",
+     "flags": 9,
+     "yards": 80,
+     "pre_snap_flags": 4,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacbcu",
+     "game_path_id": "asubcu26",
+     "week": 5,
+     "date": "2026-10-03",
+     "opponent_team_id": "swacasu",
+     "flags": 7,
+     "yards": 80,
+     "pre_snap_flags": 1,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacbcu",
+     "game_path_id": "bcuaamu26",
+     "week": 6,
+     "date": "2026-10-10",
+     "opponent_team_id": "swacaamu",
+     "flags": 4,
+     "yards": 54,
+     "pre_snap_flags": 0,
+     "crucial_flags": 3
+    },
+    {
+     "team_id": "swacbcu",
+     "game_path_id": "bcumvsu26",
+     "week": 7,
+     "date": "2026-10-17",
+     "opponent_team_id": "swacmvsu",
+     "flags": 7,
+     "yards": 60,
+     "pre_snap_flags": 3,
+     "crucial_flags": 1
+    },
+    {
+     "team_id": "swacbcu",
+     "game_path_id": "jsubcu26",
+     "week": 8,
+     "date": "2026-10-24",
+     "opponent_team_id": "swacjsu",
+     "flags": 6,
+     "yards": 51,
+     "pre_snap_flags": 2,
+     "crucial_flags": 2
+    }
+   ],
+   "team_summary": [
+    {
+     "team_id": "swacpvamu",
+     "games": 5,
+     "flags_per_game": 8.2,
+     "flags_low": 4,
+     "flags_high": 16,
+     "flags_spread": 4.12,
+     "change_per_game": -0.7,
+     "first_half_flags_per_game": 7.5,
+     "second_half_flags_per_game": 5.0,
+     "direction": null,
+     "pre_snap_first_half": 4,
+     "pre_snap_second_half": 3,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 12,
+     "most_common_foul_games": 5
+    },
+    {
+     "team_id": "swacjsu",
+     "games": 5,
+     "flags_per_game": 7.4,
+     "flags_low": 1,
+     "flags_high": 11,
+     "flags_spread": 3.5,
+     "change_per_game": -1.3,
+     "first_half_flags_per_game": 9.0,
+     "second_half_flags_per_game": 6.0,
+     "direction": "fewer",
+     "pre_snap_first_half": 4,
+     "pre_snap_second_half": 3,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 8,
+     "most_common_foul_games": 3
+    },
+    {
+     "team_id": "swacsu",
+     "games": 5,
+     "flags_per_game": 4.6,
+     "flags_low": 1,
+     "flags_high": 10,
+     "flags_spread": 3.14,
+     "change_per_game": -1.8,
+     "first_half_flags_per_game": 6.5,
+     "second_half_flags_per_game": 2.0,
+     "direction": "fewer",
+     "pre_snap_first_half": 6,
+     "pre_snap_second_half": 3,
+     "most_common_foul": "false_start",
+     "most_common_foul_flags": 6,
+     "most_common_foul_games": 3
+    },
+    {
+     "team_id": "swacgsu",
+     "games": 4,
+     "flags_per_game": 9.5,
+     "flags_low": 6,
+     "flags_high": 14,
+     "flags_spread": 2.96,
+     "change_per_game": -1.8,
+     "first_half_flags_per_game": 12.0,
+     "second_half_flags_per_game": 7.0,
+     "direction": "fewer",
+     "pre_snap_first_half": 12,
+     "pre_snap_second_half": 8,
+     "most_common_foul": "false_start",
+     "most_common_foul_flags": 13,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swactsu",
+     "games": 4,
+     "flags_per_game": 10.0,
+     "flags_low": 8,
+     "flags_high": 14,
+     "flags_spread": 2.45,
+     "change_per_game": -1.6,
+     "first_half_flags_per_game": 11.0,
+     "second_half_flags_per_game": 9.0,
+     "direction": "fewer",
+     "pre_snap_first_half": 16,
+     "pre_snap_second_half": 5,
+     "most_common_foul": "false_start",
+     "most_common_foul_flags": 12,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swacuapb",
+     "games": 4,
+     "flags_per_game": 6.25,
+     "flags_low": 4,
+     "flags_high": 10,
+     "flags_spread": 2.28,
+     "change_per_game": -1.3,
+     "first_half_flags_per_game": 7.0,
+     "second_half_flags_per_game": 5.5,
+     "direction": null,
+     "pre_snap_first_half": 8,
+     "pre_snap_second_half": 4,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 7,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swacmvsu",
+     "games": 4,
+     "flags_per_game": 13.5,
+     "flags_low": 10,
+     "flags_high": 15,
+     "flags_spread": 2.06,
+     "change_per_game": 1.4,
+     "first_half_flags_per_game": 12.5,
+     "second_half_flags_per_game": 14.5,
+     "direction": "more",
+     "pre_snap_first_half": 12,
+     "pre_snap_second_half": 7,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 14,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swacalc",
+     "games": 4,
+     "flags_per_game": 11.0,
+     "flags_low": 9,
+     "flags_high": 13,
+     "flags_spread": 2.0,
+     "change_per_game": 0.0,
+     "first_half_flags_per_game": 11.0,
+     "second_half_flags_per_game": 11.0,
+     "direction": null,
+     "pre_snap_first_half": 8,
+     "pre_snap_second_half": 12,
+     "most_common_foul": "false_start",
+     "most_common_foul_flags": 12,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swacasu",
+     "games": 5,
+     "flags_per_game": 6.0,
+     "flags_low": 4,
+     "flags_high": 8,
+     "flags_spread": 1.79,
+     "change_per_game": -0.6,
+     "first_half_flags_per_game": 7.0,
+     "second_half_flags_per_game": 6.0,
+     "direction": null,
+     "pre_snap_first_half": 3,
+     "pre_snap_second_half": 3,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 6,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swacfamu",
+     "games": 4,
+     "flags_per_game": 7.75,
+     "flags_low": 5,
+     "flags_high": 10,
+     "flags_spread": 1.79,
+     "change_per_game": -0.9,
+     "first_half_flags_per_game": 9.0,
+     "second_half_flags_per_game": 6.5,
+     "direction": "fewer",
+     "pre_snap_first_half": 8,
+     "pre_snap_second_half": 7,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 8,
+     "most_common_foul_games": 3
+    },
+    {
+     "team_id": "swacaamu",
+     "games": 4,
+     "flags_per_game": 7.0,
+     "flags_low": 6,
+     "flags_high": 9,
+     "flags_spread": 1.22,
+     "change_per_game": 0.8,
+     "first_half_flags_per_game": 6.5,
+     "second_half_flags_per_game": 7.5,
+     "direction": null,
+     "pre_snap_first_half": 3,
+     "pre_snap_second_half": 6,
+     "most_common_foul": "pass_interference",
+     "most_common_foul_flags": 7,
+     "most_common_foul_games": 4
+    },
+    {
+     "team_id": "swacbcu",
+     "games": 4,
+     "flags_per_game": 6.0,
+     "flags_low": 4,
+     "flags_high": 7,
+     "flags_spread": 1.22,
+     "change_per_game": 0.0,
+     "first_half_flags_per_game": 5.5,
+     "second_half_flags_per_game": 6.5,
+     "direction": null,
+     "pre_snap_first_half": 1,
+     "pre_snap_second_half": 5,
+     "most_common_foul": "holding",
+     "most_common_foul_flags": 8,
+     "most_common_foul_games": 4
+    }
+   ],
+   "swac_by_week": [
+    {
+     "week": 0,
+     "team_games": 2,
+     "flags": 18.0,
+     "pre_snap": 7.0,
+     "crucial": 5.0,
+     "flags_per_team_game": 9.0,
+     "pre_snap_per_team_game": 3.5
+    },
+    {
+     "week": 1,
+     "team_games": 2,
+     "flags": 22.0,
+     "pre_snap": 13.0,
+     "crucial": 1.0,
+     "flags_per_team_game": 11.0,
+     "pre_snap_per_team_game": 6.5
+    },
+    {
+     "week": 2,
+     "team_games": 2,
+     "flags": 19.0,
+     "pre_snap": 8.0,
+     "crucial": 8.0,
+     "flags_per_team_game": 9.5,
+     "pre_snap_per_team_game": 4.0
+    },
+    {
+     "week": 4,
+     "team_games": 10,
+     "flags": 81.0,
+     "pre_snap": 32.0,
+     "crucial": 15.0,
+     "flags_per_team_game": 8.1,
+     "pre_snap_per_team_game": 3.2
+    },
+    {
+     "week": 5,
+     "team_games": 10,
+     "flags": 96.0,
+     "pre_snap": 39.0,
+     "crucial": 27.0,
+     "flags_per_team_game": 9.6,
+     "pre_snap_per_team_game": 3.9
+    },
+    {
+     "week": 6,
+     "team_games": 10,
+     "flags": 72.0,
+     "pre_snap": 25.0,
+     "crucial": 18.0,
+     "flags_per_team_game": 7.2,
+     "pre_snap_per_team_game": 2.5
+    },
+    {
+     "week": 7,
+     "team_games": 10,
+     "flags": 78.0,
+     "pre_snap": 31.0,
+     "crucial": 30.0,
+     "flags_per_team_game": 7.8,
+     "pre_snap_per_team_game": 3.1
+    },
+    {
+     "week": 8,
+     "team_games": 6,
+     "flags": 29.0,
+     "pre_snap": 10.0,
+     "crucial": 11.0,
+     "flags_per_team_game": 4.83,
+     "pre_snap_per_team_game": 1.67
+    }
+   ]
+  },
+  "flags_and_winning": {
+   "refresh": "snapshot",
+   "definition": "In each game, the team better on a measure vs the team that won. Games where both teams are level on the measure are left out. one_score = games decided by 8 or fewer.",
+   "rows": [
+    {
+     "measure": "fewer flags",
+     "better_side_won": 13,
+     "better_side_lost": 12,
+     "win_rate": 0.52,
+     "one_score_games_record": "6-8"
+    },
+    {
+     "measure": "fewer penalty yards",
+     "better_side_won": 13,
+     "better_side_lost": 13,
+     "win_rate": 0.5,
+     "one_score_games_record": "7-8"
+    },
+    {
+     "measure": "less EPA lost to flags",
+     "better_side_won": 15,
+     "better_side_lost": 11,
+     "win_rate": 0.577,
+     "one_score_games_record": "9-6"
+    },
+    {
+     "measure": "fewer crucial flags",
+     "better_side_won": 13,
+     "better_side_lost": 11,
+     "win_rate": 0.542,
+     "one_score_games_record": "6-9"
+    },
+    {
+     "measure": "fewer pre-snap flags",
+     "better_side_won": 11,
+     "better_side_lost": 11,
+     "win_rate": 0.5,
+     "one_score_games_record": "6-8"
+    }
+   ]
+  },
+  "when": {
+   "refresh": "snapshot",
+   "definition": "Accepted flags. phase: pre_snap (before the snap), live (during the play), dead (after the whistle: unsportsmanlike conduct, sideline, disqualification, equipment). side: the flagged team's unit (a flag on a kick play is special_teams).",
+   "phase": {
+    "live": 231,
+    "pre": 165,
+    "dead": 19
+   },
+   "side": {
+    "offense": 215,
+    "defense": 157,
+    "special_teams": 43
+   },
+   "by_quarter": {
+    "1": 94,
+    "2": 129,
+    "3": 89,
+    "4": 103,
+    "OT": 0
+   },
+   "by_situation": [
+    {
+     "situation": "1st down",
+     "flags": 165,
+     "by_phase": {
+      "live": 89,
+      "pre": 70,
+      "dead": 6
+     },
+     "top_fouls": {
+      "false_start": 39,
+      "holding": 37,
+      "pass_interference": 17,
+      "personal_foul": 12
+     }
+    },
+    {
+     "situation": "2nd down",
+     "flags": 109,
+     "by_phase": {
+      "live": 66,
+      "pre": 39,
+      "dead": 4
+     },
+     "top_fouls": {
+      "holding": 24,
+      "false_start": 22,
+      "pass_interference": 18,
+      "personal_foul": 7
+     }
+    },
+    {
+     "situation": "3rd down",
+     "flags": 70,
+     "by_phase": {
+      "live": 37,
+      "pre": 28,
+      "dead": 5
+     },
+     "top_fouls": {
+      "false_start": 16,
+      "holding": 12,
+      "personal_foul": 9,
+      "pass_interference": 9
+     }
+    },
+    {
+     "situation": "4th down",
+     "flags": 52,
+     "by_phase": {
+      "pre": 26,
+      "live": 23,
+      "dead": 3
+     },
+     "top_fouls": {
+      "delay_of_game": 11,
+      "false_start": 8,
+      "holding": 8,
+      "block_in_the_back": 4
+     }
+    },
+    {
+     "situation": "red zone",
+     "flags": 58,
+     "by_phase": {
+      "pre": 33,
+      "live": 21,
+      "dead": 4
+     },
+     "top_fouls": {
+      "false_start": 11,
+      "delay_of_game": 10,
+      "offside": 7,
+      "holding": 6
+     }
+    },
+    {
+     "situation": "one-score game",
+     "flags": 241,
+     "by_phase": {
+      "live": 124,
+      "pre": 104,
+      "dead": 13
+     },
+     "top_fouls": {
+      "false_start": 54,
+      "holding": 49,
+      "pass_interference": 29,
+      "personal_foul": 21
+     }
+    },
+    {
+     "situation": "two-minute",
+     "flags": 37,
+     "by_phase": {
+      "live": 26,
+      "pre": 11
+     },
+     "top_fouls": {
+      "holding": 11,
+      "pass_interference": 6,
+      "delay_of_game": 5,
+      "false_start": 3
+     }
+    }
+   ],
+   "home_away_flags_per_game": [
+    {
+     "team_id": "swacasu",
+     "home": 7.0,
+     "away": 5.33,
+     "home_games": 2,
+     "away_games": 3
+    },
+    {
+     "team_id": "swacsu",
+     "home": 8.0,
+     "away": 2.33,
+     "home_games": 2,
+     "away_games": 3
+    },
+    {
+     "team_id": "swactsu",
+     "home": 9.0,
+     "away": 11.0,
+     "home_games": 2,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacpvamu",
+     "home": 6.0,
+     "away": 11.5,
+     "home_games": 3,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacalc",
+     "home": 11.0,
+     "away": 11.0,
+     "home_games": 2,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacuapb",
+     "home": 6.0,
+     "away": 6.33,
+     "home_games": 1,
+     "away_games": 3
+    },
+    {
+     "team_id": "swacaamu",
+     "home": 7.5,
+     "away": 6.5,
+     "home_games": 2,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacfamu",
+     "home": 9.0,
+     "away": 6.5,
+     "home_games": 2,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacmvsu",
+     "home": 15.0,
+     "away": 12.0,
+     "home_games": 2,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacgsu",
+     "home": 10.67,
+     "away": 6.0,
+     "home_games": 3,
+     "away_games": 1
+    },
+    {
+     "team_id": "swacjsu",
+     "home": 9.67,
+     "away": 4.0,
+     "home_games": 3,
+     "away_games": 2
+    },
+    {
+     "team_id": "swacbcu",
+     "home": 6.5,
+     "away": 5.5,
+     "home_games": 2,
+     "away_games": 2
+    }
+   ]
+  },
+  "who": {
+   "refresh": "snapshot",
+   "definition": "Accepted flags that name a player (position from the 2026 roster). The play-by-play charges delay of game to the quarterback.",
+   "flags_naming_a_player": 273,
+   "accepted_flags": 415,
+   "by_position_group": [
+    {
+     "position_group": "OL",
+     "flags": 69,
+     "top_fouls": {
+      "false_start": 35,
+      "holding": 22,
+      "personal_foul": 4,
+      "unsportsmanlike_conduct": 3
+     }
+    },
+    {
+     "position_group": "DB",
+     "flags": 64,
+     "top_fouls": {
+      "pass_interference": 34,
+      "holding": 9,
+      "facemask": 6,
+      "personal_foul": 4
+     }
+    },
+    {
+     "position_group": "DL",
+     "flags": 35,
+     "top_fouls": {
+      "offside": 14,
+      "roughing_the_passer": 6,
+      "personal_foul": 5,
+      "facemask": 3
+     }
+    },
+    {
+     "position_group": "WR",
+     "flags": 28,
+     "top_fouls": {
+      "false_start": 9,
+      "holding": 7,
+      "pass_interference": 3,
+      "unsportsmanlike_conduct": 3
+     }
+    },
+    {
+     "position_group": "LB",
+     "flags": 22,
+     "top_fouls": {
+      "roughing_the_passer": 5,
+      "facemask": 4,
+      "pass_interference": 3,
+      "personal_foul": 3
+     }
+    },
+    {
+     "position_group": "TE",
+     "flags": 19,
+     "top_fouls": {
+      "holding": 8,
+      "false_start": 6,
+      "pass_interference": 2,
+      "unnecessary_roughness": 1
+     }
+    },
+    {
+     "position_group": "ST",
+     "flags": 15,
+     "top_fouls": {
+      "delay_of_game": 12,
+      "illegal_snap": 1,
+      "offside": 1,
+      "unsportsmanlike_conduct": 1
+     }
+    },
+    {
+     "position_group": "QB",
+     "flags": 13,
+     "top_fouls": {
+      "delay_of_game": 9,
+      "illegal_forward_pass": 1,
+      "unsportsmanlike_conduct": 1,
+      "illegal_shift": 1
+     }
+    },
+    {
+     "position_group": "RB",
+     "flags": 5,
+     "top_fouls": {
+      "false_start": 2,
+      "holding": 2,
+      "personal_foul": 1
+     }
+    },
+    {
+     "position_group": "unknown",
+     "flags": 3,
+     "top_fouls": {
+      "pass_interference": 2,
+      "false_start": 1
+     }
+    }
+   ],
+   "players": [
+    {
+     "player_id": "PERS_00013709",
+     "name": "Chris Laney",
+     "team_id": "swacmvsu",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 5,
+     "yards": 40,
+     "games_flagged": 3,
+     "crucial_flags": 2,
+     "fouls": {
+      "holding": 3,
+      "false_start": 2
+     }
+    },
+    {
+     "player_id": "PERS_00011868",
+     "name": "Derrick Cooper",
+     "team_id": "swacalc",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 5,
+     "yards": 39,
+     "games_flagged": 3,
+     "crucial_flags": 1,
+     "fouls": {
+      "unsportsmanlike_conduct": 1,
+      "false_start": 3,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00013449",
+     "name": "Zion Crawford",
+     "team_id": "swacasu",
+     "position": "DB",
+     "position_group": "DB",
+     "flags": 4,
+     "yards": 55,
+     "games_flagged": 4,
+     "crucial_flags": 1,
+     "fouls": {
+      "pass_interference": 2,
+      "personal_foul": 1,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00013699",
+     "name": "Marcus McDaniel",
+     "team_id": "swacmvsu",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 4,
+     "yards": 37,
+     "games_flagged": 2,
+     "crucial_flags": 0,
+     "fouls": {
+      "false_start": 1,
+      "holding": 2,
+      "unnecessary_roughness": 1
+     }
+    },
+    {
+     "player_id": "PERS_00000477",
+     "name": "Kapone Cooper",
+     "team_id": "swacaamu",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 4,
+     "yards": 25,
+     "games_flagged": 2,
+     "crucial_flags": 3,
+     "fouls": {
+      "false_start": 3,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00012357",
+     "name": "Brian Mays",
+     "team_id": "swactsu",
+     "position": "K/P",
+     "position_group": "ST",
+     "flags": 4,
+     "yards": 20,
+     "games_flagged": 1,
+     "crucial_flags": 1,
+     "fouls": {
+      "delay_of_game": 4
+     }
+    },
+    {
+     "player_id": "PERS_00011224",
+     "name": "Eric Zachery",
+     "team_id": "swacpvamu",
+     "position": "DB",
+     "position_group": "DB",
+     "flags": 3,
+     "yards": 40,
+     "games_flagged": 3,
+     "crucial_flags": 2,
+     "fouls": {
+      "roughing_holder": 1,
+      "unsportsmanlike_conduct": 1,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00013387",
+     "name": "Jordan Daniel",
+     "team_id": "swacalc",
+     "position": "LB",
+     "position_group": "LB",
+     "flags": 3,
+     "yards": 35,
+     "games_flagged": 3,
+     "crucial_flags": 0,
+     "fouls": {
+      "holding": 1,
+      "facemask": 1,
+      "roughing_the_passer": 1
+     }
+    },
+    {
+     "player_id": "PERS_00012239",
+     "name": "Calvin McMillian",
+     "team_id": "swacpvamu",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 3,
+     "yards": 35,
+     "games_flagged": 2,
+     "crucial_flags": 1,
+     "fouls": {
+      "unsportsmanlike_conduct": 1,
+      "holding": 2
+     }
+    },
+    {
+     "player_id": "PERS_00013430",
+     "name": "Mitchell Robinson, Jr.",
+     "team_id": "swacasu",
+     "position": "LB",
+     "position_group": "LB",
+     "flags": 3,
+     "yards": 31,
+     "games_flagged": 3,
+     "crucial_flags": 0,
+     "fouls": {
+      "facemask": 2,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00009039",
+     "name": "Ramier Lewis",
+     "team_id": "swactsu",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 3,
+     "yards": 30,
+     "games_flagged": 2,
+     "crucial_flags": 1,
+     "fouls": {
+      "holding": 3
+     }
+    },
+    {
+     "player_id": "PERS_00013607",
+     "name": "Davon Mitchell",
+     "team_id": "swacgsu",
+     "position": "TE",
+     "position_group": "TE",
+     "flags": 3,
+     "yards": 20,
+     "games_flagged": 2,
+     "crucial_flags": 2,
+     "fouls": {
+      "false_start": 2,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00010898",
+     "name": "Cameran Rogers",
+     "team_id": "swacalc",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 3,
+     "yards": 20,
+     "games_flagged": 1,
+     "crucial_flags": 0,
+     "fouls": {
+      "false_start": 2,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00013382",
+     "name": "Tyree Kelly",
+     "team_id": "swacalc",
+     "position": "WR",
+     "position_group": "WR",
+     "flags": 3,
+     "yards": 17,
+     "games_flagged": 2,
+     "crucial_flags": 2,
+     "fouls": {
+      "false_start": 2,
+      "holding": 1
+     }
+    },
+    {
+     "player_id": "PERS_00012387",
+     "name": "Garrison Davis",
+     "team_id": "swacuapb",
+     "position": "QB",
+     "position_group": "QB",
+     "flags": 3,
+     "yards": 15,
+     "games_flagged": 2,
+     "crucial_flags": 2,
+     "fouls": {
+      "delay_of_game": 2,
+      "illegal_shift": 1
+     }
+    },
+    {
+     "player_id": "PERS_00011047",
+     "name": "Christian Wingfield",
+     "team_id": "swacfamu",
+     "position": "OL",
+     "position_group": "OL",
+     "flags": 3,
+     "yards": 15,
+     "games_flagged": 2,
+     "crucial_flags": 0,
+     "fouls": {
+      "false_start": 3
+     }
+    }
+   ]
+  }
+ },
+ "findings": [
+  {
+   "section": "net_penalty_battle",
+   "text": "Southern's opponents are penalized 20.6 more yards a game than Southern in SWAC games, the most in the conference; MVSU is −26.2, the least."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "The Pinkard crew (the same seven officials in all five of its games) called 7 flags in one game and 31 in another (PVAMU at MVSU)."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "The Green, Spears, Pinchback, King and Harris crew called 17, 18, 16 and 21 flags; it calls block in the back 3.7×, unsportsmanlike conduct 2.4× and facemask 2.0× the SWAC rate."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "The Daniels crew calls pass interference 1.8× and holding 0.4× the SWAC rate; 53% of its flags are on defenses."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "The Quinn / McCants crew worked four games with two different referees: Jarvis Walker (3) and Kenith Garmond (1)."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "Home teams drew more flags than visitors from the Green crew (44–28), the Myers crew (39–26) and the Daniels crew (26–14)."
+  },
+  {
+   "section": "cost_by_foul",
+   "text": "Pass interference cost SWAC teams 81 expected points and 41 automatic first downs, the most of any foul."
+  },
+  {
+   "section": "cost_by_foul",
+   "text": "Holding is the most-called foul (91) and erased 12 first downs."
+  },
+  {
+   "section": "cost_by_foul",
+   "text": "Roughing the passer costs the most per flag: 1.8 expected points."
+  },
+  {
+   "section": "team_cost",
+   "text": "44% of UAPB's flags came in crucial situations, the highest share in the SWAC."
+  },
+  {
+   "section": "game_swinging_flags",
+   "text": "JSU's pass interference at Grambling with 2:00 left cost JSU 24 points of win probability, the largest single-flag swing in SWAC play. JSU had three decisive flags in that 45–38 loss."
+  },
+  {
+   "section": "game_swinging_flags",
+   "text": "TSU's pass interference wiped out an interception on Southern's 4th & 4 and cost TSU 21 points of win probability."
+  },
+  {
+   "section": "game_swinging_flags",
+   "text": "AAMU had three drive-extending fouls in its 31–28 loss at JSU: a personal foul, targeting and pass interference."
+  },
+  {
+   "section": "game_swinging_flags",
+   "text": "PVAMU's roughing the holder on 3rd & 19 at MVSU kept alive a touchdown drive in a game PVAMU lost 28–27."
+  },
+  {
+   "section": "bounce_back",
+   "text": "AAMU's offense still moved the chains or scored after 10 of its 12 offensive flags (83%), the best in the SWAC."
+  },
+  {
+   "section": "bounce_back",
+   "text": "ASU recovered after 1 of its 7 offensive flags; Southern after 4 of 12."
+  },
+  {
+   "section": "bounce_back",
+   "text": "After a flag, offenses facing 3rd & 16 or longer converted 23% of the time (31% when no flag got them there)."
+  },
+  {
+   "section": "bounce_back",
+   "text": "Offenses still converted 61% of series after a false start, 52% after holding."
+  },
+  {
+   "section": "third_down_flags",
+   "text": "Defensive flags on 3rd down gave the offense a first down 30 of 36 times."
+  },
+  {
+   "section": "third_down_flags",
+   "text": "MVSU's defense was flagged 6 times on 3rd down: 5 first downs, 3 scoring drives. B-CU's went 4 for 4."
+  },
+  {
+   "section": "third_down_flags",
+   "text": "MVSU's offense had 8 flags on 3rd down and continued the series once; PVAMU 0 of 4; JSU 0 of 4."
+  },
+  {
+   "section": "third_down_flags",
+   "text": "Alcorn continued the series after 3 of its 4 third-down offensive flags, and all three drives scored."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "TSU's pre-snap flags fell from 16 in the first half of its games to 5 in the second."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "MVSU's flags by game: 10, 15, 14, 15."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "AAMU's pre-snap flags rose from 3 to 6; B-CU's from 1 to 5."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "TSU, Grambling and Alcorn were called for a false start in every game; PVAMU, MVSU, UAPB and B-CU for holding; AAMU and B-CU for pass interference."
+  },
+  {
+   "section": "flags_and_winning",
+   "text": "The team with fewer flags won 13 of 25 SWAC games; the team that lost less EPA to flags won 15 of 26."
+  },
+  {
+   "section": "when",
+   "text": "The 2nd quarter draws the most flags (129). In the red zone, 33 of 58 flags come before the snap; in the two-minute drill, 26 of 37 come during the play."
+  },
+  {
+   "section": "who",
+   "text": "Offensive linemen draw the most flags (69: 35 false starts, 22 holding); defensive backs are next (64, 34 of them pass interference)."
+  }
+ ],
+ "tidbits": [
+  {
+   "section": "habits_and_direction",
+   "text": "TSU's drop in pre-snap fouls (16 to 5) is the clearest sign of discipline being coached. Pre-snap fouls are the ones a team controls entirely."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "Watch Alcorn: its total is flat (9, 13, 13, 9 flags), but its pre-snap fouls are rising (8 to 12)."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "AAMU is still one of the cleanest teams in the SWAC (7.0 flags a game, 5th fewest), but its flags (9 in its latest game) and pre-snap fouls (3 to 6) are both creeping up."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "PVAMU's spiky label is mostly one game: without its 16-flag game it is a 4-to-8-flag team."
+  },
+  {
+   "section": "habits_and_direction",
+   "text": "AAMU and B-CU are disciplined overall, but both were called for pass interference in every game (AAMU's most common foul) -- the same foul behind 10 of the 22 decisive flags."
+  },
+  {
+   "section": "team_cost",
+   "text": "AAMU's flags are rare but land at bad moments: its offense's flags erased 4 first downs, tied for the most in the SWAC."
+  },
+  {
+   "section": "team_cost",
+   "text": "UAPB (44%) and B-CU (38%) are rarely flagged, but a big share of their flags come at crucial moments. That is the 'fix this' story, more than a raw count."
+  },
+  {
+   "section": "bounce_back",
+   "text": "AAMU's offense shrugs off its own flags better than anyone in the SWAC (10 of 12 series saved)."
+  },
+  {
+   "section": "bounce_back",
+   "text": "ASU commits the fewest offensive flags (7) and Southern the fewest flags overall (4.6 a game) -- but when they are flagged on offense, the drive rarely survives (ASU 1 of 7, Southern 4 of 12)."
+  },
+  {
+   "section": "bounce_back",
+   "text": "A false start isn't fatal: offenses still convert 61% of those series. Holding hurts more (52%)."
+  },
+  {
+   "section": "third_down_flags",
+   "text": "On defense, a 3rd-down flag almost always hands over the series (30 of 36). On offense, it usually ends the drive -- except at Alcorn, where 3 of 4 still scored."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "The same seven officials can call 7 flags one week and 31 the next, while another crew calls 16 to 21 every week."
+  },
+  {
+   "section": "officiating_crews",
+   "text": "No sign of home cooking: home teams draw more flags than visitors from the Green, Myers and Daniels crews."
+  },
+  {
+   "section": "when",
+   "text": "Near the goal line, teams beat themselves before the snap: 33 of 58 red-zone flags are pre-snap."
+  },
+  {
+   "section": "flags_and_winning",
+   "text": "Counting flags is a coin flip for picking the winner. What the flags cost leans toward winning."
+  }
+ ]
+}

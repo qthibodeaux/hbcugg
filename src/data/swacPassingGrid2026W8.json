@@ -1,0 +1,2992 @@
+{
+ "meta": {
+  "title": "Passing grid, 2026 SWAC",
+  "season": 2026,
+  "scope": "The 12 SWAC teams; every game against another of the 18 programs with play-by-play (grid and totals cover the same games)",
+  "through_week": 8,
+  "generated_at": "2026-10-28T06:53:31-05:00",
+  "keys": "team_id / player_id match the site's other files; the frontend owns team display names"
+ },
+ "definitions": {
+  "air_yards_yac": "Cells: air_yards and yac are totals on the cell's completions. Air yards = line of scrimmage to the catch spot; yac = the rest of the gain, so air_yards + yac = yards. A catch behind the line has negative air yards. Team air_and_yac (from the receiving production file, all passes with a catch spot, ranked among the 18): aDOT per attempt, YAC per completion, YAC share of receiving yards. Garbage time included.",
+  "depth": "Air yards from the line of scrimmage to where the ball was caught or thrown to: short < 4, medium 4-12, deep 13+.",
+  "direction": "left / middle / right of the field, as the play-by-play records the throw.",
+  "success_rate": "Share of attempts that were successful plays on down and distance (50% of the yards to go on 1st down, 70% on 2nd, all of it on 3rd and 4th). Same rule as the team's passing success rate; the team figure is per dropback (sacks included), the cells per attempt.",
+  "epa_per_dropback": "Expected points added per dropback (pass attempts and sacks).",
+  "ranks_18": "Rank among the 18 programs (Team Analytics).",
+  "ranks_swac": "Rank among the 12 SWAC teams on the published totals (1 = most; interceptions: 1 = fewest). Ties share a rank.",
+  "top_receivers": "The team's three most-targeted players.",
+  "passers": "Every player who threw a pass. A passer with player_id null and roster_match false is in the play-by-play under a name the roster could not match; the passers' attempts add up to the team's attempts.",
+  "uncharted_attempts": "Pass attempts the play-by-play gave no depth or direction for. The nine cells plus uncharted_attempts = the team's attempts."
+ },
+ "logging_notes": [
+  "Interceptions are never charted: the play-by-play records no direction on an interception, so every interception is in uncharted_attempts and the cells' interceptions are 0. The team total (totals.interceptions) is complete.",
+  "Some officiating crews leave incompletions at the line of scrimmage instead of spotting where the ball went. In those games the incompletions have no depth and are uncharted. logging.games_with_unspotted_incompletions lists them per team.",
+  "PVAMU: 4 of its 5 games had unspotted incompletions; 22% of its attempts are uncharted.",
+  "MVSU: 2 of 4 games (against PVAMU and B-CU) had unspotted incompletions; 30% of its attempts are uncharted, the most in the SWAC.",
+  "Teams with at most 5% of attempts uncharted: GSU, JSU, ASU, UAPB, FAMU.",
+  "AAMU: 8 attempts by 'Armstrong, McClure' and MVSU: 3 by 'Davis, Jordan' are under names the roster could not match (passers with player_id null)."
+ ],
+ "teams": [
+  {
+   "team_id": "swacaamu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 18,
+     "completions": 15,
+     "yards": 93,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.3889,
+     "air_yards": 7,
+     "yac": 86,
+     "yac_per_completion": 5.7
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 8,
+     "completions": 7,
+     "yards": 57,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.375,
+     "air_yards": 8,
+     "yac": 49,
+     "yac_per_completion": 7.0
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 16,
+     "completions": 11,
+     "yards": 84,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.4375,
+     "air_yards": 4,
+     "yac": 80,
+     "yac_per_completion": 7.3
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 26,
+     "completions": 20,
+     "yards": 228,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 17,
+     "success_rate": 0.6538,
+     "air_yards": 133,
+     "yac": 95,
+     "yac_per_completion": 4.8
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 16,
+     "completions": 9,
+     "yards": 112,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.5625,
+     "air_yards": 68,
+     "yac": 44,
+     "yac_per_completion": 4.9
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 15,
+     "completions": 8,
+     "yards": 78,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.4,
+     "air_yards": 37,
+     "yac": 41,
+     "yac_per_completion": 5.1
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 14,
+     "completions": 8,
+     "yards": 344,
+     "touchdowns": 4,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.5714,
+     "air_yards": 198,
+     "yac": 146,
+     "yac_per_completion": 18.2
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 13,
+     "completions": 4,
+     "yards": 112,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.3077,
+     "air_yards": 74,
+     "yac": 38,
+     "yac_per_completion": 9.5
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 19,
+     "completions": 9,
+     "yards": 271,
+     "touchdowns": 4,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.4737,
+     "air_yards": 210,
+     "yac": 61,
+     "yac_per_completion": 6.8
+    }
+   ],
+   "uncharted_attempts": 19,
+   "totals": {
+    "attempts": 164,
+    "completions": 91,
+    "completion_pct": 0.555,
+    "yards": 1379,
+    "touchdowns": 15,
+    "interceptions": 4,
+    "dropbacks": 166,
+    "success_rate": 0.4217,
+    "epa_per_dropback": 0.0895
+   },
+   "ranks_18": {
+    "success_rate": 3,
+    "epa_per_dropback": 3
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 10.2378,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 7.033,
+     "rank_18": 4
+    },
+    "yac_share_of_yards": {
+     "value": 0.4641,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00000446",
+     "name": "Cornelious Brown IV",
+     "position": "QB",
+     "attempts": 154,
+     "completions": 85,
+     "yards": 1301,
+     "touchdowns": 15,
+     "interceptions": 4
+    },
+    {
+     "player_id": "PERS_00000445",
+     "name": "Eric Handley",
+     "position": "QB",
+     "attempts": 2,
+     "completions": 2,
+     "yards": 16,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": null,
+     "name": "Armstrong,McClure",
+     "position": null,
+     "attempts": 8,
+     "completions": 4,
+     "yards": 62,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "roster_match": false
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00013326",
+     "name": "Jarel Williams",
+     "position": "WR",
+     "targets": 37,
+     "receptions": 20,
+     "yards": 400,
+     "touchdowns": 6
+    },
+    {
+     "player_id": "PERS_00013332",
+     "name": "Jaylan Bean",
+     "position": "WR",
+     "targets": 30,
+     "receptions": 21,
+     "yards": 439,
+     "touchdowns": 7
+    },
+    {
+     "player_id": "PERS_00000447",
+     "name": "Jordan Chambers-Smith",
+     "position": "WR",
+     "targets": 15,
+     "receptions": 5,
+     "yards": 123,
+     "touchdowns": 1
+    }
+   ],
+   "logging": {
+    "charted_attempts": 145,
+    "uncharted_attempts": 19,
+    "uncharted_share": 0.116,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "huaamu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 1,
+    "completions": 3,
+    "completion_pct": 6,
+    "yards": 2,
+    "touchdowns": 2,
+    "success_rate": 3,
+    "epa_per_dropback": 3,
+    "interceptions": 4
+   }
+  },
+  {
+   "team_id": "swacalc",
+   "games": 4,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 10,
+     "completions": 10,
+     "yards": 55,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.7,
+     "air_yards": 2,
+     "yac": 53,
+     "yac_per_completion": 5.3
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 6,
+     "completions": 4,
+     "yards": 31,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.5,
+     "air_yards": 7,
+     "yac": 24,
+     "yac_per_completion": 6.0
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 18,
+     "completions": 17,
+     "yards": 98,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 10,
+     "success_rate": 0.5556,
+     "air_yards": -18,
+     "yac": 116,
+     "yac_per_completion": 6.8
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 16,
+     "completions": 15,
+     "yards": 202,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 12,
+     "success_rate": 0.75,
+     "air_yards": 97,
+     "yac": 105,
+     "yac_per_completion": 7.0
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 6,
+     "completions": 2,
+     "yards": 27,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 1,
+     "success_rate": 0.1667,
+     "air_yards": 11,
+     "yac": 16,
+     "yac_per_completion": 8.0
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 17,
+     "completions": 11,
+     "yards": 145,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.5294,
+     "air_yards": 78,
+     "yac": 67,
+     "yac_per_completion": 6.1
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 26,
+     "completions": 18,
+     "yards": 461,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 17,
+     "success_rate": 0.6538,
+     "air_yards": 360,
+     "yac": 101,
+     "yac_per_completion": 5.6
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 20,
+     "completions": 13,
+     "yards": 434,
+     "touchdowns": 4,
+     "interceptions": 0,
+     "successes": 12,
+     "success_rate": 0.6,
+     "air_yards": 254,
+     "yac": 180,
+     "yac_per_completion": 13.8
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 17,
+     "completions": 6,
+     "yards": 181,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.3529,
+     "air_yards": 126,
+     "yac": 55,
+     "yac_per_completion": 9.2
+    }
+   ],
+   "uncharted_attempts": 22,
+   "totals": {
+    "attempts": 158,
+    "completions": 96,
+    "completion_pct": 0.608,
+    "yards": 1634,
+    "touchdowns": 17,
+    "interceptions": 2,
+    "dropbacks": 165,
+    "success_rate": 0.4667,
+    "epa_per_dropback": 0.406
+   },
+   "ranks_18": {
+    "success_rate": 1,
+    "epa_per_dropback": 1
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 11.8,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 7.4688,
+     "rank_18": 2
+    },
+    "yac_share_of_yards": {
+     "value": 0.4388,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00007631",
+     "name": "Jaylon Tolbert",
+     "position": "QB",
+     "attempts": 157,
+     "completions": 96,
+     "yards": 1634,
+     "touchdowns": 17,
+     "interceptions": 2
+    },
+    {
+     "player_id": "PERS_00009981",
+     "name": "Omarion Blakes",
+     "position": "WR",
+     "attempts": 1,
+     "completions": 0,
+     "yards": 0,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00013386",
+     "name": "Armon Wright",
+     "position": "WR",
+     "targets": 25,
+     "receptions": 19,
+     "yards": 212,
+     "touchdowns": 1
+    },
+    {
+     "player_id": "PERS_00013382",
+     "name": "Tyree Kelly",
+     "position": "WR",
+     "targets": 23,
+     "receptions": 12,
+     "yards": 227,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00010015",
+     "name": "Damien Jones",
+     "position": "WR",
+     "targets": 18,
+     "receptions": 11,
+     "yards": 237,
+     "touchdowns": 4
+    }
+   ],
+   "logging": {
+    "charted_attempts": 136,
+    "uncharted_attempts": 22,
+    "uncharted_share": 0.139,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "alcpvamu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 2,
+    "completions": 1,
+    "completion_pct": 4,
+    "yards": 1,
+    "touchdowns": 1,
+    "success_rate": 1,
+    "epa_per_dropback": 1,
+    "interceptions": 2
+   }
+  },
+  {
+   "team_id": "swacasu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 15,
+     "completions": 14,
+     "yards": 94,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.6,
+     "air_yards": -19,
+     "yac": 113,
+     "yac_per_completion": 8.1
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 6,
+     "completions": 5,
+     "yards": 49,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.6667,
+     "air_yards": 3,
+     "yac": 46,
+     "yac_per_completion": 9.2
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 18,
+     "completions": 16,
+     "yards": 83,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.3889,
+     "air_yards": -10,
+     "yac": 93,
+     "yac_per_completion": 5.8
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 12,
+     "completions": 7,
+     "yards": 72,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.5833,
+     "air_yards": 38,
+     "yac": 34,
+     "yac_per_completion": 4.9
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 5,
+     "completions": 4,
+     "yards": 55,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.6,
+     "air_yards": 32,
+     "yac": 23,
+     "yac_per_completion": 5.8
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 19,
+     "completions": 10,
+     "yards": 108,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.3684,
+     "air_yards": 67,
+     "yac": 41,
+     "yac_per_completion": 4.1
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 4,
+     "completions": 1,
+     "yards": 36,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 1,
+     "success_rate": 0.25,
+     "air_yards": 27,
+     "yac": 9,
+     "yac_per_completion": 9.0
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 3,
+     "completions": 1,
+     "yards": 29,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 1,
+     "success_rate": 0.3333,
+     "air_yards": 29,
+     "yac": 0,
+     "yac_per_completion": 0.0
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 10,
+     "completions": 3,
+     "yards": 105,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.3,
+     "air_yards": 62,
+     "yac": 43,
+     "yac_per_completion": 14.3
+    }
+   ],
+   "uncharted_attempts": 4,
+   "totals": {
+    "attempts": 96,
+    "completions": 62,
+    "completion_pct": 0.646,
+    "yards": 637,
+    "touchdowns": 2,
+    "interceptions": 3,
+    "dropbacks": 102,
+    "success_rate": 0.4118,
+    "epa_per_dropback": -0.1582
+   },
+   "ranks_18": {
+    "success_rate": 4,
+    "epa_per_dropback": 11
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 6.4239,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 6.6129,
+     "rank_18": 6
+    },
+    "yac_share_of_yards": {
+     "value": 0.6436,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00013431",
+     "name": "Aaron Frye",
+     "position": "QB",
+     "attempts": 72,
+     "completions": 47,
+     "yards": 442,
+     "touchdowns": 1,
+     "interceptions": 3
+    },
+    {
+     "player_id": "PERS_00008540",
+     "name": "Andrew Body",
+     "position": "QB",
+     "attempts": 23,
+     "completions": 14,
+     "yards": 192,
+     "touchdowns": 1,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00011896",
+     "name": "Te’Sean Smoot",
+     "position": "QB",
+     "attempts": 1,
+     "completions": 1,
+     "yards": 3,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00010918",
+     "name": "Kareem Keye",
+     "position": "WR",
+     "targets": 23,
+     "receptions": 14,
+     "yards": 128,
+     "touchdowns": 0
+    },
+    {
+     "player_id": "PERS_00013432",
+     "name": "Randall King",
+     "position": "WR",
+     "targets": 16,
+     "receptions": 11,
+     "yards": 186,
+     "touchdowns": 1
+    },
+    {
+     "player_id": "PERS_00011776",
+     "name": "Franck Pierre",
+     "position": "WR",
+     "targets": 9,
+     "receptions": 1,
+     "yards": 11,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 92,
+    "uncharted_attempts": 4,
+    "uncharted_share": 0.042,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": []
+   },
+   "ranks_swac": {
+    "attempts": 10,
+    "completions": 9,
+    "completion_pct": 2,
+    "yards": 11,
+    "touchdowns": 9,
+    "success_rate": 4,
+    "epa_per_dropback": 9,
+    "interceptions": 3
+   }
+  },
+  {
+   "team_id": "swacbcu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 5,
+     "completions": 2,
+     "yards": 4,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 0,
+     "success_rate": 0.0,
+     "air_yards": -4,
+     "yac": 8,
+     "yac_per_completion": 4.0
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 6,
+     "completions": 5,
+     "yards": 44,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.5,
+     "air_yards": -14,
+     "yac": 58,
+     "yac_per_completion": 11.6
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 11,
+     "completions": 9,
+     "yards": 80,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.2727,
+     "air_yards": -13,
+     "yac": 93,
+     "yac_per_completion": 10.3
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 11,
+     "completions": 8,
+     "yards": 73,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.5455,
+     "air_yards": 50,
+     "yac": 23,
+     "yac_per_completion": 2.9
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 10,
+     "completions": 6,
+     "yards": 67,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.6,
+     "air_yards": 39,
+     "yac": 28,
+     "yac_per_completion": 4.7
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 16,
+     "completions": 9,
+     "yards": 60,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.3125,
+     "air_yards": 48,
+     "yac": 12,
+     "yac_per_completion": 1.3
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 4,
+     "completions": 2,
+     "yards": 41,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 0.5,
+     "air_yards": 41,
+     "yac": 0,
+     "yac_per_completion": 0.0
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 6,
+     "completions": 2,
+     "yards": 27,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 0.3333,
+     "air_yards": 26,
+     "yac": 1,
+     "yac_per_completion": 0.5
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 6,
+     "completions": 3,
+     "yards": 71,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.5,
+     "air_yards": 64,
+     "yac": 7,
+     "yac_per_completion": 2.3
+    }
+   ],
+   "uncharted_attempts": 15,
+   "totals": {
+    "attempts": 90,
+    "completions": 46,
+    "completion_pct": 0.511,
+    "yards": 467,
+    "touchdowns": 6,
+    "interceptions": 5,
+    "dropbacks": 101,
+    "success_rate": 0.297,
+    "epa_per_dropback": -0.2394
+   },
+   "ranks_18": {
+    "success_rate": 15,
+    "epa_per_dropback": 13
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 7.2,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 5.0,
+     "rank_18": 9
+    },
+    "yac_share_of_yards": {
+     "value": 0.4925,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00011998",
+     "name": "Tyler Jefferson",
+     "position": "QB",
+     "attempts": 71,
+     "completions": 37,
+     "yards": 394,
+     "touchdowns": 5,
+     "interceptions": 2
+    },
+    {
+     "player_id": "PERS_00013480",
+     "name": "Joel Morris",
+     "position": "QB",
+     "attempts": 10,
+     "completions": 4,
+     "yards": 1,
+     "touchdowns": 0,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00011950",
+     "name": "Amari Jones",
+     "position": "QB",
+     "attempts": 8,
+     "completions": 4,
+     "yards": 37,
+     "touchdowns": 0,
+     "interceptions": 2
+    },
+    {
+     "player_id": "PERS_00013490",
+     "name": "Isaiah Daniel",
+     "position": "RB",
+     "attempts": 1,
+     "completions": 1,
+     "yards": 35,
+     "touchdowns": 1,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00011951",
+     "name": "Rickie Shaw II",
+     "position": "WR",
+     "targets": 15,
+     "receptions": 10,
+     "yards": 139,
+     "touchdowns": 3
+    },
+    {
+     "player_id": "PERS_00011953",
+     "name": "Josh Evans",
+     "position": "WR",
+     "targets": 15,
+     "receptions": 9,
+     "yards": 125,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00011962",
+     "name": "Willie Anderson",
+     "position": "WR",
+     "targets": 12,
+     "receptions": 7,
+     "yards": 58,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 75,
+    "uncharted_attempts": 15,
+    "uncharted_share": 0.167,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "bcumvsu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 11,
+    "completions": 11,
+    "completion_pct": 12,
+    "yards": 12,
+    "touchdowns": 7,
+    "success_rate": 12,
+    "epa_per_dropback": 11,
+    "interceptions": 5
+   }
+  },
+  {
+   "team_id": "swacfamu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 20,
+     "completions": 15,
+     "yards": 86,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.3,
+     "air_yards": -8,
+     "yac": 94,
+     "yac_per_completion": 6.3
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 9,
+     "completions": 6,
+     "yards": 63,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.3333,
+     "air_yards": -2,
+     "yac": 65,
+     "yac_per_completion": 10.8
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 21,
+     "completions": 12,
+     "yards": 88,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.4286,
+     "air_yards": -9,
+     "yac": 97,
+     "yac_per_completion": 8.1
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 13,
+     "completions": 6,
+     "yards": 56,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.3077,
+     "air_yards": 35,
+     "yac": 21,
+     "yac_per_completion": 3.5
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 20,
+     "completions": 9,
+     "yards": 101,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.45,
+     "air_yards": 73,
+     "yac": 28,
+     "yac_per_completion": 3.1
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 25,
+     "completions": 15,
+     "yards": 181,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.32,
+     "air_yards": 90,
+     "yac": 91,
+     "yac_per_completion": 6.1
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 11,
+     "completions": 4,
+     "yards": 186,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.3636,
+     "air_yards": 126,
+     "yac": 60,
+     "yac_per_completion": 15.0
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 12,
+     "completions": 7,
+     "yards": 251,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.5833,
+     "air_yards": 154,
+     "yac": 97,
+     "yac_per_completion": 13.9
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 12,
+     "completions": 3,
+     "yards": 93,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.25,
+     "air_yards": 68,
+     "yac": 25,
+     "yac_per_completion": 8.3
+    }
+   ],
+   "uncharted_attempts": 7,
+   "totals": {
+    "attempts": 150,
+    "completions": 77,
+    "completion_pct": 0.513,
+    "yards": 1105,
+    "touchdowns": 8,
+    "interceptions": 7,
+    "dropbacks": 165,
+    "success_rate": 0.3212,
+    "epa_per_dropback": -0.0602
+   },
+   "ranks_18": {
+    "success_rate": 13,
+    "epa_per_dropback": 5
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 8.4015,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 7.5065,
+     "rank_18": 1
+    },
+    "yac_share_of_yards": {
+     "value": 0.5231,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00013535",
+     "name": "Armond Parker",
+     "position": "QB",
+     "attempts": 114,
+     "completions": 63,
+     "yards": 940,
+     "touchdowns": 8,
+     "interceptions": 7
+    },
+    {
+     "player_id": "PERS_00013533",
+     "name": "Isaiah Knowles",
+     "position": "QB",
+     "attempts": 22,
+     "completions": 7,
+     "yards": 94,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00013536",
+     "name": "Dustin Fletcher",
+     "position": "QB",
+     "attempts": 8,
+     "completions": 6,
+     "yards": 68,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00010917",
+     "name": "James Hayes",
+     "position": "QB",
+     "attempts": 6,
+     "completions": 1,
+     "yards": 3,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00013529",
+     "name": "Corey Petty",
+     "position": "WR",
+     "targets": 26,
+     "receptions": 14,
+     "yards": 164,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00013530",
+     "name": "Kieren Jackson",
+     "position": "WR",
+     "targets": 25,
+     "receptions": 14,
+     "yards": 273,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00012006",
+     "name": "Jamar Taylor",
+     "position": "WR",
+     "targets": 14,
+     "receptions": 10,
+     "yards": 81,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 143,
+    "uncharted_attempts": 7,
+    "uncharted_share": 0.047,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": []
+   },
+   "ranks_swac": {
+    "attempts": 3,
+    "completions": 4,
+    "completion_pct": 11,
+    "yards": 3,
+    "touchdowns": 5,
+    "success_rate": 10,
+    "epa_per_dropback": 5,
+    "interceptions": 6
+   }
+  },
+  {
+   "team_id": "swacgsu",
+   "games": 4,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 13,
+     "completions": 11,
+     "yards": 35,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.2308,
+     "air_yards": -5,
+     "yac": 40,
+     "yac_per_completion": 3.6
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 5,
+     "completions": 4,
+     "yards": 26,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 0.4,
+     "air_yards": 0,
+     "yac": 26,
+     "yac_per_completion": 6.5
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 11,
+     "completions": 11,
+     "yards": 58,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.4545,
+     "air_yards": -11,
+     "yac": 69,
+     "yac_per_completion": 6.3
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 10,
+     "completions": 6,
+     "yards": 64,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.4,
+     "air_yards": 35,
+     "yac": 29,
+     "yac_per_completion": 4.8
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 19,
+     "completions": 11,
+     "yards": 200,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 11,
+     "success_rate": 0.5789,
+     "air_yards": 80,
+     "yac": 120,
+     "yac_per_completion": 10.9
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 15,
+     "completions": 9,
+     "yards": 124,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.5333,
+     "air_yards": 69,
+     "yac": 55,
+     "yac_per_completion": 6.1
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 9,
+     "completions": 3,
+     "yards": 111,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.3333,
+     "air_yards": 90,
+     "yac": 21,
+     "yac_per_completion": 7.0
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 10,
+     "completions": 6,
+     "yards": 213,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.6,
+     "air_yards": 112,
+     "yac": 101,
+     "yac_per_completion": 16.8
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 8,
+     "completions": 3,
+     "yards": 88,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.375,
+     "air_yards": 74,
+     "yac": 14,
+     "yac_per_completion": 4.7
+    }
+   ],
+   "uncharted_attempts": 3,
+   "totals": {
+    "attempts": 103,
+    "completions": 64,
+    "completion_pct": 0.621,
+    "yards": 919,
+    "touchdowns": 11,
+    "interceptions": 3,
+    "dropbacks": 112,
+    "success_rate": 0.4018,
+    "epa_per_dropback": 0.1744
+   },
+   "ranks_18": {
+    "success_rate": 5,
+    "epa_per_dropback": 2
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 10.3814,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 7.4219,
+     "rank_18": 3
+    },
+    "yac_share_of_yards": {
+     "value": 0.5169,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00013572",
+     "name": "Jacobe Robinson",
+     "position": "QB",
+     "attempts": 67,
+     "completions": 45,
+     "yards": 611,
+     "touchdowns": 8,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00011081",
+     "name": "Ashton Frye",
+     "position": "QB",
+     "attempts": 25,
+     "completions": 15,
+     "yards": 278,
+     "touchdowns": 3,
+     "interceptions": 2
+    },
+    {
+     "player_id": "PERS_00012063",
+     "name": "Hayden Benoit",
+     "position": "QB",
+     "attempts": 6,
+     "completions": 2,
+     "yards": 18,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00013579",
+     "name": "Schuylar Turnbull",
+     "position": "QB",
+     "attempts": 2,
+     "completions": 0,
+     "yards": 0,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00004208",
+     "name": "Tony Phillips Jr.",
+     "position": "RB",
+     "attempts": 2,
+     "completions": 1,
+     "yards": -5,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00004204",
+     "name": "Patrick Williams II",
+     "position": "TE",
+     "attempts": 1,
+     "completions": 1,
+     "yards": 17,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00012056",
+     "name": "Tyson George",
+     "position": "WR",
+     "targets": 28,
+     "receptions": 23,
+     "yards": 345,
+     "touchdowns": 6
+    },
+    {
+     "player_id": "PERS_00010185",
+     "name": "Nae'Saan Dickerson",
+     "position": "WR",
+     "targets": 18,
+     "receptions": 11,
+     "yards": 185,
+     "touchdowns": 3
+    },
+    {
+     "player_id": "PERS_00011079",
+     "name": "Jordan Bride",
+     "position": "WR",
+     "targets": 14,
+     "receptions": 9,
+     "yards": 131,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 100,
+    "uncharted_attempts": 3,
+    "uncharted_share": 0.029,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": []
+   },
+   "ranks_swac": {
+    "attempts": 9,
+    "completions": 8,
+    "completion_pct": 3,
+    "yards": 5,
+    "touchdowns": 3,
+    "success_rate": 5,
+    "epa_per_dropback": 2,
+    "interceptions": 3
+   }
+  },
+  {
+   "team_id": "swacjsu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 20,
+     "completions": 18,
+     "yards": 128,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.4,
+     "air_yards": -19,
+     "yac": 147,
+     "yac_per_completion": 8.2
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 13,
+     "completions": 10,
+     "yards": 97,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.4615,
+     "air_yards": 4,
+     "yac": 93,
+     "yac_per_completion": 9.3
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 12,
+     "completions": 9,
+     "yards": 96,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.25,
+     "air_yards": -4,
+     "yac": 100,
+     "yac_per_completion": 11.1
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 17,
+     "completions": 7,
+     "yards": 64,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.3529,
+     "air_yards": 52,
+     "yac": 12,
+     "yac_per_completion": 1.7
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 14,
+     "completions": 8,
+     "yards": 97,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.5714,
+     "air_yards": 48,
+     "yac": 49,
+     "yac_per_completion": 6.1
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 15,
+     "completions": 4,
+     "yards": 32,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.2,
+     "air_yards": 32,
+     "yac": 0,
+     "yac_per_completion": 0.0
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 6,
+     "completions": 2,
+     "yards": 36,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 0.3333,
+     "air_yards": 33,
+     "yac": 3,
+     "yac_per_completion": 1.5
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 14,
+     "completions": 5,
+     "yards": 210,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.3571,
+     "air_yards": 147,
+     "yac": 63,
+     "yac_per_completion": 12.6
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 17,
+     "completions": 5,
+     "yards": 115,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.2941,
+     "air_yards": 115,
+     "yac": 0,
+     "yac_per_completion": 0.0
+    }
+   ],
+   "uncharted_attempts": 4,
+   "totals": {
+    "attempts": 132,
+    "completions": 69,
+    "completion_pct": 0.523,
+    "yards": 871,
+    "touchdowns": 8,
+    "interceptions": 3,
+    "dropbacks": 140,
+    "success_rate": 0.3286,
+    "epa_per_dropback": -0.1256
+   },
+   "ranks_18": {
+    "success_rate": 12,
+    "epa_per_dropback": 9
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 9.75,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 6.7681,
+     "rank_18": 5
+    },
+    "yac_share_of_yards": {
+     "value": 0.5362,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00012105",
+     "name": "Jared Lockhart",
+     "position": "QB",
+     "attempts": 109,
+     "completions": 56,
+     "yards": 718,
+     "touchdowns": 7,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00013621",
+     "name": "Caron Tyler",
+     "position": "QB",
+     "attempts": 22,
+     "completions": 13,
+     "yards": 153,
+     "touchdowns": 1,
+     "interceptions": 2
+    },
+    {
+     "player_id": "PERS_00012107",
+     "name": "Jabari Jones",
+     "position": "WR",
+     "attempts": 1,
+     "completions": 0,
+     "yards": 0,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00012100",
+     "name": "Nate Rembert",
+     "position": "WR",
+     "targets": 40,
+     "receptions": 24,
+     "yards": 428,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00008366",
+     "name": "Kobe Paul",
+     "position": "WR",
+     "targets": 16,
+     "receptions": 4,
+     "yards": 35,
+     "touchdowns": 1
+    },
+    {
+     "player_id": "PERS_00012107",
+     "name": "Jabari Jones",
+     "position": "WR",
+     "targets": 14,
+     "receptions": 9,
+     "yards": 128,
+     "touchdowns": 3
+    }
+   ],
+   "logging": {
+    "charted_attempts": 128,
+    "uncharted_attempts": 4,
+    "uncharted_share": 0.03,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": []
+   },
+   "ranks_swac": {
+    "attempts": 4,
+    "completions": 5,
+    "completion_pct": 9,
+    "yards": 6,
+    "touchdowns": 5,
+    "success_rate": 9,
+    "epa_per_dropback": 7,
+    "interceptions": 3
+   }
+  },
+  {
+   "team_id": "swacmvsu",
+   "games": 4,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 17,
+     "completions": 15,
+     "yards": 57,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.1765,
+     "air_yards": -3,
+     "yac": 60,
+     "yac_per_completion": 4.0
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 9,
+     "completions": 6,
+     "yards": 37,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.3333,
+     "air_yards": -10,
+     "yac": 47,
+     "yac_per_completion": 7.8
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 10,
+     "completions": 6,
+     "yards": 48,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.4,
+     "air_yards": -7,
+     "yac": 55,
+     "yac_per_completion": 9.2
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 4,
+     "completions": 4,
+     "yards": 32,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.75,
+     "air_yards": 24,
+     "yac": 8,
+     "yac_per_completion": 2.0
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 7,
+     "completions": 6,
+     "yards": 94,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.7143,
+     "air_yards": 53,
+     "yac": 41,
+     "yac_per_completion": 6.8
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 13,
+     "completions": 11,
+     "yards": 129,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.6923,
+     "air_yards": 73,
+     "yac": 56,
+     "yac_per_completion": 5.1
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 4,
+     "completions": 3,
+     "yards": 92,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.75,
+     "air_yards": 88,
+     "yac": 4,
+     "yac_per_completion": 1.3
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 7,
+     "completions": 4,
+     "yards": 126,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.5714,
+     "air_yards": 114,
+     "yac": 12,
+     "yac_per_completion": 3.0
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 10,
+     "completions": 4,
+     "yards": 130,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.4,
+     "air_yards": 78,
+     "yac": 52,
+     "yac_per_completion": 13.0
+    }
+   ],
+   "uncharted_attempts": 34,
+   "totals": {
+    "attempts": 115,
+    "completions": 60,
+    "completion_pct": 0.522,
+    "yards": 751,
+    "touchdowns": 5,
+    "interceptions": 5,
+    "dropbacks": 130,
+    "success_rate": 0.3,
+    "epa_per_dropback": -0.269
+   },
+   "ranks_18": {
+    "success_rate": 14,
+    "epa_per_dropback": 16
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 8.2658,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 5.5833,
+     "rank_18": 8
+    },
+    "yac_share_of_yards": {
+     "value": 0.4461,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00013680",
+     "name": "Joshua Brown",
+     "position": "QB",
+     "attempts": 111,
+     "completions": 57,
+     "yards": 716,
+     "touchdowns": 5,
+     "interceptions": 5
+    },
+    {
+     "player_id": "PERS_00010439",
+     "name": "Jordon Davis",
+     "position": "QB",
+     "attempts": 1,
+     "completions": 1,
+     "yards": 15,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": null,
+     "name": "Davis,Jordan",
+     "position": null,
+     "attempts": 3,
+     "completions": 2,
+     "yards": 20,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "roster_match": false
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00013679",
+     "name": "Dayvian Bluitt",
+     "position": "ATH",
+     "targets": 22,
+     "receptions": 11,
+     "yards": 260,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00012184",
+     "name": "Caleb Brownlow",
+     "position": "WR",
+     "targets": 18,
+     "receptions": 11,
+     "yards": 214,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00013713",
+     "name": "Jaylen King",
+     "position": "TE",
+     "targets": 17,
+     "receptions": 14,
+     "yards": 58,
+     "touchdowns": 1
+    }
+   ],
+   "logging": {
+    "charted_attempts": 81,
+    "uncharted_attempts": 34,
+    "uncharted_share": 0.296,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "pvamumvsu26",
+     "bcumvsu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 7,
+    "completions": 10,
+    "completion_pct": 10,
+    "yards": 9,
+    "touchdowns": 8,
+    "success_rate": 11,
+    "epa_per_dropback": 12,
+    "interceptions": 5
+   }
+  },
+  {
+   "team_id": "swacpvamu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 21,
+     "completions": 20,
+     "yards": 57,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.2381,
+     "air_yards": -14,
+     "yac": 71,
+     "yac_per_completion": 3.5
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 8,
+     "completions": 7,
+     "yards": 53,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 0.25,
+     "air_yards": -8,
+     "yac": 61,
+     "yac_per_completion": 8.7
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 16,
+     "completions": 16,
+     "yards": 64,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.3125,
+     "air_yards": -28,
+     "yac": 92,
+     "yac_per_completion": 5.8
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 11,
+     "completions": 10,
+     "yards": 75,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.6364,
+     "air_yards": 69,
+     "yac": 6,
+     "yac_per_completion": 0.6
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 10,
+     "completions": 10,
+     "yards": 102,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.9,
+     "air_yards": 74,
+     "yac": 28,
+     "yac_per_completion": 2.8
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 17,
+     "completions": 17,
+     "yards": 161,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 16,
+     "success_rate": 0.9412,
+     "air_yards": 127,
+     "yac": 34,
+     "yac_per_completion": 2.0
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 5,
+     "completions": 4,
+     "yards": 100,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.8,
+     "air_yards": 59,
+     "yac": 41,
+     "yac_per_completion": 10.2
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 2,
+     "completions": 2,
+     "yards": 48,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 1.0,
+     "air_yards": 36,
+     "yac": 12,
+     "yac_per_completion": 6.0
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 9,
+     "completions": 6,
+     "yards": 165,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.5556,
+     "air_yards": 113,
+     "yac": 52,
+     "yac_per_completion": 8.7
+    }
+   ],
+   "uncharted_attempts": 28,
+   "totals": {
+    "attempts": 127,
+    "completions": 92,
+    "completion_pct": 0.724,
+    "yards": 825,
+    "touchdowns": 10,
+    "interceptions": 5,
+    "dropbacks": 137,
+    "success_rate": 0.4015,
+    "epa_per_dropback": -0.2048
+   },
+   "ranks_18": {
+    "success_rate": 6,
+    "epa_per_dropback": 12
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 5.4536,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 4.3152,
+     "rank_18": 11
+    },
+    "yac_share_of_yards": {
+     "value": 0.4812,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00012215",
+     "name": "Tevin Carter",
+     "position": "QB",
+     "attempts": 119,
+     "completions": 85,
+     "yards": 781,
+     "touchdowns": 10,
+     "interceptions": 5
+    },
+    {
+     "player_id": "PERS_00013727",
+     "name": "Kaeden Smith",
+     "position": "QB",
+     "attempts": 6,
+     "completions": 5,
+     "yards": 38,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00012233",
+     "name": "Aiden Webb",
+     "position": "K/P",
+     "attempts": 1,
+     "completions": 1,
+     "yards": -5,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00011222",
+     "name": "Rodny Ojo",
+     "position": "WR",
+     "attempts": 1,
+     "completions": 1,
+     "yards": 11,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00011222",
+     "name": "Rodny Ojo",
+     "position": "WR",
+     "targets": 25,
+     "receptions": 22,
+     "yards": 259,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00013729",
+     "name": "Damien McDaniel",
+     "position": "WR",
+     "targets": 25,
+     "receptions": 19,
+     "yards": 174,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00012249",
+     "name": "Chaney Fitzgerald",
+     "position": "WR",
+     "targets": 13,
+     "receptions": 10,
+     "yards": 83,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 99,
+    "uncharted_attempts": 28,
+    "uncharted_share": 0.22,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "tsupvamu26",
+     "pvamumvsu26",
+     "supvamu26",
+     "alcpvamu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 5,
+    "completions": 2,
+    "completion_pct": 1,
+    "yards": 7,
+    "touchdowns": 4,
+    "success_rate": 6,
+    "epa_per_dropback": 10,
+    "interceptions": 5
+   }
+  },
+  {
+   "team_id": "swacsu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 17,
+     "completions": 16,
+     "yards": 90,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.4706,
+     "air_yards": -4,
+     "yac": 94,
+     "yac_per_completion": 5.9
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 7,
+     "completions": 4,
+     "yards": 28,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.4286,
+     "air_yards": 4,
+     "yac": 24,
+     "yac_per_completion": 6.0
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 13,
+     "completions": 11,
+     "yards": 34,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.2308,
+     "air_yards": -3,
+     "yac": 37,
+     "yac_per_completion": 3.4
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 10,
+     "completions": 4,
+     "yards": 35,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.3,
+     "air_yards": 24,
+     "yac": 11,
+     "yac_per_completion": 2.8
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 17,
+     "completions": 11,
+     "yards": 139,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.4118,
+     "air_yards": 77,
+     "yac": 62,
+     "yac_per_completion": 5.6
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 13,
+     "completions": 7,
+     "yards": 66,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.5385,
+     "air_yards": 47,
+     "yac": 19,
+     "yac_per_completion": 2.7
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 7,
+     "completions": 3,
+     "yards": 101,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 3,
+     "success_rate": 0.4286,
+     "air_yards": 75,
+     "yac": 26,
+     "yac_per_completion": 8.7
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 13,
+     "completions": 5,
+     "yards": 150,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.3846,
+     "air_yards": 126,
+     "yac": 24,
+     "yac_per_completion": 4.8
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 11,
+     "completions": 6,
+     "yards": 162,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.5455,
+     "air_yards": 129,
+     "yac": 33,
+     "yac_per_completion": 5.5
+    }
+   ],
+   "uncharted_attempts": 17,
+   "totals": {
+    "attempts": 125,
+    "completions": 68,
+    "completion_pct": 0.544,
+    "yards": 812,
+    "touchdowns": 5,
+    "interceptions": 2,
+    "dropbacks": 134,
+    "success_rate": 0.3433,
+    "epa_per_dropback": -0.1479
+   },
+   "ranks_18": {
+    "success_rate": 10,
+    "epa_per_dropback": 10
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 9.4393,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 4.8529,
+     "rank_18": 10
+    },
+    "yac_share_of_yards": {
+     "value": 0.4064,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00013798",
+     "name": "Christian Johnson",
+     "position": "QB",
+     "attempts": 96,
+     "completions": 53,
+     "yards": 658,
+     "touchdowns": 4,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00013796",
+     "name": "Wyatt McCauley",
+     "position": "QB",
+     "attempts": 24,
+     "completions": 12,
+     "yards": 141,
+     "touchdowns": 1,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00013791",
+     "name": "Vashaun Coulon",
+     "position": "QB",
+     "attempts": 5,
+     "completions": 3,
+     "yards": 13,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00013789",
+     "name": "Daejawn Smith",
+     "position": "WR",
+     "targets": 21,
+     "receptions": 13,
+     "yards": 148,
+     "touchdowns": 1
+    },
+    {
+     "player_id": "PERS_00013805",
+     "name": "Damien Henderson Jr.",
+     "position": "WR",
+     "targets": 14,
+     "receptions": 8,
+     "yards": 192,
+     "touchdowns": 3
+    },
+    {
+     "player_id": "PERS_00013850",
+     "name": "Miles Dixon",
+     "position": "WR",
+     "targets": 11,
+     "receptions": 8,
+     "yards": 138,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 108,
+    "uncharted_attempts": 17,
+    "uncharted_share": 0.136,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "supvamu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 6,
+    "completions": 6,
+    "completion_pct": 7,
+    "yards": 8,
+    "touchdowns": 8,
+    "success_rate": 7,
+    "epa_per_dropback": 8,
+    "interceptions": 2
+   }
+  },
+  {
+   "team_id": "swactsu",
+   "games": 5,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 9,
+     "completions": 7,
+     "yards": 29,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 2,
+     "success_rate": 0.2222,
+     "air_yards": -12,
+     "yac": 41,
+     "yac_per_completion": 5.9
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 2,
+     "completions": 1,
+     "yards": 3,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 0,
+     "success_rate": 0.0,
+     "air_yards": -2,
+     "yac": 5,
+     "yac_per_completion": 5.0
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 13,
+     "completions": 7,
+     "yards": 31,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 1,
+     "success_rate": 0.0769,
+     "air_yards": 1,
+     "yac": 30,
+     "yac_per_completion": 4.3
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 13,
+     "completions": 10,
+     "yards": 86,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.6154,
+     "air_yards": 54,
+     "yac": 32,
+     "yac_per_completion": 3.2
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 6,
+     "completions": 5,
+     "yards": 37,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.6667,
+     "air_yards": 35,
+     "yac": 2,
+     "yac_per_completion": 0.4
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 13,
+     "completions": 10,
+     "yards": 72,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.5385,
+     "air_yards": 59,
+     "yac": 13,
+     "yac_per_completion": 1.3
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 15,
+     "completions": 8,
+     "yards": 226,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.5333,
+     "air_yards": 168,
+     "yac": 58,
+     "yac_per_completion": 7.2
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 11,
+     "completions": 6,
+     "yards": 169,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 6,
+     "success_rate": 0.5455,
+     "air_yards": 154,
+     "yac": 15,
+     "yac_per_completion": 2.5
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 17,
+     "completions": 7,
+     "yards": 254,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 7,
+     "success_rate": 0.4118,
+     "air_yards": 213,
+     "yac": 41,
+     "yac_per_completion": 5.9
+    }
+   ],
+   "uncharted_attempts": 16,
+   "totals": {
+    "attempts": 115,
+    "completions": 62,
+    "completion_pct": 0.539,
+    "yards": 927,
+    "touchdowns": 7,
+    "interceptions": 1,
+    "dropbacks": 133,
+    "success_rate": 0.3308,
+    "epa_per_dropback": -0.1
+   },
+   "ranks_18": {
+    "success_rate": 11,
+    "epa_per_dropback": 7
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 12.4796,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 4.0968,
+     "rank_18": 12
+    },
+    "yac_share_of_yards": {
+     "value": 0.274,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00011135",
+     "name": "Cam'Ron McCoy",
+     "position": "QB",
+     "attempts": 106,
+     "completions": 58,
+     "yards": 906,
+     "touchdowns": 7,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00013858",
+     "name": "Nelson Peterson, Jr.",
+     "position": "QB",
+     "attempts": 9,
+     "completions": 4,
+     "yards": 21,
+     "touchdowns": 0,
+     "interceptions": 0
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00010463",
+     "name": "Roriyon Richardson",
+     "position": "WR",
+     "targets": 25,
+     "receptions": 14,
+     "yards": 208,
+     "touchdowns": 1
+    },
+    {
+     "player_id": "PERS_00011778",
+     "name": "Daveon Walker",
+     "position": "WR",
+     "targets": 24,
+     "receptions": 15,
+     "yards": 231,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00013860",
+     "name": "Fatu Mukuba",
+     "position": "WR",
+     "targets": 14,
+     "receptions": 8,
+     "yards": 171,
+     "touchdowns": 1
+    }
+   ],
+   "logging": {
+    "charted_attempts": 99,
+    "uncharted_attempts": 16,
+    "uncharted_share": 0.139,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": [
+     "tsupvamu26"
+    ]
+   },
+   "ranks_swac": {
+    "attempts": 7,
+    "completions": 9,
+    "completion_pct": 8,
+    "yards": 4,
+    "touchdowns": 6,
+    "success_rate": 8,
+    "epa_per_dropback": 6,
+    "interceptions": 1
+   }
+  },
+  {
+   "team_id": "swacuapb",
+   "games": 4,
+   "grid": [
+    {
+     "depth": "short",
+     "direction": "left",
+     "attempts": 15,
+     "completions": 14,
+     "yards": 66,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 9,
+     "success_rate": 0.6,
+     "air_yards": 6,
+     "yac": 60,
+     "yac_per_completion": 4.3
+    },
+    {
+     "depth": "short",
+     "direction": "middle",
+     "attempts": 8,
+     "completions": 7,
+     "yards": 36,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.5,
+     "air_yards": 6,
+     "yac": 30,
+     "yac_per_completion": 4.3
+    },
+    {
+     "depth": "short",
+     "direction": "right",
+     "attempts": 9,
+     "completions": 6,
+     "yards": 53,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.5556,
+     "air_yards": 3,
+     "yac": 50,
+     "yac_per_completion": 8.3
+    },
+    {
+     "depth": "medium",
+     "direction": "left",
+     "attempts": 21,
+     "completions": 11,
+     "yards": 118,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 11,
+     "success_rate": 0.5238,
+     "air_yards": 83,
+     "yac": 35,
+     "yac_per_completion": 3.2
+    },
+    {
+     "depth": "medium",
+     "direction": "middle",
+     "attempts": 9,
+     "completions": 7,
+     "yards": 51,
+     "touchdowns": 0,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.5556,
+     "air_yards": 47,
+     "yac": 4,
+     "yac_per_completion": 0.6
+    },
+    {
+     "depth": "medium",
+     "direction": "right",
+     "attempts": 13,
+     "completions": 5,
+     "yards": 36,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 4,
+     "success_rate": 0.3077,
+     "air_yards": 33,
+     "yac": 3,
+     "yac_per_completion": 0.6
+    },
+    {
+     "depth": "deep",
+     "direction": "left",
+     "attempts": 15,
+     "completions": 8,
+     "yards": 204,
+     "touchdowns": 3,
+     "interceptions": 0,
+     "successes": 8,
+     "success_rate": 0.5333,
+     "air_yards": 185,
+     "yac": 19,
+     "yac_per_completion": 2.4
+    },
+    {
+     "depth": "deep",
+     "direction": "middle",
+     "attempts": 7,
+     "completions": 5,
+     "yards": 131,
+     "touchdowns": 2,
+     "interceptions": 0,
+     "successes": 5,
+     "success_rate": 0.7143,
+     "air_yards": 117,
+     "yac": 14,
+     "yac_per_completion": 2.8
+    },
+    {
+     "depth": "deep",
+     "direction": "right",
+     "attempts": 9,
+     "completions": 2,
+     "yards": 38,
+     "touchdowns": 1,
+     "interceptions": 0,
+     "successes": 1,
+     "success_rate": 0.1111,
+     "air_yards": 34,
+     "yac": 4,
+     "yac_per_completion": 2.0
+    }
+   ],
+   "uncharted_attempts": 4,
+   "totals": {
+    "attempts": 110,
+    "completions": 65,
+    "completion_pct": 0.591,
+    "yards": 733,
+    "touchdowns": 10,
+    "interceptions": 4,
+    "dropbacks": 117,
+    "success_rate": 0.4444,
+    "epa_per_dropback": -0.0324
+   },
+   "ranks_18": {
+    "success_rate": 2,
+    "epa_per_dropback": 4
+   },
+   "air_and_yac": {
+    "air_yards_per_attempt": {
+     "value": 10.0485,
+     "rank_18": null
+    },
+    "yac_per_completion": {
+     "value": 3.3692,
+     "rank_18": 13
+    },
+    "yac_share_of_yards": {
+     "value": 0.2988,
+     "rank_18": null
+    }
+   },
+   "passers": [
+    {
+     "player_id": "PERS_00012387",
+     "name": "Garrison Davis",
+     "position": "QB",
+     "attempts": 52,
+     "completions": 31,
+     "yards": 350,
+     "touchdowns": 8,
+     "interceptions": 1
+    },
+    {
+     "player_id": "PERS_00013910",
+     "name": "Jack Schierholz",
+     "position": "QB",
+     "attempts": 49,
+     "completions": 29,
+     "yards": 323,
+     "touchdowns": 2,
+     "interceptions": 2
+    },
+    {
+     "player_id": "PERS_00013907",
+     "name": "Jalen Williams",
+     "position": "RB",
+     "attempts": 7,
+     "completions": 5,
+     "yards": 60,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00013956",
+     "name": "George Wiles-Koehler",
+     "position": "P",
+     "attempts": 1,
+     "completions": 0,
+     "yards": 0,
+     "touchdowns": 0,
+     "interceptions": 0
+    },
+    {
+     "player_id": "PERS_00011361",
+     "name": "Jaylen Jennings",
+     "position": "RB",
+     "attempts": 1,
+     "completions": 0,
+     "yards": 0,
+     "touchdowns": 0,
+     "interceptions": 1
+    }
+   ],
+   "top_receivers": [
+    {
+     "player_id": "PERS_00013913",
+     "name": "Demetric Whitlock",
+     "position": "WR",
+     "targets": 34,
+     "receptions": 22,
+     "yards": 303,
+     "touchdowns": 2
+    },
+    {
+     "player_id": "PERS_00011355",
+     "name": "D’Avery Robinson",
+     "position": "WR",
+     "targets": 28,
+     "receptions": 18,
+     "yards": 256,
+     "touchdowns": 5
+    },
+    {
+     "player_id": "PERS_00013947",
+     "name": "Dwayne Simmons",
+     "position": "TE",
+     "targets": 9,
+     "receptions": 8,
+     "yards": 61,
+     "touchdowns": 0
+    }
+   ],
+   "logging": {
+    "charted_attempts": 106,
+    "uncharted_attempts": 4,
+    "uncharted_share": 0.036,
+    "interceptions_in_grid": 0,
+    "games_with_unspotted_incompletions": []
+   },
+   "ranks_swac": {
+    "attempts": 8,
+    "completions": 7,
+    "completion_pct": 5,
+    "yards": 10,
+    "touchdowns": 4,
+    "success_rate": 2,
+    "epa_per_dropback": 4,
+    "interceptions": 4
+   }
+  }
+ ]
+}

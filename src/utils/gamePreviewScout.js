@@ -1,121 +1,27 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Game Preview scout model — the shape GamePreviewScout renders, built from
-// backend files only. Order of preference for every number:
-//
-//   1. the preview file's own field (Game Preview Fetch Contract, scout
-//      addendum) — value AND rank
-//   2. the same quantity as the backend ships it elsewhere this season
-//      (stats/counting, stats/team-analytics, schools/team-hub) — value, and a
-//      rank only when that file ships one
-//   3. null → the page prints a dash
-//
-// Nothing is summed, differenced or ranked here.
-// ─────────────────────────────────────────────────────────────────────────────
+import { coachesFrom, qbFrom, leadersFrom } from "./scoutModel/scoutPeople";
+import { pick, fmt, unitRows } from "./scoutModel/metricRows";
 
-const fin = (v) => (typeof v === "number" && Number.isFinite(v) ? v : null);
-const cell = (value, rank, fmt) => ({ value: fin(value), rank: rank ?? null, display: fin(value) == null ? "—" : fmt(value) });
-
-export const fmt = {
-  s2: (v) => `${v > 0 ? "+" : ""}${v.toFixed(2)}`,
-  f1: (v) => v.toFixed(1),
-  int: (v) => `${v > 0 ? "+" : ""}${Math.round(v)}`,
-  n: (v) => String(Math.round(v)),
-  p1: (v) => `${(v * 100).toFixed(1)}%`,
-  fp: (v) => `${v > 0 ? "+" : ""}${v.toFixed(1)}`,
-};
-
-// The preview's { value, rank } for a key, else a fallback value without rank.
-const pick = (fields, key, fallback, format, fallbackRank = null) => {
-  const f = fields?.[key];
-  if (f && f.value != null) return cell(f.value, f.rank, format);
-  return cell(fallback, fallbackRank, format);
-};
-
-const coachesFrom = (side, hub) => {
-  if (side?.coaches) return side.coaches;
-  const cc = hub?.coach_carousel ?? [];
-  const role = (re) => cc.find((c) => re.test(c.role ?? ""))?.name ?? null;
-  return {
-    head_coach: cc.find((c) => c.role_group === "head_coach")?.name ?? null,
-    offensive_coordinator: role(/offensive coordinator/i),
-    defensive_coordinator: role(/defensive coordinator/i),
-  };
-};
-
-// The position's key stats off the counting player line.
-const keyStats = (c, pos) => {
-  if (!c) return [];
-  const P = c.passing, R = c.rushing, C = c.receiving, D = c.defense;
-  const out =
-    pos === "QB" && P ? [["C/A", `${P.cmp}/${P.att}`], ["Yds", P.yds], ["TD", P.td], ["INT", P.int]]
-    : ["RB", "FB"].includes(pos) && R ? [["Car", R.att], ["Yds", R.yds], ["TD", R.td], ...(C ? [["Rec", C.rec]] : [])]
-    : ["WR", "TE"].includes(pos) && C ? [["Rec", C.rec], ["Yds", C.yds], ["TD", C.td], ["Long", C.long ?? "—"]]
-    : D ? [["Tkl", D.tot], ["TFL", D.tfl], ["Sacks", D.sacks], [D.int ? "INT" : "PBU", D.int || D.brup]]
-    : R ? [["Car", R.att], ["Yds", R.yds], ["TD", R.td]]
-    : [];
-  return out.map(([label, value]) => ({ label, value: String(value ?? "—") }));
-};
-
-const leadersFrom = (raw, teamId, usageTeam, playersById) => {
-  const top = raw?.top_players?.[teamId] ?? [];
-  const usage = usageTeam?.players ?? [];
-  // The preview's list once it carries eight; the season usage file until then.
-  const source = top.length >= 8
-    ? top.map((p) => ({ ...p, production_total: p.production_score, image_url: p.image_url ?? null }))
-    : [...usage].filter((p) => p.production_total != null).sort((a, b) => b.production_total - a.production_total);
-  return source.slice(0, 8).map((p) => ({
-    person_id: p.person_id,
-    name: p.name,
-    last_name: p.last_name ?? String(p.name ?? "").split(/\s+/).slice(-1)[0],
-    position: p.position,
-    image_url: p.image_url ?? null,
-    games: p.games_played ?? null,
-    production: fin(p.production_total) ?? 0,
-    per_game: fin(p.production_per_game) ?? 0,
-    stats: keyStats(playersById[p.person_id], p.position),
-  }));
-};
-
-const qbFrom = (side, usageTeam, playersById, passMap) => {
-  if (side?.quarterback) {
-    const q = side.quarterback;
-    return { ...q, air_yards: q.air_yards ?? null, pass_map: passMap ?? null };
-  }
-  const lead = usageTeam?.leaders?.passing?.[0];
-  if (!lead) return null;
-  const P = playersById[lead.person_id]?.passing ?? null;
-  return {
-    person_id: lead.person_id,
-    name: lead.name,
-    last_name: lead.last_name,
-    image_url: lead.image_url ?? null,
-    line: P ? { cmp: P.cmp, att: P.att, yds: P.yds, td: P.td, int: P.int, sacks: null } : null,
-    air_yards: null,
-    pass_map: passMap ?? null,
-  };
-};
-
-const unitRows = (offF, defF, offAdv, defAdv) => {
-  const row = (label, previewKey, advKey, format) => {
-    const o = offF?.[`o_${previewKey}`], d = defF?.[`d_${previewKey}`];
-    return {
-      label,
-      off: o?.value != null ? cell(o.value, o.rank, format) : cell(offAdv?.offense?.[advKey], offAdv?.ranks?.offense?.[advKey], format),
-      def: d?.value != null ? cell(d.value, d.rank, format) : cell(defAdv?.defense?.[advKey], defAdv?.ranks?.defense?.[advKey], format),
-    };
-  };
-  return [
-    row("EPA / play", "epa", "epa_per_play", fmt.s2),
-    row("Success rate", "success", "success_rate", fmt.p1),
-    // Offense: havoc it allowed (lower is better). Defense: havoc it created.
-    row("Havoc rate", "havoc_rate", "havoc_rate", fmt.p1),
-    row("Explosive play %", "expl_rate", "explosive_rate", fmt.p1),
-    row("Red-zone TD %", "rz_td", "red_zone_td_rate", fmt.p1),
-  ];
-};
+// The last `n` finished games off a team schedule file, oldest first: opponent,
+// side, result and score exactly as the schedule rows carry them.
+const lastResults = (doc, n = 6) =>
+  (doc?.games ?? [])
+    .filter((g) => g.status === "final")
+    .sort((a, b) => String(a.date).localeCompare(String(b.date)))
+    .slice(-n)
+    .map((g) => ({
+      game_id: g.game_id,
+      week: g.week,
+      opponent_id: g.opponent_team_id ?? g.opponent_id ?? null,
+      opponent_short: g.opponent_short ?? g.opponent?.short_name ?? null,
+      home_away: g.home_away,
+      neutral_site: !!g.neutral_site,
+      result: g.result,
+      team_score: g.team_score,
+      opponent_score: g.opponent_score,
+    }));
 
 /**
- * sources: { counting: teams[], players: players[], advanced: teams[], usage: {id: team}, hubs: {id: doc}, fieldMaps: {id: field_map.passing} }
+ * sources: { counting: teams[], players: players[], advanced: teams[], usage: {id: team}, hubs: {id: doc}, fieldMaps: {id: field_map.passing}, schedules: {id: team-schedule doc} }
  * Returns the scout model, or null until the preview file is in.
  */
 export const buildScoutModel = (model, sources = {}) => {
@@ -156,11 +62,26 @@ export const buildScoutModel = (model, sources = {}) => {
       },
       efficiency: {
         net_epa: pick(F, "net_epa", null, fmt.s2),
+        // Offense success minus defense success allowed. The preview's own field (value
+        // and rank) when it ships; until then an INTERIM stand-in from its two rates,
+        // with no rank (requested 2026-10-29).
+        net_success: pick(F, "net_success", null, fmt.pp),
         o_success: pick(F, "o_success", A?.offense?.success_rate, fmt.p1, A?.ranks?.offense?.success_rate),
         d_success: pick(F, "d_success", A?.defense?.success_rate, fmt.p1, A?.ranks?.defense?.success_rate),
         net_epa_drive: pick(F, "net_epa_drive", null, fmt.s2),
         net_fp: pick(F, "net_fp", A?.offense?.net_field_position, fmt.fp, A?.ranks?.offense?.net_field_position),
       },
+      // Opponent-adjusted EPA per play (the preview's own fields, with ranks).
+      rating: {
+        adj_off: pick(F, "o_adj_epa", null, fmt.s3),
+        adj_def: pick(F, "d_adj_epa", null, fmt.s3),
+        adj_net: pick(F, "net_adj_epa", null, fmt.s3),
+      },
+      drives: {
+        ppd_off: pick(F, "o_pts_drive", null, fmt.f2),
+        ppd_def: pick(F, "d_pts_drive", null, fmt.f2),
+      },
+      results: lastResults(sources.schedules?.[id]),
       qb: qbFrom(s, sources.usage?.[id], playersById, sources.fieldMaps?.[id]),
       leaders: leadersFrom(raw, id, sources.usage?.[id], playersById),
     };
@@ -182,8 +103,10 @@ export const buildScoutModel = (model, sources = {}) => {
     away,
     home,
     units: {
-      away_offense: unitRows(fieldsOf(away.team_id), fieldsOf(home.team_id), A(away.team_id), A(home.team_id)),
-      home_offense: unitRows(fieldsOf(home.team_id), fieldsOf(away.team_id), A(home.team_id), A(away.team_id)),
+      away_offense: unitRows(fieldsOf(away.team_id), fieldsOf(home.team_id), A(away.team_id), A(home.team_id), sources.advanced ?? []),
+      home_offense: unitRows(fieldsOf(home.team_id), fieldsOf(away.team_id), A(home.team_id), A(away.team_id), sources.advanced ?? []),
     },
   };
 };
+
+export { fmt } from "./scoutModel/metricRows";

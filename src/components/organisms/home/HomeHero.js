@@ -1,144 +1,24 @@
-import { useMemo } from "react";
-import { Box } from "@chakra-ui/react";
-import { BarChart3, CalendarDays, School, User, Users } from "lucide-react";
-import teamsData from "../../../data/teams.json";
-import { useQuery } from "@tanstack/react-query";
 import { useGameCenterHubData } from "../../../hooks/useGameCenterHubData";
-import { FE_DOCS_BASE } from "../../../utils/gameCenterPayloads";
-import { useLayoutDensity } from "../../../hooks/useLayoutDensity";
-import HomeLoader from "./HomeLoader";
-import { CollagePlate, GameOfWeekPlate, LookAheadPlate, SpotlightPlate } from "./GamesPlates";
 import { useHomeGamesCollage } from "../../../hooks/useHomeGamesCollage";
-import LiveTile, { TileStyles } from "../../molecules/home/LiveTile";
+import { useQuery } from "@tanstack/react-query";
+import { fetchStatsTile, fetchTeamsTile, fetchPlayersTile } from "./hero/tileQueries";
+import { useMemo } from "react";
+import { CollagePlate, GameOfWeekPlate, SpotlightPlate, LookAheadPlate } from "./GamesPlates";
+import { HUB, gameLink, linksFor, statLink, teamLink, playerLink } from "./hero/faceLinks";
 import { statFacesFor } from "../../molecules/home/StatsTileFaces";
-import { MOCK_TILE } from "../../molecules/home/statsTileMock";
 import { teamFacesFor } from "../../molecules/home/TeamsTileFaces";
-import { TEAMS_MOCK_TILE } from "../../molecules/home/teamsTileMock";
 import { playerFacesFor } from "../../molecules/home/PlayersTileFaces";
-import { PLAYERS_MOCK_TILE } from "../../molecules/home/playersTileMock";
-
-// ─────────────────────────────────────────────────────────────────────────────
-// HOME HERO — four live tiles, one per thing this site is for:
-//   Games · Stats · Teams · Players
-// Each tile rotates its own faces off the same payloads its section reads.
-//   Games    hub featured games (the week's scoreboard)
-//   Stats    the weekly stats-tile file (backend picks the five faces)
-//   Teams    the weekly teams-tile file (backend picks every face)
-//   Players  the weekly players-tile file (backend picks every face)
-// ─────────────────────────────────────────────────────────────────────────────
-
-// Stats tile: the backend's weekly file (Home Stats Tile Fetch Contract).
-// Until it exists, the mock stands in.
-const STATS_TILE_PATH = `${FE_DOCS_BASE}/home/stats-tile/current.json`;
-const fetchStatsTile = async () => {
-  try {
-    const res = await fetch(STATS_TILE_PATH);
-    if (res.ok && (res.headers.get("content-type") ?? "").includes("json")) return await res.json();
-  } catch {
-    // fall through to the mock
-  }
-  return MOCK_TILE;
-};
-
-// Teams tile: same pattern (Home Teams Tile Fetch Contract).
-const TEAMS_TILE_PATH = `${FE_DOCS_BASE}/home/teams-tile/current.json`;
-const fetchTeamsTile = async () => {
-  try {
-    const res = await fetch(TEAMS_TILE_PATH);
-    if (res.ok && (res.headers.get("content-type") ?? "").includes("json")) return await res.json();
-  } catch {
-    // fall through to the mock
-  }
-  return TEAMS_MOCK_TILE;
-};
-
-// Players tile: same pattern (Home Players Tile Fetch Contract).
-const PLAYERS_TILE_PATH = `${FE_DOCS_BASE}/home/players-tile/current.json`;
-const fetchPlayersTile = async () => {
-  try {
-    const res = await fetch(PLAYERS_TILE_PATH);
-    if (res.ok && (res.headers.get("content-type") ?? "").includes("json")) return await res.json();
-  } catch {
-    // fall through to the mock
-  }
-  return PLAYERS_MOCK_TILE;
-};
-
-// ── Where each face goes ─────────────────────────────────────────────────────
-// A face about one thing opens that thing; a face about the whole league opens
-// the hub. Every link is a route the site already has.
-const TEAM_BY_V5 = teamsData.teams.reduce((acc, t) => {
-  acc[t.exportId.replace(/25$/, "")] = t;
-  return acc;
-}, {});
-const HUB = {
-  games: { href: "/game-center", cta: { label: "Game Center", icon: CalendarDays } },
-  stats: { href: "/stats", cta: { label: "Stats", icon: BarChart3 } },
-  teams: { href: "/teams", cta: { label: "Schools", icon: School } },
-  players: { href: "/players", cta: { label: "Players", icon: Users } },
-};
-const schoolLink = (v5, suffix = "", tail = "") => {
-  const t = TEAM_BY_V5[v5];
-  return t ? { href: `/teams/${t.id}${suffix}`, cta: { label: `${t.name}${tail}`, icon: School } } : null;
-};
-
-const gameLink = (g, final) => {
-  const matchup = `${g.away?.shortName ?? "Away"} at ${g.home?.shortName ?? "Home"}`;
-  const path = g.gamePathId ?? g.gameId ?? null;
-  if (final && path) return { href: `/game/${path}`, cta: { label: `${matchup} · Final`, icon: CalendarDays } };
-  if (!final && g.id) return { href: `/game/preview/${g.id}`, cta: { label: `${matchup} · Preview`, icon: CalendarDays } };
-  return HUB.games;
-};
-
-// Stats faces: a team's number opens that team's Team Analytics profile; the
-// league-wide metric opens the Leader Board.
-const statLink = (item) => {
-  if (item.value_kind === "league" || item.key === "metric_of_week") return { href: "/team-analytics?tab=board", cta: { label: "Team Analytics · Board", icon: BarChart3 } };
-  const v5 = item.teams?.[0];
-  const t = TEAM_BY_V5[v5];
-  return t ? { href: `/team-analytics?tab=profile&team=${v5}`, cta: { label: `${t.shortName} · Team Profile`, icon: BarChart3 } } : HUB.stats;
-};
-
-// Schools faces: one school opens its page (the band opens its wiki); a face
-// about two schools or a race opens the hub / standings.
-const teamLink = (item) => {
-  if (item.key === "division_race") return { href: "/game-center/standings", cta: { label: "Standings", icon: School } };
-  if ((item.teams ?? []).length !== 1) return HUB.teams;
-  if (item.key === "band") return schoolLink(item.teams[0], "/wiki", " · Wiki") ?? HUB.teams;
-  return schoolLink(item.teams[0]) ?? HUB.teams;
-};
-
-// Players faces: one player opens their page; the collage opens the hub.
-const findName = (o, id) => {
-  if (!o || typeof o !== "object") return null;
-  if ((o.player_id === id || o.person_id === id) && o.name) return o.name;
-  for (const v of Object.values(o)) {
-    const hit = findName(v, id);
-    if (hit) return hit;
-  }
-  return null;
-};
-const playerLink = (item) => {
-  const ids = item.players ?? [];
-  if (item.key === "collage" || ids.length !== 1) return HUB.players;
-  const name = findName(item.data, ids[0]);
-  return { href: `/player/${ids[0]}`, cta: { label: name ?? "Player Page", icon: User } };
-};
-
-// The faces' own builders filter and order the payload items; read each face's
-// item back off its key (`${item.key}` or `${item.key}-${n}`), in order.
-const linksFor = (faces, items, toLink, hub) => {
-  const used = {};
-  return faces.map((f) => {
-    const key = String(f?.key ?? "").replace(/-\d+$/, "");
-    const nth = used[key] ?? 0;
-    used[key] = nth + 1;
-    const item = (items ?? []).filter((i) => i.key === key)[nth];
-    return item ? toLink(item) ?? hub : hub;
-  });
-};
+import { useLayoutDensity } from "../../../hooks/useLayoutDensity";
+import { Box, Flex, Text } from "@chakra-ui/react";
+import LiveTile, { TileStyles } from "../../molecules/home/LiveTile";
+import HomeLoader from "./HomeLoader";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 // ── Hero ─────────────────────────────────────────────────────────────────────
+
+// Desktop tiles are landscape rectangles, width / height. Raise it for flatter tiles.
+const TILE_RATIO = "16 / 10";
 
 const HomeHero = () => {
   const { season, featuredGames, scheduleRailCards, isLoading } = useGameCenterHubData();
@@ -224,19 +104,42 @@ const HomeHero = () => {
       <TileStyles />
       <HomeLoader ready={!isLoading && !stats.isLoading && !teams.isLoading && !people.isLoading} />
 
-      <Box position="relative" zIndex={1} w="100%" maxW="1200px" mx="auto" px={8} pt={24} pb={8}>
-        {/* Four equal quadrants. The grid owns the size; each tile fills its
-            cell and sizes its contents off its own box (cqmin). */}
+      <Box position="relative" zIndex={1} w="100%" maxW="1200px" mx="auto" px={6} pt={24} pb={0}>
+        {/* The way in: a slim brand bar over the tiles, straight to the Game Center. */}
+        <Flex
+          as={Link}
+          to="/game-center"
+          align="center"
+          justify="space-between"
+          gap={6}
+          mb={4}
+          px={{ base: 4, md: 8 }}
+          py={{ base: 3, md: 4 }}
+          bg="brand.500"
+          borderRadius="xl"
+          transition="transform 0.2s"
+          _hover={{ transform: "translateY(-2px)", textDecoration: "none" }}
+        >
+          <Text fontSize={{ base: "xl", md: "3xl" }} fontWeight="black" color="bg.primary" textTransform="uppercase" letterSpacing="tight" lineHeight={1}>
+            Enter here
+          </Text>
+          <Flex align="center" gap={2} bg="bg.primary" color="white" px={6} h="2.75rem" fontWeight="bold" textTransform="uppercase" letterSpacing="wide" fontSize="sm" borderRadius="md">
+            Game Center <ArrowRight size={16} strokeWidth={2.8} />
+          </Flex>
+        </Flex>
+
+        {/* Four equal landscape tiles. Each cell takes its width from the grid and
+            its height from TILE_RATIO; the tile fills the cell and sizes its
+            contents off its own box (cqmin). */}
         <Box
           display="grid"
           gap={4}
           gridTemplateColumns="repeat(2, minmax(0, 1fr))"
-          gridTemplateRows="repeat(2, minmax(0, 1fr))"
-          h="calc(100vh - 140px)"
-          minH="560px"
         >
           {tiles.map((t) => (
-            <LiveTile key={t.href} {...t} />
+            <Box key={t.href} display="grid" minW={0} style={{ aspectRatio: TILE_RATIO }}>
+              <LiveTile {...t} />
+            </Box>
           ))}
         </Box>
       </Box>

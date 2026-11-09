@@ -5,11 +5,13 @@ import PageShell from "../../components/layouts/PageShell";
 import CountingStatsBanner from "../../components/organisms/stats/CountingStatsBanner";
 import { CountingTabGrid } from "../../components/molecules/stats/CountingTabRow";
 import { CountingTable } from "../../components/organisms/stats/CountingTable";
-import { WeekLeadersExport } from "../../components/organisms/stats/WeekLeadersExport";
+import { LeaderboardsPanel } from "../../components/organisms/stats/LeaderboardsPanel";
+import { WeekLeadersTable } from "../../components/organisms/stats/WeekLeadersTable";
+import { useLeadersFile, useLeadersIndex } from "../../hooks/usePlayerLeaders";
 import { useCountingPlayerStats, useCountingSeason } from "../../hooks/useSWACData";
 import { useCountingIndex } from "../../hooks/useCountingStats";
 import {
-  PLAYER_STATS_SIDES, PLAYER_STATS_TABS, PLAYER_STATS_TABLES, DEFAULT_PLAYER_STATS_TAB, playerTabIds,
+  PLAYER_STATS_SIDES, PLAYER_STATS_TABS, PLAYER_STATS_TABLES, DEFAULT_PLAYER_STATS_TAB, WEEK_CATEGORIES_BY_TAB, playerTabIds,
 } from "./countingStatsTabs";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -25,6 +27,13 @@ import {
 //
 // `side` and `tab` are URL state. Data is useCountingPlayerStats — the
 // labelled mock until GET /api/stats/player/{season} ships.
+//
+// Season | Week: the banner's Week view swaps the table for that week's top 10 in
+// the tab you are on (the backend's stats/leaders files); tabs without a weekly
+// board keep the season table and say so.
+//
+// Leaders: the banner's third view. The tab grid gives way to LeaderboardsPanel: Per Game | Week,
+// the section, and the poster itself with its Export (the backend's stats/leaderboards).
 // ─────────────────────────────────────────────────────────────────────────────
 
 const LIMIT = 25;
@@ -48,6 +57,17 @@ const PlayerCountingStatsPage = () => {
   const [conference, setConference] = useState("all");
   const data = useCountingPlayerStats(season);
 
+  // Season | Week. The weeks a season has come from the leaders index; the picker
+  // opens on the latest one (the current week for the live season).
+  const [view, setView] = useState("season");
+  const [pickedWeek, setPickedWeek] = useState(null);
+  const { index: leadersIndex } = useLeadersIndex();
+  const weeks = leadersIndex?.seasons?.find((x) => x.season === Number(season))?.weeks ?? [];
+  const defaultWeek = Number(season) === leadersIndex?.current?.season ? leadersIndex.current.week : weeks[weeks.length - 1] ?? null;
+  const week = weeks.includes(pickedWeek) ? pickedWeek : defaultWeek;
+  const weekMode = view === "week" && weeks.length > 0;
+  const weekData = useLeadersFile(season, week, weekMode && week != null);
+
   const setSide = (next) => setSearchParams({ side: next, tab: DEFAULT_PLAYER_STATS_TAB[next] });
   const setTab = (next) => setSearchParams({ side, tab: next });
 
@@ -59,10 +79,34 @@ const PlayerCountingStatsPage = () => {
 
   const tables = PLAYER_STATS_TABLES[tab] ?? [];
 
-  const body = data.isLoading ? (
+  // This tab's weekly boards, the ones the file carries, with the conference
+  // filter applied. None (the file doesn't have them yet): the season table stays.
+  const weekBoards = useMemo(
+    () => (WEEK_CATEGORIES_BY_TAB[tab] ?? [])
+      .map((id) => weekData.file?.categories?.find((c) => c.id === id))
+      .filter(Boolean)
+      .map((cat) => ({ cat, rows: conference === "all" ? cat.rows : cat.rows.filter((r) => r.team_id?.startsWith(conference.toLowerCase())) })),
+    [weekData.file, tab, conference],
+  );
+  const showWeek = weekMode && (weekData.isLoading || weekBoards.length > 0);
+
+  const body = view === "leaders" ? (
+    <LeaderboardsPanel kind="player" side={side} season={season} conference={conference} />
+  ) : showWeek ? (
+    <Grid templateColumns={{ base: "1fr", lg: weekBoards.length > 1 ? "repeat(2, minmax(0, 1fr))" : "1fr" }} gap={4} alignItems="start">
+      {weekBoards.length === 0 && <WeekLeadersTable category={null} rows={[]} weekLabel={`Week ${week}`} dateLabel="" loading />}
+      {weekBoards.map(({ cat, rows: boardRows }) => (
+        <WeekLeadersTable key={cat.id} category={cat} rows={boardRows} weekLabel={weekData.file?.week_label ?? `Week ${week}`} dateLabel={weekData.file?.date_label ?? ""} />
+      ))}
+    </Grid>  ) : data.isLoading ? (
     <Flex justify="center" py={16}><Spinner color="brand.500" size="lg" /></Flex>
   ) : (
     <Flex direction="column" gap={4}>
+      {weekMode && (
+        <Text fontSize="sm" color="text.muted" fontStyle="italic">
+          No weekly board for this tab in {weekData.file?.week_label ?? `Week ${week}`} yet. This tab shows the season.
+        </Text>
+      )}
       <Grid templateColumns={{ base: "1fr", lg: tables.length > 1 ? "repeat(2, minmax(0, 1fr))" : "1fr" }} gap={4} alignItems="start">
         {tables.map((table) => (
           <CountingTable
@@ -105,15 +149,17 @@ const PlayerCountingStatsPage = () => {
             side={side}
             setSide={setSide}
             sides={PLAYER_STATS_SIDES.map((s) => ({ value: s.id, label: s.label }))}
+            views={{ options: [{ value: "season", label: "Season" }, ...(weeks.length > 0 ? [{ value: "week", label: "Week" }] : []), { value: "leaders", label: "Leaders" }], value: view, onChange: setView }}
+            weekPicker={week != null ? { value: week, onChange: setPickedWeek, weeks } : null}
           />
-          {/* Week and season leaders as posters (offense / defense), for the season on screen. */}
-          <WeekLeadersExport side={side} season={season} />
         </Box>
       </PageShell.Slot>
 
-      <PageShell.Slot cols={4}>
-        <CountingTabGrid tabs={sideTabs} value={tab} onChange={setTab} columns={4} rows={2} trailing={sideTabs.length < 8 ? contextTile : null} />
-      </PageShell.Slot>
+      {view !== "leaders" && (
+        <PageShell.Slot cols={4}>
+          <CountingTabGrid tabs={sideTabs} value={tab} onChange={setTab} columns={4} rows={2} trailing={sideTabs.length < 8 ? contextTile : null} />
+        </PageShell.Slot>
+      )}
     </PageShell>
   );
 };

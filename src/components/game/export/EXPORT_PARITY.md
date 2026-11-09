@@ -6,7 +6,7 @@ The posters are the game page at print size. Every visual rule they share lives 
 
 | What | Single source | Game page | Poster |
 |---|---|---|---|
-| Production bars: one game-wide scale, zero mark, red negatives, column labels | `src/utils/productionBars.js` | `ProductionPrimitives.js` (`parColumn`, `ProductionBar`), Passing / Rushing / Defense production | `BoxscorePoster.js` (`Production`) |
+| Production bars: shared bar math (zero mark, red negatives, labels); domain is caller-owned (`page`: game-wide, `boxscore poster`: team offense only, asymmetric min/max from shown offense rows) | `src/utils/productionBars.js` | `ProductionPrimitives.js` (`parColumn`, `ProductionBar`), Passing / Rushing / Defense production | `BoxscorePoster.js` (`Production`) |
 | Stat bars: league max, 0 or the negative as min, zero mark, league-average tick | `src/utils/statBars.js` | `GameSummaryTabV2.js` (`buildTeamStatRows`, `statBarSegment`) | `OffensePoster.js` |
 | League shading (red/green cells vs league) | `shadeVsLeague` in `page/boxscore/ProductionPrimitives.js` | production tables | `PosterChrome.js` (same function, `PRINT_SHADE` strength) |
 | Passing zone grid heat (yds/att vs a fixed 14, neutral under 2 att, team heat colour) | `heatFill`, `heatAccent`, `PASS_ZONE_YPA_SCALE` in `ProductionPrimitives.js` | `PassingProductionClean.js` (`ZoneCell`) | `BoxscorePoster.js` (`ZoneGrid`) |

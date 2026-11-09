@@ -1,0 +1,4285 @@
+{
+ "title": "SWAC defensive line, 2026",
+ "season": 2026,
+ "through_week": 7,
+ "scope": "League games (both teams among the 18), garbage time excluded; SWAC defenses only.",
+ "definitions": {
+  "dl": "Players listed on that season's roster as defensive line (edge players listed as linebacker count as LB).",
+  "production": "Sacks + run tackles for loss + forced fumbles + passes broken up. Shared sacks/TFL count half.",
+  "run_stop": "A tackle on a run the offense did not succeed on (down-and-distance success).",
+  "sack_rate": "Sacks per dropback (passes + sacks).",
+  "rush_success": "Share of runs that met the down-and-distance success line.",
+  "stuff": "A run for zero or fewer yards.",
+  "short_yardage": "3rd or 4th down with 2 or fewer yards to go, run plays.",
+  "late_and_close": "4th quarter or overtime with the score within 8.",
+  "money_down": "3rd or 4th down.",
+  "epa_taken": "Expected points taken off the offense on the player's sacks, TFLs, forced fumbles and breakups.",
+  "no_snap_counts": "We have production only -- no participation, snap counts or video. Rates are per team snap or per game."
+ },
+ "team_names": {
+  "swacaamu": "AAMU",
+  "swacalc": "Alcorn",
+  "swacasu": "Bama State",
+  "swacbcu": "B-CU",
+  "swacfamu": "FAMU",
+  "swacgsu": "Grambling",
+  "swacjsu": "J-State",
+  "swacmvsu": "MVSU",
+  "swacpvamu": "PVAMU",
+  "swacsu": "Southern",
+  "swactsu": "TSU",
+  "swacuapb": "UAPB"
+ },
+ "charts": [
+  {
+   "id": "season_trend",
+   "title": "Is the SWAC line down? 2025 was the dip",
+   "type": "small_multiple_lines",
+   "highlight_seasons": [
+    2025,
+    2026
+   ],
+   "note": "2020 (spring season) not included.",
+   "data": [
+    {
+     "season": 2019,
+     "sack_rate_pct": 7.0,
+     "dl_sacks_per_game": 1.14,
+     "dl_run_tfl_per_game": 1.66,
+     "stuff_rate_pct": 22.1,
+     "opp_rush_success_pct": 41.8,
+     "ypc_allowed": 5.14,
+     "short_yardage_stop_pct": 32.5,
+     "team_games": 74
+    },
+    {
+     "season": 2021,
+     "sack_rate_pct": 6.6,
+     "dl_sacks_per_game": 1.08,
+     "dl_run_tfl_per_game": 1.4,
+     "stuff_rate_pct": 23.9,
+     "opp_rush_success_pct": 40.3,
+     "ypc_allowed": 4.8,
+     "short_yardage_stop_pct": 36.5,
+     "team_games": 100
+    },
+    {
+     "season": 2022,
+     "sack_rate_pct": 8.2,
+     "dl_sacks_per_game": 1.25,
+     "dl_run_tfl_per_game": 1.29,
+     "stuff_rate_pct": 19.9,
+     "opp_rush_success_pct": 42.0,
+     "ypc_allowed": 5.14,
+     "short_yardage_stop_pct": 30.7,
+     "team_games": 100
+    },
+    {
+     "season": 2023,
+     "sack_rate_pct": 7.2,
+     "dl_sacks_per_game": 1.25,
+     "dl_run_tfl_per_game": 1.43,
+     "stuff_rate_pct": 23.8,
+     "opp_rush_success_pct": 39.7,
+     "ypc_allowed": 4.72,
+     "short_yardage_stop_pct": 36.0,
+     "team_games": 102
+    },
+    {
+     "season": 2024,
+     "sack_rate_pct": 7.1,
+     "dl_sacks_per_game": 1.22,
+     "dl_run_tfl_per_game": 1.69,
+     "stuff_rate_pct": 21.5,
+     "opp_rush_success_pct": 40.5,
+     "ypc_allowed": 5.0,
+     "short_yardage_stop_pct": 37.4,
+     "team_games": 102
+    },
+    {
+     "season": 2025,
+     "sack_rate_pct": 4.8,
+     "dl_sacks_per_game": 0.83,
+     "dl_run_tfl_per_game": 1.27,
+     "stuff_rate_pct": 17.5,
+     "opp_rush_success_pct": 44.7,
+     "ypc_allowed": 5.18,
+     "short_yardage_stop_pct": 29.5,
+     "team_games": 109
+    },
+    {
+     "season": 2026,
+     "sack_rate_pct": 6.8,
+     "dl_sacks_per_game": 1.03,
+     "dl_run_tfl_per_game": 1.64,
+     "stuff_rate_pct": 19.8,
+     "opp_rush_success_pct": 44.6,
+     "ypc_allowed": 5.33,
+     "short_yardage_stop_pct": 32.4,
+     "team_games": 50
+    }
+   ]
+  },
+  {
+   "id": "front_shift",
+   "title": "The line held; the linebackers stopped making backfield plays",
+   "type": "lines",
+   "data": [
+    {
+     "season": 2019,
+     "dl_run_tfl_per_game": 1.66,
+     "lb_run_tfl_per_game": 1.56,
+     "dl_sacks_per_game": 1.14,
+     "lb_sacks_per_game": 0.93,
+     "dl_share_of_run_tfl_pct": 40.7,
+     "dl_share_of_sacks_pct": 50.6,
+     "lb_run_tackle_depth": 3.69,
+     "dl_run_tackle_depth": 2.28
+    },
+    {
+     "season": 2021,
+     "dl_run_tfl_per_game": 1.4,
+     "lb_run_tfl_per_game": 1.34,
+     "dl_sacks_per_game": 1.08,
+     "lb_sacks_per_game": 0.65,
+     "dl_share_of_run_tfl_pct": 37.7,
+     "dl_share_of_sacks_pct": 53.7,
+     "lb_run_tackle_depth": 3.45,
+     "dl_run_tackle_depth": 2.45
+    },
+    {
+     "season": 2022,
+     "dl_run_tfl_per_game": 1.29,
+     "lb_run_tfl_per_game": 1.23,
+     "dl_sacks_per_game": 1.25,
+     "lb_sacks_per_game": 0.82,
+     "dl_share_of_run_tfl_pct": 40.0,
+     "dl_share_of_sacks_pct": 53.6,
+     "lb_run_tackle_depth": 3.67,
+     "dl_run_tackle_depth": 2.61
+    },
+    {
+     "season": 2023,
+     "dl_run_tfl_per_game": 1.43,
+     "lb_run_tfl_per_game": 1.15,
+     "dl_sacks_per_game": 1.25,
+     "lb_sacks_per_game": 0.6,
+     "dl_share_of_run_tfl_pct": 41.6,
+     "dl_share_of_sacks_pct": 58.8,
+     "lb_run_tackle_depth": 3.64,
+     "dl_run_tackle_depth": 2.59
+    },
+    {
+     "season": 2024,
+     "dl_run_tfl_per_game": 1.69,
+     "lb_run_tfl_per_game": 0.88,
+     "dl_sacks_per_game": 1.22,
+     "lb_sacks_per_game": 0.45,
+     "dl_share_of_run_tfl_pct": 48.2,
+     "dl_share_of_sacks_pct": 62.9,
+     "lb_run_tackle_depth": 4.04,
+     "dl_run_tackle_depth": 2.41
+    },
+    {
+     "season": 2025,
+     "dl_run_tfl_per_game": 1.27,
+     "lb_run_tfl_per_game": 0.86,
+     "dl_sacks_per_game": 0.83,
+     "lb_sacks_per_game": 0.42,
+     "dl_share_of_run_tfl_pct": 47.1,
+     "dl_share_of_sacks_pct": 62.8,
+     "lb_run_tackle_depth": 4.07,
+     "dl_run_tackle_depth": 2.56
+    },
+    {
+     "season": 2026,
+     "dl_run_tfl_per_game": 1.64,
+     "lb_run_tfl_per_game": 0.75,
+     "dl_sacks_per_game": 1.03,
+     "lb_sacks_per_game": 0.65,
+     "dl_share_of_run_tfl_pct": 51.9,
+     "dl_share_of_sacks_pct": 53.6,
+     "lb_run_tackle_depth": 4.05,
+     "dl_run_tackle_depth": 2.54
+    }
+   ]
+  },
+  {
+   "id": "offense_shift",
+   "title": "Offenses got quicker and better",
+   "type": "lines",
+   "caution": "Air-yards charting differs in 2019 and 2023 (quick-pass share 18-21%); treat those two points as not comparable.",
+   "data": [
+    {
+     "season": 2019,
+     "quick_pass_share_pct": 21.3,
+     "epa_per_play_allowed": -0.043,
+     "epa_per_dropback_allowed": -0.045,
+     "completion_pct": 57.5,
+     "opp_pass_rate_pct": 47.9
+    },
+    {
+     "season": 2021,
+     "quick_pass_share_pct": 30.3,
+     "epa_per_play_allowed": -0.053,
+     "epa_per_dropback_allowed": -0.011,
+     "completion_pct": 58.2,
+     "opp_pass_rate_pct": 50.0
+    },
+    {
+     "season": 2022,
+     "quick_pass_share_pct": 48.2,
+     "epa_per_play_allowed": -0.065,
+     "epa_per_dropback_allowed": -0.142,
+     "completion_pct": 57.6,
+     "opp_pass_rate_pct": 47.2
+    },
+    {
+     "season": 2023,
+     "quick_pass_share_pct": 18.0,
+     "epa_per_play_allowed": -0.08,
+     "epa_per_dropback_allowed": -0.068,
+     "completion_pct": 58.6,
+     "opp_pass_rate_pct": 49.1
+    },
+    {
+     "season": 2024,
+     "quick_pass_share_pct": 48.7,
+     "epa_per_play_allowed": -0.038,
+     "epa_per_dropback_allowed": -0.043,
+     "completion_pct": 57.7,
+     "opp_pass_rate_pct": 45.5
+    },
+    {
+     "season": 2025,
+     "quick_pass_share_pct": 49.0,
+     "epa_per_play_allowed": 0.069,
+     "epa_per_dropback_allowed": 0.1,
+     "completion_pct": 61.4,
+     "opp_pass_rate_pct": 46.8
+    },
+    {
+     "season": 2026,
+     "quick_pass_share_pct": 45.4,
+     "epa_per_play_allowed": 0.032,
+     "epa_per_dropback_allowed": 0.013,
+     "completion_pct": 57.3,
+     "opp_pass_rate_pct": 45.6
+    }
+   ]
+  },
+  {
+   "id": "situational_trend",
+   "title": "Situational defense, league-wide",
+   "type": "small_multiple_lines",
+   "caution": "Goal-to-go is not tagged in 2019 (null).",
+   "data": [
+    {
+     "season": 2019,
+     "third_down_conv_allowed_pct": 38.7,
+     "third_short_conv_allowed_pct": 69.3,
+     "third_long_conv_allowed_pct": 27.4,
+     "fourth_down_stop_pct": 46.6,
+     "late_close_rush_success_allowed_pct": 44.6,
+     "late_close_sack_rate_pct": 8.7,
+     "red_zone_td_allowed_pct": 60.5,
+     "goal_to_go_td_allowed_pct": null
+    },
+    {
+     "season": 2021,
+     "third_down_conv_allowed_pct": 38.5,
+     "third_short_conv_allowed_pct": 59.6,
+     "third_long_conv_allowed_pct": 28.8,
+     "fourth_down_stop_pct": 57.3,
+     "late_close_rush_success_allowed_pct": 43.3,
+     "late_close_sack_rate_pct": 5.6,
+     "red_zone_td_allowed_pct": 63.5,
+     "goal_to_go_td_allowed_pct": 73.6
+    },
+    {
+     "season": 2022,
+     "third_down_conv_allowed_pct": 38.6,
+     "third_short_conv_allowed_pct": 71.7,
+     "third_long_conv_allowed_pct": 26.3,
+     "fourth_down_stop_pct": 59.5,
+     "late_close_rush_success_allowed_pct": 43.6,
+     "late_close_sack_rate_pct": 9.5,
+     "red_zone_td_allowed_pct": 62.0,
+     "goal_to_go_td_allowed_pct": 72.4
+    },
+    {
+     "season": 2023,
+     "third_down_conv_allowed_pct": 33.9,
+     "third_short_conv_allowed_pct": 58.5,
+     "third_long_conv_allowed_pct": 22.9,
+     "fourth_down_stop_pct": 48.3,
+     "late_close_rush_success_allowed_pct": 41.7,
+     "late_close_sack_rate_pct": 7.5,
+     "red_zone_td_allowed_pct": 58.2,
+     "goal_to_go_td_allowed_pct": 69.4
+    },
+    {
+     "season": 2024,
+     "third_down_conv_allowed_pct": 36.6,
+     "third_short_conv_allowed_pct": 58.6,
+     "third_long_conv_allowed_pct": 27.8,
+     "fourth_down_stop_pct": 52.1,
+     "late_close_rush_success_allowed_pct": 40.0,
+     "late_close_sack_rate_pct": 6.1,
+     "red_zone_td_allowed_pct": 58.0,
+     "goal_to_go_td_allowed_pct": 76.0
+    },
+    {
+     "season": 2025,
+     "third_down_conv_allowed_pct": 41.5,
+     "third_short_conv_allowed_pct": 67.9,
+     "third_long_conv_allowed_pct": 27.3,
+     "fourth_down_stop_pct": 51.0,
+     "late_close_rush_success_allowed_pct": 38.1,
+     "late_close_sack_rate_pct": 6.6,
+     "red_zone_td_allowed_pct": 67.0,
+     "goal_to_go_td_allowed_pct": 81.4
+    },
+    {
+     "season": 2026,
+     "third_down_conv_allowed_pct": 38.6,
+     "third_short_conv_allowed_pct": 61.2,
+     "third_long_conv_allowed_pct": 27.8,
+     "fourth_down_stop_pct": 40.4,
+     "late_close_rush_success_allowed_pct": 47.4,
+     "late_close_sack_rate_pct": 9.3,
+     "red_zone_td_allowed_pct": 62.4,
+     "goal_to_go_td_allowed_pct": 75.8
+    }
+   ]
+  },
+  {
+   "id": "by_quarter",
+   "title": "When the line shows up: production by quarter",
+   "type": "grouped_bars",
+   "data": [
+    {
+     "quarter": "1",
+     "dl_production_per_game_2025": 0.57,
+     "dl_production_per_game_2026": 0.68,
+     "rush_success_allowed_pct_2025": 43.8,
+     "rush_success_allowed_pct_2026": 43.6
+    },
+    {
+     "quarter": "2",
+     "dl_production_per_game_2025": 0.84,
+     "dl_production_per_game_2026": 0.88,
+     "rush_success_allowed_pct_2025": 47.2,
+     "rush_success_allowed_pct_2026": 43.3
+    },
+    {
+     "quarter": "3",
+     "dl_production_per_game_2025": 0.44,
+     "dl_production_per_game_2026": 0.74,
+     "rush_success_allowed_pct_2025": 45.2,
+     "rush_success_allowed_pct_2026": 45.2
+    },
+    {
+     "quarter": "4",
+     "dl_production_per_game_2025": 0.6,
+     "dl_production_per_game_2026": 0.71,
+     "rush_success_allowed_pct_2025": 41.9,
+     "rush_success_allowed_pct_2026": 45.9
+    }
+   ]
+  },
+  {
+   "id": "week_pulse",
+   "title": "Week to week: the 2026 pass rush is fading",
+   "type": "lines",
+   "note": "Weeks with fewer than 3 SWAC team-games are dropped.",
+   "data": [
+    {
+     "season": 2024,
+     "week": 1,
+     "team_games": 3,
+     "dl_sacks_per_game": 1.33,
+     "dl_run_tfl_per_game": 0.0,
+     "dl_havoc_rate_pct": 2.8,
+     "opp_rush_success_pct": 44.4
+    },
+    {
+     "season": 2024,
+     "week": 4,
+     "team_games": 4,
+     "dl_sacks_per_game": 2.25,
+     "dl_run_tfl_per_game": 3.38,
+     "dl_havoc_rate_pct": 10.6,
+     "opp_rush_success_pct": 33.6
+    },
+    {
+     "season": 2024,
+     "week": 5,
+     "team_games": 8,
+     "dl_sacks_per_game": 1.06,
+     "dl_run_tfl_per_game": 1.75,
+     "dl_havoc_rate_pct": 5.9,
+     "opp_rush_success_pct": 39.2
+    },
+    {
+     "season": 2024,
+     "week": 6,
+     "team_games": 6,
+     "dl_sacks_per_game": 0.75,
+     "dl_run_tfl_per_game": 1.58,
+     "dl_havoc_rate_pct": 5.3,
+     "opp_rush_success_pct": 44.1
+    },
+    {
+     "season": 2024,
+     "week": 7,
+     "team_games": 10,
+     "dl_sacks_per_game": 0.55,
+     "dl_run_tfl_per_game": 2.05,
+     "dl_havoc_rate_pct": 5.4,
+     "opp_rush_success_pct": 40.5
+    },
+    {
+     "season": 2024,
+     "week": 8,
+     "team_games": 8,
+     "dl_sacks_per_game": 1.44,
+     "dl_run_tfl_per_game": 1.19,
+     "dl_havoc_rate_pct": 5.1,
+     "opp_rush_success_pct": 42.1
+    },
+    {
+     "season": 2024,
+     "week": 9,
+     "team_games": 10,
+     "dl_sacks_per_game": 0.9,
+     "dl_run_tfl_per_game": 1.7,
+     "dl_havoc_rate_pct": 6.3,
+     "opp_rush_success_pct": 38.5
+    },
+    {
+     "season": 2024,
+     "week": 10,
+     "team_games": 12,
+     "dl_sacks_per_game": 1.33,
+     "dl_run_tfl_per_game": 1.58,
+     "dl_havoc_rate_pct": 6.9,
+     "opp_rush_success_pct": 39.9
+    },
+    {
+     "season": 2024,
+     "week": 11,
+     "team_games": 12,
+     "dl_sacks_per_game": 1.25,
+     "dl_run_tfl_per_game": 1.67,
+     "dl_havoc_rate_pct": 6.4,
+     "opp_rush_success_pct": 44.5
+    },
+    {
+     "season": 2024,
+     "week": 12,
+     "team_games": 12,
+     "dl_sacks_per_game": 1.83,
+     "dl_run_tfl_per_game": 1.29,
+     "dl_havoc_rate_pct": 5.9,
+     "opp_rush_success_pct": 40.4
+    },
+    {
+     "season": 2024,
+     "week": 13,
+     "team_games": 10,
+     "dl_sacks_per_game": 0.75,
+     "dl_run_tfl_per_game": 1.9,
+     "dl_havoc_rate_pct": 5.6,
+     "opp_rush_success_pct": 42.0
+    },
+    {
+     "season": 2024,
+     "week": 14,
+     "team_games": 4,
+     "dl_sacks_per_game": 1.88,
+     "dl_run_tfl_per_game": 3.25,
+     "dl_havoc_rate_pct": 9.7,
+     "opp_rush_success_pct": 30.7
+    },
+    {
+     "season": 2025,
+     "week": 1,
+     "team_games": 5,
+     "dl_sacks_per_game": 1.2,
+     "dl_run_tfl_per_game": 1.3,
+     "dl_havoc_rate_pct": 4.5,
+     "opp_rush_success_pct": 36.4
+    },
+    {
+     "season": 2025,
+     "week": 2,
+     "team_games": 4,
+     "dl_sacks_per_game": 0.62,
+     "dl_run_tfl_per_game": 0.5,
+     "dl_havoc_rate_pct": 3.3,
+     "opp_rush_success_pct": 40.5
+    },
+    {
+     "season": 2025,
+     "week": 5,
+     "team_games": 12,
+     "dl_sacks_per_game": 0.58,
+     "dl_run_tfl_per_game": 1.5,
+     "dl_havoc_rate_pct": 4.9,
+     "opp_rush_success_pct": 47.7
+    },
+    {
+     "season": 2025,
+     "week": 6,
+     "team_games": 8,
+     "dl_sacks_per_game": 0.62,
+     "dl_run_tfl_per_game": 0.75,
+     "dl_havoc_rate_pct": 3.5,
+     "opp_rush_success_pct": 54.0
+    },
+    {
+     "season": 2025,
+     "week": 7,
+     "team_games": 9,
+     "dl_sacks_per_game": 0.78,
+     "dl_run_tfl_per_game": 1.11,
+     "dl_havoc_rate_pct": 4.8,
+     "opp_rush_success_pct": 49.3
+    },
+    {
+     "season": 2025,
+     "week": 8,
+     "team_games": 6,
+     "dl_sacks_per_game": 0.83,
+     "dl_run_tfl_per_game": 1.25,
+     "dl_havoc_rate_pct": 4.2,
+     "opp_rush_success_pct": 37.9
+    },
+    {
+     "season": 2025,
+     "week": 9,
+     "team_games": 10,
+     "dl_sacks_per_game": 0.7,
+     "dl_run_tfl_per_game": 1.65,
+     "dl_havoc_rate_pct": 5.8,
+     "opp_rush_success_pct": 47.2
+    },
+    {
+     "season": 2025,
+     "week": 10,
+     "team_games": 12,
+     "dl_sacks_per_game": 1.17,
+     "dl_run_tfl_per_game": 1.46,
+     "dl_havoc_rate_pct": 5.7,
+     "opp_rush_success_pct": 39.8
+    },
+    {
+     "season": 2025,
+     "week": 11,
+     "team_games": 12,
+     "dl_sacks_per_game": 0.62,
+     "dl_run_tfl_per_game": 0.96,
+     "dl_havoc_rate_pct": 3.6,
+     "opp_rush_success_pct": 42.3
+    },
+    {
+     "season": 2025,
+     "week": 12,
+     "team_games": 12,
+     "dl_sacks_per_game": 0.67,
+     "dl_run_tfl_per_game": 0.88,
+     "dl_havoc_rate_pct": 3.5,
+     "opp_rush_success_pct": 44.9
+    },
+    {
+     "season": 2025,
+     "week": 13,
+     "team_games": 10,
+     "dl_sacks_per_game": 1.3,
+     "dl_run_tfl_per_game": 1.35,
+     "dl_havoc_rate_pct": 6.3,
+     "opp_rush_success_pct": 50.0
+    },
+    {
+     "season": 2025,
+     "week": 14,
+     "team_games": 4,
+     "dl_sacks_per_game": 1.5,
+     "dl_run_tfl_per_game": 2.88,
+     "dl_havoc_rate_pct": 9.1,
+     "opp_rush_success_pct": 41.3
+    },
+    {
+     "season": 2026,
+     "week": 0,
+     "team_games": 4,
+     "dl_sacks_per_game": 1.88,
+     "dl_run_tfl_per_game": 2.25,
+     "dl_havoc_rate_pct": 7.2,
+     "opp_rush_success_pct": 36.6
+    },
+    {
+     "season": 2026,
+     "week": 1,
+     "team_games": 3,
+     "dl_sacks_per_game": 1.0,
+     "dl_run_tfl_per_game": 1.17,
+     "dl_havoc_rate_pct": 4.9,
+     "opp_rush_success_pct": 48.7
+    },
+    {
+     "season": 2026,
+     "week": 4,
+     "team_games": 11,
+     "dl_sacks_per_game": 1.36,
+     "dl_run_tfl_per_game": 1.41,
+     "dl_havoc_rate_pct": 5.6,
+     "opp_rush_success_pct": 42.4
+    },
+    {
+     "season": 2026,
+     "week": 5,
+     "team_games": 10,
+     "dl_sacks_per_game": 1.05,
+     "dl_run_tfl_per_game": 2.05,
+     "dl_havoc_rate_pct": 5.8,
+     "opp_rush_success_pct": 46.1
+    },
+    {
+     "season": 2026,
+     "week": 6,
+     "team_games": 10,
+     "dl_sacks_per_game": 0.75,
+     "dl_run_tfl_per_game": 1.95,
+     "dl_havoc_rate_pct": 6.3,
+     "opp_rush_success_pct": 44.9
+    },
+    {
+     "season": 2026,
+     "week": 7,
+     "team_games": 10,
+     "dl_sacks_per_game": 0.7,
+     "dl_run_tfl_per_game": 1.1,
+     "dl_havoc_rate_pct": 4.2,
+     "opp_rush_success_pct": 45.0
+    }
+   ]
+  },
+  {
+   "id": "run_d_swing",
+   "title": "Run defense, 2025 to 2026",
+   "type": "dumbbell",
+   "metric": "opponent rush success (lower is better)",
+   "reference_pct": 44.6,
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "before_pct": 39.9,
+     "after_pct": 35.7,
+     "ypc_after": 3.81,
+     "stuff_after_pct": 19.5,
+     "rushes": 154
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "before_pct": 51.1,
+     "after_pct": 36.3,
+     "ypc_after": 4.65,
+     "stuff_after_pct": 21.8,
+     "rushes": 179
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "before_pct": 54.2,
+     "after_pct": 38.4,
+     "ypc_after": 4.31,
+     "stuff_after_pct": 30.4,
+     "rushes": 138
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "before_pct": 38.4,
+     "after_pct": 38.5,
+     "ypc_after": 4.96,
+     "stuff_after_pct": 19.3,
+     "rushes": 161
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "before_pct": 37.1,
+     "after_pct": 43.0,
+     "ypc_after": 4.87,
+     "stuff_after_pct": 19.3,
+     "rushes": 135
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "before_pct": 42.9,
+     "after_pct": 46.3,
+     "ypc_after": 5.9,
+     "stuff_after_pct": 17.4,
+     "rushes": 121
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "before_pct": 42.9,
+     "after_pct": 47.9,
+     "ypc_after": 5.23,
+     "stuff_after_pct": 18.5,
+     "rushes": 146
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "before_pct": 50.6,
+     "after_pct": 49.5,
+     "ypc_after": 4.69,
+     "stuff_after_pct": 15.1,
+     "rushes": 93
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "before_pct": 34.2,
+     "after_pct": 49.6,
+     "ypc_after": 6.88,
+     "stuff_after_pct": 22.6,
+     "rushes": 137
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "before_pct": 46.0,
+     "after_pct": 49.6,
+     "ypc_after": 5.83,
+     "stuff_after_pct": 21.3,
+     "rushes": 127
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "before_pct": 45.7,
+     "after_pct": 52.0,
+     "ypc_after": 6.2,
+     "stuff_after_pct": 14.3,
+     "rushes": 175
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "before_pct": 53.6,
+     "after_pct": 53.7,
+     "ypc_after": 6.88,
+     "stuff_after_pct": 17.4,
+     "rushes": 121
+    }
+   ]
+  },
+  {
+   "id": "pass_rush_swing",
+   "title": "Pass rush, 2025 to 2026",
+   "type": "dumbbell",
+   "metric": "sack rate (higher is better)",
+   "reference_pct": 6.8,
+   "data": [
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "before_pct": 3.8,
+     "after_pct": 12.0,
+     "dl_sacks_per_game": 1.25,
+     "dropbacks": 108
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "before_pct": 6.1,
+     "after_pct": 9.6,
+     "dl_sacks_per_game": 0.75,
+     "dropbacks": 104
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "before_pct": 10.8,
+     "after_pct": 8.5,
+     "dl_sacks_per_game": 2.25,
+     "dropbacks": 117
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "before_pct": 2.8,
+     "after_pct": 7.7,
+     "dl_sacks_per_game": 1.0,
+     "dropbacks": 142
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "before_pct": 4.0,
+     "after_pct": 7.7,
+     "dl_sacks_per_game": 2.12,
+     "dropbacks": 143
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "before_pct": 3.8,
+     "after_pct": 7.6,
+     "dl_sacks_per_game": 1.5,
+     "dropbacks": 131
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "before_pct": 2.7,
+     "after_pct": 6.8,
+     "dl_sacks_per_game": 0.38,
+     "dropbacks": 117
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "before_pct": 5.9,
+     "after_pct": 6.6,
+     "dl_sacks_per_game": 0.6,
+     "dropbacks": 136
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "before_pct": 3.5,
+     "after_pct": 5.8,
+     "dl_sacks_per_game": 1.0,
+     "dropbacks": 120
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "before_pct": 5.7,
+     "after_pct": 4.0,
+     "dl_sacks_per_game": 1.0,
+     "dropbacks": 100
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "before_pct": 4.1,
+     "after_pct": 2.3,
+     "dl_sacks_per_game": 0.33,
+     "dropbacks": 88
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "before_pct": 4.4,
+     "after_pct": 0.9,
+     "dl_sacks_per_game": 0.0,
+     "dropbacks": 107
+    }
+   ]
+  },
+  {
+   "id": "pass_defense",
+   "title": "Pass defense: rush vs results",
+   "type": "scatter",
+   "x_reference": 6.8,
+   "y_reference": 0.013,
+   "y_better": "lower",
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "x_sack_rate_pct": 7.7,
+     "y_epa_per_dropback": -0.046,
+     "completion_pct": 50.4,
+     "explosive_pass_pct": 13.0,
+     "int_rate_pct": 2.8,
+     "epa_per_dropback_2025": 0.365
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "x_sack_rate_pct": 6.8,
+     "y_epa_per_dropback": 0.336,
+     "completion_pct": 65.1,
+     "explosive_pass_pct": 19.3,
+     "int_rate_pct": 2.6,
+     "epa_per_dropback_2025": 0.038
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "x_sack_rate_pct": 7.6,
+     "y_epa_per_dropback": 0.014,
+     "completion_pct": 59.5,
+     "explosive_pass_pct": 11.6,
+     "int_rate_pct": 4.6,
+     "epa_per_dropback_2025": -0.031
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "x_sack_rate_pct": 9.6,
+     "y_epa_per_dropback": -0.345,
+     "completion_pct": 51.1,
+     "explosive_pass_pct": 11.7,
+     "int_rate_pct": 3.8,
+     "epa_per_dropback_2025": 0.132
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "x_sack_rate_pct": 0.9,
+     "y_epa_per_dropback": -0.323,
+     "completion_pct": 60.4,
+     "explosive_pass_pct": 11.3,
+     "int_rate_pct": 4.7,
+     "epa_per_dropback_2025": 0.203
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "x_sack_rate_pct": 8.5,
+     "y_epa_per_dropback": 0.492,
+     "completion_pct": 61.7,
+     "explosive_pass_pct": 26.2,
+     "int_rate_pct": 2.6,
+     "epa_per_dropback_2025": -0.199
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "x_sack_rate_pct": 5.8,
+     "y_epa_per_dropback": 0.065,
+     "completion_pct": 53.1,
+     "explosive_pass_pct": 13.3,
+     "int_rate_pct": 3.3,
+     "epa_per_dropback_2025": 0.12
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "x_sack_rate_pct": 12.0,
+     "y_epa_per_dropback": -0.187,
+     "completion_pct": 53.7,
+     "explosive_pass_pct": 17.9,
+     "int_rate_pct": 3.7,
+     "epa_per_dropback_2025": 0.129
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "x_sack_rate_pct": 6.6,
+     "y_epa_per_dropback": 0.012,
+     "completion_pct": 48.0,
+     "explosive_pass_pct": 15.7,
+     "int_rate_pct": 0.0,
+     "epa_per_dropback_2025": -0.058
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "x_sack_rate_pct": 4.0,
+     "y_epa_per_dropback": -0.196,
+     "completion_pct": 61.5,
+     "explosive_pass_pct": 12.5,
+     "int_rate_pct": 4.0,
+     "epa_per_dropback_2025": 0.156
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "x_sack_rate_pct": 7.7,
+     "y_epa_per_dropback": 0.005,
+     "completion_pct": 57.6,
+     "explosive_pass_pct": 15.9,
+     "int_rate_pct": 2.1,
+     "epa_per_dropback_2025": 0.215
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "x_sack_rate_pct": 2.3,
+     "y_epa_per_dropback": 0.291,
+     "completion_pct": 69.8,
+     "explosive_pass_pct": 20.9,
+     "int_rate_pct": 4.5,
+     "epa_per_dropback_2025": 0.12
+    }
+   ]
+  },
+  {
+   "id": "splash_vs_leak",
+   "title": "Splash plays don't guarantee a stout run defense",
+   "type": "scatter",
+   "x_reference": 2.97,
+   "y_reference": 44.6,
+   "y_better": "lower",
+   "definition": "D-line production = sacks + run TFL + forced fumbles + passes broken up, per game.",
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "x_dl_production_per_game": 3.7,
+     "y_opp_rush_success_pct": 35.7,
+     "explosive_runs_allowed_pct": 9.1
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "x_dl_production_per_game": 1.25,
+     "y_opp_rush_success_pct": 49.6,
+     "explosive_runs_allowed_pct": 16.8
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "x_dl_production_per_game": 4.6,
+     "y_opp_rush_success_pct": 36.3,
+     "explosive_runs_allowed_pct": 9.5
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "x_dl_production_per_game": 1.62,
+     "y_opp_rush_success_pct": 53.7,
+     "explosive_runs_allowed_pct": 18.2
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "x_dl_production_per_game": 1.88,
+     "y_opp_rush_success_pct": 52.0,
+     "explosive_runs_allowed_pct": 13.7
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "x_dl_production_per_game": 6.0,
+     "y_opp_rush_success_pct": 47.9,
+     "explosive_runs_allowed_pct": 16.4
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "x_dl_production_per_game": 2.12,
+     "y_opp_rush_success_pct": 43.0,
+     "explosive_runs_allowed_pct": 8.9
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "x_dl_production_per_game": 3.25,
+     "y_opp_rush_success_pct": 38.4,
+     "explosive_runs_allowed_pct": 8.0
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "x_dl_production_per_game": 2.6,
+     "y_opp_rush_success_pct": 38.5,
+     "explosive_runs_allowed_pct": 9.9
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "x_dl_production_per_game": 2.25,
+     "y_opp_rush_success_pct": 46.3,
+     "explosive_runs_allowed_pct": 17.4
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "x_dl_production_per_game": 4.5,
+     "y_opp_rush_success_pct": 49.6,
+     "explosive_runs_allowed_pct": 15.7
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "x_dl_production_per_game": 1.83,
+     "y_opp_rush_success_pct": 49.5,
+     "explosive_runs_allowed_pct": 7.5
+    }
+   ]
+  },
+  {
+   "id": "opponent_adjusted",
+   "title": "Against what their opponents usually do",
+   "type": "diverging_bars",
+   "definition": "Each opponent's average in its other League games this season, weighted by the snaps in this game. Negative EPA = held the offense below its usual.",
+   "data": [
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "epa_vs_usual": -0.189,
+     "rush_success_vs_usual_pct": 5.2,
+     "sack_rate_vs_usual_pct": -3.7,
+     "epa_per_dropback_vs_usual": -0.372
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "epa_vs_usual": -0.162,
+     "rush_success_vs_usual_pct": -7.2,
+     "sack_rate_vs_usual_pct": 2.8,
+     "epa_per_dropback_vs_usual": -0.094
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "epa_vs_usual": -0.128,
+     "rush_success_vs_usual_pct": -5.1,
+     "sack_rate_vs_usual_pct": -0.8,
+     "epa_per_dropback_vs_usual": -0.108
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "epa_vs_usual": -0.09,
+     "rush_success_vs_usual_pct": -4.7,
+     "sack_rate_vs_usual_pct": -1.1,
+     "epa_per_dropback_vs_usual": -0.224
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "epa_vs_usual": -0.02,
+     "rush_success_vs_usual_pct": -5.2,
+     "sack_rate_vs_usual_pct": -2.0,
+     "epa_per_dropback_vs_usual": 0.149
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "epa_vs_usual": -0.011,
+     "rush_success_vs_usual_pct": 1.2,
+     "sack_rate_vs_usual_pct": -3.3,
+     "epa_per_dropback_vs_usual": -0.122
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "epa_vs_usual": 0.013,
+     "rush_success_vs_usual_pct": 6.2,
+     "sack_rate_vs_usual_pct": 4.4,
+     "epa_per_dropback_vs_usual": -0.17
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "epa_vs_usual": 0.015,
+     "rush_success_vs_usual_pct": 4.5,
+     "sack_rate_vs_usual_pct": 0.1,
+     "epa_per_dropback_vs_usual": 0.013
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "epa_vs_usual": 0.081,
+     "rush_success_vs_usual_pct": 5.6,
+     "sack_rate_vs_usual_pct": -3.9,
+     "epa_per_dropback_vs_usual": 0.136
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "epa_vs_usual": 0.085,
+     "rush_success_vs_usual_pct": 4.0,
+     "sack_rate_vs_usual_pct": -0.4,
+     "epa_per_dropback_vs_usual": 0.005
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "epa_vs_usual": 0.19,
+     "rush_success_vs_usual_pct": -1.4,
+     "sack_rate_vs_usual_pct": 5.6,
+     "epa_per_dropback_vs_usual": 0.466
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "epa_vs_usual": 0.269,
+     "rush_success_vs_usual_pct": 6.2,
+     "sack_rate_vs_usual_pct": -1.4,
+     "epa_per_dropback_vs_usual": 0.284
+    }
+   ]
+  },
+  {
+   "id": "third_down",
+   "title": "3rd down by distance",
+   "type": "stacked_bars",
+   "reference_pct": 38.6,
+   "definition": "Short 1-2, medium 3-6, long 7+ yards to go. Converted = first down kept or a touchdown.",
+   "data": [
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "attempts": 50,
+     "conv_allowed_pct": 30.0,
+     "conv_allowed_2025_pct": 45.0,
+     "short_attempts": 6,
+     "medium_attempts": 16,
+     "long_attempts": 28,
+     "short_conv_allowed_pct": 50.0,
+     "medium_conv_allowed_pct": 31.2,
+     "long_conv_allowed_pct": 25.0,
+     "sack_or_tfl_pct": 12.0
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "attempts": 43,
+     "conv_allowed_pct": 30.2,
+     "conv_allowed_2025_pct": 44.0,
+     "short_attempts": 6,
+     "medium_attempts": 15,
+     "long_attempts": 22,
+     "short_conv_allowed_pct": 50.0,
+     "medium_conv_allowed_pct": 40.0,
+     "long_conv_allowed_pct": 18.2,
+     "sack_or_tfl_pct": 16.3
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "attempts": 51,
+     "conv_allowed_pct": 33.3,
+     "conv_allowed_2025_pct": 51.1,
+     "short_attempts": 8,
+     "medium_attempts": 21,
+     "long_attempts": 22,
+     "short_conv_allowed_pct": 50.0,
+     "medium_conv_allowed_pct": 33.3,
+     "long_conv_allowed_pct": 27.3,
+     "sack_or_tfl_pct": 3.9
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "attempts": 42,
+     "conv_allowed_pct": 33.3,
+     "conv_allowed_2025_pct": 43.6,
+     "short_attempts": 5,
+     "medium_attempts": 11,
+     "long_attempts": 26,
+     "short_conv_allowed_pct": 60.0,
+     "medium_conv_allowed_pct": 36.4,
+     "long_conv_allowed_pct": 26.9,
+     "sack_or_tfl_pct": 11.9
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "attempts": 68,
+     "conv_allowed_pct": 33.8,
+     "conv_allowed_2025_pct": 40.0,
+     "short_attempts": 10,
+     "medium_attempts": 20,
+     "long_attempts": 38,
+     "short_conv_allowed_pct": 50.0,
+     "medium_conv_allowed_pct": 50.0,
+     "long_conv_allowed_pct": 21.1,
+     "sack_or_tfl_pct": 16.2
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "attempts": 70,
+     "conv_allowed_pct": 35.7,
+     "conv_allowed_2025_pct": 45.7,
+     "short_attempts": 13,
+     "medium_attempts": 20,
+     "long_attempts": 37,
+     "short_conv_allowed_pct": 46.2,
+     "medium_conv_allowed_pct": 55.0,
+     "long_conv_allowed_pct": 21.6,
+     "sack_or_tfl_pct": 11.4
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "attempts": 69,
+     "conv_allowed_pct": 39.1,
+     "conv_allowed_2025_pct": 33.1,
+     "short_attempts": 8,
+     "medium_attempts": 21,
+     "long_attempts": 40,
+     "short_conv_allowed_pct": 62.5,
+     "medium_conv_allowed_pct": 57.1,
+     "long_conv_allowed_pct": 25.0,
+     "sack_or_tfl_pct": 4.3
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "attempts": 57,
+     "conv_allowed_pct": 42.1,
+     "conv_allowed_2025_pct": 46.2,
+     "short_attempts": 8,
+     "medium_attempts": 15,
+     "long_attempts": 34,
+     "short_conv_allowed_pct": 75.0,
+     "medium_conv_allowed_pct": 53.3,
+     "long_conv_allowed_pct": 29.4,
+     "sack_or_tfl_pct": 8.8
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "attempts": 36,
+     "conv_allowed_pct": 44.4,
+     "conv_allowed_2025_pct": 46.0,
+     "short_attempts": 7,
+     "medium_attempts": 9,
+     "long_attempts": 20,
+     "short_conv_allowed_pct": 71.4,
+     "medium_conv_allowed_pct": 44.4,
+     "long_conv_allowed_pct": 35.0,
+     "sack_or_tfl_pct": 2.8
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "attempts": 46,
+     "conv_allowed_pct": 45.7,
+     "conv_allowed_2025_pct": 29.8,
+     "short_attempts": 12,
+     "medium_attempts": 10,
+     "long_attempts": 24,
+     "short_conv_allowed_pct": 66.7,
+     "medium_conv_allowed_pct": 60.0,
+     "long_conv_allowed_pct": 29.2,
+     "sack_or_tfl_pct": 10.9
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "attempts": 59,
+     "conv_allowed_pct": 47.5,
+     "conv_allowed_2025_pct": 35.5,
+     "short_attempts": 8,
+     "medium_attempts": 25,
+     "long_attempts": 26,
+     "short_conv_allowed_pct": 62.5,
+     "medium_conv_allowed_pct": 44.0,
+     "long_conv_allowed_pct": 46.2,
+     "sack_or_tfl_pct": 3.4
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "attempts": 49,
+     "conv_allowed_pct": 49.0,
+     "conv_allowed_2025_pct": 38.8,
+     "short_attempts": 7,
+     "medium_attempts": 14,
+     "long_attempts": 28,
+     "short_conv_allowed_pct": 100.0,
+     "medium_conv_allowed_pct": 50.0,
+     "long_conv_allowed_pct": 35.7,
+     "sack_or_tfl_pct": 6.1
+    }
+   ]
+  },
+  {
+   "id": "short_yardage",
+   "title": "3rd/4th & 2 or less: stops",
+   "type": "dot_rows",
+   "label_style": "'4 of 7' -- counts, never percentages (samples under 20)",
+   "data": [
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "runs": 7,
+     "stops": 4,
+     "fourth_down_attempts": 4,
+     "fourth_down_stops": 2
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "runs": 13,
+     "stops": 7,
+     "fourth_down_attempts": 9,
+     "fourth_down_stops": 6
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "runs": 8,
+     "stops": 4,
+     "fourth_down_attempts": 3,
+     "fourth_down_stops": 1
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "runs": 7,
+     "stops": 3,
+     "fourth_down_attempts": 3,
+     "fourth_down_stops": 2
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "runs": 10,
+     "stops": 4,
+     "fourth_down_attempts": 5,
+     "fourth_down_stops": 2
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "runs": 13,
+     "stops": 4,
+     "fourth_down_attempts": 6,
+     "fourth_down_stops": 1
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "runs": 7,
+     "stops": 2,
+     "fourth_down_attempts": 3,
+     "fourth_down_stops": 1
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "runs": 9,
+     "stops": 2,
+     "fourth_down_attempts": 8,
+     "fourth_down_stops": 5
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "runs": 14,
+     "stops": 3,
+     "fourth_down_attempts": 6,
+     "fourth_down_stops": 1
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "runs": 10,
+     "stops": 2,
+     "fourth_down_attempts": 4,
+     "fourth_down_stops": 1
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "runs": 6,
+     "stops": 1,
+     "fourth_down_attempts": 3,
+     "fourth_down_stops": 1
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "runs": 7,
+     "stops": 0,
+     "fourth_down_attempts": 3,
+     "fourth_down_stops": 0
+    }
+   ]
+  },
+  {
+   "id": "late_and_close",
+   "title": "Clutch time: 4th quarter or OT within one score",
+   "type": "table",
+   "caution": "13 to 47 snaps per team. Show snaps beside every rate.",
+   "data": [
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "snaps": 13,
+     "epa_per_play_allowed": -1.061,
+     "rushes": 5,
+     "rush_success_allowed_pct": 0.0,
+     "dropbacks": 8,
+     "sacks": 1
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "snaps": 25,
+     "epa_per_play_allowed": -0.336,
+     "rushes": 10,
+     "rush_success_allowed_pct": 20.0,
+     "dropbacks": 15,
+     "sacks": 2
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "snaps": 33,
+     "epa_per_play_allowed": -0.292,
+     "rushes": 23,
+     "rush_success_allowed_pct": 26.1,
+     "dropbacks": 10,
+     "sacks": 2
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "snaps": 28,
+     "epa_per_play_allowed": -0.283,
+     "rushes": 18,
+     "rush_success_allowed_pct": 50.0,
+     "dropbacks": 10,
+     "sacks": 0
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "snaps": 26,
+     "epa_per_play_allowed": -0.269,
+     "rushes": 20,
+     "rush_success_allowed_pct": 60.0,
+     "dropbacks": 6,
+     "sacks": 0
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "snaps": 33,
+     "epa_per_play_allowed": -0.075,
+     "rushes": 16,
+     "rush_success_allowed_pct": 50.0,
+     "dropbacks": 17,
+     "sacks": 0
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "snaps": 44,
+     "epa_per_play_allowed": -0.033,
+     "rushes": 25,
+     "rush_success_allowed_pct": 68.0,
+     "dropbacks": 19,
+     "sacks": 2
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "snaps": 47,
+     "epa_per_play_allowed": 0.085,
+     "rushes": 30,
+     "rush_success_allowed_pct": 40.0,
+     "dropbacks": 17,
+     "sacks": 0
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "snaps": 25,
+     "epa_per_play_allowed": 0.163,
+     "rushes": 14,
+     "rush_success_allowed_pct": 35.7,
+     "dropbacks": 11,
+     "sacks": 1
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "snaps": 30,
+     "epa_per_play_allowed": 0.191,
+     "rushes": 19,
+     "rush_success_allowed_pct": 57.9,
+     "dropbacks": 11,
+     "sacks": 0
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "snaps": 43,
+     "epa_per_play_allowed": 0.42,
+     "rushes": 27,
+     "rush_success_allowed_pct": 59.3,
+     "dropbacks": 16,
+     "sacks": 3
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "snaps": 44,
+     "epa_per_play_allowed": 0.557,
+     "rushes": 23,
+     "rush_success_allowed_pct": 47.8,
+     "dropbacks": 21,
+     "sacks": 4
+    }
+   ]
+  },
+  {
+   "id": "red_zone",
+   "title": "Red zone and goal-to-go touchdowns allowed",
+   "type": "bars",
+   "reference_pct": 62.4,
+   "data": [
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "rz_drives": 17,
+     "rz_td_allowed_pct": 23.5,
+     "gtg_drives": 8,
+     "gtg_td_allowed_pct": 25.0
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "rz_drives": 15,
+     "rz_td_allowed_pct": 53.3,
+     "gtg_drives": 6,
+     "gtg_td_allowed_pct": 66.7
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "rz_drives": 19,
+     "rz_td_allowed_pct": 57.9,
+     "gtg_drives": 7,
+     "gtg_td_allowed_pct": 100.0
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "rz_drives": 10,
+     "rz_td_allowed_pct": 60.0,
+     "gtg_drives": 4,
+     "gtg_td_allowed_pct": 100.0
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "rz_drives": 16,
+     "rz_td_allowed_pct": 62.5,
+     "gtg_drives": 7,
+     "gtg_td_allowed_pct": 100.0
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "rz_drives": 11,
+     "rz_td_allowed_pct": 63.6,
+     "gtg_drives": 3,
+     "gtg_td_allowed_pct": 33.3
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "rz_drives": 14,
+     "rz_td_allowed_pct": 64.3,
+     "gtg_drives": 10,
+     "gtg_td_allowed_pct": 60.0
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "rz_drives": 15,
+     "rz_td_allowed_pct": 66.7,
+     "gtg_drives": 7,
+     "gtg_td_allowed_pct": 71.4
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "rz_drives": 16,
+     "rz_td_allowed_pct": 68.8,
+     "gtg_drives": 11,
+     "gtg_td_allowed_pct": 81.8
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "rz_drives": 14,
+     "rz_td_allowed_pct": 71.4,
+     "gtg_drives": 7,
+     "gtg_td_allowed_pct": 71.4
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "rz_drives": 15,
+     "rz_td_allowed_pct": 73.3,
+     "gtg_drives": 11,
+     "gtg_td_allowed_pct": 81.8
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "rz_drives": 16,
+     "rz_td_allowed_pct": 87.5,
+     "gtg_drives": 10,
+     "gtg_td_allowed_pct": 100.0
+    }
+   ]
+  },
+  {
+   "id": "team_week_heat",
+   "title": "D-line production by week",
+   "type": "heatmap",
+   "note": "Cells are D-line production (sacks + run TFL + FF + PBU) in that week's League game; blank = no League game.",
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "weeks": {
+      "0": 6.0,
+      "4": 5.0,
+      "5": 4.0,
+      "6": 3.5,
+      "7": 0.0
+     }
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "weeks": {
+      "2": 1.0,
+      "4": 2.0,
+      "5": 1.5,
+      "7": 0.5
+     }
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "weeks": {
+      "0": 3.0,
+      "4": 11.0,
+      "5": 3.5,
+      "6": 3.0,
+      "7": 2.5
+     }
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "weeks": {
+      "4": 0.5,
+      "5": 3.0,
+      "6": 0.0,
+      "7": 3.0
+     }
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "weeks": {
+      "1": 1.0,
+      "4": 3.0,
+      "6": 1.5,
+      "7": 2.0
+     }
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "weeks": {
+      "4": 3.0,
+      "5": 9.0,
+      "6": 8.0,
+      "7": 4.0
+     }
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "weeks": {
+      "4": 3.0,
+      "5": 1.0,
+      "6": 2.5,
+      "7": 2.0
+     }
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "weeks": {
+      "4": 2.5,
+      "5": 3.5,
+      "6": 3.5,
+      "7": 3.5
+     }
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "weeks": {
+      "1": 2.5,
+      "4": 2.0,
+      "5": 2.5,
+      "6": 3.0,
+      "7": 3.0
+     }
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "weeks": {
+      "0": 3.0,
+      "4": 1.0,
+      "5": 2.0,
+      "6": 3.0
+     }
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "weeks": {
+      "0": 5.5,
+      "1": 3.0,
+      "4": 3.5,
+      "6": 6.0
+     }
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "weeks": {
+      "2": 3.0,
+      "5": 2.0,
+      "7": 0.5
+     }
+    }
+   ]
+  },
+  {
+   "id": "fourth_quarter",
+   "title": "Who finishes: 4th-quarter D-line production per game",
+   "type": "dumbbell",
+   "note": "A stand-in for depth and conditioning: we have no snap counts.",
+   "data": [
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "before": 1.06,
+     "after": 1.5,
+     "q4_rush_success_allowed_pct": 57.6
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "before": 1.06,
+     "after": 1.12,
+     "q4_rush_success_allowed_pct": 32.4
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "before": 0.88,
+     "after": 1.12,
+     "q4_rush_success_allowed_pct": 72.7
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "before": 0.11,
+     "after": 1.1,
+     "q4_rush_success_allowed_pct": 27.8
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "before": 0.45,
+     "after": 1.0,
+     "q4_rush_success_allowed_pct": 27.6
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "before": 0.56,
+     "after": 0.75,
+     "q4_rush_success_allowed_pct": 41.7
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "before": 0.11,
+     "after": 0.5,
+     "q4_rush_success_allowed_pct": 50.0
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "before": 0.75,
+     "after": 0.5,
+     "q4_rush_success_allowed_pct": 49.0
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "before": 0.2,
+     "after": 0.3,
+     "q4_rush_success_allowed_pct": 39.4
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "before": 0.89,
+     "after": 0.25,
+     "q4_rush_success_allowed_pct": 56.7
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "before": 1.0,
+     "after": 0.17,
+     "q4_rush_success_allowed_pct": 47.4
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "before": 0.33,
+     "after": 0.12,
+     "q4_rush_success_allowed_pct": 57.1
+    }
+   ]
+  },
+  {
+   "id": "continuity",
+   "title": "Returning production, staff changes and the result",
+   "type": "scatter",
+   "x": "returning_share_pct",
+   "y": "change",
+   "color": "staff_changes (none / any)",
+   "note": "12 teams: a pattern, not proof.",
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "returning_share_pct": 40.0,
+     "dl_prod_2025": 2.5,
+     "dl_prod_2026": 3.7,
+     "change": 1.2,
+     "staff_changes": [],
+     "head_coach": "Sam Shade",
+     "defensive_coordinator": "Chris Shelling",
+     "dl_coach": [
+      "Marco Coleman"
+     ],
+     "newcomer_share_pct": 27.0,
+     "top3_share_pct": 45.9
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "returning_share_pct": 60.0,
+     "dl_prod_2025": 1.11,
+     "dl_prod_2026": 1.25,
+     "change": 0.14,
+     "staff_changes": [],
+     "head_coach": "Cedric Thomas",
+     "defensive_coordinator": "Deion Roberson",
+     "dl_coach": [
+      "Derrien Covington"
+     ],
+     "newcomer_share_pct": 20.0,
+     "top3_share_pct": 90.0
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "returning_share_pct": 85.3,
+     "dl_prod_2025": 1.89,
+     "dl_prod_2026": 4.6,
+     "change": 2.71,
+     "staff_changes": [],
+     "head_coach": "Eddie Robinson, Jr.",
+     "defensive_coordinator": "Todd Middleton",
+     "dl_coach": [],
+     "newcomer_share_pct": 43.5,
+     "top3_share_pct": 47.8
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "returning_share_pct": 41.7,
+     "dl_prod_2025": 2.67,
+     "dl_prod_2026": 1.62,
+     "change": -1.05,
+     "staff_changes": [
+      "defensive_coordinator"
+     ],
+     "head_coach": "Raymond Woodie Jr.",
+     "defensive_coordinator": "Otis Mounds",
+     "dl_coach": [
+      "Demetrius Coley"
+     ],
+     "newcomer_share_pct": 15.4,
+     "top3_share_pct": 76.9
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "returning_share_pct": 26.7,
+     "dl_prod_2025": 2.25,
+     "dl_prod_2026": 1.88,
+     "change": -0.37,
+     "staff_changes": [
+      "defensive_coordinator",
+      "dl_coach"
+     ],
+     "head_coach": "Quinn Fordham Gray Sr.",
+     "defensive_coordinator": "Ryan Lewis",
+     "dl_coach": [
+      "Elijah Haggard",
+      "Dahon Mixon"
+     ],
+     "newcomer_share_pct": 60.0,
+     "top3_share_pct": 73.3
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "returning_share_pct": 22.6,
+     "dl_prod_2025": 3.88,
+     "dl_prod_2026": 6.0,
+     "change": 2.12,
+     "staff_changes": [
+      "dl_coach"
+     ],
+     "head_coach": "Mickey Joseph",
+     "defensive_coordinator": "Jason Rollins",
+     "dl_coach": [
+      "Brandon Varner",
+      "Jimmy Zachery Jr."
+     ],
+     "newcomer_share_pct": 50.0,
+     "top3_share_pct": 68.8
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "returning_share_pct": 23.3,
+     "dl_prod_2025": 2.39,
+     "dl_prod_2026": 2.12,
+     "change": -0.27,
+     "staff_changes": [
+      "dl_coach"
+     ],
+     "head_coach": "T.C. Taylor",
+     "defensive_coordinator": "Torenzo Quinn",
+     "dl_coach": [
+      "Raekwon Bethea"
+     ],
+     "newcomer_share_pct": 47.1,
+     "top3_share_pct": 82.4
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "returning_share_pct": 8.5,
+     "dl_prod_2025": 2.61,
+     "dl_prod_2026": 3.25,
+     "change": 0.64,
+     "staff_changes": [],
+     "head_coach": "Terrell Buckley",
+     "defensive_coordinator": "Kelvin Smith",
+     "dl_coach": [
+      "Deondri Clark"
+     ],
+     "newcomer_share_pct": 76.9,
+     "top3_share_pct": 80.8
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "returning_share_pct": 46.9,
+     "dl_prod_2025": 1.6,
+     "dl_prod_2026": 2.6,
+     "change": 1.0,
+     "staff_changes": [
+      "dl_coach"
+     ],
+     "head_coach": "Tremaine Jackson",
+     "defensive_coordinator": "Trent Earley",
+     "dl_coach": [
+      "Kapono Asuega",
+      "Andre Pate"
+     ],
+     "newcomer_share_pct": 61.5,
+     "top3_share_pct": 57.7
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "returning_share_pct": 62.8,
+     "dl_prod_2025": 3.55,
+     "dl_prod_2026": 2.25,
+     "change": -1.3,
+     "staff_changes": [
+      "head_coach",
+      "defensive_coordinator",
+      "dl_coach"
+     ],
+     "head_coach": "Marshall Faulk",
+     "defensive_coordinator": "Todd Lyght",
+     "dl_coach": [
+      "Kyle Kramer"
+     ],
+     "newcomer_share_pct": 44.4,
+     "top3_share_pct": 88.9
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "returning_share_pct": 30.6,
+     "dl_prod_2025": 3.06,
+     "dl_prod_2026": 4.5,
+     "change": 1.44,
+     "staff_changes": [
+      "defensive_coordinator"
+     ],
+     "head_coach": "Cris Dishman",
+     "defensive_coordinator": "Scott Vestal",
+     "dl_coach": [
+      "Matthew Passwaters",
+      "Jonas Seawright"
+     ],
+     "newcomer_share_pct": 47.2,
+     "top3_share_pct": 69.4
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "returning_share_pct": 51.5,
+     "dl_prod_2025": 2.06,
+     "dl_prod_2026": 1.83,
+     "change": -0.23,
+     "staff_changes": [],
+     "head_coach": "Alonzo Hampton",
+     "defensive_coordinator": "Jeff Burrow",
+     "dl_coach": [
+      "George Ricumstrict"
+     ],
+     "newcomer_share_pct": 81.8,
+     "top3_share_pct": 90.9
+    }
+   ]
+  },
+  {
+   "id": "unreplaced",
+   "title": "Who replaced last year's production?",
+   "type": "waterfall_per_team",
+   "definition": "Per game. Lost = 2025 D-linemen not on the 2026 roster. Gap = lost - newcomers - returners' growth. Positive gap = not replaced.",
+   "data": [
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "production": {
+      "lost_per_game": 1.56,
+      "newcomers_per_game": 0.25,
+      "returners_growth_per_game": 0.36,
+      "gap_per_game": 0.94
+     },
+     "sack": {
+      "lost_per_game": 0.56,
+      "newcomers_per_game": 0.0,
+      "returners_growth_per_game": 0.08,
+      "gap_per_game": 0.47
+     },
+     "stop": {
+      "lost_per_game": 3.39,
+      "newcomers_per_game": 0.25,
+      "returners_growth_per_game": 2.81,
+      "gap_per_game": 0.33
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00014157",
+       "name": "Adrian Hall Jr.",
+       "production_per_game": 0.89,
+       "sacks": 2.0,
+       "tfl": 4.0,
+       "run_stops": 12.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011006",
+       "name": "Cornelious Bass",
+       "production_per_game": 0.22,
+       "sacks": 1.5,
+       "tfl": 0.5,
+       "run_stops": 9.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00011992",
+       "name": "Keyon Clark",
+       "production_per_game": 0.22,
+       "sacks": 1.0,
+       "tfl": 1.0,
+       "run_stops": 4.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00011989",
+       "name": "Laron Davis",
+       "production_per_game": 0.22,
+       "sacks": 0.5,
+       "tfl": 1.5,
+       "run_stops": 5.0,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "production": {
+      "lost_per_game": 1.65,
+      "newcomers_per_game": 1.12,
+      "returners_growth_per_game": 0.0,
+      "gap_per_game": 0.52
+     },
+     "sack": {
+      "lost_per_game": 0.65,
+      "newcomers_per_game": 0.0,
+      "returners_growth_per_game": 0.0,
+      "gap_per_game": 0.65
+     },
+     "stop": {
+      "lost_per_game": 4.25,
+      "newcomers_per_game": 2.38,
+      "returners_growth_per_game": 0.45,
+      "gap_per_game": 1.43
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00010169",
+       "name": "James Gardner Jr.",
+       "production_per_game": 0.4,
+       "sacks": 1.5,
+       "tfl": 2.5,
+       "run_stops": 7.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011061",
+       "name": "Nicholas Dimitris",
+       "production_per_game": 0.3,
+       "sacks": 0.5,
+       "tfl": 1.5,
+       "run_stops": 7.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011058",
+       "name": "Cameron Donald",
+       "production_per_game": 0.2,
+       "sacks": 1.5,
+       "tfl": 0.5,
+       "run_stops": 6.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011011",
+       "name": "Latarie Kinsler",
+       "production_per_game": 0.2,
+       "sacks": 2.0,
+       "tfl": 0.0,
+       "run_stops": 1.0,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "production": {
+      "lost_per_game": 1.83,
+      "newcomers_per_game": 1.0,
+      "returners_growth_per_game": 0.74,
+      "gap_per_game": 0.1
+     },
+     "sack": {
+      "lost_per_game": 0.56,
+      "newcomers_per_game": 0.62,
+      "returners_growth_per_game": 0.26,
+      "gap_per_game": -0.33
+     },
+     "stop": {
+      "lost_per_game": 5.0,
+      "newcomers_per_game": 1.0,
+      "returners_growth_per_game": 2.82,
+      "gap_per_game": 1.18
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00011155",
+       "name": "John Brown Jr.",
+       "production_per_game": 0.61,
+       "sacks": 1.5,
+       "tfl": 3.0,
+       "run_stops": 8.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00008373",
+       "name": "Jeremiah Williams",
+       "production_per_game": 0.5,
+       "sacks": 1.0,
+       "tfl": 2.5,
+       "run_stops": 14.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012101",
+       "name": "Quincy Ivory",
+       "production_per_game": 0.39,
+       "sacks": 1.5,
+       "tfl": 2.0,
+       "run_stops": 13.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00010263",
+       "name": "Jace Ward",
+       "production_per_game": 0.11,
+       "sacks": 0.0,
+       "tfl": 1.0,
+       "run_stops": 4.0,
+       "status": "moved_within_18"
+      }
+     ]
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "production": {
+      "lost_per_game": 1.32,
+      "newcomers_per_game": 1.0,
+      "returners_growth_per_game": 0.23,
+      "gap_per_game": 0.09
+     },
+     "sack": {
+      "lost_per_game": 0.32,
+      "newcomers_per_game": 0.25,
+      "returners_growth_per_game": 0.32,
+      "gap_per_game": -0.25
+     },
+     "stop": {
+      "lost_per_game": 3.18,
+      "newcomers_per_game": 3.0,
+      "returners_growth_per_game": 1.91,
+      "gap_per_game": -1.73
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00011277",
+       "name": "Jerome Wallace",
+       "production_per_game": 0.68,
+       "sacks": 1.5,
+       "tfl": 4.0,
+       "run_stops": 15.5,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00009482",
+       "name": "Zac Yassine",
+       "production_per_game": 0.45,
+       "sacks": 1.0,
+       "tfl": 3.0,
+       "run_stops": 17.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011270",
+       "name": "Demetrios Walker II",
+       "production_per_game": 0.18,
+       "sacks": 1.0,
+       "tfl": 0.0,
+       "run_stops": 2.0,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "production": {
+      "lost_per_game": 1.0,
+      "newcomers_per_game": 1.5,
+      "returners_growth_per_game": 0.0,
+      "gap_per_game": -0.5
+     },
+     "sack": {
+      "lost_per_game": 0.19,
+      "newcomers_per_game": 0.0,
+      "returners_growth_per_game": 0.21,
+      "gap_per_game": -0.02
+     },
+     "stop": {
+      "lost_per_game": 3.25,
+      "newcomers_per_game": 4.5,
+      "returners_growth_per_game": 0.38,
+      "gap_per_game": -1.62
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00012418",
+       "name": "K’aun Green",
+       "production_per_game": 0.5,
+       "sacks": 1.5,
+       "tfl": 2.5,
+       "run_stops": 3.5,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00012424",
+       "name": "Vaughn Highland",
+       "production_per_game": 0.25,
+       "sacks": 0.0,
+       "tfl": 2.0,
+       "run_stops": 13.5,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00010492",
+       "name": "Elijah Jenkins",
+       "production_per_game": 0.12,
+       "sacks": 0.0,
+       "tfl": 0.0,
+       "run_stops": 1.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012423",
+       "name": "Jaiden Crawford",
+       "production_per_game": 0.12,
+       "sacks": 0.0,
+       "tfl": 1.0,
+       "run_stops": 2.5,
+       "status": "left"
+      }
+     ]
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "production": {
+      "lost_per_game": 0.44,
+      "newcomers_per_game": 0.25,
+      "returners_growth_per_game": 0.78,
+      "gap_per_game": -0.58
+     },
+     "sack": {
+      "lost_per_game": 0.0,
+      "newcomers_per_game": 0.0,
+      "returners_growth_per_game": 0.38,
+      "gap_per_game": -0.38
+     },
+     "stop": {
+      "lost_per_game": 2.0,
+      "newcomers_per_game": 1.25,
+      "returners_growth_per_game": 1.46,
+      "gap_per_game": -0.71
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00009394",
+       "name": "Ejavious Jackson",
+       "production_per_game": 0.17,
+       "sacks": 0.0,
+       "tfl": 1.5,
+       "run_stops": 2.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00011852",
+       "name": "Christopher Walley",
+       "production_per_game": 0.11,
+       "sacks": 0.0,
+       "tfl": 1.0,
+       "run_stops": 3.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00010877",
+       "name": "Jadyn Bost",
+       "production_per_game": 0.06,
+       "sacks": 0.0,
+       "tfl": 0.5,
+       "run_stops": 2.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00010908",
+       "name": "Kaden Kenney",
+       "production_per_game": 0.06,
+       "sacks": 0.0,
+       "tfl": 0.5,
+       "run_stops": 7.0,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "production": {
+      "lost_per_game": 2.39,
+      "newcomers_per_game": 2.5,
+      "returners_growth_per_game": 0.69,
+      "gap_per_game": -0.81
+     },
+     "sack": {
+      "lost_per_game": 0.5,
+      "newcomers_per_game": 0.88,
+      "returners_growth_per_game": 0.38,
+      "gap_per_game": -0.75
+     },
+     "stop": {
+      "lost_per_game": 5.67,
+      "newcomers_per_game": 4.62,
+      "returners_growth_per_game": 0.58,
+      "gap_per_game": 0.46
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00010339",
+       "name": "James Bradley",
+       "production_per_game": 0.94,
+       "sacks": 2.0,
+       "tfl": 4.5,
+       "run_stops": 8.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00012187",
+       "name": "Isaiah Pedack",
+       "production_per_game": 0.78,
+       "sacks": 2.0,
+       "tfl": 3.0,
+       "run_stops": 13.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012137",
+       "name": "Adonis Jackson",
+       "production_per_game": 0.39,
+       "sacks": 0.0,
+       "tfl": 2.5,
+       "run_stops": 7.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00012191",
+       "name": "Colton Vatne",
+       "production_per_game": 0.17,
+       "sacks": 0.5,
+       "tfl": 1.0,
+       "run_stops": 4.0,
+       "status": "left"
+      }
+     ]
+    },
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "production": {
+      "lost_per_game": 1.5,
+      "newcomers_per_game": 1.0,
+      "returners_growth_per_game": 1.42,
+      "gap_per_game": -0.92
+     },
+     "sack": {
+      "lost_per_game": 0.28,
+      "newcomers_per_game": 0.2,
+      "returners_growth_per_game": 0.7,
+      "gap_per_game": -0.62
+     },
+     "stop": {
+      "lost_per_game": 3.61,
+      "newcomers_per_game": 2.6,
+      "returners_growth_per_game": 2.18,
+      "gap_per_game": -1.17
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00011784",
+       "name": "Wilburn Smallwood",
+       "production_per_game": 0.78,
+       "sacks": 0.5,
+       "tfl": 5.5,
+       "run_stops": 11.5,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00011797",
+       "name": "Xzavier Booker",
+       "production_per_game": 0.44,
+       "sacks": 1.0,
+       "tfl": 3.0,
+       "run_stops": 8.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00009973",
+       "name": "Nick Glenn",
+       "production_per_game": 0.22,
+       "sacks": 1.0,
+       "tfl": 1.0,
+       "run_stops": 10.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011780",
+       "name": "Devedrick Wilson",
+       "production_per_game": 0.06,
+       "sacks": 0.0,
+       "tfl": 0.5,
+       "run_stops": 2.0,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "production": {
+      "lost_per_game": 0.85,
+      "newcomers_per_game": 1.6,
+      "returners_growth_per_game": 0.25,
+      "gap_per_game": -1.0
+     },
+     "sack": {
+      "lost_per_game": 0.2,
+      "newcomers_per_game": 0.2,
+      "returners_growth_per_game": 0.2,
+      "gap_per_game": -0.2
+     },
+     "stop": {
+      "lost_per_game": 2.75,
+      "newcomers_per_game": 4.2,
+      "returners_growth_per_game": 1.3,
+      "gap_per_game": -2.75
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00012255",
+       "name": "Alajujuan Sparks Jr.",
+       "production_per_game": 0.35,
+       "sacks": 0.0,
+       "tfl": 2.5,
+       "run_stops": 6.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012251",
+       "name": "Dealo Mcgee",
+       "production_per_game": 0.25,
+       "sacks": 0.0,
+       "tfl": 2.5,
+       "run_stops": 10.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00008478",
+       "name": "Jamal Marshall",
+       "production_per_game": 0.15,
+       "sacks": 1.0,
+       "tfl": 0.5,
+       "run_stops": 2.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012252",
+       "name": "Jabarrek Hopkins",
+       "production_per_game": 0.1,
+       "sacks": 1.0,
+       "tfl": 0.0,
+       "run_stops": 6.0,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "production": {
+      "lost_per_game": 2.12,
+      "newcomers_per_game": 2.12,
+      "returners_growth_per_game": 1.5,
+      "gap_per_game": -1.5
+     },
+     "sack": {
+      "lost_per_game": 0.56,
+      "newcomers_per_game": 1.12,
+      "returners_growth_per_game": 0.69,
+      "gap_per_game": -1.25
+     },
+     "stop": {
+      "lost_per_game": 5.0,
+      "newcomers_per_game": 5.75,
+      "returners_growth_per_game": 1.06,
+      "gap_per_game": -1.81
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00008606",
+       "name": "Michael Akins",
+       "production_per_game": 1.19,
+       "sacks": 2.5,
+       "tfl": 4.0,
+       "run_stops": 10.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012375",
+       "name": "Dylan Pullen",
+       "production_per_game": 0.31,
+       "sacks": 1.0,
+       "tfl": 1.5,
+       "run_stops": 6.0,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00012328",
+       "name": "Jason Patterson",
+       "production_per_game": 0.25,
+       "sacks": 0.0,
+       "tfl": 1.0,
+       "run_stops": 3.5,
+       "status": "left"
+      },
+      {
+       "person_id": "PERS_00012363",
+       "name": "RB Wilson",
+       "production_per_game": 0.12,
+       "sacks": 1.0,
+       "tfl": 0.0,
+       "run_stops": 4.5,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "production": {
+      "lost_per_game": 3.0,
+      "newcomers_per_game": 3.0,
+      "returners_growth_per_game": 2.19,
+      "gap_per_game": -2.19
+     },
+     "sack": {
+      "lost_per_game": 1.75,
+      "newcomers_per_game": 1.0,
+      "returners_growth_per_game": 0.81,
+      "gap_per_game": -0.06
+     },
+     "stop": {
+      "lost_per_game": 7.25,
+      "newcomers_per_game": 6.12,
+      "returners_growth_per_game": 2.62,
+      "gap_per_game": -1.5
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00011069",
+       "name": "Bryce Cage",
+       "production_per_game": 1.38,
+       "sacks": 4.0,
+       "tfl": 7.0,
+       "run_stops": 24.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012058",
+       "name": "Warren Robinson",
+       "production_per_game": 0.94,
+       "sacks": 5.5,
+       "tfl": 2.0,
+       "run_stops": 12.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00012061",
+       "name": "Shanye Monsanto",
+       "production_per_game": 0.31,
+       "sacks": 2.5,
+       "tfl": 0.0,
+       "run_stops": 4.5,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00011078",
+       "name": "Isaac Washington",
+       "production_per_game": 0.25,
+       "sacks": 2.0,
+       "tfl": 0.0,
+       "run_stops": 12.5,
+       "status": "graduated"
+      }
+     ]
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "production": {
+      "lost_per_game": 0.28,
+      "newcomers_per_game": 2.0,
+      "returners_growth_per_game": 1.34,
+      "gap_per_game": -3.07
+     },
+     "sack": {
+      "lost_per_game": 0.11,
+      "newcomers_per_game": 0.2,
+      "returners_growth_per_game": 0.97,
+      "gap_per_game": -1.06
+     },
+     "stop": {
+      "lost_per_game": 2.5,
+      "newcomers_per_game": 3.8,
+      "returners_growth_per_game": 3.83,
+      "gap_per_game": -5.13
+     },
+     "departed": [
+      {
+       "person_id": "PERS_00010056",
+       "name": "Cameron Gordon",
+       "production_per_game": 0.17,
+       "sacks": 1.0,
+       "tfl": 0.5,
+       "run_stops": 12.0,
+       "status": "graduated"
+      },
+      {
+       "person_id": "PERS_00009392",
+       "name": "Detrick Jones",
+       "production_per_game": 0.11,
+       "sacks": 0.0,
+       "tfl": 1.0,
+       "run_stops": 10.5,
+       "status": "graduated"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "departed_players",
+   "title": "Last year's producers who are gone",
+   "type": "player_list",
+   "note": "status: graduated (2025 class Sr./Gr., inferred) / left (eligibility remaining, not on any 2026 roster of the 18).",
+   "data": [
+    {
+     "person_id": "PERS_00011069",
+     "name": "Bryce Cage",
+     "production_per_game": 1.38,
+     "sacks": 4.0,
+     "tfl": 7.0,
+     "run_stops": 24.5,
+     "status": "graduated",
+     "team_id": "swacgsu",
+     "name_team": "Grambling"
+    },
+    {
+     "person_id": "PERS_00008606",
+     "name": "Michael Akins",
+     "production_per_game": 1.19,
+     "sacks": 2.5,
+     "tfl": 4.0,
+     "run_stops": 10.0,
+     "status": "graduated",
+     "team_id": "swactsu",
+     "name_team": "TSU"
+    },
+    {
+     "person_id": "PERS_00012058",
+     "name": "Warren Robinson",
+     "production_per_game": 0.94,
+     "sacks": 5.5,
+     "tfl": 2.0,
+     "run_stops": 12.0,
+     "status": "graduated",
+     "team_id": "swacgsu",
+     "name_team": "Grambling"
+    },
+    {
+     "person_id": "PERS_00010339",
+     "name": "James Bradley",
+     "production_per_game": 0.94,
+     "sacks": 2.0,
+     "tfl": 4.5,
+     "run_stops": 8.0,
+     "status": "left",
+     "team_id": "swacmvsu",
+     "name_team": "MVSU"
+    },
+    {
+     "person_id": "PERS_00014157",
+     "name": "Adrian Hall Jr.",
+     "production_per_game": 0.89,
+     "sacks": 2.0,
+     "tfl": 4.0,
+     "run_stops": 12.5,
+     "status": "graduated",
+     "team_id": "swacbcu",
+     "name_team": "B-CU"
+    },
+    {
+     "person_id": "PERS_00011784",
+     "name": "Wilburn Smallwood",
+     "production_per_game": 0.78,
+     "sacks": 0.5,
+     "tfl": 5.5,
+     "run_stops": 11.5,
+     "status": "left",
+     "team_id": "swacaamu",
+     "name_team": "AAMU"
+    },
+    {
+     "person_id": "PERS_00012187",
+     "name": "Isaiah Pedack",
+     "production_per_game": 0.78,
+     "sacks": 2.0,
+     "tfl": 3.0,
+     "run_stops": 13.0,
+     "status": "graduated",
+     "team_id": "swacmvsu",
+     "name_team": "MVSU"
+    },
+    {
+     "person_id": "PERS_00011277",
+     "name": "Jerome Wallace",
+     "production_per_game": 0.68,
+     "sacks": 1.5,
+     "tfl": 4.0,
+     "run_stops": 15.5,
+     "status": "left",
+     "team_id": "swacsu",
+     "name_team": "Southern"
+    },
+    {
+     "person_id": "PERS_00011155",
+     "name": "John Brown Jr.",
+     "production_per_game": 0.61,
+     "sacks": 1.5,
+     "tfl": 3.0,
+     "run_stops": 8.5,
+     "status": "graduated",
+     "team_id": "swacjsu",
+     "name_team": "J-State"
+    },
+    {
+     "person_id": "PERS_00008373",
+     "name": "Jeremiah Williams",
+     "production_per_game": 0.5,
+     "sacks": 1.0,
+     "tfl": 2.5,
+     "run_stops": 14.0,
+     "status": "graduated",
+     "team_id": "swacjsu",
+     "name_team": "J-State"
+    },
+    {
+     "person_id": "PERS_00012418",
+     "name": "K’aun Green",
+     "production_per_game": 0.5,
+     "sacks": 1.5,
+     "tfl": 2.5,
+     "run_stops": 3.5,
+     "status": "left",
+     "team_id": "swacuapb",
+     "name_team": "UAPB"
+    },
+    {
+     "person_id": "PERS_00009482",
+     "name": "Zac Yassine",
+     "production_per_game": 0.45,
+     "sacks": 1.0,
+     "tfl": 3.0,
+     "run_stops": 17.5,
+     "status": "graduated",
+     "team_id": "swacsu",
+     "name_team": "Southern"
+    },
+    {
+     "person_id": "PERS_00011797",
+     "name": "Xzavier Booker",
+     "production_per_game": 0.44,
+     "sacks": 1.0,
+     "tfl": 3.0,
+     "run_stops": 8.0,
+     "status": "left",
+     "team_id": "swacaamu",
+     "name_team": "AAMU"
+    },
+    {
+     "person_id": "PERS_00010169",
+     "name": "James Gardner Jr.",
+     "production_per_game": 0.4,
+     "sacks": 1.5,
+     "tfl": 2.5,
+     "run_stops": 7.5,
+     "status": "graduated",
+     "team_id": "swacfamu",
+     "name_team": "FAMU"
+    },
+    {
+     "person_id": "PERS_00012101",
+     "name": "Quincy Ivory",
+     "production_per_game": 0.39,
+     "sacks": 1.5,
+     "tfl": 2.0,
+     "run_stops": 13.0,
+     "status": "graduated",
+     "team_id": "swacjsu",
+     "name_team": "J-State"
+    },
+    {
+     "person_id": "PERS_00012137",
+     "name": "Adonis Jackson",
+     "production_per_game": 0.39,
+     "sacks": 0.0,
+     "tfl": 2.5,
+     "run_stops": 7.0,
+     "status": "left",
+     "team_id": "swacmvsu",
+     "name_team": "MVSU"
+    },
+    {
+     "person_id": "PERS_00012255",
+     "name": "Alajujuan Sparks Jr.",
+     "production_per_game": 0.35,
+     "sacks": 0.0,
+     "tfl": 2.5,
+     "run_stops": 6.0,
+     "status": "graduated",
+     "team_id": "swacpvamu",
+     "name_team": "PVAMU"
+    },
+    {
+     "person_id": "PERS_00012061",
+     "name": "Shanye Monsanto",
+     "production_per_game": 0.31,
+     "sacks": 2.5,
+     "tfl": 0.0,
+     "run_stops": 4.5,
+     "status": "graduated",
+     "team_id": "swacgsu",
+     "name_team": "Grambling"
+    },
+    {
+     "person_id": "PERS_00012375",
+     "name": "Dylan Pullen",
+     "production_per_game": 0.31,
+     "sacks": 1.0,
+     "tfl": 1.5,
+     "run_stops": 6.0,
+     "status": "left",
+     "team_id": "swactsu",
+     "name_team": "TSU"
+    },
+    {
+     "person_id": "PERS_00011061",
+     "name": "Nicholas Dimitris",
+     "production_per_game": 0.3,
+     "sacks": 0.5,
+     "tfl": 1.5,
+     "run_stops": 7.5,
+     "status": "graduated",
+     "team_id": "swacfamu",
+     "name_team": "FAMU"
+    }
+   ]
+  },
+  {
+   "id": "leaders",
+   "title": "D-line leaders, 2026 League games",
+   "type": "table",
+   "data": [
+    {
+     "person_id": "PERS_00011074",
+     "name": "Jon Horton",
+     "team_id": "swacgsu",
+     "class": "Gr.",
+     "newcomer": false,
+     "previous_school": "Virginia",
+     "team_games": 4,
+     "sacks": 4.0,
+     "tfl": 3.5,
+     "ff": 1.0,
+     "pbu": 0.0,
+     "hurries": 3.0,
+     "run_stops": 6.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.5,
+     "late_close_havoc": 3.0,
+     "epa_taken": 15.949,
+     "production": 8.5,
+     "production_per_game": 2.12,
+     "last_season": {
+      "team_id": "swacgsu",
+      "production": 2.5,
+      "production_per_game": 0.31,
+      "sacks": 1.5,
+      "tfl": 1.0
+     }
+    },
+    {
+     "person_id": "PERS_00013864",
+     "name": "Jordan Thompson",
+     "team_id": "swactsu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "Kentucky State",
+     "team_games": 4,
+     "sacks": 3.5,
+     "tfl": 0.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 3.0,
+     "run_stops": 8.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.5,
+     "late_close_havoc": 0.0,
+     "epa_taken": 7.131,
+     "production": 4.5,
+     "production_per_game": 1.12,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00013595",
+     "name": "Donte Hookfin",
+     "team_id": "swacgsu",
+     "class": "Fr.",
+     "newcomer": true,
+     "previous_school": "Portland State",
+     "team_games": 4,
+     "sacks": 1.5,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 0.0,
+     "run_stops": 4.0,
+     "short_yardage_stops": 1.0,
+     "money_down_havoc": 2.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 3.764,
+     "production": 4.5,
+     "production_per_game": 1.12,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00012335",
+     "name": "Garfield Lawrence",
+     "team_id": "swactsu",
+     "class": "Gr.",
+     "newcomer": false,
+     "previous_school": "Houston",
+     "team_games": 4,
+     "sacks": 2.5,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 3.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 6.292,
+     "production": 4.5,
+     "production_per_game": 1.12,
+     "last_season": {
+      "team_id": "swactsu",
+      "production": 5.5,
+      "production_per_game": 0.69,
+      "sacks": 2.5,
+      "tfl": 3.0
+     }
+    },
+    {
+     "person_id": "PERS_00013469",
+     "name": "Thad Parson",
+     "team_id": "swacasu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "Indy Cc / Point University",
+     "team_games": 5,
+     "sacks": 0.0,
+     "tfl": 4.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 10.0,
+     "short_yardage_stops": 1.5,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.077,
+     "production": 4.0,
+     "production_per_game": 0.8,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00013809",
+     "name": "Bryson Jennings",
+     "team_id": "swacsu",
+     "class": "Sr.",
+     "newcomer": true,
+     "previous_school": "Liberty",
+     "team_games": 4,
+     "sacks": 1.0,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 1.0,
+     "run_stops": 10.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 4.897,
+     "production": 4.0,
+     "production_per_game": 1.0,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00012207",
+     "name": "Malik Gucake",
+     "team_id": "swacpvamu",
+     "class": "Sr.",
+     "newcomer": false,
+     "previous_school": null,
+     "team_games": 5,
+     "sacks": 2.0,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 5.0,
+     "run_stops": 9.5,
+     "short_yardage_stops": 0.5,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 11.622,
+     "production": 4.0,
+     "production_per_game": 0.8,
+     "last_season": {
+      "team_id": "swacpvamu",
+      "production": 6.5,
+      "production_per_game": 0.65,
+      "sacks": 2.0,
+      "tfl": 2.5
+     }
+    },
+    {
+     "person_id": "PERS_00013696",
+     "name": "Christ Kore",
+     "team_id": "swacmvsu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": null,
+     "team_games": 4,
+     "sacks": 1.0,
+     "tfl": 3.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 7.5,
+     "short_yardage_stops": 0.5,
+     "money_down_havoc": 0.5,
+     "late_close_havoc": 1.0,
+     "epa_taken": 6.698,
+     "production": 4.0,
+     "production_per_game": 1.0,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00011930",
+     "name": "Eldridge Shelton",
+     "team_id": "swacasu",
+     "class": "So.",
+     "newcomer": false,
+     "previous_school": "Wennonah Hs",
+     "team_games": 5,
+     "sacks": 2.5,
+     "tfl": 1.5,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 1.0,
+     "run_stops": 5.0,
+     "short_yardage_stops": 1.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 8.48,
+     "production": 4.0,
+     "production_per_game": 0.8,
+     "last_season": {
+      "team_id": "swacasu",
+      "production": 1.0,
+      "production_per_game": 0.11,
+      "sacks": 1.0,
+      "tfl": 0.0
+     }
+    },
+    {
+     "person_id": "PERS_00013576",
+     "name": "Dinellson Exume",
+     "team_id": "swacgsu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "South Florida",
+     "team_games": 4,
+     "sacks": 1.0,
+     "tfl": 2.5,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 7.5,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.856,
+     "production": 3.5,
+     "production_per_game": 0.88,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00001090",
+     "name": "Deondri Clark",
+     "team_id": "swacmvsu",
+     "class": "Gr.",
+     "newcomer": true,
+     "previous_school": null,
+     "team_games": 4,
+     "sacks": 2.0,
+     "tfl": 1.5,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 2.0,
+     "run_stops": 5.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 2.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.202,
+     "production": 3.5,
+     "production_per_game": 0.88,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00000485",
+     "name": "Keith Green",
+     "team_id": "swacaamu",
+     "class": "So.",
+     "newcomer": false,
+     "previous_school": "Miles College",
+     "team_games": 5,
+     "sacks": 1.5,
+     "tfl": 1.0,
+     "ff": 1.0,
+     "pbu": 0.0,
+     "hurries": 1.0,
+     "run_stops": 4.5,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.738,
+     "production": 3.5,
+     "production_per_game": 0.7,
+     "last_season": {
+      "team_id": "swacaamu",
+      "production": 0.5,
+      "production_per_game": 0.06,
+      "sacks": 0.0,
+      "tfl": 0.5
+     }
+    },
+    {
+     "person_id": "PERS_00010467",
+     "name": "Thurman Rayborn",
+     "team_id": "swactsu",
+     "class": "Gr.",
+     "newcomer": false,
+     "previous_school": "Nw Mississippi Cc",
+     "team_games": 4,
+     "sacks": 1.5,
+     "tfl": 1.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 0.0,
+     "run_stops": 3.5,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 2.5,
+     "epa_taken": 4.83,
+     "production": 3.5,
+     "production_per_game": 0.88,
+     "last_season": {
+      "team_id": "swactsu",
+      "production": 1.0,
+      "production_per_game": 0.12,
+      "sacks": 0.0,
+      "tfl": 0.0
+     }
+    },
+    {
+     "person_id": "PERS_00013957",
+     "name": "Keiyhaun Wilks",
+     "team_id": "swacuapb",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "Mississippi Gulf Coast Cc",
+     "team_games": 3,
+     "sacks": 0.0,
+     "tfl": 3.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 7.5,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 3.858,
+     "production": 3.0,
+     "production_per_game": 1.0,
+     "last_season": null
+    },
+    {
+     "person_id": "PERS_00009122",
+     "name": "Myles Richardson",
+     "team_id": "swacasu",
+     "class": "Sr.",
+     "newcomer": false,
+     "previous_school": "Ezekiel Academy",
+     "team_games": 5,
+     "sacks": 1.0,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 1.0,
+     "run_stops": 6.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 2.916,
+     "production": 3.0,
+     "production_per_game": 0.6,
+     "last_season": {
+      "team_id": "swacasu",
+      "production": 4.0,
+      "production_per_game": 0.44,
+      "sacks": 1.0,
+      "tfl": 1.0
+     }
+    }
+   ]
+  },
+  {
+   "id": "newcomers",
+   "title": "New faces making plays",
+   "type": "player_cards",
+   "data": [
+    {
+     "person_id": "PERS_00013864",
+     "name": "Jordan Thompson",
+     "team_id": "swactsu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "Kentucky State",
+     "team_games": 4,
+     "sacks": 3.5,
+     "tfl": 0.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 3.0,
+     "run_stops": 8.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.5,
+     "late_close_havoc": 0.0,
+     "epa_taken": 7.131,
+     "production": 4.5,
+     "production_per_game": 1.12,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 74,
+     "weight": 230
+    },
+    {
+     "person_id": "PERS_00013595",
+     "name": "Donte Hookfin",
+     "team_id": "swacgsu",
+     "class": "Fr.",
+     "newcomer": true,
+     "previous_school": "Portland State",
+     "team_games": 4,
+     "sacks": 1.5,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 0.0,
+     "run_stops": 4.0,
+     "short_yardage_stops": 1.0,
+     "money_down_havoc": 2.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 3.764,
+     "production": 4.5,
+     "production_per_game": 1.12,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 74,
+     "weight": 265
+    },
+    {
+     "person_id": "PERS_00013469",
+     "name": "Thad Parson",
+     "team_id": "swacasu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "Indy Cc / Point University",
+     "team_games": 5,
+     "sacks": 0.0,
+     "tfl": 4.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 10.0,
+     "short_yardage_stops": 1.5,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.077,
+     "production": 4.0,
+     "production_per_game": 0.8,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 74,
+     "weight": 310
+    },
+    {
+     "person_id": "PERS_00013809",
+     "name": "Bryson Jennings",
+     "team_id": "swacsu",
+     "class": "Sr.",
+     "newcomer": true,
+     "previous_school": "Liberty",
+     "team_games": 4,
+     "sacks": 1.0,
+     "tfl": 2.0,
+     "ff": 0.0,
+     "pbu": 1.0,
+     "hurries": 1.0,
+     "run_stops": 10.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 1.0,
+     "epa_taken": 4.897,
+     "production": 4.0,
+     "production_per_game": 1.0,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 75,
+     "weight": 260
+    },
+    {
+     "person_id": "PERS_00013696",
+     "name": "Christ Kore",
+     "team_id": "swacmvsu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": null,
+     "team_games": 4,
+     "sacks": 1.0,
+     "tfl": 3.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 7.5,
+     "short_yardage_stops": 0.5,
+     "money_down_havoc": 0.5,
+     "late_close_havoc": 1.0,
+     "epa_taken": 6.698,
+     "production": 4.0,
+     "production_per_game": 1.0,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 72,
+     "weight": 298
+    },
+    {
+     "person_id": "PERS_00013576",
+     "name": "Dinellson Exume",
+     "team_id": "swacgsu",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "South Florida",
+     "team_games": 4,
+     "sacks": 1.0,
+     "tfl": 2.5,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 7.5,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 1.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.856,
+     "production": 3.5,
+     "production_per_game": 0.88,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 76,
+     "weight": 245
+    },
+    {
+     "person_id": "PERS_00001090",
+     "name": "Deondri Clark",
+     "team_id": "swacmvsu",
+     "class": "Gr.",
+     "newcomer": true,
+     "previous_school": null,
+     "team_games": 4,
+     "sacks": 2.0,
+     "tfl": 1.5,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 2.0,
+     "run_stops": 5.0,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 2.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 5.202,
+     "production": 3.5,
+     "production_per_game": 0.88,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 74,
+     "weight": 215
+    },
+    {
+     "person_id": "PERS_00013957",
+     "name": "Keiyhaun Wilks",
+     "team_id": "swacuapb",
+     "class": "Jr.",
+     "newcomer": true,
+     "previous_school": "Mississippi Gulf Coast Cc",
+     "team_games": 3,
+     "sacks": 0.0,
+     "tfl": 3.0,
+     "ff": 0.0,
+     "pbu": 0.0,
+     "hurries": 0.0,
+     "run_stops": 7.5,
+     "short_yardage_stops": 0.0,
+     "money_down_havoc": 0.0,
+     "late_close_havoc": 0.0,
+     "epa_taken": 3.858,
+     "production": 3.0,
+     "production_per_game": 1.0,
+     "last_season": null,
+     "is_transfer": true,
+     "height": 77,
+     "weight": 260
+    }
+   ]
+  },
+  {
+   "id": "risers_fallers",
+   "title": "Biggest jumps and drops (returning linemen)",
+   "type": "dumbbell",
+   "metric": "production per game, 2025 to 2026",
+   "note": "Returners with 2+ production in 2025 League games; show the top 6 and bottom 6.",
+   "data": [
+    {
+     "person_id": "PERS_00011074",
+     "name": "Jon Horton",
+     "team_id": "swacgsu",
+     "production_per_game_2025": 0.31,
+     "production_per_game_2026": 2.12,
+     "delta_per_game": 1.81,
+     "sacks_2025": 1.5,
+     "sacks_2026": 4.0,
+     "tfl_2025": 1.0,
+     "tfl_2026": 3.5,
+     "name_team": "Grambling"
+    },
+    {
+     "person_id": "PERS_00012335",
+     "name": "Garfield Lawrence",
+     "team_id": "swactsu",
+     "production_per_game_2025": 0.69,
+     "production_per_game_2026": 1.12,
+     "delta_per_game": 0.43,
+     "sacks_2025": 2.5,
+     "sacks_2026": 2.5,
+     "tfl_2025": 3.0,
+     "tfl_2026": 2.0,
+     "name_team": "TSU"
+    },
+    {
+     "person_id": "PERS_00011158",
+     "name": "Tymon Wells",
+     "team_id": "swacjsu",
+     "production_per_game_2025": 0.33,
+     "production_per_game_2026": 0.62,
+     "delta_per_game": 0.29,
+     "sacks_2025": 1.0,
+     "sacks_2026": 1.5,
+     "tfl_2025": 2.0,
+     "tfl_2026": 0.0,
+     "name_team": "J-State"
+    },
+    {
+     "person_id": "PERS_00011990",
+     "name": "Timothy Gulley",
+     "team_id": "swacbcu",
+     "production_per_game_2025": 0.22,
+     "production_per_game_2026": 0.5,
+     "delta_per_game": 0.28,
+     "sacks_2025": 0.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 0.0,
+     "tfl_2026": 2.0,
+     "name_team": "B-CU"
+    },
+    {
+     "person_id": "PERS_00000465",
+     "name": "Andre Tibbs",
+     "team_id": "swacaamu",
+     "production_per_game_2025": 0.22,
+     "production_per_game_2026": 0.5,
+     "delta_per_game": 0.28,
+     "sacks_2025": 1.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 1.0,
+     "tfl_2026": 1.5,
+     "name_team": "AAMU"
+    },
+    {
+     "person_id": "PERS_00009975",
+     "name": "Arenza Davis",
+     "team_id": "swacaamu",
+     "production_per_game_2025": 0.28,
+     "production_per_game_2026": 0.5,
+     "delta_per_game": 0.22,
+     "sacks_2025": 0.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 2.5,
+     "tfl_2026": 1.5,
+     "name_team": "AAMU"
+    },
+    {
+     "person_id": "PERS_00011876",
+     "name": "Kenneth Andrews",
+     "team_id": "swacalc",
+     "production_per_game_2025": 0.22,
+     "production_per_game_2026": 0.38,
+     "delta_per_game": 0.16,
+     "sacks_2025": 0.0,
+     "sacks_2026": 1.0,
+     "tfl_2025": 2.0,
+     "tfl_2026": 0.5,
+     "name_team": "Alcorn"
+    },
+    {
+     "person_id": "PERS_00009122",
+     "name": "Myles Richardson",
+     "team_id": "swacasu",
+     "production_per_game_2025": 0.44,
+     "production_per_game_2026": 0.6,
+     "delta_per_game": 0.16,
+     "sacks_2025": 1.0,
+     "sacks_2026": 1.0,
+     "tfl_2025": 1.0,
+     "tfl_2026": 2.0,
+     "name_team": "Bama State"
+    },
+    {
+     "person_id": "PERS_00012207",
+     "name": "Malik Gucake",
+     "team_id": "swacpvamu",
+     "production_per_game_2025": 0.65,
+     "production_per_game_2026": 0.8,
+     "delta_per_game": 0.15,
+     "sacks_2025": 2.0,
+     "sacks_2026": 2.0,
+     "tfl_2025": 2.5,
+     "tfl_2026": 2.0,
+     "name_team": "PVAMU"
+    },
+    {
+     "person_id": "PERS_00011122",
+     "name": "Kilas Francis",
+     "team_id": "swacgsu",
+     "production_per_game_2025": 0.31,
+     "production_per_game_2026": 0.38,
+     "delta_per_game": 0.07,
+     "sacks_2025": 1.5,
+     "sacks_2026": 0.5,
+     "tfl_2025": 1.0,
+     "tfl_2026": 1.0,
+     "name_team": "Grambling"
+    },
+    {
+     "person_id": "PERS_00010421",
+     "name": "Lance Joseph",
+     "team_id": "swacsu",
+     "production_per_game_2025": 0.23,
+     "production_per_game_2026": 0.25,
+     "delta_per_game": 0.02,
+     "sacks_2025": 1.5,
+     "sacks_2026": 1.0,
+     "tfl_2025": 1.0,
+     "tfl_2026": 0.0,
+     "name_team": "Southern"
+    },
+    {
+     "person_id": "PERS_00011917",
+     "name": "Patrick Smith Jr.",
+     "team_id": "swacasu",
+     "production_per_game_2025": 0.33,
+     "production_per_game_2026": 0.3,
+     "delta_per_game": -0.03,
+     "sacks_2025": 1.0,
+     "sacks_2026": 1.5,
+     "tfl_2025": 1.0,
+     "tfl_2026": 0.0,
+     "name_team": "Bama State"
+    },
+    {
+     "person_id": "PERS_00011033",
+     "name": "Antonio Camon",
+     "team_id": "swacfamu",
+     "production_per_game_2025": 0.3,
+     "production_per_game_2026": 0.25,
+     "delta_per_game": -0.05,
+     "sacks_2025": 2.5,
+     "sacks_2026": 0.0,
+     "tfl_2025": 0.5,
+     "tfl_2026": 1.0,
+     "name_team": "FAMU"
+    },
+    {
+     "person_id": "PERS_00011918",
+     "name": "Jaylan Jarrett",
+     "team_id": "swacasu",
+     "production_per_game_2025": 0.28,
+     "production_per_game_2026": 0.2,
+     "delta_per_game": -0.08,
+     "sacks_2025": 0.0,
+     "sacks_2026": 0.5,
+     "tfl_2025": 2.5,
+     "tfl_2026": 0.5,
+     "name_team": "Bama State"
+    },
+    {
+     "person_id": "PERS_00011814",
+     "name": "Jorhdan Brown",
+     "team_id": "swacaamu",
+     "production_per_game_2025": 0.22,
+     "production_per_game_2026": 0.1,
+     "delta_per_game": -0.12,
+     "sacks_2025": 0.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 2.0,
+     "tfl_2026": 0.5,
+     "name_team": "AAMU"
+    },
+    {
+     "person_id": "PERS_00010425",
+     "name": "Jayden Rogers",
+     "team_id": "swacsu",
+     "production_per_game_2025": 0.18,
+     "production_per_game_2026": 0.0,
+     "delta_per_game": -0.18,
+     "sacks_2025": 0.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 2.0,
+     "tfl_2026": 0.0,
+     "name_team": "Southern"
+    },
+    {
+     "person_id": "PERS_00012048",
+     "name": "Xavier Perkins",
+     "team_id": "swacfamu",
+     "production_per_game_2025": 0.2,
+     "production_per_game_2026": 0.0,
+     "delta_per_game": -0.2,
+     "sacks_2025": 0.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 2.0,
+     "tfl_2026": 0.0,
+     "name_team": "FAMU"
+    },
+    {
+     "person_id": "PERS_00006897",
+     "name": "Michael Joiner Jr.",
+     "team_id": "swacasu",
+     "production_per_game_2025": 0.22,
+     "production_per_game_2026": 0.0,
+     "delta_per_game": -0.22,
+     "sacks_2025": 1.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 0.0,
+     "tfl_2026": 0.0,
+     "name_team": "Bama State"
+    },
+    {
+     "person_id": "PERS_00011954",
+     "name": "Isaiah Washburn",
+     "team_id": "swacbcu",
+     "production_per_game_2025": 0.72,
+     "production_per_game_2026": 0.5,
+     "delta_per_game": -0.22,
+     "sacks_2025": 4.5,
+     "sacks_2026": 1.5,
+     "tfl_2025": 1.0,
+     "tfl_2026": 0.5,
+     "name_team": "B-CU"
+    },
+    {
+     "person_id": "PERS_00012384",
+     "name": "Tylan Cole",
+     "team_id": "swacuapb",
+     "production_per_game_2025": 0.56,
+     "production_per_game_2026": 0.33,
+     "delta_per_game": -0.23,
+     "sacks_2025": 1.0,
+     "sacks_2026": 1.0,
+     "tfl_2025": 3.5,
+     "tfl_2026": 0.0,
+     "name_team": "UAPB"
+    },
+    {
+     "person_id": "PERS_00009987",
+     "name": "Eric Thomas Jr",
+     "team_id": "swacalc",
+     "production_per_game_2025": 0.28,
+     "production_per_game_2026": 0.0,
+     "delta_per_game": -0.28,
+     "sacks_2025": 2.0,
+     "sacks_2026": 0,
+     "tfl_2025": 0.5,
+     "tfl_2026": 0,
+     "name_team": "Alcorn"
+    },
+    {
+     "person_id": "PERS_00012419",
+     "name": "Marquis Cagle",
+     "team_id": "swacuapb",
+     "production_per_game_2025": 0.5,
+     "production_per_game_2026": 0.0,
+     "delta_per_game": -0.5,
+     "sacks_2025": 1.0,
+     "sacks_2026": 0.0,
+     "tfl_2025": 2.0,
+     "tfl_2026": 0.0,
+     "name_team": "UAPB"
+    },
+    {
+     "person_id": "PERS_00009483",
+     "name": "Ckelby Givens",
+     "team_id": "swacsu",
+     "production_per_game_2025": 1.68,
+     "production_per_game_2026": 0.75,
+     "delta_per_game": -0.93,
+     "sacks_2025": 8.5,
+     "sacks_2026": 1.0,
+     "tfl_2025": 8.0,
+     "tfl_2026": 1.0,
+     "name_team": "Southern"
+    }
+   ]
+  },
+  {
+   "id": "size",
+   "title": "Are lines lighter?",
+   "type": "lines_and_bars",
+   "note": "Roster-listed weights, 180-400 lb kept.",
+   "data": {
+    "by_season": [
+     {
+      "season": 2019,
+      "avg_listed_dl_weight": 263.7,
+      "production_weighted_dl_weight": 266.3
+     },
+     {
+      "season": 2021,
+      "avg_listed_dl_weight": 263.6,
+      "production_weighted_dl_weight": 264.1
+     },
+     {
+      "season": 2022,
+      "avg_listed_dl_weight": 263.7,
+      "production_weighted_dl_weight": 262.7
+     },
+     {
+      "season": 2023,
+      "avg_listed_dl_weight": 261.8,
+      "production_weighted_dl_weight": 258.1
+     },
+     {
+      "season": 2024,
+      "avg_listed_dl_weight": 263.6,
+      "production_weighted_dl_weight": 260.6
+     },
+     {
+      "season": 2025,
+      "avg_listed_dl_weight": 267.3,
+      "production_weighted_dl_weight": 266.2
+     },
+     {
+      "season": 2026,
+      "avg_listed_dl_weight": 266.0,
+      "production_weighted_dl_weight": 261.5
+     }
+    ],
+    "teams": [
+     {
+      "team_id": "swacaamu",
+      "name": "AAMU",
+      "weight_2025": 252.7,
+      "weight_2026": 251.8
+     },
+     {
+      "team_id": "swacalc",
+      "name": "Alcorn",
+      "weight_2025": 276.8,
+      "weight_2026": 267.7
+     },
+     {
+      "team_id": "swacasu",
+      "name": "Bama State",
+      "weight_2025": 268.1,
+      "weight_2026": 262.9
+     },
+     {
+      "team_id": "swacbcu",
+      "name": "B-CU",
+      "weight_2025": 262.5,
+      "weight_2026": 269.0
+     },
+     {
+      "team_id": "swacfamu",
+      "name": "FAMU",
+      "weight_2025": 258.0,
+      "weight_2026": 255.7
+     },
+     {
+      "team_id": "swacgsu",
+      "name": "Grambling",
+      "weight_2025": 265.8,
+      "weight_2026": 266.8
+     },
+     {
+      "team_id": "swacjsu",
+      "name": "J-State",
+      "weight_2025": 268.6,
+      "weight_2026": 276.4
+     },
+     {
+      "team_id": "swacmvsu",
+      "name": "MVSU",
+      "weight_2025": 268.5,
+      "weight_2026": 254.7
+     },
+     {
+      "team_id": "swacpvamu",
+      "name": "PVAMU",
+      "weight_2025": 293.8,
+      "weight_2026": 274.4
+     },
+     {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "weight_2025": 267.8,
+      "weight_2026": 274.6
+     },
+     {
+      "team_id": "swactsu",
+      "name": "TSU",
+      "weight_2025": 268.7,
+      "weight_2026": 262.3
+     },
+     {
+      "team_id": "swacuapb",
+      "name": "UAPB",
+      "weight_2025": 269.9,
+      "weight_2026": 270.1
+     }
+    ]
+   }
+  },
+  {
+   "id": "depth",
+   "title": "How many linemen are making plays",
+   "type": "grouped_bars",
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "dl_with_production_2025": 10,
+     "dl_with_production_2026": 11,
+     "top3_share_pct": 45.9
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "dl_with_production_2025": 8,
+     "dl_with_production_2026": 4,
+     "top3_share_pct": 90.0
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "dl_with_production_2025": 9,
+     "dl_with_production_2026": 12,
+     "top3_share_pct": 47.8
+    },
+    {
+     "team_id": "swacbcu",
+     "name": "B-CU",
+     "dl_with_production_2025": 7,
+     "dl_with_production_2026": 5,
+     "top3_share_pct": 76.9
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "dl_with_production_2025": 11,
+     "dl_with_production_2026": 5,
+     "top3_share_pct": 73.3
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "dl_with_production_2025": 11,
+     "dl_with_production_2026": 9,
+     "top3_share_pct": 68.8
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "dl_with_production_2025": 9,
+     "dl_with_production_2026": 4,
+     "top3_share_pct": 82.4
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "dl_with_production_2025": 7,
+     "dl_with_production_2026": 5,
+     "top3_share_pct": 80.8
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "dl_with_production_2025": 6,
+     "dl_with_production_2026": 8,
+     "top3_share_pct": 57.7
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "dl_with_production_2025": 8,
+     "dl_with_production_2026": 4,
+     "top3_share_pct": 88.9
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "dl_with_production_2025": 11,
+     "dl_with_production_2026": 8,
+     "top3_share_pct": 69.4
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "dl_with_production_2025": 6,
+     "dl_with_production_2026": 4,
+     "top3_share_pct": 90.9
+    }
+   ]
+  },
+  {
+   "id": "stat_crew_hurries",
+   "title": "Caution: hurries depend on who keeps the book",
+   "type": "bars",
+   "note": "Home stat crew charting rate. This is why the report leads with sacks and TFL, never pressure rate.",
+   "data": [
+    {
+     "team_id": "swacaamu",
+     "name": "AAMU",
+     "hurries_per_100_dropbacks": 9.4,
+     "dropbacks": 128
+    },
+    {
+     "team_id": "swacalc",
+     "name": "Alcorn",
+     "hurries_per_100_dropbacks": 1.3,
+     "dropbacks": 150
+    },
+    {
+     "team_id": "swacasu",
+     "name": "Bama State",
+     "hurries_per_100_dropbacks": 8.4,
+     "dropbacks": 83
+    },
+    {
+     "team_id": "swacfamu",
+     "name": "FAMU",
+     "hurries_per_100_dropbacks": 4.4,
+     "dropbacks": 90
+    },
+    {
+     "team_id": "swacgsu",
+     "name": "Grambling",
+     "hurries_per_100_dropbacks": 13.6,
+     "dropbacks": 169
+    },
+    {
+     "team_id": "swacjsu",
+     "name": "J-State",
+     "hurries_per_100_dropbacks": 11.4,
+     "dropbacks": 185
+    },
+    {
+     "team_id": "swacmvsu",
+     "name": "MVSU",
+     "hurries_per_100_dropbacks": 10.3,
+     "dropbacks": 116
+    },
+    {
+     "team_id": "swacpvamu",
+     "name": "PVAMU",
+     "hurries_per_100_dropbacks": 12.7,
+     "dropbacks": 158
+    },
+    {
+     "team_id": "swacsu",
+     "name": "Southern",
+     "hurries_per_100_dropbacks": 3.9,
+     "dropbacks": 102
+    },
+    {
+     "team_id": "swactsu",
+     "name": "TSU",
+     "hurries_per_100_dropbacks": 9.8,
+     "dropbacks": 112
+    },
+    {
+     "team_id": "swacuapb",
+     "name": "UAPB",
+     "hurries_per_100_dropbacks": 1.6,
+     "dropbacks": 62
+    }
+   ]
+  }
+ ]
+}

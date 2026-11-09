@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { Box } from "@chakra-ui/react";
-import { WeekCentralGameRowJ } from "../../test/WeekCentralGameRowJ";
+import { WeekCentralGameRowJ } from "../../../molecules/game/weekRow/WeekCentralGameRow";
 import { WeekCentralGameRowMobile } from "./WeekCentralGameRowMobile";
 import { getSelectedGameTheme, toGradientRow } from "./weekCentralAdapter";
 import { useLayoutDensity } from "../../../../hooks/useLayoutDensity";

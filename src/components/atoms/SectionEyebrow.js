@@ -7,7 +7,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 //
 // Layout decisions stay in the parent — this is the label row only.
 export const SectionEyebrow = ({ children, rightContent, dot = true, icon = null, dotColor = "#E53E3E", mb = 3 }) => (
-  <Flex align="center" justify="space-between" gap={3} mb={mb} pb={2} borderBottom="0.0625rem solid" borderColor="rgba(255,255,255,0.08)">
+  <Flex align="center" justify="space-between" gap={3} mb={mb} pb={2} borderBottom="0.0625rem solid" borderColor="rgba(var(--gg-fg), 0.08)">
     <Flex align="center" gap={2} minW={0}>
       {dot && <Box w="0.375rem" h="0.375rem" bg={dotColor} borderRadius="full" flexShrink={0} />}
       {icon && (
@@ -18,7 +18,7 @@ export const SectionEyebrow = ({ children, rightContent, dot = true, icon = null
       <Text
         fontSize="clamp(0.55rem, 0.65vw, 0.7rem)"
         fontWeight="black"
-        color="rgba(255,255,255,0.5)"
+        color="rgba(var(--gg-fg), calc(0.5 + var(--gg-faint-boost, 0)))"
         textTransform="uppercase"
         letterSpacing="0.16em"
         lineHeight={1.1}

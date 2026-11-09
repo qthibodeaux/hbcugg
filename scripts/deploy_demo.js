@@ -33,6 +33,10 @@ if (!fs.existsSync(path.join(BUILD, ".nojekyll"))) fs.writeFileSync(path.join(BU
 // Fresh repo inside build/ every time (the build step wipes build/ anyway).
 fs.rmSync(path.join(BUILD, ".git"), { recursive: true, force: true });
 git(["init", "-q", "-b", "gh-pages"], BUILD);
+// Files go up byte for byte. Without this, Windows git (autocrlf) prints a
+// "LF will be replaced by CRLF" warning for every text file in the build.
+git(["config", "core.autocrlf", "false"], BUILD);
+git(["config", "core.safecrlf", "false"], BUILD);
 git(["add", "-A"], BUILD);
 git(["-c", `user.name=${name}`, "-c", `user.email=${email}`, "commit", "-q", "-m", `Demo build ${new Date().toISOString()}`], BUILD);
 console.log(`pushing build/ to ${remote} gh-pages …`);

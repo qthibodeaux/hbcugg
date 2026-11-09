@@ -56,6 +56,7 @@ const Slot = ({ cols = 1, rows = 1, radius = "none", overflow = "hidden", childr
 // 1. Full page:     <PageShell>{slots}</PageShell>
 // 2. Hybrid list:   <PageShell listContent={<List />}>{slots}</PageShell>
 // 3. Embedded tab:  <PageShell embedded>{slots}</PageShell>  ← no nav padding, no outer shell
+//    `bleed` also drops the shell's own padding and its 1100px content cap: it fills its parent exactly.
 // `flushMobile`: on phones (base breakpoint) the slots touch the screen edges
 // and each other — no page padding, no grid gap. The mobile design language
 // for pages still on the desktop grid; md and up are unchanged.
@@ -63,7 +64,7 @@ const FLUSH_GAP = { ...GRID_GAP, base: "0px" };
 const FLUSH_PX = { ...PAGE_PX, base: 0 };
 const FLUSH_PT = { ...PAGE_PT, base: 0 };
 
-const PageShell = ({ children, listContent, embedded = false, flushMobile = false }) => {
+const PageShell = ({ children, listContent, embedded = false, bleed = false, flushMobile = false }) => {
   const gap = flushMobile ? FLUSH_GAP : GRID_GAP;
   const px = flushMobile ? FLUSH_PX : PAGE_PX;
   const pt = flushMobile ? FLUSH_PT : PAGE_PT;
@@ -81,7 +82,7 @@ const PageShell = ({ children, listContent, embedded = false, flushMobile = fals
 
   if (embedded) {
     return (
-      <Box maxW={PAGE_MAX_W} mx="auto" px={px} pt={pt} pb={10} containerType="inline-size">
+      <Box maxW={bleed ? "none" : PAGE_MAX_W} mx="auto" px={bleed ? 0 : px} pt={bleed ? 0 : pt} pb={bleed ? 0 : 10} containerType="inline-size">
         {grid}
       </Box>
     );

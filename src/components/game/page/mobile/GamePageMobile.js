@@ -3,13 +3,14 @@ import { Box, Flex, Spinner, Text } from "@chakra-ui/react";
 import { GameBannerMobile } from "./GameBannerMobile";
 import { GameSectionHeader } from "./GameSectionHeader";
 import { useJumpSections } from "./useJumpSections";
-import { JUMP_MARGIN, Part, SUMMARY_PARTS, SummaryMobile } from "./SummaryMobile";
+import { SUMMARY_PARTS, SummaryMobile } from "./SummaryMobile";
+import { JUMP_MARGIN, Part } from "./MobileSummaryPrimitives";
 import { PassingProductionClean } from "../boxscore/PassingProductionClean";
 import { RushingProductionClean } from "../boxscore/RushingProductionClean";
 import { DefenseProductionClean } from "../boxscore/DefenseProductionClean";
 import { SpecialTeamsProductionClean } from "../boxscore/SpecialTeamsProductionClean";
 import { DataRoomTab, TEAM_STATS_PARTS } from "../teamstats/DataRoomTab";
-import { DriveSummaryMobile } from "../summary/GameSummaryTabV2";
+import { DriveSummaryMobile } from "../drives/DriveSummaryCards";
 import { PlayByPlayTab } from "../pbp/PlayByPlayTab";
 
 // ─────────────────────────────────────────────────────────────────────────────

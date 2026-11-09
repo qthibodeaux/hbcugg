@@ -28,7 +28,7 @@
     "sync:data": "node scripts/sync_fe_docs.js",
     "start": "set NODE_OPTIONS=--max-old-space-size=4096 && react-scripts start",
     "build": "node scripts/sync_fe_docs.js && set NODE_OPTIONS=--max-old-space-size=4096 && react-scripts build",
-    "build:demo": "node scripts/sync_fe_docs.js && set REACT_APP_DEMO=1&& set PUBLIC_URL=/hbcugg&& set NODE_OPTIONS=--max-old-space-size=4096 && react-scripts build && node scripts/prune_demo_build.js && node scripts/rebase_demo_build.js",
+    "build:demo": "node scripts/build_demo.js",
     "deploy:demo": "node scripts/deploy_demo.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

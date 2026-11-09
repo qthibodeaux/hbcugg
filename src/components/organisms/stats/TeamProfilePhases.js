@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
-import { Section, Kicker } from "./TeamAnalyticsTabs";
+import { Section, Kicker } from "./analyticsTabs/AnalyticsPrimitives";
 import { useCountingTeamStats } from "../../../hooks/useSWACData";
 import { glossaryFor, ordinal } from "../../../pages/analytics/metricGlossary";
 import {

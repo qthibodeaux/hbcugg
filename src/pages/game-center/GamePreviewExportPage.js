@@ -67,13 +67,13 @@ const GamePreviewExportPage = () => {
       <Flex maxW={`${POSTER_W}px`} mx="auto" align="center" justify="space-between" mb={4} gap={3} flexWrap="wrap">
         <Box>
           <Text fontSize="xs" fontWeight="black" color="text.secondary" textTransform="uppercase" letterSpacing="0.2em">Export preview</Text>
-          <Text fontSize="lg" fontWeight="black" color="white" textTransform="uppercase">
+          <Text fontSize="lg" fontWeight="black" color="text.primary" textTransform="uppercase">
             {teamShort(model.away.id)} at {teamShort(model.home.id)}
           </Text>
         </Box>
         <Flex gap={2} flexWrap="wrap">
-          <Button as={Link} to={previewPath(gameId)} size="sm" variant="ghost" color="white">Back to preview</Button>
-          <Button size="sm" bg="whiteAlpha.200" color="white" _hover={{ bg: "whiteAlpha.300" }} onClick={share} disabled={busy != null}>
+          <Button as={Link} to={previewPath(gameId)} size="sm" variant="ghost" color="text.primary">Back to preview</Button>
+          <Button size="sm" bg="line.strong" color="text.primary" _hover={{ bg: "line.hover" }} onClick={share} disabled={busy != null}>
             {busy === "share" ? "Preparing…" : "Share"}
           </Button>
           <Button size="sm" bg="brand.500" color="white" _hover={{ bg: "brand.600" }} onClick={save} disabled={busy != null}>
@@ -84,7 +84,7 @@ const GamePreviewExportPage = () => {
       {error ? <Text maxW={`${POSTER_W}px`} mx="auto" mb={4} fontSize="sm" color="#ef4444" fontWeight="bold">{error}</Text> : null}
       <Flex justify="center">
         <Box w={`${POSTER_W}px`} maxW="100%" overflowX="auto">
-          <Box border="1px solid" borderColor="whiteAlpha.100" borderRadius="md" overflow="hidden" w="fit-content">
+          <Box border="1px solid" borderColor="line" borderRadius="md" overflow="hidden" w="fit-content">
             <PreviewPoster model={model} innerRef={ref} />
           </Box>
         </Box>

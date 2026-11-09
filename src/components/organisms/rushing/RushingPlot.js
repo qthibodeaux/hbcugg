@@ -1,6 +1,8 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { LABEL_SIZE, placeRushingLabels } from "./rushingPlotLabels";
+import { RushingPlotHover, RushingOffChart } from "./RushingPlotDetails";
+import { Box } from "@chakra-ui/react";
 import { PlotBox, RushingMarker } from "./RushingMarker";
-import { DATA, EXTRAS, TEAM_BY_V5, lastName, ringOf, shortOf, tickText, ticksFor } from "./rushingModel";
+import { EXTRAS, TEAM_BY_V5, lastName, shortOf, tickText, ticksFor } from "./rushingModel";
 
 // Scatter and bubble: slides 1-5 and 7. One component, driven by the chart
 // object — axes with min/max/reference lines, quadrant corner labels, a y = x
@@ -11,7 +13,7 @@ import { DATA, EXTRAS, TEAM_BY_V5, lastName, ringOf, shortOf, tickText, ticksFor
 export const PLOT_W = 1000;
 export const PLOT_H = 720;
 const PAD = { l: 74, r: 34, t: 58, b: 72 };
-const GREY = "rgba(255,255,255,0.42)";
+const GREY = "rgba(var(--gg-fg), 0.42)";
 // Each quadrant its own colour: a light wash, and the corner label in the same hue.
 const QUAD = {
   top_left: { fill: "rgba(214,190,120,0.09)", ink: "#D6BE78" },
@@ -19,10 +21,6 @@ const QUAD = {
   bottom_left: { fill: "rgba(229,62,62,0.10)", ink: "#FC8181" },
   bottom_right: { fill: "rgba(99,130,190,0.10)", ink: "#93A9D6" },
 };
-const LABEL_SIZE = 15;
-
-const valueText = (axis, v) => (v == null ? "—" : axis?.format === "percent" ? `${Number(v).toFixed(1)}%` : Number(v).toFixed(2));
-
 export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor = () => [] }) => {
   const { x: ax, y: ay } = chart;
   const left = PAD.l;
@@ -54,27 +52,7 @@ export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor 
   const dimmed = (p) => anyHighlight && !p.highlight;
   const labelText = (p) => (id === "power_and_stuffs" ? p.power : p.short);
 
-  // Labels go right of the marker, else left, else a step up or down — whichever
-  // is the first spot that stays in the frame and off every marker and label.
-  const placed = (() => {
-    const boxes = pts.map((p) => ({ x0: p.cx - p.r, x1: p.cx + p.r, y0: p.cy - p.r, y1: p.cy + p.r }));
-    const hit = (b) => boxes.some((o) => b.x0 < o.x1 && b.x1 > o.x0 && b.y0 < o.y1 && b.y1 > o.y0);
-    const out = {};
-    pts.filter(labelled).sort((a, b) => a.cy - b.cy).forEach((p) => {
-      const w = String(labelText(p) ?? "").length * LABEL_SIZE * 0.62;
-      const h = LABEL_SIZE * 1.15;
-      const gap = p.r + 7;
-      const tries = [{ side: 1, dy: 0 }, { side: -1, dy: 0 }, { side: 1, dy: h }, { side: -1, dy: h }, { side: 1, dy: -h }, { side: -1, dy: -h }];
-      let pick = null;
-      for (const t of tries) {
-        const x0 = t.side > 0 ? p.cx + gap : p.cx - gap - w;
-        const b = { x0, x1: x0 + w, y0: p.cy + t.dy - h / 2, y1: p.cy + t.dy + h / 2 };
-        if (b.x0 >= left && b.x1 <= right && !hit(b)) { boxes.push(b); pick = t; break; }
-      }
-      out[p.key] = pick ?? (p.cx > right - 140 ? { side: -1, dy: 0 } : { side: 1, dy: 0 });
-    });
-    return out;
-  })();
+  const placed = placeRushingLabels(pts, { left, right, labelled, labelText });
 
   const xRef = ax.reference;
   const yRef = ay.reference;
@@ -99,13 +77,13 @@ export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor 
 
           {yTicks.map((t) => (
             <g key={`y${t}`}>
-              <line x1={left} x2={right} y1={py(t)} y2={py(t)} stroke="rgba(255,255,255,0.06)" />
+              <line x1={left} x2={right} y1={py(t)} y2={py(t)} stroke="rgba(var(--gg-fg), 0.06)" />
               <text x={left - 12} y={py(t) + 5} textAnchor="end" fontSize="15" fontWeight="800" fill="#A1A1AA">{tickText(ay)(t)}</text>
             </g>
           ))}
           {xTicks.map((t) => (
             <g key={`x${t}`}>
-              <line x1={px(t)} x2={px(t)} y1={top} y2={bottom} stroke="rgba(255,255,255,0.06)" />
+              <line x1={px(t)} x2={px(t)} y1={top} y2={bottom} stroke="rgba(var(--gg-fg), 0.06)" />
               <text x={px(t)} y={bottom + 26} textAnchor="middle" fontSize="15" fontWeight="800" fill="#A1A1AA">{tickText(ax)(t)}</text>
             </g>
           ))}
@@ -117,7 +95,7 @@ export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor 
               <rect x={qx} y={qy} width={right - qx} height={bottom - qy} fill={QUAD.bottom_right.fill} />
             </g>
           )}
-          <rect x={left} y={top} width={right - left} height={bottom - top} fill="none" stroke="rgba(255,255,255,0.14)" />
+          <rect x={left} y={top} width={right - left} height={bottom - top} fill="none" stroke="rgba(var(--gg-fg), 0.14)" />
 
           {chart.quadrants && [
             ["top_left", left + 12, top + 24, "start"],
@@ -128,27 +106,27 @@ export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor 
 
           {xRef && (
             <g>
-              <line x1={px(xRef.value)} x2={px(xRef.value)} y1={top} y2={bottom} stroke="rgba(255,255,255,0.5)" strokeDasharray="6 6" />
-              <text x={px(xRef.value) + 7} y={bottom - 8} fontSize="12" fontWeight="900" letterSpacing="1" fill="rgba(255,255,255,0.55)">{xRef.label.toUpperCase()}</text>
+              <line x1={px(xRef.value)} x2={px(xRef.value)} y1={top} y2={bottom} stroke="rgba(var(--gg-fg), 0.5)" strokeDasharray="6 6" />
+              <text x={px(xRef.value) + 7} y={bottom - 8} fontSize="12" fontWeight="900" letterSpacing="1" fill="rgba(var(--gg-fg), 0.55)">{xRef.label.toUpperCase()}</text>
             </g>
           )}
           {yRef && (
             <g>
-              <line x1={left} x2={right} y1={py(yRef.value)} y2={py(yRef.value)} stroke="rgba(255,255,255,0.5)" strokeDasharray="6 6" />
-              <text x={right - 6} y={py(yRef.value) - 7} textAnchor="end" fontSize="12" fontWeight="900" letterSpacing="1" fill="rgba(255,255,255,0.55)">{yRef.label.toUpperCase()}</text>
+              <line x1={left} x2={right} y1={py(yRef.value)} y2={py(yRef.value)} stroke="rgba(var(--gg-fg), 0.5)" strokeDasharray="6 6" />
+              <text x={right - 6} y={py(yRef.value) - 7} textAnchor="end" fontSize="12" fontWeight="900" letterSpacing="1" fill="rgba(var(--gg-fg), 0.55)">{yRef.label.toUpperCase()}</text>
             </g>
           )}
 
           {chart.diagonal && dHi > dLo && (
             <g>
-              <line x1={px(dLo)} y1={py(dLo)} x2={px(dHi)} y2={py(dHi)} stroke="rgba(255,255,255,0.4)" strokeDasharray="8 6" strokeWidth="1.5" />
+              <line x1={px(dLo)} y1={py(dLo)} x2={px(dHi)} y2={py(dHi)} stroke="rgba(var(--gg-fg), 0.4)" strokeDasharray="8 6" strokeWidth="1.5" />
               <text x={right - 12} y={bottom - 40} textAnchor="end" fontSize="14" fontWeight="800" fill={GREY}>{chart.diagonal.label}</text>
             </g>
           )}
 
 
-          <text x={left} y={top - 20} fontSize="17" fontWeight="900" fill="#F4F4F5">{ay.label} ↑</text>
-          <text x={right} y={PLOT_H - 8} textAnchor="end" fontSize="17" fontWeight="900" fill="#F4F4F5">{ax.label} →</text>
+          <text x={left} y={top - 20} fontSize="17" fontWeight="900" fill="var(--gg-text-primary)">{ay.label} ↑</text>
+          <text x={right} y={PLOT_H - 8} textAnchor="end" fontSize="17" fontWeight="900" fill="var(--gg-text-primary)">{ax.label} →</text>
 
           {pts.filter(labelled).map((p) => {
             const lab = placed[p.key] ?? { side: 1, dy: 0 };
@@ -160,8 +138,8 @@ export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor 
                 textAnchor={lab.side > 0 ? "start" : "end"}
                 fontSize={LABEL_SIZE}
                 fontWeight="900"
-                fill="#F4F4F5"
-                stroke="#0B0B0D"
+                fill="var(--gg-text-primary)"
+                stroke="var(--gg-bg-primary)"
                 strokeWidth="4"
                 paintOrder="stroke"
                 opacity={dimmed(p) ? 0.55 : 1}
@@ -188,31 +166,10 @@ export const RushingPlot = ({ id, chart, hover = null, setHover = null, srcsFor 
           />
         ))}
 
-        {hovered && (
-          <Box position="absolute" top={3} right={3} zIndex={8} bg="bg.primary" border="1px solid" borderColor="whiteAlpha.200" borderRadius="md" px={3} py={2} pointerEvents="none">
-            <Text fontSize="sm" fontWeight="900" color="text.primary">{hovered.name}</Text>
-            <Text fontSize="xs" color="text.secondary" mt={1}>{ax.label}: {valueText(ax, hovered.x)}</Text>
-            <Text fontSize="xs" color="text.secondary">{ay.label}: {valueText(ay, hovered.y)}</Text>
-            {extras.map(([k, label, fmt]) => (hovered[k] != null ? <Text key={k} fontSize="xs" color="text.secondary">{label}: {fmt(hovered[k])}</Text> : null))}
-          </Box>
-        )}
+        {hovered && <RushingPlotHover hovered={hovered} ax={ax} ay={ay} extras={extras} />}
       </PlotBox>
 
-      {chart.off_chart?.length > 0 && (
-        <Flex wrap="wrap" gap={5} mt={3} px={2}>
-          {chart.off_chart.map((o) => {
-            const n = parseInt(o.power, 10);
-            const team = TEAM_BY_V5[o.team_id];
-            return (
-              <Flex key={o.team_id} align="center" gap={2}>
-                {team?.logo && <Image src={team.logo} alt="" boxSize="1.4rem" objectFit="contain" />}
-                <Text fontSize="sm" fontWeight="800" style={{ color: ringOf(team) }}>{shortOf(o.team_id)}</Text>
-                <Text fontSize="sm" fontWeight="700" color="text.secondary">· {Math.round(o.stuff_rate)}% stuffed · {n} power run{n === 1 ? "" : "s"}</Text>
-              </Flex>
-            );
-          })}
-        </Flex>
-      )}
+      {chart.off_chart?.length > 0 && <RushingOffChart rows={chart.off_chart} />}
     </Box>
   );
 };

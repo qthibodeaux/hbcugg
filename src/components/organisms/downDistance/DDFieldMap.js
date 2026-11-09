@@ -27,17 +27,17 @@ export const DDFieldMap = ({ slide }) => {
 
   return (
     <Flex direction="column" h="100%" minH={0}>
-      <Grid templateColumns={COLS} columnGap="14px" alignItems="end" pb="10px" borderBottom="1px solid rgba(255,255,255,0.14)">
+      <Grid templateColumns={COLS} columnGap="14px" alignItems="end" pb="10px" borderBottom="1px solid rgba(var(--gg-fg), 0.14)">
         <Box />
         <Flex align="center" gap="18px">
           {[["Go, converted", GREEN, true], ["Go, failed", GREEN, false], ["Field goal", BURNT, true], ["Punt", GREY, true]].map(([label, ink, fill]) => (
             <Flex key={label} align="center" gap="6px">
               <Box w="14px" h="14px" borderRadius="full" bg={fill ? ink : "transparent"} border={`2.5px solid ${ink}`} />
-              <Text fontSize="13px" fontWeight="900" color="rgba(255,255,255,0.75)" textTransform="uppercase" letterSpacing="0.08em">{label}</Text>
+              <Text fontSize="13px" fontWeight="900" color="rgba(var(--gg-fg), 0.75)" textTransform="uppercase" letterSpacing="0.08em">{label}</Text>
             </Flex>
           ))}
         </Flex>
-        <Text fontSize="13px" fontWeight="900" color="rgba(255,255,255,0.55)" textTransform="uppercase" letterSpacing="0.08em" textAlign="right">3rd/4th & 1-2</Text>
+        <Text fontSize="13px" fontWeight="900" color="rgba(var(--gg-fg), 0.55)" textTransform="uppercase" letterSpacing="0.08em" textAlign="right">3rd/4th & 1-2</Text>
       </Grid>
 
       {/* The field: yard lines under every lane. */}
@@ -46,7 +46,7 @@ export const DDFieldMap = ({ slide }) => {
           <Box />
           <Box position="relative" bg="rgba(31,122,63,0.10)">
             {YARD_LINES.map((y) => (
-              <Box key={y} position="absolute" top={0} bottom={0} borderLeft={y === 50 ? "2px solid rgba(255,255,255,0.35)" : "1px solid rgba(255,255,255,0.12)"} style={{ left: `${xOf(y)}%` }} />
+              <Box key={y} position="absolute" top={0} bottom={0} borderLeft={y === 50 ? "2px solid rgba(var(--gg-fg), 0.35)" : "1px solid rgba(var(--gg-fg), 0.12)"} style={{ left: `${xOf(y)}%` }} />
             ))}
           </Box>
         </Grid>
@@ -56,10 +56,10 @@ export const DDFieldMap = ({ slide }) => {
             // Plays on the same yard stack a little up and down instead of hiding each other.
             const seen = {};
             return (
-              <Grid key={t.team_id} flex={1} minH="34px" templateColumns={COLS} columnGap="14px" alignItems="center" borderBottom="1px solid rgba(255,255,255,0.05)">
+              <Grid key={t.team_id} flex={1} minH="34px" templateColumns={COLS} columnGap="14px" alignItems="center" borderBottom="1px solid rgba(var(--gg-fg), 0.05)">
                 <Flex align="center" gap="10px" minW={0}>
                   <Image src={TEAM_BY_V5[t.team_id]?.logo} alt="" w="34px" h="34px" objectFit="contain" flexShrink={0} />
-                  <Text fontSize="19px" fontWeight="900" color="white" textTransform="uppercase" whiteSpace="nowrap">{shortOf(t.team_id)}</Text>
+                  <Text fontSize="19px" fontWeight="900" color="var(--gg-ink)" textTransform="uppercase" whiteSpace="nowrap">{shortOf(t.team_id)}</Text>
                 </Flex>
                 <Box position="relative" h="100%">
                   {plays.map((p, i) => {
@@ -70,15 +70,15 @@ export const DDFieldMap = ({ slide }) => {
                     const fill = p.decision !== "go" || p.converted === true;
                     const dim = anyHl && !p.highlight;
                     return (
-                      <Box key={i} position="absolute" top="50%" borderRadius="full" bg={fill ? ink : "#0B0B0D"} border={`2.5px solid ${ink}`}
-                        boxShadow={p.highlight ? "0 0 0 3px #0B0B0D, 0 0 0 5px #FFFFFF" : "none"} opacity={dim ? 0.38 : 1} zIndex={p.highlight ? 3 : 1}
+                      <Box key={i} position="absolute" top="50%" borderRadius="full" bg={fill ? ink : "var(--gg-bg-primary)"} border={`2.5px solid ${ink}`}
+                        boxShadow={p.highlight ? "0 0 0 3px var(--gg-bg-primary), 0 0 0 5px var(--gg-ink)" : "none"} opacity={dim ? 0.38 : 1} zIndex={p.highlight ? 3 : 1}
                         style={{ width: DOT, height: DOT, left: `${xOf(p.yards_to_goal)}%`, transform: `translate(-50%, calc(-50% + ${dy}px))` }} />
                     );
                   })}
                 </Box>
                 <Flex direction="column" align="flex-end">
-                  <Text fontSize="20px" fontWeight="950" color="white" lineHeight={1} fontVariantNumeric="tabular-nums">{pct0(t.short_yardage_conv_pct)}</Text>
-                  <Text fontSize="11px" fontWeight="800" color="rgba(255,255,255,0.5)">of {t.short_yardage_att}</Text>
+                  <Text fontSize="20px" fontWeight="950" color="var(--gg-ink)" lineHeight={1} fontVariantNumeric="tabular-nums">{pct0(t.short_yardage_conv_pct)}</Text>
+                  <Text fontSize="11px" fontWeight="800" color="rgba(var(--gg-fg), 0.5)">of {t.short_yardage_att}</Text>
                 </Flex>
               </Grid>
             );
@@ -91,7 +91,7 @@ export const DDFieldMap = ({ slide }) => {
         <Box />
         <Box position="relative" h="18px">
           {YARD_LINES.map((y) => (
-            <Text key={y} position="absolute" fontSize="14px" fontWeight="900" color="rgba(255,255,255,0.6)" style={{ left: `${xOf(y)}%`, transform: "translateX(-50%)" }}>{yardLabel(y)}</Text>
+            <Text key={y} position="absolute" fontSize="14px" fontWeight="900" color="rgba(var(--gg-fg), 0.6)" style={{ left: `${xOf(y)}%`, transform: "translateX(-50%)" }}>{yardLabel(y)}</Text>
           ))}
         </Box>
         <Box />

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import PageShell from "../../components/layouts/PageShell";
-import { BannerPeopleHub } from "../../components/organisms/test/BannerPages";
+import { BannerPeopleHub } from "../../components/molecules/banners/PeopleHubBanner";
 import { useLayoutDensity } from "../../hooks/useLayoutDensity";
 import { usePeopleHubCards } from "../../hooks/useSWACData";
 import { buildDeck, HeroCarousel } from "../../components/organisms/people/PeopleHubCardDeck";

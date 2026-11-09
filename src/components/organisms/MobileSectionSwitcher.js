@@ -1,243 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import { Box, Flex, Grid, Image, Spinner, Text } from "@chakra-ui/react";
-import { ChevronDown } from "lucide-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useRouteSideNav } from "../../hooks/useRouteSideNav";
-import { BottomSheet } from "./BottomSheet";
+import { useState } from "react";
+import useMountEffect from "../../hooks/useMountEffect";
+import { PEEK_DELAY_MS, PEEK_DURATION_MS, PEEK_CSS } from "./sectionSwitcher/switcherStyles";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { BANNER_STRIP_BG } from "./BannerControls";
-
-// One-shot CTA on every page load: the chevron bounces once, then a single
-// chip previewing one other section grows in white, shifts to the banner's
-// own accent color, then shrinks away to nothing — teaches the tap-to-open
-// gesture and hints at what's inside without being loud about it. Purely
-// decorative (pointer-events none) so it never intercepts taps.
-const PEEK_DELAY_MS = 900;
-const PEEK_DURATION_MS = 1600;
-
-const PEEK_CSS = `
-  @keyframes sectionSwitcherPeek {
-    0%   { opacity: 0; transform: scale(0.4); background-color: #FFFFFF; color: #18181B; }
-    22%  { opacity: 1; transform: scale(1.3); background-color: #FFFFFF; color: #18181B; }
-    50%  { opacity: 1; transform: scale(1.05); background-color: var(--peek-accent); color: #FFFFFF; }
-    78%  { opacity: 1; transform: scale(1); background-color: var(--peek-accent); color: #FFFFFF; }
-    100% { opacity: 0; transform: scale(0); background-color: var(--peek-accent); color: #FFFFFF; }
-  }
-  @keyframes sectionSwitcherChevronBounce {
-    0%, 100% { transform: translateY(0); }
-    20% { transform: translateY(2px); }
-    40% { transform: translateY(-3px); }
-    60% { transform: translateY(1px); }
-    80% { transform: translateY(-1px); }
-  }
-`;
-
-// Renders the "teamHubSwitcher" item type inline instead of as a single flat
-// row — mirrors the desktop SideNav's TeamHubBlock (2026-08-27): the team's
-// own tabs (Profile/Schedule/Roster/etc.) by default, toggled to a grid of
-// every team's logo for quick team-switching, using the same teams/tabs/
-// onTeamClick data useRouteSideNav already builds for the desktop nav.
-//
-// 2026-08-28 revision: one header row now carries both the team name and the
-// mode control (Switch Teams / ← back), instead of two stacked bars — and
-// the logo watermark is sized to sit behind the entire block (tabs or grid),
-// not just a corner accent, with rows given a semi-transparent black bg so
-// the logo reads through behind them instead of being hidden under opaque
-// rows. Grid is 6 columns x 3 rows — matches the 6-wide grid pattern already
-// used elsewhere on mobile, and still divides the 18 tracked teams evenly.
-const GRID_SKELETON_CSS = `
-@keyframes teamGridSkeletonShimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-`;
-
-const TeamHubSwitcherSheetBlock = ({ item, team, pathname, onNavigate }) => {
-  const [showGrid, setShowGrid] = useState(false);
-  const [gridReady, setGridReady] = useState(false);
-  const loadedCountRef = useRef(0);
-  const primary = team?.primary || "#E53E3E";
-  const secondary = team?.secondary || primary;
-
-  const openGrid = () => {
-    loadedCountRef.current = 0;
-    setGridReady(false);
-    setShowGrid(true);
-  };
-
-  const handleTileSettled = () => {
-    loadedCountRef.current += 1;
-    if (loadedCountRef.current >= item.teams.length) setGridReady(true);
-  };
-
-  return (
-    <Box mt="0.5rem" position="relative" overflow="hidden" borderTop="2px solid" borderColor={secondary}>
-      <style>{GRID_SKELETON_CSS}</style>
-      {team?.logo && (
-        <Image
-          src={team.logo}
-          alt=""
-          position="absolute"
-          left="50%"
-          top="50%"
-          style={{ transform: "translate(-50%, -50%)" }}
-          w="85%"
-          h="85%"
-          objectFit="contain"
-          opacity={0.14}
-          pointerEvents="none"
-        />
-      )}
-
-      <Flex align="center" justify="space-between" px="1rem" py="0.7rem" bg={primary} position="relative" zIndex={1}>
-        <Text fontSize="0.8rem" fontWeight="black" color="white" textTransform="uppercase" letterSpacing="0.05em">
-          {item.label}
-        </Text>
-        <Box
-          as="button"
-          type="button"
-          onClick={() => (showGrid ? setShowGrid(false) : openGrid())}
-          display="flex"
-          alignItems="center"
-          gap="0.3rem"
-        >
-          <Text fontSize="0.72rem" fontWeight="black" color="white" textTransform="uppercase" letterSpacing="0.05em">
-            {showGrid ? "←" : "Switch Teams"}
-          </Text>
-        </Box>
-      </Flex>
-
-      <Box position="relative" zIndex={1}>
-        {showGrid ? (
-          <Box position="relative">
-            {/* minmax(0, 1fr): a plain 1fr won't shrink below a logo's natural
-                width, which pushed the sixth column off a phone screen. Flush
-                wall, the Team Schedules mobile look: no gaps, square tiles. */}
-            <Grid
-              templateColumns="repeat(6, minmax(0, 1fr))"
-              gap={0}
-              p={0}
-              opacity={gridReady ? 1 : 0}
-              transition="opacity 0.2s ease"
-              pointerEvents={gridReady ? "auto" : "none"}
-            >
-              {item.teams.map((t) => (
-                <Box
-                  key={t.id}
-                  as="button"
-                  type="button"
-                  onClick={() => {
-                    item.onTeamClick?.(t.id);
-                    onNavigate();
-                  }}
-                  aspectRatio="1"
-                  minW={0}
-                  borderRadius="0"
-                  p="0.35rem"
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  bg={t.id === item.teamId ? "whiteAlpha.300" : "blackAlpha.400"}
-                  border="1px solid"
-                  borderColor={t.id === item.teamId ? secondary : "whiteAlpha.100"}
-                  borderBottomWidth="0.2rem"
-                  borderBottomColor={t.colors?.primary ?? "whiteAlpha.300"}
-                  opacity={t.id === item.teamId ? 1 : 0.85}
-                  title={t.name}
-                >
-                  <Image
-                    src={t.logo}
-                    alt={t.name}
-                    w="80%"
-                    h="80%"
-                    objectFit="contain"
-                    onLoad={handleTileSettled}
-                    onError={handleTileSettled}
-                  />
-                </Box>
-              ))}
-            </Grid>
-
-            {!gridReady && (
-              <>
-                <Grid
-                  position="absolute"
-                  inset="0"
-                  templateColumns="repeat(6, minmax(0, 1fr))"
-                  gap={0}
-                  p={0}
-                  pointerEvents="none"
-                >
-                  {item.teams.map((t) => (
-                    <Box
-                      key={t.id}
-                      aspectRatio="1"
-                      borderRadius="0"
-                      style={{
-                        background: "linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.22) 50%, rgba(255,255,255,0.06) 75%)",
-                        backgroundSize: "300% 100%",
-                        animation: "teamGridSkeletonShimmer 1.2s linear infinite",
-                      }}
-                    />
-                  ))}
-                </Grid>
-                <Flex
-                  position="absolute"
-                  inset="0"
-                  align="center"
-                  justify="center"
-                  direction="column"
-                  gap="0.5rem"
-                  pointerEvents="none"
-                  bg="blackAlpha.500"
-                >
-                  <Spinner size="sm" color={secondary} />
-                  <Text fontSize="0.65rem" fontWeight="black" color="white" textTransform="uppercase" letterSpacing="0.1em">
-                    Loading Teams
-                  </Text>
-                </Flex>
-              </>
-            )}
-          </Box>
-        ) : (
-          item.tabs.map((tab) => {
-            const isActive = tab.active ?? pathname === tab.path;
-            return (
-              <Box
-                key={tab.id}
-                as="button"
-                type="button"
-                onClick={() => {
-                  tab.onClick?.();
-                  onNavigate();
-                }}
-                w="full"
-                textAlign="left"
-                pl="1.75rem"
-                pr="1rem"
-                py="0.75rem"
-                bg={isActive ? "blackAlpha.600" : "blackAlpha.400"}
-                borderLeft="3px solid"
-                borderLeftColor={isActive ? secondary : "transparent"}
-                borderBottom="1px solid"
-                borderBottomColor={`${secondary}55`}
-              >
-                <Text
-                  fontSize="0.78rem"
-                  fontWeight="bold"
-                  color={isActive ? "white" : "whiteAlpha.700"}
-                  textTransform="uppercase"
-                  letterSpacing="0.04em"
-                >
-                  {tab.label}
-                </Text>
-              </Box>
-            );
-          })
-        )}
-      </Box>
-    </Box>
-  );
-};
+import { ChevronDown } from "lucide-react";
+import { BottomSheet } from "./BottomSheet";
+import { TeamHubSwitcherSheetBlock } from "./sectionSwitcher/TeamHubSwitcherSheetBlock";
 
 // Mobile stand-in for the desktop SideNav — trigger bar (styled to look like
 // it's still part of the banner via the `accent` prop) that opens a bottom
@@ -259,7 +29,7 @@ export const MobileSectionSwitcher = ({ accent = "#A855F7" }) => {
   const activeIndex = items.findIndex((item) => item.active);
   const nextItem = items.length > 1 ? items[(Math.max(activeIndex, 0) + 1) % items.length] : null;
 
-  useEffect(() => {
+  useMountEffect(() => {
     if (!nextItem) return undefined;
     const openTimer = setTimeout(() => setIsPeeking(true), PEEK_DELAY_MS);
     const closeTimer = setTimeout(() => setIsPeeking(false), PEEK_DELAY_MS + PEEK_DURATION_MS);
@@ -267,8 +37,7 @@ export const MobileSectionSwitcher = ({ accent = "#A855F7" }) => {
       clearTimeout(openTimer);
       clearTimeout(closeTimer);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  });
 
   if (!items.length) return null;
 

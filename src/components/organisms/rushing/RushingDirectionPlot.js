@@ -37,11 +37,11 @@ export const RushingDirectionPlot = ({ chart }) => {
       <svg viewBox={`0 0 ${DIR_W} ${DIR_H}`} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }} role="img" aria-label="Run success rate by direction, per team">
         {ticksFor(ax.min, ax.max).map((t) => (
           <g key={t}>
-            <line x1={px(t)} x2={px(t)} y1={top} y2={bottom} stroke="rgba(255,255,255,0.06)" />
+            <line x1={px(t)} x2={px(t)} y1={top} y2={bottom} stroke="rgba(var(--gg-fg), 0.06)" />
             <text x={px(t)} y={bottom + 26} textAnchor="middle" fontSize="15" fontWeight="800" fill="#A1A1AA">{tickText(ax)(t)}</text>
           </g>
         ))}
-        <text x={right} y={DIR_H - 8} textAnchor="end" fontSize="17" fontWeight="900" fill="#F4F4F5">{ax.label} →</text>
+        <text x={right} y={DIR_H - 8} textAnchor="end" fontSize="17" fontWeight="900" fill="var(--gg-text-primary)">{ax.label} →</text>
 
         {rows.map((r, i) => {
           const team = TEAM_BY_V5[r.team_id];
@@ -51,15 +51,15 @@ export const RushingDirectionPlot = ({ chart }) => {
           const xs = r.directions.map((d) => px(d.success_rate));
           return (
             <g key={r.team_id} opacity={dim ? 0.38 : 1}>
-              {i % 2 === 0 && <rect x={0} y={y - rowH / 2} width={DIR_W} height={rowH} fill="rgba(255,255,255,0.025)" />}
-              <text x={left - 62} y={y + 6} fontSize="17" fontWeight="900" fill="#F4F4F5">{shortOf(r.team_id)}</text>
+              {i % 2 === 0 && <rect x={0} y={y - rowH / 2} width={DIR_W} height={rowH} fill="rgba(var(--gg-fg), 0.025)" />}
+              <text x={left - 62} y={y + 6} fontSize="17" fontWeight="900" fill="var(--gg-text-primary)">{shortOf(r.team_id)}</text>
               <line x1={Math.min(...xs)} x2={Math.max(...xs)} y1={y} y2={y} stroke={color} strokeOpacity="0.5" strokeWidth="3" />
               {r.directions.map((d) => {
                 const rad = radius(d.share);
                 const cx = px(d.success_rate);
                 return (
                   <g key={d.direction}>
-                    <circle cx={cx} cy={y} r={rad} fill={d.enough ? color : "#0B0B0D"} stroke={color} strokeWidth="3" />
+                    <circle cx={cx} cy={y} r={rad} fill={d.enough ? color : "var(--gg-bg-primary)"} stroke={color} strokeWidth="3" />
                     <text x={cx} y={y + 6} textAnchor="middle" fontSize={Math.max(13, rad * 0.9)} fontWeight="900" fill={d.enough ? inkOn(color) : color}>{LETTER[d.direction]}</text>
                   </g>
                 );

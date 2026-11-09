@@ -9,6 +9,7 @@ import MainLayout from "./components/layouts/MainLayout";
 import RouteErrorBoundary from "./components/layouts/RouteErrorBoundary";
 import Header from "./components/organisms/Header";
 import MobileMenu from "./components/organisms/nav/MobileMenu";
+import MobileMenuErrorBoundary from "./components/organisms/nav/MobileMenuErrorBoundary";
 import Home from "./pages/Home";
 import ComponentLab from "./pages/ComponentLab";
 import PageLab from "./pages/PageLab";
@@ -53,6 +54,7 @@ import OfficialsPage from "./pages/officials/OfficialsPage";
 import StatsPage from "./pages/stats/StatsPage";
 import TeamCountingStatsPage from "./pages/stats/TeamCountingStatsPage";
 import PlayerCountingStatsPage from "./pages/stats/PlayerCountingStatsPage";
+import DeepDiveStatsPage from "./pages/stats/DeepDiveStatsPage";
 import StatLabPage from "./pages/stats/StatLabPage";
 import TeamAnalyticsPage from "./pages/analytics/TeamAnalyticsPage";
 import PlayerAnalyticsPage from "./pages/analytics/PlayerAnalyticsPage";
@@ -60,11 +62,13 @@ import GloryPage from "./pages/glory/GloryPage";
 import StandingsPage from "./pages/game-center/StandingsPage";
 import SchoolsWikiPage from "./pages/teams/SchoolsWikiPage";
 import StadiumsPage from "./pages/teams/StadiumsPage";
+import TeamSpotlightPage from "./pages/teams/TeamSpotlightPage";
 import SchoolWikiDetailPage from "./pages/teams/SchoolWikiDetailPage";
 import SchoolWikiEditorialLabPage from "./pages/teams/SchoolWikiEditorialLabPage";
 
 import { TestedDesignsPage } from "./components/organisms/test/TestedDesignsPage";
 import { ConferenceWikiPageLabA } from "./components/organisms/test/ConferenceWikiPageLabA";
+import HomeFauxChatSection from "./pages/home/chat/HomeFauxChatSection";
 
 // GitHub Pages has no server rewrites, so the demo uses hash URLs (/#/stats).
 const Router = IS_DEMO ? HashRouter : BrowserRouter;
@@ -89,7 +93,9 @@ function App() {
             <MainLayout>
               <Header onMenuOpen={() => setIsMenuOpen(true)} />
               
-              <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+              <MobileMenuErrorBoundary isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)}>
+                <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+              </MobileMenuErrorBoundary>
 
               <RouteErrorBoundary>
               <Routes>
@@ -120,6 +126,7 @@ function App() {
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/schools" element={<Teams />} />
                 <Route path="/schools/wiki" element={<SchoolsWikiPage />} />
+                <Route path="/schools/spotlight" element={<TeamSpotlightPage />} />
                 <Route path="/schools/stadiums" element={<StadiumsPage />} />
                 <Route path="/schools/stadiums/:venueId" element={<StadiumsPage />} />
                 <Route path="/teams/:teamId" element={<TeamProfilePage />} />
@@ -145,6 +152,7 @@ function App() {
                 <Route path="/stats" element={<StatsPage />} />
                 <Route path="/stats/team" element={<TeamCountingStatsPage />} />
                 <Route path="/stats/player" element={<PlayerCountingStatsPage />} />
+                <Route path="/stats/deep-dive" element={<DeepDiveStatsPage />} />
                 <Route path="/stat-lab" element={<StatLabPage />} />
                 <Route path="/team-analytics" element={<TeamAnalyticsPage />} />
                 <Route path="/player-analytics" element={<PlayerAnalyticsPage />} />
@@ -163,6 +171,7 @@ function App() {
                 {!IS_DEMO && <Route path="/lab/pages" element={<PageLab />} />}
                 {!IS_DEMO && <Route path="/lab/tested-designs" element={<TestedDesignsPage />} />}
                 {!IS_DEMO && <Route path="/lab/grid" element={<GridTestPage />} />}
+                {!IS_DEMO && <Route path="/lab/faux-ai" element={<HomeFauxChatSection />} />}
               </Routes>
               </RouteErrorBoundary>
             </MainLayout>

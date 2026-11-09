@@ -1,3 +1,4 @@
+import { buildFullRoster } from "./models/fullRosterModel";
 import { useMemo, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 import { useTeam } from "../../hooks/useTeams";
@@ -40,37 +41,13 @@ const TeamRosterFullPage = () => {
   const [sortBy, setSortBy] = useState("jersey");
   const [filters, setFilters] = useState({ transfersOnly: false, redshirtsOnly: false });
   const toggleFilter = (key) => setFilters((prev) => ({ ...prev, [key]: !prev[key] }));
-  const [selectedYear, setSelectedYear] = useState(null);
+  const [selectedYear, setSelectedYear] = useState(() => searchParams.has("year") ? normalizeRosterYear(searchParams.get("year")) : null);
   const year = selectedYear ?? normalizeRosterYear(currentSeason ?? DEFAULT_ROSTER_FULL_YEAR);
-  const { players, isLoading: rosterLoading } = useAllPlayersByYear(year);
+  const { players, isLoading: rosterLoading } = useAllPlayersByYear(year, { exactSeason: true });
   const { players: enrichedPlayers, isLoading: statsLoading } = usePlayerStatsEnriched();
   const teamRosterId = team?.exportId?.replace(/25$/, "") ?? null;
   const roster = useMemo(
-    () => {
-      const enrichedByPerson = new Map(
-        enrichedPlayers
-          .filter((player) => player.person_id)
-          .map((player) => [player.person_id, player]),
-      );
-
-      return players
-        .filter((player) => (player.team_id ?? player._teamId) === teamRosterId)
-        .map((player) => {
-          const enriched = year === 2025 ? enrichedByPerson.get(player.person_id) : null;
-          return enriched
-            ? {
-                ...player,
-                name_display: enriched.name_display,
-                player_key: enriched.player_key,
-                par: enriched.par,
-                games_played: enriched.games_played,
-                total_production: enriched.total_production,
-                avg_production: enriched.avg_production,
-                season_components: enriched.season_components,
-              }
-            : player;
-        });
-    },
+    () => buildFullRoster({ enrichedPlayers, players, teamRosterId, year }),
     [enrichedPlayers, players, teamRosterId, year],
   );
 
@@ -107,6 +84,14 @@ const TeamRosterFullPage = () => {
       />
   );
 
+  const banner = (
+    <BannerTeamDetailPage
+      team={team}
+      season={year}
+      setSeason={(nextYear) => setSelectedYear(normalizeRosterYear(nextYear))}
+    />
+  );
+
   const controlBar = (
     <RosterViewControlBar
       team={team}
@@ -131,11 +116,7 @@ const TeamRosterFullPage = () => {
   if (isMobile) {
     return (
       <Box minH="100vh" bg="bg.primary" pt="var(--app-header-height)">
-        <BannerTeamDetailPage
-          team={team}
-          season={year}
-          setSeason={(nextYear) => setSelectedYear(normalizeRosterYear(nextYear))}
-        />
+        {banner}
         {controlBar}
         {listContent}
       </Box>
@@ -145,27 +126,10 @@ const TeamRosterFullPage = () => {
   return (
     <PageShell listContent={listContent}>
       <PageShell.Slot cols={4}>
-        <BannerTeamDetailPage
-          team={team}
-          season={year}
-          setSeason={(nextYear) => setSelectedYear(normalizeRosterYear(nextYear))}
-        />
+        {banner}
       </PageShell.Slot>
       <PageShell.Slot cols={4}>
-        <RosterViewControlBar
-          team={team}
-          season={year}
-          rosterCount={roster.length}
-          roster={roster}
-          view={view}
-          onViewChange={setView}
-          groupBy={groupBy}
-          onGroupByChange={setGroupBy}
-          sortBy={sortBy}
-          onSortByChange={setSortBy}
-          filters={filters}
-          onToggleFilter={toggleFilter}
-        />
+        {controlBar}
       </PageShell.Slot>
     </PageShell>
   );

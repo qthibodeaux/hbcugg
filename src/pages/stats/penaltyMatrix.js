@@ -32,7 +32,8 @@ export const penaltyMatrix = (file, teams, side = "all") => {
     const row = byId[t.id];
     const src = side === "all" ? row?.counts : row?.by_side?.[side]?.counts;
     counts[t.id] = src ?? {};
-    totals[t.id] = side === "all" ? row?.total_flags ?? 0 : row?.by_side?.[side]?.flags ?? 0;
+    // Accepted flags, so a column adds up to its cells (total_flags counts declined too).
+    totals[t.id] = side === "all" ? row?.accepted ?? 0 : row?.by_side?.[side]?.accepted ?? 0;
     fouls.forEach((f) => { foulTotals[f.key] += counts[t.id][f.key] ?? 0; });
   });
   const grandTotal = Object.values(totals).reduce((a, b) => a + b, 0);

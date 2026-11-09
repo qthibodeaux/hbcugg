@@ -51,5 +51,8 @@ const subscribe = (fn) => {
   return () => listeners.delete(fn);
 };
 
+/** The scheme right now, for code outside React ("night" | "light"). */
+export const getColorScheme = () => current;
+
 /** [scheme, setScheme] — "night" | "light". */
 export const useColorScheme = () => [useSyncExternalStore(subscribe, () => current, () => "night"), setColorScheme];

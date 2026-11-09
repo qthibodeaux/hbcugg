@@ -124,7 +124,7 @@ export const GameProductionComparison = ({ awayId, homeId, productionScores }) =
             Production Above Replacement
           </Text>
           <Text fontSize="2xl" color="text.primary" fontWeight="black" lineHeight="1">
-            Player Production Score
+            Player PAR
           </Text>
         </Box>
         <Text fontSize="10px" color="text.muted" fontWeight="bold" textAlign="right" maxW="320px">

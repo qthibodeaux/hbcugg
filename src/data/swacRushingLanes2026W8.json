@@ -1,0 +1,1460 @@
+{
+ "meta": {
+  "title": "Rushing lanes, 2026 SWAC",
+  "season": 2026,
+  "scope": "The 12 SWAC teams; every game against another of the 18 programs with play-by-play (lanes, totals and rushers cover the same games)",
+  "through_week": 8,
+  "generated_at": "2026-10-27T18:31:18-05:00",
+  "keys": "team_id / player_id match the site's other files; the frontend owns team display names"
+ },
+ "definitions": {
+  "lane": "left / middle / right, as the play-by-play records the run.",
+  "lane_split": "loss_yards + line_yards_on_gains + highlight_yards_on_gains = the lane's yards. loss_yards: yards lost on carries that went backward (negative). On carries that gained: line_yards_on_gains = the line's credit (all of the first 4 yards, half of yards 5-10, none past 10); highlight_yards_on_gains = the rest of the gain.",
+  "line_yards_per_carry": "The team's line yards per carry: the same credit on gains, and 120% of the yards lost on losses (the line is charged extra for a run blown up behind it).",
+  "success_rate": "Share of carries that were successful on down and distance (50% of the yards to go on 1st down, 70% on 2nd, all of it on 3rd and 4th).",
+  "opportunity_rate": "Share of carries that gained 4+ yards.",
+  "highlight_yards_per_carry": "Yards beyond the line's credit, per carry.",
+  "stuff_rate": "Share of carries stopped at or behind the line (0 or fewer yards).",
+  "epa_per_carry": "Expected points added per carry.",
+  "explosive_rate": "Share of carries that gained 12+ yards.",
+  "top_rushers": "The team's five players with the most carries.",
+  "ranks_18": "Rank among the 18 programs (Team Analytics).",
+  "ranks_swac": "Rank among the 12 SWAC teams (1 = most; stuff rate: 1 = lowest). Ties share a rank.",
+  "garbage_time": "Included in the lanes, the totals and the rushers.",
+  "sacks": "Never rushes: sacks are not carries and are not in any rushing number."
+ },
+ "logging_notes": [
+  "Lanes are charted on 99.7% of carries. uncharted_carries = carries with no lane in the play-by-play; the lanes' carries plus uncharted_carries = the team's carries.",
+  "Uncharted carries in SWAC teams' games: Alcorn 1 (10 yards), ASU 1 (15), B-CU 1 (−1), Southern 1 (3); every other team 0. The lanes' yards plus those = the team's rushing yards."
+ ],
+ "teams": [
+  {
+   "team_id": "swacaamu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 21,
+     "yards": 181,
+     "loss_yards": -5,
+     "line_yards_on_gains": 91.5,
+     "highlight_yards_on_gains": 94.5
+    },
+    {
+     "direction": "middle",
+     "attempts": 120,
+     "yards": 667,
+     "loss_yards": -23,
+     "line_yards_on_gains": 406.0,
+     "highlight_yards_on_gains": 284.0
+    },
+    {
+     "direction": "right",
+     "attempts": 25,
+     "yards": 262,
+     "loss_yards": -6,
+     "line_yards_on_gains": 114.5,
+     "highlight_yards_on_gains": 153.5
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 166,
+    "yards": 1110,
+    "yards_per_carry": 6.7,
+    "touchdowns": 12,
+    "line_yards_per_carry": 3.441,
+    "success_rate": 0.5181,
+    "opportunity_rate": 0.5422,
+    "highlight_yards_per_carry": 3.2458,
+    "stuff_rate": 0.1687,
+    "epa_per_carry": 0.1765
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 4,
+    "success_rate": 3,
+    "opportunity_rate": 4,
+    "highlight_yards_per_carry": 2,
+    "stuff_rate": 5,
+    "epa_per_carry": 4
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00013336",
+     "name": "Byron Perrilliat",
+     "position": "RB",
+     "carries": 50,
+     "yards": 403,
+     "yards_per_carry": 8.1,
+     "touchdowns": 4,
+     "epa_per_carry": 0.2626,
+     "explosive_rate": 0.24
+    },
+    {
+     "player_id": "PERS_00011791",
+     "name": "Maurice Edwards IV",
+     "position": "RB",
+     "carries": 29,
+     "yards": 183,
+     "yards_per_carry": 6.3,
+     "touchdowns": 0,
+     "epa_per_carry": -0.0493,
+     "explosive_rate": 0.2069
+    },
+    {
+     "player_id": "PERS_00010842",
+     "name": "Kolton Nero",
+     "position": "RB",
+     "carries": 27,
+     "yards": 122,
+     "yards_per_carry": 4.5,
+     "touchdowns": 1,
+     "epa_per_carry": -0.0506,
+     "explosive_rate": 0.0741
+    },
+    {
+     "player_id": "PERS_00000446",
+     "name": "Cornelious Brown IV",
+     "position": "QB",
+     "carries": 19,
+     "yards": 126,
+     "yards_per_carry": 6.6,
+     "touchdowns": 3,
+     "epa_per_carry": 0.3838,
+     "explosive_rate": 0.1053
+    },
+    {
+     "player_id": "PERS_00013349",
+     "name": "Troy Bruce",
+     "position": "RB",
+     "carries": 17,
+     "yards": 106,
+     "yards_per_carry": 6.2,
+     "touchdowns": 1,
+     "epa_per_carry": 0.2038,
+     "explosive_rate": 0.2353
+    }
+   ],
+   "ranks_swac": {
+    "carries": 6,
+    "yards": 1,
+    "yards_per_carry": 1,
+    "touchdowns": 1,
+    "line_yards_per_carry": 3,
+    "success_rate": 1,
+    "opportunity_rate": 2,
+    "highlight_yards_per_carry": 2,
+    "stuff_rate": 3,
+    "epa_per_carry": 2
+   }
+  },
+  {
+   "team_id": "swacalc",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 27,
+     "yards": 158,
+     "loss_yards": -18,
+     "line_yards_on_gains": 85.0,
+     "highlight_yards_on_gains": 91.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 92,
+     "yards": 391,
+     "loss_yards": -43,
+     "line_yards_on_gains": 306.0,
+     "highlight_yards_on_gains": 128.0
+    },
+    {
+     "direction": "right",
+     "attempts": 33,
+     "yards": 201,
+     "loss_yards": -5,
+     "line_yards_on_gains": 130.0,
+     "highlight_yards_on_gains": 76.0
+    }
+   ],
+   "uncharted_carries": 1,
+   "totals": {
+    "carries": 153,
+    "yards": 760,
+    "yards_per_carry": 5.0,
+    "touchdowns": 10,
+    "line_yards_per_carry": 2.9333,
+    "success_rate": 0.5098,
+    "opportunity_rate": 0.4706,
+    "highlight_yards_per_carry": 2.034,
+    "stuff_rate": 0.2026,
+    "epa_per_carry": 0.0822
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 13,
+    "success_rate": 4,
+    "opportunity_rate": 13,
+    "highlight_yards_per_carry": 14,
+    "stuff_rate": 12,
+    "epa_per_carry": 8
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00013383",
+     "name": "Fredrick Robertson",
+     "position": "RB",
+     "carries": 74,
+     "yards": 337,
+     "yards_per_carry": 4.6,
+     "touchdowns": 6,
+     "epa_per_carry": 0.0397,
+     "explosive_rate": 0.1216
+    },
+    {
+     "player_id": "PERS_00013396",
+     "name": "Ernest Temple",
+     "position": "RB",
+     "carries": 38,
+     "yards": 170,
+     "yards_per_carry": 4.5,
+     "touchdowns": 3,
+     "epa_per_carry": -0.0293,
+     "explosive_rate": 0.0789
+    },
+    {
+     "player_id": "PERS_00007631",
+     "name": "Jaylon Tolbert",
+     "position": "QB",
+     "carries": 37,
+     "yards": 234,
+     "yards_per_carry": 6.3,
+     "touchdowns": 0,
+     "epa_per_carry": 0.274,
+     "explosive_rate": 0.1622
+    },
+    {
+     "player_id": "PERS_00013386",
+     "name": "Armon Wright",
+     "position": "WR",
+     "carries": 2,
+     "yards": 17,
+     "yards_per_carry": 8.5,
+     "touchdowns": 0,
+     "epa_per_carry": 0.5855,
+     "explosive_rate": 0.5
+    },
+    {
+     "player_id": "PERS_00011839",
+     "name": "Carl McDonald Jr.",
+     "position": "RB",
+     "carries": 1,
+     "yards": 2,
+     "yards_per_carry": 2.0,
+     "touchdowns": 1,
+     "epa_per_carry": 0.482,
+     "explosive_rate": 0.0
+    }
+   ],
+   "ranks_swac": {
+    "carries": 7,
+    "yards": 9,
+    "yards_per_carry": 7,
+    "touchdowns": 3,
+    "line_yards_per_carry": 8,
+    "success_rate": 2,
+    "opportunity_rate": 8,
+    "highlight_yards_per_carry": 10,
+    "stuff_rate": 8,
+    "epa_per_carry": 5
+   }
+  },
+  {
+   "team_id": "swacasu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 46,
+     "yards": 246,
+     "loss_yards": -13,
+     "line_yards_on_gains": 169.0,
+     "highlight_yards_on_gains": 90.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 101,
+     "yards": 380,
+     "loss_yards": -17,
+     "line_yards_on_gains": 295.0,
+     "highlight_yards_on_gains": 102.0
+    },
+    {
+     "direction": "right",
+     "attempts": 29,
+     "yards": 225,
+     "loss_yards": -5,
+     "line_yards_on_gains": 136.5,
+     "highlight_yards_on_gains": 93.5
+    }
+   ],
+   "uncharted_carries": 1,
+   "totals": {
+    "carries": 177,
+    "yards": 866,
+    "yards_per_carry": 4.9,
+    "touchdowns": 10,
+    "line_yards_per_carry": 3.1949,
+    "success_rate": 0.4237,
+    "opportunity_rate": 0.5141,
+    "highlight_yards_per_carry": 1.6977,
+    "stuff_rate": 0.1751,
+    "epa_per_carry": -0.0345
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 7,
+    "success_rate": 10,
+    "opportunity_rate": 8,
+    "highlight_yards_per_carry": 15,
+    "stuff_rate": 6,
+    "epa_per_carry": 14
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00010923",
+     "name": "Jamarie Hostzclaw",
+     "position": "RB",
+     "carries": 78,
+     "yards": 284,
+     "yards_per_carry": 3.6,
+     "touchdowns": 4,
+     "epa_per_carry": -0.333,
+     "explosive_rate": 0.0641
+    },
+    {
+     "player_id": "PERS_00013431",
+     "name": "Aaron Frye",
+     "position": "QB",
+     "carries": 34,
+     "yards": 186,
+     "yards_per_carry": 5.5,
+     "touchdowns": 2,
+     "epa_per_carry": 0.0131,
+     "explosive_rate": 0.1471
+    },
+    {
+     "player_id": "PERS_00013440",
+     "name": "Jareese Howard",
+     "position": "RB",
+     "carries": 28,
+     "yards": 201,
+     "yards_per_carry": 7.2,
+     "touchdowns": 4,
+     "epa_per_carry": 0.6004,
+     "explosive_rate": 0.1429
+    },
+    {
+     "player_id": "PERS_00013429",
+     "name": "TJ Ramsey",
+     "position": "RB",
+     "carries": 23,
+     "yards": 140,
+     "yards_per_carry": 6.1,
+     "touchdowns": 0,
+     "epa_per_carry": 0.1789,
+     "explosive_rate": 0.1304
+    },
+    {
+     "player_id": "PERS_00008540",
+     "name": "Andrew Body",
+     "position": "QB",
+     "carries": 7,
+     "yards": 42,
+     "yards_per_carry": 6.0,
+     "touchdowns": 0,
+     "epa_per_carry": 0.2931,
+     "explosive_rate": 0.1429
+    }
+   ],
+   "ranks_swac": {
+    "carries": 4,
+    "yards": 8,
+    "yards_per_carry": 8,
+    "touchdowns": 3,
+    "line_yards_per_carry": 4,
+    "success_rate": 7,
+    "opportunity_rate": 5,
+    "highlight_yards_per_carry": 11,
+    "stuff_rate": 4,
+    "epa_per_carry": 10
+   }
+  },
+  {
+   "team_id": "swacbcu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 75,
+     "yards": 472,
+     "loss_yards": -13,
+     "line_yards_on_gains": 278.0,
+     "highlight_yards_on_gains": 207.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 94,
+     "yards": 373,
+     "loss_yards": -68,
+     "line_yards_on_gains": 264.5,
+     "highlight_yards_on_gains": 176.5
+    },
+    {
+     "direction": "right",
+     "attempts": 48,
+     "yards": 232,
+     "loss_yards": -31,
+     "line_yards_on_gains": 146.5,
+     "highlight_yards_on_gains": 116.5
+    }
+   ],
+   "uncharted_carries": 1,
+   "totals": {
+    "carries": 217,
+    "yards": 1056,
+    "yards_per_carry": 4.9,
+    "touchdowns": 7,
+    "line_yards_per_carry": 2.5385,
+    "success_rate": 0.4174,
+    "opportunity_rate": 0.4587,
+    "highlight_yards_per_carry": 2.3972,
+    "stuff_rate": 0.2706,
+    "epa_per_carry": -0.0406
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 16,
+    "success_rate": 11,
+    "opportunity_rate": 15,
+    "highlight_yards_per_carry": 10,
+    "stuff_rate": 16,
+    "epa_per_carry": 16
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00011966",
+     "name": "Rashon Brown",
+     "position": "RB",
+     "carries": 105,
+     "yards": 531,
+     "yards_per_carry": 5.1,
+     "touchdowns": 3,
+     "epa_per_carry": -0.0929,
+     "explosive_rate": 0.1524
+    },
+    {
+     "player_id": "PERS_00011998",
+     "name": "Tyler Jefferson",
+     "position": "QB",
+     "carries": 57,
+     "yards": 303,
+     "yards_per_carry": 5.3,
+     "touchdowns": 3,
+     "epa_per_carry": 0.0077,
+     "explosive_rate": 0.0877
+    },
+    {
+     "player_id": "PERS_00011976",
+     "name": "Deanwar Johnson",
+     "position": "RB",
+     "carries": 24,
+     "yards": 158,
+     "yards_per_carry": 6.6,
+     "touchdowns": 0,
+     "epa_per_carry": 0.1443,
+     "explosive_rate": 0.1667
+    },
+    {
+     "player_id": "PERS_00013487",
+     "name": "Jaylen Johnson",
+     "position": "RB",
+     "carries": 14,
+     "yards": 42,
+     "yards_per_carry": 3.0,
+     "touchdowns": 0,
+     "epa_per_carry": -0.2486,
+     "explosive_rate": 0.0
+    },
+    {
+     "player_id": "PERS_00013490",
+     "name": "Isaiah Daniel",
+     "position": "RB",
+     "carries": 7,
+     "yards": 10,
+     "yards_per_carry": 1.4,
+     "touchdowns": 0,
+     "epa_per_carry": -0.4427,
+     "explosive_rate": 0.0
+    }
+   ],
+   "ranks_swac": {
+    "carries": 1,
+    "yards": 2,
+    "yards_per_carry": 8,
+    "touchdowns": 5,
+    "line_yards_per_carry": 10,
+    "success_rate": 8,
+    "opportunity_rate": 10,
+    "highlight_yards_per_carry": 6,
+    "stuff_rate": 10,
+    "epa_per_carry": 11
+   }
+  },
+  {
+   "team_id": "swacfamu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 20,
+     "yards": 73,
+     "loss_yards": -12,
+     "line_yards_on_gains": 64.5,
+     "highlight_yards_on_gains": 20.5
+    },
+    {
+     "direction": "middle",
+     "attempts": 80,
+     "yards": 232,
+     "loss_yards": -62,
+     "line_yards_on_gains": 192.5,
+     "highlight_yards_on_gains": 101.5
+    },
+    {
+     "direction": "right",
+     "attempts": 18,
+     "yards": 132,
+     "loss_yards": -12,
+     "line_yards_on_gains": 41.5,
+     "highlight_yards_on_gains": 102.5
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 118,
+    "yards": 437,
+    "yards_per_carry": 3.7,
+    "touchdowns": 4,
+    "line_yards_per_carry": 1.6551,
+    "success_rate": 0.2797,
+    "opportunity_rate": 0.3475,
+    "highlight_yards_per_carry": 2.0483,
+    "stuff_rate": 0.3475,
+    "epa_per_carry": -0.4421
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 18,
+    "success_rate": 18,
+    "opportunity_rate": 18,
+    "highlight_yards_per_carry": 13,
+    "stuff_rate": 18,
+    "epa_per_carry": 18
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00012016",
+     "name": "Jamal Hailey",
+     "position": "RB",
+     "carries": 52,
+     "yards": 194,
+     "yards_per_carry": 3.7,
+     "touchdowns": 1,
+     "epa_per_carry": -0.4407,
+     "explosive_rate": 0.0385
+    },
+    {
+     "player_id": "PERS_00013534",
+     "name": "Chase Gillespie",
+     "position": "RB",
+     "carries": 30,
+     "yards": 64,
+     "yards_per_carry": 2.1,
+     "touchdowns": 0,
+     "epa_per_carry": -0.4234,
+     "explosive_rate": 0.0
+    },
+    {
+     "player_id": "PERS_00013535",
+     "name": "Armond Parker",
+     "position": "QB",
+     "carries": 28,
+     "yards": 168,
+     "yards_per_carry": 6.0,
+     "touchdowns": 3,
+     "epa_per_carry": -0.2231,
+     "explosive_rate": 0.2143
+    },
+    {
+     "player_id": "PERS_00013536",
+     "name": "Dustin Fletcher",
+     "position": "QB",
+     "carries": 3,
+     "yards": 12,
+     "yards_per_carry": 4.0,
+     "touchdowns": 0,
+     "epa_per_carry": 0.3413,
+     "explosive_rate": 0.3333
+    },
+    {
+     "player_id": "PERS_00013533",
+     "name": "Isaiah Knowles",
+     "position": "QB",
+     "carries": 3,
+     "yards": 2,
+     "yards_per_carry": 0.7,
+     "touchdowns": 0,
+     "epa_per_carry": -2.6613,
+     "explosive_rate": 0.0
+    }
+   ],
+   "ranks_swac": {
+    "carries": 11,
+    "yards": 12,
+    "yards_per_carry": 10,
+    "touchdowns": 7,
+    "line_yards_per_carry": 12,
+    "success_rate": 12,
+    "opportunity_rate": 12,
+    "highlight_yards_per_carry": 9,
+    "stuff_rate": 12,
+    "epa_per_carry": 12
+   }
+  },
+  {
+   "team_id": "swacgsu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 41,
+     "yards": 183,
+     "loss_yards": -19,
+     "line_yards_on_gains": 135.0,
+     "highlight_yards_on_gains": 67.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 74,
+     "yards": 411,
+     "loss_yards": -8,
+     "line_yards_on_gains": 243.0,
+     "highlight_yards_on_gains": 176.0
+    },
+    {
+     "direction": "right",
+     "attempts": 12,
+     "yards": 88,
+     "loss_yards": -4,
+     "line_yards_on_gains": 47.5,
+     "highlight_yards_on_gains": 44.5
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 127,
+    "yards": 682,
+    "yards_per_carry": 5.4,
+    "touchdowns": 8,
+    "line_yards_per_carry": 3.0575,
+    "success_rate": 0.4094,
+    "opportunity_rate": 0.5118,
+    "highlight_yards_per_carry": 2.3126,
+    "stuff_rate": 0.189,
+    "epa_per_carry": 0.0649
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 10,
+    "success_rate": 12,
+    "opportunity_rate": 9,
+    "highlight_yards_per_carry": 11,
+    "stuff_rate": 9,
+    "epa_per_carry": 10
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00013572",
+     "name": "Jacobe Robinson",
+     "position": "QB",
+     "carries": 19,
+     "yards": 104,
+     "yards_per_carry": 5.5,
+     "touchdowns": 1,
+     "epa_per_carry": 0.1198,
+     "explosive_rate": 0.1579
+    },
+    {
+     "player_id": "PERS_00011081",
+     "name": "Ashton Frye",
+     "position": "QB",
+     "carries": 18,
+     "yards": 115,
+     "yards_per_carry": 6.4,
+     "touchdowns": 2,
+     "epa_per_carry": 0.3222,
+     "explosive_rate": 0.2222
+    },
+    {
+     "player_id": "PERS_00013574",
+     "name": "Jamarion Parker",
+     "position": "RB",
+     "carries": 13,
+     "yards": 120,
+     "yards_per_carry": 9.2,
+     "touchdowns": 0,
+     "epa_per_carry": 0.0827,
+     "explosive_rate": 0.2308
+    },
+    {
+     "player_id": "PERS_00011092",
+     "name": "Andre Crews",
+     "position": "RB",
+     "carries": 10,
+     "yards": 41,
+     "yards_per_carry": 4.1,
+     "touchdowns": 1,
+     "epa_per_carry": -0.0239,
+     "explosive_rate": 0.0
+    },
+    {
+     "player_id": "PERS_00004215",
+     "name": "Byron Eaton Jr.",
+     "position": "RB",
+     "carries": 9,
+     "yards": 49,
+     "yards_per_carry": 5.4,
+     "touchdowns": 0,
+     "epa_per_carry": 0.1863,
+     "explosive_rate": 0.2222
+    }
+   ],
+   "ranks_swac": {
+    "carries": 9,
+    "yards": 10,
+    "yards_per_carry": 6,
+    "touchdowns": 4,
+    "line_yards_per_carry": 5,
+    "success_rate": 9,
+    "opportunity_rate": 6,
+    "highlight_yards_per_carry": 7,
+    "stuff_rate": 7,
+    "epa_per_carry": 6
+   }
+  },
+  {
+   "team_id": "swacjsu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 37,
+     "yards": 194,
+     "loss_yards": -14,
+     "line_yards_on_gains": 140.5,
+     "highlight_yards_on_gains": 67.5
+    },
+    {
+     "direction": "middle",
+     "attempts": 118,
+     "yards": 490,
+     "loss_yards": -53,
+     "line_yards_on_gains": 366.0,
+     "highlight_yards_on_gains": 177.0
+    },
+    {
+     "direction": "right",
+     "attempts": 44,
+     "yards": 305,
+     "loss_yards": -32,
+     "line_yards_on_gains": 160.0,
+     "highlight_yards_on_gains": 177.0
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 199,
+    "yards": 989,
+    "yards_per_carry": 5.0,
+    "touchdowns": 11,
+    "line_yards_per_carry": 2.7523,
+    "success_rate": 0.4472,
+    "opportunity_rate": 0.4724,
+    "highlight_yards_per_carry": 2.2176,
+    "stuff_rate": 0.1759,
+    "epa_per_carry": 0.1156
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 14,
+    "success_rate": 9,
+    "opportunity_rate": 12,
+    "highlight_yards_per_carry": 12,
+    "stuff_rate": 7,
+    "epa_per_carry": 7
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00013634",
+     "name": "Li'Darius Pryor",
+     "position": "RB",
+     "carries": 77,
+     "yards": 379,
+     "yards_per_carry": 4.9,
+     "touchdowns": 5,
+     "epa_per_carry": 0.0104,
+     "explosive_rate": 0.0779
+    },
+    {
+     "player_id": "PERS_00011149",
+     "name": "Nate Blount IV",
+     "position": "RB",
+     "carries": 49,
+     "yards": 299,
+     "yards_per_carry": 6.1,
+     "touchdowns": 3,
+     "epa_per_carry": 0.4629,
+     "explosive_rate": 0.1837
+    },
+    {
+     "player_id": "PERS_00009332",
+     "name": "Emari Matthews",
+     "position": "RB",
+     "carries": 28,
+     "yards": 131,
+     "yards_per_carry": 4.7,
+     "touchdowns": 1,
+     "epa_per_carry": -0.0866,
+     "explosive_rate": 0.1071
+    },
+    {
+     "player_id": "PERS_00012105",
+     "name": "Jared Lockhart",
+     "position": "QB",
+     "carries": 26,
+     "yards": 82,
+     "yards_per_carry": 3.2,
+     "touchdowns": 1,
+     "epa_per_carry": -0.0914,
+     "explosive_rate": 0.1154
+    },
+    {
+     "player_id": "PERS_00013621",
+     "name": "Caron Tyler",
+     "position": "QB",
+     "carries": 12,
+     "yards": 95,
+     "yards_per_carry": 7.9,
+     "touchdowns": 1,
+     "epa_per_carry": 0.7246,
+     "explosive_rate": 0.25
+    }
+   ],
+   "ranks_swac": {
+    "carries": 3,
+    "yards": 4,
+    "yards_per_carry": 7,
+    "touchdowns": 2,
+    "line_yards_per_carry": 9,
+    "success_rate": 6,
+    "opportunity_rate": 7,
+    "highlight_yards_per_carry": 8,
+    "stuff_rate": 5,
+    "epa_per_carry": 4
+   }
+  },
+  {
+   "team_id": "swacmvsu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 24,
+     "yards": 135,
+     "loss_yards": -17,
+     "line_yards_on_gains": 76.5,
+     "highlight_yards_on_gains": 75.5
+    },
+    {
+     "direction": "middle",
+     "attempts": 68,
+     "yards": 421,
+     "loss_yards": -43,
+     "line_yards_on_gains": 214.5,
+     "highlight_yards_on_gains": 249.5
+    },
+    {
+     "direction": "right",
+     "attempts": 27,
+     "yards": 117,
+     "loss_yards": -13,
+     "line_yards_on_gains": 80.5,
+     "highlight_yards_on_gains": 49.5
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 119,
+    "yards": 673,
+    "yards_per_carry": 5.7,
+    "touchdowns": 8,
+    "line_yards_per_carry": 2.3857,
+    "success_rate": 0.3866,
+    "opportunity_rate": 0.4454,
+    "highlight_yards_per_carry": 3.2697,
+    "stuff_rate": 0.2857,
+    "epa_per_carry": 0.0335
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 17,
+    "success_rate": 13,
+    "opportunity_rate": 16,
+    "highlight_yards_per_carry": 1,
+    "stuff_rate": 17,
+    "epa_per_carry": 11
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00013680",
+     "name": "Joshua Brown",
+     "position": "QB",
+     "carries": 47,
+     "yards": 312,
+     "yards_per_carry": 6.6,
+     "touchdowns": 7,
+     "epa_per_carry": 0.236,
+     "explosive_rate": 0.1702
+    },
+    {
+     "player_id": "PERS_00012164",
+     "name": "Norman Taylor",
+     "position": "RB",
+     "carries": 35,
+     "yards": 150,
+     "yards_per_carry": 4.3,
+     "touchdowns": 0,
+     "epa_per_carry": -0.118,
+     "explosive_rate": 0.1143
+    },
+    {
+     "player_id": "PERS_00013673",
+     "name": "Dezmond Ray",
+     "position": "RB",
+     "carries": 14,
+     "yards": 43,
+     "yards_per_carry": 3.1,
+     "touchdowns": 0,
+     "epa_per_carry": -0.3279,
+     "explosive_rate": 0.0714
+    },
+    {
+     "player_id": "PERS_00013678",
+     "name": "Carter James",
+     "position": "RB",
+     "carries": 11,
+     "yards": 29,
+     "yards_per_carry": 2.6,
+     "touchdowns": 0,
+     "epa_per_carry": -0.6334,
+     "explosive_rate": 0.0
+    },
+    {
+     "player_id": "PERS_00012184",
+     "name": "Caleb Brownlow",
+     "position": "WR",
+     "carries": 4,
+     "yards": 81,
+     "yards_per_carry": 20.2,
+     "touchdowns": 1,
+     "epa_per_carry": 1.46,
+     "explosive_rate": 0.25
+    }
+   ],
+   "ranks_swac": {
+    "carries": 10,
+    "yards": 11,
+    "yards_per_carry": 5,
+    "touchdowns": 4,
+    "line_yards_per_carry": 11,
+    "success_rate": 10,
+    "opportunity_rate": 11,
+    "highlight_yards_per_carry": 1,
+    "stuff_rate": 11,
+    "epa_per_carry": 7
+   }
+  },
+  {
+   "team_id": "swacpvamu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 45,
+     "yards": 355,
+     "loss_yards": -6,
+     "line_yards_on_gains": 185.0,
+     "highlight_yards_on_gains": 176.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 75,
+     "yards": 301,
+     "loss_yards": -51,
+     "line_yards_on_gains": 217.5,
+     "highlight_yards_on_gains": 134.5
+    },
+    {
+     "direction": "right",
+     "attempts": 46,
+     "yards": 302,
+     "loss_yards": -12,
+     "line_yards_on_gains": 174.5,
+     "highlight_yards_on_gains": 139.5
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 166,
+    "yards": 958,
+    "yards_per_carry": 5.8,
+    "touchdowns": 8,
+    "line_yards_per_carry": 2.9771,
+    "success_rate": 0.4578,
+    "opportunity_rate": 0.5301,
+    "highlight_yards_per_carry": 2.794,
+    "stuff_rate": 0.241,
+    "epa_per_carry": -0.0067
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 11,
+    "success_rate": 8,
+    "opportunity_rate": 6,
+    "highlight_yards_per_carry": 5,
+    "stuff_rate": 14,
+    "epa_per_carry": 12
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00012215",
+     "name": "Tevin Carter",
+     "position": "QB",
+     "carries": 54,
+     "yards": 311,
+     "yards_per_carry": 5.8,
+     "touchdowns": 5,
+     "epa_per_carry": 0.0466,
+     "explosive_rate": 0.1667
+    },
+    {
+     "player_id": "PERS_00010922",
+     "name": "Jahbari Kuykendall",
+     "position": "RB",
+     "carries": 43,
+     "yards": 314,
+     "yards_per_carry": 7.3,
+     "touchdowns": 1,
+     "epa_per_carry": 0.0829,
+     "explosive_rate": 0.2093
+    },
+    {
+     "player_id": "PERS_00011223",
+     "name": "Chase Bingmon",
+     "position": "RB",
+     "carries": 42,
+     "yards": 154,
+     "yards_per_carry": 3.7,
+     "touchdowns": 2,
+     "epa_per_carry": -0.0678,
+     "explosive_rate": 0.0952
+    },
+    {
+     "player_id": "PERS_00013733",
+     "name": "Ky'Yon Harris",
+     "position": "RB",
+     "carries": 11,
+     "yards": 91,
+     "yards_per_carry": 8.3,
+     "touchdowns": 0,
+     "epa_per_carry": -0.4301,
+     "explosive_rate": 0.2727
+    },
+    {
+     "player_id": "PERS_00013722",
+     "name": "Zayvion Turner-Knox",
+     "position": "RB",
+     "carries": 8,
+     "yards": 60,
+     "yards_per_carry": 7.5,
+     "touchdowns": 0,
+     "epa_per_carry": 0.2351,
+     "explosive_rate": 0.125
+    }
+   ],
+   "ranks_swac": {
+    "carries": 6,
+    "yards": 5,
+    "yards_per_carry": 4,
+    "touchdowns": 4,
+    "line_yards_per_carry": 6,
+    "success_rate": 5,
+    "opportunity_rate": 3,
+    "highlight_yards_per_carry": 4,
+    "stuff_rate": 9,
+    "epa_per_carry": 8
+   }
+  },
+  {
+   "team_id": "swacsu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 27,
+     "yards": 143,
+     "loss_yards": -2,
+     "line_yards_on_gains": 102.0,
+     "highlight_yards_on_gains": 43.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 143,
+     "yards": 607,
+     "loss_yards": -34,
+     "line_yards_on_gains": 446.5,
+     "highlight_yards_on_gains": 194.5
+    },
+    {
+     "direction": "right",
+     "attempts": 33,
+     "yards": 153,
+     "loss_yards": -14,
+     "line_yards_on_gains": 109.5,
+     "highlight_yards_on_gains": 57.5
+    }
+   ],
+   "uncharted_carries": 1,
+   "totals": {
+    "carries": 204,
+    "yards": 906,
+    "yards_per_carry": 4.4,
+    "touchdowns": 6,
+    "line_yards_per_carry": 2.9461,
+    "success_rate": 0.3775,
+    "opportunity_rate": 0.4608,
+    "highlight_yards_per_carry": 1.4951,
+    "stuff_rate": 0.1422,
+    "epa_per_carry": -0.0179
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 12,
+    "success_rate": 16,
+    "opportunity_rate": 14,
+    "highlight_yards_per_carry": 16,
+    "stuff_rate": 2,
+    "epa_per_carry": 13
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00012282",
+     "name": "Trey Holly",
+     "position": "RB",
+     "carries": 128,
+     "yards": 526,
+     "yards_per_carry": 4.1,
+     "touchdowns": 3,
+     "epa_per_carry": -0.1044,
+     "explosive_rate": 0.0547
+    },
+    {
+     "player_id": "PERS_00013798",
+     "name": "Christian Johnson",
+     "position": "QB",
+     "carries": 32,
+     "yards": 149,
+     "yards_per_carry": 4.7,
+     "touchdowns": 1,
+     "epa_per_carry": 0.2755,
+     "explosive_rate": 0.0625
+    },
+    {
+     "player_id": "PERS_00012283",
+     "name": "Mike Franklin",
+     "position": "RB",
+     "carries": 24,
+     "yards": 158,
+     "yards_per_carry": 6.6,
+     "touchdowns": 2,
+     "epa_per_carry": 0.1712,
+     "explosive_rate": 0.125
+    },
+    {
+     "player_id": "PERS_00013797",
+     "name": "Kiwaun Davis",
+     "position": "CB",
+     "carries": 6,
+     "yards": 6,
+     "yards_per_carry": 1.0,
+     "touchdowns": 0,
+     "epa_per_carry": -0.7652,
+     "explosive_rate": 0.0
+    },
+    {
+     "player_id": "PERS_00013814",
+     "name": "Macario Dade Jr.",
+     "position": "RB",
+     "carries": 5,
+     "yards": 41,
+     "yards_per_carry": 8.2,
+     "touchdowns": 0,
+     "epa_per_carry": 0.261,
+     "explosive_rate": 0.2
+    }
+   ],
+   "ranks_swac": {
+    "carries": 2,
+    "yards": 7,
+    "yards_per_carry": 9,
+    "touchdowns": 6,
+    "line_yards_per_carry": 7,
+    "success_rate": 11,
+    "opportunity_rate": 9,
+    "highlight_yards_per_carry": 12,
+    "stuff_rate": 2,
+    "epa_per_carry": 9
+   }
+  },
+  {
+   "team_id": "swactsu",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 32,
+     "yards": 230,
+     "loss_yards": -4,
+     "line_yards_on_gains": 128.0,
+     "highlight_yards_on_gains": 106.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 106,
+     "yards": 620,
+     "loss_yards": -12,
+     "line_yards_on_gains": 386.0,
+     "highlight_yards_on_gains": 246.0
+    },
+    {
+     "direction": "right",
+     "attempts": 33,
+     "yards": 198,
+     "loss_yards": -15,
+     "line_yards_on_gains": 124.0,
+     "highlight_yards_on_gains": 89.0
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 171,
+    "yards": 1048,
+    "yards_per_carry": 6.1,
+    "touchdowns": 11,
+    "line_yards_per_carry": 3.5135,
+    "success_rate": 0.4854,
+    "opportunity_rate": 0.5263,
+    "highlight_yards_per_carry": 2.6152,
+    "stuff_rate": 0.1287,
+    "epa_per_carry": 0.2602
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 3,
+    "success_rate": 6,
+    "opportunity_rate": 7,
+    "highlight_yards_per_carry": 7,
+    "stuff_rate": 1,
+    "epa_per_carry": 3
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00014197",
+     "name": "Athean Renfro Jr.",
+     "position": "RB",
+     "carries": 89,
+     "yards": 520,
+     "yards_per_carry": 5.8,
+     "touchdowns": 4,
+     "epa_per_carry": 0.0583,
+     "explosive_rate": 0.1236
+    },
+    {
+     "player_id": "PERS_00011135",
+     "name": "Cam'Ron McCoy",
+     "position": "QB",
+     "carries": 38,
+     "yards": 314,
+     "yards_per_carry": 8.3,
+     "touchdowns": 4,
+     "epa_per_carry": 0.7641,
+     "explosive_rate": 0.2105
+    },
+    {
+     "player_id": "PERS_00010446",
+     "name": "Jacob Washington",
+     "position": "RB",
+     "carries": 20,
+     "yards": 118,
+     "yards_per_carry": 5.9,
+     "touchdowns": 2,
+     "epa_per_carry": 0.2806,
+     "explosive_rate": 0.2
+    },
+    {
+     "player_id": "PERS_00013870",
+     "name": "Ri'Jon Hammond",
+     "position": "RB",
+     "carries": 8,
+     "yards": 45,
+     "yards_per_carry": 5.6,
+     "touchdowns": 1,
+     "epa_per_carry": 0.8019,
+     "explosive_rate": 0.125
+    },
+    {
+     "player_id": "PERS_00013874",
+     "name": "David Kency, Jr.",
+     "position": "RB",
+     "carries": 5,
+     "yards": 20,
+     "yards_per_carry": 4.0,
+     "touchdowns": 0,
+     "epa_per_carry": 0.045,
+     "explosive_rate": 0.2
+    }
+   ],
+   "ranks_swac": {
+    "carries": 5,
+    "yards": 3,
+    "yards_per_carry": 3,
+    "touchdowns": 2,
+    "line_yards_per_carry": 2,
+    "success_rate": 3,
+    "opportunity_rate": 4,
+    "highlight_yards_per_carry": 5,
+    "stuff_rate": 1,
+    "epa_per_carry": 1
+   }
+  },
+  {
+   "team_id": "swacuapb",
+   "lanes": [
+    {
+     "direction": "left",
+     "attempts": 20,
+     "yards": 130,
+     "loss_yards": -2,
+     "line_yards_on_gains": 77.0,
+     "highlight_yards_on_gains": 55.0
+    },
+    {
+     "direction": "middle",
+     "attempts": 99,
+     "yards": 577,
+     "loss_yards": -11,
+     "line_yards_on_gains": 353.0,
+     "highlight_yards_on_gains": 235.0
+    },
+    {
+     "direction": "right",
+     "attempts": 26,
+     "yards": 218,
+     "loss_yards": -5,
+     "line_yards_on_gains": 104.5,
+     "highlight_yards_on_gains": 118.5
+    }
+   ],
+   "uncharted_carries": 0,
+   "totals": {
+    "carries": 145,
+    "yards": 925,
+    "yards_per_carry": 6.4,
+    "touchdowns": 6,
+    "line_yards_per_carry": 3.5372,
+    "success_rate": 0.4759,
+    "opportunity_rate": 0.5655,
+    "highlight_yards_per_carry": 2.8421,
+    "stuff_rate": 0.1862,
+    "epa_per_carry": 0.1254
+   },
+   "ranks_18": {
+    "line_yards_per_carry": 2,
+    "success_rate": 7,
+    "opportunity_rate": 2,
+    "highlight_yards_per_carry": 4,
+    "stuff_rate": 8,
+    "epa_per_carry": 6
+   },
+   "top_rushers": [
+    {
+     "player_id": "PERS_00011361",
+     "name": "Jaylen Jennings",
+     "position": "RB",
+     "carries": 43,
+     "yards": 186,
+     "yards_per_carry": 4.3,
+     "touchdowns": 3,
+     "epa_per_carry": -0.0884,
+     "explosive_rate": 0.0698
+    },
+    {
+     "player_id": "PERS_00011369",
+     "name": "Za’Marion Webber",
+     "position": "RB",
+     "carries": 42,
+     "yards": 241,
+     "yards_per_carry": 5.7,
+     "touchdowns": 2,
+     "epa_per_carry": 0.0575,
+     "explosive_rate": 0.0952
+    },
+    {
+     "player_id": "PERS_00012387",
+     "name": "Garrison Davis",
+     "position": "QB",
+     "carries": 19,
+     "yards": 199,
+     "yards_per_carry": 10.5,
+     "touchdowns": 0,
+     "epa_per_carry": 0.8245,
+     "explosive_rate": 0.3158
+    },
+    {
+     "player_id": "PERS_00013910",
+     "name": "Jack Schierholz",
+     "position": "QB",
+     "carries": 18,
+     "yards": 101,
+     "yards_per_carry": 5.6,
+     "touchdowns": 0,
+     "epa_per_carry": -0.2732,
+     "explosive_rate": 0.1111
+    },
+    {
+     "player_id": "PERS_00013907",
+     "name": "Jalen Williams",
+     "position": "RB",
+     "carries": 17,
+     "yards": 162,
+     "yards_per_carry": 9.5,
+     "touchdowns": 1,
+     "epa_per_carry": 0.5241,
+     "explosive_rate": 0.2941
+    }
+   ],
+   "ranks_swac": {
+    "carries": 8,
+    "yards": 6,
+    "yards_per_carry": 2,
+    "touchdowns": 6,
+    "line_yards_per_carry": 1,
+    "success_rate": 4,
+    "opportunity_rate": 1,
+    "highlight_yards_per_carry": 3,
+    "stuff_rate": 6,
+    "epa_per_carry": 3
+   }
+  }
+ ]
+}

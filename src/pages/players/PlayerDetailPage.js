@@ -1,3 +1,5 @@
+import { usePlayerProfileComparisons } from "../../hooks/usePlayerProfileComparisons";
+import { TEAM_BY_EXPORT, formatHeight, CLASS_FULL, resolveProfilePlayer, findProfileRosterEntry, mapProfileSeasonGames } from "../../utils/playerProfileModel";
 import { useMemo, useState } from "react";
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { Box, Flex, Spinner, Text } from "@chakra-ui/react";
@@ -6,59 +8,20 @@ import PageShell from "../../components/layouts/PageShell";
 import { useLayoutDensity } from "../../hooks/useLayoutDensity";
 import { useAllPlayersByYear, usePlayerProfileDoc } from "../../hooks/useSWACData";
 import { useFootballCurrentContext } from "../../hooks/useFootballCurrentContext";
-import teamsData from "../../data/teams.json";
 import PlayerProfileBanner from "../../components/organisms/player/PlayerProfileBanner";
 import { PlayerProfileControlStripV2 } from "../../components/organisms/test/PlayerProfileControlStripV2";
 import PlayerStatsTab from "../../components/organisms/player/PlayerStatsTab";
 import PlayerAdvancedTab from "../../components/organisms/player/PlayerAdvancedTab";
 import PlayerBioBackgroundPanel from "../../components/organisms/player/PlayerBioBackgroundPanel";
 
-const TEAM_BY_EXPORT = teamsData.teams.reduce((acc, team) => {
-  acc[team.exportId] = {
-    shortName: team.shortName,
-    fullName: team.name,
-    conference: team.conference,
-    division: team.division,
-    colors: team.colors,
-    logo: team.logo,
-    state: team.state,
-  };
-
-  const v5 = team.exportId.replace(/25$/, "");
-  acc[v5] = {
-    shortName: team.shortName,
-    fullName: team.name,
-    conference: team.conference,
-    division: team.division,
-    colors: team.colors,
-    logo: team.logo,
-    state: team.state,
-  };
-
-  return acc;
-}, {});
-
-const formatHeight = (inches) => {
-  if (!inches) return "-";
-  return `${Math.floor(inches / 12)}'${inches % 12}"`;
-};
-
 // Keyed by number, not AP abbreviation — player.class_year comes through the
 // pipeline as a raw 1-5, not "Fr."/"So."/etc, so a string-keyed lookup here
 // always missed and silently fell back to the raw number everywhere this map
 // is used (PlayerDetailHero, PlayerBioBackgroundPanel).
-const CLASS_FULL = {
-  1: "Freshman",
-  2: "Sophomore",
-  3: "Junior",
-  4: "Senior",
-  5: "Graduate",
-};
 
 // Team ids arrive in several shapes across the roster/stats feeds
 // ("swacaamu", "swacaamu25", mixed case). Every comparison has to normalize
 // or it silently matches nothing.
-const normalizeTeamId = (value) => String(value ?? "").toLowerCase().replace(/25$/, "");
 
 const TABS = [
   { id: "profile", label: "BIO & BACKGROUND", shortLabel: "BIO", icon: User },
@@ -86,93 +49,21 @@ const PlayerDetailPage = () => {
   // 2025-only "stats enriched" file did; the profile document adds the rest.
   const { currentSeason: season } = useFootballCurrentContext();
   const { players: seasonRows, isLoading } = useAllPlayersByYear(season);
-  // The hook returns a fresh array each render; the roster itself is static.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const rosterPlayers = useMemo(() => seasonRows, [seasonRows.length]);
+  // Use the current rows even when a season/update has the same player count.
+  const rosterPlayers = seasonRows;
   const statPlayers = useMemo(
     () => rosterPlayers.map((p) => ({ ...p, name_display: p.full_name, team: p.team_id, position: p.position_abbr ?? p.position })),
     [rosterPlayers],
   );
 
-  const player = useMemo(() => {
-    if (location.state?.player) {
-      // A card from a 2025-based list hands over last season's row; swap in this
-      // season's row for the same person (id, else name + team) when there is one.
-      const given = location.state.player;
-      const givenTeam = String(given.team ?? given.team_id ?? "").toLowerCase().replace(/25$/, "");
-      const givenName = String(given.name_display ?? given.full_name ?? "").toLowerCase();
-      return (
-        statPlayers.find((p) => given.person_id && p.person_id === given.person_id) ??
-        statPlayers.find((p) => givenName && String(p.name_display ?? "").toLowerCase() === givenName && String(p.team ?? "").toLowerCase() === givenTeam) ??
-        given
-      );
-    }
-    if (!playerKey) return null;
+  const player = useMemo(() => resolveProfilePlayer({ state: location.state, playerKey, rosterPlayers, statPlayers }), [location.state, playerKey, rosterPlayers, statPlayers]);
 
-    const decoded = decodeURIComponent(playerKey);
-    if (decoded.startsWith("PERS_")) {
-      const fromStatsById = statPlayers.find((p) => p.person_id === decoded);
-      if (fromStatsById) return fromStatsById;
-
-      const fromRosterById = rosterPlayers.find((p) => p.person_id === decoded);
-      if (fromRosterById) {
-        return {
-          ...fromRosterById,
-          name_display: fromRosterById.full_name,
-          team: fromRosterById.team_id,
-          position: fromRosterById.position_abbr,
-        };
-      }
-    }
-
-    const [namePart, teamPart] = decoded.split("__");
-    if (!namePart) return null;
-
-    // Different link-builders across the app encode the team id differently
-    // — some use the bare id ("swacpvamu"), some the export-style id with a
-    // trailing season suffix ("swacpvamu25"). Strip it on both sides so a
-    // reload (which loses location.state and forces this URL-based lookup)
-    // doesn't 404 just because two components picked different formats.
-    const normalizeTeam = (t) => String(t ?? "").toLowerCase().replace(/25$/, "");
-    const teamKey = normalizeTeam(teamPart);
-
-    const fromStats = statPlayers.find(
-      (p) =>
-        (p.name_display ?? "").toLowerCase() === namePart.toLowerCase() &&
-        normalizeTeam(p.team) === teamKey,
-    );
-    if (fromStats) return fromStats;
-
-    const fromRoster = rosterPlayers.find(
-      (p) =>
-        (p.full_name ?? "").toLowerCase() === namePart.toLowerCase() &&
-        normalizeTeam(p.team_id) === teamKey,
-    );
-    if (!fromRoster) return null;
-
-    return {
-      ...fromRoster,
-      name_display: fromRoster.full_name,
-      team: fromRoster.team_id,
-      position: fromRoster.position_abbr,
-    };
-  }, [location.state, playerKey, rosterPlayers, statPlayers]);
-
-  const rosterEntry = useMemo(() => {
-    if (!player) return null;
-    return (
-      rosterPlayers.find((p) => player.person_id && p.person_id === player.person_id) ??
-      rosterPlayers.find(
-        (p) =>
-          (p.full_name ?? "").toLowerCase() === (player.name_display ?? player.full_name ?? "").toLowerCase(),
-      )
-    );
-  }, [player, rosterPlayers]);
+  const rosterEntry = useMemo(() => findProfileRosterEntry({ player, rosterPlayers }), [player, rosterPlayers]);
 
   // BACKEND_RESPONSE_SPEC.md §4.2 — one-player, one-document, for the season on
   // screen (players/profile/{season}/{person_id}.json). A player without one
   // 404s and `profileDoc` is null, falling through to the roster merge below.
-  const { doc: profileDoc } = usePlayerProfileDoc(season, rosterEntry?.person_id ?? player?.person_id);
+  const { doc: profileDoc, isLoading: isLoadingGames } = usePlayerProfileDoc(season, rosterEntry?.person_id ?? player?.person_id);
   const identity = profileDoc?.identity;
 
   const height = identity?.height ?? rosterEntry?.height ?? player?.height;
@@ -216,33 +107,16 @@ const PlayerDetailPage = () => {
   // §4.2's comparatives ship pre-ranked (rank/total), not a percentile — an
   // ordinal-to-percentile conversion drives the existing PercentileBar so
   // the panel doesn't need its own rendering path for the two shapes.
-  const rankToPct = (rank, total) => (total > 1 ? 100 - ((rank - 1) / (total - 1)) * 100 : 100);
-  const docComparatives = profileDoc?.comparatives;
 
-  // §4.2's games[] (real per-game rows, one per scheduled game) replaces
-  // MOCK_SEASON_GAMES for whichever player has a document. stat_line[] is
+  const { statPositionPeers, heightPercentile, weightPercentile, heightAvg, weightAvg, teamPeers, positionTeamCount, classTeamCount, transferTeamCount, inStateTeamCount, homeStateTeamCount, positionClassCounts } = usePlayerProfileComparisons({ profileDoc, rosterPlayers, statPlayers, player, height, weight, identity, classYear, homeState });
+
+  // §4.2's games[] provides the per-game rows. stat_line[] is
   // already position-agnostic ([{label,value}]) — GameReadout reads it
   // directly via game.statFields rather than the defense-shaped buildStatFields.
   // field_map is now per-game too (games[].field_map, {passing, rushing}) —
   // filtering to "played" games means every remaining row has real cells,
   // never the null the backend sends for an uncovered week.
-  const docSeasonGames = useMemo(() => {
-    if (!profileDoc?.games) return null;
-    return profileDoc.games
-      .filter((g) => g.data_state === "played")
-      .map((g) => ({
-        week: `Week ${g.week}`,
-        vs: `${g.home_away === "away" ? "@" : "vs"} ${g.opponent_name}`,
-        opponentId: g.opponent_id,
-        result: g.score,
-        par: g.par,
-        statFields: (g.stat_line ?? []).map((s) => ({ label: s.label, value: String(s.value) })),
-        // The game's havoc plays (games[].havoc) as the backend sends them; the
-        // spatial chart draws these and nothing else.
-        havoc: g.havoc ?? null,
-        fieldMap: g.field_map,
-      }));
-  }, [profileDoc]);
+  const docSeasonGames = useMemo(() => mapProfileSeasonGames(profileDoc), [profileDoc]);
   // views[]/depth_bands are constant for the player, sent once on the
   // season block rather than repeated on every game row.
   const docFieldMapViews = profileDoc?.field_map?.views;
@@ -250,34 +124,9 @@ const PlayerDetailPage = () => {
 
   // Percentile vs. same-position peers across the full roster — real
   // comparison, not a fabricated stat.
-  const percentileRank = (list, value) => {
-    const nums = list.filter((n) => Number.isFinite(n));
-    if (!nums.length || !Number.isFinite(value)) return null;
-    const below = nums.filter((n) => n < value).length;
-    return Math.round((below / nums.length) * 100);
-  };
-  const positionPeers = useMemo(
-    () => rosterPlayers.filter((p) => p.position_group === player?.position_group),
-    [rosterPlayers, player],
-  );
+
   // Stats-source peers (carry par/total_production/games_played, unlike the
   // roster source) for the Stats tab's conference-rank mock computation.
-  const statPositionPeers = useMemo(
-    () => statPlayers.filter((p) => p.position_group === player?.position_group),
-    [statPlayers, player],
-  );
-  const heightPercentile = docComparatives
-    ? Math.round(rankToPct(docComparatives.height.rank, docComparatives.height.total))
-    : percentileRank(positionPeers.map((p) => p.height), Number(height));
-  const weightPercentile = docComparatives
-    ? Math.round(rankToPct(docComparatives.weight.rank, docComparatives.weight.total))
-    : percentileRank(positionPeers.map((p) => p.weight), Number(weight));
-  const average = (nums) => {
-    const finite = nums.filter((n) => Number.isFinite(n));
-    return finite.length ? finite.reduce((a, b) => a + b, 0) / finite.length : null;
-  };
-  const heightAvg = docComparatives?.height.group_avg ?? average(positionPeers.map((p) => p.height));
-  const weightAvg = docComparatives?.weight.group_avg ?? average(positionPeers.map((p) => p.weight));
 
   // Team-scoped "1 of N" roster-context counts — per your note, this should
   // compare against the player's own team, not the whole league.
@@ -285,46 +134,21 @@ const PlayerDetailPage = () => {
   // record came through the stats feed (different casing / trailing "25").
   // teamPeers came back empty, so every "1 of N" read "1 of 0" and the
   // position/class grid was all zeros.
-  const teamPeers = useMemo(() => {
-    const teamKey = normalizeTeamId(player?.team ?? player?.team_id);
-    return rosterPlayers.filter((p) => normalizeTeamId(p.team_id) === teamKey);
-  }, [rosterPlayers, player]);
+
   // §4.2's on_this_team[] ships pre-counted totals by label — the card
   // always renders "1 of {value}" regardless of the player's real rank
   // (a pre-existing simplification, unchanged here), so only the total
   // needs to come from the right source.
-  const onTeamTotal = (label) =>
-    docComparatives?.on_this_team?.find((c) => c.label.toUpperCase() === label)?.total;
-  const positionTeamCount = onTeamTotal("QUARTERBACKS") ?? onTeamTotal(`${identity?.position_group ?? ""}S`) ??
-    teamPeers.filter((p) => p.position_group === player?.position_group).length;
-  const classTeamCount = onTeamTotal(`${(identity?.class_label ?? "").toUpperCase()}S`) ??
-    teamPeers.filter((p) => p.class_year === classYear).length;
-  const transferTeamCount = onTeamTotal("TRANSFERS") ?? teamPeers.filter((p) => p.is_transfer).length;
-  const inStateTeamCount = onTeamTotal("IN-STATE PLAYERS") ?? teamPeers.filter((p) => p.is_in_state).length;
+
   // Teammates from this player's own home state — the mobile home-state
   // card reads "N of M from Georgia". Real distance-from-school miles do
   // not exist in the pipeline (0 of 1946 players carry it). Not part of
   // §4.2's on_this_team[] — still team-wide roster derived.
-  const homeStateTeamCount = teamPeers.filter(
-    (p) => String(p.home_state ?? "").toUpperCase() === String(homeState ?? "").toUpperCase()
-  ).length;
 
   // Position-group teammates broken out by class year, for the roster
   // distribution grid. §4.2's comparatives.position_room[] ships this
   // pre-counted for whichever player has a document; team-scoped roster
   // derivation is the fallback for everyone else.
-  const CLASS_TO_NUM = { "Fr.": 1, "So.": 2, "Jr.": 3, "Sr.": 4, "Gr.": 5 };
-  const positionTeammates = teamPeers.filter((p) => p.position_group === player?.position_group);
-  const positionClassCounts = docComparatives?.position_room
-    ? docComparatives.position_room.reduce((acc, item) => {
-        const num = CLASS_TO_NUM[item.class];
-        if (num) acc[num] = item.count;
-        return acc;
-      }, {})
-    : [1, 2, 3, 4, 5].reduce((acc, year) => {
-        acc[year] = positionTeammates.filter((p) => p.class_year === year).length;
-        return acc;
-      }, {});
 
   if (isLoading) {
     return (
@@ -406,6 +230,7 @@ const PlayerDetailPage = () => {
       highSchool={highSchool}
       previousSchool={previousSchool}
       seasonGames={docSeasonGames}
+      isLoadingGames={isLoadingGames}
       fieldMapViews={docFieldMapViews}
       depthBands={docDepthBands}
       productionComponents={profileDoc?.season_totals?.season_components}

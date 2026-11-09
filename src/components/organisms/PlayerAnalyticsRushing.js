@@ -32,13 +32,13 @@ const Chart = ({ item, hover, setHover, srcsFor, poster }) => {
 };
 
 const RushingPoster = ({ item, posterRef }) => (
-  <Flex ref={posterRef} direction="column" w={`${POSTER}px`} h={`${POSTER}px`} bg="#0B0B0D" color="white" px="48px" pt="44px" pb="44px" fontFamily="inherit">
+  <Flex ref={posterRef} direction="column" w={`${POSTER}px`} h={`${POSTER}px`} bg="var(--gg-bg-primary)" color="var(--gg-ink)" px="48px" pt="44px" pb="44px" fontFamily="inherit">
     <Flex align="center" gap="12px" mb="8px">
       <Box w="8px" h="28px" bg={BRAND} />
       <Text fontSize="20px" fontWeight="900" letterSpacing="0.24em" textTransform="uppercase">HBCU GRIDIRON <Text as="span" color={BRAND}>GLORY</Text></Text>
     </Flex>
     <Text fontSize="64px" fontWeight="900" fontStyle="italic" textTransform="uppercase" letterSpacing="-0.035em" lineHeight={0.95}>{item.title}</Text>
-    <Text fontSize="22px" fontWeight="800" color="whiteAlpha.700" mt="12px">{SUBTITLE}</Text>
+    <Text fontSize="22px" fontWeight="800" color="text.secondary" mt="12px">{SUBTITLE}</Text>
     <Box flex={1} minH={0} mt="22px" w="1104px">
       <Chart item={item} hover={null} setHover={null} srcsFor={() => []} poster />
     </Box>
@@ -80,9 +80,9 @@ const PlayerAnalyticsRushing = () => {
               align="center"
               borderRadius="md"
               border="1px solid"
-              borderColor={on ? "brand.500" : "whiteAlpha.200"}
-              bg={on ? "whiteAlpha.100" : "transparent"}
-              _hover={{ bg: "whiteAlpha.100" }}
+              borderColor={on ? "brand.500" : "line.strong"}
+              bg={on ? "line" : "transparent"}
+              _hover={{ bg: "line" }}
             >
               <Text fontSize="sm" fontWeight={on ? "900" : "700"} color={on ? "text.primary" : "text.secondary"} whiteSpace="nowrap">{c.chip}</Text>
             </Flex>
@@ -91,13 +91,13 @@ const PlayerAnalyticsRushing = () => {
       </Flex>
 
       <Flex align="flex-end" justify="space-between" gap={3} mb={4} wrap="wrap">
-        <Text fontSize="clamp(1.6rem, 3.2vw, 2.6rem)" fontWeight="900" fontStyle="italic" color="white" textTransform="uppercase" letterSpacing="-0.03em" lineHeight={0.95}>
+        <Text fontSize="clamp(1.6rem, 3.2vw, 2.6rem)" fontWeight="900" fontStyle="italic" color="var(--gg-ink)" textTransform="uppercase" letterSpacing="-0.03em" lineHeight={0.95}>
           {item.title}
         </Text>
         <ExportCardButton target={posterRef} filename={() => `swac-rushing-${item.id}-${DATA.season}-w${DATA.through_week}.png`.replace(/_/g, "-")} />
       </Flex>
 
-      <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100" borderRadius="lg" p={3}>
+      <Box bg="bg.secondary" border="1px solid" borderColor="line" borderRadius="lg" p={3}>
         <Chart item={item} hover={hover} setHover={setHover} srcsFor={srcsFor} poster={false} />
       </Box>
 

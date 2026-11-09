@@ -1,12 +1,11 @@
 import { useMemo, useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 
 import { gameCenterPaths } from "../../utils/gameCenterPayloads";
 import { useAllPlayersByYear, useLeagueAverages } from "../../hooks/useSWACData";
-import { GamePageShell } from "../../components/game/page";
-import { getTeamLabel } from "../../components/game/page";
-import { normalizeDrives } from "../../components/game/page";
+import { GamePageShell, getTeamLabel, normalizeDrives } from "../../components/game/page";
+import { withParAsProduction } from "../../utils/parProduction";
 
 // ─── Data fetchers ────────────────────────────────────────────────────────────
 
@@ -41,15 +40,13 @@ export const fetchGame = async (gameId) => {
   if (!match) throw new Error("Game data not found");
   const res = await fetch(gameCenterPaths.gameFile(match.season, match.game_stem));
   if (!res.ok) throw new Error("Failed to load game payload");
-  return res.json();
+  return withParAsProduction(await res.json());
 };
 
 // ─── GamePage ─────────────────────────────────────────────────────────────────
 
 const GamePage = () => {
   const { gameId = "pvamutsu" } = useParams();
-  // eslint-disable-next-line no-unused-vars
-  const location = useLocation();
   const [activeSection, setActiveSection] = useState("summary");
 
   const { data: game, isLoading, isError } = useQuery({
@@ -81,7 +78,7 @@ const GamePage = () => {
   const awayShort = getTeamLabel(awayId);
   const homeShort = getTeamLabel(homeId);
 
-  // Determine which section we came from for sidebar context
+  // Map the selected section to the desktop and mobile banner tab labels.
   const activeTab = useMemo(() => {
     switch (activeSection) {
       case "boxscore": return "Player Stats";

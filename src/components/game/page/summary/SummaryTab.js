@@ -13,7 +13,6 @@ export const SummaryTab = ({
   priorPlayerSeasons,
   leagueAvg,
   productionScores,
-  drives,
   driveSummary,
   plays,
 }) => {

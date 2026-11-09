@@ -2,8 +2,18 @@ import { GamePreviewScoutA } from "./GamePreviewScoutA";
 import { StatsHubContextCardsA } from "./StatsHubContextCardsA";
 import { GameCenterContextCardsA } from "./GameCenterContextCardsA";
 import { GameBannerMobileA } from "./GameBannerMobileA";
+import { PassDefenseSeriesA } from "./PassDefenseSeriesA";
 
 const registry = [
+  {
+    number: 1714,
+    name: "Team Analytics - Pass Defense Recharts Series",
+    agent: "Codex",
+    date: "2026-11-03",
+    size: "4x8",
+    component: PassDefenseSeriesA,
+    hideOverlay: true,
+  },
   {
     number: 1713,
     name: "Game Preview - Scout (JSU at GSU)",

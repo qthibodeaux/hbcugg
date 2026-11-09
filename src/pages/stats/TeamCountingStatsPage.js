@@ -6,6 +6,7 @@ import CountingStatsBanner from "../../components/organisms/stats/CountingStatsB
 import { CountingTabGrid } from "../../components/molecules/stats/CountingTabRow";
 import { CountingTable } from "../../components/organisms/stats/CountingTable";
 import { PenaltyMatrix } from "../../components/organisms/stats/PenaltyMatrix";
+import { LeaderboardsPanel } from "../../components/organisms/stats/LeaderboardsPanel";
 import { SectionEyebrow } from "../../components/atoms/SectionEyebrow";
 import { useCountingTeamStats, useCountingSeason, useCountingPenalties } from "../../hooks/useSWACData";
 import { useCountingIndex } from "../../hooks/useCountingStats";
@@ -23,6 +24,10 @@ import { TEAM_STATS_TABS, TEAM_STATS_TAB_IDS, TEAM_STATS_TABLES, DEFAULT_TEAM_ST
 //
 // Penalties is the one tab that is not a Sidearm table: it is the whole
 // discipline picture as a single foul x team matrix. See PenaltyMatrix.
+//
+// Totals | Leaders: the banner's Leaders view swaps the tabs and tables for
+// LeaderboardsPanel: Per Game | Week, the section, and the poster with its Export
+// (the backend's stats/leaderboards).
 //
 // Data is the backend's stats/counting/team_{season}.json and
 // penalties_{season}.json (Counting Stats Fetch Contract), League games only.
@@ -47,6 +52,7 @@ const TeamCountingStatsPage = () => {
   const [conference, setConference] = useState("all");
   const data = useCountingTeamStats(season);
   const penalties = useCountingPenalties(season);
+  const [view, setView] = useState("totals");
 
   const rows = useMemo(
     () => (conference === "all" ? data.teams : data.teams.filter((t) => t.conference === conference)),
@@ -61,7 +67,9 @@ const TeamCountingStatsPage = () => {
     [rows],
   );
 
-  const body = data.isLoading ? (
+  const body = view === "leaders" ? (
+    <LeaderboardsPanel kind="team" season={season} conference={conference} />
+  ) : data.isLoading ? (
     <Flex justify="center" py={16}><Spinner color="brand.500" size="lg" /></Flex>
   ) : tab === "penalties" ? (
     <PenaltyMatrix teams={penaltyTeams} file={penalties.file} />
@@ -91,12 +99,15 @@ const TeamCountingStatsPage = () => {
           seasons={countingSeasons}
           conference={conference}
           setConference={setConference}
+          views={{ options: [{ value: "totals", label: "Totals" }, { value: "leaders", label: "Leaders" }], value: view, onChange: setView }}
         />
       </PageShell.Slot>
 
-      <PageShell.Slot cols={4}>
-        <CountingTabGrid tabs={TEAM_STATS_TABS} value={tab} onChange={(id) => setSearchParams({ tab: id })} />
-      </PageShell.Slot>
+      {view !== "leaders" && (
+        <PageShell.Slot cols={4}>
+          <CountingTabGrid tabs={TEAM_STATS_TABS} value={tab} onChange={(id) => setSearchParams({ tab: id })} />
+        </PageShell.Slot>
+      )}
     </PageShell>
   );
 };

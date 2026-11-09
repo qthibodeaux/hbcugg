@@ -1,0 +1,664 @@
+{
+ "meta": {
+  "title": "Rushing success rate vs explosive run rate (defense)",
+  "season": 2026,
+  "scope": "Every game between two of the 18 programs with play-by-play; defenses; rates allowed",
+  "through_week": 8,
+  "generated_at": "2026-10-28T06:47:13-05:00",
+  "keys": "team_id matches the site's other files; the frontend owns team display names"
+ },
+ "definitions": {
+  "success_rate_rush": "Share of carries (the offense's own, or opponents' for a defense) that were successful on down and distance (50% of the yards to go on 1st down, 70% on 2nd, all of it on 3rd and 4th).",
+  "explosive_rate_rush": "Share of those carries that gained 12+ yards.",
+  "without_garbage_time": "The same, leaving out garbage-time plays (the site's standard definition). Both versions ship because ranks change between them.",
+  "ranks": "1 = the lowest rate allowed (defense). ranks_18: among the 18 programs. ranks_swac: among the 12 SWAC teams. Ties share a rank.",
+  "sacks": "Not carries; not in either rate."
+ },
+ "league_average_18": {
+  "all": {
+   "success_rate_rush": 0.4437,
+   "explosive_rate_rush": 0.1246
+  },
+  "without_garbage_time": {
+   "success_rate_rush": 0.4401,
+   "explosive_rate_rush": 0.1218
+  }
+ },
+ "top_5_in_both": {
+  "swac_all": [
+   {
+    "team_id": "swacasu",
+    "success_rate_rush": 0.3667,
+    "explosive_rate_rush": 0.1
+   },
+   {
+    "team_id": "swacjsu",
+    "success_rate_rush": 0.4022,
+    "explosive_rate_rush": 0.087
+   },
+   {
+    "team_id": "swacmvsu",
+    "success_rate_rush": 0.3841,
+    "explosive_rate_rush": 0.0797
+   },
+   {
+    "team_id": "swacpvamu",
+    "success_rate_rush": 0.4134,
+    "explosive_rate_rush": 0.1006
+   }
+  ],
+  "swac_without_garbage_time": [
+   {
+    "team_id": "swacaamu",
+    "success_rate_rush": 0.3571,
+    "explosive_rate_rush": 0.0909
+   },
+   {
+    "team_id": "swacasu",
+    "success_rate_rush": 0.3631,
+    "explosive_rate_rush": 0.095
+   },
+   {
+    "team_id": "swacjsu",
+    "success_rate_rush": 0.4022,
+    "explosive_rate_rush": 0.087
+   },
+   {
+    "team_id": "swacmvsu",
+    "success_rate_rush": 0.3841,
+    "explosive_rate_rush": 0.0797
+   }
+  ],
+  "all_18_all": [
+   {
+    "team_id": "swacjsu",
+    "success_rate_rush": 0.4022,
+    "explosive_rate_rush": 0.087
+   },
+   {
+    "team_id": "swacmvsu",
+    "success_rate_rush": 0.3841,
+    "explosive_rate_rush": 0.0797
+   }
+  ],
+  "all_18_without_garbage_time": [
+   {
+    "team_id": "swacmvsu",
+    "success_rate_rush": 0.3841,
+    "explosive_rate_rush": 0.0797
+   }
+  ]
+ },
+ "teams": [
+  {
+   "team_id": "meacscsu",
+   "conference": "meac",
+   "games": 3,
+   "carries": 75,
+   "carries_without_garbage_time": 75.0,
+   "all": {
+    "success_rate_rush": 0.2533,
+    "explosive_rate_rush": 0.1067
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.2533,
+    "explosive_rate_rush": 0.1067
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 1,
+     "explosive_rate_rush": 10
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 1,
+     "explosive_rate_rush": 10
+    }
+   }
+  },
+  {
+   "team_id": "swacaamu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 182,
+   "carries_without_garbage_time": 154.0,
+   "all": {
+    "success_rate_rush": 0.3626,
+    "explosive_rate_rush": 0.1044
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.3571,
+    "explosive_rate_rush": 0.0909
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 2,
+     "explosive_rate_rush": 9
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 2,
+     "explosive_rate_rush": 6
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 1,
+     "explosive_rate_rush": 6
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 1,
+     "explosive_rate_rush": 4
+    }
+   }
+  },
+  {
+   "team_id": "swacasu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 180,
+   "carries_without_garbage_time": 179.0,
+   "all": {
+    "success_rate_rush": 0.3667,
+    "explosive_rate_rush": 0.1
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.3631,
+    "explosive_rate_rush": 0.095
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 3,
+     "explosive_rate_rush": 6
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 3,
+     "explosive_rate_rush": 7
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 2,
+     "explosive_rate_rush": 4
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 2,
+     "explosive_rate_rush": 5
+    }
+   }
+  },
+  {
+   "team_id": "swacmvsu",
+   "conference": "swac",
+   "games": 4,
+   "carries": 138,
+   "carries_without_garbage_time": 138.0,
+   "all": {
+    "success_rate_rush": 0.3841,
+    "explosive_rate_rush": 0.0797
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.3841,
+    "explosive_rate_rush": 0.0797
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 4,
+     "explosive_rate_rush": 2
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 4,
+     "explosive_rate_rush": 2
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 3,
+     "explosive_rate_rush": 1
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 3,
+     "explosive_rate_rush": 1
+    }
+   }
+  },
+  {
+   "team_id": "swacjsu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 184,
+   "carries_without_garbage_time": 184.0,
+   "all": {
+    "success_rate_rush": 0.4022,
+    "explosive_rate_rush": 0.087
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4022,
+    "explosive_rate_rush": 0.087
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 5,
+     "explosive_rate_rush": 3
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 6,
+     "explosive_rate_rush": 3
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 4,
+     "explosive_rate_rush": 2
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 5,
+     "explosive_rate_rush": 2
+    }
+   }
+  },
+  {
+   "team_id": "meacnsu",
+   "conference": "meac",
+   "games": 1,
+   "carries": 32,
+   "carries_without_garbage_time": 32.0,
+   "all": {
+    "success_rate_rush": 0.4062,
+    "explosive_rate_rush": 0.0625
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4062,
+    "explosive_rate_rush": 0.0625
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 6,
+     "explosive_rate_rush": 1
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 7,
+     "explosive_rate_rush": 1
+    }
+   }
+  },
+  {
+   "team_id": "swacpvamu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 179,
+   "carries_without_garbage_time": 161.0,
+   "all": {
+    "success_rate_rush": 0.4134,
+    "explosive_rate_rush": 0.1006
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.3851,
+    "explosive_rate_rush": 0.0994
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 7,
+     "explosive_rate_rush": 7
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 5,
+     "explosive_rate_rush": 8
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 5,
+     "explosive_rate_rush": 5
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 4,
+     "explosive_rate_rush": 6
+    }
+   }
+  },
+  {
+   "team_id": "meachu",
+   "conference": "meac",
+   "games": 2,
+   "carries": 45,
+   "carries_without_garbage_time": 45.0,
+   "all": {
+    "success_rate_rush": 0.4222,
+    "explosive_rate_rush": 0.0889
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4222,
+    "explosive_rate_rush": 0.0889
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 8,
+     "explosive_rate_rush": 5
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 8,
+     "explosive_rate_rush": 5
+    }
+   }
+  },
+  {
+   "team_id": "swacuapb",
+   "conference": "swac",
+   "games": 4,
+   "carries": 125,
+   "carries_without_garbage_time": 113.0,
+   "all": {
+    "success_rate_rush": 0.464,
+    "explosive_rate_rush": 0.088
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4602,
+    "explosive_rate_rush": 0.0885
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 9,
+     "explosive_rate_rush": 4
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 9,
+     "explosive_rate_rush": 4
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 6,
+     "explosive_rate_rush": 3
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 6,
+     "explosive_rate_rush": 3
+    }
+   }
+  },
+  {
+   "team_id": "swactsu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 179,
+   "carries_without_garbage_time": 173.0,
+   "all": {
+    "success_rate_rush": 0.4693,
+    "explosive_rate_rush": 0.1397
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4624,
+    "explosive_rate_rush": 0.1387
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 10,
+     "explosive_rate_rush": 12
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 10,
+     "explosive_rate_rush": 12
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 7,
+     "explosive_rate_rush": 8
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 7,
+     "explosive_rate_rush": 8
+    }
+   }
+  },
+  {
+   "team_id": "swacsu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 169,
+   "carries_without_garbage_time": 160.0,
+   "all": {
+    "success_rate_rush": 0.4734,
+    "explosive_rate_rush": 0.1657
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4625,
+    "explosive_rate_rush": 0.1562
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 11,
+     "explosive_rate_rush": 15
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 11,
+     "explosive_rate_rush": 15
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 8,
+     "explosive_rate_rush": 10
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 8,
+     "explosive_rate_rush": 10
+    }
+   }
+  },
+  {
+   "team_id": "swacgsu",
+   "conference": "swac",
+   "games": 4,
+   "carries": 152,
+   "carries_without_garbage_time": 146.0,
+   "all": {
+    "success_rate_rush": 0.4803,
+    "explosive_rate_rush": 0.1645
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4795,
+    "explosive_rate_rush": 0.1644
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 12,
+     "explosive_rate_rush": 14
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 12,
+     "explosive_rate_rush": 16
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 9,
+     "explosive_rate_rush": 9
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 9,
+     "explosive_rate_rush": 11
+    }
+   }
+  },
+  {
+   "team_id": "meacmsu",
+   "conference": "meac",
+   "games": 1,
+   "carries": 35,
+   "carries_without_garbage_time": 35.0,
+   "all": {
+    "success_rate_rush": 0.4857,
+    "explosive_rate_rush": 0.1429
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4857,
+    "explosive_rate_rush": 0.1429
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 13,
+     "explosive_rate_rush": 13
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 13,
+     "explosive_rate_rush": 13
+    }
+   }
+  },
+  {
+   "team_id": "swacbcu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 166,
+   "carries_without_garbage_time": 152.0,
+   "all": {
+    "success_rate_rush": 0.488,
+    "explosive_rate_rush": 0.1687
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4868,
+    "explosive_rate_rush": 0.1447
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 14,
+     "explosive_rate_rush": 17
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 14,
+     "explosive_rate_rush": 14
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 10,
+     "explosive_rate_rush": 12
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 10,
+     "explosive_rate_rush": 9
+    }
+   }
+  },
+  {
+   "team_id": "swacalc",
+   "conference": "swac",
+   "games": 4,
+   "carries": 137,
+   "carries_without_garbage_time": 137.0,
+   "all": {
+    "success_rate_rush": 0.4964,
+    "explosive_rate_rush": 0.1679
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.4964,
+    "explosive_rate_rush": 0.1679
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 15,
+     "explosive_rate_rush": 16
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 15,
+     "explosive_rate_rush": 17
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 11,
+     "explosive_rate_rush": 11
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 11,
+     "explosive_rate_rush": 12
+    }
+   }
+  },
+  {
+   "team_id": "swacfamu",
+   "conference": "swac",
+   "games": 5,
+   "carries": 220,
+   "carries_without_garbage_time": 220.0,
+   "all": {
+    "success_rate_rush": 0.5045,
+    "explosive_rate_rush": 0.1364
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.5045,
+    "explosive_rate_rush": 0.1364
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 16,
+     "explosive_rate_rush": 11
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 16,
+     "explosive_rate_rush": 11
+    }
+   },
+   "ranks_swac": {
+    "all": {
+     "success_rate_rush": 12,
+     "explosive_rate_rush": 7
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 12,
+     "explosive_rate_rush": 7
+    }
+   }
+  },
+  {
+   "team_id": "meacdsu",
+   "conference": "meac",
+   "games": 1,
+   "carries": 49,
+   "carries_without_garbage_time": 49.0,
+   "all": {
+    "success_rate_rush": 0.551,
+    "explosive_rate_rush": 0.102
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.551,
+    "explosive_rate_rush": 0.102
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 17,
+     "explosive_rate_rush": 8
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 17,
+     "explosive_rate_rush": 9
+    }
+   }
+  },
+  {
+   "team_id": "meacnccu",
+   "conference": "meac",
+   "games": 2,
+   "carries": 55,
+   "carries_without_garbage_time": 50.0,
+   "all": {
+    "success_rate_rush": 0.5636,
+    "explosive_rate_rush": 0.2364
+   },
+   "without_garbage_time": {
+    "success_rate_rush": 0.56,
+    "explosive_rate_rush": 0.24
+   },
+   "ranks_18": {
+    "all": {
+     "success_rate_rush": 18,
+     "explosive_rate_rush": 18
+    },
+    "without_garbage_time": {
+     "success_rate_rush": 18,
+     "explosive_rate_rush": 18
+    }
+   }
+  }
+ ]
+}

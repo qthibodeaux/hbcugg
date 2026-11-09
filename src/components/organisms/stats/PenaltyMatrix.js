@@ -1,9 +1,12 @@
-import { useMemo, useState } from "react";
-import { Box, Flex, Grid, Image, Text } from "@chakra-ui/react";
+import { PenaltyHeatGrid } from "./penalties/PenaltyHeatGrid";
+import { useMemo, useRef, useState } from "react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { PENALTY_PHASES, PENALTY_SIDES, penaltyMatrix } from "../../../pages/stats/penaltyMatrix";
+import { ExportCardButton } from "./ExportCardButton";
+import { useColorScheme } from "../../../theme/colorScheme";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// PENALTY MATRIX — every foul, every team, one season.
+// PENALTY BREAKDOWN (the penalty matrix) — every foul, every team, one season.
 //
 // The whole discipline picture as one grid: fouls down the side ordered by how
 // often the league commits them, teams across the top ordered by how often they
@@ -20,23 +23,19 @@ import { PENALTY_PHASES, PENALTY_SIDES, penaltyMatrix } from "../../../pages/sta
 //
 // Real: stats/counting/penalties_{season}.json (League games). Filter by phase
 // (pre-snap / live / dead ball) and by side (offense / defense / special teams).
+// Gridlines between every cell; the filter chips and Export button are
+// data-export-skip, so the PNG is the title and the grid only.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const AMBER = "246,173,85";
-
-const heatFill = (n, rowMax, rowTotal) => {
-  if (!n) return "transparent";
-  const t = rowMax > 0 ? n / rowMax : 0;
-  const mute = Math.min(1, 0.38 + rowTotal / 140);
-  return `rgba(${AMBER},${((0.1 + t * 0.62) * mute).toFixed(3)})`;
-};
+const BRAND_PURPLE_NIGHT = "168,85,247";
+const BRAND_PURPLE_LIGHT = "126,34,206";
 
 const Chip = ({ active, onClick, children }) => (
   <Box
     as="button" type="button" onClick={onClick} px={2.5} py={1.5} borderRadius="md" whiteSpace="nowrap"
     fontSize="9px" fontWeight="900" textTransform="uppercase" letterSpacing="0.1em"
-    bg={active ? "brand.500" : "whiteAlpha.100"} color={active ? "white" : "whiteAlpha.600"}
-    _hover={{ bg: active ? "brand.500" : "whiteAlpha.200" }}
+    bg={active ? "brand.500" : "line.subtle"} color={active ? "white" : "text.secondary"}
+    _hover={{ bg: active ? "brand.500" : "line.hover" }}
   >
     {children}
   </Box>
@@ -45,6 +44,9 @@ const Chip = ({ active, onClick, children }) => (
 export const PenaltyMatrix = ({ teams, file }) => {
   const [phase, setPhase] = useState("all");
   const [side, setSide] = useState("all");
+  const [scheme] = useColorScheme();
+  const exportRef = useRef(null);
+  const heatRgb = scheme === "light" ? BRAND_PURPLE_LIGHT : BRAND_PURPLE_NIGHT;
 
   const data = useMemo(() => penaltyMatrix(file, teams, side), [file, teams, side]);
 
@@ -68,93 +70,40 @@ export const PenaltyMatrix = ({ teams, file }) => {
       .sort((a, b) => b.total - a.total);
   }, [phase, columns, data]);
 
-  const template = `minmax(9.5rem, 1.2fr) 2.6rem repeat(${columns.length}, minmax(2.2rem, 1fr))`;
-
   return (
-    <Box bg="bg.secondary" border="1px solid" borderColor="whiteAlpha.100" borderRadius="lg" overflow="hidden">
+    <Box ref={exportRef} bg="bg.secondary" border="1px solid" borderColor="line" borderRadius="lg" overflow="hidden">
       {/* ── Masthead ─────────────────────────────────────────────────── */}
       <Flex align="flex-end" justify="space-between" gap={4} wrap="wrap" px={4} pt={4} pb={3}>
         <Box minW={0}>
           <Text
-            fontSize="clamp(1.4rem, 3.2vw, 2.6rem)" fontWeight="900" fontStyle="italic" color="white"
+            fontSize="clamp(1.4rem, 3.2vw, 2.6rem)" fontWeight="900" fontStyle="italic" color="text.primary"
             textTransform="uppercase" letterSpacing="-0.04em" lineHeight={0.9}
           >
-            Every flag, every foul
+            Penalty breakdown
           </Text>
         </Box>
-        <Flex direction="column" gap={2} align={{ base: "flex-start", md: "flex-end" }}>
+        <Flex direction="column" gap={2} align={{ base: "flex-start", md: "flex-end" }} data-export-skip="true">
           <Flex gap={2} wrap="wrap">
             {PENALTY_PHASES.map((p) => (
               <Chip key={p.id} active={phase === p.id} onClick={() => setPhase(p.id)}>{p.label}</Chip>
             ))}
           </Flex>
-          <Flex gap={2} wrap="wrap">
-            {PENALTY_SIDES.map((p) => (
-              <Chip key={p.id} active={side === p.id} onClick={() => setSide(p.id)}>{p.label}</Chip>
-            ))}
+          <Flex gap={2} wrap="wrap" justify="flex-end">
+            <Flex gap={2} wrap="wrap">
+              {PENALTY_SIDES.map((p) => (
+                <Chip key={p.id} active={side === p.id} onClick={() => setSide(p.id)}>{p.label}</Chip>
+              ))}
+            </Flex>
+            <ExportCardButton
+              target={exportRef}
+              filename={() => `penalty-matrix-${file?.meta?.season ?? "season"}-${phase}-${side}.png`}
+            />
           </Flex>
         </Flex>
       </Flex>
 
       {/* ── The grid ─────────────────────────────────────────────────── */}
-      <Box overflowX="auto" px={4} pb={3}>
-        <Grid templateColumns={template} columnGap="2px" rowGap="2px" minW="52rem">
-          {/* Header: logo over that team's season flag count */}
-          <Box position="sticky" left={0} zIndex={2} bg="bg.secondary" pb={2} display="flex" alignItems="flex-end">
-            <Text fontSize="9px" fontWeight="900" color="whiteAlpha.400" textTransform="uppercase" letterSpacing="0.13em">Foul</Text>
-          </Box>
-          <Flex direction="column" align="center" justify="flex-end" pb={2}>
-            <Text fontSize="9px" fontWeight="900" color="whiteAlpha.400" textTransform="uppercase" letterSpacing="0.1em">All</Text>
-          </Flex>
-          {columns.map((t) => (
-            <Flex key={t.id} direction="column" align="center" justify="flex-end" gap={1} pb={2} minW={0} title={t.name}>
-              {t.logo ? (
-                <Image src={t.logo} alt="" w="18px" h="18px" objectFit="contain" />
-              ) : (
-                <Text fontSize="9px" fontWeight="900" color="whiteAlpha.700">{t.short}</Text>
-              )}
-              <Text fontSize="10px" fontWeight="900" color="white" fontVariantNumeric="tabular-nums">
-                {data.totals[t.id] ?? 0}
-              </Text>
-            </Flex>
-          ))}
-
-          {/* One row per foul */}
-          {rows.map((r) => (
-            <Box key={r.key} display="contents">
-              <Flex
-                position="sticky" left={0} zIndex={1} bg="bg.secondary" align="center" pr={3} py="3px" minW={0}
-              >
-                <Text fontSize="11px" fontWeight="900" color="white" lineClamp={1} title={r.label}>{r.label}</Text>
-              </Flex>
-              <Flex align="center" justify="center" bg="whiteAlpha.50" borderRadius="sm">
-                <Text fontSize="10px" fontWeight="900" color="whiteAlpha.700" fontVariantNumeric="tabular-nums">{r.total}</Text>
-              </Flex>
-              {r.cells.map((n, i) => {
-                const leader = n > 0 && n === r.max;
-                return (
-                  <Flex
-                    key={columns[i].id} align="center" justify="center" borderRadius="sm" minW={0} py="4px"
-                    bg={heatFill(n, r.max, r.total)}
-                    title={`${columns[i].short} · ${r.label} · ${n}`}
-                  >
-                    {n > 0 ? (
-                      <Text
-                        fontSize="10px" fontWeight={leader ? "900" : "700"}
-                        color={leader ? "white" : "whiteAlpha.900"} fontVariantNumeric="tabular-nums"
-                      >
-                        {n}
-                      </Text>
-                    ) : (
-                      <Text fontSize="10px" color="whiteAlpha.200" lineHeight={1}>·</Text>
-                    )}
-                  </Flex>
-                );
-              })}
-            </Box>
-          ))}
-        </Grid>
-      </Box>
+      <PenaltyHeatGrid columns={columns} rows={rows} totals={data.totals} heatRgb={heatRgb} />
     </Box>
   );
 };

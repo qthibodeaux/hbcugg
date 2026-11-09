@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { DriveSummaryTable } from "../summary/GameSummaryTabV2";
+import { DriveSummaryTable } from "./DriveSummaryCards";
 
 // Drives tab — the drive summary table, moved off the bottom of the Summary
 // tab (2026-09-20) into its own section. Renders in the page's list region,

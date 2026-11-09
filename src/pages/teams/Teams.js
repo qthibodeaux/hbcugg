@@ -4,11 +4,11 @@ import PageShell from "../../components/layouts/PageShell";
 import { StandingsBrandWash } from "../../components/molecules/schools/StandingsCard";
 import { RankingsPodium } from "../../components/molecules/schools/RankingsCard";
 import { SchoolDirectoryFusion as SchoolsDirectory } from "../../components/molecules/schools/SchoolDirectory";
-import { BannerSchools } from "../../components/organisms/test/BannerPages";
+import { BannerSchools } from "../../components/molecules/banners/SchoolsBanner";
 import {
   RosterFieldReport,
   TeamAnalyticsExplorer,
-} from "../../components/molecules/schools/UtilityRows";
+} from "../../components/molecules/schools/SchoolsExplorerCards";
 import { CoachesHubSchoolsSection } from "../../components/molecules/schools/CoachesHubSchoolsSection";
 import { useTeams } from "../../hooks/useTeams";
 import { useLayoutDensity } from "../../hooks/useLayoutDensity";

@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { Box, Flex, Grid, Spinner, Text } from "@chakra-ui/react";
 import { useGameData } from "../../../hooks/useSWACData";
 import { getTeamColor, getTeamSecondary, getTeamDisplayName } from "./QGameBoxScore";
-import { heatAccent } from "../../game/page/boxscore/ProductionPrimitives";
+import { heatAccent } from "../../../utils/productionPresentation";
 
 // ═══════════════════════════════════════════════════════════════════════════════
 // RUSH LANE AXIS — four readings of one back's game

@@ -16,10 +16,10 @@ export const PRODUCTION_NEGATIVE = "#C0453A";
 
 // What each production column prints, and its header.
 export const PRODUCTION_UNITS = {
-  passing: { keys: ["passing_production"], label: "Passing Prod" },
-  receiving: { keys: ["receiving_production"], label: "Receiving Prod" },
-  rushing: { keys: ["rushing_production"], label: "Rushing Prod" },
-  defense: { keys: ["hit_production", "hawk_production", "scrum_production"], label: "Defensive Prod" },
+  passing: { keys: ["passing_production"], label: "Passing PAR" },
+  receiving: { keys: ["receiving_production"], label: "Receiving PAR" },
+  rushing: { keys: ["rushing_production"], label: "Rushing PAR" },
+  defense: { keys: ["hit_production", "hawk_production", "scrum_production"], label: "Defensive PAR" },
 };
 
 /** { min, max } across every player and every unit in the game (`production_scores` keyed by team id). */

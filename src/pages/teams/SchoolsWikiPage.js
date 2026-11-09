@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, useMediaQuery } from "@chakra-ui/react";
 import PageShell from "../../components/layouts/PageShell";
-import { ConferenceWikiBanner } from "../../components/organisms/test/ConferenceWikiPageLabA";
+import { ConferenceWikiBanner } from "../../components/molecules/wiki/ConferenceWikiResponsiveBanner";
 import { WikiDirectory } from "../../components/molecules/wiki/WikiDirectory";
 import { ConferenceIdentityPassportCard, ConferencePassportCarousel } from "../../components/molecules/wiki/ConferenceIdentityPassport";
 import { ConferenceFootprint } from "../../components/molecules/wiki/ConferenceFootprint";
