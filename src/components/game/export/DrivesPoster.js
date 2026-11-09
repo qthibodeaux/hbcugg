@@ -156,22 +156,24 @@ const quarterTint = (id, quarter) => {
 // have room and `wideTight` when a long game squeezes them; there the rows stretch to fill the
 // frame, so the strip takes the row's height instead of a fixed one.
 const SIZE = {
-  tall: { cols: "5.5rem 3rem 2.875rem minmax(0, 1fr)", gap: "0.3125rem", text: "0.6875rem", line: "1rem", pill: "1rem", pillText: "0.625rem", pillTextLong: "0.5rem", boxW: "1.375rem", boxH: "2.25rem", score: "0.8125rem", strip: "2.25rem", dim: 0.55, unit: 0.5 },
-  wide: { cols: "10.5rem 5.5rem 5rem minmax(0, 1fr)", gap: "0.75rem", text: "1.3125rem", line: "1.625rem", pill: "1.5rem", pillText: "1rem", pillTextLong: "0.8125rem", boxW: "2.25rem", boxH: "2.75rem", score: "1.3125rem", strip: "100%", dim: 0.85, unit: 0.7 },
-  wideTight: { cols: "8.25rem 4.5rem 4.25rem minmax(0, 1fr)", gap: "0.5rem", text: "1rem", line: "1.1875rem", pill: "1.1875rem", pillText: "0.8125rem", pillTextLong: "0.6875rem", boxW: "1.875rem", boxH: "2.125rem", score: "1rem", strip: "100%", dim: 0.85, unit: 0.7 },
+  tall: { cols: "5.5rem 3rem 2.875rem minmax(0, 1fr)", gap: "0.3125rem", text: "0.6875rem", line: "1rem", pill: "1rem", pillText: "0.625rem", pillTextLong: "0.5rem", boxW: "1.375rem", boxH: "2.25rem", score: "0.8125rem", strip: "2.25rem", dim: 0.55, unit: 0.5, py: "0.25rem", stack: "0.125rem" },
+  wide: { cols: "10.5rem 5.5rem 5rem minmax(0, 1fr)", gap: "0.75rem", text: "1.3125rem", line: "1.625rem", pill: "1.5rem", pillText: "1rem", pillTextLong: "0.8125rem", boxW: "2.25rem", boxH: "2.75rem", score: "1.3125rem", strip: "100%", dim: 0.85, unit: 0.7, py: "0.375rem", stack: "0.25rem" },
+  // 13 to 15 drives a side: a step down from `wide` so two lines still have room to breathe.
+  wideMid: { cols: "9rem 5rem 4.5rem minmax(0, 1fr)", gap: "0.625rem", text: "1.0625rem", line: "1.25rem", pill: "1.125rem", pillText: "0.875rem", pillTextLong: "0.75rem", boxW: "2rem", boxH: "2.375rem", score: "1.125rem", strip: "100%", dim: 0.85, unit: 0.7, py: "0.3125rem", stack: "0.1875rem" },
+  wideTight: { cols: "8.25rem 4.5rem 4.25rem minmax(0, 1fr)", gap: "0.5rem", text: "1rem", line: "1.1875rem", pill: "1.1875rem", pillText: "0.8125rem", pillTextLong: "0.6875rem", boxW: "1.875rem", boxH: "2.125rem", score: "1rem", strip: "100%", dim: 0.85, unit: 0.7, py: "0.125rem", stack: "0.125rem" },
 };
 
 const DriveRow = ({ d, awayId, homeId, size = SIZE.tall }) => {
   const small = { fontSize: size.text, fontWeight: "900", fontFamily: "mono", lineHeight: size.line, whiteSpace: "nowrap" };
   const fill = size.strip === "100%";
   return (
-  <Grid templateColumns={size.cols} columnGap={size.gap} alignItems="center" py="0.25rem" mx="-1.125rem" pl="1.125rem" pr="0" h={fill ? "100%" : undefined} minH={0}
+  <Grid templateColumns={size.cols} columnGap={size.gap} alignItems="center" py={size.py} mx="-1.125rem" pl="1.125rem" pr="0" h={fill ? "100%" : undefined} minH={0}
     borderTop="0.0625rem solid" borderColor="rgba(var(--gg-fg), calc(0.08 + var(--gg-line-boost, 0)))" bg={quarterTint(d.team === "home" ? homeId : awayId, d.quarter)}>
     <Box>
       <Text {...small} color={`rgba(var(--gg-fg), calc(${size.dim} + var(--gg-faint-boost, 0)))`}>{d.quarter} {d.startTime}</Text>
       <Text {...small}>{d.plays ?? DASH}<Text as="span" color={`rgba(var(--gg-fg), calc(${size.unit} + var(--gg-faint-boost, 0)))`}> PL</Text> · {d.yards ?? DASH}<Text as="span" color={`rgba(var(--gg-fg), calc(${size.unit} + var(--gg-faint-boost, 0)))`}> YD</Text></Text>
     </Box>
-    <Flex direction="column" gap="0.125rem">
+    <Flex direction="column" gap={size.stack}>
       <Flex h={size.pill} align="center" justify="center" style={{ background: RESULT_FILL[d.result] ?? "#3F3F46" }}>
         <Text fontSize={String(d.resultLabel).length > 5 ? size.pillTextLong : size.pillText} fontWeight="950" color="#FFFFFF" textTransform="uppercase" lineHeight={1} whiteSpace="nowrap">{d.resultLabel}</Text>
       </Flex>
@@ -255,7 +257,7 @@ export const DrivesWidePoster = ({ game, innerRef }) => {
   const rows = (Array.isArray(game?.drive_summary) ? game.drive_summary : []).map((d) => toDriveRow(d, awayId, homeId));
   const sides = [["away", awayId], ["home", homeId]].map(([side, id]) => ({ side, id, mine: rows.filter((d) => d.team === side) }));
   const n = Math.max(1, ...sides.map((x) => x.mine.length));
-  const size = n > 15 ? SIZE.wideTight : SIZE.wide;
+  const size = n > 15 ? SIZE.wideTight : n > 12 ? SIZE.wideMid : SIZE.wide;
 
   return (
     <Poster innerRef={innerRef} w={WIDE_W} h={WIDE_H} display="flex" flexDirection="column">
