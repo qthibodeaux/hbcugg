@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { fetchGame } from "./GamePage";
 import { useColorScheme } from "../../theme/colorScheme";
+import { ThemeSwitch } from "../../components/organisms/ThemeSwitch";
 import { useLeagueAverages } from "../../hooks/useSWACData";
 import { OffensePoster } from "../../components/game/export/OffensePoster";
 import { DrivesPoster, DrivesWidePoster } from "../../components/game/export/DrivesPoster";
@@ -81,7 +82,12 @@ const GameExportPage = () => {
   });
 
   return (
-    <Box bg="bg.primary" minH="100vh" py={6} px={4}>
+    // Top padding clears the site's fixed nav, so the sticky toolbar never covers the first slide.
+    <Box bg="bg.primary" minH="100vh" pt="calc(var(--app-header-height) + 1.5rem)" pb={6} px={4}>
+      {/* Light / Night, floating bottom left (this page has no sidebar, and the live site hides the sidebar switch). */}
+      <Box position="fixed" left="1rem" bottom="1rem" zIndex={60} w="11rem" boxShadow="0 0.25rem 1rem rgba(0,0,0,0.25)" borderRadius="full">
+        <ThemeSwitch />
+      </Box>
       {/* Sticks just under the site header so the switch and save buttons stay reachable while scrolling. */}
       <Flex maxW={`${(POSTER_W) / 16}rem`} mx="auto" align="center" justify="space-between" mb={4} gap={3} flexWrap="wrap"
         position="sticky" top="var(--app-header-height)" zIndex={40} bg="bg.primary" py={3} borderBottom="0.0625rem solid" borderColor="line">
