@@ -1,0 +1,801 @@
+{
+ "season": 2026,
+ "generated_at": "2026-11-07T20:01:58-06:00",
+ "definition": "A series is a set of downs; converted = it ended in a first down or a touchdown. chains_moved_on = the down the first down came on (none = never moved). Offense: the team's series. Defense: its opponents' series.",
+ "scope": "games between two of the 18 with play-by-play (game payload series_summary)",
+ "garbage_time": "included (the payload's series_summary does not split it)",
+ "teams": [
+  {
+   "team_id": "meacdsu",
+   "games": 3,
+   "offense": {
+    "series": 72,
+    "converted": 43,
+    "conversion_rate": 0.5972,
+    "chains_moved_on": {
+     "1st": 13,
+     "2nd": 18,
+     "3rd": 9,
+     "4th": 3,
+     "none": 29
+    },
+    "results": {
+     "td": 8,
+     "first_down": 35,
+     "fg": 4,
+     "punt": 16,
+     "turnover": 7,
+     "other": 2
+    }
+   },
+   "defense": {
+    "series": 81,
+    "converted": 54,
+    "conversion_rate": 0.6667,
+    "chains_moved_on": {
+     "1st": 15,
+     "2nd": 25,
+     "3rd": 12,
+     "4th": 2,
+     "none": 27
+    },
+    "results": {
+     "td": 9,
+     "first_down": 45,
+     "fg": 2,
+     "punt": 14,
+     "turnover": 6,
+     "other": 5
+    }
+   }
+  },
+  {
+   "team_id": "meachu",
+   "games": 4,
+   "offense": {
+    "series": 104,
+    "converted": 59,
+    "conversion_rate": 0.5673,
+    "chains_moved_on": {
+     "1st": 17,
+     "2nd": 20,
+     "3rd": 19,
+     "4th": 3,
+     "none": 45
+    },
+    "results": {
+     "td": 9,
+     "first_down": 50,
+     "fg": 5,
+     "punt": 28,
+     "turnover": 7,
+     "other": 5
+    }
+   },
+   "defense": {
+    "series": 114,
+    "converted": 75,
+    "conversion_rate": 0.6579,
+    "chains_moved_on": {
+     "1st": 28,
+     "2nd": 31,
+     "3rd": 14,
+     "4th": 2,
+     "none": 39
+    },
+    "results": {
+     "td": 13,
+     "first_down": 62,
+     "fg": 7,
+     "punt": 26,
+     "turnover": 3,
+     "other": 3
+    }
+   }
+  },
+  {
+   "team_id": "meacmsu",
+   "games": 3,
+   "offense": {
+    "series": 61,
+    "converted": 28,
+    "conversion_rate": 0.459,
+    "chains_moved_on": {
+     "1st": 7,
+     "2nd": 11,
+     "3rd": 10,
+     "4th": 0,
+     "none": 33
+    },
+    "results": {
+     "td": 3,
+     "first_down": 25,
+     "fg": 3,
+     "punt": 20,
+     "turnover": 4,
+     "other": 6
+    }
+   },
+   "defense": {
+    "series": 89,
+    "converted": 64,
+    "conversion_rate": 0.7191,
+    "chains_moved_on": {
+     "1st": 20,
+     "2nd": 23,
+     "3rd": 20,
+     "4th": 1,
+     "none": 25
+    },
+    "results": {
+     "td": 11,
+     "first_down": 53,
+     "fg": 4,
+     "punt": 16,
+     "turnover": 4,
+     "other": 1
+    }
+   }
+  },
+  {
+   "team_id": "meacnccu",
+   "games": 4,
+   "offense": {
+    "series": 122,
+    "converted": 89,
+    "conversion_rate": 0.7295,
+    "chains_moved_on": {
+     "1st": 27,
+     "2nd": 39,
+     "3rd": 20,
+     "4th": 3,
+     "none": 33
+    },
+    "results": {
+     "td": 15,
+     "first_down": 74,
+     "fg": 7,
+     "punt": 17,
+     "turnover": 6,
+     "other": 3
+    }
+   },
+   "defense": {
+    "series": 98,
+    "converted": 60,
+    "conversion_rate": 0.6122,
+    "chains_moved_on": {
+     "1st": 19,
+     "2nd": 28,
+     "3rd": 12,
+     "4th": 1,
+     "none": 38
+    },
+    "results": {
+     "td": 11,
+     "first_down": 49,
+     "fg": 0,
+     "punt": 23,
+     "turnover": 8,
+     "other": 7
+    }
+   }
+  },
+  {
+   "team_id": "meacnsu",
+   "games": 3,
+   "offense": {
+    "series": 82,
+    "converted": 52,
+    "conversion_rate": 0.6341,
+    "chains_moved_on": {
+     "1st": 14,
+     "2nd": 24,
+     "3rd": 13,
+     "4th": 1,
+     "none": 30
+    },
+    "results": {
+     "td": 8,
+     "first_down": 44,
+     "fg": 1,
+     "punt": 14,
+     "turnover": 9,
+     "other": 6
+    }
+   },
+   "defense": {
+    "series": 81,
+    "converted": 52,
+    "conversion_rate": 0.642,
+    "chains_moved_on": {
+     "1st": 17,
+     "2nd": 17,
+     "3rd": 15,
+     "4th": 3,
+     "none": 29
+    },
+    "results": {
+     "td": 10,
+     "first_down": 42,
+     "fg": 7,
+     "punt": 13,
+     "turnover": 7,
+     "other": 2
+    }
+   }
+  },
+  {
+   "team_id": "meacscsu",
+   "games": 5,
+   "offense": {
+    "series": 155,
+    "converted": 114,
+    "conversion_rate": 0.7355,
+    "chains_moved_on": {
+     "1st": 45,
+     "2nd": 42,
+     "3rd": 22,
+     "4th": 5,
+     "none": 41
+    },
+    "results": {
+     "td": 21,
+     "first_down": 93,
+     "fg": 8,
+     "punt": 25,
+     "turnover": 6,
+     "other": 2
+    }
+   },
+   "defense": {
+    "series": 109,
+    "converted": 54,
+    "conversion_rate": 0.4954,
+    "chains_moved_on": {
+     "1st": 14,
+     "2nd": 18,
+     "3rd": 20,
+     "4th": 2,
+     "none": 55
+    },
+    "results": {
+     "td": 7,
+     "first_down": 47,
+     "fg": 3,
+     "punt": 34,
+     "turnover": 9,
+     "other": 9
+    }
+   }
+  },
+  {
+   "team_id": "swacaamu",
+   "games": 7,
+   "offense": {
+    "series": 208,
+    "converted": 147,
+    "conversion_rate": 0.7067,
+    "chains_moved_on": {
+     "1st": 51,
+     "2nd": 60,
+     "3rd": 35,
+     "4th": 1,
+     "none": 61
+    },
+    "results": {
+     "td": 32,
+     "first_down": 115,
+     "fg": 8,
+     "punt": 31,
+     "turnover": 12,
+     "other": 10
+    }
+   },
+   "defense": {
+    "series": 194,
+    "converted": 127,
+    "conversion_rate": 0.6546,
+    "chains_moved_on": {
+     "1st": 28,
+     "2nd": 51,
+     "3rd": 40,
+     "4th": 8,
+     "none": 67
+    },
+    "results": {
+     "td": 23,
+     "first_down": 104,
+     "fg": 7,
+     "punt": 39,
+     "turnover": 16,
+     "other": 5
+    }
+   }
+  },
+  {
+   "team_id": "swacalc",
+   "games": 6,
+   "offense": {
+    "series": 204,
+    "converted": 166,
+    "conversion_rate": 0.8137,
+    "chains_moved_on": {
+     "1st": 64,
+     "2nd": 57,
+     "3rd": 38,
+     "4th": 7,
+     "none": 38
+    },
+    "results": {
+     "td": 36,
+     "first_down": 130,
+     "fg": 5,
+     "punt": 19,
+     "turnover": 7,
+     "other": 7
+    }
+   },
+   "defense": {
+    "series": 164,
+    "converted": 116,
+    "conversion_rate": 0.7073,
+    "chains_moved_on": {
+     "1st": 39,
+     "2nd": 41,
+     "3rd": 31,
+     "4th": 5,
+     "none": 48
+    },
+    "results": {
+     "td": 24,
+     "first_down": 92,
+     "fg": 9,
+     "punt": 19,
+     "turnover": 12,
+     "other": 8
+    }
+   }
+  },
+  {
+   "team_id": "swacasu",
+   "games": 7,
+   "offense": {
+    "series": 184,
+    "converted": 128,
+    "conversion_rate": 0.6957,
+    "chains_moved_on": {
+     "1st": 47,
+     "2nd": 53,
+     "3rd": 25,
+     "4th": 3,
+     "none": 56
+    },
+    "results": {
+     "td": 21,
+     "first_down": 107,
+     "fg": 8,
+     "punt": 28,
+     "turnover": 11,
+     "other": 9
+    }
+   },
+   "defense": {
+    "series": 180,
+    "converted": 120,
+    "conversion_rate": 0.6667,
+    "chains_moved_on": {
+     "1st": 33,
+     "2nd": 48,
+     "3rd": 35,
+     "4th": 4,
+     "none": 60
+    },
+    "results": {
+     "td": 18,
+     "first_down": 102,
+     "fg": 10,
+     "punt": 26,
+     "turnover": 17,
+     "other": 7
+    }
+   }
+  },
+  {
+   "team_id": "swacbcu",
+   "games": 7,
+   "offense": {
+    "series": 190,
+    "converted": 120,
+    "conversion_rate": 0.6316,
+    "chains_moved_on": {
+     "1st": 33,
+     "2nd": 42,
+     "3rd": 39,
+     "4th": 6,
+     "none": 70
+    },
+    "results": {
+     "td": 18,
+     "first_down": 102,
+     "fg": 6,
+     "punt": 42,
+     "turnover": 18,
+     "other": 4
+    }
+   },
+   "defense": {
+    "series": 189,
+    "converted": 129,
+    "conversion_rate": 0.6825,
+    "chains_moved_on": {
+     "1st": 51,
+     "2nd": 45,
+     "3rd": 30,
+     "4th": 3,
+     "none": 60
+    },
+    "results": {
+     "td": 30,
+     "first_down": 99,
+     "fg": 5,
+     "punt": 32,
+     "turnover": 14,
+     "other": 9
+    }
+   }
+  },
+  {
+   "team_id": "swacfamu",
+   "games": 7,
+   "offense": {
+    "series": 168,
+    "converted": 95,
+    "conversion_rate": 0.5655,
+    "chains_moved_on": {
+     "1st": 29,
+     "2nd": 39,
+     "3rd": 24,
+     "4th": 3,
+     "none": 73
+    },
+    "results": {
+     "td": 16,
+     "first_down": 79,
+     "fg": 8,
+     "punt": 34,
+     "turnover": 26,
+     "other": 5
+    }
+   },
+   "defense": {
+    "series": 211,
+    "converted": 153,
+    "conversion_rate": 0.7251,
+    "chains_moved_on": {
+     "1st": 49,
+     "2nd": 56,
+     "3rd": 44,
+     "4th": 4,
+     "none": 58
+    },
+    "results": {
+     "td": 27,
+     "first_down": 126,
+     "fg": 7,
+     "punt": 30,
+     "turnover": 12,
+     "other": 9
+    }
+   }
+  },
+  {
+   "team_id": "swacgsu",
+   "games": 6,
+   "offense": {
+    "series": 158,
+    "converted": 110,
+    "conversion_rate": 0.6962,
+    "chains_moved_on": {
+     "1st": 27,
+     "2nd": 43,
+     "3rd": 35,
+     "4th": 5,
+     "none": 48
+    },
+    "results": {
+     "td": 23,
+     "first_down": 87,
+     "fg": 7,
+     "punt": 28,
+     "turnover": 10,
+     "other": 3
+    }
+   },
+   "defense": {
+    "series": 174,
+    "converted": 127,
+    "conversion_rate": 0.7299,
+    "chains_moved_on": {
+     "1st": 45,
+     "2nd": 47,
+     "3rd": 28,
+     "4th": 7,
+     "none": 47
+    },
+    "results": {
+     "td": 29,
+     "first_down": 98,
+     "fg": 5,
+     "punt": 27,
+     "turnover": 10,
+     "other": 5
+    }
+   }
+  },
+  {
+   "team_id": "swacjsu",
+   "games": 6,
+   "offense": {
+    "series": 174,
+    "converted": 118,
+    "conversion_rate": 0.6782,
+    "chains_moved_on": {
+     "1st": 37,
+     "2nd": 41,
+     "3rd": 33,
+     "4th": 7,
+     "none": 56
+    },
+    "results": {
+     "td": 24,
+     "first_down": 94,
+     "fg": 4,
+     "punt": 35,
+     "turnover": 8,
+     "other": 9
+    }
+   },
+   "defense": {
+    "series": 153,
+    "converted": 94,
+    "conversion_rate": 0.6144,
+    "chains_moved_on": {
+     "1st": 24,
+     "2nd": 32,
+     "3rd": 36,
+     "4th": 2,
+     "none": 59
+    },
+    "results": {
+     "td": 18,
+     "first_down": 76,
+     "fg": 4,
+     "punt": 38,
+     "turnover": 14,
+     "other": 3
+    }
+   }
+  },
+  {
+   "team_id": "swacmvsu",
+   "games": 6,
+   "offense": {
+    "series": 151,
+    "converted": 87,
+    "conversion_rate": 0.5762,
+    "chains_moved_on": {
+     "1st": 30,
+     "2nd": 27,
+     "3rd": 28,
+     "4th": 2,
+     "none": 64
+    },
+    "results": {
+     "td": 16,
+     "first_down": 71,
+     "fg": 3,
+     "punt": 41,
+     "turnover": 13,
+     "other": 7
+    }
+   },
+   "defense": {
+    "series": 160,
+    "converted": 108,
+    "conversion_rate": 0.675,
+    "chains_moved_on": {
+     "1st": 36,
+     "2nd": 43,
+     "3rd": 25,
+     "4th": 4,
+     "none": 52
+    },
+    "results": {
+     "td": 27,
+     "first_down": 81,
+     "fg": 8,
+     "punt": 31,
+     "turnover": 9,
+     "other": 4
+    }
+   }
+  },
+  {
+   "team_id": "swacpvamu",
+   "games": 6,
+   "offense": {
+    "series": 167,
+    "converted": 116,
+    "conversion_rate": 0.6946,
+    "chains_moved_on": {
+     "1st": 42,
+     "2nd": 40,
+     "3rd": 30,
+     "4th": 4,
+     "none": 51
+    },
+    "results": {
+     "td": 22,
+     "first_down": 94,
+     "fg": 6,
+     "punt": 24,
+     "turnover": 14,
+     "other": 7
+    }
+   },
+   "defense": {
+    "series": 152,
+    "converted": 98,
+    "conversion_rate": 0.6447,
+    "chains_moved_on": {
+     "1st": 25,
+     "2nd": 35,
+     "3rd": 35,
+     "4th": 3,
+     "none": 54
+    },
+    "results": {
+     "td": 17,
+     "first_down": 81,
+     "fg": 2,
+     "punt": 31,
+     "turnover": 13,
+     "other": 8
+    }
+   }
+  },
+  {
+   "team_id": "swacsu",
+   "games": 7,
+   "offense": {
+    "series": 183,
+    "converted": 127,
+    "conversion_rate": 0.694,
+    "chains_moved_on": {
+     "1st": 29,
+     "2nd": 44,
+     "3rd": 50,
+     "4th": 4,
+     "none": 56
+    },
+    "results": {
+     "td": 22,
+     "first_down": 105,
+     "fg": 4,
+     "punt": 30,
+     "turnover": 14,
+     "other": 8
+    }
+   },
+   "defense": {
+    "series": 182,
+    "converted": 123,
+    "conversion_rate": 0.6758,
+    "chains_moved_on": {
+     "1st": 43,
+     "2nd": 47,
+     "3rd": 26,
+     "4th": 7,
+     "none": 59
+    },
+    "results": {
+     "td": 22,
+     "first_down": 101,
+     "fg": 7,
+     "punt": 29,
+     "turnover": 16,
+     "other": 7
+    }
+   }
+  },
+  {
+   "team_id": "swactsu",
+   "games": 7,
+   "offense": {
+    "series": 173,
+    "converted": 116,
+    "conversion_rate": 0.6705,
+    "chains_moved_on": {
+     "1st": 30,
+     "2nd": 43,
+     "3rd": 36,
+     "4th": 7,
+     "none": 57
+    },
+    "results": {
+     "td": 24,
+     "first_down": 92,
+     "fg": 8,
+     "punt": 32,
+     "turnover": 10,
+     "other": 7
+    }
+   },
+   "defense": {
+    "series": 198,
+    "converted": 147,
+    "conversion_rate": 0.7424,
+    "chains_moved_on": {
+     "1st": 51,
+     "2nd": 49,
+     "3rd": 42,
+     "4th": 5,
+     "none": 51
+    },
+    "results": {
+     "td": 29,
+     "first_down": 118,
+     "fg": 7,
+     "punt": 31,
+     "turnover": 8,
+     "other": 5
+    }
+   }
+  },
+  {
+   "team_id": "swacuapb",
+   "games": 6,
+   "offense": {
+    "series": 156,
+    "converted": 112,
+    "conversion_rate": 0.7179,
+    "chains_moved_on": {
+     "1st": 34,
+     "2nd": 42,
+     "3rd": 32,
+     "4th": 4,
+     "none": 44
+    },
+    "results": {
+     "td": 25,
+     "first_down": 87,
+     "fg": 7,
+     "punt": 22,
+     "turnover": 10,
+     "other": 5
+    }
+   },
+   "defense": {
+    "series": 183,
+    "converted": 126,
+    "conversion_rate": 0.6885,
+    "chains_moved_on": {
+     "1st": 39,
+     "2nd": 49,
+     "3rd": 33,
+     "4th": 5,
+     "none": 57
+    },
+    "results": {
+     "td": 18,
+     "first_down": 108,
+     "fg": 8,
+     "punt": 27,
+     "turnover": 14,
+     "other": 8
+    }
+   }
+  }
+ ]
+}

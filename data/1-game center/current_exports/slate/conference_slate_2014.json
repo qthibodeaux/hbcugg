@@ -1,0 +1,2697 @@
+{
+  "season": 2014,
+  "generated_at": "2026-08-13T14:15:31.441447-05:00",
+  "source_files": {
+    "schedule_index": "/hbcugg/data/1-game center/schedules/by_year/2014.json",
+    "game_files_dir": "/hbcugg/data/1-game center/current_exports/games/2014"
+  },
+  "teams": {
+    "meac": [
+      "meacdsu",
+      "meachu",
+      "meacmsu",
+      "meacnccu",
+      "meacnsu",
+      "meacscsu"
+    ],
+    "swac_west": [
+      "swacalc",
+      "swacgsu",
+      "swacpvamu",
+      "swacsu",
+      "swactsu",
+      "swacuapb"
+    ],
+    "swac_east": [
+      "swacaamu",
+      "swacasu",
+      "swacbcu",
+      "swacfamu",
+      "swacjsu",
+      "swacmvsu"
+    ]
+  },
+  "matchups": [
+    {
+      "matchup_id": "swacpvamu_swactsu_2014-08-31",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-08-31",
+      "week": 1,
+      "week_label": "Week 1",
+      "away_team_id": "swactsu",
+      "home_team_id": "swacpvamu",
+      "away_score": 35,
+      "home_score": 37,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, Texas / NRG Stadium",
+      "venue_city": "Houston, Texas / NRG Stadium",
+      "stadium_name": "Houston, Texas / NRG Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacpvamu",
+            "opponent_id": "swactsu",
+            "date": "2014-08-31",
+            "score_team": 37,
+            "score_opp": 35,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacasu_2014-09-18",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-18",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacasu",
+      "away_score": 7,
+      "home_score": 42,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Montgomery, ALNew  ASU Stadium",
+      "venue_city": "Montgomery, ALNew  ASU Stadium",
+      "stadium_name": "Montgomery, ALNew  ASU Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacasu",
+            "date": "2014-09-18",
+            "score_team": 7,
+            "score_opp": 42,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacuapb_2014-09-18",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-18",
+      "week": 3,
+      "week_label": "Week 3",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacasu",
+      "away_score": 7,
+      "home_score": 42,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Montgomery, ALNew  ASU Stadium",
+      "venue_city": "Montgomery, ALNew  ASU Stadium",
+      "stadium_name": "Montgomery, ALNew  ASU Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacuapb",
+            "opponent_id": "swacasu",
+            "date": "2014-09-18",
+            "score_team": 7,
+            "score_opp": 42,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swactsu_2014-09-20",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-20",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swactsu",
+      "away_score": 45,
+      "home_score": 23,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TXBBVA Compass Stadium",
+      "venue_city": "Houston, TXBBVA Compass Stadium",
+      "stadium_name": "Houston, TXBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swactsu",
+            "date": "2014-09-20",
+            "score_team": 45,
+            "score_opp": 23,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacmvsu_2014-09-20",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-20",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacmvsu",
+      "away_score": 52,
+      "home_score": 9,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, Miss.Rice-Totten Stadium",
+      "venue_city": "Itta Bena, Miss.Rice-Totten Stadium",
+      "stadium_name": "Itta Bena, Miss.Rice-Totten Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacmvsu",
+            "date": "2014-09-20",
+            "score_team": 52,
+            "score_opp": 9,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacjsu_2014-09-20",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-20",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacjsu",
+      "away_score": 40,
+      "home_score": 35,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, MSMississippi Veterans Memorial Stadium",
+      "venue_city": "Jackson, MSMississippi Veterans Memorial Stadium",
+      "stadium_name": "Jackson, MSMississippi Veterans Memorial Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacjsu",
+            "date": "2014-09-20",
+            "score_team": 40,
+            "score_opp": 35,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacpvamu_swacsu_2014-09-20",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-20",
+      "week": 4,
+      "week_label": "Week 4",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacpvamu",
+      "away_score": 34,
+      "home_score": 24,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Prairie View",
+      "venue_city": "Prairie View",
+      "stadium_name": "Prairie View",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacpvamu",
+            "opponent_id": "swacsu",
+            "date": "2014-09-20",
+            "score_team": 24,
+            "score_opp": 34,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacmvsu_2014-09-27",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-27",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacmvsu",
+      "away_score": 42,
+      "home_score": 20,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, MSRice-Totten StadiumLater Vacated by NCAA Action",
+      "venue_city": "Itta Bena, MSRice-Totten StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Itta Bena, MSRice-Totten StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacmvsu",
+            "date": "2014-09-27",
+            "score_team": 42,
+            "score_opp": 20,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacsu_2014-09-27",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-27",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacalc",
+      "away_score": 16,
+      "home_score": 56,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "venue_city": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "stadium_name": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacsu",
+            "date": "2014-09-27",
+            "score_team": 56,
+            "score_opp": 16,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacjsu_2014-09-27",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-27",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacasu",
+      "away_score": 33,
+      "home_score": 30,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Golden Lion Stadium",
+      "venue_city": "Golden Lion Stadium",
+      "stadium_name": "Golden Lion Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacjsu",
+            "date": "2014-09-27",
+            "score_team": 30,
+            "score_opp": 33,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacpvamu_2014-09-27",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-27",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacpvamu",
+      "away_score": 26,
+      "home_score": 20,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Dallas, TexasCotton Bowl",
+      "venue_city": "Dallas, TexasCotton Bowl",
+      "stadium_name": "Dallas, TexasCotton Bowl",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacpvamu",
+            "date": "2014-09-27",
+            "score_team": 26,
+            "score_opp": 20,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacuapb_2014-09-27",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-09-27",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacuapb",
+      "away_score": 33,
+      "home_score": 30,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, Ark.",
+      "venue_city": "Pine Bluff, Ark.",
+      "stadium_name": "Pine Bluff, Ark.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacuapb",
+            "date": "2014-09-27",
+            "score_team": 33,
+            "score_opp": 30,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacasu_2014-10-02",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-02",
+      "week": 5,
+      "week_label": "Week 5",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacalc",
+      "away_score": 7,
+      "home_score": 33,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "venue_city": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "stadium_name": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacasu",
+            "date": "2014-10-02",
+            "score_team": 33,
+            "score_opp": 7,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_swacbcu_2014-10-04",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "meacdsu",
+      "home_team_id": "swacbcu",
+      "away_score": 7,
+      "home_score": 27,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Daytona Beach, Fla.",
+      "venue_city": "Daytona Beach, Fla.",
+      "stadium_name": "Daytona Beach, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacdsu",
+            "opponent_id": "swacbcu",
+            "date": "2014-10-04",
+            "score_team": 7,
+            "score_opp": 27,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacmsu_swacfamu_2014-10-04",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "meacmsu",
+      "home_team_id": "swacfamu",
+      "away_score": 24,
+      "home_score": 9,
+      "winner_team_id": "meacmsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Tallahassee, Florida",
+      "venue_city": "Tallahassee, Florida",
+      "stadium_name": "Tallahassee, Florida",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meacmsu",
+            "date": "2014-10-04",
+            "score_team": 9,
+            "score_opp": 24,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacgsu_2014-10-04",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacaamu",
+      "away_score": 28,
+      "home_score": 38,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews Stadium",
+      "venue_city": "Huntsville, Ala.Louis Crews Stadium",
+      "stadium_name": "Huntsville, Ala.Louis Crews Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacgsu",
+            "date": "2014-10-04",
+            "score_team": 38,
+            "score_opp": 28,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacsu_2014-10-04",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacsu",
+      "away_score": 36,
+      "home_score": 51,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LAA.W. Mumford Stadium",
+      "venue_city": "Baton Rouge, LAA.W. Mumford Stadium",
+      "stadium_name": "Baton Rouge, LAA.W. Mumford Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacsu",
+            "date": "2014-10-04",
+            "score_team": 36,
+            "score_opp": 51,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacpvamu_2014-10-04",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacjsu",
+      "away_score": 48,
+      "home_score": 30,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, Miss.",
+      "venue_city": "Jackson, Miss.",
+      "stadium_name": "Jackson, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacpvamu",
+            "date": "2014-10-04",
+            "score_team": 30,
+            "score_opp": 48,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swactsu_2014-10-04",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swactsu",
+      "away_score": 16,
+      "home_score": 20,
+      "winner_team_id": "swactsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TexasBBVA Compass Stadium",
+      "venue_city": "Houston, TexasBBVA Compass Stadium",
+      "stadium_name": "Houston, TexasBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swactsu",
+            "date": "2014-10-04",
+            "score_team": 16,
+            "score_opp": 20,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacsu_swacuapb_2014-10-04",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-04",
+      "week": 6,
+      "week_label": "Week 6",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacsu",
+      "away_score": 36,
+      "home_score": 51,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LAA. W. Mumford StadiumCOCA-COLA | True Blue HOMECOMING",
+      "venue_city": "Baton Rouge, LAA. W. Mumford StadiumCOCA-COLA | True Blue HOMECOMING",
+      "stadium_name": "Baton Rouge, LAA. W. Mumford StadiumCOCA-COLA | True Blue HOMECOMING",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacsu",
+            "opponent_id": "swacuapb",
+            "date": "2014-10-04",
+            "score_team": 51,
+            "score_opp": 36,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_meacnsu_2014-10-11",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-11",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "meacdsu",
+      "home_team_id": "meacnsu",
+      "away_score": 13,
+      "home_score": 10,
+      "winner_team_id": "meacdsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Norfolk, Va.",
+      "venue_city": "Norfolk, Va.",
+      "stadium_name": "Norfolk, Va.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacdsu",
+            "opponent_id": "meacnsu",
+            "date": "2014-10-11",
+            "score_team": 13,
+            "score_opp": 10,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_swacbcu_2014-10-11",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-11",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "meachu",
+      "home_team_id": "swacbcu",
+      "away_score": 12,
+      "home_score": 49,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Daytona Beach, Fla.",
+      "venue_city": "Daytona Beach, Fla.",
+      "stadium_name": "Daytona Beach, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacbcu",
+            "opponent_id": "meachu",
+            "date": "2014-10-11",
+            "score_team": 49,
+            "score_opp": 12,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacsu_2014-10-11",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-11",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacaamu",
+      "away_score": 34,
+      "home_score": 35,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews Stadium",
+      "venue_city": "Huntsville, Ala.Louis Crews Stadium",
+      "stadium_name": "Huntsville, Ala.Louis Crews Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacsu",
+            "date": "2014-10-11",
+            "score_team": 35,
+            "score_opp": 34,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacgsu_2014-10-11",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-11",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacgsu",
+      "away_score": 21,
+      "home_score": 28,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Grambling, La.Eddie Robinson Stadium",
+      "venue_city": "Grambling, La.Eddie Robinson Stadium",
+      "stadium_name": "Grambling, La.Eddie Robinson Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacgsu",
+            "date": "2014-10-11",
+            "score_team": 21,
+            "score_opp": 28,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacmvsu_2014-10-11",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-11",
+      "week": 7,
+      "week_label": "Week 7",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacjsu",
+      "away_score": 27,
+      "home_score": 23,
+      "winner_team_id": "swacmvsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, Miss.",
+      "venue_city": "Jackson, Miss.",
+      "stadium_name": "Jackson, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacmvsu",
+            "date": "2014-10-11",
+            "score_team": 23,
+            "score_opp": 27,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_swacfamu_2014-10-18",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-18",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meachu",
+      "away_score": 31,
+      "home_score": 28,
+      "winner_team_id": "swacfamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Washington, D.C.",
+      "venue_city": "Washington, D.C.",
+      "stadium_name": "Washington, D.C.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meachu",
+            "date": "2014-10-18",
+            "score_team": 31,
+            "score_opp": 28,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swactsu_2014-10-18",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-18",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swactsu",
+      "home_team_id": "swacalc",
+      "away_score": 25,
+      "home_score": 40,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "venue_city": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "stadium_name": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swactsu",
+            "date": "2014-10-18",
+            "score_team": 40,
+            "score_opp": 25,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacgsu_2014-10-18",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-18",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacasu",
+      "home_team_id": "swacgsu",
+      "away_score": 39,
+      "home_score": 63,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Grambling, LAEddie G. Robinson Stadium",
+      "venue_city": "Grambling, LAEddie G. Robinson Stadium",
+      "stadium_name": "Grambling, LAEddie G. Robinson Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacgsu",
+            "date": "2014-10-18",
+            "score_team": 39,
+            "score_opp": 63,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacuapb_2014-10-18",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-18",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacgsu",
+      "away_score": 39,
+      "home_score": 63,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "venue_city": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "stadium_name": "Grambling, LAEddie G. Robinson Memorial Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacuapb",
+            "date": "2014-10-18",
+            "score_team": 63,
+            "score_opp": 39,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swacpvamu_2014-10-18",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-18",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacmvsu",
+      "away_score": 52,
+      "home_score": 19,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, MississippiRice-Totten Stadium at Chuck Prophet Field",
+      "venue_city": "Itta Bena, MississippiRice-Totten Stadium at Chuck Prophet Field",
+      "stadium_name": "Itta Bena, MississippiRice-Totten Stadium at Chuck Prophet Field",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swacpvamu",
+            "date": "2014-10-18",
+            "score_team": 19,
+            "score_opp": 52,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacmsu_2014-10-24",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2014-10-24",
+      "week": 8,
+      "week_label": "Week 8",
+      "away_team_id": "meachu",
+      "home_team_id": "meacmsu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baltimore, MD",
+      "venue_city": "Baltimore, MD",
+      "stadium_name": "Baltimore, MD",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meachu",
+            "opponent_id": "meacmsu",
+            "date": "2014-10-24",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacncat_swacfamu_2014-10-25",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meacncat",
+      "away_score": 21,
+      "home_score": 40,
+      "winner_team_id": "meacncat",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Greensboro, NC",
+      "venue_city": "Greensboro, NC",
+      "stadium_name": "Greensboro, NC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacfamu",
+            "opponent_id": "meacncat",
+            "date": "2014-10-25",
+            "score_team": 21,
+            "score_opp": 40,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacscsu_swacbcu_2014-10-25",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacbcu",
+      "home_team_id": "meacscsu",
+      "away_score": 14,
+      "home_score": 20,
+      "winner_team_id": "meacscsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "ORANGEBURG, SC",
+      "venue_city": "ORANGEBURG, SC",
+      "stadium_name": "ORANGEBURG, SC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacscsu",
+            "opponent_id": "swacbcu",
+            "date": "2014-10-25",
+            "score_team": 20,
+            "score_opp": 14,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacasu_2014-10-25",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacasu",
+      "away_score": 37,
+      "home_score": 36,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Birmingham, Ala.Legion FieldLater Vacated by NCAA Action",
+      "venue_city": "Birmingham, Ala.Legion FieldLater Vacated by NCAA Action",
+      "stadium_name": "Birmingham, Ala.Legion FieldLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacasu",
+            "date": "2014-10-25",
+            "score_team": 37,
+            "score_opp": 36,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacpvamu_2014-10-25",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacpvamu",
+      "away_score": 77,
+      "home_score": 48,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Prairie View, Texas",
+      "venue_city": "Prairie View, Texas",
+      "stadium_name": "Prairie View, Texas",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacpvamu",
+            "date": "2014-10-25",
+            "score_team": 77,
+            "score_opp": 48,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swactsu_2014-10-25",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacasu",
+      "home_team_id": "swactsu",
+      "away_score": 38,
+      "home_score": 37,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TXBBVA Compass Stadium",
+      "venue_city": "Houston, TXBBVA Compass Stadium",
+      "stadium_name": "Houston, TXBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swactsu",
+            "date": "2014-10-25",
+            "score_team": 38,
+            "score_opp": 37,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swacsu_2014-10-25",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacsu",
+      "home_team_id": "swacjsu",
+      "away_score": 42,
+      "home_score": 28,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Hattiesburg, Miss.",
+      "venue_city": "Hattiesburg, Miss.",
+      "stadium_name": "Hattiesburg, Miss.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swacsu",
+            "date": "2014-10-25",
+            "score_team": 28,
+            "score_opp": 42,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swactsu_swacuapb_2014-10-25",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-10-25",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swactsu",
+      "away_score": 38,
+      "home_score": 37,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TexasShell Energy Stadium",
+      "venue_city": "Houston, TexasShell Energy Stadium",
+      "stadium_name": "Houston, TexasShell Energy Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swactsu",
+            "opponent_id": "swacuapb",
+            "date": "2014-10-25",
+            "score_team": 37,
+            "score_opp": 38,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacnccu_2014-10-31",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2014-10-31",
+      "week": 9,
+      "week_label": "Week 9",
+      "away_team_id": "meachu",
+      "home_team_id": "meacnccu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Durham, NC",
+      "venue_city": "Durham, NC",
+      "stadium_name": "Durham, NC",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meachu",
+            "opponent_id": "meacnccu",
+            "date": "2014-10-31",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_meachu_2014-11-01",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "meacdsu",
+      "home_team_id": "meachu",
+      "away_score": 10,
+      "home_score": 17,
+      "winner_team_id": "meachu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Washington, D.C.",
+      "venue_city": "Washington, D.C.",
+      "stadium_name": "Washington, D.C.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacdsu",
+            "opponent_id": "meachu",
+            "date": "2014-11-01",
+            "score_team": 10,
+            "score_opp": 17,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnccu_swacbcu_2014-11-01",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "meacnccu",
+      "home_team_id": "swacbcu",
+      "away_score": 20,
+      "home_score": 34,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Daytona Beach, Fla.",
+      "venue_city": "Daytona Beach, Fla.",
+      "stadium_name": "Daytona Beach, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacbcu",
+            "opponent_id": "meacnccu",
+            "date": "2014-11-01",
+            "score_team": 34,
+            "score_opp": 20,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnsu_swacfamu_2014-11-01",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "meacnsu",
+      "home_team_id": "swacfamu",
+      "away_score": 12,
+      "home_score": 10,
+      "winner_team_id": "meacnsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Tallahassee, Fla.",
+      "venue_city": "Tallahassee, Fla.",
+      "stadium_name": "Tallahassee, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "swacfamu",
+            "date": "2014-11-01",
+            "score_team": 12,
+            "score_opp": 10,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacjsu_2014-11-01",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacjsu",
+      "away_score": 25,
+      "home_score": 14,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Jackson, MSVeterans Memorial StadiumLater Vacated by NCAA Action",
+      "venue_city": "Jackson, MSVeterans Memorial StadiumLater Vacated by NCAA Action",
+      "stadium_name": "Jackson, MSVeterans Memorial StadiumLater Vacated by NCAA Action",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacjsu",
+            "date": "2014-11-01",
+            "score_team": 25,
+            "score_opp": 14,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacmvsu_2014-11-01",
+      "conference": "SWAC",
+      "division_scope": "east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacasu",
+      "away_score": 14,
+      "home_score": 24,
+      "winner_team_id": "swacasu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Golden Lion Stadium",
+      "venue_city": "Golden Lion Stadium",
+      "stadium_name": "Golden Lion Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacmvsu",
+            "date": "2014-11-01",
+            "score_team": 24,
+            "score_opp": 14,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swactsu_2014-11-01",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swactsu",
+      "away_score": 35,
+      "home_score": 7,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TXBBVA Compass Stadium",
+      "venue_city": "Houston, TXBBVA Compass Stadium",
+      "stadium_name": "Houston, TXBBVA Compass Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swactsu",
+            "date": "2014-11-01",
+            "score_team": 35,
+            "score_opp": 7,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swacuapb_2014-11-01",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-01",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacuapb",
+      "away_score": 14,
+      "home_score": 24,
+      "winner_team_id": "swacuapb",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, ArkansasGolden Lion Stadium",
+      "venue_city": "Pine Bluff, ArkansasGolden Lion Stadium",
+      "stadium_name": "Pine Bluff, ArkansasGolden Lion Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swacuapb",
+            "date": "2014-11-01",
+            "score_team": 14,
+            "score_opp": 24,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnsu_swacbcu_2014-11-06",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-06",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacbcu",
+      "home_team_id": "meacnsu",
+      "away_score": 13,
+      "home_score": 7,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Norfolk, Va.William \"Dick\" Price Stadium",
+      "venue_city": "Norfolk, Va.William \"Dick\" Price Stadium",
+      "stadium_name": "Norfolk, Va.William \"Dick\" Price Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "swacbcu",
+            "date": "2014-11-06",
+            "score_team": 7,
+            "score_opp": 13,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacmvsu_2014-11-06",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-06",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacmvsu",
+      "away_score": 38,
+      "home_score": 23,
+      "winner_team_id": "swacgsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Itta Bena, MSRice-Totten Stadium",
+      "venue_city": "Itta Bena, MSRice-Totten Stadium",
+      "stadium_name": "Itta Bena, MSRice-Totten Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacmvsu",
+            "date": "2014-11-06",
+            "score_team": 38,
+            "score_opp": 23,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacscsu_2014-11-07",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2014-11-07",
+      "week": 10,
+      "week_label": "Week 10",
+      "away_team_id": "meacscsu",
+      "home_team_id": "meachu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Washington, DCGreene Stadium",
+      "venue_city": "Washington, DCGreene Stadium",
+      "stadium_name": "Washington, DCGreene Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meachu",
+            "opponent_id": "meacscsu",
+            "date": "2014-11-07",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacscsu_swacfamu_2014-11-08",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-08",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "meacscsu",
+      "home_team_id": "swacfamu",
+      "away_score": 34,
+      "home_score": 17,
+      "winner_team_id": "meacscsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Tallahassee, FL",
+      "venue_city": "Tallahassee, FL",
+      "stadium_name": "Tallahassee, FL",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacscsu",
+            "opponent_id": "swacfamu",
+            "date": "2014-11-08",
+            "score_team": 34,
+            "score_opp": 17,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacalc_2014-11-08",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-08",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacaamu",
+      "away_score": 14,
+      "home_score": 41,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews Stadium",
+      "venue_city": "Huntsville, Ala.Louis Crews Stadium",
+      "stadium_name": "Huntsville, Ala.Louis Crews Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacalc",
+            "date": "2014-11-08",
+            "score_team": 41,
+            "score_opp": 14,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacasu_swacpvamu_2014-11-08",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-08",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacasu",
+      "away_score": 51,
+      "home_score": 23,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Golden Lion Stadium",
+      "venue_city": "Golden Lion Stadium",
+      "stadium_name": "Golden Lion Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacasu",
+            "opponent_id": "swacpvamu",
+            "date": "2014-11-08",
+            "score_team": 23,
+            "score_opp": 51,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacpvamu_swacuapb_2014-11-08",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-08",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacuapb",
+      "away_score": 51,
+      "home_score": 23,
+      "winner_team_id": "swacpvamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, Ark.",
+      "venue_city": "Pine Bluff, Ark.",
+      "stadium_name": "Pine Bluff, Ark.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacpvamu",
+            "opponent_id": "swacuapb",
+            "date": "2014-11-08",
+            "score_team": 51,
+            "score_opp": 23,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacsu_swactsu_2014-11-08",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-08",
+      "week": 11,
+      "week_label": "Week 11",
+      "away_team_id": "swactsu",
+      "home_team_id": "swacsu",
+      "away_score": 20,
+      "home_score": 30,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LAA. W. Mumford StadiumSU ROTC AND LA. LOTTERY | MILITARY APPRECIATION DAY | Camo/Navy Day",
+      "venue_city": "Baton Rouge, LAA. W. Mumford StadiumSU ROTC AND LA. LOTTERY | MILITARY APPRECIATION DAY | Camo/Navy Day",
+      "stadium_name": "Baton Rouge, LAA. W. Mumford StadiumSU ROTC AND LA. LOTTERY | MILITARY APPRECIATION DAY | Camo/Navy Day",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacsu",
+            "opponent_id": "swactsu",
+            "date": "2014-11-08",
+            "score_team": 30,
+            "score_opp": 20,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_swacfamu_2014-11-15",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-15",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacfamu",
+      "home_team_id": "meacdsu",
+      "away_score": 41,
+      "home_score": 7,
+      "winner_team_id": "swacfamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Dover, Del.",
+      "venue_city": "Dover, Del.",
+      "stadium_name": "Dover, Del.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacdsu",
+            "opponent_id": "swacfamu",
+            "date": "2014-11-15",
+            "score_team": 7,
+            "score_opp": 41,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacmsu_meacscsu_2014-11-15",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-15",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "meacscsu",
+      "home_team_id": "meacmsu",
+      "away_score": 21,
+      "home_score": 24,
+      "winner_team_id": "meacmsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baltimore, MD",
+      "venue_city": "Baltimore, MD",
+      "stadium_name": "Baltimore, MD",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacscsu",
+            "opponent_id": "meacmsu",
+            "date": "2014-11-15",
+            "score_team": 21,
+            "score_opp": 24,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacpvamu_2014-11-15",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-15",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacpvamu",
+      "home_team_id": "swacaamu",
+      "away_score": 35,
+      "home_score": 38,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Huntsville, Ala.Louis Crews Stadium",
+      "venue_city": "Huntsville, Ala.Louis Crews Stadium",
+      "stadium_name": "Huntsville, Ala.Louis Crews Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacpvamu",
+            "date": "2014-11-15",
+            "score_team": 38,
+            "score_opp": 35,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacuapb_2014-11-15",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-15",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacuapb",
+      "home_team_id": "swacalc",
+      "away_score": 6,
+      "home_score": 56,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "venue_city": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "stadium_name": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacuapb",
+            "date": "2014-11-15",
+            "score_team": 56,
+            "score_opp": 6,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacjsu_swactsu_2014-11-15",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-15",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swactsu",
+      "away_score": 15,
+      "home_score": 10,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, Texas",
+      "venue_city": "Houston, Texas",
+      "stadium_name": "Houston, Texas",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacjsu",
+            "opponent_id": "swactsu",
+            "date": "2014-11-15",
+            "score_team": 15,
+            "score_opp": 10,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacmvsu_swacsu_2014-11-15",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-15",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "swacmvsu",
+      "home_team_id": "swacsu",
+      "away_score": 13,
+      "home_score": 44,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baton Rouge, LouisianaA.W. Mumford Stadium",
+      "venue_city": "Baton Rouge, LouisianaA.W. Mumford Stadium",
+      "stadium_name": "Baton Rouge, LouisianaA.W. Mumford Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacmvsu",
+            "opponent_id": "swacsu",
+            "date": "2014-11-15",
+            "score_team": 13,
+            "score_opp": 44,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meachu_meacnsu_2014-11-21",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "scheduled",
+      "date": "2014-11-21",
+      "week": 12,
+      "week_label": "Week 12",
+      "away_team_id": "meachu",
+      "home_team_id": "meacnsu",
+      "away_score": null,
+      "home_score": null,
+      "winner_team_id": null,
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Norfolk, VA",
+      "venue_city": "Norfolk, VA",
+      "stadium_name": "Norfolk, VA",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meachu",
+            "opponent_id": "meacnsu",
+            "date": "2014-11-21",
+            "score_team": null,
+            "score_opp": null,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacdsu_meacmsu_2014-11-22",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-22",
+      "week": 13,
+      "week_label": "Week 13",
+      "away_team_id": "meacdsu",
+      "home_team_id": "meacmsu",
+      "away_score": 7,
+      "home_score": 69,
+      "winner_team_id": "meacmsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Baltimore, Md.",
+      "venue_city": "Baltimore, Md.",
+      "stadium_name": "Baltimore, Md.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacdsu",
+            "opponent_id": "meacmsu",
+            "date": "2014-11-22",
+            "score_team": 7,
+            "score_opp": 69,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "meacnsu_meacscsu_2014-11-22",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-22",
+      "week": 13,
+      "week_label": "Week 13",
+      "away_team_id": "meacnsu",
+      "home_team_id": "meacscsu",
+      "away_score": 20,
+      "home_score": 30,
+      "winner_team_id": "meacscsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Orangeburg, S.C.",
+      "venue_city": "Orangeburg, S.C.",
+      "stadium_name": "Orangeburg, S.C.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "meacnsu",
+            "opponent_id": "meacscsu",
+            "date": "2014-11-22",
+            "score_team": 20,
+            "score_opp": 30,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacaamu_swacuapb_2014-11-22",
+      "conference": "SWAC",
+      "division_scope": "east_vs_west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-22",
+      "week": 13,
+      "week_label": "Week 13",
+      "away_team_id": "swacaamu",
+      "home_team_id": "swacuapb",
+      "away_score": 20,
+      "home_score": 19,
+      "winner_team_id": "swacaamu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Pine Bluff, ARGolden Lion Stadium",
+      "venue_city": "Pine Bluff, ARGolden Lion Stadium",
+      "stadium_name": "Pine Bluff, ARGolden Lion Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacaamu",
+            "opponent_id": "swacuapb",
+            "date": "2014-11-22",
+            "score_team": 20,
+            "score_opp": 19,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacalc_swacjsu_2014-11-22",
+      "conference": "SWAC",
+      "division_scope": "west_vs_east",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-22",
+      "week": 13,
+      "week_label": "Week 13",
+      "away_team_id": "swacjsu",
+      "home_team_id": "swacalc",
+      "away_score": 34,
+      "home_score": 31,
+      "winner_team_id": "swacjsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "venue_city": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "stadium_name": "Lorman, Miss.Jack Spinks – Marino Casem Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacjsu",
+            "date": "2014-11-22",
+            "score_team": 31,
+            "score_opp": 34,
+            "home_away": "home",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacbcu_swacfamu_2014-11-22",
+      "conference": "MEAC",
+      "division_scope": null,
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-22",
+      "week": 13,
+      "week_label": "Week 13",
+      "away_team_id": "swacbcu",
+      "home_team_id": "swacfamu",
+      "away_score": 18,
+      "home_score": 17,
+      "winner_team_id": "swacbcu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Orlando, Fla.",
+      "venue_city": "Orlando, Fla.",
+      "stadium_name": "Orlando, Fla.",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacbcu",
+            "opponent_id": "swacfamu",
+            "date": "2014-11-22",
+            "score_team": 18,
+            "score_opp": 17,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    },
+    {
+      "matchup_id": "swacgsu_swacsu_2014-11-29",
+      "conference": "SWAC",
+      "division_scope": "west",
+      "game_type": "regular_conference",
+      "status": "final",
+      "date": "2014-11-29",
+      "week": 14,
+      "week_label": "Week 14",
+      "away_team_id": "swacgsu",
+      "home_team_id": "swacsu",
+      "away_score": 45,
+      "home_score": 52,
+      "winner_team_id": "swacsu",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "New Orleans, LAMercedes Benz Superdome",
+      "venue_city": "New Orleans, LAMercedes Benz Superdome",
+      "stadium_name": "New Orleans, LAMercedes Benz Superdome",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacgsu",
+            "opponent_id": "swacsu",
+            "date": "2014-11-29",
+            "score_team": 45,
+            "score_opp": 52,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    }
+  ],
+  "special_games": [
+    {
+      "matchup_id": "swacalc_swacsu_2014-12-06",
+      "conference": "SWAC",
+      "division_scope": null,
+      "game_type": "swac_championship",
+      "status": "final",
+      "date": "2014-12-06",
+      "week": 15,
+      "week_label": "Week 15",
+      "away_team_id": "swacalc",
+      "home_team_id": "swacsu",
+      "away_score": 38,
+      "home_score": 24,
+      "winner_team_id": "swacalc",
+      "game_path_id": null,
+      "has_game_page": false,
+      "has_parsed_game": false,
+      "route": null,
+      "venue": "Houston, TexasNRG Stadium",
+      "venue_city": "Houston, TexasNRG Stadium",
+      "stadium_name": "Houston, TexasNRG Stadium",
+      "neutral_site_name": null,
+      "source": {
+        "schedule_rows": [
+          {
+            "team_id": "swacalc",
+            "opponent_id": "swacsu",
+            "date": "2014-12-06",
+            "score_team": 38,
+            "score_opp": 24,
+            "home_away": "away",
+            "synthetic_from_parsed_game": false
+          }
+        ],
+        "game_file": null,
+        "score_authority": "schedule"
+      },
+      "warnings": []
+    }
+  ],
+  "data_quality": {
+    "errors": [],
+    "warnings": [],
+    "warnings_count": 0,
+    "score_mismatches_count": 0,
+    "missing_game_pages_count": 67
+  }
+}

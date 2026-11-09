@@ -1,0 +1,511 @@
+{
+  "person_id": "PERS_00010185",
+  "season": 2026,
+  "generated_at": "2026-11-07T19:51:13-06:00",
+  "as_of_week": 10,
+  "identity": {
+    "person_id": "PERS_00010185",
+    "first_name": "Nae'Saan",
+    "last_name": "Dickerson",
+    "team_id": "swacgsu",
+    "team_abbreviation": "GRAM",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 11,
+    "position": "Wide Receiver",
+    "position_group": "WR",
+    "raw_position": "WR",
+    "class_year": 5,
+    "class_label": "Graduate",
+    "height": 74,
+    "weight": 210,
+    "home_city": "Atlanta",
+    "home_state": "GA",
+    "is_in_state": false,
+    "previous_school": "South Alabama",
+    "high_school": null,
+    "image_url": "https://gsutigers.com/images/2025/8/20/Nae_SaanDickerson.jpg"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": 18.24,
+    "per_game": 4.51,
+    "games_played": 6,
+    "rank_in_position_group": 11,
+    "position_group_total": 148,
+    "conference_rank": 121,
+    "conference_total": 967,
+    "position_group_mean": 3.12
+  },
+  "season_totals": {
+    "par": 18.24,
+    "total_production": 27.06,
+    "avg_production": 4.51,
+    "games_played": 6,
+    "season_components": {
+      "receiving_production": 27.06,
+      "rushing_production": 0
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "2026-08-29_clarkatlanta_at_swacgsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Clark Atlanta",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 49-7",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_centralstate_at_swacgsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Central State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 48-26",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_swacgsu_at_tcu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "TCU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 7-63",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "PVAMUGRAM26092026",
+      "game_path_id": "pvamugsu26",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 14-21",
+      "data_state": "played",
+      "par": 4.41,
+      "components": {
+        "receiving_production": 5.88
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "2-52"
+        },
+        {
+          "label": "REC TD",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 5,
+      "game_id": "ALCGRAM03102026",
+      "game_path_id": "alcgsu26",
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 63-59",
+      "data_state": "played",
+      "par": 4.86,
+      "components": {
+        "receiving_production": 6.33
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "4-48"
+        },
+        {
+          "label": "REC TD",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 6,
+      "game_id": "JSUGRAM10102026",
+      "game_path_id": "jsugsu26",
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 45-38",
+      "data_state": "played",
+      "par": 3.48,
+      "components": {
+        "receiving_production": 4.95
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "3-29"
+        },
+        {
+          "label": "REC TD",
+          "value": 1
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 7,
+      "game_id": "GRAMAAMU17102026",
+      "game_path_id": "gsuaamu26",
+      "opponent_id": "swacaamu",
+      "opponent_name": "AAMU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 31-61",
+      "data_state": "played",
+      "par": 0.93,
+      "components": {
+        "receiving_production": 2.4
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "2-56"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 9,
+      "game_id": "GRAMTSU31102026",
+      "game_path_id": "gsutsu26",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 20-23",
+      "data_state": "played",
+      "par": 2.1,
+      "components": {
+        "receiving_production": 3.57
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "4-61"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 10,
+      "game_id": "UAPBGRAM07112026",
+      "game_path_id": "uapbgsu26",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 32-35",
+      "data_state": "played",
+      "par": 2.46,
+      "components": {
+        "receiving_production": 3.93
+      },
+      "stat_line": [
+        {
+          "label": "REC",
+          "value": "5-61"
+        },
+        {
+          "label": "REC TD",
+          "value": 0
+        }
+      ],
+      "field_map": null,
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swacgsu_at_swacbcu",
+      "game_path_id": null,
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 13,
+      "game_id": "2026-11-28_swacgsu_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": "swacsu",
+      "opponent_name": "Southern",
+      "home_away": "away",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 10,
+    "game_id": "UAPBGRAM07112026",
+    "game_path_id": "uapbgsu26",
+    "opponent_id": "swacuapb",
+    "opponent_name": "UAPB",
+    "home_away": "home",
+    "result": "L",
+    "score": "L 32-35",
+    "par": 2.46,
+    "stat_line": [
+      {
+        "label": "REC",
+        "value": "5-61"
+      },
+      {
+        "label": "REC TD",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": null
+  },
+  "field_map": {
+    "available": false,
+    "views": [],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": false,
+      "grid": "1x3",
+      "cells": null
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 74,
+      "rank": 4,
+      "total": 15,
+      "group": "WR",
+      "group_avg": 71.7
+    },
+    "weight": {
+      "value": 210,
+      "rank": 1,
+      "total": 15,
+      "group": "WR",
+      "group_avg": 185.8
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 7
+      },
+      {
+        "class": "So.",
+        "count": 6
+      },
+      {
+        "class": "Jr.",
+        "count": 0
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 1
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "WRS",
+        "rank": 13,
+        "total": 15
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 15
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 49
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 49
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": true,
+    "transfer_tier": "G5",
+    "previous_school": "South Alabama",
+    "is_redshirt": false,
+    "redshirt_note": null,
+    "distance_miles": 487.0,
+    "distance_tier": "regional",
+    "experience_score": 5.0,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": null
+      },
+      {
+        "class": "Graduate",
+        "is_current": true,
+        "season": 2026
+      }
+    ]
+  }
+}

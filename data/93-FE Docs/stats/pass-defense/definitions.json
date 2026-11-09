@@ -1,0 +1,92 @@
+{
+  "version": "pass_defense_foundation_v2",
+  "scope": "2026, final parsed games between covered teams",
+  "owner": "src/helpers/pass_defense.py + 92-frontend/tools/build_pass_defense.py",
+  "home": "92-frontend/0-data/pass-defense/2026/{team}.json",
+  "garbage_time": "Every new metric is dual-surfaced, ranked separately with eligibility/rank-movement checks",
+  "measures": {
+    "pressure_to_sack_rate": {
+      "numerator": "sacks",
+      "denominator": "pressures",
+      "better": "higher",
+      "definition": "Sacks / dropbacks with a sack or recorded hurry; unique plays, not summed defender credits."
+    },
+    "ball_disruption_rate": {
+      "numerator": "ball_disruptions",
+      "denominator": "attempts",
+      "better": "higher",
+      "definition": "Pass attempts with a named PBU or interception / attempts. A play with both counts once; sacks are not attempts."
+    },
+    "epa_allowed": {
+      "numerator": "epa_sum",
+      "denominator": "epa_n",
+      "better": "lower",
+      "definition": "Offensive EPA allowed per dropback with numeric EPA in this matched subset; missing EPA is excluded, never zero-filled."
+    },
+    "success_allowed": {
+      "numerator": "successes",
+      "denominator": "success_n",
+      "better": "lower",
+      "definition": "Offensive down-and-distance successes / dropbacks with a recorded boolean success verdict in this matched subset."
+    },
+    "completion_rate": {
+      "numerator": "completions",
+      "denominator": "known_attempts",
+      "better": "lower",
+      "definition": "Completions / attempts with a known completion/interception verdict in this matched subset; sacks and unknown outcomes excluded."
+    },
+    "yards_per_attempt": {
+      "numerator": "pass_yards",
+      "denominator": "yarded_attempts",
+      "better": "lower",
+      "definition": "Credited completion yards / pass attempts with known result/yardage; known incompletions contribute zero, missing completion yardage is excluded."
+    },
+    "explosive_20_rate": {
+      "numerator": "gains_20",
+      "denominator": "yarded_attempts",
+      "better": "lower",
+      "definition": "Completed passes gaining 20+ credited yards / attempts with known result/yardage; not air-yard depth."
+    },
+    "nonconverting_completion_rate": {
+      "numerator": "nonconverting_completions",
+      "denominator": "completions",
+      "better": "higher",
+      "definition": "Completions that did not convert the down / completions, using downs.converted_down; not a physical catch-location, tackle-efficiency or coverage grade."
+    },
+    "yac_per_charted_completion": {
+      "numerator": "yac_sum",
+      "denominator": "charted_completions",
+      "better": "lower",
+      "definition": "Credited yards minus charted air yards / charted completions in this matched subset; uncharted catches are not zero YAC."
+    },
+    "conversion_allowed": {
+      "numerator": "conversions",
+      "denominator": "dropbacks",
+      "better": "lower",
+      "definition": "Dropbacks that converted the down (first down kept or offensive TD, downs.converted_down) / dropbacks; sacks and incompletions count as stops. Read in third_and_long for 3rd & 7+."
+    },
+    "pass_td_per_attempt": {
+      "numerator": "pass_tds",
+      "denominator": "attempts",
+      "better": "lower",
+      "definition": "Completed passes that scored an offensive touchdown (downs.offense_touchdown) / pass attempts; sacks are not attempts, return scores are not passing TDs."
+    },
+    "air_yards_per_charted_completion": {
+      "numerator": "air_sum",
+      "denominator": "charted_completions",
+      "better": "lower",
+      "definition": "Charted air yards / charted completions: the same completions as yac_per_charted_completion, so the two add up to credited yards per charted completion. Can be negative (screens)."
+    },
+    "explosive_20_yard_share": {
+      "numerator": "yards_20",
+      "denominator": "pass_yards",
+      "better": "lower",
+      "definition": "Credited yards on 20+ completions / all credited completion yards (same cohort as explosive_20_rate). Null when completion yards total zero or less."
+    },
+    "success_allowed_change": {
+      "bucket": "halftime_change",
+      "better": "lower",
+      "definition": "Second-half minus first-half success allowed (each half's published rate, regulation only). Negative = better after the break. Ranked only where both halves qualified; 1 = biggest improvement."
+    }
+  }
+}

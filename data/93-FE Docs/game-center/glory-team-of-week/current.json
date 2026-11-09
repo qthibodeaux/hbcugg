@@ -1,0 +1,50 @@
+{
+  "season": 2026,
+  "week": 10,
+  "week_label": "Week 10",
+  "generated_at": "2026-11-07T19:59:27-06:00",
+  "source": "current_season",
+  "team": {
+    "team_id": "swacalc",
+    "glory": {
+      "rating": 0.0422,
+      "previous_rating": 0.0261,
+      "delta": 0.0161,
+      "rank": 1,
+      "ranked_teams": 18,
+      "metric_key": "adj_epa_net_predictive",
+      "metric_label": "Team rating (adj. EPA/play)",
+      "display": "+0.042",
+      "delta_display": "+0.016"
+    },
+    "record": "6-4",
+    "conference_record": "4-2"
+  },
+  "game": {
+    "game_id": "FAMUALC07112026",
+    "game_path_id": "famualc26",
+    "date": "2026-11-07",
+    "opponent_team_id": "swacfamu",
+    "opponent_name": "FAMU",
+    "home_away": "home",
+    "team_score": 38,
+    "opponent_score": 20,
+    "event_name": null
+  },
+  "highlight": {
+    "key": "epa_per_play",
+    "label": "EPA per play",
+    "value": 0.4801,
+    "display": "+0.48",
+    "context": "best in the league this week",
+    "rank": 1
+  },
+  "copy": {
+    "headline": null,
+    "summary": "Alcorn beat FAMU 38-20 and climbed from 3rd to 1st in the team rating."
+  },
+  "why_reasons": [
+    "Biggest rise in the team rating among this week's winners (+0.016)",
+    "EPA per play +0.48, best in the league this week"
+  ]
+}

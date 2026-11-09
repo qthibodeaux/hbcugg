@@ -1,0 +1,1293 @@
+{
+  "season": 2026,
+  "generated_at": "2026-11-07T19:57:51-06:00",
+  "as_of_week": 10,
+  "rules": {
+    "tiebreaker_summary": "Conference record sets the order. Teams level on it are separated by head-to-head, then division record, then record against common conference opponents, then conference point differential, then conference points scored. A SWAC division crowns one champion; MEAC teams level at the top are co-champions, and the ladder names the Celebration Bowl representative rather than a title."
+  },
+  "epa_note": "EPA is measured only on games with a parsed play-by-play behind them, roughly half a season; epa_games says how many. epa_combined is offence per play minus defence allowed per play.",
+  "groups": {
+    "swac_east": {
+      "id": "swac_east",
+      "label": "SWAC East",
+      "conference": "SWAC",
+      "division": "East",
+      "completed_games": 25,
+      "remaining_games": 8,
+      "champions": [
+        "swacjsu"
+      ],
+      "co_champions_possible": false,
+      "unresolved_tiebreakers": [],
+      "scenario_count": 256,
+      "finish_matrix": [
+        {
+          "team_id": "swacaamu",
+          "current_rank": 2,
+          "values": [
+            36.9,
+            45.8,
+            9.8,
+            5.0,
+            2.6,
+            0.0
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            61.2,
+            22.9,
+            9.5,
+            5.1,
+            1.2,
+            0.0
+          ]
+        },
+        {
+          "team_id": "swacasu",
+          "current_rank": 4,
+          "values": [
+            6.8,
+            16.2,
+            23.6,
+            40.6,
+            12.9,
+            0.0
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            1.2,
+            7.7,
+            19.8,
+            26.8,
+            28.6,
+            16.0
+          ]
+        },
+        {
+          "team_id": "swacbcu",
+          "current_rank": 3,
+          "values": [
+            7.0,
+            19.5,
+            43.2,
+            15.9,
+            14.3,
+            0.0
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            13.7,
+            40.7,
+            26.8,
+            11.7,
+            5.5,
+            1.7
+          ]
+        },
+        {
+          "team_id": "swacfamu",
+          "current_rank": 6,
+          "values": [
+            0.0,
+            0.0,
+            3.1,
+            12.5,
+            21.9,
+            62.5
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            0.0,
+            2.5,
+            8.3,
+            15.0,
+            23.0,
+            51.2
+          ]
+        },
+        {
+          "team_id": "swacjsu",
+          "current_rank": 1,
+          "values": [
+            49.4,
+            16.8,
+            16.0,
+            17.8,
+            0.0,
+            0.0
+          ],
+          "controls_destiny": true,
+          "values_prev_week": [
+            19.0,
+            19.0,
+            23.1,
+            20.1,
+            15.5,
+            3.3
+          ]
+        },
+        {
+          "team_id": "swacmvsu",
+          "current_rank": 5,
+          "values": [
+            0.0,
+            1.7,
+            4.3,
+            8.2,
+            48.3,
+            37.5
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            4.9,
+            7.2,
+            12.5,
+            21.4,
+            26.2,
+            27.9
+          ]
+        }
+      ],
+      "finish_method": "exact",
+      "context_cards": [
+        {
+          "label": "League games",
+          "value": "25 played",
+          "sub": "8 to come",
+          "accent": "#7A1F2B"
+        },
+        {
+          "label": "Separation",
+          "value": "0-3 GB",
+          "sub": "leader to last",
+          "accent": "#7A1F2B"
+        },
+        {
+          "label": "Champion",
+          "value": "1",
+          "sub": "swacjsu",
+          "accent": "#7A1F2B"
+        },
+        {
+          "label": "Ties broken",
+          "value": "4",
+          "sub": "head-to-head and beyond",
+          "accent": "#7A1F2B"
+        }
+      ],
+      "summary_cards": [
+        {
+          "label": "Leader",
+          "value": "4-2",
+          "sub": "J-State",
+          "team_id": "swacjsu"
+        },
+        {
+          "label": "Best margin",
+          "value": "+66",
+          "sub": "AAMU in league play",
+          "team_id": "swacaamu"
+        },
+        {
+          "label": "Best EPA",
+          "value": "+0.121",
+          "sub": "J-State over 6 parsed games",
+          "team_id": "swacjsu"
+        },
+        {
+          "label": "Longest win streak",
+          "value": "W1",
+          "sub": "J-State",
+          "team_id": "swacjsu"
+        }
+      ],
+      "standings": [
+        {
+          "team_id": "swacjsu",
+          "team": {
+            "team_id": "swacjsu",
+            "name": "J-State",
+            "short_name": "JKST",
+            "school_name": "Jackson State University"
+          },
+          "rank": 1,
+          "clinched": null,
+          "record": "7-2",
+          "conference_record": "4-2",
+          "division_record": "3-1",
+          "wins": 7,
+          "losses": 2,
+          "conf_wins": 4,
+          "conf_losses": 2,
+          "win_pct": 0.7778,
+          "conf_win_pct": 0.6667,
+          "points_for": 323,
+          "points_against": 183,
+          "point_differential": 140,
+          "conference_point_differential": 52,
+          "games_back": 0.0,
+          "last5": "WLWLW",
+          "streak": "W1",
+          "epa_per_play": 0.0527,
+          "epa_allowed_per_play": -0.068,
+          "epa_combined": 0.1207,
+          "epa_rank": 4,
+          "epa_games": 6,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "1-0 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacaamu",
+          "team": {
+            "team_id": "swacaamu",
+            "name": "AAMU",
+            "short_name": "AAMU",
+            "school_name": "Alabama A&M University"
+          },
+          "rank": 2,
+          "clinched": null,
+          "record": "7-3",
+          "conference_record": "4-2",
+          "division_record": "3-1",
+          "wins": 7,
+          "losses": 3,
+          "conf_wins": 4,
+          "conf_losses": 2,
+          "win_pct": 0.7,
+          "conf_win_pct": 0.6667,
+          "points_for": 362,
+          "points_against": 219,
+          "point_differential": 143,
+          "conference_point_differential": 66,
+          "games_back": 0.0,
+          "last5": "LWWWL",
+          "streak": "L1",
+          "epa_per_play": 0.1184,
+          "epa_allowed_per_play": 0.0013,
+          "epa_combined": 0.1171,
+          "epa_rank": 5,
+          "epa_games": 7,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "0-1 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacbcu",
+          "team": {
+            "team_id": "swacbcu",
+            "name": "B-CU",
+            "short_name": "BCU",
+            "school_name": "Bethune-Cookman University"
+          },
+          "rank": 3,
+          "clinched": null,
+          "record": "5-5",
+          "conference_record": "3-3",
+          "division_record": "3-1",
+          "wins": 5,
+          "losses": 5,
+          "conf_wins": 3,
+          "conf_losses": 3,
+          "win_pct": 0.5,
+          "conf_win_pct": 0.5,
+          "points_for": 261,
+          "points_against": 333,
+          "point_differential": -72,
+          "conference_point_differential": -79,
+          "games_back": 1.0,
+          "last5": "LWWLL",
+          "streak": "L2",
+          "epa_per_play": -0.066,
+          "epa_allowed_per_play": 0.0402,
+          "epa_combined": -0.1062,
+          "epa_rank": 14,
+          "epa_games": 7,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "1-0 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacasu",
+          "team": {
+            "team_id": "swacasu",
+            "name": "Bama State",
+            "short_name": "ALST",
+            "school_name": "Alabama State University"
+          },
+          "rank": 4,
+          "clinched": null,
+          "record": "5-4",
+          "conference_record": "3-3",
+          "division_record": "1-3",
+          "wins": 5,
+          "losses": 4,
+          "conf_wins": 3,
+          "conf_losses": 3,
+          "win_pct": 0.5556,
+          "conf_win_pct": 0.5,
+          "points_for": 242,
+          "points_against": 187,
+          "point_differential": 55,
+          "conference_point_differential": 25,
+          "games_back": 1.0,
+          "last5": "LLWLW",
+          "streak": "W1",
+          "epa_per_play": 0.0492,
+          "epa_allowed_per_play": 0.0287,
+          "epa_combined": 0.0205,
+          "epa_rank": 10,
+          "epa_games": 7,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "0-1 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacmvsu",
+          "team": {
+            "team_id": "swacmvsu",
+            "name": "MVSU",
+            "short_name": "MVSU",
+            "school_name": "Mississippi Valley State University"
+          },
+          "rank": 5,
+          "clinched": null,
+          "record": "3-7",
+          "conference_record": "2-4",
+          "division_record": "0-3",
+          "wins": 3,
+          "losses": 7,
+          "conf_wins": 2,
+          "conf_losses": 4,
+          "win_pct": 0.3,
+          "conf_win_pct": 0.3333,
+          "points_for": 166,
+          "points_against": 363,
+          "point_differential": -197,
+          "conference_point_differential": -107,
+          "games_back": 2.0,
+          "last5": "WWLLL",
+          "streak": "L3",
+          "epa_per_play": -0.0811,
+          "epa_allowed_per_play": 0.0156,
+          "epa_combined": -0.0967,
+          "epa_rank": 13,
+          "epa_games": 6,
+          "tiebreaker_trace": [],
+          "tiebreaker_status": "clear"
+        },
+        {
+          "team_id": "swacfamu",
+          "team": {
+            "team_id": "swacfamu",
+            "name": "FAMU",
+            "short_name": "FAMU",
+            "school_name": "Florida A&M University"
+          },
+          "rank": 6,
+          "clinched": null,
+          "record": "2-8",
+          "conference_record": "1-5",
+          "division_record": "1-2",
+          "wins": 2,
+          "losses": 8,
+          "conf_wins": 1,
+          "conf_losses": 5,
+          "win_pct": 0.2,
+          "conf_win_pct": 0.1667,
+          "points_for": 194,
+          "points_against": 349,
+          "point_differential": -155,
+          "conference_point_differential": -77,
+          "games_back": 3.0,
+          "last5": "WLLLL",
+          "streak": "L4",
+          "epa_per_play": -0.1427,
+          "epa_allowed_per_play": 0.0875,
+          "epa_combined": -0.2302,
+          "epa_rank": 17,
+          "epa_games": 7,
+          "tiebreaker_trace": [],
+          "tiebreaker_status": "clear"
+        }
+      ]
+    },
+    "swac_west": {
+      "id": "swac_west",
+      "label": "SWAC West",
+      "conference": "SWAC",
+      "division": "West",
+      "completed_games": 25,
+      "remaining_games": 8,
+      "champions": [
+        "swacpvamu"
+      ],
+      "co_champions_possible": false,
+      "unresolved_tiebreakers": [],
+      "scenario_count": 256,
+      "finish_matrix": [
+        {
+          "team_id": "swacalc",
+          "current_rank": 2,
+          "values": [
+            25.5,
+            33.3,
+            17.3,
+            18.0,
+            5.1,
+            0.8
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            23.8,
+            26.0,
+            18.9,
+            15.0,
+            10.0,
+            6.3
+          ]
+        },
+        {
+          "team_id": "swacgsu",
+          "current_rank": 6,
+          "values": [
+            0.0,
+            0.4,
+            4.6,
+            17.8,
+            24.1,
+            53.1
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            5.3,
+            10.5,
+            13.5,
+            16.6,
+            21.5,
+            32.6
+          ]
+        },
+        {
+          "team_id": "swacpvamu",
+          "current_rank": 1,
+          "values": [
+            39.6,
+            21.6,
+            27.3,
+            10.4,
+            1.0,
+            0.0
+          ],
+          "controls_destiny": true,
+          "values_prev_week": [
+            37.9,
+            21.7,
+            19.2,
+            11.2,
+            7.3,
+            2.7
+          ]
+        },
+        {
+          "team_id": "swacsu",
+          "current_rank": 4,
+          "values": [
+            5.7,
+            17.8,
+            13.5,
+            23.4,
+            18.4,
+            21.1
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            5.6,
+            11.6,
+            12.0,
+            15.7,
+            20.8,
+            34.2
+          ]
+        },
+        {
+          "team_id": "swactsu",
+          "current_rank": 5,
+          "values": [
+            0.0,
+            0.8,
+            10.2,
+            16.0,
+            48.0,
+            25.0
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            4.0,
+            10.0,
+            18.4,
+            22.4,
+            28.4,
+            16.8
+          ]
+        },
+        {
+          "team_id": "swacuapb",
+          "current_rank": 3,
+          "values": [
+            29.2,
+            26.0,
+            27.1,
+            14.3,
+            3.4,
+            0.0
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            23.4,
+            20.2,
+            17.9,
+            19.1,
+            12.0,
+            7.3
+          ]
+        }
+      ],
+      "finish_method": "exact",
+      "context_cards": [
+        {
+          "label": "League games",
+          "value": "25 played",
+          "sub": "8 to come",
+          "accent": "#1F4E79"
+        },
+        {
+          "label": "Separation",
+          "value": "0-2 GB",
+          "sub": "leader to last",
+          "accent": "#1F4E79"
+        },
+        {
+          "label": "Champion",
+          "value": "1",
+          "sub": "swacpvamu",
+          "accent": "#1F4E79"
+        },
+        {
+          "label": "Ties broken",
+          "value": "5",
+          "sub": "head-to-head and beyond",
+          "accent": "#1F4E79"
+        }
+      ],
+      "summary_cards": [
+        {
+          "label": "Leader",
+          "value": "4-2",
+          "sub": "PVAMU",
+          "team_id": "swacpvamu"
+        },
+        {
+          "label": "Best margin",
+          "value": "+71",
+          "sub": "UAPB in league play",
+          "team_id": "swacuapb"
+        },
+        {
+          "label": "Best EPA",
+          "value": "+0.203",
+          "sub": "Alcorn over 6 parsed games",
+          "team_id": "swacalc"
+        },
+        {
+          "label": "Longest win streak",
+          "value": "W3",
+          "sub": "PVAMU",
+          "team_id": "swacpvamu"
+        }
+      ],
+      "standings": [
+        {
+          "team_id": "swacpvamu",
+          "team": {
+            "team_id": "swacpvamu",
+            "name": "PVAMU",
+            "short_name": "PVAMU",
+            "school_name": "Prairie View A&M University"
+          },
+          "rank": 1,
+          "clinched": null,
+          "record": "5-5",
+          "conference_record": "4-2",
+          "division_record": "3-1",
+          "wins": 5,
+          "losses": 5,
+          "conf_wins": 4,
+          "conf_losses": 2,
+          "win_pct": 0.5,
+          "conf_win_pct": 0.6667,
+          "points_for": 259,
+          "points_against": 275,
+          "point_differential": -16,
+          "conference_point_differential": 54,
+          "games_back": 0.0,
+          "last5": "LLWWW",
+          "streak": "W3",
+          "epa_per_play": 0.007,
+          "epa_allowed_per_play": 0.0347,
+          "epa_combined": -0.0277,
+          "epa_rank": 11,
+          "epa_games": 6,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "1-0 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacalc",
+          "team": {
+            "team_id": "swacalc",
+            "name": "Alcorn",
+            "short_name": "ALCN",
+            "school_name": "Alcorn State University"
+          },
+          "rank": 2,
+          "clinched": null,
+          "record": "6-4",
+          "conference_record": "4-2",
+          "division_record": "2-2",
+          "wins": 6,
+          "losses": 4,
+          "conf_wins": 4,
+          "conf_losses": 2,
+          "win_pct": 0.6,
+          "conf_win_pct": 0.6667,
+          "points_for": 425,
+          "points_against": 333,
+          "point_differential": 92,
+          "conference_point_differential": 51,
+          "games_back": 0.0,
+          "last5": "LWLWW",
+          "streak": "W2",
+          "epa_per_play": 0.3676,
+          "epa_allowed_per_play": 0.1647,
+          "epa_combined": 0.2029,
+          "epa_rank": 2,
+          "epa_games": 6,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "1-1 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacuapb",
+          "team": {
+            "team_id": "swacuapb",
+            "name": "UAPB",
+            "short_name": "UAPB",
+            "school_name": "University of Arkansas at Pine Bluff"
+          },
+          "rank": 3,
+          "clinched": null,
+          "record": "6-3",
+          "conference_record": "4-2",
+          "division_record": "2-1",
+          "wins": 6,
+          "losses": 3,
+          "conf_wins": 4,
+          "conf_losses": 2,
+          "win_pct": 0.6667,
+          "conf_win_pct": 0.6667,
+          "points_for": 326,
+          "points_against": 269,
+          "point_differential": 57,
+          "conference_point_differential": 71,
+          "games_back": 0.0,
+          "last5": "WLWWW",
+          "streak": "W3",
+          "epa_per_play": 0.1249,
+          "epa_allowed_per_play": 0.0861,
+          "epa_combined": 0.0388,
+          "epa_rank": 8,
+          "epa_games": 6,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "0-1 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacsu",
+          "team": {
+            "team_id": "swacsu",
+            "name": "Southern",
+            "short_name": "SOU",
+            "school_name": "Southern University and A&M College"
+          },
+          "rank": 4,
+          "clinched": null,
+          "record": "5-5",
+          "conference_record": "3-3",
+          "division_record": "1-2",
+          "wins": 5,
+          "losses": 5,
+          "conf_wins": 3,
+          "conf_losses": 3,
+          "win_pct": 0.5,
+          "conf_win_pct": 0.5,
+          "points_for": 270,
+          "points_against": 298,
+          "point_differential": -28,
+          "conference_point_differential": 18,
+          "games_back": 1.0,
+          "last5": "LWLWW",
+          "streak": "W2",
+          "epa_per_play": 0.0757,
+          "epa_allowed_per_play": 0.0219,
+          "epa_combined": 0.0538,
+          "epa_rank": 6,
+          "epa_games": 7,
+          "tiebreaker_trace": [],
+          "tiebreaker_status": "clear"
+        },
+        {
+          "team_id": "swactsu",
+          "team": {
+            "team_id": "swactsu",
+            "name": "TSU",
+            "short_name": "TXSO",
+            "school_name": "Texas Southern University"
+          },
+          "rank": 5,
+          "clinched": null,
+          "record": "3-6",
+          "conference_record": "2-4",
+          "division_record": "2-2",
+          "wins": 3,
+          "losses": 6,
+          "conf_wins": 2,
+          "conf_losses": 4,
+          "win_pct": 0.3333,
+          "conf_win_pct": 0.3333,
+          "points_for": 228,
+          "points_against": 355,
+          "point_differential": -127,
+          "conference_point_differential": -42,
+          "games_back": 2.0,
+          "last5": "LLWWL",
+          "streak": "L1",
+          "epa_per_play": 0.1602,
+          "epa_allowed_per_play": 0.1241,
+          "epa_combined": 0.0361,
+          "epa_rank": 9,
+          "epa_games": 7,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "1-0 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        },
+        {
+          "team_id": "swacgsu",
+          "team": {
+            "team_id": "swacgsu",
+            "name": "Grambling",
+            "short_name": "GRAM",
+            "school_name": "Grambling State University"
+          },
+          "rank": 6,
+          "clinched": null,
+          "record": "4-5",
+          "conference_record": "2-4",
+          "division_record": "1-3",
+          "wins": 4,
+          "losses": 5,
+          "conf_wins": 2,
+          "conf_losses": 4,
+          "win_pct": 0.4444,
+          "conf_win_pct": 0.3333,
+          "points_for": 309,
+          "points_against": 333,
+          "point_differential": -24,
+          "conference_point_differential": -32,
+          "games_back": 2.0,
+          "last5": "WWLLL",
+          "streak": "L3",
+          "epa_per_play": 0.1024,
+          "epa_allowed_per_play": 0.1915,
+          "epa_combined": -0.0891,
+          "epa_rank": 12,
+          "epa_games": 6,
+          "tiebreaker_trace": [
+            {
+              "step": "head_to_head",
+              "detail": "0-1 vs tied teams",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_head_to_head"
+        }
+      ]
+    },
+    "meac": {
+      "id": "meac",
+      "label": "MEAC",
+      "conference": "MEAC",
+      "division": null,
+      "completed_games": 9,
+      "remaining_games": 6,
+      "champions": [
+        "meacscsu",
+        "meacnccu"
+      ],
+      "co_champions_possible": true,
+      "unresolved_tiebreakers": [],
+      "scenario_count": 64,
+      "finish_matrix": [
+        {
+          "team_id": "meacdsu",
+          "current_rank": 3,
+          "values": [
+            8.3,
+            25.5,
+            41.1,
+            20.3,
+            4.7,
+            0.0
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            9.2,
+            18.3,
+            22.7,
+            22.1,
+            18.5,
+            9.2
+          ]
+        },
+        {
+          "team_id": "meachu",
+          "current_rank": 4,
+          "values": [
+            0.0,
+            4.7,
+            20.3,
+            41.1,
+            25.5,
+            8.3
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            9.2,
+            18.3,
+            22.7,
+            22.1,
+            18.5,
+            9.2
+          ]
+        },
+        {
+          "team_id": "meacmsu",
+          "current_rank": 6,
+          "values": [
+            0.0,
+            0.0,
+            1.0,
+            15.6,
+            37.5,
+            45.8
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            0.9,
+            4.9,
+            9.2,
+            18.4,
+            26.8,
+            39.9
+          ]
+        },
+        {
+          "team_id": "meacnccu",
+          "current_rank": 2,
+          "values": [
+            45.8,
+            37.5,
+            15.6,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "controls_destiny": true,
+          "values_prev_week": [
+            39.1,
+            28.9,
+            17.6,
+            8.7,
+            4.7,
+            1.1
+          ]
+        },
+        {
+          "team_id": "meacnsu",
+          "current_rank": 5,
+          "values": [
+            0.0,
+            0.0,
+            2.1,
+            19.8,
+            32.3,
+            45.8
+          ],
+          "controls_destiny": false,
+          "values_prev_week": [
+            0.9,
+            4.9,
+            9.2,
+            18.4,
+            26.8,
+            39.9
+          ]
+        },
+        {
+          "team_id": "meacscsu",
+          "current_rank": 1,
+          "values": [
+            45.8,
+            32.3,
+            19.8,
+            2.1,
+            0.0,
+            0.0
+          ],
+          "controls_destiny": true,
+          "values_prev_week": [
+            40.7,
+            24.8,
+            18.8,
+            10.4,
+            4.7,
+            0.7
+          ]
+        }
+      ],
+      "finish_method": "exact",
+      "context_cards": [
+        {
+          "label": "League games",
+          "value": "9 played",
+          "sub": "6 to come",
+          "accent": "#1B7A4B"
+        },
+        {
+          "label": "Separation",
+          "value": "0-3 GB",
+          "sub": "leader to last",
+          "accent": "#1B7A4B"
+        },
+        {
+          "label": "Co-champions",
+          "value": "2",
+          "sub": "meacscsu, meacnccu",
+          "accent": "#1B7A4B"
+        },
+        {
+          "label": "Ties broken",
+          "value": "4",
+          "sub": "head-to-head and beyond",
+          "accent": "#1B7A4B"
+        }
+      ],
+      "summary_cards": [
+        {
+          "label": "Leader",
+          "value": "3-0",
+          "sub": "SC State",
+          "team_id": "meacscsu"
+        },
+        {
+          "label": "Best margin",
+          "value": "+63",
+          "sub": "SC State in league play",
+          "team_id": "meacscsu"
+        },
+        {
+          "label": "Best EPA",
+          "value": "+0.242",
+          "sub": "SC State over 5 parsed games",
+          "team_id": "meacscsu"
+        },
+        {
+          "label": "Longest win streak",
+          "value": "W3",
+          "sub": "SC State",
+          "team_id": "meacscsu"
+        }
+      ],
+      "standings": [
+        {
+          "team_id": "meacscsu",
+          "team": {
+            "team_id": "meacscsu",
+            "name": "SC State",
+            "short_name": "SCSU",
+            "school_name": "South Carolina State University"
+          },
+          "rank": 1,
+          "clinched": null,
+          "record": "8-2",
+          "conference_record": "3-0",
+          "division_record": "0-0",
+          "wins": 8,
+          "losses": 2,
+          "conf_wins": 3,
+          "conf_losses": 0,
+          "win_pct": 0.8,
+          "conf_win_pct": 1.0,
+          "points_for": 413,
+          "points_against": 179,
+          "point_differential": 234,
+          "conference_point_differential": 63,
+          "games_back": 0.0,
+          "last5": "LLWWW",
+          "streak": "W3",
+          "epa_per_play": 0.0737,
+          "epa_allowed_per_play": -0.1684,
+          "epa_combined": 0.2421,
+          "epa_rank": 1,
+          "epa_games": 5,
+          "tiebreaker_trace": [
+            {
+              "step": "conference_point_differential",
+              "detail": "+63 in conference play",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_conference_point_differential"
+        },
+        {
+          "team_id": "meacnccu",
+          "team": {
+            "team_id": "meacnccu",
+            "name": "NC Central",
+            "short_name": "NCCU",
+            "school_name": "North Carolina Central University"
+          },
+          "rank": 2,
+          "clinched": null,
+          "record": "5-5",
+          "conference_record": "3-0",
+          "division_record": "0-0",
+          "wins": 5,
+          "losses": 5,
+          "conf_wins": 3,
+          "conf_losses": 0,
+          "win_pct": 0.5,
+          "conf_win_pct": 1.0,
+          "points_for": 255,
+          "points_against": 251,
+          "point_differential": 4,
+          "conference_point_differential": 54,
+          "games_back": 0.0,
+          "last5": "LLWWW",
+          "streak": "W3",
+          "epa_per_play": 0.1211,
+          "epa_allowed_per_play": -0.0051,
+          "epa_combined": 0.1262,
+          "epa_rank": 3,
+          "epa_games": 4,
+          "tiebreaker_trace": [
+            {
+              "step": "conference_point_differential",
+              "detail": "+54 in conference play",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_conference_point_differential"
+        },
+        {
+          "team_id": "meacdsu",
+          "team": {
+            "team_id": "meacdsu",
+            "name": "Del State",
+            "short_name": "DSU",
+            "school_name": "Delaware State University"
+          },
+          "rank": 3,
+          "clinched": null,
+          "record": "6-4",
+          "conference_record": "2-1",
+          "division_record": "0-0",
+          "wins": 6,
+          "losses": 4,
+          "conf_wins": 2,
+          "conf_losses": 1,
+          "win_pct": 0.6,
+          "conf_win_pct": 0.6667,
+          "points_for": 236,
+          "points_against": 255,
+          "point_differential": -19,
+          "conference_point_differential": -6,
+          "games_back": 1.0,
+          "last5": "LWLWW",
+          "streak": "W2",
+          "epa_per_play": -0.049,
+          "epa_allowed_per_play": -0.0885,
+          "epa_combined": 0.0395,
+          "epa_rank": 7,
+          "epa_games": 3,
+          "tiebreaker_trace": [],
+          "tiebreaker_status": "clear"
+        },
+        {
+          "team_id": "meachu",
+          "team": {
+            "team_id": "meachu",
+            "name": "Howard",
+            "short_name": "HOW",
+            "school_name": "Howard University"
+          },
+          "rank": 4,
+          "clinched": null,
+          "record": "4-6",
+          "conference_record": "1-2",
+          "division_record": "0-0",
+          "wins": 4,
+          "losses": 6,
+          "conf_wins": 1,
+          "conf_losses": 2,
+          "win_pct": 0.4,
+          "conf_win_pct": 0.3333,
+          "points_for": 191,
+          "points_against": 308,
+          "point_differential": -117,
+          "conference_point_differential": -35,
+          "games_back": 2.0,
+          "last5": "LWWLL",
+          "streak": "L2",
+          "epa_per_play": -0.154,
+          "epa_allowed_per_play": 0.0444,
+          "epa_combined": -0.1984,
+          "epa_rank": 16,
+          "epa_games": 4,
+          "tiebreaker_trace": [],
+          "tiebreaker_status": "clear"
+        },
+        {
+          "team_id": "meacnsu",
+          "team": {
+            "team_id": "meacnsu",
+            "name": "Norfolk",
+            "short_name": "NSU",
+            "school_name": "Norfolk State University"
+          },
+          "rank": 5,
+          "clinched": null,
+          "record": "4-6",
+          "conference_record": "0-3",
+          "division_record": "0-0",
+          "wins": 4,
+          "losses": 6,
+          "conf_wins": 0,
+          "conf_losses": 3,
+          "win_pct": 0.4,
+          "conf_win_pct": 0.0,
+          "points_for": 315,
+          "points_against": 251,
+          "point_differential": 64,
+          "conference_point_differential": -19,
+          "games_back": 3.0,
+          "last5": "LWLLL",
+          "streak": "L3",
+          "epa_per_play": -0.0841,
+          "epa_allowed_per_play": 0.0394,
+          "epa_combined": -0.1235,
+          "epa_rank": 15,
+          "epa_games": 3,
+          "tiebreaker_trace": [
+            {
+              "step": "conference_point_differential",
+              "detail": "-19 in conference play",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_conference_point_differential"
+        },
+        {
+          "team_id": "meacmsu",
+          "team": {
+            "team_id": "meacmsu",
+            "name": "Morgan",
+            "short_name": "MSU",
+            "school_name": "Morgan State University"
+          },
+          "rank": 6,
+          "clinched": null,
+          "record": "5-5",
+          "conference_record": "0-3",
+          "division_record": "0-0",
+          "wins": 5,
+          "losses": 5,
+          "conf_wins": 0,
+          "conf_losses": 3,
+          "win_pct": 0.5,
+          "conf_win_pct": 0.0,
+          "points_for": 246,
+          "points_against": 291,
+          "point_differential": -45,
+          "conference_point_differential": -57,
+          "games_back": 3.0,
+          "last5": "WLLLL",
+          "streak": "L4",
+          "epa_per_play": -0.2934,
+          "epa_allowed_per_play": -0.0263,
+          "epa_combined": -0.2671,
+          "epa_rank": 18,
+          "epa_games": 3,
+          "tiebreaker_trace": [
+            {
+              "step": "conference_point_differential",
+              "detail": "-57 in conference play",
+              "result": "separated"
+            }
+          ],
+          "tiebreaker_status": "resolved_by_conference_point_differential"
+        }
+      ]
+    }
+  }
+}

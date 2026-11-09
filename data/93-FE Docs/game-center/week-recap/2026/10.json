@@ -1,0 +1,1866 @@
+{
+ "season": 2026,
+ "week": 10,
+ "week_label": "Week 10",
+ "date_label": "Nov 7",
+ "generated_at": "2026-11-08T13:18:31-06:00",
+ "hero": {
+  "title": "The Series",
+  "headline": "JSU has now beaten MVSU 7 straight times.",
+  "stat": {
+   "display": "7",
+   "label": "straight in the series"
+  },
+  "team_ids": [
+   "swacmvsu",
+   "swacjsu"
+  ],
+  "theme": "game"
+ },
+ "games": [
+  {
+   "game_path_id": "scsuhu26",
+   "away": {
+    "team_id": "meacscsu",
+    "score": 35
+   },
+   "home": {
+    "team_id": "meachu",
+    "score": 28
+   },
+   "winner_team_id": "meacscsu",
+   "margin": 7,
+   "one_score": true,
+   "net_success_edge": 0.1401,
+   "out_played": false,
+   "events": [
+    {
+     "kind": "military_appreciation",
+     "display_name": "Military/Veteran Appreciation"
+    }
+   ],
+   "attendance": 4827,
+   "capacity": 7000,
+   "venue_name": "Greene Stadium"
+  },
+  {
+   "game_path_id": "msudsu26",
+   "away": {
+    "team_id": "meacmsu",
+    "score": 14
+   },
+   "home": {
+    "team_id": "meacdsu",
+    "score": 24
+   },
+   "winner_team_id": "meacdsu",
+   "margin": 10,
+   "one_score": false,
+   "net_success_edge": -0.0006,
+   "out_played": true,
+   "events": [
+    {
+     "kind": "senior_day",
+     "display_name": "Senior Day"
+    }
+   ],
+   "attendance": 4503,
+   "capacity": 10500,
+   "venue_name": "Alumni Stadium"
+  },
+  {
+   "game_path_id": "mvsujsu26",
+   "away": {
+    "team_id": "swacmvsu",
+    "score": 7
+   },
+   "home": {
+    "team_id": "swacjsu",
+    "score": 38
+   },
+   "winner_team_id": "swacjsu",
+   "margin": 31,
+   "one_score": false,
+   "net_success_edge": 0.1356,
+   "out_played": false,
+   "events": [
+    {
+     "kind": "senior_day",
+     "display_name": "Senior Day"
+    },
+    {
+     "kind": "high_school_day",
+     "display_name": "High School Day"
+    },
+    {
+     "kind": "military_appreciation",
+     "display_name": "Military/Veteran Appreciation"
+    }
+   ],
+   "attendance": 16386,
+   "capacity": 60492,
+   "venue_name": "Mississippi Veterans Memorial Stadium"
+  },
+  {
+   "game_path_id": "asutsu26",
+   "away": {
+    "team_id": "swacasu",
+    "score": 34
+   },
+   "home": {
+    "team_id": "swactsu",
+    "score": 31
+   },
+   "winner_team_id": "swacasu",
+   "margin": 3,
+   "one_score": true,
+   "net_success_edge": 0.2188,
+   "out_played": false,
+   "events": [
+    {
+     "kind": "themed_game",
+     "display_name": "Themed Game"
+    }
+   ],
+   "attendance": 5921,
+   "capacity": 22039,
+   "venue_name": "Shell Energy Stadium"
+  },
+  {
+   "game_path_id": "bcusu26",
+   "away": {
+    "team_id": "swacbcu",
+    "score": 17
+   },
+   "home": {
+    "team_id": "swacsu",
+    "score": 45
+   },
+   "winner_team_id": "swacsu",
+   "margin": 28,
+   "one_score": false,
+   "net_success_edge": 0.1869,
+   "out_played": false,
+   "events": [
+    {
+     "kind": "breast_cancer_awareness",
+     "display_name": "Breast Cancer Awareness"
+    },
+    {
+     "kind": "high_school_day",
+     "display_name": "High School Day"
+    },
+    {
+     "kind": "themed_game",
+     "display_name": "Themed Game"
+    }
+   ],
+   "attendance": 18631,
+   "capacity": 30000,
+   "venue_name": "A.W. Mumford Stadium"
+  },
+  {
+   "game_path_id": "famualc26",
+   "away": {
+    "team_id": "swacfamu",
+    "score": 20
+   },
+   "home": {
+    "team_id": "swacalc",
+    "score": 38
+   },
+   "winner_team_id": "swacalc",
+   "margin": 18,
+   "one_score": false,
+   "net_success_edge": 0.158,
+   "out_played": false,
+   "events": [
+    {
+     "kind": "military_appreciation",
+     "display_name": "Military/Veteran Appreciation"
+    },
+    {
+     "kind": "themed_game",
+     "display_name": "Themed Game"
+    }
+   ],
+   "attendance": 3922,
+   "capacity": 10000,
+   "venue_name": "Jack Spinks-Marino Casem Stadium"
+  },
+  {
+   "game_path_id": "uapbgsu26",
+   "away": {
+    "team_id": "swacuapb",
+    "score": 35
+   },
+   "home": {
+    "team_id": "swacgsu",
+    "score": 32
+   },
+   "winner_team_id": "swacuapb",
+   "margin": 3,
+   "one_score": true,
+   "net_success_edge": -0.0563,
+   "out_played": true,
+   "events": [
+    {
+     "kind": "senior_day",
+     "display_name": "Senior Day"
+    },
+    {
+     "kind": "high_school_day",
+     "display_name": "High School Day"
+    },
+    {
+     "kind": "military_appreciation",
+     "display_name": "Military/Veteran Appreciation"
+    }
+   ],
+   "attendance": 5746,
+   "capacity": 19600,
+   "venue_name": "Eddie G. Robinson Memorial Stadium"
+  },
+  {
+   "game_path_id": "aamupvamu26",
+   "away": {
+    "team_id": "swacaamu",
+    "score": 10
+   },
+   "home": {
+    "team_id": "swacpvamu",
+    "score": 31
+   },
+   "winner_team_id": "swacpvamu",
+   "margin": 21,
+   "one_score": false,
+   "net_success_edge": 0.1378,
+   "out_played": false,
+   "events": [],
+   "attendance": 8409,
+   "capacity": 6000,
+   "venue_name": "Panther Stadium at Blackshear Field"
+  },
+  {
+   "game_path_id": "nccunsu26",
+   "away": {
+    "team_id": "meacnccu",
+    "score": 29
+   },
+   "home": {
+    "team_id": "meacnsu",
+    "score": 28
+   },
+   "winner_team_id": "meacnccu",
+   "margin": 1,
+   "one_score": true,
+   "net_success_edge": -0.0418,
+   "out_played": true,
+   "events": [
+    {
+     "kind": "military_appreciation",
+     "display_name": "Military/Veteran Appreciation"
+    }
+   ],
+   "attendance": 7521,
+   "capacity": 30000,
+   "venue_name": "William \"Dick\" Price Stadium"
+  }
+ ],
+ "items": [
+  {
+   "id": "game_result-1",
+   "kind": "game_result",
+   "category": "game",
+   "score": 2.0,
+   "title": "The Series",
+   "headline": "JSU has now beaten MVSU 7 straight times.",
+   "stat": {
+    "display": "7",
+    "label": "straight in the series"
+   },
+   "team_ids": [
+    "swacmvsu",
+    "swacjsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "mvsujsu26",
+    "away": "swacmvsu",
+    "home": "swacjsu",
+    "margin": 31,
+    "note": "JSU has now beaten MVSU 7 straight times."
+   }
+  },
+  {
+   "id": "race-2",
+   "kind": "race",
+   "category": "race",
+   "score": 1.5889,
+   "title": "The SWAC East Race",
+   "headline": "JSU moved into a share of first in the SWAC East. JSU's chance to win the division rose from 19% to 49%.",
+   "stat": {
+    "display": "49%",
+    "label": "JSU's chance at first"
+   },
+   "team_ids": [
+    "swacjsu"
+   ],
+   "person_id": null,
+   "data": {
+    "group_label": "SWAC East",
+    "rows": [
+     {
+      "team_id": "swacjsu",
+      "conference_record": "4-2",
+      "rank": 1,
+      "prev_rank": 2,
+      "first_place_chance": 0.4935,
+      "prev_first_place_chance": 0.1898
+     },
+     {
+      "team_id": "swacaamu",
+      "conference_record": "4-2",
+      "rank": 1,
+      "prev_rank": 1,
+      "first_place_chance": 0.3685,
+      "prev_first_place_chance": 0.6124
+     },
+     {
+      "team_id": "swacbcu",
+      "conference_record": "3-3",
+      "rank": 3,
+      "prev_rank": 2,
+      "first_place_chance": 0.0703,
+      "prev_first_place_chance": 0.1365
+     },
+     {
+      "team_id": "swacasu",
+      "conference_record": "3-3",
+      "rank": 3,
+      "prev_rank": 4,
+      "first_place_chance": 0.0677,
+      "prev_first_place_chance": 0.012
+     },
+     {
+      "team_id": "swacmvsu",
+      "conference_record": "2-4",
+      "rank": 5,
+      "prev_rank": 4,
+      "first_place_chance": 0.0,
+      "prev_first_place_chance": 0.049
+     },
+     {
+      "team_id": "swacfamu",
+      "conference_record": "1-5",
+      "rank": 6,
+      "prev_rank": 6,
+      "first_place_chance": 0.0,
+      "prev_first_place_chance": 0.0003
+     }
+    ]
+   }
+  },
+  {
+   "id": "movie_finish-3",
+   "kind": "movie_finish",
+   "category": "game",
+   "score": 1.4625,
+   "title": "Late Winner",
+   "headline": "SCSU scored with 0:17 left: R.Brown rush middle for 9 yards, TOUCHDOWN to give SCSU a 35-28 win at HU.",
+   "stat": {
+    "display": "0:17",
+    "label": "left on the clock"
+   },
+   "team_ids": [
+    "meacscsu",
+    "meachu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "scsuhu26",
+    "team_id": "meacscsu",
+    "play_id": "SCSUHU05112026-268",
+    "scoring_type": "TD",
+    "description": "R.Brown rush middle for 9 yards, TOUCHDOWN."
+   }
+  },
+  {
+   "id": "performance_set-4",
+   "kind": "performance_set",
+   "category": "performance",
+   "score": 1.375,
+   "title": "Top Performers",
+   "headline": "The week's top performers: Brendan Thompson (NSU), Stephen Sparrow (BCU) and Aaron Frye (ASU).",
+   "stat": {
+    "display": "3",
+    "label": "performances"
+   },
+   "team_ids": [
+    "meacnsu",
+    "swacbcu",
+    "swacasu"
+   ],
+   "person_id": null,
+   "data": {
+    "players": [
+     {
+      "person_id": "PERS_00011700",
+      "name": "Brendan Thompson",
+      "last_name": "Thompson",
+      "position": "LB",
+      "team_id": "meacnsu",
+      "class_year": "FR",
+      "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2026/7/17/Brenden_Thompson.jpg",
+      "production": 22.96,
+      "par": 42.53,
+      "avg_par": 18.1,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": 18.75,
+       "hawk": 4.0,
+       "scrum": 19.78
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 5.0
+       },
+       {
+        "label": "TFL",
+        "value": 1.5
+       },
+       {
+        "label": "SACKS",
+        "value": 1.5
+       },
+       {
+        "label": "PD",
+        "value": 2
+       },
+       {
+        "label": "HAVOC",
+        "value": 6.0
+       }
+      ],
+      "tag": null
+     },
+     {
+      "person_id": "PERS_00009161",
+      "name": "Stephen Sparrow",
+      "last_name": "Sparrow",
+      "position": "LB",
+      "team_id": "swacbcu",
+      "class_year": "GR",
+      "image_url": "https://bcuathletics.com/images/2026/8/25/SPARROW_STEPHEN.png",
+      "production": 21.0,
+      "par": 38.49,
+      "avg_par": 12.92,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": -1.07,
+       "hawk": 0.0,
+       "scrum": 39.56
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 3.5
+       },
+       {
+        "label": "HAVOC",
+        "value": 2.0
+       }
+      ],
+      "tag": null
+     },
+     {
+      "person_id": "PERS_00013431",
+      "name": "Aaron Frye",
+      "last_name": "Frye",
+      "position": "QB",
+      "team_id": "swacasu",
+      "class_year": "FR",
+      "image_url": "https://bamastatesports.com/images/2026/8/24/Frye_Aaron_081926-1.jpg",
+      "production": 26.85,
+      "par": 37.68,
+      "avg_par": -16.14,
+      "par_components": {
+       "pass": 2.91,
+       "rush": 23.37,
+       "turn": 11.4,
+       "hit": null,
+       "hawk": null,
+       "scrum": null
+      },
+      "stat_line": [
+       {
+        "label": "CMP/ATT",
+        "value": "13/17"
+       },
+       {
+        "label": "YDS",
+        "value": 209
+       },
+       {
+        "label": "TD",
+        "value": 2
+       }
+      ],
+      "tag": null
+     }
+    ],
+    "next": [
+     {
+      "person_id": "PERS_00013220",
+      "name": "Jordan Saunders",
+      "last_name": "Saunders",
+      "position": "S",
+      "team_id": "meacnsu",
+      "class_year": "JR",
+      "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2026/7/17/Jordan_Saunders.jpg",
+      "production": 23.89,
+      "par": 37.43,
+      "avg_par": 13.83,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": -0.07,
+       "hawk": 17.72,
+       "scrum": 19.78
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 3.5
+       },
+       {
+        "label": "INT",
+        "value": 2
+       },
+       {
+        "label": "HAVOC",
+        "value": 3.0
+       }
+      ],
+      "tag": null,
+      "rank": 4
+     },
+     {
+      "person_id": "name:dunnam,phillip",
+      "name": "Phillip Dunnam",
+      "last_name": "Dunnam",
+      "position": "DEF",
+      "team_id": "meacdsu",
+      "class_year": null,
+      "image_url": null,
+      "production": 23.56,
+      "par": 37.13,
+      "avg_par": 24.6,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": -2.75,
+       "hawk": 39.88,
+       "scrum": 0.0
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 2.0
+       },
+       {
+        "label": "INT",
+        "value": 1
+       },
+       {
+        "label": "HAVOC",
+        "value": 1.0
+       }
+      ],
+      "tag": null,
+      "rank": 5
+     },
+     {
+      "person_id": "PERS_00011648",
+      "name": "Khareem Thompson",
+      "last_name": "Thompson",
+      "position": "DL",
+      "team_id": "meacnccu",
+      "class_year": "JR",
+      "image_url": "https://nccueaglepride.com/images/2026/8/5/Thompson_Khareem.jpg",
+      "production": 16.31,
+      "par": 34.28,
+      "avg_par": 10.66,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": 14.5,
+       "hawk": 0.0,
+       "scrum": 19.78
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 4.0
+       },
+       {
+        "label": "TFL",
+        "value": 2.0
+       },
+       {
+        "label": "SACKS",
+        "value": 1.0
+       },
+       {
+        "label": "HAVOC",
+        "value": 4.0
+       }
+      ],
+      "tag": null,
+      "rank": 6
+     },
+     {
+      "person_id": "PERS_00012018",
+      "name": "Anthony Baxter",
+      "last_name": "Baxter",
+      "position": "DB",
+      "team_id": "swacfamu",
+      "class_year": "JR",
+      "image_url": "https://www.famuathletics.com/images/2025/8/11/Baxter.png",
+      "production": 16.9,
+      "par": 33.11,
+      "avg_par": 6.91,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": -1.75,
+       "hawk": 8.86,
+       "scrum": 26.0
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 0.5
+       },
+       {
+        "label": "INT",
+        "value": 1
+       },
+       {
+        "label": "HAVOC",
+        "value": 1.0
+       }
+      ],
+      "tag": null,
+      "rank": 7
+     },
+     {
+      "person_id": "PERS_00007631",
+      "name": "Jaylon Tolbert",
+      "last_name": "Tolbert",
+      "position": "QB",
+      "team_id": "swacalc",
+      "class_year": "SR",
+      "image_url": "https://alcornsports.com/images/2026/8/25/BUCC9563_6ecSX.JPG",
+      "production": 25.23,
+      "par": 29.64,
+      "avg_par": 32.61,
+      "par_components": {
+       "pass": 24.45,
+       "rush": 5.19,
+       "turn": 0.0,
+       "hit": null,
+       "hawk": null,
+       "scrum": null
+      },
+      "stat_line": [
+       {
+        "label": "CMP/ATT",
+        "value": "16/23"
+       },
+       {
+        "label": "YDS",
+        "value": 314
+       },
+       {
+        "label": "TD",
+        "value": 4
+       },
+       {
+        "label": "INT",
+        "value": 1
+       }
+      ],
+      "tag": null,
+      "rank": 8
+     },
+     {
+      "person_id": "PERS_00011969",
+      "name": "Myron Shafer III",
+      "last_name": "Shafer",
+      "position": "LB",
+      "team_id": "swacbcu",
+      "class_year": "FR",
+      "image_url": "https://bcuathletics.com/images/2026/8/25/SHAFER_MYRON.png",
+      "production": 14.145,
+      "par": 28.2,
+      "avg_par": 9.14,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": 0.0,
+       "hawk": 0.0,
+       "scrum": 28.2
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 3.0
+       },
+       {
+        "label": "TFL",
+        "value": 0.5
+       },
+       {
+        "label": "HAVOC",
+        "value": 0.5
+       }
+      ],
+      "tag": null,
+      "rank": 9
+     },
+     {
+      "person_id": "PERS_00013037",
+      "name": "Carl Nesmith",
+      "last_name": "Nesmith",
+      "position": "LB",
+      "team_id": "meacdsu",
+      "class_year": "SR",
+      "image_url": "https://dsuhornets.com/images/2026/8/17/Carl_Neismith.jpg",
+      "production": 15.24,
+      "par": 27.17,
+      "avg_par": 18.5,
+      "par_components": {
+       "pass": null,
+       "rush": null,
+       "turn": null,
+       "hit": 25.17,
+       "hawk": 2.0,
+       "scrum": 0.0
+      },
+      "stat_line": [
+       {
+        "label": "TKL",
+        "value": 5.0
+       },
+       {
+        "label": "TFL",
+        "value": 2.0
+       },
+       {
+        "label": "SACKS",
+        "value": 2.0
+       },
+       {
+        "label": "PD",
+        "value": 1
+       },
+       {
+        "label": "HAVOC",
+        "value": 5.0
+       }
+      ],
+      "tag": null,
+      "rank": 10
+     }
+    ]
+   }
+  },
+  {
+   "id": "wp_swing-5",
+   "kind": "wp_swing",
+   "category": "game",
+   "score": 1.25,
+   "title": "The Swing",
+   "headline": "NSU had a 98% chance to win before NCCU took it, 29-28.",
+   "stat": {
+    "display": "98%",
+    "label": "NSU's best chance to win"
+   },
+   "team_ids": [
+    "meacnccu",
+    "meacnsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "nccunsu26",
+    "team_id": "meacnccu",
+    "timeline": [
+     {
+      "t": 0.0022,
+      "wp": 0.5273
+     },
+     {
+      "t": 0.0022,
+      "wp": 0.5574
+     },
+     {
+      "t": 0.0022,
+      "wp": 0.6065
+     },
+     {
+      "t": 0.0022,
+      "wp": 0.5887
+     },
+     {
+      "t": 0.0022,
+      "wp": 0.6403
+     },
+     {
+      "t": 0.0022,
+      "wp": 0.6345
+     },
+     {
+      "t": 0.0481,
+      "wp": 0.7984
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6995
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6763
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6853
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6883
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6228
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6324
+     },
+     {
+      "t": 0.0494,
+      "wp": 0.6041
+     },
+     {
+      "t": 0.1189,
+      "wp": 0.3796
+     },
+     {
+      "t": 0.1189,
+      "wp": 0.4982
+     },
+     {
+      "t": 0.1189,
+      "wp": 0.4796
+     },
+     {
+      "t": 0.1189,
+      "wp": 0.438
+     },
+     {
+      "t": 0.1189,
+      "wp": 0.4084
+     },
+     {
+      "t": 0.15,
+      "wp": 0.4473
+     },
+     {
+      "t": 0.15,
+      "wp": 0.4661
+     },
+     {
+      "t": 0.15,
+      "wp": 0.485
+     },
+     {
+      "t": 0.165,
+      "wp": 0.5249
+     },
+     {
+      "t": 0.165,
+      "wp": 0.5046
+     },
+     {
+      "t": 0.165,
+      "wp": 0.5719
+     },
+     {
+      "t": 0.165,
+      "wp": 0.5581
+     },
+     {
+      "t": 0.1894,
+      "wp": 0.8057
+     },
+     {
+      "t": 0.1906,
+      "wp": 0.6482
+     },
+     {
+      "t": 0.1906,
+      "wp": 0.6668
+     },
+     {
+      "t": 0.1906,
+      "wp": 0.6657
+     },
+     {
+      "t": 0.1906,
+      "wp": 0.6929
+     },
+     {
+      "t": 0.2378,
+      "wp": 0.6976
+     },
+     {
+      "t": 0.2378,
+      "wp": 0.7161
+     },
+     {
+      "t": 0.25,
+      "wp": 0.6876
+     },
+     {
+      "t": 0.25,
+      "wp": 0.6882
+     },
+     {
+      "t": 0.25,
+      "wp": 0.6563
+     },
+     {
+      "t": 0.2878,
+      "wp": 0.698
+     },
+     {
+      "t": 0.2878,
+      "wp": 0.7008
+     },
+     {
+      "t": 0.2878,
+      "wp": 0.6442
+     },
+     {
+      "t": 0.2878,
+      "wp": 0.649
+     },
+     {
+      "t": 0.2878,
+      "wp": 0.7075
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7096
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7027
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7286
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7106
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7665
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7552
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7367
+     },
+     {
+      "t": 0.3131,
+      "wp": 0.7345
+     },
+     {
+      "t": 0.3942,
+      "wp": 0.7589
+     },
+     {
+      "t": 0.3942,
+      "wp": 0.7749
+     },
+     {
+      "t": 0.4094,
+      "wp": 0.8003
+     },
+     {
+      "t": 0.4253,
+      "wp": 0.8094
+     },
+     {
+      "t": 0.4253,
+      "wp": 0.8274
+     },
+     {
+      "t": 0.4253,
+      "wp": 0.8445
+     },
+     {
+      "t": 0.4253,
+      "wp": 0.8338
+     },
+     {
+      "t": 0.4253,
+      "wp": 0.8445
+     },
+     {
+      "t": 0.4253,
+      "wp": 0.8345
+     },
+     {
+      "t": 0.4703,
+      "wp": 0.9315
+     },
+     {
+      "t": 0.4719,
+      "wp": 0.8854
+     },
+     {
+      "t": 0.4719,
+      "wp": 0.8685
+     },
+     {
+      "t": 0.4719,
+      "wp": 0.8796
+     },
+     {
+      "t": 0.4719,
+      "wp": 0.89
+     },
+     {
+      "t": 0.4719,
+      "wp": 0.8537
+     },
+     {
+      "t": 0.4719,
+      "wp": 0.8566
+     },
+     {
+      "t": 0.4867,
+      "wp": 0.8566
+     },
+     {
+      "t": 0.4867,
+      "wp": 0.8299
+     },
+     {
+      "t": 0.4867,
+      "wp": 0.8571
+     },
+     {
+      "t": 0.4867,
+      "wp": 0.8379
+     },
+     {
+      "t": 0.4967,
+      "wp": 0.8957
+     },
+     {
+      "t": 0.5019,
+      "wp": 0.8118
+     },
+     {
+      "t": 0.5019,
+      "wp": 0.8155
+     },
+     {
+      "t": 0.5019,
+      "wp": 0.7721
+     },
+     {
+      "t": 0.5311,
+      "wp": 0.5786
+     },
+     {
+      "t": 0.5311,
+      "wp": 0.7324
+     },
+     {
+      "t": 0.5311,
+      "wp": 0.7259
+     },
+     {
+      "t": 0.5311,
+      "wp": 0.6184
+     },
+     {
+      "t": 0.5678,
+      "wp": 0.7945
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.7904
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.7811
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.8161
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.7931
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.7998
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.7919
+     },
+     {
+      "t": 0.5689,
+      "wp": 0.7658
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.6658
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.6846
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.6798
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.557
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.5838
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.61
+     },
+     {
+      "t": 0.6494,
+      "wp": 0.6356
+     },
+     {
+      "t": 0.7086,
+      "wp": 0.6906
+     },
+     {
+      "t": 0.7086,
+      "wp": 0.7218
+     },
+     {
+      "t": 0.7086,
+      "wp": 0.7344
+     },
+     {
+      "t": 0.7086,
+      "wp": 0.7584
+     },
+     {
+      "t": 0.7086,
+      "wp": 0.832
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.9556
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.8463
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.859
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.7897
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.7661
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.7592
+     },
+     {
+      "t": 0.7517,
+      "wp": 0.7651
+     },
+     {
+      "t": 0.8111,
+      "wp": 0.4516
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.7479
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8111
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.7927
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.7859
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8504
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8351
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8392
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.871
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8478
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.9008
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8823
+     },
+     {
+      "t": 0.8128,
+      "wp": 0.8627
+     },
+     {
+      "t": 0.9569,
+      "wp": 0.982
+     },
+     {
+      "t": 0.96,
+      "wp": 0.9411
+     },
+     {
+      "t": 0.96,
+      "wp": 0.9279
+     },
+     {
+      "t": 0.96,
+      "wp": 0.8588
+     },
+     {
+      "t": 0.96,
+      "wp": 0.8677
+     },
+     {
+      "t": 0.96,
+      "wp": 0.8184
+     },
+     {
+      "t": 0.96,
+      "wp": 0.9604
+     },
+     {
+      "t": 0.9733,
+      "wp": 0.9741
+     },
+     {
+      "t": 0.9733,
+      "wp": 0.7608
+     },
+     {
+      "t": 0.9758,
+      "wp": 0.7539
+     },
+     {
+      "t": 0.9758,
+      "wp": 0.8021
+     },
+     {
+      "t": 0.9758,
+      "wp": 0.6927
+     },
+     {
+      "t": 0.9925,
+      "wp": 0.0089
+     },
+     {
+      "t": 0.9925,
+      "wp": 0.2852
+     },
+     {
+      "t": 0.9939,
+      "wp": 0.495
+     },
+     {
+      "t": 0.9939,
+      "wp": 0.6702
+     },
+     {
+      "t": 0.9939,
+      "wp": 0.8297
+     },
+     {
+      "t": 0.9958,
+      "wp": 0.9187
+     }
+    ]
+   }
+  },
+  {
+   "id": "special_teams-6",
+   "kind": "special_teams",
+   "category": "team",
+   "score": 1.125,
+   "title": "Punt Return Touchdown",
+   "headline": "M.Spells (MSU) returned a punt 60 yards for a touchdown in a 24-14 loss at DSU.",
+   "stat": {
+    "display": "TD",
+    "label": "punt return"
+   },
+   "team_ids": [
+    "meacmsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "msudsu26",
+    "team_id": "meacmsu",
+    "play_id": "MORGDSU07112026-198",
+    "description": "N.Brannock punt 5 yds, M.Spells return 60 yds, TOUCHDOWN."
+   }
+  },
+  {
+   "id": "situational-7",
+   "kind": "situational",
+   "category": "team",
+   "score": 0.9563,
+   "title": "Goal-Line Stand",
+   "headline": "SU kept BCU out of the end zone from the 1-yard line on fourth down in a 45-17 win against BCU.",
+   "stat": {
+    "display": "1",
+    "label": "yards from the goal line"
+   },
+   "team_ids": [
+    "swacsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "bcusu26",
+    "team_id": "swacsu"
+   }
+  },
+  {
+   "id": "big_number-8",
+   "kind": "big_number",
+   "category": "team",
+   "score": 0.9441,
+   "title": "On Schedule",
+   "headline": "ASU's offense stayed ahead of the chains against TSU, successful on 56% of its snaps.",
+   "stat": {
+    "display": "56%",
+    "label": "success rate"
+   },
+   "team_ids": [
+    "swacasu"
+   ],
+   "person_id": null,
+   "data": {}
+  },
+  {
+   "id": "valiant-9",
+   "kind": "valiant",
+   "category": "performance",
+   "score": 0.8438,
+   "title": "Valiant Effort",
+   "headline": "Deljay Bailey (NSU) had 22-of-26 passing for 278 yards and 2 touchdowns, plus 20 rushing yards and a score in a 29-28 loss against NCCU.",
+   "stat": {
+    "display": "3",
+    "label": "touchdowns"
+   },
+   "team_ids": [
+    "meacnsu"
+   ],
+   "person_id": "PERS_00011071",
+   "data": {
+    "person_id": "PERS_00011071",
+    "name": "Deljay Bailey",
+    "last_name": "Bailey",
+    "position": "QB",
+    "team_id": "meacnsu",
+    "class_year": "JR",
+    "image_url": "https://dxo3n8k6foq4c.cloudfront.net/images/2026/7/17/Deljay_Bailey.jpg",
+    "production": 25.58,
+    "par": 6.54,
+    "avg_par": 6.54,
+    "par_components": {
+     "pass": 14.07,
+     "rush": -2.07,
+     "turn": -5.46,
+     "hit": null,
+     "hawk": null,
+     "scrum": null
+    },
+    "stat_line": [
+     {
+      "label": "CMP/ATT",
+      "value": "22/26"
+     },
+     {
+      "label": "YDS",
+      "value": 278
+     },
+     {
+      "label": "TD",
+      "value": 2
+     }
+    ],
+    "tag": "3 TD in a loss"
+   }
+  },
+  {
+   "id": "special_teams-10",
+   "kind": "special_teams",
+   "category": "team",
+   "score": 0.8438,
+   "title": "Kickoff Return Touchdown",
+   "headline": "J.Bride (Grambling) returned a kickoff 73 yards for a touchdown in a 35-32 loss against UAPB.",
+   "stat": {
+    "display": "TD",
+    "label": "kickoff return"
+   },
+   "team_ids": [
+    "swacgsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "uapbgsu26",
+    "team_id": "swacgsu",
+    "play_id": "UAPBGRAM07112026-94",
+    "description": "T.Ackerman kickoff 38 yds, J.Bride return 73 yds, TOUCHDOWN."
+   }
+  },
+  {
+   "id": "record_book-11",
+   "kind": "record_book",
+   "category": "record",
+   "score": 0.8392,
+   "title": "The Record Book",
+   "headline": "ASU: 56% offensive success rate. No. 3 for offensive success rate in a game this season.",
+   "stat": {
+    "display": "56%",
+    "label": "offensive success rate"
+   },
+   "team_ids": [
+    "swacasu"
+   ],
+   "person_id": null,
+   "data": {
+    "fact": "No. 3 for offensive success rate in a game this season",
+    "rows": [
+     {
+      "date_label": "Oct 31, 2026",
+      "value": "66%",
+      "who": "Alcorn vs MVSU",
+      "is_current": false
+     },
+     {
+      "date_label": "Oct 29, 2026",
+      "value": "57%",
+      "who": "SCSU vs MSU",
+      "is_current": false
+     },
+     {
+      "date_label": "Nov 7, 2026",
+      "value": "56%",
+      "who": "ASU",
+      "is_current": true
+     },
+     {
+      "date_label": "Sep 12, 2026",
+      "value": "54%",
+      "who": "Alcorn vs UAPB",
+      "is_current": false
+     },
+     {
+      "date_label": "Oct 17, 2026",
+      "value": "54%",
+      "who": "AAMU vs Grambling",
+      "is_current": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "swing_play-12",
+   "kind": "swing_play",
+   "category": "game",
+   "score": 0.7608,
+   "title": "The Play",
+   "headline": "In the fourth quarter, I.Freeman to C.Neely for 51 yards, TOUCHDOWN moved HU's chance to win from 10% to 92%.",
+   "stat": {
+    "display": "+81%",
+    "label": "HU win probability"
+   },
+   "team_ids": [
+    "meachu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "scsuhu26",
+    "team_id": "meachu",
+    "play_id": "SCSUHU05112026-256",
+    "wp_before": 0.1045,
+    "wp_after": 0.915,
+    "description": "I.Freeman to C.Neely for 51 yards, TOUCHDOWN."
+   }
+  },
+  {
+   "id": "performance-13",
+   "kind": "performance",
+   "category": "performance",
+   "score": 0.7083,
+   "title": "Performance of the Day",
+   "headline": "Damien McDaniel (PVAMU) had 8 catches for 155 yards in a 31-10 win against AAMU.",
+   "stat": {
+    "display": "155",
+    "label": "receiving yards"
+   },
+   "team_ids": [
+    "swacpvamu"
+   ],
+   "person_id": "PERS_00013729",
+   "data": {
+    "person_id": "PERS_00013729",
+    "name": "Damien McDaniel",
+    "last_name": "McDaniel",
+    "position": "WR",
+    "team_id": "swacpvamu",
+    "class_year": "SO",
+    "image_url": "https://pvpanthers.com/images/2026/4/21/91_Damien_McDaniel.jpg",
+    "production": 7.86,
+    "par": 10.86,
+    "avg_par": 3.59,
+    "par_components": {
+     "pass": 10.5,
+     "rush": 0.36,
+     "turn": 0.0,
+     "hit": null,
+     "hawk": null,
+     "scrum": null
+    },
+    "stat_line": [
+     {
+      "label": "CAR",
+      "value": 1
+     },
+     {
+      "label": "RUSH YDS",
+      "value": 1
+     },
+     {
+      "label": "REC",
+      "value": 8
+     },
+     {
+      "label": "REC YDS",
+      "value": 155
+     }
+    ],
+    "tag": null
+   }
+  },
+  {
+   "id": "record_book-14",
+   "kind": "record_book",
+   "category": "record",
+   "score": 0.62,
+   "title": "The Record Book",
+   "headline": "Malachi Augustus (Alcorn): 171 receiving yards. No. 3 for receiving yards in a game this season.",
+   "stat": {
+    "display": "171",
+    "label": "receiving yards"
+   },
+   "team_ids": [
+    "swacalc"
+   ],
+   "person_id": "PERS_00013379",
+   "data": {
+    "fact": "No. 3 for receiving yards in a game this season",
+    "rows": [
+     {
+      "date_label": "Oct 17, 2026",
+      "value": "240",
+      "who": "Jaylan Bean (AAMU)",
+      "is_current": false
+     },
+     {
+      "date_label": "Oct 9, 2026",
+      "value": "216",
+      "who": "Armand Burris (FAMU)",
+      "is_current": false
+     },
+     {
+      "date_label": "Nov 7, 2026",
+      "value": "171",
+      "who": "Malachi Augustus (Alcorn)",
+      "is_current": true
+     },
+     {
+      "date_label": "Sep 12, 2026",
+      "value": "151",
+      "who": "Tyree Kelly (Alcorn)",
+      "is_current": false
+     },
+     {
+      "date_label": "Oct 31, 2026",
+      "value": "145",
+      "who": "Mehki Wall (NCCU)",
+      "is_current": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "game_result-15",
+   "kind": "game_result",
+   "category": "game",
+   "score": 0.5687,
+   "title": "Won It Anyway",
+   "headline": "UAPB beat Grambling 35-32 despite losing the down-by-down battle: Grambling was 6 points better in success rate.",
+   "stat": {
+    "display": "6",
+    "label": "success-rate points for the loser"
+   },
+   "team_ids": [
+    "swacuapb",
+    "swacgsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "uapbgsu26",
+    "away": "swacuapb",
+    "home": "swacgsu",
+    "margin": 3,
+    "note": "out-played and won"
+   }
+  },
+  {
+   "id": "big_number-16",
+   "kind": "big_number",
+   "category": "team",
+   "score": 0.5625,
+   "title": "Biggest Mover",
+   "headline": "AAMU dropped from No. 2 to No. 6 in the team rating in a 31-10 loss at PVAMU.",
+   "stat": {
+    "display": "No. 6",
+    "label": "team rating rank"
+   },
+   "team_ids": [
+    "swacaamu"
+   ],
+   "person_id": null,
+   "data": {}
+  },
+  {
+   "id": "record_book-17",
+   "kind": "record_book",
+   "category": "record",
+   "score": 0.55,
+   "title": "The Record Book",
+   "headline": "Nacari Johnson (AAMU): 2 interceptions. Tied for No. 2 for interceptions in a game this season.",
+   "stat": {
+    "display": "2",
+    "label": "interceptions"
+   },
+   "team_ids": [
+    "swacaamu"
+   ],
+   "person_id": "PERS_00013343",
+   "data": {
+    "fact": "Tied for No. 2 for interceptions in a game this season",
+    "rows": [
+     {
+      "date_label": "Oct 17, 2026",
+      "value": "3",
+      "who": "Jaden Davis (BCU)",
+      "is_current": false
+     },
+     {
+      "date_label": "Nov 7, 2026",
+      "value": "2",
+      "who": "Nacari Johnson (AAMU)",
+      "is_current": true
+     },
+     {
+      "date_label": "Sep 6, 2026",
+      "value": "2",
+      "who": "Justin Bostic (FAMU)",
+      "is_current": false
+     },
+     {
+      "date_label": "Oct 10, 2026",
+      "value": "2",
+      "who": "Fabian Wells (TSU)",
+      "is_current": false
+     },
+     {
+      "date_label": "Oct 10, 2026",
+      "value": "2",
+      "who": "Herman Brister III (SU)",
+      "is_current": false
+     }
+    ]
+   }
+  },
+  {
+   "id": "performance-18",
+   "kind": "performance",
+   "category": "performance",
+   "score": 0.518,
+   "title": "Performance of the Day",
+   "headline": "Trey Holly (SU) had 206 rushing yards and 2 touchdowns in a 45-17 win against BCU.",
+   "stat": {
+    "display": "206",
+    "label": "rushing yards"
+   },
+   "team_ids": [
+    "swacsu"
+   ],
+   "person_id": "PERS_00012282",
+   "data": {
+    "person_id": "PERS_00012282",
+    "name": "Trey Holly",
+    "last_name": "Holly",
+    "position": "RB",
+    "team_id": "swacsu",
+    "class_year": "JR",
+    "image_url": "https://gojagsports.com/images/2026/8/23/_6_Trey_STye2.JPG",
+    "production": 14.16,
+    "par": 19.02,
+    "avg_par": 11.1,
+    "par_components": {
+     "pass": 0.51,
+     "rush": 18.51,
+     "turn": 0.0,
+     "hit": null,
+     "hawk": null,
+     "scrum": null
+    },
+    "stat_line": [
+     {
+      "label": "CAR",
+      "value": 16
+     },
+     {
+      "label": "RUSH YDS",
+      "value": 206
+     },
+     {
+      "label": "TD",
+      "value": 2
+     },
+     {
+      "label": "REC",
+      "value": 1
+     },
+     {
+      "label": "REC YDS",
+      "value": 11
+     }
+    ],
+    "tag": null
+   }
+  },
+  {
+   "id": "situational-19",
+   "kind": "situational",
+   "category": "team",
+   "score": 0.5108,
+   "title": "Third and Long",
+   "headline": "Alcorn converted 4 of 7 third downs with 7 or more to go in a 38-20 win against FAMU.",
+   "stat": {
+    "display": "4/7",
+    "label": "3rd & 7+ converted"
+   },
+   "team_ids": [
+    "swacalc"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "famualc26",
+    "team_id": "swacalc"
+   }
+  },
+  {
+   "id": "special_teams-20",
+   "kind": "special_teams",
+   "category": "team",
+   "score": 0.3955,
+   "title": "Blocked Punt",
+   "headline": "Jordan Thompson (TSU) blocked a punt in a 34-31 loss against ASU.",
+   "stat": {
+    "display": "BLK",
+    "label": "punt"
+   },
+   "team_ids": [
+    "swactsu"
+   ],
+   "person_id": null,
+   "data": {
+    "game_path_id": "asutsu26",
+    "team_id": "swactsu",
+    "play_id": "ASUTSU07112026-95",
+    "description": "T.Bywater punt 0 yds, BLOCKED by J.Thompson, downed."
+   }
+  }
+ ],
+ "method": {
+  "engine": "999-frontendfeedback/10 18/WEEK_RECAP_ENGINE.md",
+  "phase": "late",
+  "rarity_corpus": "games between two of the 18, 2019 and 2021-2026, this week left out",
+  "candidates": 89,
+  "items_target": "16-20"
+ }
+}

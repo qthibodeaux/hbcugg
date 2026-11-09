@@ -1,0 +1,1966 @@
+{
+  "season": 2025,
+  "generated_at": "2026-04-19T09:47:47.539196+00:00",
+  "player_count": 903,
+  "transfer_analytics": {
+    "total_players": 903,
+    "transfer_count": 290,
+    "non_transfer_count": 578,
+    "transfer_rate": 0.3212,
+    "avg_par_transfers": 5.7561,
+    "avg_par_non_transfers": 5.1333,
+    "by_tier": {
+      "FBS": {
+        "count": 148,
+        "avg_par": 5.4971
+      },
+      "FCS": {
+        "count": 54,
+        "avg_par": 8.6532
+      },
+      "JUCO": {
+        "count": 40,
+        "avg_par": 3.5269
+      },
+      "D2": {
+        "count": 0,
+        "avg_par": null
+      },
+      "D3": {
+        "count": 0,
+        "avg_par": null
+      },
+      "NAIA": {
+        "count": 0,
+        "avg_par": null
+      },
+      "HS": {
+        "count": 184,
+        "avg_par": 7.9797
+      }
+    },
+    "top_10_transfers_by_par": [
+      {
+        "name_display": "Andrew Body",
+        "player_key": "swacasu25100003",
+        "team": "swacasu",
+        "par": 85.17,
+        "games_played": 6,
+        "position": "QB",
+        "class_year": "Jr.",
+        "transfer_tier": "FBS"
+      },
+      {
+        "name_display": "William Atkins IV",
+        "player_key": "meacscsu25100003",
+        "team": "meacscsu",
+        "par": 80.85,
+        "games_played": 6,
+        "position": "QB",
+        "class_year": "Gr.",
+        "transfer_tier": "FBS"
+      },
+      {
+        "name_display": "Jorhdan Brown",
+        "player_key": "swacaamu25100004",
+        "team": "swacaamu",
+        "par": 71.265,
+        "games_played": 7,
+        "position": "DEF",
+        "class_year": "So.",
+        "transfer_tier": "FCS"
+      },
+      {
+        "name_display": "Jalen Wright",
+        "player_key": "swacaamu25100009",
+        "team": "swacaamu",
+        "par": 57.38,
+        "games_played": 9,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "FBS"
+      },
+      {
+        "name_display": "Eric Handley",
+        "player_key": "swacaamu25100017",
+        "team": "swacaamu",
+        "par": 44.34,
+        "games_played": 7,
+        "position": "QB",
+        "class_year": "Fr.",
+        "transfer_tier": "FCS"
+      },
+      {
+        "name_display": "Cam'Ron Ransom",
+        "player_key": "swacbcu25100003",
+        "team": "swacbcu",
+        "par": 43.22,
+        "games_played": 4,
+        "position": "QB",
+        "class_year": "Sr.",
+        "transfer_tier": "FCS"
+      },
+      {
+        "name_display": "Deontre Morris",
+        "player_key": "swacasu25100004",
+        "team": "swacasu",
+        "par": 40.75,
+        "games_played": 8,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "FCS"
+      },
+      {
+        "name_display": "Franck Pierre",
+        "player_key": "swacaamu25100005",
+        "team": "swacaamu",
+        "par": 40.23,
+        "games_played": 9,
+        "position": "WR",
+        "class_year": "Jr.",
+        "transfer_tier": "D2/D3/NAIA"
+      },
+      {
+        "name_display": "Jalil Lenore",
+        "player_key": "swacasu25100055",
+        "team": "swacasu",
+        "par": 38.1,
+        "games_played": 9,
+        "position": "DEF",
+        "class_year": "Gr.",
+        "transfer_tier": "D2/D3/NAIA"
+      },
+      {
+        "name_display": "Nigel Johnson",
+        "player_key": "meacscsu25100002",
+        "team": "meacscsu",
+        "par": 36.51,
+        "games_played": 7,
+        "position": "WR",
+        "class_year": "Gr.",
+        "transfer_tier": "FCS"
+      }
+    ]
+  },
+  "class_analytics": {
+    "Fr.": {
+      "count": 145,
+      "avg_par": 1.3052,
+      "avg_production": 5.6231,
+      "top_performer": {
+        "name_display": "Detrick Jones",
+        "player_key": "swacasu25100001",
+        "team": "swacasu",
+        "par": 51.66,
+        "games_played": 9,
+        "position": "WR",
+        "class_year": "Fr.",
+        "transfer_tier": "HS"
+      }
+    },
+    "So.": {
+      "count": 159,
+      "avg_par": 3.6508,
+      "avg_production": 7.5864,
+      "top_performer": {
+        "name_display": "Jorhdan Brown",
+        "player_key": "swacaamu25100004",
+        "team": "swacaamu",
+        "par": 71.265,
+        "games_played": 7,
+        "position": "DEF",
+        "class_year": "So.",
+        "transfer_tier": "FCS"
+      }
+    },
+    "Gr.": {
+      "count": 113,
+      "avg_par": 8.3943,
+      "avg_production": 12.4068,
+      "top_performer": {
+        "name_display": "Jordan Smith",
+        "player_key": "meacscsu25100011",
+        "team": "meacscsu",
+        "par": 97.565,
+        "games_played": 7,
+        "position": "RB",
+        "class_year": "Gr.",
+        "transfer_tier": "HS"
+      }
+    },
+    "Unknown": {
+      "count": 121,
+      "avg_par": 2.1198,
+      "avg_production": 6.0533,
+      "top_performer": {
+        "name_display": "Jyzaiah Rockwell",
+        "player_key": "swacpvamu25ESPN00006",
+        "team": "swacpvamu",
+        "par": 64.32,
+        "games_played": 10,
+        "position": "WR",
+        "class_year": null,
+        "transfer_tier": null
+      }
+    },
+    "Sr.": {
+      "count": 176,
+      "avg_par": 8.8647,
+      "avg_production": 12.4462,
+      "top_performer": {
+        "name_display": "Cameron Peters",
+        "player_key": "swacpvamu25100004",
+        "team": "swacpvamu",
+        "par": 163.86,
+        "games_played": 10,
+        "position": "QB",
+        "class_year": "Sr.",
+        "transfer_tier": "HS"
+      }
+    },
+    "Jr.": {
+      "count": 189,
+      "avg_par": 5.6902,
+      "avg_production": 9.5415,
+      "top_performer": {
+        "name_display": "Thomas Johnson",
+        "player_key": "meacnccu25100014",
+        "team": "meacnccu",
+        "par": 97.89,
+        "games_played": 7,
+        "position": "DEF",
+        "class_year": "Jr.",
+        "transfer_tier": null
+      }
+    }
+  },
+  "position_analytics": {
+    "WR": {
+      "count": 163,
+      "transfer_rate": 0.3313,
+      "avg_par": 5.1626,
+      "class_distribution": {
+        "Fr.": 31,
+        "Sr.": 30,
+        "Jr.": 48,
+        "So.": 23,
+        "Unknown": 13,
+        "Gr.": 18
+      }
+    },
+    "DEF": {
+      "count": 588,
+      "transfer_rate": 0.3231,
+      "avg_par": 5.3418,
+      "class_distribution": {
+        "Fr.": 87,
+        "Sr.": 121,
+        "Jr.": 112,
+        "So.": 108,
+        "Unknown": 84,
+        "Gr.": 76
+      }
+    },
+    "RB": {
+      "count": 107,
+      "transfer_rate": 0.271,
+      "avg_par": 6.1093,
+      "class_distribution": {
+        "So.": 20,
+        "Gr.": 13,
+        "Unknown": 18,
+        "Jr.": 20,
+        "Sr.": 18,
+        "Fr.": 18
+      }
+    },
+    "QB": {
+      "count": 45,
+      "transfer_rate": 0.3778,
+      "avg_par": -0.572,
+      "class_distribution": {
+        "Gr.": 6,
+        "Unknown": 6,
+        "Sr.": 7,
+        "Jr.": 9,
+        "So.": 8,
+        "Fr.": 9
+      }
+    }
+  },
+  "team_analytics": {
+    "meachu": {
+      "roster_size": 49,
+      "transfer_count": 3,
+      "transfer_rate": 0.0612,
+      "transfer_tier_distribution": {
+        "FBS": 2,
+        "FCS": 1
+      },
+      "class_distribution": {
+        "Fr.": 8,
+        "So.": 10,
+        "Gr.": 5,
+        "Unknown": 12,
+        "Sr.": 7,
+        "Jr.": 7
+      },
+      "avg_par": 1.0882,
+      "top_3_performers": [
+        {
+          "name_display": "CJ Wesley",
+          "player_key": "meachu25100036",
+          "team": "meachu",
+          "par": 15.355,
+          "games_played": 3,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Kaleb Gallop",
+          "player_key": "meachu25100016",
+          "team": "meachu",
+          "par": 14.865,
+          "games_played": 3,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Cam Dyson",
+          "player_key": "meachu25100012",
+          "team": "meachu",
+          "par": 14.325,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        }
+      ]
+    },
+    "swacfamu": {
+      "roster_size": 58,
+      "transfer_count": 39,
+      "transfer_rate": 0.6724,
+      "transfer_tier_distribution": {
+        "FBS": 31,
+        "FCS": 6,
+        "D2/D3/NAIA": 1,
+        "JUCO": 1
+      },
+      "class_distribution": {
+        "Jr.": 12,
+        "Sr.": 7,
+        "Gr.": 14,
+        "So.": 10,
+        "Unknown": 10,
+        "Fr.": 5
+      },
+      "avg_par": 3.4811,
+      "top_3_performers": [
+        {
+          "name_display": "RJ Johnson III",
+          "player_key": "swacfamu25ESPN00001",
+          "team": "swacfamu",
+          "par": 35.66,
+          "games_played": 4,
+          "position": "QB",
+          "class_year": null,
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Ah'Mare Lee",
+          "player_key": "swacfamu25100037",
+          "team": "swacfamu",
+          "par": 23.32,
+          "games_played": 5,
+          "position": "DEF",
+          "class_year": "Gr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Corey Collier Jr.",
+          "player_key": "swacfamu25ESPN00021",
+          "team": "swacfamu",
+          "par": 17.605,
+          "games_played": 5,
+          "position": "DEF",
+          "class_year": null,
+          "transfer_tier": null
+        }
+      ]
+    },
+    "meacnccu": {
+      "roster_size": 52,
+      "transfer_count": 12,
+      "transfer_rate": 0.2308,
+      "transfer_tier_distribution": {
+        "JUCO": 2,
+        "FBS": 6,
+        "D2/D3/NAIA": 4
+      },
+      "class_distribution": {
+        "So.": 15,
+        "Sr.": 14,
+        "Unknown": 6,
+        "Jr.": 9,
+        "Fr.": 8
+      },
+      "avg_par": 11.4866,
+      "top_3_performers": [
+        {
+          "name_display": "Walker Harris",
+          "player_key": "meacnccu25100005",
+          "team": "meacnccu",
+          "par": 109.73,
+          "games_played": 7,
+          "position": "QB",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Thomas Johnson",
+          "player_key": "meacnccu25100014",
+          "team": "meacnccu",
+          "par": 97.89,
+          "games_played": 7,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Chauncey Spikes",
+          "player_key": "meacnccu25100002",
+          "team": "meacnccu",
+          "par": 45.9,
+          "games_played": 7,
+          "position": "WR",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        }
+      ]
+    },
+    "swacsu": {
+      "roster_size": 46,
+      "transfer_count": 14,
+      "transfer_rate": 0.3043,
+      "transfer_tier_distribution": {
+        "FCS": 4,
+        "FBS": 5,
+        "D2/D3/NAIA": 1,
+        "JUCO": 4
+      },
+      "class_distribution": {
+        "Unknown": 7,
+        "Sr.": 7,
+        "So.": 12,
+        "Gr.": 4,
+        "Jr.": 5,
+        "Fr.": 11
+      },
+      "avg_par": 2.5985,
+      "top_3_performers": [
+        {
+          "name_display": "Zac Yassine",
+          "player_key": "swacsu25100088",
+          "team": "swacsu",
+          "par": 46.645,
+          "games_played": 4,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": "HS"
+        },
+        {
+          "name_display": "Ckelby Givens",
+          "player_key": "swacsu25100003",
+          "team": "swacsu",
+          "par": 40.895,
+          "games_played": 4,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Elijah West",
+          "player_key": "swacsu25100009",
+          "team": "swacsu",
+          "par": 12.655,
+          "games_played": 4,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": "FBS"
+        }
+      ]
+    },
+    "swacgsu": {
+      "roster_size": 44,
+      "transfer_count": 26,
+      "transfer_rate": 0.5909,
+      "transfer_tier_distribution": {
+        "FBS": 19,
+        "JUCO": 2,
+        "D2/D3/NAIA": 2,
+        "FCS": 3
+      },
+      "class_distribution": {
+        "Fr.": 6,
+        "Sr.": 21,
+        "Unknown": 5,
+        "So.": 5,
+        "Gr.": 2,
+        "Jr.": 5
+      },
+      "avg_par": -0.8491,
+      "top_3_performers": [
+        {
+          "name_display": "Warren Robinson",
+          "player_key": "swacgsu25100021",
+          "team": "swacgsu",
+          "par": 22.595,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Jamal Jordan",
+          "player_key": "swacgsu25100012",
+          "team": "swacgsu",
+          "par": 20.925,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "So.",
+          "transfer_tier": "HS"
+        },
+        {
+          "name_display": "Jay'Shaun Johnson",
+          "player_key": "swacgsu25100026",
+          "team": "swacgsu",
+          "par": 17.7,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Fr.",
+          "transfer_tier": "HS"
+        }
+      ]
+    },
+    "swacaamu": {
+      "roster_size": 66,
+      "transfer_count": 34,
+      "transfer_rate": 0.5152,
+      "transfer_tier_distribution": {
+        "FCS": 8,
+        "FBS": 11,
+        "D2/D3/NAIA": 11,
+        "JUCO": 4
+      },
+      "class_distribution": {
+        "So.": 11,
+        "Sr.": 15,
+        "Jr.": 16,
+        "Unknown": 8,
+        "Fr.": 16
+      },
+      "avg_par": 7.2564,
+      "top_3_performers": [
+        {
+          "name_display": "Jorhdan Brown",
+          "player_key": "swacaamu25100004",
+          "team": "swacaamu",
+          "par": 71.265,
+          "games_played": 7,
+          "position": "DEF",
+          "class_year": "So.",
+          "transfer_tier": "FCS"
+        },
+        {
+          "name_display": "Jalen Wright",
+          "player_key": "swacaamu25100009",
+          "team": "swacaamu",
+          "par": 57.38,
+          "games_played": 9,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Eric Handley",
+          "player_key": "swacaamu25100017",
+          "team": "swacaamu",
+          "par": 44.34,
+          "games_played": 7,
+          "position": "QB",
+          "class_year": "Fr.",
+          "transfer_tier": "FCS"
+        }
+      ]
+    },
+    "swacpvamu": {
+      "roster_size": 55,
+      "transfer_count": 2,
+      "transfer_rate": 0.0364,
+      "transfer_tier_distribution": {
+        "D2/D3/NAIA": 1,
+        "FCS": 1
+      },
+      "class_distribution": {
+        "Fr.": 2,
+        "Gr.": 14,
+        "Sr.": 10,
+        "So.": 7,
+        "Jr.": 12,
+        "Unknown": 10
+      },
+      "avg_par": 15.2836,
+      "top_3_performers": [
+        {
+          "name_display": "Cameron Peters",
+          "player_key": "swacpvamu25100004",
+          "team": "swacpvamu",
+          "par": 163.86,
+          "games_played": 10,
+          "position": "QB",
+          "class_year": "Sr.",
+          "transfer_tier": "HS"
+        },
+        {
+          "name_display": "Jyzaiah Rockwell",
+          "player_key": "swacpvamu25ESPN00006",
+          "team": "swacpvamu",
+          "par": 64.32,
+          "games_played": 10,
+          "position": "WR",
+          "class_year": null,
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Sterling Roberts",
+          "player_key": "swacpvamu25100003",
+          "team": "swacpvamu",
+          "par": 56.795,
+          "games_played": 10,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": "HS"
+        }
+      ]
+    },
+    "swacasu": {
+      "roster_size": 69,
+      "transfer_count": 29,
+      "transfer_rate": 0.4203,
+      "transfer_tier_distribution": {
+        "D2/D3/NAIA": 5,
+        "FBS": 14,
+        "FCS": 8,
+        "JUCO": 2
+      },
+      "class_distribution": {
+        "Fr.": 16,
+        "Gr.": 4,
+        "Unknown": 12,
+        "Sr.": 12,
+        "So.": 16,
+        "Jr.": 9
+      },
+      "avg_par": 8.7001,
+      "top_3_performers": [
+        {
+          "name_display": "Andrew Body",
+          "player_key": "swacasu25100003",
+          "team": "swacasu",
+          "par": 85.17,
+          "games_played": 6,
+          "position": "QB",
+          "class_year": "Jr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Marcus Harris II",
+          "player_key": "swacasu25ESPN00002",
+          "team": "swacasu",
+          "par": 56.315,
+          "games_played": 9,
+          "position": "RB",
+          "class_year": null,
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Detrick Jones",
+          "player_key": "swacasu25100001",
+          "team": "swacasu",
+          "par": 51.66,
+          "games_played": 9,
+          "position": "WR",
+          "class_year": "Fr.",
+          "transfer_tier": "HS"
+        }
+      ]
+    },
+    "meacmsu": {
+      "roster_size": 39,
+      "transfer_count": 0,
+      "transfer_rate": 0.0,
+      "transfer_tier_distribution": {},
+      "class_distribution": {
+        "Unknown": 5,
+        "Sr.": 3,
+        "Fr.": 8,
+        "So.": 9,
+        "Jr.": 10,
+        "Gr.": 4
+      },
+      "avg_par": 0.5799,
+      "top_3_performers": [
+        {
+          "name_display": "Erick Hunter",
+          "player_key": "meacmsu25100060",
+          "team": "meacmsu",
+          "par": 19.72,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Blanche Gold",
+          "player_key": "meacmsu25100017",
+          "team": "meacmsu",
+          "par": 17.14,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Justin Perry",
+          "player_key": "meacmsu25100031",
+          "team": "meacmsu",
+          "par": 9.15,
+          "games_played": 2,
+          "position": "WR",
+          "class_year": "Fr.",
+          "transfer_tier": null
+        }
+      ]
+    },
+    "meacscsu": {
+      "roster_size": 50,
+      "transfer_count": 23,
+      "transfer_rate": 0.46,
+      "transfer_tier_distribution": {
+        "D2/D3/NAIA": 12,
+        "FCS": 4,
+        "FBS": 7
+      },
+      "class_distribution": {
+        "Fr.": 8,
+        "Gr.": 12,
+        "Jr.": 14,
+        "So.": 8,
+        "Sr.": 6,
+        "Unknown": 2
+      },
+      "avg_par": 12.5954,
+      "top_3_performers": [
+        {
+          "name_display": "Jordan Smith",
+          "player_key": "meacscsu25100011",
+          "team": "meacscsu",
+          "par": 97.565,
+          "games_played": 7,
+          "position": "RB",
+          "class_year": "Gr.",
+          "transfer_tier": "HS"
+        },
+        {
+          "name_display": "William Atkins IV",
+          "player_key": "meacscsu25100003",
+          "team": "meacscsu",
+          "par": 80.85,
+          "games_played": 6,
+          "position": "QB",
+          "class_year": "Gr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Jordan Dollard",
+          "player_key": "meacscsu25100018",
+          "team": "meacscsu",
+          "par": 44.455,
+          "games_played": 7,
+          "position": "DEF",
+          "class_year": "So.",
+          "transfer_tier": null
+        }
+      ]
+    },
+    "swacmvsu": {
+      "roster_size": 66,
+      "transfer_count": 0,
+      "transfer_rate": 0.0,
+      "transfer_tier_distribution": {},
+      "class_distribution": {
+        "Jr.": 19,
+        "Fr.": 13,
+        "So.": 13,
+        "Gr.": 4,
+        "Sr.": 6,
+        "Unknown": 11
+      },
+      "avg_par": 6.729,
+      "top_3_performers": [
+        {
+          "name_display": "Josh Brown",
+          "player_key": "swacmvsu25100012",
+          "team": "swacmvsu",
+          "par": 77.66,
+          "games_played": 8,
+          "position": "QB",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Jalen Wright",
+          "player_key": "swacmvsu25100033",
+          "team": "swacmvsu",
+          "par": 43.625,
+          "games_played": 9,
+          "position": "DEF",
+          "class_year": "Gr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Isaiah Pedack",
+          "player_key": "swacmvsu25100076",
+          "team": "swacmvsu",
+          "par": 32.735,
+          "games_played": 9,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        }
+      ]
+    },
+    "swacbcu": {
+      "roster_size": 42,
+      "transfer_count": 16,
+      "transfer_rate": 0.381,
+      "transfer_tier_distribution": {
+        "FCS": 8,
+        "FBS": 8
+      },
+      "class_distribution": {
+        "Jr.": 6,
+        "Unknown": 11,
+        "So.": 7,
+        "Fr.": 9,
+        "Sr.": 9
+      },
+      "avg_par": 6.2136,
+      "top_3_performers": [
+        {
+          "name_display": "Cam'Ron Ransom",
+          "player_key": "swacbcu25100003",
+          "team": "swacbcu",
+          "par": 43.22,
+          "games_played": 4,
+          "position": "QB",
+          "class_year": "Sr.",
+          "transfer_tier": "FCS"
+        },
+        {
+          "name_display": "Maleek Huggins",
+          "player_key": "swacbcu25100014",
+          "team": "swacbcu",
+          "par": 29.43,
+          "games_played": 4,
+          "position": "WR",
+          "class_year": "Jr.",
+          "transfer_tier": "FCS"
+        },
+        {
+          "name_display": "Javon Ross",
+          "player_key": "swacbcu25100008",
+          "team": "swacbcu",
+          "par": 23.945,
+          "games_played": 4,
+          "position": "RB",
+          "class_year": "So.",
+          "transfer_tier": null
+        }
+      ]
+    },
+    "swacjsu": {
+      "roster_size": 46,
+      "transfer_count": 26,
+      "transfer_rate": 0.5652,
+      "transfer_tier_distribution": {
+        "FBS": 13,
+        "JUCO": 7,
+        "FCS": 5,
+        "D2/D3/NAIA": 1
+      },
+      "class_distribution": {
+        "So.": 6,
+        "Fr.": 3,
+        "Sr.": 12,
+        "Unknown": 8,
+        "Gr.": 12,
+        "Jr.": 5
+      },
+      "avg_par": 5.1404,
+      "top_3_performers": [
+        {
+          "name_display": "JaCobian Morgan",
+          "player_key": "swacjsu25100029",
+          "team": "swacjsu",
+          "par": 34.11,
+          "games_played": 3,
+          "position": "QB",
+          "class_year": "Gr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Quincy and Pulliam Ivory",
+          "player_key": "swacjsu25100014",
+          "team": "swacjsu",
+          "par": 28.8,
+          "games_played": 4,
+          "position": "DEF",
+          "class_year": "Sr.",
+          "transfer_tier": "FBS"
+        },
+        {
+          "name_display": "Ja'Naylon Dupree",
+          "player_key": "swacjsu25100005",
+          "team": "swacjsu",
+          "par": 25.925,
+          "games_played": 4,
+          "position": "RB",
+          "class_year": "Sr.",
+          "transfer_tier": "JUCO"
+        }
+      ]
+    },
+    "meacnsu": {
+      "roster_size": 46,
+      "transfer_count": 21,
+      "transfer_rate": 0.4565,
+      "transfer_tier_distribution": {
+        "FBS": 16,
+        "D2/D3/NAIA": 2,
+        "JUCO": 1,
+        "FCS": 2
+      },
+      "class_distribution": {
+        "Gr.": 8,
+        "So.": 8,
+        "Sr.": 14,
+        "Jr.": 11,
+        "Fr.": 5
+      },
+      "avg_par": 0.0775,
+      "top_3_performers": [
+        {
+          "name_display": "Jaylen Williams",
+          "player_key": "meacnsu25100036",
+          "team": "meacnsu",
+          "par": 11.855,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": "HS"
+        },
+        {
+          "name_display": "Kam'Ryn Thomas",
+          "player_key": "meacnsu25100026",
+          "team": "meacnsu",
+          "par": 11.16,
+          "games_played": 2,
+          "position": "WR",
+          "class_year": "Sr.",
+          "transfer_tier": "JUCO"
+        },
+        {
+          "name_display": "Xzavion Evans",
+          "player_key": "meacnsu25100012",
+          "team": "meacnsu",
+          "par": 9.575,
+          "games_played": 2,
+          "position": "RB",
+          "class_year": "Gr.",
+          "transfer_tier": "FBS"
+        }
+      ]
+    },
+    "swactsu": {
+      "roster_size": 49,
+      "transfer_count": 27,
+      "transfer_rate": 0.551,
+      "transfer_tier_distribution": {
+        "FBS": 10,
+        "D2/D3/NAIA": 6,
+        "JUCO": 9,
+        "FCS": 2
+      },
+      "class_distribution": {
+        "Jr.": 14,
+        "Sr.": 8,
+        "Gr.": 9,
+        "So.": 6,
+        "Fr.": 12
+      },
+      "avg_par": 3.8301,
+      "top_3_performers": [
+        {
+          "name_display": "Matthew Cooks",
+          "player_key": "swactsu25100044",
+          "team": "swactsu",
+          "par": 31.115,
+          "games_played": 4,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": "JUCO"
+        },
+        {
+          "name_display": "Michael Akins",
+          "player_key": "swactsu25100019",
+          "team": "swactsu",
+          "par": 23.44,
+          "games_played": 4,
+          "position": "DEF",
+          "class_year": "Gr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "KJ Cooper",
+          "player_key": "swactsu25100021",
+          "team": "swactsu",
+          "par": 22.58,
+          "games_played": 3,
+          "position": "QB",
+          "class_year": "Jr.",
+          "transfer_tier": "FBS"
+        }
+      ]
+    },
+    "swacuapb": {
+      "roster_size": 38,
+      "transfer_count": 18,
+      "transfer_rate": 0.4737,
+      "transfer_tier_distribution": {
+        "D2/D3/NAIA": 2,
+        "JUCO": 8,
+        "FBS": 6,
+        "FCS": 2
+      },
+      "class_distribution": {
+        "Jr.": 9,
+        "So.": 6,
+        "Sr.": 6,
+        "Fr.": 9,
+        "Gr.": 7,
+        "Unknown": 1
+      },
+      "avg_par": -2.0909,
+      "top_3_performers": [
+        {
+          "name_display": "Jaylen Jennings",
+          "player_key": "swacuapb25100025",
+          "team": "swacuapb",
+          "par": 14.105,
+          "games_played": 2,
+          "position": "RB",
+          "class_year": "Jr.",
+          "transfer_tier": "JUCO"
+        },
+        {
+          "name_display": "Danarius Hilliard",
+          "player_key": "swacuapb25100001",
+          "team": "swacuapb",
+          "par": 5.175,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Derron Moore",
+          "player_key": "swacuapb25100014",
+          "team": "swacuapb",
+          "par": 4.94,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": "D2/D3/NAIA"
+        }
+      ]
+    },
+    "meacdsu": {
+      "roster_size": 37,
+      "transfer_count": 0,
+      "transfer_rate": 0.0,
+      "transfer_tier_distribution": {},
+      "class_distribution": {
+        "Jr.": 7,
+        "Gr.": 9,
+        "Fr.": 4,
+        "So.": 5,
+        "Sr.": 7,
+        "Unknown": 5
+      },
+      "avg_par": -0.0165,
+      "top_3_performers": [
+        {
+          "name_display": "Marquis Gillis",
+          "player_key": "meacdsu25100012",
+          "team": "meacdsu",
+          "par": 16.955,
+          "games_played": 2,
+          "position": "RB",
+          "class_year": "Gr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Jaydon Mifflin",
+          "player_key": "meacdsu25100092",
+          "team": "meacdsu",
+          "par": 14.855,
+          "games_played": 1,
+          "position": "DEF",
+          "class_year": "Jr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Samuel Scaife IV",
+          "player_key": "meacdsu25ESPN00012",
+          "team": "meacdsu",
+          "par": 12.885,
+          "games_played": 2,
+          "position": "DEF",
+          "class_year": null,
+          "transfer_tier": null
+        }
+      ]
+    },
+    "swacalc": {
+      "roster_size": 51,
+      "transfer_count": 0,
+      "transfer_rate": 0.0,
+      "transfer_tier_distribution": {},
+      "class_distribution": {
+        "Jr.": 19,
+        "Gr.": 5,
+        "So.": 5,
+        "Sr.": 12,
+        "Unknown": 8,
+        "Fr.": 2
+      },
+      "avg_par": 0.996,
+      "top_3_performers": [
+        {
+          "name_display": "Stemarion Edwards",
+          "player_key": "swacalc25100008",
+          "team": "swacalc",
+          "par": 16.555,
+          "games_played": 3,
+          "position": "DEF",
+          "class_year": "Gr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Jacorian Sewell",
+          "player_key": "swacalc25100050",
+          "team": "swacalc",
+          "par": 11.075,
+          "games_played": 3,
+          "position": "RB",
+          "class_year": "Gr.",
+          "transfer_tier": null
+        },
+        {
+          "name_display": "Ja'Coby Matthews",
+          "player_key": "swacalc25100010",
+          "team": "swacalc",
+          "par": 10.74,
+          "games_played": 3,
+          "position": "WR",
+          "class_year": "Sr.",
+          "transfer_tier": null
+        }
+      ]
+    }
+  },
+  "leaderboards_enriched": {
+    "QB": [
+      {
+        "name_display": "Cameron Peters",
+        "player_key": "swacpvamu25100004",
+        "team": "swacpvamu",
+        "par": 163.86,
+        "games_played": 10,
+        "position": "QB",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 4,
+        "height": 76,
+        "weight": 207,
+        "bmi": 25.2,
+        "body_type": "Average",
+        "home_state": "TX",
+        "experience_score": 4.0,
+        "total_production": 197.34,
+        "avg_production": 19.734
+      },
+      {
+        "name_display": "Walker Harris",
+        "player_key": "meacnccu25100005",
+        "team": "meacnccu",
+        "par": 109.73,
+        "games_played": 7,
+        "position": "QB",
+        "class_year": "Sr.",
+        "transfer_tier": null,
+        "jersey_number": 3,
+        "height": 73,
+        "weight": 195,
+        "bmi": 25.7,
+        "body_type": "Average",
+        "home_state": "NC",
+        "experience_score": 4.5,
+        "total_production": 143.21,
+        "avg_production": 20.4586
+      },
+      {
+        "name_display": "Andrew Body",
+        "player_key": "swacasu25100003",
+        "team": "swacasu",
+        "par": 85.17,
+        "games_played": 6,
+        "position": "QB",
+        "class_year": "Jr.",
+        "transfer_tier": "FBS",
+        "jersey_number": 1,
+        "height": 72,
+        "weight": 205,
+        "bmi": 27.8,
+        "body_type": null,
+        "home_state": "TX",
+        "experience_score": 3.5,
+        "total_production": 118.65,
+        "avg_production": 19.775
+      },
+      {
+        "name_display": "William Atkins IV",
+        "player_key": "meacscsu25100003",
+        "team": "meacscsu",
+        "par": 80.85,
+        "games_played": 6,
+        "position": "QB",
+        "class_year": "Gr.",
+        "transfer_tier": "FBS",
+        "jersey_number": 1,
+        "height": 73,
+        "weight": 215,
+        "bmi": 28.4,
+        "body_type": "Heavy",
+        "home_state": "MD",
+        "experience_score": 4.5,
+        "total_production": 114.33,
+        "avg_production": 19.055
+      },
+      {
+        "name_display": "Josh Brown",
+        "player_key": "swacmvsu25100012",
+        "team": "swacmvsu",
+        "par": 77.66,
+        "games_played": 8,
+        "position": "QB",
+        "class_year": "Jr.",
+        "transfer_tier": null,
+        "jersey_number": 12,
+        "height": 75,
+        "weight": null,
+        "bmi": null,
+        "body_type": null,
+        "home_state": "GA",
+        "experience_score": 3.0,
+        "total_production": 111.14,
+        "avg_production": 13.8925
+      },
+      {
+        "name_display": "Eric Handley",
+        "player_key": "swacaamu25100017",
+        "team": "swacaamu",
+        "par": 44.34,
+        "games_played": 7,
+        "position": "QB",
+        "class_year": "Fr.",
+        "transfer_tier": "FCS",
+        "jersey_number": 8,
+        "height": 74,
+        "weight": 200,
+        "bmi": 25.7,
+        "body_type": "Average",
+        "home_state": "AL",
+        "experience_score": 1.5,
+        "total_production": 77.82,
+        "avg_production": 11.1171
+      },
+      {
+        "name_display": "Cam'Ron Ransom",
+        "player_key": "swacbcu25100003",
+        "team": "swacbcu",
+        "par": 43.22,
+        "games_played": 4,
+        "position": "QB",
+        "class_year": "Sr.",
+        "transfer_tier": "FCS",
+        "jersey_number": 1,
+        "height": 75,
+        "weight": 220,
+        "bmi": 27.5,
+        "body_type": "Heavy",
+        "home_state": "FL",
+        "experience_score": 4.5,
+        "total_production": 76.7,
+        "avg_production": 19.175
+      },
+      {
+        "name_display": "RJ Johnson III",
+        "player_key": "swacfamu25ESPN00001",
+        "team": "swacfamu",
+        "par": 35.66,
+        "games_played": 4,
+        "position": "QB",
+        "class_year": null,
+        "transfer_tier": null,
+        "jersey_number": null,
+        "height": null,
+        "weight": 210,
+        "bmi": null,
+        "body_type": null,
+        "home_state": "GA",
+        "experience_score": null,
+        "total_production": 69.14,
+        "avg_production": 17.285
+      },
+      {
+        "name_display": "JaCobian Morgan",
+        "player_key": "swacjsu25100029",
+        "team": "swacjsu",
+        "par": 34.11,
+        "games_played": 3,
+        "position": "QB",
+        "class_year": "Gr.",
+        "transfer_tier": "FBS",
+        "jersey_number": 15,
+        "height": 76,
+        "weight": 228,
+        "bmi": 27.8,
+        "body_type": "Heavy",
+        "home_state": "MS",
+        "experience_score": 4.5,
+        "total_production": 67.59,
+        "avg_production": 22.53
+      },
+      {
+        "name_display": "Te'Sean Smoot",
+        "player_key": "swacasu25100017",
+        "team": "swacasu",
+        "par": 25.17,
+        "games_played": 5,
+        "position": "QB",
+        "class_year": "Fr.",
+        "transfer_tier": "FCS",
+        "jersey_number": 8,
+        "height": 72,
+        "weight": 177,
+        "bmi": 24.0,
+        "body_type": null,
+        "home_state": "OH",
+        "experience_score": 1.5,
+        "total_production": 58.65,
+        "avg_production": 11.73
+      }
+    ],
+    "RB": [
+      {
+        "name_display": "Jordan Smith",
+        "player_key": "meacscsu25100011",
+        "team": "meacscsu",
+        "par": 97.565,
+        "games_played": 7,
+        "position": "RB",
+        "class_year": "Gr.",
+        "transfer_tier": "HS",
+        "jersey_number": 5,
+        "height": 71,
+        "weight": 180,
+        "bmi": 25.1,
+        "body_type": "Average",
+        "home_state": "SC",
+        "experience_score": 4.5,
+        "total_production": 101.01,
+        "avg_production": 14.43
+      },
+      {
+        "name_display": "Marcus Harris II",
+        "player_key": "swacasu25ESPN00002",
+        "team": "swacasu",
+        "par": 56.315,
+        "games_played": 9,
+        "position": "RB",
+        "class_year": null,
+        "transfer_tier": null,
+        "jersey_number": null,
+        "height": null,
+        "weight": 233,
+        "bmi": null,
+        "body_type": null,
+        "home_state": "MS",
+        "experience_score": null,
+        "total_production": 59.76,
+        "avg_production": 6.64
+      },
+      {
+        "name_display": "Andre Dennis",
+        "player_key": "swacpvamu25100011",
+        "team": "swacpvamu",
+        "par": 40.715,
+        "games_played": 7,
+        "position": "RB",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 10,
+        "height": 73,
+        "weight": 195,
+        "bmi": 25.7,
+        "body_type": "Average",
+        "home_state": "TX",
+        "experience_score": 4.0,
+        "total_production": 44.16,
+        "avg_production": 6.3086
+      },
+      {
+        "name_display": "Chase Bingmon",
+        "player_key": "swacpvamu25100017",
+        "team": "swacpvamu",
+        "par": 37.805,
+        "games_played": 9,
+        "position": "RB",
+        "class_year": "Fr.",
+        "transfer_tier": "HS",
+        "jersey_number": 20,
+        "height": 69,
+        "weight": 185,
+        "bmi": 27.3,
+        "body_type": "Heavy",
+        "home_state": "TX",
+        "experience_score": 1.5,
+        "total_production": 41.25,
+        "avg_production": 4.5833
+      },
+      {
+        "name_display": "Jamarie Hostzclaw",
+        "player_key": "swacasu25100005",
+        "team": "swacasu",
+        "par": 36.005,
+        "games_played": 9,
+        "position": "RB",
+        "class_year": "So.",
+        "transfer_tier": "HS",
+        "jersey_number": 2,
+        "height": 68,
+        "weight": 183,
+        "bmi": 27.8,
+        "body_type": null,
+        "home_state": "FL",
+        "experience_score": 2.0,
+        "total_production": 39.45,
+        "avg_production": 4.3833
+      },
+      {
+        "name_display": "Lamagea McDowell",
+        "player_key": "swacpvamu25100021",
+        "team": "swacpvamu",
+        "par": 32.795,
+        "games_played": 9,
+        "position": "RB",
+        "class_year": "Gr.",
+        "transfer_tier": "D2/D3/NAIA",
+        "jersey_number": 23,
+        "height": 74,
+        "weight": 220,
+        "bmi": 28.2,
+        "body_type": "Heavy",
+        "home_state": "NC",
+        "experience_score": 4.5,
+        "total_production": 36.24,
+        "avg_production": 4.0267
+      },
+      {
+        "name_display": "Chris Mosley",
+        "player_key": "meacnccu25100003",
+        "team": "meacnccu",
+        "par": 29.885,
+        "games_played": 6,
+        "position": "RB",
+        "class_year": "Sr.",
+        "transfer_tier": "JUCO",
+        "jersey_number": 1,
+        "height": 71,
+        "weight": 180,
+        "bmi": 25.1,
+        "body_type": "Average",
+        "home_state": "TX",
+        "experience_score": 4.5,
+        "total_production": 33.33,
+        "avg_production": 5.555
+      },
+      {
+        "name_display": "Ja'Naylon Dupree",
+        "player_key": "swacjsu25100005",
+        "team": "swacjsu",
+        "par": 25.925,
+        "games_played": 4,
+        "position": "RB",
+        "class_year": "Sr.",
+        "transfer_tier": "JUCO",
+        "jersey_number": 2,
+        "height": 68,
+        "weight": 162,
+        "bmi": 24.6,
+        "body_type": "Average",
+        "home_state": "MS",
+        "experience_score": 4.0,
+        "total_production": 29.37,
+        "avg_production": 7.3425
+      },
+      {
+        "name_display": "Javon Ross",
+        "player_key": "swacbcu25100008",
+        "team": "swacbcu",
+        "par": 23.945,
+        "games_played": 4,
+        "position": "RB",
+        "class_year": "So.",
+        "transfer_tier": null,
+        "jersey_number": 5,
+        "height": 70,
+        "weight": 165,
+        "bmi": 23.7,
+        "body_type": "Average",
+        "home_state": "FL",
+        "experience_score": 2.0,
+        "total_production": 27.39,
+        "avg_production": 6.8475
+      },
+      {
+        "name_display": "Karl Ligon",
+        "player_key": "swacasu25100008",
+        "team": "swacasu",
+        "par": 23.855,
+        "games_played": 8,
+        "position": "RB",
+        "class_year": "Jr.",
+        "transfer_tier": "FCS",
+        "jersey_number": 4,
+        "height": 70,
+        "weight": 165,
+        "bmi": 23.7,
+        "body_type": null,
+        "home_state": "AL",
+        "experience_score": 3.0,
+        "total_production": 27.3,
+        "avg_production": 3.4125
+      }
+    ],
+    "WR": [
+      {
+        "name_display": "Jyzaiah Rockwell",
+        "player_key": "swacpvamu25ESPN00006",
+        "team": "swacpvamu",
+        "par": 64.32,
+        "games_played": 10,
+        "position": "WR",
+        "class_year": null,
+        "transfer_tier": null,
+        "jersey_number": null,
+        "height": null,
+        "weight": 214,
+        "bmi": null,
+        "body_type": null,
+        "home_state": "TX",
+        "experience_score": null,
+        "total_production": 66.72,
+        "avg_production": 6.672
+      },
+      {
+        "name_display": "Detrick Jones",
+        "player_key": "swacasu25100001",
+        "team": "swacasu",
+        "par": 51.66,
+        "games_played": 9,
+        "position": "WR",
+        "class_year": "Fr.",
+        "transfer_tier": "HS",
+        "jersey_number": 0,
+        "height": 69,
+        "weight": 175,
+        "bmi": 25.8,
+        "body_type": null,
+        "home_state": "AL",
+        "experience_score": 1.5,
+        "total_production": 54.06,
+        "avg_production": 6.0067
+      },
+      {
+        "name_display": "Chauncey Spikes",
+        "player_key": "meacnccu25100002",
+        "team": "meacnccu",
+        "par": 45.9,
+        "games_played": 7,
+        "position": "WR",
+        "class_year": "Sr.",
+        "transfer_tier": null,
+        "jersey_number": 0,
+        "height": 74,
+        "weight": 210,
+        "bmi": 27.0,
+        "body_type": "Heavy",
+        "home_state": "MD",
+        "experience_score": 4.0,
+        "total_production": 48.3,
+        "avg_production": 6.9
+      },
+      {
+        "name_display": "Franck Pierre",
+        "player_key": "swacaamu25100005",
+        "team": "swacaamu",
+        "par": 40.23,
+        "games_played": 9,
+        "position": "WR",
+        "class_year": "Jr.",
+        "transfer_tier": "D2/D3/NAIA",
+        "jersey_number": 2,
+        "height": 74,
+        "weight": 207,
+        "bmi": 26.6,
+        "body_type": "Heavy",
+        "home_state": "FL",
+        "experience_score": 3.5,
+        "total_production": 42.63,
+        "avg_production": 4.7367
+      },
+      {
+        "name_display": "Nigel Johnson",
+        "player_key": "meacscsu25100002",
+        "team": "meacscsu",
+        "par": 36.51,
+        "games_played": 7,
+        "position": "WR",
+        "class_year": "Gr.",
+        "transfer_tier": "FCS",
+        "jersey_number": 0,
+        "height": 69,
+        "weight": 175,
+        "bmi": 25.8,
+        "body_type": "Average",
+        "home_state": "LA",
+        "experience_score": 4.5,
+        "total_production": 38.91,
+        "avg_production": 5.5586
+      },
+      {
+        "name_display": "Daveon Walker",
+        "player_key": "swacaamu25100013",
+        "team": "swacaamu",
+        "par": 35.28,
+        "games_played": 8,
+        "position": "WR",
+        "class_year": "So.",
+        "transfer_tier": "FBS",
+        "jersey_number": 6,
+        "height": 74,
+        "weight": 188,
+        "bmi": 24.1,
+        "body_type": "Average",
+        "home_state": "GA",
+        "experience_score": 2.5,
+        "total_production": 37.68,
+        "avg_production": 4.71
+      },
+      {
+        "name_display": "Cameron Nelson",
+        "player_key": "swacmvsu25100002",
+        "team": "swacmvsu",
+        "par": 31.89,
+        "games_played": 8,
+        "position": "WR",
+        "class_year": "Sr.",
+        "transfer_tier": null,
+        "jersey_number": 1,
+        "height": 73,
+        "weight": null,
+        "bmi": null,
+        "body_type": null,
+        "home_state": "TX",
+        "experience_score": 4.0,
+        "total_production": 34.29,
+        "avg_production": 4.2862
+      },
+      {
+        "name_display": "Quentin McCall",
+        "player_key": "meacnccu25100006",
+        "team": "meacnccu",
+        "par": 30.41,
+        "games_played": 7,
+        "position": "WR",
+        "class_year": "Sr.",
+        "transfer_tier": "FBS",
+        "jersey_number": 3,
+        "height": 76,
+        "weight": 235,
+        "bmi": 28.6,
+        "body_type": "Average",
+        "home_state": "GA",
+        "experience_score": 4.5,
+        "total_production": 32.81,
+        "avg_production": 4.6871
+      },
+      {
+        "name_display": "Rodny Ojo",
+        "player_key": "swacpvamu25100010",
+        "team": "swacpvamu",
+        "par": 29.52,
+        "games_played": 10,
+        "position": "WR",
+        "class_year": "So.",
+        "transfer_tier": "HS",
+        "jersey_number": 9,
+        "height": 74,
+        "weight": 175,
+        "bmi": 22.5,
+        "body_type": "Lean",
+        "home_state": "TX",
+        "experience_score": 2.0,
+        "total_production": 31.92,
+        "avg_production": 3.192
+      },
+      {
+        "name_display": "Maleek Huggins",
+        "player_key": "swacbcu25100014",
+        "team": "swacbcu",
+        "par": 29.43,
+        "games_played": 4,
+        "position": "WR",
+        "class_year": "Jr.",
+        "transfer_tier": "FCS",
+        "jersey_number": 9,
+        "height": 71,
+        "weight": 180,
+        "bmi": 25.1,
+        "body_type": "Average",
+        "home_state": "FL",
+        "experience_score": 3.0,
+        "total_production": 31.83,
+        "avg_production": 7.9575
+      }
+    ],
+    "DEF": [
+      {
+        "name_display": "Thomas Johnson",
+        "player_key": "meacnccu25100014",
+        "team": "meacnccu",
+        "par": 97.89,
+        "games_played": 7,
+        "position": "DEF",
+        "class_year": "Jr.",
+        "transfer_tier": null,
+        "jersey_number": 10,
+        "height": 75,
+        "weight": 255,
+        "bmi": 31.9,
+        "body_type": "Average",
+        "home_state": "CA",
+        "experience_score": 3.5,
+        "total_production": 100.055,
+        "avg_production": 14.2936
+      },
+      {
+        "name_display": "Jorhdan Brown",
+        "player_key": "swacaamu25100004",
+        "team": "swacaamu",
+        "par": 71.265,
+        "games_played": 7,
+        "position": "DEF",
+        "class_year": "So.",
+        "transfer_tier": "FCS",
+        "jersey_number": 2,
+        "height": 72,
+        "weight": 188,
+        "bmi": 25.5,
+        "body_type": "Average",
+        "home_state": "SC",
+        "experience_score": 2.0,
+        "total_production": 73.43,
+        "avg_production": 10.49
+      },
+      {
+        "name_display": "Jalen Wright",
+        "player_key": "swacaamu25100009",
+        "team": "swacaamu",
+        "par": 57.38,
+        "games_played": 9,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "FBS",
+        "jersey_number": 4,
+        "height": 72,
+        "weight": 176,
+        "bmi": 23.9,
+        "body_type": "Average",
+        "home_state": "IN",
+        "experience_score": 4.5,
+        "total_production": 59.545,
+        "avg_production": 6.6161
+      },
+      {
+        "name_display": "Sterling Roberts",
+        "player_key": "swacpvamu25100003",
+        "team": "swacpvamu",
+        "par": 56.795,
+        "games_played": 10,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 3,
+        "height": 73,
+        "weight": 200,
+        "bmi": 26.4,
+        "body_type": "Average",
+        "home_state": "FL",
+        "experience_score": 4.5,
+        "total_production": 58.96,
+        "avg_production": 5.896
+      },
+      {
+        "name_display": "Kennedy Parker",
+        "player_key": "swacpvamu25100008",
+        "team": "swacpvamu",
+        "par": 54.265,
+        "games_played": 10,
+        "position": "DEF",
+        "class_year": "Gr.",
+        "transfer_tier": "HS",
+        "jersey_number": 7,
+        "height": 73,
+        "weight": 210,
+        "bmi": 27.7,
+        "body_type": "Average",
+        "home_state": "GA",
+        "experience_score": 4.5,
+        "total_production": 56.43,
+        "avg_production": 5.643
+      },
+      {
+        "name_display": "Malik Gucake",
+        "player_key": "swacpvamu25100007",
+        "team": "swacpvamu",
+        "par": 49.845,
+        "games_played": 10,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 6,
+        "height": 75,
+        "weight": 250,
+        "bmi": 31.2,
+        "body_type": "Average",
+        "home_state": "CA",
+        "experience_score": 4.0,
+        "total_production": 52.01,
+        "avg_production": 5.201
+      },
+      {
+        "name_display": "Travor Randle",
+        "player_key": "swacpvamu25100005",
+        "team": "swacpvamu",
+        "par": 48.665,
+        "games_played": 10,
+        "position": "DEF",
+        "class_year": "Gr.",
+        "transfer_tier": "HS",
+        "jersey_number": 4,
+        "height": 70,
+        "weight": 205,
+        "bmi": 29.4,
+        "body_type": "Very Heavy",
+        "home_state": "MS",
+        "experience_score": 4.5,
+        "total_production": 50.83,
+        "avg_production": 5.083
+      },
+      {
+        "name_display": "Kamren Amao",
+        "player_key": "swacpvamu25100020",
+        "team": "swacpvamu",
+        "par": 48.16,
+        "games_played": 9,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 23,
+        "height": 73,
+        "weight": 200,
+        "bmi": 26.4,
+        "body_type": "Heavy",
+        "home_state": "TX",
+        "experience_score": 4.0,
+        "total_production": 50.325,
+        "avg_production": 5.5917
+      },
+      {
+        "name_display": "Zac Yassine",
+        "player_key": "swacsu25100088",
+        "team": "swacsu",
+        "par": 46.645,
+        "games_played": 4,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 91,
+        "height": 73,
+        "weight": 285,
+        "bmi": 37.6,
+        "body_type": "Very Heavy",
+        "home_state": "TX",
+        "experience_score": 4.5,
+        "total_production": 48.81,
+        "avg_production": 12.2025
+      },
+      {
+        "name_display": "Jelani Vassell",
+        "player_key": "meacnccu25100035",
+        "team": "meacnccu",
+        "par": 45.08,
+        "games_played": 6,
+        "position": "DEF",
+        "class_year": "Sr.",
+        "transfer_tier": "HS",
+        "jersey_number": 28,
+        "height": 71,
+        "weight": 180,
+        "bmi": 25.1,
+        "body_type": "Average",
+        "home_state": "FL",
+        "experience_score": 4.5,
+        "total_production": 47.245,
+        "avg_production": 7.8742
+      }
+    ]
+  }
+}

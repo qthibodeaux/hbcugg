@@ -1,0 +1,1960 @@
+{
+ "season": 2026,
+ "generated_at": "2026-11-07T20:01:41-06:00",
+ "games_through": {
+  "week": 10,
+  "label": "Week 10"
+ },
+ "previous_week": 9,
+ "weeks": [
+  0,
+  1,
+  2,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "scope": "Games between two of the 18",
+ "definition": "3rd and 7 or more to go. Converted = the offense kept the ball with a new set of downs or scored a touchdown (a penalty first down counts). Plays wiped by a penalty are not attempts.",
+ "offense": {
+  "label": "3rd & long conversion rate",
+  "better": "higher",
+  "league": {
+   "attempts": 696,
+   "conversions": 173,
+   "rate_pct": 24.9
+  },
+  "rows": [
+   {
+    "team_id": "swacalc",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 43,
+    "conversions": 20,
+    "rate_pct": 46.5,
+    "all_third_down": {
+     "attempts": 80,
+     "conversions": 39,
+     "rate_pct": 48.8
+    },
+    "rank": 1,
+    "tied": false,
+    "rank_prev_week": 1
+   },
+   {
+    "team_id": "swacfamu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 56,
+    "conversions": 17,
+    "rate_pct": 30.4,
+    "all_third_down": {
+     "attempts": 89,
+     "conversions": 24,
+     "rate_pct": 27.0
+    },
+    "rank": 2,
+    "tied": false,
+    "rank_prev_week": 3
+   },
+   {
+    "team_id": "swacgsu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 40,
+    "conversions": 12,
+    "rate_pct": 30.0,
+    "all_third_down": {
+     "attempts": 83,
+     "conversions": 35,
+     "rate_pct": 42.2
+    },
+    "rank": 3,
+    "tied": false,
+    "rank_prev_week": 2
+   },
+   {
+    "team_id": "swacaamu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 45,
+    "conversions": 13,
+    "rate_pct": 28.9,
+    "all_third_down": {
+     "attempts": 83,
+     "conversions": 35,
+     "rate_pct": 42.2
+    },
+    "rank": 4,
+    "tied": false,
+    "rank_prev_week": 4
+   },
+   {
+    "team_id": "swactsu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 49,
+    "conversions": 14,
+    "rate_pct": 28.6,
+    "all_third_down": {
+     "attempts": 90,
+     "conversions": 36,
+     "rate_pct": 40.0
+    },
+    "rank": 5,
+    "tied": true,
+    "rank_prev_week": 8
+   },
+   {
+    "team_id": "swacuapb",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 35,
+    "conversions": 10,
+    "rate_pct": 28.6,
+    "all_third_down": {
+     "attempts": 74,
+     "conversions": 33,
+     "rate_pct": 44.6
+    },
+    "rank": 5,
+    "tied": true,
+    "rank_prev_week": 5
+   },
+   {
+    "team_id": "swacpvamu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 39,
+    "conversions": 11,
+    "rate_pct": 28.2,
+    "all_third_down": {
+     "attempts": 74,
+     "conversions": 30,
+     "rate_pct": 40.5
+    },
+    "rank": 7,
+    "tied": false,
+    "rank_prev_week": 8
+   },
+   {
+    "team_id": "swacsu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 47,
+    "conversions": 13,
+    "rate_pct": 27.7,
+    "all_third_down": {
+     "attempts": 106,
+     "conversions": 50,
+     "rate_pct": 47.2
+    },
+    "rank": 8,
+    "tied": false,
+    "rank_prev_week": 7
+   },
+   {
+    "team_id": "swacjsu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 41,
+    "conversions": 10,
+    "rate_pct": 24.4,
+    "all_third_down": {
+     "attempts": 85,
+     "conversions": 33,
+     "rate_pct": 38.8
+    },
+    "rank": 9,
+    "tied": false,
+    "rank_prev_week": 11
+   },
+   {
+    "team_id": "meacnsu",
+    "conference": "meac",
+    "games": 3,
+    "attempts": 21,
+    "conversions": 5,
+    "rate_pct": 23.8,
+    "all_third_down": {
+     "attempts": 37,
+     "conversions": 13,
+     "rate_pct": 35.1
+    },
+    "rank": 10,
+    "tied": false,
+    "rank_prev_week": 6
+   },
+   {
+    "team_id": "meachu",
+    "conference": "meac",
+    "games": 4,
+    "attempts": 35,
+    "conversions": 8,
+    "rate_pct": 22.9,
+    "all_third_down": {
+     "attempts": 61,
+     "conversions": 19,
+     "rate_pct": 31.1
+    },
+    "rank": 11,
+    "tied": false,
+    "rank_prev_week": 13
+   },
+   {
+    "team_id": "meacscsu",
+    "conference": "meac",
+    "games": 5,
+    "attempts": 32,
+    "conversions": 7,
+    "rate_pct": 21.9,
+    "all_third_down": {
+     "attempts": 63,
+     "conversions": 22,
+     "rate_pct": 34.9
+    },
+    "rank": 12,
+    "tied": false,
+    "rank_prev_week": 10
+   },
+   {
+    "team_id": "swacasu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 30,
+    "conversions": 6,
+    "rate_pct": 20.0,
+    "all_third_down": {
+     "attempts": 73,
+     "conversions": 25,
+     "rate_pct": 34.2
+    },
+    "rank": 13,
+    "tied": false,
+    "rank_prev_week": 15
+   },
+   {
+    "team_id": "swacbcu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 51,
+    "conversions": 10,
+    "rate_pct": 19.6,
+    "all_third_down": {
+     "attempts": 106,
+     "conversions": 39,
+     "rate_pct": 36.8
+    },
+    "rank": 14,
+    "tied": false,
+    "rank_prev_week": 12
+   },
+   {
+    "team_id": "meacdsu",
+    "conference": "meac",
+    "games": 3,
+    "attempts": 25,
+    "conversions": 4,
+    "rate_pct": 16.0,
+    "all_third_down": {
+     "attempts": 36,
+     "conversions": 9,
+     "rate_pct": 25.0
+    },
+    "rank": 15,
+    "tied": false,
+    "rank_prev_week": 18
+   },
+   {
+    "team_id": "swacmvsu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 55,
+    "conversions": 8,
+    "rate_pct": 14.5,
+    "all_third_down": {
+     "attempts": 87,
+     "conversions": 28,
+     "rate_pct": 32.2
+    },
+    "rank": 16,
+    "tied": false,
+    "rank_prev_week": 14
+   },
+   {
+    "team_id": "meacmsu",
+    "conference": "meac",
+    "games": 3,
+    "attempts": 27,
+    "conversions": 3,
+    "rate_pct": 11.1,
+    "all_third_down": {
+     "attempts": 41,
+     "conversions": 10,
+     "rate_pct": 24.4
+    },
+    "rank": 17,
+    "tied": false,
+    "rank_prev_week": 16
+   },
+   {
+    "team_id": "meacnccu",
+    "conference": "meac",
+    "games": 4,
+    "attempts": 25,
+    "conversions": 2,
+    "rate_pct": 8.0,
+    "all_third_down": {
+     "attempts": 52,
+     "conversions": 20,
+     "rate_pct": 38.5
+    },
+    "rank": 18,
+    "tied": false,
+    "rank_prev_week": 17
+   }
+  ]
+ },
+ "defense": {
+  "label": "3rd & long conversions conceded",
+  "better": "lower",
+  "league": {
+   "attempts": 696,
+   "conversions": 173,
+   "rate_pct": 24.9
+  },
+  "rows": [
+   {
+    "team_id": "meacnccu",
+    "conference": "meac",
+    "games": 4,
+    "attempts": 27,
+    "conversions": 4,
+    "rate_pct": 14.8,
+    "all_third_down": {
+     "attempts": 43,
+     "conversions": 12,
+     "rate_pct": 27.9
+    },
+    "rank": 1,
+    "tied": false,
+    "rank_prev_week": 3
+   },
+   {
+    "team_id": "meacnsu",
+    "conference": "meac",
+    "games": 3,
+    "attempts": 20,
+    "conversions": 3,
+    "rate_pct": 15.0,
+    "all_third_down": {
+     "attempts": 41,
+     "conversions": 15,
+     "rate_pct": 36.6
+    },
+    "rank": 2,
+    "tied": false,
+    "rank_prev_week": 1
+   },
+   {
+    "team_id": "meacdsu",
+    "conference": "meac",
+    "games": 3,
+    "attempts": 18,
+    "conversions": 3,
+    "rate_pct": 16.7,
+    "all_third_down": {
+     "attempts": 37,
+     "conversions": 12,
+     "rate_pct": 32.4
+    },
+    "rank": 3,
+    "tied": false,
+    "rank_prev_week": 11
+   },
+   {
+    "team_id": "meachu",
+    "conference": "meac",
+    "games": 4,
+    "attempts": 32,
+    "conversions": 6,
+    "rate_pct": 18.8,
+    "all_third_down": {
+     "attempts": 52,
+     "conversions": 14,
+     "rate_pct": 26.9
+    },
+    "rank": 4,
+    "tied": false,
+    "rank_prev_week": 4
+   },
+   {
+    "team_id": "swacpvamu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 47,
+    "conversions": 10,
+    "rate_pct": 21.3,
+    "all_third_down": {
+     "attempts": 88,
+     "conversions": 35,
+     "rate_pct": 39.8
+    },
+    "rank": 5,
+    "tied": false,
+    "rank_prev_week": 8
+   },
+   {
+    "team_id": "meacscsu",
+    "conference": "meac",
+    "games": 5,
+    "attempts": 49,
+    "conversions": 11,
+    "rate_pct": 22.4,
+    "all_third_down": {
+     "attempts": 71,
+     "conversions": 20,
+     "rate_pct": 28.2
+    },
+    "rank": 6,
+    "tied": false,
+    "rank_prev_week": 5
+   },
+   {
+    "team_id": "swacaamu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 52,
+    "conversions": 12,
+    "rate_pct": 23.1,
+    "all_third_down": {
+     "attempts": 104,
+     "conversions": 40,
+     "rate_pct": 38.5
+    },
+    "rank": 7,
+    "tied": false,
+    "rank_prev_week": 5
+   },
+   {
+    "team_id": "swacbcu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 42,
+    "conversions": 10,
+    "rate_pct": 23.8,
+    "all_third_down": {
+     "attempts": 80,
+     "conversions": 30,
+     "rate_pct": 37.5
+    },
+    "rank": 8,
+    "tied": false,
+    "rank_prev_week": 9
+   },
+   {
+    "team_id": "swacuapb",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 45,
+    "conversions": 11,
+    "rate_pct": 24.4,
+    "all_third_down": {
+     "attempts": 86,
+     "conversions": 33,
+     "rate_pct": 38.4
+    },
+    "rank": 9,
+    "tied": false,
+    "rank_prev_week": 14
+   },
+   {
+    "team_id": "meacmsu",
+    "conference": "meac",
+    "games": 3,
+    "attempts": 24,
+    "conversions": 6,
+    "rate_pct": 25.0,
+    "all_third_down": {
+     "attempts": 43,
+     "conversions": 20,
+     "rate_pct": 46.5
+    },
+    "rank": 10,
+    "tied": false,
+    "rank_prev_week": 2
+   },
+   {
+    "team_id": "swacsu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 46,
+    "conversions": 12,
+    "rate_pct": 26.1,
+    "all_third_down": {
+     "attempts": 81,
+     "conversions": 26,
+     "rate_pct": 32.1
+    },
+    "rank": 11,
+    "tied": false,
+    "rank_prev_week": 12
+   },
+   {
+    "team_id": "swacalc",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 42,
+    "conversions": 11,
+    "rate_pct": 26.2,
+    "all_third_down": {
+     "attempts": 78,
+     "conversions": 32,
+     "rate_pct": 41.0
+    },
+    "rank": 12,
+    "tied": false,
+    "rank_prev_week": 17
+   },
+   {
+    "team_id": "swacasu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 53,
+    "conversions": 14,
+    "rate_pct": 26.4,
+    "all_third_down": {
+     "attempts": 93,
+     "conversions": 35,
+     "rate_pct": 37.6
+    },
+    "rank": 13,
+    "tied": false,
+    "rank_prev_week": 7
+   },
+   {
+    "team_id": "swacgsu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 33,
+    "conversions": 9,
+    "rate_pct": 27.3,
+    "all_third_down": {
+     "attempts": 69,
+     "conversions": 28,
+     "rate_pct": 40.6
+    },
+    "rank": 14,
+    "tied": false,
+    "rank_prev_week": 15
+   },
+   {
+    "team_id": "swactsu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 54,
+    "conversions": 15,
+    "rate_pct": 27.8,
+    "all_third_down": {
+     "attempts": 100,
+     "conversions": 43,
+     "rate_pct": 43.0
+    },
+    "rank": 15,
+    "tied": false,
+    "rank_prev_week": 10
+   },
+   {
+    "team_id": "swacjsu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 42,
+    "conversions": 13,
+    "rate_pct": 31.0,
+    "all_third_down": {
+     "attempts": 90,
+     "conversions": 36,
+     "rate_pct": 40.0
+    },
+    "rank": 16,
+    "tied": false,
+    "rank_prev_week": 18
+   },
+   {
+    "team_id": "swacmvsu",
+    "conference": "swac",
+    "games": 6,
+    "attempts": 35,
+    "conversions": 11,
+    "rate_pct": 31.4,
+    "all_third_down": {
+     "attempts": 71,
+     "conversions": 25,
+     "rate_pct": 35.2
+    },
+    "rank": 17,
+    "tied": false,
+    "rank_prev_week": 16
+   },
+   {
+    "team_id": "swacfamu",
+    "conference": "swac",
+    "games": 7,
+    "attempts": 35,
+    "conversions": 12,
+    "rate_pct": 34.3,
+    "all_third_down": {
+     "attempts": 93,
+     "conversions": 44,
+     "rate_pct": 47.3
+    },
+    "rank": 18,
+    "tied": false,
+    "rank_prev_week": 13
+   }
+  ]
+ },
+ "no_games": [],
+ "game_log": {
+  "meacdsu": [
+   {
+    "week": 8,
+    "game_path_id": "nccudsu26",
+    "opponent_team_id": "meacnccu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 8,
+    "offense_third_conversions": 1,
+    "defense_long_attempts": 3,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 9,
+    "game_path_id": "dsunsu26",
+    "opponent_team_id": "meacnsu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 1,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 10,
+    "game_path_id": "msudsu26",
+    "opponent_team_id": "meacmsu",
+    "offense_long_attempts": 12,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 2
+   }
+  ],
+  "meachu": [
+   {
+    "week": 0,
+    "game_path_id": "huaamu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 18,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 8,
+    "game_path_id": "humsu26",
+    "opponent_team_id": "meacmsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 9,
+    "game_path_id": "hunccu26",
+    "opponent_team_id": "meacnccu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 10,
+    "game_path_id": "scsuhu26",
+    "opponent_team_id": "meacscsu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 2
+   }
+  ],
+  "meacmsu": [
+   {
+    "week": 8,
+    "game_path_id": "humsu26",
+    "opponent_team_id": "meachu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 9,
+    "game_path_id": "scsumsu26",
+    "opponent_team_id": "meacscsu",
+    "offense_long_attempts": 11,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 10,
+    "game_path_id": "msudsu26",
+    "opponent_team_id": "meacdsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 12,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 7
+   }
+  ],
+  "meacnccu": [
+   {
+    "week": 0,
+    "game_path_id": "nccutsu26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 8,
+    "game_path_id": "nccudsu26",
+    "opponent_team_id": "meacdsu",
+    "offense_long_attempts": 3,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 8,
+    "defense_third_conversions": 1
+   },
+   {
+    "week": 9,
+    "game_path_id": "hunccu26",
+    "opponent_team_id": "meachu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 2
+   },
+   {
+    "week": 10,
+    "game_path_id": "nccunsu26",
+    "opponent_team_id": "meacnsu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 4
+   }
+  ],
+  "meacnsu": [
+   {
+    "week": 8,
+    "game_path_id": "nsuscsu26",
+    "opponent_team_id": "meacscsu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 18,
+    "defense_third_conversions": 8
+   },
+   {
+    "week": 9,
+    "game_path_id": "dsunsu26",
+    "opponent_team_id": "meacdsu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 1
+   },
+   {
+    "week": 10,
+    "game_path_id": "nccunsu26",
+    "opponent_team_id": "meacnccu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 6
+   }
+  ],
+  "meacscsu": [
+   {
+    "week": 1,
+    "game_path_id": "scsufamu26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 8,
+    "offense_third_conversions": 1,
+    "defense_long_attempts": 13,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 17,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 4,
+    "game_path_id": "scsubcu26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 8,
+    "game_path_id": "nsuscsu26",
+    "opponent_team_id": "meacnsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 18,
+    "offense_third_conversions": 8,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 9,
+    "game_path_id": "scsumsu26",
+    "opponent_team_id": "meacmsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 11,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 10,
+    "game_path_id": "scsuhu26",
+    "opponent_team_id": "meachu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 4
+   }
+  ],
+  "swacaamu": [
+   {
+    "week": 0,
+    "game_path_id": "huaamu26",
+    "opponent_team_id": "meachu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 18,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 4,
+    "game_path_id": "aamufamu26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 2
+   },
+   {
+    "week": 5,
+    "game_path_id": "aamujsu26",
+    "opponent_team_id": "swacjsu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 9,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 20,
+    "defense_third_conversions": 10
+   },
+   {
+    "week": 6,
+    "game_path_id": "bcuaamu26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 9,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 7,
+    "game_path_id": "gsuaamu26",
+    "opponent_team_id": "swacgsu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 2
+   },
+   {
+    "week": 9,
+    "game_path_id": "asuaamu26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 1,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 10,
+    "game_path_id": "aamupvamu26",
+    "opponent_team_id": "swacpvamu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 10
+   }
+  ],
+  "swacalc": [
+   {
+    "week": 2,
+    "game_path_id": "uapbalc26",
+    "opponent_team_id": "swacuapb",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 4,
+    "game_path_id": "tsualc26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 5,
+    "offense_third_attempts": 19,
+    "offense_third_conversions": 11,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 18,
+    "defense_third_conversions": 11
+   },
+   {
+    "week": 5,
+    "game_path_id": "alcgsu26",
+    "opponent_team_id": "swacgsu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 5,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 7,
+    "game_path_id": "alcpvamu26",
+    "opponent_team_id": "swacpvamu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 9,
+    "game_path_id": "alcmvsu26",
+    "opponent_team_id": "swacmvsu",
+    "offense_long_attempts": 2,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 10,
+    "game_path_id": "famualc26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 8,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 2
+   }
+  ],
+  "swacasu": [
+   {
+    "week": 0,
+    "game_path_id": "asusu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 4,
+    "game_path_id": "mvsuasu26",
+    "opponent_team_id": "swacmvsu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 1,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 5,
+    "game_path_id": "asubcu26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 6,
+    "game_path_id": "famuasu26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 9,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 7,
+    "game_path_id": "asuuapb26",
+    "opponent_team_id": "swacuapb",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 9,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 9,
+    "game_path_id": "asuaamu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 1,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 10,
+    "game_path_id": "asutsu26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 9,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 5
+   }
+  ],
+  "swacbcu": [
+   {
+    "week": 4,
+    "game_path_id": "scsubcu26",
+    "opponent_team_id": "meacscsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 5,
+    "game_path_id": "asubcu26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 6,
+    "game_path_id": "bcuaamu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 9,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 7,
+    "game_path_id": "bcumvsu26",
+    "opponent_team_id": "swacmvsu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 8,
+    "game_path_id": "jsubcu26",
+    "opponent_team_id": "swacjsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 9,
+    "game_path_id": "bcuuapb26",
+    "opponent_team_id": "swacuapb",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 18,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 10,
+    "game_path_id": "bcusu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 5
+   }
+  ],
+  "swacfamu": [
+   {
+    "week": 1,
+    "game_path_id": "scsufamu26",
+    "opponent_team_id": "meacscsu",
+    "offense_long_attempts": 13,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 17,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 8,
+    "defense_third_conversions": 1
+   },
+   {
+    "week": 4,
+    "game_path_id": "aamufamu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 6,
+    "game_path_id": "famuasu26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 9,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 7,
+    "game_path_id": "famujsu26",
+    "opponent_team_id": "swacjsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 19,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 8,
+    "game_path_id": "uapbfamu26",
+    "opponent_team_id": "swacuapb",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 8
+   },
+   {
+    "week": 9,
+    "game_path_id": "sufamu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 2,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 11
+   },
+   {
+    "week": 10,
+    "game_path_id": "famualc26",
+    "opponent_team_id": "swacalc",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 8
+   }
+  ],
+  "swacgsu": [
+   {
+    "week": 4,
+    "game_path_id": "pvamugsu26",
+    "opponent_team_id": "swacpvamu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 5,
+    "game_path_id": "alcgsu26",
+    "opponent_team_id": "swacalc",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 5,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 6,
+    "game_path_id": "jsugsu26",
+    "opponent_team_id": "swacjsu",
+    "offense_long_attempts": 1,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 7,
+    "game_path_id": "gsuaamu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 9,
+    "game_path_id": "gsutsu26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 18,
+    "offense_third_conversions": 8,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 10,
+    "game_path_id": "uapbgsu26",
+    "opponent_team_id": "swacuapb",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 2,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 4
+   }
+  ],
+  "swacjsu": [
+   {
+    "week": 4,
+    "game_path_id": "sujsu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 5,
+    "game_path_id": "aamujsu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 20,
+    "offense_third_conversions": 10,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 9
+   },
+   {
+    "week": 6,
+    "game_path_id": "jsugsu26",
+    "opponent_team_id": "swacgsu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 1,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 7,
+    "game_path_id": "famujsu26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 19,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 8,
+    "game_path_id": "jsubcu26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 10,
+    "game_path_id": "mvsujsu26",
+    "opponent_team_id": "swacmvsu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 3
+   }
+  ],
+  "swacmvsu": [
+   {
+    "week": 4,
+    "game_path_id": "mvsuasu26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 1
+   },
+   {
+    "week": 5,
+    "game_path_id": "pvamumvsu26",
+    "opponent_team_id": "swacpvamu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 6,
+    "game_path_id": "mvsutsu26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 13,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 2
+   },
+   {
+    "week": 7,
+    "game_path_id": "bcumvsu26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 13,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 15,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 9,
+    "game_path_id": "alcmvsu26",
+    "opponent_team_id": "swacalc",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 2,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 10,
+    "game_path_id": "mvsujsu26",
+    "opponent_team_id": "swacjsu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 3
+   }
+  ],
+  "swacpvamu": [
+   {
+    "week": 1,
+    "game_path_id": "tsupvamu26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 18,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 4,
+    "game_path_id": "pvamugsu26",
+    "opponent_team_id": "swacgsu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 5,
+    "game_path_id": "pvamumvsu26",
+    "opponent_team_id": "swacmvsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 6,
+    "game_path_id": "supvamu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 19,
+    "defense_third_conversions": 8
+   },
+   {
+    "week": 7,
+    "game_path_id": "alcpvamu26",
+    "opponent_team_id": "swacalc",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 10,
+    "game_path_id": "aamupvamu26",
+    "opponent_team_id": "swacaamu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 10,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 13,
+    "defense_third_conversions": 4
+   }
+  ],
+  "swacsu": [
+   {
+    "week": 0,
+    "game_path_id": "asusu26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 2
+   },
+   {
+    "week": 4,
+    "game_path_id": "sujsu26",
+    "opponent_team_id": "swacjsu",
+    "offense_long_attempts": 10,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 5,
+    "game_path_id": "uapbsu26",
+    "opponent_team_id": "swacuapb",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 17,
+    "offense_third_conversions": 9,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 6,
+    "game_path_id": "supvamu26",
+    "opponent_team_id": "swacpvamu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 19,
+    "offense_third_conversions": 8,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 8,
+    "game_path_id": "sutsu26",
+    "opponent_team_id": "swactsu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 3,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 11,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 9,
+    "game_path_id": "sufamu26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 2,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 15,
+    "offense_third_conversions": 11,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 10,
+    "game_path_id": "bcusu26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 5,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 1,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 4
+   }
+  ],
+  "swactsu": [
+   {
+    "week": 0,
+    "game_path_id": "nccutsu26",
+    "opponent_team_id": "meacnccu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 3,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 1,
+    "game_path_id": "tsupvamu26",
+    "opponent_team_id": "swacpvamu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 18,
+    "offense_third_conversions": 7,
+    "defense_long_attempts": 6,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 10,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 4,
+    "game_path_id": "tsualc26",
+    "opponent_team_id": "swacalc",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 18,
+    "offense_third_conversions": 11,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 5,
+    "defense_third_attempts": 19,
+    "defense_third_conversions": 11
+   },
+   {
+    "week": 6,
+    "game_path_id": "mvsutsu26",
+    "opponent_team_id": "swacmvsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 2,
+    "defense_long_attempts": 13,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 8,
+    "game_path_id": "sutsu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 3,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 6
+   },
+   {
+    "week": 9,
+    "game_path_id": "gsutsu26",
+    "opponent_team_id": "swacgsu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 3,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 18,
+    "defense_third_conversions": 8
+   },
+   {
+    "week": 10,
+    "game_path_id": "asutsu26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 9,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 5,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 9,
+    "defense_third_conversions": 4
+   }
+  ],
+  "swacuapb": [
+   {
+    "week": 2,
+    "game_path_id": "uapbalc26",
+    "opponent_team_id": "swacalc",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 12,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 8,
+    "defense_long_conversions": 3,
+    "defense_third_attempts": 14,
+    "defense_third_conversions": 5
+   },
+   {
+    "week": 5,
+    "game_path_id": "uapbsu26",
+    "opponent_team_id": "swacsu",
+    "offense_long_attempts": 7,
+    "offense_long_conversions": 4,
+    "offense_third_attempts": 10,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 9,
+    "defense_long_conversions": 4,
+    "defense_third_attempts": 17,
+    "defense_third_conversions": 9
+   },
+   {
+    "week": 7,
+    "game_path_id": "asuuapb26",
+    "opponent_team_id": "swacasu",
+    "offense_long_attempts": 8,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 16,
+    "offense_third_conversions": 6,
+    "defense_long_attempts": 4,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 9,
+    "defense_third_conversions": 4
+   },
+   {
+    "week": 8,
+    "game_path_id": "uapbfamu26",
+    "opponent_team_id": "swacfamu",
+    "offense_long_attempts": 4,
+    "offense_long_conversions": 1,
+    "offense_third_attempts": 14,
+    "offense_third_conversions": 8,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 12,
+    "defense_third_conversions": 3
+   },
+   {
+    "week": 9,
+    "game_path_id": "bcuuapb26",
+    "opponent_team_id": "swacbcu",
+    "offense_long_attempts": 6,
+    "offense_long_conversions": 2,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 5,
+    "defense_long_attempts": 10,
+    "defense_long_conversions": 2,
+    "defense_third_attempts": 18,
+    "defense_third_conversions": 7
+   },
+   {
+    "week": 10,
+    "game_path_id": "uapbgsu26",
+    "opponent_team_id": "swacgsu",
+    "offense_long_attempts": 2,
+    "offense_long_conversions": 0,
+    "offense_third_attempts": 11,
+    "offense_third_conversions": 4,
+    "defense_long_attempts": 7,
+    "defense_long_conversions": 0,
+    "defense_third_attempts": 16,
+    "defense_third_conversions": 5
+   }
+  ]
+ }
+}

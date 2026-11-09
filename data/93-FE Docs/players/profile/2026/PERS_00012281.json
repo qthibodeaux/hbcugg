@@ -1,0 +1,647 @@
+{
+  "person_id": "PERS_00012281",
+  "season": 2026,
+  "generated_at": "2026-11-07T19:51:13-06:00",
+  "as_of_week": 10,
+  "identity": {
+    "person_id": "PERS_00012281",
+    "first_name": "Dillon",
+    "last_name": "Compton",
+    "team_id": "swacsu",
+    "team_abbreviation": "SOU",
+    "conference": "SWAC",
+    "division": "West",
+    "jersey_number": 3,
+    "position": "Quarterback",
+    "position_group": "QB",
+    "raw_position": "QB",
+    "class_year": 1,
+    "class_label": "Freshman",
+    "height": 73,
+    "weight": 200,
+    "home_city": "Bunkie",
+    "home_state": "LA",
+    "is_in_state": true,
+    "previous_school": null,
+    "high_school": "Bunkie Hs",
+    "image_url": "https://gojagsports.com/images/2026/8/23/_3_Dillon_Compton_Pk0pN.JPG"
+  },
+  "rating": {
+    "metric": "PAR",
+    "available": true,
+    "value": -7.55,
+    "per_game": -0.37,
+    "games_played": 1,
+    "rank_in_position_group": 42,
+    "position_group_total": 55,
+    "conference_rank": 943,
+    "conference_total": 967,
+    "position_group_mean": 10.4
+  },
+  "season_totals": {
+    "par": -7.55,
+    "total_production": -0.37,
+    "avg_production": -0.37,
+    "games_played": 1,
+    "season_components": {
+      "passing_production": 0,
+      "rushing_production": -0.37
+    }
+  },
+  "games": [
+    {
+      "week": 0,
+      "game_id": "ASUSU29082026",
+      "game_path_id": "asusu26",
+      "opponent_id": "swacasu",
+      "opponent_name": "Bama State",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 17-30",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 1,
+      "game_id": "2026-09-05_kentuckystate_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Kentucky State",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 34-15",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 2,
+      "game_id": "2026-09-12_swacsu_at_houston",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Houston",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 6-77",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 3,
+      "game_id": "2026-09-19_louisianachristi_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": null,
+      "opponent_name": "Louisiana Christian",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 50-31",
+      "data_state": "no_play_by_play",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": {
+        "available": false,
+        "totals": null,
+        "events": []
+      }
+    },
+    {
+      "week": 4,
+      "game_id": "SUJSU26092026",
+      "game_path_id": "sujsu26",
+      "opponent_id": "swacjsu",
+      "opponent_name": "J-State",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 17-35",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 5,
+      "game_id": "UAPBSU03102026",
+      "game_path_id": "uapbsu26",
+      "opponent_id": "swacuapb",
+      "opponent_name": "UAPB",
+      "home_away": "home",
+      "result": "L",
+      "score": "L 10-41",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 6,
+      "game_id": "SUPVAMU10102026",
+      "game_path_id": "supvamu26",
+      "opponent_id": "swacpvamu",
+      "opponent_name": "PVAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 28-14",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 8,
+      "game_id": "SUTSU23102026",
+      "game_path_id": "sutsu26",
+      "opponent_id": "swactsu",
+      "opponent_name": "TSU",
+      "home_away": "away",
+      "result": "L",
+      "score": "L 21-24",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 9,
+      "game_id": "SUFAMU31102026",
+      "game_path_id": "sufamu26",
+      "opponent_id": "swacfamu",
+      "opponent_name": "FAMU",
+      "home_away": "away",
+      "result": "W",
+      "score": "W 42-14",
+      "data_state": "no_appearance",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 10,
+      "game_id": "BCUSU07112026",
+      "game_path_id": "bcusu26",
+      "opponent_id": "swacbcu",
+      "opponent_name": "B-CU",
+      "home_away": "home",
+      "result": "W",
+      "score": "W 45-17",
+      "data_state": "played",
+      "par": -7.55,
+      "components": {
+        "rushing_production": -0.37
+      },
+      "stat_line": [
+        {
+          "label": "RUSH",
+          "value": "3-6"
+        },
+        {
+          "label": "RUSH TD",
+          "value": 0
+        }
+      ],
+      "field_map": {
+        "available": true,
+        "passing": {
+          "available": false,
+          "grid": "3x3",
+          "cells": [
+            {
+              "depth": "short",
+              "direction": "L",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "short",
+              "direction": "M",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "short",
+              "direction": "R",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "medium",
+              "direction": "L",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "medium",
+              "direction": "M",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "medium",
+              "direction": "R",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "L",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "M",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            },
+            {
+              "depth": "deep",
+              "direction": "R",
+              "attempts": 0,
+              "completions": 0,
+              "yards": 0
+            }
+          ],
+          "uncharted": null
+        },
+        "rushing": {
+          "available": true,
+          "grid": "1x3",
+          "success_rate": 0.0,
+          "cells": [
+            {
+              "direction": "L",
+              "attempts": 0,
+              "yards": 0,
+              "line_yards": 0.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 0
+            },
+            {
+              "direction": "M",
+              "attempts": 2,
+              "yards": 7,
+              "line_yards": 7.0,
+              "highlight_yards": 0.0,
+              "touchdowns": 0,
+              "fumbles": 1
+            },
+            {
+              "direction": "R",
+              "attempts": 1,
+              "yards": -1,
+              "line_yards": -1.2,
+              "highlight_yards": 0.2,
+              "touchdowns": 0,
+              "fumbles": 0
+            }
+          ]
+        }
+      },
+      "havoc": {
+        "available": true,
+        "totals": {
+          "tfl": 0,
+          "sacks": 0,
+          "qb_hurries": 0,
+          "forced_fumbles": 0,
+          "pass_breakups": 0,
+          "interceptions": 0
+        },
+        "events": []
+      }
+    },
+    {
+      "week": 11,
+      "game_id": "2026-11-14_swacalc_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": "swacalc",
+      "opponent_name": "Alcorn",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    },
+    {
+      "week": 13,
+      "game_id": "2026-11-28_swacgsu_at_swacsu",
+      "game_path_id": null,
+      "opponent_id": "swacgsu",
+      "opponent_name": "Grambling",
+      "home_away": "home",
+      "result": "",
+      "score": "",
+      "data_state": "not_yet_played",
+      "par": 0.0,
+      "components": {},
+      "stat_line": [],
+      "field_map": null,
+      "havoc": null
+    }
+  ],
+  "spotlight": {
+    "week": 10,
+    "game_id": "BCUSU07112026",
+    "game_path_id": "bcusu26",
+    "opponent_id": "swacbcu",
+    "opponent_name": "B-CU",
+    "home_away": "home",
+    "result": "W",
+    "score": "W 45-17",
+    "par": -7.55,
+    "stat_line": [
+      {
+        "label": "RUSH",
+        "value": "3-6"
+      },
+      {
+        "label": "RUSH TD",
+        "value": 0
+      }
+    ],
+    "epa_total": 0.0,
+    "success_rate": 0.0,
+    "top_play": null,
+    "field_map": {
+      "available": true,
+      "passing": {
+        "available": false,
+        "grid": "3x3",
+        "cells": [
+          {
+            "depth": "short",
+            "direction": "L",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "short",
+            "direction": "M",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "short",
+            "direction": "R",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "medium",
+            "direction": "L",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "medium",
+            "direction": "M",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "medium",
+            "direction": "R",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "deep",
+            "direction": "L",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "deep",
+            "direction": "M",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          },
+          {
+            "depth": "deep",
+            "direction": "R",
+            "attempts": 0,
+            "completions": 0,
+            "yards": 0
+          }
+        ],
+        "uncharted": null
+      },
+      "rushing": {
+        "available": true,
+        "grid": "1x3",
+        "success_rate": 0.0,
+        "cells": [
+          {
+            "direction": "L",
+            "attempts": 0,
+            "yards": 0,
+            "line_yards": 0.0,
+            "highlight_yards": 0.0,
+            "touchdowns": 0,
+            "fumbles": 0
+          },
+          {
+            "direction": "M",
+            "attempts": 2,
+            "yards": 7,
+            "line_yards": 7.0,
+            "highlight_yards": 0.0,
+            "touchdowns": 0,
+            "fumbles": 1
+          },
+          {
+            "direction": "R",
+            "attempts": 1,
+            "yards": -1,
+            "line_yards": -1.2,
+            "highlight_yards": 0.2,
+            "touchdowns": 0,
+            "fumbles": 0
+          }
+        ]
+      }
+    }
+  },
+  "field_map": {
+    "available": true,
+    "views": [
+      "rushing"
+    ],
+    "depth_bands": null,
+    "passing": {
+      "available": false,
+      "grid": "3x3",
+      "cells": null,
+      "uncharted": null
+    },
+    "rushing": {
+      "available": true,
+      "grid": "1x3",
+      "cells": [
+        {
+          "direction": "L",
+          "attempts": 0,
+          "yards": 0
+        },
+        {
+          "direction": "M",
+          "attempts": 2,
+          "yards": 7
+        },
+        {
+          "direction": "R",
+          "attempts": 1,
+          "yards": -1
+        }
+      ]
+    }
+  },
+  "comparatives": {
+    "height": {
+      "value": 73,
+      "rank": 3,
+      "total": 6,
+      "group": "QB",
+      "group_avg": 72.7
+    },
+    "weight": {
+      "value": 200,
+      "rank": 3,
+      "total": 6,
+      "group": "QB",
+      "group_avg": 193.5
+    },
+    "position_room": [
+      {
+        "class": "Fr.",
+        "count": 3
+      },
+      {
+        "class": "So.",
+        "count": 1
+      },
+      {
+        "class": "Jr.",
+        "count": 1
+      },
+      {
+        "class": "Sr.",
+        "count": 1
+      },
+      {
+        "class": "Gr.",
+        "count": 0
+      }
+    ],
+    "on_this_team": [
+      {
+        "label": "QBS",
+        "rank": 3,
+        "total": 6
+      },
+      {
+        "label": "SENIORS",
+        "rank": null,
+        "total": 10
+      },
+      {
+        "label": "TRANSFERS",
+        "rank": null,
+        "total": 54
+      },
+      {
+        "label": "IN-STATE PLAYERS",
+        "rank": null,
+        "total": 60
+      }
+    ]
+  },
+  "background": {
+    "is_transfer": false,
+    "transfer_tier": null,
+    "previous_school": null,
+    "is_redshirt": true,
+    "redshirt_note": "Redshirt season used.",
+    "distance_miles": 72.1,
+    "distance_tier": "local",
+    "experience_score": 1.5,
+    "class_timeline": [
+      {
+        "class": "Freshman",
+        "is_current": true,
+        "season": 2026
+      },
+      {
+        "class": "Sophomore",
+        "is_current": false,
+        "season": 2027
+      },
+      {
+        "class": "Junior",
+        "is_current": false,
+        "season": 2028
+      },
+      {
+        "class": "Senior",
+        "is_current": false,
+        "season": 2029
+      },
+      {
+        "class": "Graduate",
+        "is_current": false,
+        "season": 2030
+      }
+    ]
+  }
+}

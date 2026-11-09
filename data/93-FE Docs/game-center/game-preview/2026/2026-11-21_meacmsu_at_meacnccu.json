@@ -1,0 +1,1499 @@
+{
+  "game_id": "2026-11-21_meacmsu_at_meacnccu",
+  "season": 2026,
+  "generated_at": "2026-11-07T19:57:50-06:00",
+  "status": "scheduled",
+  "played_game_path_id": null,
+  "date": "2026-11-21",
+  "week": 12,
+  "week_label": "Week 12",
+  "kickoff": {
+    "at": "2026-11-21T14:00:00-05:00",
+    "label": "2:00 PM ET",
+    "tbd": false
+  },
+  "venue": {
+    "stadium_name": "O'Kelly-Riddick Stadium",
+    "city": "Durham, NC",
+    "sponsor": null,
+    "neutral_site": false,
+    "neutral_site_name": null
+  },
+  "event": {
+    "kind": "promotion",
+    "name": "Senior Day",
+    "type_id": "senior_day",
+    "type_label": "Senior Day",
+    "owner_team_id": null
+  },
+  "flags": {
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false
+  },
+  "away": {
+    "team_id": "meacmsu",
+    "record_entering": "5-5",
+    "conference_record_entering": "0-3",
+    "conference": "MEAC",
+    "coaches": {
+      "head_coach": "Damon Wilson",
+      "offensive_coordinator": "Apollo Wright",
+      "defensive_coordinator": "Antone' Sewell"
+    },
+    "quarterback": {
+      "person_id": "PERS_00013120",
+      "name": "Cameron Edge",
+      "last_name": "Edge",
+      "image_url": "https://morganstatebears.com/images/2026/7/24/EDGE_Cameron.jpg",
+      "games_played": 3,
+      "line": {
+        "cmp": 59,
+        "att": 93,
+        "yds": 475,
+        "td": 2,
+        "int": 2,
+        "sacks": 8
+      },
+      "air_yards": {
+        "attempts": 92,
+        "adot": 6.89,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0
+          },
+          {
+            "yards": -4,
+            "share": 0.0217
+          },
+          {
+            "yards": -3,
+            "share": 0.0217
+          },
+          {
+            "yards": -2,
+            "share": 0.0761
+          },
+          {
+            "yards": -1,
+            "share": 0.0326
+          },
+          {
+            "yards": 0,
+            "share": 0.087
+          },
+          {
+            "yards": 1,
+            "share": 0.0326
+          },
+          {
+            "yards": 2,
+            "share": 0.0761
+          },
+          {
+            "yards": 3,
+            "share": 0.1304
+          },
+          {
+            "yards": 4,
+            "share": 0.0978
+          },
+          {
+            "yards": 5,
+            "share": 0.0543
+          },
+          {
+            "yards": 6,
+            "share": 0.0326
+          },
+          {
+            "yards": 7,
+            "share": 0.0326
+          },
+          {
+            "yards": 8,
+            "share": 0.0326
+          },
+          {
+            "yards": 9,
+            "share": 0.0217
+          },
+          {
+            "yards": 10,
+            "share": 0.0217
+          },
+          {
+            "yards": 11,
+            "share": 0.0217
+          },
+          {
+            "yards": 12,
+            "share": 0.0109
+          },
+          {
+            "yards": 13,
+            "share": 0.0217
+          },
+          {
+            "yards": 14,
+            "share": 0.0109
+          },
+          {
+            "yards": 15,
+            "share": 0.0109
+          },
+          {
+            "yards": 16,
+            "share": 0.0435
+          },
+          {
+            "yards": 17,
+            "share": 0.0
+          },
+          {
+            "yards": 18,
+            "share": 0.0109
+          },
+          {
+            "yards": 19,
+            "share": 0.0109
+          },
+          {
+            "yards": 20,
+            "share": 0.0
+          },
+          {
+            "yards": 21,
+            "share": 0.0217
+          },
+          {
+            "yards": 22,
+            "share": 0.0
+          },
+          {
+            "yards": 23,
+            "share": 0.0109
+          },
+          {
+            "yards": 24,
+            "share": 0.0
+          },
+          {
+            "yards": 25,
+            "share": 0.0
+          },
+          {
+            "yards": 26,
+            "share": 0.0
+          },
+          {
+            "yards": 27,
+            "share": 0.0
+          },
+          {
+            "yards": 28,
+            "share": 0.0
+          },
+          {
+            "yards": 29,
+            "share": 0.0109
+          },
+          {
+            "yards": 30,
+            "share": 0.0435
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0139
+          },
+          {
+            "yards": -4,
+            "share": 0.0139
+          },
+          {
+            "yards": -3,
+            "share": 0.0244
+          },
+          {
+            "yards": -2,
+            "share": 0.0306
+          },
+          {
+            "yards": -1,
+            "share": 0.0281
+          },
+          {
+            "yards": 0,
+            "share": 0.0949
+          },
+          {
+            "yards": 1,
+            "share": 0.033
+          },
+          {
+            "yards": 2,
+            "share": 0.0342
+          },
+          {
+            "yards": 3,
+            "share": 0.0546
+          },
+          {
+            "yards": 4,
+            "share": 0.0652
+          },
+          {
+            "yards": 5,
+            "share": 0.0685
+          },
+          {
+            "yards": 6,
+            "share": 0.0505
+          },
+          {
+            "yards": 7,
+            "share": 0.0497
+          },
+          {
+            "yards": 8,
+            "share": 0.0322
+          },
+          {
+            "yards": 9,
+            "share": 0.0399
+          },
+          {
+            "yards": 10,
+            "share": 0.0318
+          },
+          {
+            "yards": 11,
+            "share": 0.0285
+          },
+          {
+            "yards": 12,
+            "share": 0.0204
+          },
+          {
+            "yards": 13,
+            "share": 0.0236
+          },
+          {
+            "yards": 14,
+            "share": 0.0249
+          },
+          {
+            "yards": 15,
+            "share": 0.0273
+          },
+          {
+            "yards": 16,
+            "share": 0.0196
+          },
+          {
+            "yards": 17,
+            "share": 0.0134
+          },
+          {
+            "yards": 18,
+            "share": 0.0094
+          },
+          {
+            "yards": 19,
+            "share": 0.0118
+          },
+          {
+            "yards": 20,
+            "share": 0.0139
+          },
+          {
+            "yards": 21,
+            "share": 0.0094
+          },
+          {
+            "yards": 22,
+            "share": 0.0069
+          },
+          {
+            "yards": 23,
+            "share": 0.0094
+          },
+          {
+            "yards": 24,
+            "share": 0.0118
+          },
+          {
+            "yards": 25,
+            "share": 0.0081
+          },
+          {
+            "yards": 26,
+            "share": 0.0069
+          },
+          {
+            "yards": 27,
+            "share": 0.0041
+          },
+          {
+            "yards": 28,
+            "share": 0.0057
+          },
+          {
+            "yards": 29,
+            "share": 0.0081
+          },
+          {
+            "yards": 30,
+            "share": 0.0713
+          }
+        ],
+        "deep_30_share": 0.0435,
+        "league_deep_30_share": 0.0713
+      }
+    }
+  },
+  "home": {
+    "team_id": "meacnccu",
+    "record_entering": "5-5",
+    "conference_record_entering": "3-0",
+    "conference": "MEAC",
+    "coaches": {
+      "head_coach": "Trei Oliver",
+      "offensive_coordinator": "Chris Barnette",
+      "defensive_coordinator": "Tommy Thigpen"
+    },
+    "quarterback": {
+      "person_id": "PERS_00009803",
+      "name": "Joshua Jones",
+      "last_name": "Jones",
+      "image_url": "https://nccueaglepride.com/images/2026/8/5/Jones_Josh.jpg",
+      "games_played": 4,
+      "line": {
+        "cmp": 25,
+        "att": 44,
+        "yds": 345,
+        "td": 5,
+        "int": 2,
+        "sacks": 4
+      },
+      "air_yards": {
+        "attempts": 44,
+        "adot": 13.98,
+        "bins": [
+          {
+            "yards": -5,
+            "share": 0.0
+          },
+          {
+            "yards": -4,
+            "share": 0.0
+          },
+          {
+            "yards": -3,
+            "share": 0.0
+          },
+          {
+            "yards": -2,
+            "share": 0.0
+          },
+          {
+            "yards": -1,
+            "share": 0.0
+          },
+          {
+            "yards": 0,
+            "share": 0.0682
+          },
+          {
+            "yards": 1,
+            "share": 0.0
+          },
+          {
+            "yards": 2,
+            "share": 0.0227
+          },
+          {
+            "yards": 3,
+            "share": 0.0682
+          },
+          {
+            "yards": 4,
+            "share": 0.0227
+          },
+          {
+            "yards": 5,
+            "share": 0.1136
+          },
+          {
+            "yards": 6,
+            "share": 0.0227
+          },
+          {
+            "yards": 7,
+            "share": 0.0
+          },
+          {
+            "yards": 8,
+            "share": 0.0909
+          },
+          {
+            "yards": 9,
+            "share": 0.0909
+          },
+          {
+            "yards": 10,
+            "share": 0.0227
+          },
+          {
+            "yards": 11,
+            "share": 0.0227
+          },
+          {
+            "yards": 12,
+            "share": 0.0455
+          },
+          {
+            "yards": 13,
+            "share": 0.0455
+          },
+          {
+            "yards": 14,
+            "share": 0.0
+          },
+          {
+            "yards": 15,
+            "share": 0.0682
+          },
+          {
+            "yards": 16,
+            "share": 0.0
+          },
+          {
+            "yards": 17,
+            "share": 0.0227
+          },
+          {
+            "yards": 18,
+            "share": 0.0
+          },
+          {
+            "yards": 19,
+            "share": 0.0
+          },
+          {
+            "yards": 20,
+            "share": 0.0227
+          },
+          {
+            "yards": 21,
+            "share": 0.0227
+          },
+          {
+            "yards": 22,
+            "share": 0.0
+          },
+          {
+            "yards": 23,
+            "share": 0.0227
+          },
+          {
+            "yards": 24,
+            "share": 0.0227
+          },
+          {
+            "yards": 25,
+            "share": 0.0
+          },
+          {
+            "yards": 26,
+            "share": 0.0227
+          },
+          {
+            "yards": 27,
+            "share": 0.0227
+          },
+          {
+            "yards": 28,
+            "share": 0.0
+          },
+          {
+            "yards": 29,
+            "share": 0.0
+          },
+          {
+            "yards": 30,
+            "share": 0.1364
+          }
+        ],
+        "league_bins": [
+          {
+            "yards": -5,
+            "share": 0.0139
+          },
+          {
+            "yards": -4,
+            "share": 0.0139
+          },
+          {
+            "yards": -3,
+            "share": 0.0244
+          },
+          {
+            "yards": -2,
+            "share": 0.0306
+          },
+          {
+            "yards": -1,
+            "share": 0.0281
+          },
+          {
+            "yards": 0,
+            "share": 0.0949
+          },
+          {
+            "yards": 1,
+            "share": 0.033
+          },
+          {
+            "yards": 2,
+            "share": 0.0342
+          },
+          {
+            "yards": 3,
+            "share": 0.0546
+          },
+          {
+            "yards": 4,
+            "share": 0.0652
+          },
+          {
+            "yards": 5,
+            "share": 0.0685
+          },
+          {
+            "yards": 6,
+            "share": 0.0505
+          },
+          {
+            "yards": 7,
+            "share": 0.0497
+          },
+          {
+            "yards": 8,
+            "share": 0.0322
+          },
+          {
+            "yards": 9,
+            "share": 0.0399
+          },
+          {
+            "yards": 10,
+            "share": 0.0318
+          },
+          {
+            "yards": 11,
+            "share": 0.0285
+          },
+          {
+            "yards": 12,
+            "share": 0.0204
+          },
+          {
+            "yards": 13,
+            "share": 0.0236
+          },
+          {
+            "yards": 14,
+            "share": 0.0249
+          },
+          {
+            "yards": 15,
+            "share": 0.0273
+          },
+          {
+            "yards": 16,
+            "share": 0.0196
+          },
+          {
+            "yards": 17,
+            "share": 0.0134
+          },
+          {
+            "yards": 18,
+            "share": 0.0094
+          },
+          {
+            "yards": 19,
+            "share": 0.0118
+          },
+          {
+            "yards": 20,
+            "share": 0.0139
+          },
+          {
+            "yards": 21,
+            "share": 0.0094
+          },
+          {
+            "yards": 22,
+            "share": 0.0069
+          },
+          {
+            "yards": 23,
+            "share": 0.0094
+          },
+          {
+            "yards": 24,
+            "share": 0.0118
+          },
+          {
+            "yards": 25,
+            "share": 0.0081
+          },
+          {
+            "yards": 26,
+            "share": 0.0069
+          },
+          {
+            "yards": 27,
+            "share": 0.0041
+          },
+          {
+            "yards": 28,
+            "share": 0.0057
+          },
+          {
+            "yards": 29,
+            "share": 0.0081
+          },
+          {
+            "yards": 30,
+            "share": 0.0713
+          }
+        ],
+        "deep_30_share": 0.1364,
+        "league_deep_30_share": 0.0713
+      }
+    }
+  },
+  "stats": {
+    "season": 2026,
+    "basis": "current_season",
+    "through_week": 10,
+    "ranked_teams": 18,
+    "teams": {
+      "meacmsu": {
+        "games_played": 3,
+        "fields": {
+          "net_adj_epa": {
+            "value": -0.2017,
+            "rank": 18,
+            "tied": false
+          },
+          "o_adj_epa": {
+            "value": -0.2124,
+            "rank": 18,
+            "tied": false
+          },
+          "d_adj_epa": {
+            "value": -0.0107,
+            "rank": 9,
+            "tied": false
+          },
+          "net_epa": {
+            "value": -0.2809,
+            "rank": 18,
+            "tied": false
+          },
+          "o_epa": {
+            "value": -0.291,
+            "rank": 18,
+            "tied": false
+          },
+          "d_epa": {
+            "value": -0.0101,
+            "rank": 4,
+            "tied": false
+          },
+          "o_success": {
+            "value": 0.2727,
+            "rank": 18,
+            "tied": false
+          },
+          "d_success": {
+            "value": 0.4378,
+            "rank": 14,
+            "tied": false
+          },
+          "o_early_succ": {
+            "value": 0.2893,
+            "rank": 18,
+            "tied": false
+          },
+          "d_early_succ": {
+            "value": 0.4295,
+            "rank": 12,
+            "tied": false
+          },
+          "o_late_succ": {
+            "value": 0.2273,
+            "rank": 18,
+            "tied": false
+          },
+          "d_late_succ": {
+            "value": 0.4667,
+            "rank": 17,
+            "tied": false
+          },
+          "o_pts_drive": {
+            "value": 0.8333,
+            "rank": 18,
+            "tied": false
+          },
+          "d_pts_drive": {
+            "value": 2.3784,
+            "rank": 12,
+            "tied": false
+          },
+          "o_yds_drive": {
+            "value": 17.61,
+            "rank": 18,
+            "tied": false
+          },
+          "d_yds_drive": {
+            "value": 27.92,
+            "rank": 8,
+            "tied": false
+          },
+          "o_3andout": {
+            "value": 0.3611,
+            "rank": 16,
+            "tied": false
+          },
+          "d_3andout": {
+            "value": 0.2973,
+            "rank": 3,
+            "tied": false
+          },
+          "o_expl_drive": {
+            "value": 0.1389,
+            "rank": 16,
+            "tied": false
+          },
+          "d_expl_drive": {
+            "value": 0.1351,
+            "rank": 2,
+            "tied": false
+          },
+          "o_start_fp": {
+            "value": 32.44,
+            "rank": 8,
+            "tied": false
+          },
+          "d_start_fp": {
+            "value": 35.22,
+            "rank": 17,
+            "tied": false
+          },
+          "o_third_dist": {
+            "value": 10.0,
+            "rank": 17,
+            "tied": false
+          },
+          "d_third_dist": {
+            "value": 8.56,
+            "rank": 4,
+            "tied": false
+          },
+          "net_success": {
+            "value": -0.1651,
+            "rank": 18,
+            "tied": false
+          },
+          "o_ppg": {
+            "value": 14.7,
+            "rank": 18,
+            "tied": false
+          },
+          "d_ppg": {
+            "value": 33.7,
+            "rank": 12,
+            "tied": true
+          },
+          "to_margin": {
+            "value": 0,
+            "rank": 10,
+            "tied": false
+          },
+          "o_turnovers": {
+            "value": 3,
+            "rank": 1,
+            "tied": false
+          },
+          "pen_ypg": {
+            "value": 85.33,
+            "rank": 14,
+            "tied": false
+          },
+          "o_ypg": {
+            "value": 230.0,
+            "rank": 18,
+            "tied": false
+          },
+          "o_pass_ypg": {
+            "value": 164.3,
+            "rank": 15,
+            "tied": false
+          },
+          "o_rush_ypg": {
+            "value": 65.7,
+            "rank": 18,
+            "tied": false
+          },
+          "o_havoc_rate": {
+            "value": 0.1636,
+            "rank": 10,
+            "tied": false
+          },
+          "d_havoc_rate": {
+            "value": 0.1443,
+            "rank": 14,
+            "tied": false
+          },
+          "o_expl_rate": {
+            "value": 0.0667,
+            "rank": 18,
+            "tied": false
+          },
+          "d_expl_rate": {
+            "value": 0.1393,
+            "rank": 13,
+            "tied": false
+          },
+          "o_rz_td": {
+            "value": 0.5,
+            "rank": 18,
+            "tied": false
+          },
+          "d_rz_td": {
+            "value": 0.7333,
+            "rank": 12,
+            "tied": false
+          }
+        }
+      },
+      "meacnccu": {
+        "games_played": 4,
+        "fields": {
+          "net_adj_epa": {
+            "value": 0.103,
+            "rank": 2,
+            "tied": false
+          },
+          "o_adj_epa": {
+            "value": 0.0905,
+            "rank": 3,
+            "tied": false
+          },
+          "d_adj_epa": {
+            "value": -0.0125,
+            "rank": 8,
+            "tied": false
+          },
+          "net_epa": {
+            "value": 0.1213,
+            "rank": 3,
+            "tied": false
+          },
+          "o_epa": {
+            "value": 0.12,
+            "rank": 4,
+            "tied": false
+          },
+          "d_epa": {
+            "value": -0.0013,
+            "rank": 5,
+            "tied": false
+          },
+          "o_success": {
+            "value": 0.4391,
+            "rank": 6,
+            "tied": false
+          },
+          "d_success": {
+            "value": 0.3779,
+            "rank": 5,
+            "tied": false
+          },
+          "o_early_succ": {
+            "value": 0.4444,
+            "rank": 6,
+            "tied": false
+          },
+          "d_early_succ": {
+            "value": 0.4012,
+            "rank": 6,
+            "tied": false
+          },
+          "o_late_succ": {
+            "value": 0.4182,
+            "rank": 8,
+            "tied": false
+          },
+          "d_late_succ": {
+            "value": 0.2889,
+            "rank": 1,
+            "tied": false
+          },
+          "o_pts_drive": {
+            "value": 2.5833,
+            "rank": 6,
+            "tied": false
+          },
+          "d_pts_drive": {
+            "value": 1.5625,
+            "rank": 2,
+            "tied": false
+          },
+          "o_yds_drive": {
+            "value": 33.1,
+            "rank": 6,
+            "tied": false
+          },
+          "d_yds_drive": {
+            "value": 25.58,
+            "rank": 4,
+            "tied": false
+          },
+          "o_3andout": {
+            "value": 0.1875,
+            "rank": 8,
+            "tied": false
+          },
+          "d_3andout": {
+            "value": 0.2917,
+            "rank": 5,
+            "tied": false
+          },
+          "o_expl_drive": {
+            "value": 0.3333,
+            "rank": 3,
+            "tied": false
+          },
+          "d_expl_drive": {
+            "value": 0.25,
+            "rank": 8,
+            "tied": true
+          },
+          "o_start_fp": {
+            "value": 30.69,
+            "rank": 13,
+            "tied": false
+          },
+          "d_start_fp": {
+            "value": 29.19,
+            "rank": 4,
+            "tied": false
+          },
+          "o_third_dist": {
+            "value": 7.4,
+            "rank": 4,
+            "tied": true
+          },
+          "d_third_dist": {
+            "value": 9.6,
+            "rank": 1,
+            "tied": false
+          },
+          "net_success": {
+            "value": 0.0612,
+            "rank": 5,
+            "tied": false
+          },
+          "o_ppg": {
+            "value": 31.0,
+            "rank": 7,
+            "tied": true
+          },
+          "d_ppg": {
+            "value": 20.5,
+            "rank": 2,
+            "tied": false
+          },
+          "to_margin": {
+            "value": 2,
+            "rank": 6,
+            "tied": true
+          },
+          "o_turnovers": {
+            "value": 4,
+            "rank": 2,
+            "tied": true
+          },
+          "pen_ypg": {
+            "value": 45.75,
+            "rank": 2,
+            "tied": false
+          },
+          "o_ypg": {
+            "value": 411.8,
+            "rank": 5,
+            "tied": false
+          },
+          "o_pass_ypg": {
+            "value": 179.8,
+            "rank": 10,
+            "tied": false
+          },
+          "o_rush_ypg": {
+            "value": 232.0,
+            "rank": 3,
+            "tied": false
+          },
+          "o_havoc_rate": {
+            "value": 0.1513,
+            "rank": 7,
+            "tied": false
+          },
+          "d_havoc_rate": {
+            "value": 0.1889,
+            "rank": 3,
+            "tied": false
+          },
+          "o_expl_rate": {
+            "value": 0.1255,
+            "rank": 10,
+            "tied": false
+          },
+          "d_expl_rate": {
+            "value": 0.1567,
+            "rank": 16,
+            "tied": false
+          },
+          "o_rz_td": {
+            "value": 0.625,
+            "rank": 14,
+            "tied": false
+          },
+          "d_rz_td": {
+            "value": 0.7857,
+            "rank": 16,
+            "tied": false
+          }
+        }
+      }
+    }
+  },
+  "top_players": {
+    "meacmsu": [
+      {
+        "person_id": "PERS_00013121",
+        "name": "R.Matthews",
+        "last_name": "Matthews",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/MATTHEWS_Raqaun.jpg",
+        "position": "DB",
+        "games_played": 3,
+        "production_score": 39.51,
+        "production_per_game": 13.17
+      },
+      {
+        "person_id": "PERS_00013120",
+        "name": "C.Edge",
+        "last_name": "Edge",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/EDGE_Cameron.jpg",
+        "position": "QB",
+        "games_played": 3,
+        "production_score": 36.6,
+        "production_per_game": 12.2
+      },
+      {
+        "person_id": "PERS_00013117",
+        "name": "D.Jones",
+        "last_name": "Jones",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/JONES_Darius.jpg",
+        "position": "LB",
+        "games_played": 3,
+        "production_score": 30.91,
+        "production_per_game": 10.3
+      },
+      {
+        "person_id": "PERS_00013124",
+        "name": "M.Hastie",
+        "last_name": "Hastie",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/HASTIC_Mike.jpg",
+        "position": "LB",
+        "games_played": 3,
+        "production_score": 20.26,
+        "production_per_game": 6.75
+      },
+      {
+        "person_id": "PERS_00008845",
+        "name": "A.Mattocks",
+        "last_name": "Mattocks",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/MATTOCKS_Arturo.jpg",
+        "position": "LB",
+        "games_played": 3,
+        "production_score": 17.25,
+        "production_per_game": 5.75
+      },
+      {
+        "person_id": "PERS_00008848",
+        "name": "J.Jeudy",
+        "last_name": "Jeudy",
+        "image_url": "https://morganstatebears.com/images/2025/8/12/JEUDY_Jordan.jpg",
+        "position": "DL",
+        "games_played": 3,
+        "production_score": 14.84,
+        "production_per_game": 4.95
+      },
+      {
+        "person_id": "PERS_00013116",
+        "name": "J.Towler",
+        "last_name": "Towler",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/TOWLER_Joseph.jpg",
+        "position": "WR",
+        "games_played": 3,
+        "production_score": 13.05,
+        "production_per_game": 4.35
+      },
+      {
+        "person_id": "PERS_00009761",
+        "name": "J.Narh",
+        "last_name": "Narh",
+        "image_url": "https://morganstatebears.com/images/2026/7/24/NARH_Josh.jpg",
+        "position": "DB",
+        "games_played": 2,
+        "production_score": 12.21,
+        "production_per_game": 6.11
+      }
+    ],
+    "meacnccu": [
+      {
+        "person_id": "PERS_00009803",
+        "name": "J.Jones",
+        "last_name": "Jones",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Jones_Josh.jpg",
+        "position": "QB",
+        "games_played": 4,
+        "production_score": 33.62,
+        "production_per_game": 8.4
+      },
+      {
+        "person_id": "PERS_00011648",
+        "name": "K.Thompson",
+        "last_name": "Thompson",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Thompson_Khareem.jpg",
+        "position": "DL",
+        "games_played": 4,
+        "production_score": 31.1,
+        "production_per_game": 7.78
+      },
+      {
+        "person_id": "PERS_00009821",
+        "name": "Z.Walters",
+        "last_name": "Walters",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Walters_Zarion.jpg",
+        "position": "DL",
+        "games_played": 3,
+        "production_score": 30.34,
+        "production_per_game": 10.11
+      },
+      {
+        "person_id": "PERS_00013179",
+        "name": "N.Layne",
+        "last_name": "Layne",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Layne_Nelson.jpg",
+        "position": "QB",
+        "games_played": 3,
+        "production_score": 27.39,
+        "production_per_game": 9.13
+      },
+      {
+        "person_id": "PERS_00013217",
+        "name": "T.Swanigan",
+        "last_name": "Swanigan",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Swanigan_Trayvaughn.jpg",
+        "position": "DL",
+        "games_played": 3,
+        "production_score": 23.39,
+        "production_per_game": 7.79
+      },
+      {
+        "person_id": "PERS_00013186",
+        "name": "A.Sifford",
+        "last_name": "Sifford",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Sifford_Amari.jpg",
+        "position": "DB",
+        "games_played": 3,
+        "production_score": 23.03,
+        "production_per_game": 7.68
+      },
+      {
+        "person_id": "PERS_00010703",
+        "name": "M.Wall",
+        "last_name": "Wall",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Wall_Mehki.jpg",
+        "position": "WR",
+        "games_played": 4,
+        "production_score": 19.08,
+        "production_per_game": 4.77
+      },
+      {
+        "person_id": "PERS_00013183",
+        "name": "G.Addison",
+        "last_name": "Addison",
+        "image_url": "https://nccueaglepride.com/images/2026/8/5/Addison_Gino.jpg",
+        "position": "RB",
+        "games_played": 3,
+        "production_score": 17.85,
+        "production_per_game": 5.95
+      }
+    ]
+  },
+  "meetings": {
+    "coverage_from_season": 2019,
+    "series": {
+      "games": 6,
+      "wins": {
+        "meacmsu": 0,
+        "meacnccu": 6
+      },
+      "current_streak": {
+        "team_id": "meacnccu",
+        "games": 6
+      }
+    },
+    "items": [
+      {
+        "game_id": "NCCUMORG22112025",
+        "game_path_id": "nccumsu25",
+        "date": "2025-11-22",
+        "season": 2025,
+        "away_team_id": "meacnccu",
+        "home_team_id": "meacmsu",
+        "away_score": 33,
+        "home_score": 14,
+        "venue": {
+          "stadium_name": "Hughes Stadium",
+          "city": "Baltimore, MD"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "MORGNCCU26102024",
+        "game_path_id": "msunccu24",
+        "date": "2024-10-26",
+        "season": 2024,
+        "away_team_id": "meacmsu",
+        "home_team_id": "meacnccu",
+        "away_score": 7,
+        "home_score": 16,
+        "venue": {
+          "stadium_name": "O'Kelly-Riddick Stadium",
+          "city": "Durham, NC"
+        },
+        "event_name": "Homecoming"
+      },
+      {
+        "game_id": "NCCUMORG19102023",
+        "game_path_id": "nccumsu23",
+        "date": "2023-10-19",
+        "season": 2023,
+        "away_team_id": "meacnccu",
+        "home_team_id": "meacmsu",
+        "away_score": 16,
+        "home_score": 10,
+        "venue": {
+          "stadium_name": "Hughes Stadium",
+          "city": "Baltimore, MD"
+        },
+        "event_name": "Homecoming"
+      },
+      {
+        "game_id": "MORGNCCU13102022",
+        "game_path_id": "msunccu22",
+        "date": "2022-10-13",
+        "season": 2022,
+        "away_team_id": "meacmsu",
+        "home_team_id": "meacnccu",
+        "away_score": 20,
+        "home_score": 59,
+        "venue": {
+          "stadium_name": "O'Kelly-Riddick Stadium",
+          "city": "Durham, NC"
+        },
+        "event_name": null
+      },
+      {
+        "game_id": "NCCUMORG23102021",
+        "game_path_id": "nccumsu21",
+        "date": "2021-10-23",
+        "season": 2021,
+        "away_team_id": "meacnccu",
+        "home_team_id": "meacmsu",
+        "away_score": 28,
+        "home_score": 17,
+        "venue": {
+          "stadium_name": "Hughes Stadium",
+          "city": "Baltimore, MD"
+        },
+        "event_name": "Homecoming"
+      },
+      {
+        "game_id": "NCCUMORG28092019",
+        "game_path_id": "nccumsu19",
+        "date": "2019-09-28",
+        "season": 2019,
+        "away_team_id": "meacnccu",
+        "home_team_id": "meacmsu",
+        "away_score": 27,
+        "home_score": 17,
+        "venue": {
+          "stadium_name": "Hughes Stadium",
+          "city": "Baltimore, MD"
+        },
+        "event_name": null
+      }
+    ]
+  },
+  "event_history": {
+    "title": "Senior Day",
+    "scope": "shared",
+    "owner_team_id": null,
+    "items": [
+      {
+        "date": "2026-11-14",
+        "season": 2026,
+        "name": "Senior Day",
+        "game_id": "2026-11-14_meacdsu_at_meachu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "meacdsu",
+          "name": "Delaware State"
+        },
+        "home": {
+          "team_id": "meachu",
+          "name": "Howard University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "Greene Stadium",
+          "city": "Washington, DC"
+        }
+      },
+      {
+        "date": "2026-11-14",
+        "season": 2026,
+        "name": "Senior Day / Military Salute",
+        "game_id": "2026-11-14_swactsu_at_swacaamu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swactsu",
+          "name": "Texas Southern"
+        },
+        "home": {
+          "team_id": "swacaamu",
+          "name": "Alabama A&M University"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "Louis Crews Stadium",
+          "city": "Normal, AL"
+        }
+      },
+      {
+        "date": "2026-11-14",
+        "season": 2026,
+        "name": null,
+        "game_id": "2026-11-14_swacalc_at_swacsu",
+        "game_path_id": null,
+        "away": {
+          "team_id": "swacalc",
+          "name": "Alcorn State University"
+        },
+        "home": {
+          "team_id": "swacsu",
+          "name": "Southern University and A&M College"
+        },
+        "away_score": null,
+        "home_score": null,
+        "result_status": "no_result_on_file",
+        "venue": {
+          "stadium_name": "A.W. Mumford Stadium",
+          "city": "Baton Rouge, LA"
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "season": 2026,
+        "name": "Senior Night",
+        "game_id": "MORGDSU07112026",
+        "game_path_id": "msudsu26",
+        "away": {
+          "team_id": "meacmsu",
+          "name": "Morgan State"
+        },
+        "home": {
+          "team_id": "meacdsu",
+          "name": "Delaware State University"
+        },
+        "away_score": 14,
+        "home_score": 24,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Alumni Stadium",
+          "city": "Dover, DE"
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "season": 2026,
+        "name": "Senior Day/ Military Appreciation Day/ High School Day",
+        "game_id": "UAPBGRAM07112026",
+        "game_path_id": "uapbgsu26",
+        "away": {
+          "team_id": "swacuapb",
+          "name": "University of Arkansas - Pine Bluff"
+        },
+        "home": {
+          "team_id": "swacgsu",
+          "name": "Grambling State University"
+        },
+        "away_score": 35,
+        "home_score": 32,
+        "result_status": "final",
+        "venue": {
+          "stadium_name": "Eddie G. Robinson Memorial Stadium",
+          "city": "Grambling, LA"
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "season": 2026,
+        "name": "Senior Day / High School Day / Black Camo",
+        "game_id": "MVSUJSU07112026",
+        "game_path_id": "mvsujsu26",
+        "away": {
+          "team_id": "swacmvsu",
+          "name": "Mississippi Valley State"
+        },
+        "home": {
+          "team_id": "swacjsu",
+          "name": "Jackson State University"
+        },
+        "away_score": 7,
+        "home_score": 38,
+        "result_status": "final",
+        "venue": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,1367 @@
+{
+  "generated_at": "2026-04-19T09:47:33.760440+00:00",
+  "years_covered": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "league_summary": {
+    "total_teams": 31,
+    "avg_continuity_score": 0.4264,
+    "top_5": [
+      {
+        "team": "meacscsuc",
+        "score": 0.7,
+        "grade": "B"
+      },
+      {
+        "team": "swacbcuc",
+        "score": 0.671,
+        "grade": "B"
+      },
+      {
+        "team": "swacasuc",
+        "score": 0.5921,
+        "grade": "C"
+      },
+      {
+        "team": "meachu",
+        "score": 0.5919,
+        "grade": "C"
+      },
+      {
+        "team": "swacjsuc",
+        "score": 0.5486,
+        "grade": "C"
+      }
+    ],
+    "bottom_5": [
+      {
+        "team": "swacgsu",
+        "score": 0.3125,
+        "grade": "F"
+      },
+      {
+        "team": "meacnsu",
+        "score": 0.2989,
+        "grade": "F"
+      },
+      {
+        "team": "swacasu",
+        "score": 0.2608,
+        "grade": "F"
+      },
+      {
+        "team": "meacmsu",
+        "score": 0.2343,
+        "grade": "F"
+      },
+      {
+        "team": "swacuapbc",
+        "score": 0.2159,
+        "grade": "F"
+      }
+    ],
+    "conference_breakdown": {
+      "SWAC": {
+        "avg_continuity_score": 0.3752,
+        "teams": {
+          "swacpvamu": 0.4625,
+          "swacmvsu": 0.4338,
+          "swacfamu": 0.4336,
+          "swacjsu": 0.433,
+          "swacalc": 0.415,
+          "swacbcu": 0.3765,
+          "swacsu": 0.3674,
+          "swacaamu": 0.3555,
+          "swacuapb": 0.3285,
+          "swactsu": 0.3229,
+          "swacgsu": 0.3125,
+          "swacasu": 0.2608
+        }
+      },
+      "MEAC": {
+        "avg_continuity_score": 0.3986,
+        "teams": {
+          "meachu": 0.5919,
+          "meacnccu": 0.5117,
+          "meacdsu": 0.4099,
+          "meacscsu": 0.3448,
+          "meacnsu": 0.2989,
+          "meacmsu": 0.2343
+        }
+      }
+    }
+  },
+  "teams": {
+    "meacdsu": {
+      "staff_stability_score": 0.463,
+      "roster_experience_score": 0.3303,
+      "continuity_score": 0.4099,
+      "continuity_grade": "D",
+      "head_coach_history": {
+        "2021": "PERS_00003437",
+        "2022": "PERS_00005294",
+        "2023": "PERS_00005294",
+        "2024": "PERS_00005294",
+        "2025": "PERS_00002303"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 8,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 8,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": false,
+          "staff_size": 9,
+          "returning": 0,
+          "departed": 8,
+          "new_staff": 9,
+          "retention_rate": 0.0
+        },
+        "2023": {
+          "head_coach_same": true,
+          "staff_size": 9,
+          "returning": 9,
+          "departed": 0,
+          "new_staff": 0,
+          "retention_rate": 1.0
+        },
+        "2024": {
+          "head_coach_same": true,
+          "staff_size": 9,
+          "returning": 8,
+          "departed": 1,
+          "new_staff": 1,
+          "retention_rate": 0.8889
+        },
+        "2025": {
+          "head_coach_same": false,
+          "staff_size": 18,
+          "returning": 0,
+          "departed": 9,
+          "new_staff": 18,
+          "retention_rate": 0.0
+        }
+      },
+      "roster_composition_2025": {
+        "roster_size": 457,
+        "transfer_counts_by_tier": {
+          "non_transfer": 440,
+          "FBS": 3,
+          "D2/D3/NAIA": 12,
+          "JUCO": 2
+        },
+        "class_distribution": {
+          "So.": 108,
+          "Jr.": 98,
+          "Fr.": 154,
+          "Sr.": 56,
+          "Gr.": 29,
+          "Unknown": 12
+        },
+        "avg_experience_score": 2.427,
+        "avg_bmi": 29.2549,
+        "in_state_rate": 0.0686
+      }
+    },
+    "meachu": {
+      "staff_stability_score": 0.7458,
+      "roster_experience_score": 0.361,
+      "continuity_score": 0.5919,
+      "continuity_grade": "C",
+      "head_coach_history": {
+        "2021": null,
+        "2022": null,
+        "2023": null,
+        "2024": null,
+        "2025": null
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 10,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 10,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": null,
+          "staff_size": 10,
+          "returning": 7,
+          "departed": 3,
+          "new_staff": 3,
+          "retention_rate": 0.7
+        },
+        "2023": {
+          "head_coach_same": null,
+          "staff_size": 10,
+          "returning": 8,
+          "departed": 2,
+          "new_staff": 2,
+          "retention_rate": 0.8
+        },
+        "2024": {
+          "head_coach_same": null,
+          "staff_size": 16,
+          "returning": 8,
+          "departed": 2,
+          "new_staff": 8,
+          "retention_rate": 0.8
+        },
+        "2025": {
+          "head_coach_same": null,
+          "staff_size": 15,
+          "returning": 11,
+          "departed": 5,
+          "new_staff": 4,
+          "retention_rate": 0.6875
+        }
+      },
+      "roster_composition_2025": {
+        "roster_size": 508,
+        "transfer_counts_by_tier": {
+          "non_transfer": 478,
+          "FBS": 15,
+          "D2/D3/NAIA": 7,
+          "JUCO": 3,
+          "FCS": 5
+        },
+        "class_distribution": {
+          "Jr.": 80,
+          "Fr.": 174,
+          "Sr.": 67,
+          "So.": 103,
+          "Gr.": 58,
+          "Unknown": 26
+        },
+        "avg_experience_score": 2.501,
+        "avg_bmi": 28.843,
+        "in_state_rate": 0.025
+      }
+    },
+    "meacmsu": {
+      "staff_stability_score": 0.1784,
+      "roster_experience_score": 0.3182,
+      "continuity_score": 0.2343,
+      "continuity_grade": "F",
+      "head_coach_history": {
+        "2021": "PERS_00005109",
+        "2022": "PERS_00005293",
+        "2023": "PERS_00005293",
+        "2024": null,
+        "2025": "PERS_00005293"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 13,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 13,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": false,
+          "staff_size": 12,
+          "returning": 2,
+          "departed": 11,
+          "new_staff": 10,
+          "retention_rate": 0.1538
+        },
+        "2023": {
+          "head_coach_same": true,
+          "staff_size": 13,
+          "returning": 11,
+          "departed": 1,
+          "new_staff": 2,
+          "retention_rate": 0.9167
+        },
+        "2024": {
+          "head_coach_same": null,
+          "staff_size": 6,
+          "returning": 0,
+          "departed": 13,
+          "new_staff": 6,
+          "retention_rate": 0.0
+        },
+        "2025": {
+          "head_coach_same": null,
+          "staff_size": 14,
+          "returning": 0,
+          "departed": 6,
+          "new_staff": 14,
+          "retention_rate": 0.0
+        }
+      },
+      "roster_composition_2025": {
+        "roster_size": 530,
+        "transfer_counts_by_tier": {
+          "non_transfer": 530
+        },
+        "class_distribution": {
+          "Jr.": 119,
+          "Gr.": 31,
+          "Fr.": 182,
+          "So.": 126,
+          "Sr.": 55,
+          "Unknown": 17
+        },
+        "avg_experience_score": 2.2992,
+        "avg_bmi": 29.4322,
+        "in_state_rate": 0.4715
+      }
+    },
+    "meacnccu": {
+      "staff_stability_score": 0.6611,
+      "roster_experience_score": 0.2876,
+      "continuity_score": 0.5117,
+      "continuity_grade": "C",
+      "head_coach_history": {
+        "2021": "PERS_00003707",
+        "2022": "PERS_00003707",
+        "2023": "PERS_00003707",
+        "2024": "PERS_00003707",
+        "2025": "PERS_00003707"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 12,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 12,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 12,
+          "returning": 4,
+          "departed": 8,
+          "new_staff": 8,
+          "retention_rate": 0.3333
+        },
+        "2023": {
+          "head_coach_same": true,
+          "staff_size": 10,
+          "returning": 10,
+          "departed": 2,
+          "new_staff": 0,
+          "retention_rate": 0.8333
+        },
+        "2024": {
+          "head_coach_same": true,
+          "staff_size": 10,
+          "returning": 8,
+          "departed": 2,
+          "new_staff": 2,
+          "retention_rate": 0.8
+        },
+        "2025": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 6,
+          "departed": 4,
+          "new_staff": 5,
+          "retention_rate": 0.6
+        }
+      },
+      "roster_composition_2025": {
+        "roster_size": 551,
+        "transfer_counts_by_tier": {
+          "non_transfer": 437,
+          "D2/D3/NAIA": 29,
+          "FCS": 15,
+          "FBS": 60,
+          "JUCO": 10
+        },
+        "class_distribution": {
+          "Sr.": 89,
+          "So.": 134,
+          "Fr.": 207,
+          "Jr.": 107,
+          "Unknown": 13,
+          "Gr.": 1
+        },
+        "avg_experience_score": 2.3699,
+        "avg_bmi": 29.3446,
+        "in_state_rate": 0.5
+      }
+    },
+    "meacnsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.2989,
+      "continuity_score": 0.2989,
+      "continuity_grade": "F",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 441,
+        "transfer_counts_by_tier": {
+          "non_transfer": 348,
+          "FBS": 56,
+          "D2/D3/NAIA": 12,
+          "FCS": 16,
+          "JUCO": 9
+        },
+        "class_distribution": {
+          "Gr.": 22,
+          "Fr.": 162,
+          "Jr.": 93,
+          "Sr.": 44,
+          "So.": 114,
+          "Unknown": 6
+        },
+        "avg_experience_score": 2.3851,
+        "avg_bmi": 29.3019,
+        "in_state_rate": 0.5625
+      }
+    },
+    "meacnsuc": {
+      "staff_stability_score": 0.3914,
+      "roster_experience_score": null,
+      "continuity_score": 0.3914,
+      "continuity_grade": "D",
+      "head_coach_history": {
+        "2021": "PERS_00004370",
+        "2022": "PERS_00000023",
+        "2023": "PERS_00000023",
+        "2024": "PERS_00000023",
+        "2025": "PERS_00000615"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 10,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 10,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": false,
+          "staff_size": 13,
+          "returning": 6,
+          "departed": 4,
+          "new_staff": 7,
+          "retention_rate": 0.6
+        },
+        "2023": {
+          "head_coach_same": true,
+          "staff_size": 13,
+          "returning": 6,
+          "departed": 7,
+          "new_staff": 7,
+          "retention_rate": 0.4615
+        },
+        "2024": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 6,
+          "departed": 7,
+          "new_staff": 5,
+          "retention_rate": 0.4615
+        },
+        "2025": {
+          "head_coach_same": false,
+          "staff_size": 15,
+          "returning": 2,
+          "departed": 9,
+          "new_staff": 13,
+          "retention_rate": 0.1818
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "meacscsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3448,
+      "continuity_score": 0.3448,
+      "continuity_grade": "F",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 490,
+        "transfer_counts_by_tier": {
+          "non_transfer": 407,
+          "FBS": 22,
+          "D2/D3/NAIA": 44,
+          "FCS": 14,
+          "JUCO": 3
+        },
+        "class_distribution": {
+          "Sr.": 56,
+          "So.": 100,
+          "Fr.": 176,
+          "Jr.": 99,
+          "Gr.": 49,
+          "Unknown": 10
+        },
+        "avg_experience_score": 2.4958,
+        "avg_bmi": 29.4038,
+        "in_state_rate": 0.4536
+      }
+    },
+    "meacscsuc": {
+      "staff_stability_score": 0.7,
+      "roster_experience_score": null,
+      "continuity_score": 0.7,
+      "continuity_grade": "B",
+      "head_coach_history": {
+        "2021": "PERS_00005423",
+        "2022": "PERS_00005423",
+        "2024": null,
+        "2025": null
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 10,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 10,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 12,
+          "returning": 9,
+          "departed": 1,
+          "new_staff": 3,
+          "retention_rate": 0.9
+        },
+        "2024": {
+          "head_coach_same": null,
+          "staff_size": 10,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 10,
+          "retention_rate": null
+        },
+        "2025": {
+          "head_coach_same": null,
+          "staff_size": 8,
+          "returning": 6,
+          "departed": 4,
+          "new_staff": 2,
+          "retention_rate": 0.6
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacaamu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3555,
+      "continuity_score": 0.3555,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 557,
+        "transfer_counts_by_tier": {
+          "FCS": 36,
+          "FBS": 128,
+          "non_transfer": 344,
+          "D2/D3/NAIA": 31,
+          "JUCO": 18
+        },
+        "class_distribution": {
+          "Fr.": 166,
+          "Jr.": 135,
+          "Sr.": 96,
+          "Gr.": 22,
+          "So.": 119,
+          "Unknown": 19
+        },
+        "avg_experience_score": 2.552,
+        "avg_bmi": 29.2129,
+        "in_state_rate": 0.4559
+      }
+    },
+    "swacaamuc": {
+      "staff_stability_score": 0.4545,
+      "roster_experience_score": null,
+      "continuity_score": 0.4545,
+      "continuity_grade": "D",
+      "head_coach_history": {
+        "2021": "PERS_00005440",
+        "2022": "PERS_00005440",
+        "2023": null,
+        "2024": "PERS_00005432",
+        "2025": "PERS_00005436"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 16,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 16,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 16,
+          "returning": 12,
+          "departed": 4,
+          "new_staff": 4,
+          "retention_rate": 0.75
+        },
+        "2023": {
+          "head_coach_same": null,
+          "staff_size": 17,
+          "returning": 12,
+          "departed": 4,
+          "new_staff": 5,
+          "retention_rate": 0.75
+        },
+        "2024": {
+          "head_coach_same": null,
+          "staff_size": 14,
+          "returning": 8,
+          "departed": 9,
+          "new_staff": 6,
+          "retention_rate": 0.4706
+        },
+        "2025": {
+          "head_coach_same": false,
+          "staff_size": 20,
+          "returning": 2,
+          "departed": 12,
+          "new_staff": 18,
+          "retention_rate": 0.1429
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacalc": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.415,
+      "continuity_score": 0.415,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 532,
+        "transfer_counts_by_tier": {
+          "non_transfer": 532
+        },
+        "class_distribution": {
+          "Sr.": 89,
+          "So.": 125,
+          "Jr.": 173,
+          "Gr.": 28,
+          "Fr.": 97,
+          "Unknown": 20
+        },
+        "avg_experience_score": 2.7275,
+        "avg_bmi": 29.6164,
+        "in_state_rate": 0.469
+      }
+    },
+    "swacalcc": {
+      "staff_stability_score": null,
+      "roster_experience_score": null,
+      "continuity_score": null,
+      "continuity_grade": "N/A",
+      "head_coach_history": {
+        "2021": null
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 3,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 3,
+          "retention_rate": null
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacasu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.2608,
+      "continuity_score": 0.2608,
+      "continuity_grade": "F",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 578,
+        "transfer_counts_by_tier": {
+          "non_transfer": 414,
+          "FBS": 98,
+          "FCS": 29,
+          "D2/D3/NAIA": 23,
+          "JUCO": 14
+        },
+        "class_distribution": {
+          "So.": 149,
+          "Fr.": 239,
+          "Jr.": 92,
+          "Sr.": 57,
+          "Gr.": 19,
+          "Unknown": 22
+        },
+        "avg_experience_score": 2.1673,
+        "avg_bmi": 29.737,
+        "in_state_rate": 0.3188
+      }
+    },
+    "swacasuc": {
+      "staff_stability_score": 0.5921,
+      "roster_experience_score": null,
+      "continuity_score": 0.5921,
+      "continuity_grade": "C",
+      "head_coach_history": {
+        "2021": "PERS_00005451",
+        "2022": "PERS_00005550",
+        "2023": "PERS_00005555",
+        "2024": "PERS_00005555",
+        "2025": "PERS_00005464"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 14,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 14,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": false,
+          "staff_size": 16,
+          "returning": 1,
+          "departed": 13,
+          "new_staff": 15,
+          "retention_rate": 0.0714
+        },
+        "2023": {
+          "head_coach_same": false,
+          "staff_size": 17,
+          "returning": 10,
+          "departed": 6,
+          "new_staff": 7,
+          "retention_rate": 0.625
+        },
+        "2024": {
+          "head_coach_same": true,
+          "staff_size": 18,
+          "returning": 12,
+          "departed": 5,
+          "new_staff": 6,
+          "retention_rate": 0.7059
+        },
+        "2025": {
+          "head_coach_same": false,
+          "staff_size": 18,
+          "returning": 13,
+          "departed": 5,
+          "new_staff": 5,
+          "retention_rate": 0.7222
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacbcu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3765,
+      "continuity_score": 0.3765,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 502,
+        "transfer_counts_by_tier": {
+          "FBS": 108,
+          "non_transfer": 315,
+          "D2/D3/NAIA": 34,
+          "FCS": 25,
+          "JUCO": 20
+        },
+        "class_distribution": {
+          "Sr.": 92,
+          "Jr.": 123,
+          "Gr.": 27,
+          "So.": 102,
+          "Fr.": 142,
+          "Unknown": 16
+        },
+        "avg_experience_score": 2.5998,
+        "avg_bmi": 28.9259,
+        "in_state_rate": 0.7308
+      }
+    },
+    "swacbcuc": {
+      "staff_stability_score": 0.671,
+      "roster_experience_score": null,
+      "continuity_score": 0.671,
+      "continuity_grade": "B",
+      "head_coach_history": {
+        "2021": "PERS_00005464",
+        "2022": "PERS_00005464",
+        "2023": "PERS_00005611",
+        "2024": "PERS_00005611",
+        "2025": "PERS_00005611"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 14,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 14,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 8,
+          "departed": 6,
+          "new_staff": 3,
+          "retention_rate": 0.5714
+        },
+        "2023": {
+          "head_coach_same": false,
+          "staff_size": 11,
+          "returning": 0,
+          "departed": 11,
+          "new_staff": 11,
+          "retention_rate": 0.0
+        },
+        "2024": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 10,
+          "departed": 1,
+          "new_staff": 1,
+          "retention_rate": 0.9091
+        },
+        "2025": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 9,
+          "departed": 2,
+          "new_staff": 2,
+          "retention_rate": 0.8182
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacfamu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.4336,
+      "continuity_score": 0.4336,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 601,
+        "transfer_counts_by_tier": {
+          "FBS": 191,
+          "non_transfer": 332,
+          "FCS": 39,
+          "JUCO": 21,
+          "D2/D3/NAIA": 18
+        },
+        "class_distribution": {
+          "So.": 103,
+          "Sr.": 102,
+          "Gr.": 83,
+          "Fr.": 159,
+          "Jr.": 129,
+          "Unknown": 25
+        },
+        "avg_experience_score": 2.9557,
+        "avg_bmi": 29.3168,
+        "in_state_rate": 0.7734
+      }
+    },
+    "swacfamuc": {
+      "staff_stability_score": 0.5111,
+      "roster_experience_score": null,
+      "continuity_score": 0.5111,
+      "continuity_grade": "C",
+      "head_coach_history": {
+        "2021": "PERS_00005479",
+        "2022": "PERS_00005479",
+        "2023": "PERS_00005483",
+        "2024": "PERS_00005464",
+        "2025": "PERS_00005464"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 15,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 15,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 15,
+          "returning": 8,
+          "departed": 7,
+          "new_staff": 7,
+          "retention_rate": 0.5333
+        },
+        "2023": {
+          "head_coach_same": false,
+          "staff_size": 11,
+          "returning": 8,
+          "departed": 7,
+          "new_staff": 3,
+          "retention_rate": 0.5333
+        },
+        "2024": {
+          "head_coach_same": false,
+          "staff_size": 14,
+          "returning": 0,
+          "departed": 11,
+          "new_staff": 14,
+          "retention_rate": 0.0
+        },
+        "2025": {
+          "head_coach_same": true,
+          "staff_size": 14,
+          "returning": 14,
+          "departed": 0,
+          "new_staff": 0,
+          "retention_rate": 1.0
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacgsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3125,
+      "continuity_score": 0.3125,
+      "continuity_grade": "F",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 442,
+        "transfer_counts_by_tier": {
+          "non_transfer": 300,
+          "FBS": 83,
+          "JUCO": 29,
+          "D2/D3/NAIA": 13,
+          "FCS": 17
+        },
+        "class_distribution": {
+          "So.": 108,
+          "Fr.": 153,
+          "Jr.": 84,
+          "Sr.": 73,
+          "Gr.": 10,
+          "Unknown": 14
+        },
+        "avg_experience_score": 2.375,
+        "avg_bmi": 29.1425,
+        "in_state_rate": 0.5405
+      }
+    },
+    "swacgsuc": {
+      "staff_stability_score": 0.5,
+      "roster_experience_score": null,
+      "continuity_score": 0.5,
+      "continuity_grade": "C",
+      "head_coach_history": {
+        "2022": "PERS_00005574",
+        "2023": "PERS_00005574"
+      },
+      "coaching_retention": {
+        "2022": {
+          "head_coach_same": null,
+          "staff_size": 14,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 14,
+          "retention_rate": null
+        },
+        "2023": {
+          "head_coach_same": true,
+          "staff_size": 14,
+          "returning": 7,
+          "departed": 7,
+          "new_staff": 7,
+          "retention_rate": 0.5
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacjsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.433,
+      "continuity_score": 0.433,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 506,
+        "transfer_counts_by_tier": {
+          "FBS": 144,
+          "non_transfer": 275,
+          "JUCO": 45,
+          "FCS": 23,
+          "D2/D3/NAIA": 19
+        },
+        "class_distribution": {
+          "Sr.": 90,
+          "Fr.": 133,
+          "So.": 87,
+          "Jr.": 113,
+          "Gr.": 66,
+          "Unknown": 17
+        },
+        "avg_experience_score": 2.7577,
+        "avg_bmi": 29.6268,
+        "in_state_rate": 0.367
+      }
+    },
+    "swacjsuc": {
+      "staff_stability_score": 0.5486,
+      "roster_experience_score": null,
+      "continuity_score": 0.5486,
+      "continuity_grade": "C",
+      "head_coach_history": {
+        "2021": "PERS_00005493",
+        "2022": "PERS_00005493",
+        "2023": "PERS_00005495",
+        "2024": "PERS_00005495",
+        "2025": "PERS_00005495"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 13,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 13,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 17,
+          "returning": 12,
+          "departed": 1,
+          "new_staff": 5,
+          "retention_rate": 0.9231
+        },
+        "2023": {
+          "head_coach_same": false,
+          "staff_size": 18,
+          "returning": 3,
+          "departed": 14,
+          "new_staff": 15,
+          "retention_rate": 0.1765
+        },
+        "2024": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 5,
+          "departed": 13,
+          "new_staff": 6,
+          "retention_rate": 0.2778
+        },
+        "2025": {
+          "head_coach_same": true,
+          "staff_size": 11,
+          "returning": 9,
+          "departed": 2,
+          "new_staff": 2,
+          "retention_rate": 0.8182
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacmvsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.4338,
+      "continuity_score": 0.4338,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 453,
+        "transfer_counts_by_tier": {
+          "non_transfer": 395,
+          "JUCO": 30,
+          "FBS": 13,
+          "FCS": 9,
+          "D2/D3/NAIA": 6
+        },
+        "class_distribution": {
+          "Gr.": 63,
+          "So.": 74,
+          "Fr.": 111,
+          "Jr.": 136,
+          "Sr.": 54,
+          "Unknown": 15
+        },
+        "avg_experience_score": 2.7043,
+        "avg_bmi": 29.9256,
+        "in_state_rate": 0.2917
+      }
+    },
+    "swacmvsuc": {
+      "staff_stability_score": null,
+      "roster_experience_score": null,
+      "continuity_score": null,
+      "continuity_grade": "N/A",
+      "head_coach_history": {
+        "2021": "PERS_00005506"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 12,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 12,
+          "retention_rate": null
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacpvamu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.4625,
+      "continuity_score": 0.4625,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 495,
+        "transfer_counts_by_tier": {
+          "FBS": 68,
+          "non_transfer": 365,
+          "JUCO": 13,
+          "D2/D3/NAIA": 39,
+          "FCS": 10
+        },
+        "class_distribution": {
+          "Sr.": 116,
+          "Gr.": 53,
+          "Fr.": 104,
+          "Jr.": 115,
+          "So.": 85,
+          "Unknown": 22
+        },
+        "avg_experience_score": 2.8848,
+        "avg_bmi": 29.4515,
+        "in_state_rate": 0.5333
+      }
+    },
+    "swacsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3674,
+      "continuity_score": 0.3674,
+      "continuity_grade": "D",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 409,
+        "transfer_counts_by_tier": {
+          "JUCO": 36,
+          "FCS": 39,
+          "FBS": 57,
+          "D2/D3/NAIA": 11,
+          "non_transfer": 266
+        },
+        "class_distribution": {
+          "Jr.": 94,
+          "Sr.": 60,
+          "So.": 90,
+          "Gr.": 31,
+          "Fr.": 121,
+          "Unknown": 13
+        },
+        "avg_experience_score": 2.5606,
+        "avg_bmi": 29.4033,
+        "in_state_rate": 0.5755
+      }
+    },
+    "swacsuc": {
+      "staff_stability_score": null,
+      "roster_experience_score": null,
+      "continuity_score": null,
+      "continuity_grade": "N/A",
+      "head_coach_history": {
+        "2021": "PERS_00005517"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 14,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 14,
+          "retention_rate": null
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swactsu": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3229,
+      "continuity_score": 0.3229,
+      "continuity_grade": "F",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 495,
+        "transfer_counts_by_tier": {
+          "FBS": 55,
+          "non_transfer": 335,
+          "FCS": 23,
+          "JUCO": 41,
+          "D2/D3/NAIA": 41
+        },
+        "class_distribution": {
+          "Gr.": 35,
+          "So.": 101,
+          "Fr.": 190,
+          "Jr.": 107,
+          "Sr.": 61,
+          "Unknown": 1
+        },
+        "avg_experience_score": 2.3674,
+        "avg_bmi": 28.879,
+        "in_state_rate": 0.6122
+      }
+    },
+    "swactsuc": {
+      "staff_stability_score": 0.4611,
+      "roster_experience_score": null,
+      "continuity_score": 0.4611,
+      "continuity_grade": "D",
+      "head_coach_history": {
+        "2021": "PERS_00003342",
+        "2022": "PERS_00003342",
+        "2023": "PERS_00005647",
+        "2024": "PERS_00005310",
+        "2025": "PERS_00005310"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 15,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 15,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": true,
+          "staff_size": 15,
+          "returning": 13,
+          "departed": 2,
+          "new_staff": 2,
+          "retention_rate": 0.8667
+        },
+        "2023": {
+          "head_coach_same": false,
+          "staff_size": 12,
+          "returning": 0,
+          "departed": 15,
+          "new_staff": 12,
+          "retention_rate": 0.0
+        },
+        "2024": {
+          "head_coach_same": false,
+          "staff_size": 20,
+          "returning": 0,
+          "departed": 12,
+          "new_staff": 20,
+          "retention_rate": 0.0
+        },
+        "2025": {
+          "head_coach_same": true,
+          "staff_size": 26,
+          "returning": 19,
+          "departed": 1,
+          "new_staff": 7,
+          "retention_rate": 0.95
+        }
+      },
+      "roster_composition_2025": {}
+    },
+    "swacuapb": {
+      "staff_stability_score": null,
+      "roster_experience_score": 0.3285,
+      "continuity_score": 0.3285,
+      "continuity_grade": "F",
+      "head_coach_history": {},
+      "coaching_retention": {},
+      "roster_composition_2025": {
+        "roster_size": 471,
+        "transfer_counts_by_tier": {
+          "non_transfer": 390,
+          "FBS": 23,
+          "FCS": 11,
+          "JUCO": 32,
+          "D2/D3/NAIA": 15
+        },
+        "class_distribution": {
+          "Sr.": 58,
+          "Gr.": 21,
+          "Fr.": 157,
+          "Jr.": 123,
+          "So.": 103,
+          "Unknown": 9
+        },
+        "avg_experience_score": 2.4102,
+        "avg_bmi": 29.2603,
+        "in_state_rate": 0.2828
+      }
+    },
+    "swacuapbc": {
+      "staff_stability_score": 0.2159,
+      "roster_experience_score": null,
+      "continuity_score": 0.2159,
+      "continuity_grade": "F",
+      "head_coach_history": {
+        "2021": "PERS_00005531",
+        "2022": "PERS_00005533",
+        "2023": "PERS_00005657"
+      },
+      "coaching_retention": {
+        "2021": {
+          "head_coach_same": null,
+          "staff_size": 12,
+          "returning": 0,
+          "departed": 0,
+          "new_staff": 12,
+          "retention_rate": null
+        },
+        "2022": {
+          "head_coach_same": false,
+          "staff_size": 11,
+          "returning": 3,
+          "departed": 9,
+          "new_staff": 8,
+          "retention_rate": 0.25
+        },
+        "2023": {
+          "head_coach_same": false,
+          "staff_size": 11,
+          "returning": 2,
+          "departed": 9,
+          "new_staff": 9,
+          "retention_rate": 0.1818
+        }
+      },
+      "roster_composition_2025": {}
+    }
+  }
+}

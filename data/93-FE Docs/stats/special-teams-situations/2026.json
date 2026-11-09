@@ -1,0 +1,2512 @@
+{
+ "season": 2026,
+ "generated_at": "2026-11-07T20:01:57-06:00",
+ "definitions": {
+  "late_close": "4th quarter with the margin before the kick within 8, or overtime (play_filters.is_late_and_close_state; the clutch-kick rule). Never garbage time.",
+  "inside_5": "a punt that ends at or inside the receiving team's 5, not a touchback, not blocked (the same end spot as inside_20 / inside_10 in special_teams_season).",
+  "backed_up_punts": "punts snapped at or inside the punting team's own 10 (situations.BACKED_UP_YL_ABS, the drive engine's backed-up zone); net average and blocks.",
+  "returns_to_midfield": "punt returns that end at or past midfield (the return team's frame).",
+  "returns_past_own_40": "kickoff returns that end at or past the return team's own 40.",
+  "tie_or_lead": "4th-quarter or overtime field goals with the kicking team down 0-3 before the kick: a make ties or takes the lead. `against` / `stopped` are the same kicks faced.",
+  "two_point": "live two-point tries (special_teams.two_point_tries). mandatory = overtime from the second round on. stops = tries against that failed.",
+  "special_teams_epa": "sum of the stream EPA of every late-and-close kick, in this team's frame (kicking or returning), from st_events.",
+  "margin_source": "the kick row's own score margin and garbage-time verdict (kick rows are scored from the kicking team's side, enrichment score_perspective_team_id).",
+  "scope": "games between two of the 18 with play-by-play. `competitive` drops garbage-time kicks (play_filters.is_garbage_time); late-and-close fields are identical in both."
+ },
+ "garbage_time": {
+  "rule": "dual-surfaced: `all` and `competitive` per team",
+  "check": [
+   {
+    "team_id": "swacaamu",
+    "field": "two_point.stops",
+    "all": 1,
+    "competitive": 0
+   },
+   {
+    "team_id": "swacgsu",
+    "field": "two_point.attempts",
+    "all": 2,
+    "competitive": 1
+   },
+   {
+    "team_id": "swacjsu",
+    "field": "punting.inside_5",
+    "all": 2,
+    "competitive": 1
+   }
+  ]
+ },
+ "pulled_elsewhere": {
+  "fg_clutch_and_ranges": "90-Output/{season}/team_season_{season}.json special_teams_season.field_goal_unit (clutch_attempts/made/pct, by_range, distance_bands)",
+  "punt_inside_20_10_and_zones": "special_teams_season.punt_team (inside_20/10, zone.flip / zone.pin)",
+  "pat_clutch": "special_teams_season.pat_offense"
+ },
+ "teams": [
+  {
+   "team_id": "meacdsu",
+   "conference": "meac",
+   "games": 3,
+   "all": {
+    "punting": {
+     "punts": 16,
+     "inside_5": 1,
+     "inside_5_rate": 0.0625,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 23.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 32.5,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 14,
+     "returns": 0,
+     "returns_to_midfield": 0,
+     "returns_to_midfield_rate": null,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 12.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 13,
+     "returns_past_own_40": 5,
+     "returns_past_own_40_rate": 0.3846,
+     "late_close_kickoffs_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 32.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 10,
+     "special_teams_epa": 1.04
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 16,
+     "inside_5": 1,
+     "inside_5_rate": 0.0625,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 23.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 32.5,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 14,
+     "returns": 0,
+     "returns_to_midfield": 0,
+     "returns_to_midfield_rate": null,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 12.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 12,
+     "returns_past_own_40": 4,
+     "returns_past_own_40_rate": 0.3333,
+     "late_close_kickoffs_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 32.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 10,
+     "special_teams_epa": 1.04
+    }
+   }
+  },
+  {
+   "team_id": "meachu",
+   "conference": "meac",
+   "games": 4,
+   "all": {
+    "punting": {
+     "punts": 28,
+     "inside_5": 1,
+     "inside_5_rate": 0.0357,
+     "backed_up_punts": 6,
+     "backed_up_net_avg": 39.2,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 36.8,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.25,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 27,
+     "returns": 8,
+     "returns_to_midfield": 0,
+     "returns_to_midfield_rate": 0.0,
+     "late_close_punts_faced": 5,
+     "late_close_returns": 2,
+     "late_close_return_avg": 2.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 4,
+     "late_close_returns_allowed": 4,
+     "late_close_return_avg_allowed": 23.5,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 19,
+     "returns_past_own_40": 3,
+     "returns_past_own_40_rate": 0.1579,
+     "late_close_kickoffs_faced": 4,
+     "late_close_returns": 2,
+     "late_close_return_avg": 17.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 24,
+     "special_teams_epa": -3.223
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 26,
+     "inside_5": 1,
+     "inside_5_rate": 0.0385,
+     "backed_up_punts": 6,
+     "backed_up_net_avg": 39.2,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 36.8,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.25,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 27,
+     "returns": 8,
+     "returns_to_midfield": 0,
+     "returns_to_midfield_rate": 0.0,
+     "late_close_punts_faced": 5,
+     "late_close_returns": 2,
+     "late_close_return_avg": 2.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 4,
+     "late_close_returns_allowed": 4,
+     "late_close_return_avg_allowed": 23.5,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 17,
+     "returns_past_own_40": 3,
+     "returns_past_own_40_rate": 0.1765,
+     "late_close_kickoffs_faced": 4,
+     "late_close_returns": 2,
+     "late_close_return_avg": 17.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 24,
+     "special_teams_epa": -3.223
+    }
+   }
+  },
+  {
+   "team_id": "meacmsu",
+   "conference": "meac",
+   "games": 3,
+   "all": {
+    "punting": {
+     "punts": 20,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 36.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 41.0,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 16,
+     "returns": 5,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.6,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 8.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 1,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 32.0,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 10,
+     "returns_past_own_40": 0,
+     "returns_past_own_40_rate": 0.0,
+     "late_close_kickoffs_faced": 2,
+     "late_close_returns": 2,
+     "late_close_return_avg": 25.5,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 9,
+     "special_teams_epa": -4.339
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 18,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 36.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 41.0,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 16,
+     "returns": 5,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.6,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 8.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 1,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 32.0,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 9,
+     "returns_past_own_40": 0,
+     "returns_past_own_40_rate": 0.0,
+     "late_close_kickoffs_faced": 2,
+     "late_close_returns": 2,
+     "late_close_return_avg": 25.5,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 9,
+     "special_teams_epa": -4.339
+    }
+   }
+  },
+  {
+   "team_id": "meacnccu",
+   "conference": "meac",
+   "games": 4,
+   "all": {
+    "punting": {
+     "punts": 20,
+     "inside_5": 1,
+     "inside_5_rate": 0.05,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 28.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 1,
+     "late_close_net_avg": 40.0,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 1.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 23,
+     "returns": 8,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.125,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 19.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 1,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 3,
+     "late_close_returns_allowed": 3,
+     "late_close_return_avg_allowed": 17.7,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 7,
+     "returns_past_own_40": 1,
+     "returns_past_own_40_rate": 0.1429,
+     "late_close_kickoffs_faced": 0,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 0,
+     "rate": 0.0,
+     "late_close_attempts": 1,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 9,
+     "special_teams_epa": 10.461
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 20,
+     "inside_5": 1,
+     "inside_5_rate": 0.05,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 28.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 1,
+     "late_close_net_avg": 40.0,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 1.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 21,
+     "returns": 7,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1429,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 19.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 1,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 3,
+     "late_close_returns_allowed": 3,
+     "late_close_return_avg_allowed": 17.7,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 7,
+     "returns_past_own_40": 1,
+     "returns_past_own_40_rate": 0.1429,
+     "late_close_kickoffs_faced": 0,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 0,
+     "rate": 0.0,
+     "late_close_attempts": 1,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 9,
+     "special_teams_epa": 10.461
+    }
+   }
+  },
+  {
+   "team_id": "meacnsu",
+   "conference": "meac",
+   "games": 3,
+   "all": {
+    "punting": {
+     "punts": 14,
+     "inside_5": 1,
+     "inside_5_rate": 0.0714,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 1,
+     "late_close_net_avg": 42.0,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 1.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 13,
+     "returns": 3,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.6667,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 0,
+     "late_close_returns_allowed": 0,
+     "late_close_return_avg_allowed": null,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 12,
+     "returns_past_own_40": 1,
+     "returns_past_own_40_rate": 0.0833,
+     "late_close_kickoffs_faced": 4,
+     "late_close_returns": 4,
+     "late_close_return_avg": 13.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 1,
+     "late_close_stops": 1
+    },
+    "late_close": {
+     "kicks": 12,
+     "special_teams_epa": -3.945
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 14,
+     "inside_5": 1,
+     "inside_5_rate": 0.0714,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 1,
+     "late_close_net_avg": 42.0,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 1.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 13,
+     "returns": 3,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.6667,
+     "late_close_punts_faced": 1,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 0,
+     "late_close_returns_allowed": 0,
+     "late_close_return_avg_allowed": null,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 12,
+     "returns_past_own_40": 1,
+     "returns_past_own_40_rate": 0.0833,
+     "late_close_kickoffs_faced": 4,
+     "late_close_returns": 4,
+     "late_close_return_avg": 13.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 1,
+     "late_close_stops": 1
+    },
+    "late_close": {
+     "kicks": 12,
+     "special_teams_epa": -3.945
+    }
+   }
+  },
+  {
+   "team_id": "meacscsu",
+   "conference": "meac",
+   "games": 5,
+   "all": {
+    "punting": {
+     "punts": 25,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": -6.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 36.2,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.25,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 34,
+     "returns": 5,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.2,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 1,
+     "late_close_return_avg": 7.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 18.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 16,
+     "returns_past_own_40": 2,
+     "returns_past_own_40_rate": 0.125,
+     "late_close_kickoffs_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 23.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 14,
+     "special_teams_epa": 1.577
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 25,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": -6.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 36.2,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.25,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 32,
+     "returns": 5,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.2,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 1,
+     "late_close_return_avg": 7.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 18.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 16,
+     "returns_past_own_40": 2,
+     "returns_past_own_40_rate": 0.125,
+     "late_close_kickoffs_faced": 1,
+     "late_close_returns": 1,
+     "late_close_return_avg": 23.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 14,
+     "special_teams_epa": 1.577
+    }
+   }
+  },
+  {
+   "team_id": "swacaamu",
+   "conference": "swac",
+   "games": 7,
+   "all": {
+    "punting": {
+     "punts": 31,
+     "inside_5": 2,
+     "inside_5_rate": 0.0645,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 21.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 29.8,
+     "late_close_inside_20": 2,
+     "late_close_inside_20_rate": 0.4,
+     "late_close_explosive_returns_allowed": 3
+    },
+    "punt_return": {
+     "punts_faced": 39,
+     "returns": 10,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 2,
+     "late_close_return_avg": 4.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 16.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 18,
+     "returns_past_own_40": 3,
+     "returns_past_own_40_rate": 0.1667,
+     "late_close_kickoffs_faced": 6,
+     "late_close_returns": 1,
+     "late_close_return_avg": 20.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 1,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 4,
+     "stops": 1,
+     "stop_rate": 0.25,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 25,
+     "special_teams_epa": 2.408
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 29,
+     "inside_5": 2,
+     "inside_5_rate": 0.069,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 21.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 29.8,
+     "late_close_inside_20": 2,
+     "late_close_inside_20_rate": 0.4,
+     "late_close_explosive_returns_allowed": 3
+    },
+    "punt_return": {
+     "punts_faced": 35,
+     "returns": 9,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1111,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 2,
+     "late_close_return_avg": 4.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 16.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 18,
+     "returns_past_own_40": 3,
+     "returns_past_own_40_rate": 0.1667,
+     "late_close_kickoffs_faced": 6,
+     "late_close_returns": 1,
+     "late_close_return_avg": 20.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 1,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 3,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 25,
+     "special_teams_epa": 2.408
+    }
+   }
+  },
+  {
+   "team_id": "swacalc",
+   "conference": "swac",
+   "games": 6,
+   "all": {
+    "punting": {
+     "punts": 19,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 40.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 3,
+     "late_close_net_avg": 32.7,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.3333,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 19,
+     "returns": 10,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.3,
+     "late_close_punts_faced": 2,
+     "late_close_returns": 2,
+     "late_close_return_avg": 11.5,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 6,
+     "late_close_returns_allowed": 4,
+     "late_close_return_avg_allowed": 22.5,
+     "late_close_explosive_returns_allowed": 2
+    },
+    "kick_return": {
+     "returns": 16,
+     "returns_past_own_40": 0,
+     "returns_past_own_40_rate": 0.0,
+     "late_close_kickoffs_faced": 8,
+     "late_close_returns": 5,
+     "late_close_return_avg": 15.6,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 3,
+     "tie_or_lead_made": 2,
+     "tie_or_lead_against": 3,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 1,
+     "rate": 0.5,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 1,
+     "mandatory_made": 1,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 2,
+     "late_close_stops": 1
+    },
+    "late_close": {
+     "kicks": 36,
+     "special_teams_epa": -6.094
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 19,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 40.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 3,
+     "late_close_net_avg": 32.7,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.3333,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 18,
+     "returns": 10,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.3,
+     "late_close_punts_faced": 2,
+     "late_close_returns": 2,
+     "late_close_return_avg": 11.5,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 6,
+     "late_close_returns_allowed": 4,
+     "late_close_return_avg_allowed": 22.5,
+     "late_close_explosive_returns_allowed": 2
+    },
+    "kick_return": {
+     "returns": 16,
+     "returns_past_own_40": 0,
+     "returns_past_own_40_rate": 0.0,
+     "late_close_kickoffs_faced": 8,
+     "late_close_returns": 5,
+     "late_close_return_avg": 15.6,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 3,
+     "tie_or_lead_made": 2,
+     "tie_or_lead_against": 3,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 1,
+     "rate": 0.5,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 1,
+     "mandatory_made": 1,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 2,
+     "late_close_stops": 1
+    },
+    "late_close": {
+     "kicks": 36,
+     "special_teams_epa": -6.094
+    }
+   }
+  },
+  {
+   "team_id": "swacasu",
+   "conference": "swac",
+   "games": 7,
+   "all": {
+    "punting": {
+     "punts": 29,
+     "inside_5": 1,
+     "inside_5_rate": 0.0345,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 37.2,
+     "late_close_inside_20": 3,
+     "late_close_inside_20_rate": 0.75,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 28,
+     "returns": 9,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.2222,
+     "late_close_punts_faced": 6,
+     "late_close_returns": 2,
+     "late_close_return_avg": 18.5,
+     "late_close_explosive_returns": 2
+    },
+    "kickoff": {
+     "onside_kicks": 1,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 4,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 17.5,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 23,
+     "returns_past_own_40": 6,
+     "returns_past_own_40_rate": 0.2609,
+     "late_close_kickoffs_faced": 6,
+     "late_close_returns": 3,
+     "late_close_return_avg": 19.3,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 30,
+     "special_teams_epa": 3.375
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 29,
+     "inside_5": 1,
+     "inside_5_rate": 0.0345,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 37.2,
+     "late_close_inside_20": 3,
+     "late_close_inside_20_rate": 0.75,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 28,
+     "returns": 9,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.2222,
+     "late_close_punts_faced": 6,
+     "late_close_returns": 2,
+     "late_close_return_avg": 18.5,
+     "late_close_explosive_returns": 2
+    },
+    "kickoff": {
+     "onside_kicks": 1,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 4,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 17.5,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 23,
+     "returns_past_own_40": 6,
+     "returns_past_own_40_rate": 0.2609,
+     "late_close_kickoffs_faced": 6,
+     "late_close_returns": 3,
+     "late_close_return_avg": 19.3,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 30,
+     "special_teams_epa": 3.375
+    }
+   }
+  },
+  {
+   "team_id": "swacbcu",
+   "conference": "swac",
+   "games": 7,
+   "all": {
+    "punting": {
+     "punts": 42,
+     "inside_5": 1,
+     "inside_5_rate": 0.0238,
+     "backed_up_punts": 2,
+     "backed_up_net_avg": 33.5,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 35.0,
+     "late_close_inside_20": 2,
+     "late_close_inside_20_rate": 0.4,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 32,
+     "returns": 9,
+     "returns_to_midfield": 0,
+     "returns_to_midfield_rate": 0.0,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 1,
+     "late_close_return_avg": 14.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 1,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 1,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 24.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 31,
+     "returns_past_own_40": 2,
+     "returns_past_own_40_rate": 0.0645,
+     "late_close_kickoffs_faced": 2,
+     "late_close_returns": 1,
+     "late_close_return_avg": 15.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 0,
+     "rate": 0.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 16,
+     "special_teams_epa": 2.391
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 36,
+     "inside_5": 1,
+     "inside_5_rate": 0.0278,
+     "backed_up_punts": 2,
+     "backed_up_net_avg": 33.5,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 35.0,
+     "late_close_inside_20": 2,
+     "late_close_inside_20_rate": 0.4,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 30,
+     "returns": 8,
+     "returns_to_midfield": 0,
+     "returns_to_midfield_rate": 0.0,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 1,
+     "late_close_return_avg": 14.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 1,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 24.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 24,
+     "returns_past_own_40": 2,
+     "returns_past_own_40_rate": 0.0833,
+     "late_close_kickoffs_faced": 2,
+     "late_close_returns": 1,
+     "late_close_return_avg": 15.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 0,
+     "rate": 0.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 16,
+     "special_teams_epa": 2.391
+    }
+   }
+  },
+  {
+   "team_id": "swacfamu",
+   "conference": "swac",
+   "games": 7,
+   "all": {
+    "punting": {
+     "punts": 34,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 2,
+     "backed_up_net_avg": 47.5,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 45.5,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.5,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 31,
+     "returns": 9,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.2222,
+     "late_close_punts_faced": 2,
+     "late_close_returns": 1,
+     "late_close_return_avg": 7.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 4,
+     "late_close_returns_allowed": 0,
+     "late_close_return_avg_allowed": null,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 20,
+     "returns_past_own_40": 3,
+     "returns_past_own_40_rate": 0.15,
+     "late_close_kickoffs_faced": 3,
+     "late_close_returns": 1,
+     "late_close_return_avg": 27.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 2,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 17,
+     "special_teams_epa": 6.762
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 34,
+     "inside_5": 0,
+     "inside_5_rate": 0.0,
+     "backed_up_punts": 2,
+     "backed_up_net_avg": 47.5,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 45.5,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.5,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 31,
+     "returns": 9,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.2222,
+     "late_close_punts_faced": 2,
+     "late_close_returns": 1,
+     "late_close_return_avg": 7.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 4,
+     "late_close_returns_allowed": 0,
+     "late_close_return_avg_allowed": null,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 20,
+     "returns_past_own_40": 3,
+     "returns_past_own_40_rate": 0.15,
+     "late_close_kickoffs_faced": 3,
+     "late_close_returns": 1,
+     "late_close_return_avg": 27.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 2,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 17,
+     "special_teams_epa": 6.762
+    }
+   }
+  },
+  {
+   "team_id": "swacgsu",
+   "conference": "swac",
+   "games": 6,
+   "all": {
+    "punting": {
+     "punts": 28,
+     "inside_5": 3,
+     "inside_5_rate": 0.1071,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 54.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 7,
+     "late_close_net_avg": 26.3,
+     "late_close_inside_20": 4,
+     "late_close_inside_20_rate": 0.5714,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 27,
+     "returns": 6,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.5,
+     "late_close_punts_faced": 5,
+     "late_close_returns": 1,
+     "late_close_return_avg": 32.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 8,
+     "late_close_returns_allowed": 4,
+     "late_close_return_avg_allowed": 14.5,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 26,
+     "returns_past_own_40": 8,
+     "returns_past_own_40_rate": 0.3077,
+     "late_close_kickoffs_faced": 5,
+     "late_close_returns": 4,
+     "late_close_return_avg": 20.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 1,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 1,
+     "rate": 0.5,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 39,
+     "special_teams_epa": 6.075
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 25,
+     "inside_5": 3,
+     "inside_5_rate": 0.12,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 54.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 7,
+     "late_close_net_avg": 26.3,
+     "late_close_inside_20": 4,
+     "late_close_inside_20_rate": 0.5714,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 25,
+     "returns": 6,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.5,
+     "late_close_punts_faced": 5,
+     "late_close_returns": 1,
+     "late_close_return_avg": 32.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 8,
+     "late_close_returns_allowed": 4,
+     "late_close_return_avg_allowed": 14.5,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 23,
+     "returns_past_own_40": 5,
+     "returns_past_own_40_rate": 0.2174,
+     "late_close_kickoffs_faced": 5,
+     "late_close_returns": 4,
+     "late_close_return_avg": 20.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 1,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 39,
+     "special_teams_epa": 6.075
+    }
+   }
+  },
+  {
+   "team_id": "swacjsu",
+   "conference": "swac",
+   "games": 6,
+   "all": {
+    "punting": {
+     "punts": 36,
+     "inside_5": 2,
+     "inside_5_rate": 0.0556,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 28.8,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.25,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 39,
+     "returns": 9,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1111,
+     "late_close_punts_faced": 5,
+     "late_close_returns": 3,
+     "late_close_return_avg": 9.3,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 7,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 29.5,
+     "late_close_explosive_returns_allowed": 2
+    },
+    "kick_return": {
+     "returns": 22,
+     "returns_past_own_40": 4,
+     "returns_past_own_40_rate": 0.1818,
+     "late_close_kickoffs_faced": 3,
+     "late_close_returns": 2,
+     "late_close_return_avg": 16.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 29,
+     "special_teams_epa": -5.447
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 34,
+     "inside_5": 1,
+     "inside_5_rate": 0.0294,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 28.8,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.25,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 37,
+     "returns": 9,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1111,
+     "late_close_punts_faced": 5,
+     "late_close_returns": 3,
+     "late_close_return_avg": 9.3,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 7,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 29.5,
+     "late_close_explosive_returns_allowed": 2
+    },
+    "kick_return": {
+     "returns": 22,
+     "returns_past_own_40": 4,
+     "returns_past_own_40_rate": 0.1818,
+     "late_close_kickoffs_faced": 3,
+     "late_close_returns": 2,
+     "late_close_return_avg": 16.0,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 0,
+     "stop_rate": 0.0,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 29,
+     "special_teams_epa": -5.447
+    }
+   }
+  },
+  {
+   "team_id": "swacmvsu",
+   "conference": "swac",
+   "games": 6,
+   "all": {
+    "punting": {
+     "punts": 44,
+     "inside_5": 2,
+     "inside_5_rate": 0.0455,
+     "backed_up_punts": 4,
+     "backed_up_net_avg": 27.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 14.0,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 32,
+     "returns": 6,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1667,
+     "late_close_punts_faced": 2,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 5,
+     "late_close_returns_allowed": 3,
+     "late_close_return_avg_allowed": 24.3,
+     "late_close_explosive_returns_allowed": 2
+    },
+    "kick_return": {
+     "returns": 27,
+     "returns_past_own_40": 1,
+     "returns_past_own_40_rate": 0.037,
+     "late_close_kickoffs_faced": 1,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 1,
+     "stop_rate": 1.0,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 17,
+     "special_teams_epa": -7.521
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 41,
+     "inside_5": 2,
+     "inside_5_rate": 0.0488,
+     "backed_up_punts": 3,
+     "backed_up_net_avg": 26.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 2,
+     "late_close_net_avg": 14.0,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 30,
+     "returns": 6,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.1667,
+     "late_close_punts_faced": 2,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 5,
+     "late_close_returns_allowed": 3,
+     "late_close_return_avg_allowed": 24.3,
+     "late_close_explosive_returns_allowed": 2
+    },
+    "kick_return": {
+     "returns": 24,
+     "returns_past_own_40": 1,
+     "returns_past_own_40_rate": 0.0417,
+     "late_close_kickoffs_faced": 1,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 0,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 1,
+     "stops": 1,
+     "stop_rate": 1.0,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 17,
+     "special_teams_epa": -7.521
+    }
+   }
+  },
+  {
+   "team_id": "swacpvamu",
+   "conference": "swac",
+   "games": 6,
+   "all": {
+    "punting": {
+     "punts": 24,
+     "inside_5": 1,
+     "inside_5_rate": 0.0417,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 39.2,
+     "late_close_inside_20": 2,
+     "late_close_inside_20_rate": 0.5,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 31,
+     "returns": 7,
+     "returns_to_midfield": 4,
+     "returns_to_midfield_rate": 0.5714,
+     "late_close_punts_faced": 6,
+     "late_close_returns": 1,
+     "late_close_return_avg": 42.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 3,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 15.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 16,
+     "returns_past_own_40": 4,
+     "returns_past_own_40_rate": 0.25,
+     "late_close_kickoffs_faced": 5,
+     "late_close_returns": 4,
+     "late_close_return_avg": 19.5,
+     "late_close_explosive_returns": 2
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 1,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 26,
+     "special_teams_epa": 13.723
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 24,
+     "inside_5": 1,
+     "inside_5_rate": 0.0417,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 4,
+     "late_close_net_avg": 39.2,
+     "late_close_inside_20": 2,
+     "late_close_inside_20_rate": 0.5,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 30,
+     "returns": 7,
+     "returns_to_midfield": 4,
+     "returns_to_midfield_rate": 0.5714,
+     "late_close_punts_faced": 6,
+     "late_close_returns": 1,
+     "late_close_return_avg": 42.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 3,
+     "late_close_returns_allowed": 2,
+     "late_close_return_avg_allowed": 15.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 16,
+     "returns_past_own_40": 4,
+     "returns_past_own_40_rate": 0.25,
+     "late_close_kickoffs_faced": 5,
+     "late_close_returns": 4,
+     "late_close_return_avg": 19.5,
+     "late_close_explosive_returns": 2
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 1,
+     "tie_or_lead_made": 1,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 0,
+     "made": 0,
+     "rate": null,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 26,
+     "special_teams_epa": 13.723
+    }
+   }
+  },
+  {
+   "team_id": "swacsu",
+   "conference": "swac",
+   "games": 7,
+   "all": {
+    "punting": {
+     "punts": 31,
+     "inside_5": 3,
+     "inside_5_rate": 0.0968,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 27.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 3,
+     "late_close_net_avg": 28.3,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.3333,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 29,
+     "returns": 6,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.3333,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 1,
+     "late_close_return_avg": 7.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 0,
+     "late_close_return_avg_allowed": null,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 26,
+     "returns_past_own_40": 0,
+     "returns_past_own_40_rate": 0.0,
+     "late_close_kickoffs_faced": 0,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 12,
+     "special_teams_epa": -0.605
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 30,
+     "inside_5": 3,
+     "inside_5_rate": 0.1,
+     "backed_up_punts": 1,
+     "backed_up_net_avg": 27.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 3,
+     "late_close_net_avg": 28.3,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.3333,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "punt_return": {
+     "punts_faced": 28,
+     "returns": 6,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.3333,
+     "late_close_punts_faced": 4,
+     "late_close_returns": 1,
+     "late_close_return_avg": 7.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 2,
+     "late_close_returns_allowed": 0,
+     "late_close_return_avg_allowed": null,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 24,
+     "returns_past_own_40": 0,
+     "returns_past_own_40_rate": 0.0,
+     "late_close_kickoffs_faced": 0,
+     "late_close_returns": 0,
+     "late_close_return_avg": null,
+     "late_close_explosive_returns": 0
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 0,
+     "late_close_made": 0,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 12,
+     "special_teams_epa": -0.605
+    }
+   }
+  },
+  {
+   "team_id": "swactsu",
+   "conference": "swac",
+   "games": 7,
+   "all": {
+    "punting": {
+     "punts": 32,
+     "inside_5": 4,
+     "inside_5_rate": 0.125,
+     "backed_up_punts": 2,
+     "backed_up_net_avg": 39.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 28.2,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.2,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 34,
+     "returns": 5,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.2,
+     "late_close_punts_faced": 7,
+     "late_close_returns": 1,
+     "late_close_return_avg": 0.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 7,
+     "late_close_returns_allowed": 7,
+     "late_close_return_avg_allowed": 17.3,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 30,
+     "returns_past_own_40": 7,
+     "returns_past_own_40_rate": 0.2333,
+     "late_close_kickoffs_faced": 8,
+     "late_close_returns": 5,
+     "late_close_return_avg": 23.6,
+     "late_close_explosive_returns": 3
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 4,
+     "tie_or_lead_made": 4,
+     "tie_or_lead_against": 2,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 45,
+     "special_teams_epa": -13.763
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 31,
+     "inside_5": 4,
+     "inside_5_rate": 0.129,
+     "backed_up_punts": 2,
+     "backed_up_net_avg": 39.0,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 28.2,
+     "late_close_inside_20": 1,
+     "late_close_inside_20_rate": 0.2,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 34,
+     "returns": 5,
+     "returns_to_midfield": 1,
+     "returns_to_midfield_rate": 0.2,
+     "late_close_punts_faced": 7,
+     "late_close_returns": 1,
+     "late_close_return_avg": 0.0,
+     "late_close_explosive_returns": 0
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 7,
+     "late_close_returns_allowed": 7,
+     "late_close_return_avg_allowed": 17.3,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "kick_return": {
+     "returns": 29,
+     "returns_past_own_40": 7,
+     "returns_past_own_40_rate": 0.2414,
+     "late_close_kickoffs_faced": 8,
+     "late_close_returns": 5,
+     "late_close_return_avg": 23.6,
+     "late_close_explosive_returns": 3
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 4,
+     "tie_or_lead_made": 4,
+     "tie_or_lead_against": 2,
+     "tie_or_lead_stopped": 0
+    },
+    "two_point": {
+     "attempts": 1,
+     "made": 1,
+     "rate": 1.0,
+     "late_close_attempts": 1,
+     "late_close_made": 1,
+     "mandatory_attempts": 0,
+     "mandatory_made": 0,
+     "tries_against": 0,
+     "stops": 0,
+     "stop_rate": null,
+     "late_close_tries_against": 0,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 45,
+     "special_teams_epa": -13.763
+    }
+   }
+  },
+  {
+   "team_id": "swacuapb",
+   "conference": "swac",
+   "games": 6,
+   "all": {
+    "punting": {
+     "punts": 22,
+     "inside_5": 1,
+     "inside_5_rate": 0.0455,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 24.2,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 27,
+     "returns": 5,
+     "returns_to_midfield": 3,
+     "returns_to_midfield_rate": 0.6,
+     "late_close_punts_faced": 3,
+     "late_close_returns": 1,
+     "late_close_return_avg": 76.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 3,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 21.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 22,
+     "returns_past_own_40": 7,
+     "returns_past_own_40_rate": 0.3182,
+     "late_close_kickoffs_faced": 5,
+     "late_close_returns": 2,
+     "late_close_return_avg": 25.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 0,
+     "rate": 0.0,
+     "late_close_attempts": 1,
+     "late_close_made": 0,
+     "mandatory_attempts": 1,
+     "mandatory_made": 0,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 28,
+     "special_teams_epa": -2.875
+    }
+   },
+   "competitive": {
+    "punting": {
+     "punts": 20,
+     "inside_5": 1,
+     "inside_5_rate": 0.05,
+     "backed_up_punts": 0,
+     "backed_up_net_avg": null,
+     "backed_up_blocked": 0,
+     "late_close_punts": 5,
+     "late_close_net_avg": 24.2,
+     "late_close_inside_20": 0,
+     "late_close_inside_20_rate": 0.0,
+     "late_close_explosive_returns_allowed": 1
+    },
+    "punt_return": {
+     "punts_faced": 22,
+     "returns": 4,
+     "returns_to_midfield": 2,
+     "returns_to_midfield_rate": 0.5,
+     "late_close_punts_faced": 3,
+     "late_close_returns": 1,
+     "late_close_return_avg": 76.0,
+     "late_close_explosive_returns": 1
+    },
+    "kickoff": {
+     "onside_kicks": 0,
+     "onside_recovered": 0,
+     "late_close_kickoffs": 3,
+     "late_close_returns_allowed": 1,
+     "late_close_return_avg_allowed": 21.0,
+     "late_close_explosive_returns_allowed": 0
+    },
+    "kick_return": {
+     "returns": 21,
+     "returns_past_own_40": 7,
+     "returns_past_own_40_rate": 0.3333,
+     "late_close_kickoffs_faced": 5,
+     "late_close_returns": 2,
+     "late_close_return_avg": 25.0,
+     "late_close_explosive_returns": 1
+    },
+    "field_goal": {
+     "tie_or_lead_attempts": 0,
+     "tie_or_lead_made": 0,
+     "tie_or_lead_against": 1,
+     "tie_or_lead_stopped": 1
+    },
+    "two_point": {
+     "attempts": 2,
+     "made": 0,
+     "rate": 0.0,
+     "late_close_attempts": 1,
+     "late_close_made": 0,
+     "mandatory_attempts": 1,
+     "mandatory_made": 0,
+     "tries_against": 2,
+     "stops": 1,
+     "stop_rate": 0.5,
+     "late_close_tries_against": 1,
+     "late_close_stops": 0
+    },
+    "late_close": {
+     "kicks": 28,
+     "special_teams_epa": -2.875
+    }
+   }
+  }
+ ]
+}

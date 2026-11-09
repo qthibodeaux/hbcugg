@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "validator": "validate_coaches_hub_outputs",
+    "payload": "12-roster-pipeline\\5-coach-ecosystem\\payloads\\coaches_hub_payload_2025.json",
+    "roles": "12-roster-pipeline\\5-coach-ecosystem\\coach_roles.json",
+    "movement_v1": "12-roster-pipeline\\5-coach-ecosystem\\coach_movement_edges_v1.json"
+  },
+  "summary": {
+    "season": 2025,
+    "schools": 18,
+    "movement_edges": 63,
+    "network_edges": 302,
+    "error_count": 0,
+    "warning_count": 0,
+    "school_confidence_counts": {
+      "high": 15,
+      "low": 3
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

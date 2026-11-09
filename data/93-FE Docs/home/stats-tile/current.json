@@ -1,0 +1,847 @@
+{
+  "season": 2026,
+  "week": 10,
+  "week_label": "Week 10",
+  "generated_at": "2026-11-07T19:59:27-06:00",
+  "source": "current_season",
+  "rotation": [
+    "metric_of_week",
+    "efficiency_king",
+    "points_per_drive",
+    "explosive_drives",
+    "havoc_leader"
+  ],
+  "items": [
+    {
+      "key": "metric_of_week",
+      "title": "Metric of the Week",
+      "headline": "Alcorn lead the league in explosive drive rate at 45%.",
+      "value_kind": "league",
+      "teams": [
+        "swacalc"
+      ],
+      "primary": {
+        "value": 0.4545,
+        "display": "45%",
+        "label": "Explosive drive rate"
+      },
+      "compare": {
+        "display": "26%",
+        "label": "League average"
+      },
+      "why": "This week's metric: explosive drive rate, across every team with play-by-play.",
+      "data": {
+        "metric_label": "Explosive drive rate",
+        "leader_id": "swacalc",
+        "league_avg": 0.2584,
+        "league_avg_display": "26%",
+        "values": [
+          {
+            "team_id": "swacalc",
+            "value": 0.4545,
+            "display": "45%"
+          },
+          {
+            "team_id": "swacuapb",
+            "value": 0.3768,
+            "display": "38%"
+          },
+          {
+            "team_id": "meacnccu",
+            "value": 0.3333,
+            "display": "33%"
+          },
+          {
+            "team_id": "swacaamu",
+            "value": 0.3297,
+            "display": "33%"
+          },
+          {
+            "team_id": "swactsu",
+            "value": 0.3133,
+            "display": "31%"
+          },
+          {
+            "team_id": "swacgsu",
+            "value": 0.2958,
+            "display": "30%"
+          },
+          {
+            "team_id": "meacscsu",
+            "value": 0.2903,
+            "display": "29%"
+          },
+          {
+            "team_id": "swacpvamu",
+            "value": 0.2817,
+            "display": "28%"
+          },
+          {
+            "team_id": "swacsu",
+            "value": 0.2597,
+            "display": "26%"
+          },
+          {
+            "team_id": "swacjsu",
+            "value": 0.2564,
+            "display": "26%"
+          },
+          {
+            "team_id": "meacdsu",
+            "value": 0.2432,
+            "display": "24%"
+          },
+          {
+            "team_id": "swacmvsu",
+            "value": 0.1948,
+            "display": "19%"
+          },
+          {
+            "team_id": "meacnsu",
+            "value": 0.1892,
+            "display": "19%"
+          },
+          {
+            "team_id": "swacasu",
+            "value": 0.1842,
+            "display": "18%"
+          },
+          {
+            "team_id": "swacfamu",
+            "value": 0.1705,
+            "display": "17%"
+          },
+          {
+            "team_id": "meacmsu",
+            "value": 0.1389,
+            "display": "14%"
+          },
+          {
+            "team_id": "swacbcu",
+            "value": 0.1379,
+            "display": "14%"
+          },
+          {
+            "team_id": "meachu",
+            "value": 0.1111,
+            "display": "11%"
+          }
+        ]
+      }
+    },
+    {
+      "key": "efficiency_king",
+      "title": "Efficiency King",
+      "headline": "Alcorn stay on schedule on 52% of snaps.",
+      "value_kind": "team",
+      "teams": [
+        "swacalc"
+      ],
+      "primary": {
+        "value": 0.5158,
+        "display": "52%",
+        "label": "Success rate"
+      },
+      "compare": {
+        "display": "41%",
+        "label": "League average"
+      },
+      "why": "Best offensive success rate in League games.",
+      "data": {
+        "team_id": "swacalc",
+        "rate": 0.5158,
+        "league_rate": 0.4067
+      }
+    },
+    {
+      "key": "points_per_drive",
+      "title": "Points Per Drive",
+      "headline": "Alcorn score 3.66 points every time they get the ball.",
+      "value_kind": "team",
+      "teams": [
+        "swacalc"
+      ],
+      "primary": {
+        "value": 3.6623,
+        "display": "3.66",
+        "label": "Points per drive"
+      },
+      "compare": {
+        "display": "2.25",
+        "label": "League average"
+      },
+      "why": "Most points per drive in League games.",
+      "data": {
+        "team_id": "swacalc",
+        "drives": [
+          {
+            "points": 6
+          },
+          {
+            "points": 6
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 6
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 6
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 8
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 6
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 3
+          },
+          {
+            "points": 6
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 3
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 3
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 6
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 3
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 3
+          },
+          {
+            "points": 0
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 7
+          },
+          {
+            "points": 0
+          }
+        ]
+      }
+    },
+    {
+      "key": "explosive_drives",
+      "title": "Explosive Drives",
+      "headline": "45% of Alcorn's drives go big.",
+      "value_kind": "team",
+      "teams": [
+        "swacalc"
+      ],
+      "primary": {
+        "value": 0.4545,
+        "display": "45%",
+        "label": "Explosive drive rate"
+      },
+      "compare": {
+        "display": "26%",
+        "label": "League average"
+      },
+      "why": "Highest share of explosive drives (7.5+ net yards a snap) in League games.",
+      "data": {
+        "team_id": "swacalc",
+        "league_rate": 0.2584,
+        "drives": [
+          {
+            "yards": 86,
+            "plays": 10,
+            "explosive": true
+          },
+          {
+            "yards": 75,
+            "plays": 7,
+            "explosive": true
+          },
+          {
+            "yards": 14,
+            "plays": 5,
+            "explosive": false
+          },
+          {
+            "yards": 51,
+            "plays": 8,
+            "explosive": true
+          },
+          {
+            "yards": 63,
+            "plays": 9,
+            "explosive": false
+          },
+          {
+            "yards": 9,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 9,
+            "plays": 5,
+            "explosive": false
+          },
+          {
+            "yards": 19,
+            "plays": 4,
+            "explosive": false
+          },
+          {
+            "yards": 36,
+            "plays": 7,
+            "explosive": false
+          },
+          {
+            "yards": 75,
+            "plays": 6,
+            "explosive": true
+          },
+          {
+            "yards": 68,
+            "plays": 1,
+            "explosive": true
+          },
+          {
+            "yards": 3,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 76,
+            "plays": 7,
+            "explosive": true
+          },
+          {
+            "yards": 55,
+            "plays": 7,
+            "explosive": true
+          },
+          {
+            "yards": 22,
+            "plays": 5,
+            "explosive": false
+          },
+          {
+            "yards": 25,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 67,
+            "plays": 5,
+            "explosive": true
+          },
+          {
+            "yards": 70,
+            "plays": 12,
+            "explosive": false
+          },
+          {
+            "yards": 4,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 60,
+            "plays": 9,
+            "explosive": true
+          },
+          {
+            "yards": 75,
+            "plays": 9,
+            "explosive": true
+          },
+          {
+            "yards": 28,
+            "plays": 6,
+            "explosive": false
+          },
+          {
+            "yards": 6,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 34,
+            "plays": 6,
+            "explosive": false
+          },
+          {
+            "yards": 28,
+            "plays": 8,
+            "explosive": false
+          },
+          {
+            "yards": 14,
+            "plays": 6,
+            "explosive": false
+          },
+          {
+            "yards": 41,
+            "plays": 11,
+            "explosive": false
+          },
+          {
+            "yards": 25,
+            "plays": 8,
+            "explosive": false
+          },
+          {
+            "yards": 37,
+            "plays": 8,
+            "explosive": false
+          },
+          {
+            "yards": 43,
+            "plays": 6,
+            "explosive": false
+          },
+          {
+            "yards": 3,
+            "plays": 6,
+            "explosive": false
+          },
+          {
+            "yards": -8,
+            "plays": 4,
+            "explosive": false
+          },
+          {
+            "yards": 75,
+            "plays": 2,
+            "explosive": true
+          },
+          {
+            "yards": 75,
+            "plays": 8,
+            "explosive": true
+          },
+          {
+            "yards": 75,
+            "plays": 10,
+            "explosive": true
+          },
+          {
+            "yards": 88,
+            "plays": 3,
+            "explosive": true
+          },
+          {
+            "yards": 33,
+            "plays": 4,
+            "explosive": true
+          },
+          {
+            "yards": 80,
+            "plays": 5,
+            "explosive": true
+          },
+          {
+            "yards": 75,
+            "plays": 6,
+            "explosive": true
+          },
+          {
+            "yards": 8,
+            "plays": 2,
+            "explosive": false
+          },
+          {
+            "yards": 0,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 4,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 4,
+            "plays": 2,
+            "explosive": false
+          },
+          {
+            "yards": 79,
+            "plays": 5,
+            "explosive": false
+          },
+          {
+            "yards": -2,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 75,
+            "plays": 6,
+            "explosive": true
+          },
+          {
+            "yards": 47,
+            "plays": 11,
+            "explosive": false
+          },
+          {
+            "yards": 63,
+            "plays": 1,
+            "explosive": true
+          },
+          {
+            "yards": 86,
+            "plays": 4,
+            "explosive": true
+          },
+          {
+            "yards": 48,
+            "plays": 3,
+            "explosive": true
+          },
+          {
+            "yards": 3,
+            "plays": 2,
+            "explosive": true
+          },
+          {
+            "yards": 68,
+            "plays": 11,
+            "explosive": false
+          },
+          {
+            "yards": 34,
+            "plays": 10,
+            "explosive": false
+          },
+          {
+            "yards": 74,
+            "plays": 8,
+            "explosive": true
+          },
+          {
+            "yards": 21,
+            "plays": 5,
+            "explosive": false
+          },
+          {
+            "yards": 62,
+            "plays": 7,
+            "explosive": true
+          },
+          {
+            "yards": -15,
+            "plays": 5,
+            "explosive": true
+          },
+          {
+            "yards": -6,
+            "plays": 2,
+            "explosive": true
+          },
+          {
+            "yards": 6,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 48,
+            "plays": 4,
+            "explosive": true
+          },
+          {
+            "yards": 27,
+            "plays": 7,
+            "explosive": false
+          },
+          {
+            "yards": 43,
+            "plays": 4,
+            "explosive": true
+          },
+          {
+            "yards": 65,
+            "plays": 9,
+            "explosive": false
+          },
+          {
+            "yards": 74,
+            "plays": 8,
+            "explosive": true
+          },
+          {
+            "yards": 55,
+            "plays": 2,
+            "explosive": true
+          },
+          {
+            "yards": 65,
+            "plays": 11,
+            "explosive": false
+          },
+          {
+            "yards": -5,
+            "plays": 2,
+            "explosive": false
+          },
+          {
+            "yards": 46,
+            "plays": 8,
+            "explosive": false
+          },
+          {
+            "yards": 95,
+            "plays": 3,
+            "explosive": true
+          },
+          {
+            "yards": 86,
+            "plays": 15,
+            "explosive": false
+          },
+          {
+            "yards": 49,
+            "plays": 11,
+            "explosive": false
+          },
+          {
+            "yards": 46,
+            "plays": 9,
+            "explosive": false
+          },
+          {
+            "yards": 8,
+            "plays": 3,
+            "explosive": false
+          },
+          {
+            "yards": 63,
+            "plays": 1,
+            "explosive": true
+          },
+          {
+            "yards": 75,
+            "plays": 8,
+            "explosive": true
+          },
+          {
+            "yards": 50,
+            "plays": 4,
+            "explosive": true
+          },
+          {
+            "yards": 11,
+            "plays": 1,
+            "explosive": true
+          }
+        ]
+      }
+    },
+    {
+      "key": "havoc_leader",
+      "title": "Havoc Leader",
+      "headline": "SC State's defense wrecks 22% of snaps.",
+      "value_kind": "team",
+      "teams": [
+        "meacscsu"
+      ],
+      "primary": {
+        "value": 0.2195,
+        "display": "22%",
+        "label": "Havoc rate (defense)"
+      },
+      "compare": {
+        "display": "16%",
+        "label": "League average"
+      },
+      "why": "Highest defensive havoc rate (TFL, sack, INT, PBU, forced fumble) in League games.",
+      "data": {
+        "team_id": "meacscsu",
+        "havoc_plays": 63,
+        "snaps": 287,
+        "league_rate": 0.16
+      }
+    }
+  ]
+}

@@ -1,0 +1,1133 @@
+{
+  "metadata": {
+    "dataset": "coach_position_impact_qa"
+  },
+  "summary": {
+    "errors": 0,
+    "warnings": 224,
+    "rows_checked": 329
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacdsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meachu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacmsu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnccu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacnsu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "meacscsu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacaamu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacalc|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacasu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacbcu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacfamu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacgsu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacjsu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacmvsu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2024|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2025|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacpvamu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2022|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2022|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2025|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swactsu|2025|DB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2021|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2021|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2021|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2022|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2023|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2023|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2023|WR"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2024|QB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2024|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2025|RB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2025|TE"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2025|DL"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2025|LB"
+    },
+    {
+      "code": "missing_position_coach_mapping",
+      "message": "No clear position coach mapping",
+      "row_id": "swacuapb|2025|DB"
+    }
+  ]
+}

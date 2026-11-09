@@ -1,0 +1,134 @@
+{
+  "schema_version": "players_hub_index_v1",
+  "source": "92-frontend/3-players",
+  "seasons": [
+    {
+      "season": 2021,
+      "payload_path": "92-frontend/3-players/players_hub_2021.json",
+      "validation_path": "92-frontend/3-players/players_hub_validation_2021.json",
+      "total_players": 1784,
+      "players_with_stats": 637,
+      "transfers_count": 432,
+      "position_boards": 8,
+      "breakout_candidates_count": 20,
+      "hidden_gems_count": 20,
+      "physical_outliers_count": 20,
+      "archetype_count": 5,
+      "data_confidence": "low",
+      "data_quality": {
+        "player_id_coverage": 1.0,
+        "stats_coverage": 0.3571,
+        "physical_data_coverage": 0.9888,
+        "transfer_data_coverage": 1.0,
+        "image_coverage": 0.9204
+      },
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2022,
+      "payload_path": "92-frontend/3-players/players_hub_2022.json",
+      "validation_path": "92-frontend/3-players/players_hub_validation_2022.json",
+      "total_players": 1812,
+      "players_with_stats": 712,
+      "transfers_count": 500,
+      "position_boards": 8,
+      "breakout_candidates_count": 20,
+      "hidden_gems_count": 20,
+      "physical_outliers_count": 20,
+      "archetype_count": 5,
+      "data_confidence": "low",
+      "data_quality": {
+        "player_id_coverage": 1.0,
+        "stats_coverage": 0.3929,
+        "physical_data_coverage": 0.9895,
+        "transfer_data_coverage": 1.0,
+        "image_coverage": 0.9437
+      },
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2023,
+      "payload_path": "92-frontend/3-players/players_hub_2023.json",
+      "validation_path": "92-frontend/3-players/players_hub_validation_2023.json",
+      "total_players": 1868,
+      "players_with_stats": 765,
+      "transfers_count": 495,
+      "position_boards": 8,
+      "breakout_candidates_count": 20,
+      "hidden_gems_count": 20,
+      "physical_outliers_count": 20,
+      "archetype_count": 5,
+      "data_confidence": "medium",
+      "data_quality": {
+        "player_id_coverage": 1.0,
+        "stats_coverage": 0.4095,
+        "physical_data_coverage": 0.9331,
+        "transfer_data_coverage": 1.0,
+        "image_coverage": 0.9764
+      },
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2024,
+      "payload_path": "92-frontend/3-players/players_hub_2024.json",
+      "validation_path": "92-frontend/3-players/players_hub_validation_2024.json",
+      "total_players": 1832,
+      "players_with_stats": 811,
+      "transfers_count": 593,
+      "position_boards": 8,
+      "breakout_candidates_count": 20,
+      "hidden_gems_count": 20,
+      "physical_outliers_count": 20,
+      "archetype_count": 5,
+      "data_confidence": "medium",
+      "data_quality": {
+        "player_id_coverage": 1.0,
+        "stats_coverage": 0.4427,
+        "physical_data_coverage": 0.941,
+        "transfer_data_coverage": 1.0,
+        "image_coverage": 0.9694
+      },
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2025,
+      "payload_path": "92-frontend/3-players/players_hub_2025.json",
+      "validation_path": "92-frontend/3-players/players_hub_validation_2025.json",
+      "total_players": 1961,
+      "players_with_stats": 866,
+      "transfers_count": 598,
+      "position_boards": 8,
+      "breakout_candidates_count": 20,
+      "hidden_gems_count": 20,
+      "physical_outliers_count": 20,
+      "archetype_count": 5,
+      "data_confidence": "medium",
+      "data_quality": {
+        "player_id_coverage": 1.0,
+        "stats_coverage": 0.4416,
+        "physical_data_coverage": 0.9357,
+        "transfer_data_coverage": 1.0,
+        "image_coverage": 0.972
+      },
+      "validation": {
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "latest_season": 2025,
+  "default_payload": "92-frontend/3-players/players_hub_2025.json",
+  "schema_path": "92-frontend/3-players/PLAYERS_HUB_SCHEMA.md"
+}

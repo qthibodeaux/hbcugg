@@ -1,0 +1,405 @@
+{
+  "package": "92-frontend",
+  "refreshed_at": "2026-04-20",
+  "seasons_with_game_data": [2019, 2021, 2022, 2023, 2024, 2025],
+  "seasons_with_roster_data": [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025],
+  "generated_by_pipelines": [
+    "6-fixtures/batch_parse_all.py",
+    "12-roster-pipeline/run_pipeline.py",
+    "11-entity/build_frontend_exports.py",
+    "92-frontend/build_game_center_exports.py",
+    "92-frontend/build_stat_lab_exports.py",
+    "92-frontend/tools/build_players_hub.py",
+    "25-Season/build_roster_hub.py",
+    "tools/referees/build_referee_registry.py",
+    "tools/referees/build_crew_registry.py",
+    "tools/referees/build_frontend_export.py",
+    "5-enrichment/analytics/team_continuity.py",
+    "5-enrichment/analytics/coaching_trees.py",
+    "5-enrichment/analytics/enhanced_player_analytics.py",
+    "5-enrichment/analytics/player_performance_bridge.py",
+    "5-enrichment/create_multi_year_exports.py",
+    "27-Why/build_why_glory.py"
+  ],
+  "domains": {
+    "data": {
+      "target_folder": "92-frontend/0-data",
+      "description": "Pre-computed analytics, career arcs, and continuity scores. See 0-data/README.md for full documentation.",
+      "files": [
+        {
+          "name": "team_continuity_2021_2025.json",
+          "type": "team_analytics",
+          "description": "Team staff and roster continuity scores 2021-2025. Active reader: 27-Why/context_resolver.py",
+          "source": "5-enrichment/analytics/team_continuity.py",
+          "path": "0-data/team_continuity_2021_2025.json"
+        },
+        {
+          "name": "coaching_trees_2021_2025.json",
+          "type": "coaching_trees",
+          "description": "221 coach career arcs, 854 staff relationships, 11 program transfers",
+          "source": "5-enrichment/analytics/coaching_trees.py",
+          "path": "0-data/coaching_trees_2021_2025.json"
+        },
+        {
+          "name": "coaches_multi_year_analytics.json",
+          "type": "coaching_analytics",
+          "description": "Top-line coaching analytics: longest tenured, most mobile, HC stability",
+          "source": "5-enrichment/create_multi_year_exports.py",
+          "path": "0-data/coaches_multi_year_analytics.json"
+        },
+        {
+          "name": "coaches_2021_2025_frontend_ready.json",
+          "type": "coach_export",
+          "description": "197 coach-person records (person-level). Prefer 4-coaches/coaches_all_years.json for season-level data.",
+          "source": "5-enrichment/create_multi_year_exports.py",
+          "path": "0-data/coaches_2021_2025_frontend_ready.json",
+          "superseded_by": "4-coaches/coaches_all_years.json"
+        },
+        {
+          "name": "officials_all_years_frontend_ready.json",
+          "type": "officials_export",
+          "description": "521 officials combined payload. Prefer 5-officials/ folder files for current data.",
+          "source": "tools/referees/build_frontend_export.py",
+          "path": "0-data/officials_all_years_frontend_ready.json",
+          "superseded_by": "5-officials/officials_registry.json"
+        },
+        {
+          "name": "player_analytics_2025.json",
+          "type": "player_analytics",
+          "description": "2025 transfer, class, and position analytics. Equivalent analytics available in 2-schools/roster_hub_2025.json.",
+          "source": "5-enrichment/analytics/enhanced_player_analytics.py",
+          "path": "0-data/player_analytics_2025.json"
+        },
+        {
+          "name": "player_stats_2025_enriched.json",
+          "type": "player_stats",
+          "description": "2025 person-matched player stats, 91% match rate. Prefer 3-players/player_seasons_2025.json for full schema.",
+          "source": "5-enrichment/analytics/player_performance_bridge.py",
+          "path": "0-data/player_stats_2025_enriched.json",
+          "superseded_by": "3-players/player_seasons_2025.json"
+        },
+        {
+          "name": "ALL_2021_2025_entities_frontend_ready.json",
+          "type": "comprehensive_entity_export",
+          "description": "Legacy unified teams+coaches+players dump. Player records have minimal fields only. Not recommended for active use.",
+          "source": "5-enrichment/generate_unified_export.py",
+          "path": "0-data/ALL_2021_2025_entities_frontend_ready.json",
+          "superseded_by": "3-players/, 4-coaches/, 5-officials/"
+        }
+      ]
+    },
+    "game_center": {
+      "target_folder": "92-frontend/1-game center",
+      "description": "Game-level data, play-by-play, schedules",
+      "files": [
+        {
+          "name": "export_summary.json",
+          "type": "game_center_summary",
+          "record_count": 1,
+          "description": "Generation metadata: game payload count, linked schedule rows, skipped sources",
+          "source": "92-frontend/build_game_center_exports.py",
+          "path": "1-game center/export_summary.json"
+        },
+        {
+          "name": "games/index.json",
+          "type": "game_index",
+          "record_count": 382,
+          "description": "Index of all 382 game payloads across 2019 and 2021-2025",
+          "source": "92-frontend/build_game_center_exports.py",
+          "path": "1-game center/games/index.json"
+        },
+        {
+          "name": "games/2019/{game_id}.json",
+          "type": "frontend_game_payload",
+          "record_count": 68,
+          "description": "Per-game payloads for 2019 (reparsed 2026-04-19 with current parser)",
+          "source": "90-Output/2019/*.json",
+          "path": "1-game center/games/2019/"
+        },
+        {
+          "name": "games/2021/{game_id}.json",
+          "type": "frontend_game_payload",
+          "record_count": 60,
+          "source": "90-Output/2021/*.json",
+          "path": "1-game center/games/2021/"
+        },
+        {
+          "name": "games/2022/{game_id}.json",
+          "type": "frontend_game_payload",
+          "record_count": 60,
+          "source": "90-Output/2022/*.json",
+          "path": "1-game center/games/2022/"
+        },
+        {
+          "name": "games/2023/{game_id}.json",
+          "type": "frontend_game_payload",
+          "record_count": 67,
+          "source": "90-Output/2023/*.json",
+          "path": "1-game center/games/2023/"
+        },
+        {
+          "name": "games/2024/{game_id}.json",
+          "type": "frontend_game_payload",
+          "record_count": 65,
+          "source": "90-Output/2024/*.json",
+          "path": "1-game center/games/2024/"
+        },
+        {
+          "name": "games/2025/{game_id}.json",
+          "type": "frontend_game_payload",
+          "record_count": 62,
+          "source": "90-Output/2025/*.json",
+          "path": "1-game center/games/2025/"
+        },
+        {
+          "name": "schedules/schedule_master_frontend.json",
+          "type": "schedule_master_frontend",
+          "record_count": 2884,
+          "description": "All schedule rows across all available seasons with parsed-game links",
+          "source": "90-Output/schedule_master.json",
+          "path": "1-game center/schedules/schedule_master_frontend.json"
+        },
+        {
+          "name": "schedules/by_year/{year}.json",
+          "type": "schedule_index_by_year",
+          "record_count": 16,
+          "description": "Year-specific schedule files. Available: 2010-2019, 2021-2026.",
+          "source": "90-Output/schedule_master.json",
+          "path": "1-game center/schedules/by_year/"
+        },
+        {
+          "name": "schedules/by_team/{team_id}.json",
+          "type": "schedule_index_by_team",
+          "record_count": 20,
+          "description": "Per-team all-years schedule",
+          "source": "90-Output/schedule_master.json",
+          "path": "1-game center/schedules/by_team/"
+        }
+      ]
+    },
+    "schools": {
+      "target_folder": "92-frontend/2-schools",
+      "description": "Roster hub analytics per team per year — composition, experience, physical, geographic, transfers",
+      "files": [
+        {
+          "name": "roster_hub_2021.json",
+          "type": "roster_hub",
+          "record_count": 19,
+          "description": "Team analytics for 2021. Keys per team: composition, experience, physical, geographic, transfers",
+          "source": "25-Season/build_roster_hub.py",
+          "path": "2-schools/roster_hub_2021.json"
+        },
+        {
+          "name": "roster_hub_2022.json", "type": "roster_hub", "record_count": 19, "source": "25-Season/build_roster_hub.py", "path": "2-schools/roster_hub_2022.json"
+        },
+        {
+          "name": "roster_hub_2023.json", "type": "roster_hub", "record_count": 19, "source": "25-Season/build_roster_hub.py", "path": "2-schools/roster_hub_2023.json"
+        },
+        {
+          "name": "roster_hub_2024.json", "type": "roster_hub", "record_count": 19, "source": "25-Season/build_roster_hub.py", "path": "2-schools/roster_hub_2024.json"
+        },
+        {
+          "name": "roster_hub_2025.json", "type": "roster_hub", "record_count": 19, "source": "25-Season/build_roster_hub.py", "path": "2-schools/roster_hub_2025.json"
+        },
+        {
+          "name": "roster_hub_all.json",
+          "type": "roster_hub_combined",
+          "description": "All years combined in one file keyed by year string",
+          "source": "25-Season/build_roster_hub.py",
+          "path": "2-schools/roster_hub_all.json"
+        }
+      ]
+    },
+    "players": {
+      "target_folder": "92-frontend/3-players",
+      "description": "Canonical player seasonal records. One record per player per season. Source of truth for player enrichment.",
+      "schema_fields": ["person_id", "full_name", "first_name", "last_name", "team_id", "season", "jersey_number", "raw_position", "position", "position_group", "class_year_raw", "class_year", "is_redshirt", "experience_score", "is_transfer", "transfer_tier", "transfer_inferred", "previous_school", "high_school", "image_url", "height", "weight", "bmi", "body_type", "hometown", "birth_place", "home_city", "home_state", "is_in_state", "distance_miles", "distance_tier"],
+      "notes": {
+        "class_year": "integer 1=Fr 2=So 3=Jr 4=Sr 5=Gr (not string label)",
+        "transfer_tier": "P4 | G5 | FCS | D2 | JUCO | HS (not FBS or D2/D3/NAIA)",
+        "distance_tier": "local (0-150mi) | regional (150-500mi) | national (500+mi)"
+      },
+      "files": [
+        {"name": "player_seasons_2010.json", "type": "player_seasons", "record_count": 1148, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2010.json"},
+        {"name": "player_seasons_2011.json", "type": "player_seasons", "record_count": 1354, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2011.json"},
+        {"name": "player_seasons_2012.json", "type": "player_seasons", "record_count": 1482, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2012.json"},
+        {"name": "player_seasons_2013.json", "type": "player_seasons", "record_count": 1444, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2013.json"},
+        {"name": "player_seasons_2014.json", "type": "player_seasons", "record_count": 1498, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2014.json"},
+        {"name": "player_seasons_2015.json", "type": "player_seasons", "record_count": 1517, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2015.json"},
+        {"name": "player_seasons_2016.json", "type": "player_seasons", "record_count": 1494, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2016.json"},
+        {"name": "player_seasons_2017.json", "type": "player_seasons", "record_count": 1641, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2017.json"},
+        {"name": "player_seasons_2018.json", "type": "player_seasons", "record_count": 1699, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2018.json"},
+        {"name": "player_seasons_2019.json", "type": "player_seasons", "record_count": 1697, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2019.json"},
+        {"name": "player_seasons_2021.json", "type": "player_seasons", "record_count": 1872, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2021.json"},
+        {"name": "player_seasons_2022.json", "type": "player_seasons", "record_count": 1884, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2022.json"},
+        {"name": "player_seasons_2023.json", "type": "player_seasons", "record_count": 1956, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2023.json"},
+        {"name": "player_seasons_2024.json", "type": "player_seasons", "record_count": 1929, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2024.json"},
+        {"name": "player_seasons_2025.json", "type": "player_seasons", "record_count": 1878, "source": "11-entity/build_frontend_exports.py", "path": "3-players/player_seasons_2025.json"},
+        {"name": "players_hub_index.json", "type": "players_hub_index", "record_count": 5, "description": "Discovery index for Players Hub payloads 2021-2025", "source": "92-frontend/tools/build_players_hub_index.py", "path": "3-players/players_hub_index.json"},
+        {"name": "players_hub_{year}.json", "type": "players_hub", "record_count": 5, "description": "Compact /players discovery payloads for 2021-2025: spotlight, position boards, talent map, breakout, transfers, physical outliers, archetypes, Glory leaders", "source": "92-frontend/tools/build_players_hub.py", "path": "3-players/players_hub_{year}.json"},
+        {"name": "players_hub_validation_{year}.json", "type": "players_hub_validation", "record_count": 5, "description": "Contract validation for Players Hub payloads 2021-2025", "source": "92-frontend/tools/validate_players_hub.py", "path": "3-players/players_hub_validation_{year}.json"}
+      ],
+      "total_records": 24493
+    },
+    "coaches": {
+      "target_folder": "92-frontend/4-coaches",
+      "description": "Coach season records and movement history across all available years",
+      "files": [
+        {
+          "name": "coaches_all_years.json",
+          "type": "coach_seasons",
+          "record_count": 2426,
+          "description": "Authoritative coach seasonal records 2010-2025. One record per coach per season.",
+          "source": "11-entity/build_frontend_exports.py",
+          "path": "4-coaches/coaches_all_years.json"
+        },
+        {
+          "name": "coach_movements_all_years.json",
+          "type": "coach_movements",
+          "record_count": 386,
+          "description": "Coach promotions, demotions, lateral moves, and external transfers",
+          "source": "11-entity/build_frontend_exports.py",
+          "path": "4-coaches/coach_movements_all_years.json"
+        }
+      ],
+      "note": "coaches_2021_2025_frontend_ready.json and coaching_trees_2021_2025.json live in 0-data/, not this folder"
+    },
+    "officials": {
+      "target_folder": "92-frontend/5-officials",
+      "description": "Referees, umpires, line judges — registry, assignments, crews, persistent groups",
+      "files": [
+        {
+          "name": "officials_registry.json",
+          "type": "officials",
+          "record_count": 521,
+          "description": "Canonical official registry with person_ids, career stats, all assignments. Covers 2019 and 2021-2025.",
+          "source": "11-entity/build_frontend_exports.py",
+          "path": "5-officials/officials_registry.json"
+        },
+        {
+          "name": "official_assignments_timeline.json",
+          "type": "official_assignments",
+          "record_count": 2321,
+          "description": "Per-assignment timeline records with season week index and career game index",
+          "source": "11-entity/build_frontend_exports.py",
+          "path": "5-officials/official_assignments_timeline.json"
+        },
+        {
+          "name": "official_season_progression.json",
+          "type": "official_season_progression",
+          "record_count": 890,
+          "description": "Official-season records with game count, positions, gap detection, continuity flags",
+          "source": "11-entity/build_frontend_exports.py",
+          "path": "5-officials/official_season_progression.json"
+        },
+        {
+          "name": "crews_registry.json",
+          "type": "crews",
+          "record_count": 9,
+          "description": "9 recurring crew formations across seasons",
+          "source": "tools/referees/build_crew_registry.py",
+          "path": "5-officials/crews_registry.json"
+        },
+        {
+          "name": "persistent_groups_registry.json",
+          "type": "persistent_groups",
+          "record_count": 4852,
+          "description": "All recurring official groups size 2+ with min 2 games support",
+          "source": "tools/referees/build_crew_registry.py",
+          "path": "5-officials/persistent_groups_registry.json"
+        }
+      ]
+    },
+    "stat_lab": {
+      "target_folder": "92-frontend/6-stat lab/counting",
+      "description": "Counting-only stats aggregated from play-by-play. No EPA/WPA/efficiency metrics.",
+      "years_covered": [2019, 2021, 2022, 2023, 2024, 2025],
+      "files": [
+        {
+          "name": "counting/export_summary.json",
+          "type": "stat_lab_counting_summary",
+          "description": "Generation metadata and record counts",
+          "source": "92-frontend/build_stat_lab_exports.py",
+          "path": "6-stat lab/counting/export_summary.json"
+        },
+        {
+          "name": "counting/play_stats.json",
+          "type": "play_counting_stats",
+          "record_count": 56622,
+          "description": "One row per eligible play with core counting fields",
+          "source": "90-Output/{year}/*.json",
+          "path": "6-stat lab/counting/play_stats.json"
+        },
+        {
+          "name": "counting/game_stats.json",
+          "type": "team_game_counting_stats",
+          "record_count": 764,
+          "description": "One row per team per game",
+          "source": "90-Output/{year}/*.json",
+          "path": "6-stat lab/counting/game_stats.json"
+        },
+        {
+          "name": "counting/week_stats.json",
+          "type": "team_week_counting_stats",
+          "record_count": 764,
+          "description": "Team-game rows with season_week_index",
+          "source": "90-Output/{year}/*.json",
+          "path": "6-stat lab/counting/week_stats.json"
+        },
+        {
+          "name": "counting/season_stats.json",
+          "type": "player_season_counting_stats",
+          "record_count": 7600,
+          "description": "One row per player-season aggregating individual counting stats",
+          "source": "90-Output/{year}/*.json",
+          "path": "6-stat lab/counting/season_stats.json"
+        },
+        {
+          "name": "counting/team_stats.json",
+          "type": "team_season_counting_stats",
+          "record_count": 113,
+          "description": "One row per team-season aggregating counting stats",
+          "source": "90-Output/{year}/*.json",
+          "path": "6-stat lab/counting/team_stats.json"
+        }
+      ]
+    },
+    "glory": {
+      "target_folder": "92-frontend/7-glory",
+      "description": "Why/Glory engine outputs — pre-computed Glory scores per season. Each file contains teams, games, players, and positional units.",
+      "schema_keys": ["season", "generated_at", "summary", "teams", "games", "players", "units"],
+      "notes": {
+        "2019": "Games only (68) — no player/team Glory scores because season rollup was not run for 2019",
+        "2021_2023": "Full scores generated 2026-04-20",
+        "2024_2025": "Full scores"
+      },
+      "files": [
+        {"name": "why_glory_2019.json", "type": "glory_season", "season": 2019, "teams": 0, "games": 68, "players": 0, "units": 0, "path": "7-glory/why_glory_2019.json"},
+        {"name": "why_glory_2021.json", "type": "glory_season", "season": 2021, "teams": 18, "games": 60, "players": 614, "units": 54, "path": "7-glory/why_glory_2021.json"},
+        {"name": "why_glory_2022.json", "type": "glory_season", "season": 2022, "teams": 18, "games": 60, "players": 688, "units": 54, "path": "7-glory/why_glory_2022.json"},
+        {"name": "why_glory_2023.json", "type": "glory_season", "season": 2023, "teams": 18, "games": 67, "players": 762, "units": 54, "path": "7-glory/why_glory_2023.json"},
+        {"name": "why_glory_2024.json", "type": "glory_season", "season": 2024, "teams": 18, "games": 65, "players": 744, "units": 54, "path": "7-glory/why_glory_2024.json"},
+        {"name": "why_glory_2025.json", "type": "glory_season", "season": 2025, "teams": 18, "games": 62, "players": 762, "units": 54, "path": "7-glory/why_glory_2025.json"}
+      ]
+    }
+  },
+  "summary": {
+    "total_player_records": 24493,
+    "player_seasons_available": [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025],
+    "total_coach_records": 2426,
+    "total_officials": 521,
+    "total_official_assignments": 2321,
+    "total_official_season_progression": 890,
+    "total_persistent_groups": 4852,
+    "recurring_crews": 9,
+    "coach_movements": 386,
+    "total_game_center_payloads": 382,
+    "game_payloads_by_year": {"2019": 68, "2021": 60, "2022": 60, "2023": 67, "2024": 65, "2025": 62},
+    "total_schedule_rows": 2884,
+    "stat_lab_plays": 56622,
+    "stat_lab_game_rows": 764,
+    "stat_lab_player_season_rows": 7600,
+    "seasons_with_game_data": [2019, 2021, 2022, 2023, 2024, 2025],
+    "no_data_years": [2020]
+  }
+}

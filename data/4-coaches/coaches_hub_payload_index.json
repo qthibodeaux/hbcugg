@@ -1,0 +1,165 @@
+{
+  "schema_version": "coaches_hub_index_v1",
+  "source": "12-roster-pipeline/5-coach-ecosystem",
+  "seasons": [
+    {
+      "season": 2021,
+      "payload_path": "12-roster-pipeline/5-coach-ecosystem/payloads/coaches_hub_payload_2021.json",
+      "school_count": 18,
+      "network_edge_count": 225,
+      "movement_edge_count": 42,
+      "school_confidence": {
+        "high": 14,
+        "low": 4
+      },
+      "stock_labels": {
+        "New Era": 6,
+        "Stable": 12
+      },
+      "relationships": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/coach_relationships_v1_2021.json",
+        "edge_count": 1905,
+        "relationship_types": {
+          "coordinator_for": 49,
+          "same_staff": 1636,
+          "worked_under": 220
+        }
+      },
+      "validation": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/validation/coaches_hub_validation_2021.json",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2022,
+      "payload_path": "12-roster-pipeline/5-coach-ecosystem/payloads/coaches_hub_payload_2022.json",
+      "school_count": 18,
+      "network_edge_count": 262,
+      "movement_edge_count": 78,
+      "school_confidence": {
+        "high": 15,
+        "low": 3
+      },
+      "stock_labels": {
+        "New Era": 5,
+        "Rising": 4,
+        "Stable": 6,
+        "Under Pressure": 3
+      },
+      "relationships": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/coach_relationships_v1_2022.json",
+        "edge_count": 2508,
+        "relationship_types": {
+          "coordinator_for": 65,
+          "same_staff": 2185,
+          "worked_under": 258
+        }
+      },
+      "validation": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/validation/coaches_hub_validation_2022.json",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2023,
+      "payload_path": "12-roster-pipeline/5-coach-ecosystem/payloads/coaches_hub_payload_2023.json",
+      "school_count": 16,
+      "network_edge_count": 215,
+      "movement_edge_count": 79,
+      "school_confidence": {
+        "high": 14,
+        "low": 2
+      },
+      "stock_labels": {
+        "New Era": 6,
+        "Rising": 3,
+        "Stable": 7
+      },
+      "relationships": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/coach_relationships_v1_2023.json",
+        "edge_count": 2429,
+        "relationship_types": {
+          "coordinator_for": 62,
+          "same_staff": 2152,
+          "worked_under": 215
+        }
+      },
+      "validation": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/validation/coaches_hub_validation_2023.json",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2024,
+      "payload_path": "12-roster-pipeline/5-coach-ecosystem/payloads/coaches_hub_payload_2024.json",
+      "school_count": 18,
+      "network_edge_count": 260,
+      "movement_edge_count": 106,
+      "school_confidence": {
+        "high": 14,
+        "low": 4
+      },
+      "stock_labels": {
+        "New Era": 5,
+        "Rising": 2,
+        "Stable": 8,
+        "Under Pressure": 3
+      },
+      "relationships": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/coach_relationships_v1_2024.json",
+        "edge_count": 3277,
+        "relationship_types": {
+          "coordinator_for": 68,
+          "same_staff": 2950,
+          "worked_under": 259
+        }
+      },
+      "validation": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/validation/coaches_hub_validation_2024.json",
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "season": 2025,
+      "payload_path": "12-roster-pipeline/5-coach-ecosystem/payloads/coaches_hub_payload_2025.json",
+      "school_count": 18,
+      "network_edge_count": 302,
+      "movement_edge_count": 63,
+      "school_confidence": {
+        "high": 15,
+        "low": 3
+      },
+      "stock_labels": {
+        "New Era": 7,
+        "Rising": 1,
+        "Stable": 8,
+        "Under Pressure": 2
+      },
+      "relationships": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/coach_relationships_v1_2025.json",
+        "edge_count": 3891,
+        "relationship_types": {
+          "coordinator_for": 68,
+          "same_staff": 3522,
+          "worked_under": 301
+        }
+      },
+      "validation": {
+        "path": "12-roster-pipeline/5-coach-ecosystem/validation/coaches_hub_validation_2025.json",
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "guardrails": [
+    "coach-level and school-season metrics remain separate",
+    "same-season unverified movement is excluded from v1 hub payloads",
+    "network edges do not claim mentor relationships",
+    "style metrics attach to school-season first unless coach-season mapping is explicit",
+    "all inferred fields carry confidence/source notes in source artifacts"
+  ]
+}

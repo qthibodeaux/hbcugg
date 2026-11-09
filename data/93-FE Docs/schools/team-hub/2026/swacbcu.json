@@ -1,0 +1,489 @@
+{
+  "team_id": "swacbcu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 10,
+  "generated_at": "2026-11-07T19:57:47-06:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "East",
+    "division_label": "SWAC EAST",
+    "season": 2026,
+    "team_abbreviation": "BCU",
+    "school_name": "Bethune-Cookman University",
+    "avg_par": 5.4,
+    "roster_count": 101,
+    "transfer_count": 43,
+    "transfer_rate": 42.6,
+    "upperclass_pct": 39.6
+  },
+  "conference_record": {
+    "conference_label": "3-3",
+    "conference_wins": 3,
+    "conference_losses": 3,
+    "overall_label": "5-5",
+    "overall_wins": 5,
+    "overall_losses": 5,
+    "overall_ties": 0,
+    "division_rank": "3rd - SWAC East",
+    "last_5": [
+      {
+        "week": 6,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacaamu",
+        "opponent_short": "AAMU",
+        "score_team": 17,
+        "score_opponent": 55,
+        "score": "L 17-55",
+        "game_path_id": "bcuaamu26"
+      },
+      {
+        "week": 7,
+        "result": "W",
+        "home_away": "away",
+        "opponent_id": "swacmvsu",
+        "opponent_short": "MVSU",
+        "score_team": 34,
+        "score_opponent": 14,
+        "score": "W 34-14",
+        "game_path_id": "bcumvsu26"
+      },
+      {
+        "week": 8,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 24,
+        "score_opponent": 21,
+        "score": "W 24-21",
+        "game_path_id": "jsubcu26"
+      },
+      {
+        "week": 9,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacuapb",
+        "opponent_short": "UAPB",
+        "score_team": 21,
+        "score_opponent": 63,
+        "score": "L 21-63",
+        "game_path_id": "bcuuapb26"
+      },
+      {
+        "week": 10,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacsu",
+        "opponent_short": "SOU",
+        "score_team": 17,
+        "score_opponent": 45,
+        "score": "L 17-45",
+        "game_path_id": "bcusu26"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "BCUSU07112026",
+    "game_path_id": "bcusu26",
+    "week": 10,
+    "date": "2026-11-07",
+    "opponent_id": "swacsu",
+    "opponent_name": "Southern",
+    "result": "L",
+    "score_team": 17,
+    "score_opponent": 45,
+    "score": "L 17-45",
+    "venue": {
+      "stadium_name": "A.W. Mumford Stadium",
+      "venue_label": "A.W. Mumford Stadium",
+      "city": "Baton Rouge",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "L 17-45 vs SOU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.476
+  },
+  "next_game": {
+    "game_id": "2026-11-14_swacgsu_at_swacbcu",
+    "preview_path_id": "2026-11-14_swacgsu_at_swacbcu",
+    "date": "2026-11-14",
+    "kickoff": "13:00",
+    "opponent_id": "swacgsu",
+    "opponent_name": "Grambling",
+    "opponent_short_name": "GRAM",
+    "opponent_mascot": "Tigers",
+    "opponent_logo": null,
+    "home_away": "home",
+    "venue": {
+      "stadium_name": "Daytona Stadium",
+      "venue_label": "Daytona Stadium",
+      "city": "Daytona Beach",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "",
+    "headline": "Hosts GRAM at Daytona Stadium",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5647
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00010526",
+      "name": "Raymond Woodie Jr.",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://bcuathletics.com/images/2023/3/16/cropped_WOODIE_RAYMOND.png",
+      "tenure_year": 4,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": -0.0056,
+        "display": "-0.01",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00010529",
+      "name": "Donte’ Pimpleton",
+      "role": "Offensive Coordinator",
+      "role_title": "Asst. Head Coach, Offensive Coord., QBs",
+      "role_group": "coordinator",
+      "image_url": "https://bcuathletics.com/images/2023/3/16/cropped_PIMPLETON_DONTE.png",
+      "tenure_year": 4,
+      "metric": {
+        "key": "off_epa_yoy",
+        "label": "OFF EPA YoY",
+        "value": -0.126,
+        "display": "-0.13",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    },
+    {
+      "coach_id": "PERS_00011434",
+      "name": "Otis Mounds",
+      "role": "Defensive Coordinator",
+      "role_title": "Co-Defensive Coordinator, Safeties",
+      "role_group": "coordinator",
+      "image_url": "https://bcuathletics.com/images/2024/8/19/MOUNDS_OTIS.png",
+      "tenure_year": 3,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": 0.1204,
+        "display": "+0.12",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 46.7,
+            "display": "46.7%",
+            "rank": 18,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 113.0,
+            "display": "113.0",
+            "rank": 18,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 1.143,
+            "display": "1.14",
+            "rank": 14,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 1.571,
+            "display": "1.57",
+            "rank": 18,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 202.9,
+            "display": "202.9",
+            "rank": 8,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 1.429,
+            "display": "1.43",
+            "rank": 13,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 26.88,
+            "display": "26.9%",
+            "rank": 16,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 72.14,
+            "display": "72.1%",
+            "rank": 5,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 17.73,
+            "display": "17.7%",
+            "rank": 6,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 20.58,
+            "display": "20.6%",
+            "rank": 16,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.143,
+            "display": "2.14",
+            "rank": 11,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.429,
+            "display": "1.43",
+            "rank": 5,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 39.85,
+            "display": "39.9%",
+            "rank": 12,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": -0.066,
+            "display": "-0.07",
+            "rank": 13,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 36.8,
+            "display": "36.8%",
+            "rank": 10,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 58.1,
+            "display": "58.1%",
+            "rank": 15,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 85.7,
+            "display": "85.7%",
+            "rank": 5,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 39.2,
+            "display": "39.2",
+            "rank": 7,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 3.1,
+            "display": "3.1%",
+            "rank": 16,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 21.6,
+            "display": "21.6",
+            "rank": 8,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "rushing",
+    "key": "power_success_rate",
+    "label": "POWER SUCC %",
+    "value": 72.14,
+    "display": "72.1%",
+    "rank": 5,
+    "total": 18,
+    "sentence": "Power success rate"
+  },
+  "star_impact": {
+    "person_id": "PERS_00009161",
+    "full_name": "Stephen Sparrow",
+    "last_name": "Sparrow",
+    "position": "LB",
+    "class_year": "Gr.",
+    "image_url": "https://bcuathletics.com/images/2026/8/25/SPARROW_STEPHEN.png",
+    "from_game": {
+      "game_id": "BCUSU07112026",
+      "game_path_id": "bcusu26",
+      "week": 10,
+      "opponent_name": "Southern",
+      "result": "L",
+      "score": "L 17-45"
+    },
+    "game_par": 19.72,
+    "season_par": 50.3,
+    "par_per_game": 7.19,
+    "stat_line": [
+      {
+        "label": "FF",
+        "value": "2"
+      },
+      {
+        "label": "TKL",
+        "value": "5"
+      },
+      {
+        "label": "TFL",
+        "value": "0"
+      },
+      {
+        "label": "SACK",
+        "value": "0"
+      }
+    ],
+    "profile_url": "/player/PERS_00009161"
+  }
+}

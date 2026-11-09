@@ -1,0 +1,470 @@
+{
+  "team_id": "swacgsu",
+  "season": 2026,
+  "season_state": "in_progress",
+  "as_of_week": 10,
+  "generated_at": "2026-11-07T19:57:47-06:00",
+  "header": {
+    "conference": "SWAC",
+    "division": "West",
+    "division_label": "SWAC WEST",
+    "season": 2026,
+    "team_abbreviation": "GRAM",
+    "school_name": "Grambling State University",
+    "avg_par": 5.8,
+    "roster_count": 101,
+    "transfer_count": 49,
+    "transfer_rate": 48.5,
+    "upperclass_pct": 32.7
+  },
+  "conference_record": {
+    "conference_label": "2-4",
+    "conference_wins": 2,
+    "conference_losses": 4,
+    "overall_label": "4-5",
+    "overall_wins": 4,
+    "overall_losses": 5,
+    "overall_ties": 0,
+    "division_rank": "6th - SWAC West",
+    "last_5": [
+      {
+        "week": 5,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacalc",
+        "opponent_short": "ALCN",
+        "score_team": 63,
+        "score_opponent": 59,
+        "score": "W 63-59",
+        "game_path_id": "alcgsu26"
+      },
+      {
+        "week": 6,
+        "result": "W",
+        "home_away": "home",
+        "opponent_id": "swacjsu",
+        "opponent_short": "JKST",
+        "score_team": 45,
+        "score_opponent": 38,
+        "score": "W 45-38",
+        "game_path_id": "jsugsu26"
+      },
+      {
+        "week": 7,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swacaamu",
+        "opponent_short": "AAMU",
+        "score_team": 31,
+        "score_opponent": 61,
+        "score": "L 31-61",
+        "game_path_id": "gsuaamu26"
+      },
+      {
+        "week": 9,
+        "result": "L",
+        "home_away": "away",
+        "opponent_id": "swactsu",
+        "opponent_short": "TXSO",
+        "score_team": 20,
+        "score_opponent": 23,
+        "score": "L 20-23",
+        "game_path_id": "gsutsu26"
+      },
+      {
+        "week": 10,
+        "result": "L",
+        "home_away": "home",
+        "opponent_id": "swacuapb",
+        "opponent_short": "UAPB",
+        "score_team": 32,
+        "score_opponent": 35,
+        "score": "L 32-35",
+        "game_path_id": "uapbgsu26"
+      }
+    ]
+  },
+  "previous_game": {
+    "game_id": "UAPBGRAM07112026",
+    "game_path_id": "uapbgsu26",
+    "week": 10,
+    "date": "2026-11-07",
+    "opponent_id": "swacuapb",
+    "opponent_name": "UAPB",
+    "result": "L",
+    "score_team": 32,
+    "score_opponent": 35,
+    "score": "L 32-35",
+    "venue": {
+      "stadium_name": "Eddie G. Robinson Memorial Stadium",
+      "venue_label": "Eddie G. Robinson Memorial Stadium",
+      "city": "Grambling",
+      "neutral_site_name": null
+    },
+    "tag": "",
+    "headline": "L 32-35 vs UAPB",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5001
+  },
+  "next_game": {
+    "game_id": "2026-11-14_swacgsu_at_swacbcu",
+    "preview_path_id": "2026-11-14_swacgsu_at_swacbcu",
+    "date": "2026-11-14",
+    "kickoff": "13:00",
+    "opponent_id": "swacbcu",
+    "opponent_name": "B-CU",
+    "opponent_short_name": "BCU",
+    "opponent_mascot": "Wildcats",
+    "opponent_logo": null,
+    "home_away": "away",
+    "venue": {
+      "stadium_name": "Daytona Stadium",
+      "venue_label": "Daytona Stadium",
+      "city": "Daytona Beach",
+      "neutral_site_name": null
+    },
+    "broadcast": null,
+    "tag": "",
+    "headline": "Travels to BCU",
+    "is_rivalry": false,
+    "is_homecoming": false,
+    "is_conference_championship": false,
+    "is_celebration_bowl": false,
+    "win_probability": 0.5014
+  },
+  "season_summary": null,
+  "coach_carousel": [
+    {
+      "coach_id": "PERS_00004567",
+      "name": "Mickey Joseph",
+      "role": "Head Coach",
+      "role_title": "Head Coach",
+      "role_group": "head_coach",
+      "image_url": "https://gsutigers.com/images/2024/2/19/Mickey_Joseph.jpg",
+      "tenure_year": 3,
+      "metric": {
+        "key": "net_epa_yoy",
+        "label": "NET EPA YoY",
+        "value": 0.0115,
+        "display": "+0.01",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": true,
+        "direction": "up"
+      }
+    },
+    {
+      "coach_id": "PERS_00004568",
+      "name": "Jason Rollins",
+      "role": "Defensive Coordinator",
+      "role_title": "Defensive Coordinator",
+      "role_group": "coordinator",
+      "image_url": "https://gsutigers.com/images/2024/2/22/Jason_Rollins.jpg",
+      "tenure_year": 3,
+      "metric": {
+        "key": "def_epa_yoy",
+        "label": "DEF EPA YoY",
+        "value": -0.2442,
+        "display": "-0.24",
+        "scope": "vs 2025",
+        "higher_is_better": true,
+        "is_improvement": false,
+        "direction": "down"
+      }
+    }
+  ],
+  "unit_carousel": {
+    "scope": "conference",
+    "scope_total": 18,
+    "available_units": [
+      "passing",
+      "rushing",
+      "defensive_havoc",
+      "efficiency",
+      "special_teams"
+    ],
+    "slides": [
+      {
+        "unit": "passing",
+        "label": "Passing Production",
+        "metrics": [
+          {
+            "key": "completion_pct",
+            "label": "COMP %",
+            "value": 59.3,
+            "display": "59.3%",
+            "rank": 8,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_yards_per_game",
+            "label": "PASS YDS/GM",
+            "value": 212.0,
+            "display": "212.0",
+            "rank": 6,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "pass_touchdowns_per_game",
+            "label": "PASS TD/GM",
+            "value": 2.167,
+            "display": "2.17",
+            "rank": 4,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "interceptions_per_game",
+            "label": "INT/GM",
+            "value": 0.5,
+            "display": "0.50",
+            "rank": 4,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": false
+          }
+        ]
+      },
+      {
+        "unit": "rushing",
+        "label": "Rushing Production",
+        "metrics": [
+          {
+            "key": "rush_yards_per_game",
+            "label": "RUSH YDS/GM",
+            "value": 176.7,
+            "display": "176.7",
+            "rank": 12,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "rush_touchdowns_per_game",
+            "label": "RUSH TD/GM",
+            "value": 1.667,
+            "display": "1.67",
+            "rank": 10,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "stuff_rate",
+            "label": "STUFF RATE",
+            "value": 17.98,
+            "display": "18.0%",
+            "rank": 6,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "power_success_rate",
+            "label": "POWER SUCC %",
+            "value": 75.0,
+            "display": "75.0%",
+            "rank": 2,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "defensive_havoc",
+        "label": "Defensive Havoc",
+        "metrics": [
+          {
+            "key": "havoc_rate_forced",
+            "label": "HAVOC FORCED",
+            "value": 17.3,
+            "display": "17.3%",
+            "rank": 7,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "havoc_rate_allowed",
+            "label": "HAVOC ALLOWED",
+            "value": 17.39,
+            "display": "17.4%",
+            "rank": 11,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": false
+          },
+          {
+            "key": "sacks_per_game",
+            "label": "SACKS/GM",
+            "value": 2.833,
+            "display": "2.83",
+            "rank": 4,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "turnovers_forced_per_game",
+            "label": "TO FORCED/GM",
+            "value": 1.333,
+            "display": "1.33",
+            "rank": 8,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "efficiency",
+        "label": "Offensive Efficiency",
+        "metrics": [
+          {
+            "key": "success_rate",
+            "label": "SUCCESS RATE",
+            "value": 41.66,
+            "display": "41.7%",
+            "rank": 10,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "epa_per_play",
+            "label": "EPA/PLAY",
+            "value": 0.1024,
+            "display": "+0.10",
+            "rank": 6,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "third_down_conversion_rate",
+            "label": "3RD DOWN %",
+            "value": 42.2,
+            "display": "42.2%",
+            "rank": 4,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "red_zone_td_rate",
+            "label": "RZ TD %",
+            "value": 67.5,
+            "display": "67.5%",
+            "rank": 9,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      },
+      {
+        "unit": "special_teams",
+        "label": "Special Teams",
+        "metrics": [
+          {
+            "key": "field_goal_pct",
+            "label": "FG %",
+            "value": 80.0,
+            "display": "80.0%",
+            "rank": 7,
+            "tied": true,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "punt_avg_gross",
+            "label": "PUNT AVG",
+            "value": 41.6,
+            "display": "41.6",
+            "rank": 2,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_touchback_rate",
+            "label": "TOUCHBACK %",
+            "value": 38.5,
+            "display": "38.5%",
+            "rank": 4,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          },
+          {
+            "key": "kickoff_return_avg",
+            "label": "KO RET AVG",
+            "value": 25.6,
+            "display": "25.6",
+            "rank": 3,
+            "tied": false,
+            "total": 18,
+            "higher_is_better": true
+          }
+        ]
+      }
+    ]
+  },
+  "top_stat": {
+    "unit": "special_teams",
+    "key": "punt_avg_gross",
+    "label": "PUNT AVG",
+    "value": 41.6,
+    "display": "41.6",
+    "rank": 2,
+    "total": 18,
+    "sentence": "Punt average"
+  },
+  "star_impact": {
+    "person_id": "PERS_00004242",
+    "full_name": "Christen Williams",
+    "last_name": "Williams",
+    "position": "DB",
+    "class_year": "Sr.",
+    "image_url": "https://gsutigers.com/images/2026/7/8/Christian_Williams_.jpg",
+    "from_game": {
+      "game_id": "UAPBGRAM07112026",
+      "game_path_id": "uapbgsu26",
+      "week": 10,
+      "opponent_name": "UAPB",
+      "result": "L",
+      "score": "L 32-35"
+    },
+    "game_par": 9.69,
+    "season_par": 45.02,
+    "par_per_game": 7.5,
+    "stat_line": [
+      {
+        "label": "FR",
+        "value": "1"
+      },
+      {
+        "label": "TKL",
+        "value": "2"
+      },
+      {
+        "label": "TFL",
+        "value": "0"
+      },
+      {
+        "label": "SACK",
+        "value": "0"
+      }
+    ],
+    "profile_url": "/player/PERS_00004242"
+  }
+}

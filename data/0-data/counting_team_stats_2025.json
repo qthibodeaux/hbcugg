@@ -1,0 +1,4512 @@
+{
+  "season": 2025,
+  "generated_at": "2026-09-21T10:08:32.337Z",
+  "source": "mock",
+  "note": "MOCK — seeded numbers on real teams. Replace with GET /api/stats/team/{season} (Counting Stats Fetch Contract).",
+  "games_through": {
+    "week": 4,
+    "label": "Week 4"
+  },
+  "teams": [
+    {
+      "team_id": "swacalc",
+      "name": "Alcorn State",
+      "short": "Alcorn",
+      "conference": "SWAC",
+      "division": "West",
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 18,
+          "fg": 7,
+          "xpt": 17,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 148,
+          "avg_g": 37
+        },
+        "totals": {
+          "rush": 593,
+          "pass": 549,
+          "plays": 254,
+          "yds": 1142,
+          "avg_p": 4.5,
+          "td": 18,
+          "avg_g": 285.5
+        },
+        "rushing": {
+          "att": 155,
+          "yds": 593,
+          "avg": 3.8,
+          "td": 8,
+          "long": 37,
+          "avg_g": 148.3
+        },
+        "passing": {
+          "att": 99,
+          "cmp": 59,
+          "int": 4,
+          "pct": 0.596,
+          "yds": 549,
+          "avg_a": 5.5,
+          "td": 10,
+          "long": 42,
+          "avg_g": 137.3
+        },
+        "returns": {
+          "pr": {
+            "no": 9,
+            "yds": 107,
+            "avg": 11.9,
+            "td": 1,
+            "long": 6
+          },
+          "kr": {
+            "no": 18,
+            "yds": 302,
+            "avg": 16.8,
+            "td": 0,
+            "long": 70
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 15,
+            "yds": 590,
+            "avg": 39.3,
+            "long": 47,
+            "tb": 1,
+            "fc": 1,
+            "i20": 2,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 7,
+            "fga": 11,
+            "pct": 0.636,
+            "long": 28,
+            "blk": 0,
+            "pat_made": 17,
+            "pat_att": 18
+          }
+        },
+        "defense": {
+          "ua": 123,
+          "a": 84,
+          "tot": 207,
+          "tfl": 17,
+          "sacks": 2.5,
+          "int": 1,
+          "brup": 30,
+          "qbh": 20,
+          "fr": 4,
+          "ff": 0,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 61,
+            "conv": 24,
+            "pct": 0.393
+          },
+          "fourth": {
+            "att": 7,
+            "conv": 3,
+            "pct": 0.429
+          },
+          "red_zone": {
+            "att": 8,
+            "scores": 8,
+            "td": 6,
+            "fg": 2,
+            "pct": 1
+          }
+        },
+        "misc": {
+          "first_downs": 55,
+          "fd_rush": 23,
+          "fd_pass": 27,
+          "fd_pen": 5,
+          "fum": 2,
+          "fum_lost": 2,
+          "pen": 35,
+          "pen_yds": 333,
+          "top_avg": 1593
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 23,
+          "fg": 7,
+          "xpt": 23,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 182,
+          "avg_g": 45.5
+        },
+        "totals": {
+          "rush": 762,
+          "pass": 930,
+          "plays": 220,
+          "yds": 1692,
+          "avg_p": 7.7,
+          "td": 23,
+          "avg_g": 423
+        },
+        "rushing": {
+          "att": 127,
+          "yds": 762,
+          "avg": 6,
+          "td": 11,
+          "long": 38,
+          "avg_g": 190.5
+        },
+        "passing": {
+          "att": 93,
+          "cmp": 65,
+          "int": 2,
+          "pct": 0.699,
+          "yds": 930,
+          "avg_a": 10,
+          "td": 12,
+          "long": 47,
+          "avg_g": 232.5
+        },
+        "returns": {
+          "pr": {
+            "no": 6,
+            "yds": 51,
+            "avg": 8.5,
+            "td": 0,
+            "long": 24
+          },
+          "kr": {
+            "no": 12,
+            "yds": 206,
+            "avg": 17.2,
+            "td": 0,
+            "long": 52
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 23,
+            "yds": 948,
+            "avg": 41.2,
+            "long": 46,
+            "tb": 2,
+            "fc": 3,
+            "i20": 6,
+            "blk": 1
+          },
+          "fg": {
+            "fgm": 7,
+            "fga": 10,
+            "pct": 0.7,
+            "long": 48,
+            "blk": 0,
+            "pat_made": 23,
+            "pat_att": 23
+          }
+        },
+        "defense": {
+          "ua": 139,
+          "a": 83,
+          "tot": 222,
+          "tfl": 16,
+          "sacks": 7,
+          "int": 3,
+          "brup": 19,
+          "qbh": 17,
+          "fr": 1,
+          "ff": 2,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 61,
+            "conv": 31,
+            "pct": 0.508
+          },
+          "fourth": {
+            "att": 11,
+            "conv": 3,
+            "pct": 0.273
+          },
+          "red_zone": {
+            "att": 13,
+            "scores": 13,
+            "td": 9,
+            "fg": 4,
+            "pct": 1
+          }
+        },
+        "misc": {
+          "first_downs": 63,
+          "fd_rush": 23,
+          "fd_pass": 39,
+          "fd_pen": 1,
+          "fum": 5,
+          "fum_lost": 3,
+          "pen": 25,
+          "pen_yds": 203,
+          "top_avg": 1652
+        }
+      }
+    },
+    {
+      "team_id": "swacaamu",
+      "name": "Alabama A&M",
+      "short": "AAMU",
+      "conference": "SWAC",
+      "division": "East",
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 10,
+          "fg": 5,
+          "xpt": 9,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 86,
+          "avg_g": 21.5
+        },
+        "totals": {
+          "rush": 661,
+          "pass": 910,
+          "plays": 255,
+          "yds": 1571,
+          "avg_p": 6.2,
+          "td": 10,
+          "avg_g": 392.8
+        },
+        "rushing": {
+          "att": 128,
+          "yds": 661,
+          "avg": 5.2,
+          "td": 4,
+          "long": 40,
+          "avg_g": 165.3
+        },
+        "passing": {
+          "att": 127,
+          "cmp": 76,
+          "int": 3,
+          "pct": 0.598,
+          "yds": 910,
+          "avg_a": 7.2,
+          "td": 6,
+          "long": 29,
+          "avg_g": 227.5
+        },
+        "returns": {
+          "pr": {
+            "no": 12,
+            "yds": 121,
+            "avg": 10.1,
+            "td": 0,
+            "long": 12
+          },
+          "kr": {
+            "no": 14,
+            "yds": 305,
+            "avg": 21.8,
+            "td": 1,
+            "long": 55
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 14,
+            "yds": 566,
+            "avg": 40.4,
+            "long": 63,
+            "tb": 1,
+            "fc": 4,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 9,
+            "pct": 0.556,
+            "long": 41,
+            "blk": 0,
+            "pat_made": 9,
+            "pat_att": 10
+          }
+        },
+        "defense": {
+          "ua": 128,
+          "a": 118,
+          "tot": 246,
+          "tfl": 20,
+          "sacks": 0,
+          "int": 5,
+          "brup": 23,
+          "qbh": 4,
+          "fr": 2,
+          "ff": 4,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 60,
+            "conv": 24,
+            "pct": 0.4
+          },
+          "fourth": {
+            "att": 12,
+            "conv": 6,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 14,
+            "scores": 10,
+            "td": 8,
+            "fg": 2,
+            "pct": 0.714
+          }
+        },
+        "misc": {
+          "first_downs": 74,
+          "fd_rush": 28,
+          "fd_pass": 39,
+          "fd_pen": 7,
+          "fum": 5,
+          "fum_lost": 5,
+          "pen": 33,
+          "pen_yds": 353,
+          "top_avg": 1962
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 13,
+          "fg": 3,
+          "xpt": 12,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 99,
+          "avg_g": 24.8
+        },
+        "totals": {
+          "rush": 715,
+          "pass": 713,
+          "plays": 242,
+          "yds": 1428,
+          "avg_p": 5.9,
+          "td": 13,
+          "avg_g": 357
+        },
+        "rushing": {
+          "att": 137,
+          "yds": 715,
+          "avg": 5.2,
+          "td": 8,
+          "long": 57,
+          "avg_g": 178.8
+        },
+        "passing": {
+          "att": 105,
+          "cmp": 63,
+          "int": 2,
+          "pct": 0.6,
+          "yds": 713,
+          "avg_a": 6.8,
+          "td": 4,
+          "long": 55,
+          "avg_g": 178.3
+        },
+        "returns": {
+          "pr": {
+            "no": 7,
+            "yds": 64,
+            "avg": 9.1,
+            "td": 0,
+            "long": 39
+          },
+          "kr": {
+            "no": 19,
+            "yds": 321,
+            "avg": 16.9,
+            "td": 0,
+            "long": 50
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 19,
+            "yds": 775,
+            "avg": 40.8,
+            "long": 66,
+            "tb": 1,
+            "fc": 4,
+            "i20": 9,
+            "blk": 1
+          },
+          "fg": {
+            "fgm": 3,
+            "fga": 7,
+            "pct": 0.429,
+            "long": 29,
+            "blk": 0,
+            "pat_made": 12,
+            "pat_att": 13
+          }
+        },
+        "defense": {
+          "ua": 174,
+          "a": 75,
+          "tot": 249,
+          "tfl": 25,
+          "sacks": 10.5,
+          "int": 6,
+          "brup": 16,
+          "qbh": 12,
+          "fr": 4,
+          "ff": 3,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 62,
+            "conv": 19,
+            "pct": 0.306
+          },
+          "fourth": {
+            "att": 10,
+            "conv": 7,
+            "pct": 0.7
+          },
+          "red_zone": {
+            "att": 13,
+            "scores": 12,
+            "td": 8,
+            "fg": 4,
+            "pct": 0.923
+          }
+        },
+        "misc": {
+          "first_downs": 61,
+          "fd_rush": 22,
+          "fd_pass": 31,
+          "fd_pen": 8,
+          "fum": 5,
+          "fum_lost": 2,
+          "pen": 21,
+          "pen_yds": 206,
+          "top_avg": 1878
+        }
+      }
+    },
+    {
+      "team_id": "swacasu",
+      "name": "Alabama State",
+      "short": "ASU",
+      "conference": "SWAC",
+      "division": "East",
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 16,
+          "fg": 5,
+          "xpt": 16,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 129,
+          "avg_g": 43
+        },
+        "totals": {
+          "rush": 575,
+          "pass": 703,
+          "plays": 181,
+          "yds": 1278,
+          "avg_p": 7.1,
+          "td": 16,
+          "avg_g": 426
+        },
+        "rushing": {
+          "att": 97,
+          "yds": 575,
+          "avg": 5.9,
+          "td": 7,
+          "long": 41,
+          "avg_g": 191.7
+        },
+        "passing": {
+          "att": 84,
+          "cmp": 59,
+          "int": 3,
+          "pct": 0.702,
+          "yds": 703,
+          "avg_a": 8.4,
+          "td": 9,
+          "long": 60,
+          "avg_g": 234.3
+        },
+        "returns": {
+          "pr": {
+            "no": 5,
+            "yds": 25,
+            "avg": 5,
+            "td": 0,
+            "long": 42
+          },
+          "kr": {
+            "no": 13,
+            "yds": 267,
+            "avg": 20.5,
+            "td": 0,
+            "long": 82
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 10,
+            "yds": 394,
+            "avg": 39.4,
+            "long": 57,
+            "tb": 2,
+            "fc": 2,
+            "i20": 2,
+            "blk": 1
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 8,
+            "pct": 0.625,
+            "long": 34,
+            "blk": 0,
+            "pat_made": 16,
+            "pat_att": 16
+          }
+        },
+        "defense": {
+          "ua": 130,
+          "a": 77,
+          "tot": 207,
+          "tfl": 11,
+          "sacks": 8.5,
+          "int": 5,
+          "brup": 23,
+          "qbh": 13,
+          "fr": 1,
+          "ff": 3,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 46,
+            "conv": 18,
+            "pct": 0.391
+          },
+          "fourth": {
+            "att": 7,
+            "conv": 3,
+            "pct": 0.429
+          },
+          "red_zone": {
+            "att": 8,
+            "scores": 5,
+            "td": 5,
+            "fg": 0,
+            "pct": 0.625
+          }
+        },
+        "misc": {
+          "first_downs": 33,
+          "fd_rush": 16,
+          "fd_pass": 15,
+          "fd_pen": 2,
+          "fum": 0,
+          "fum_lost": 0,
+          "pen": 17,
+          "pen_yds": 141,
+          "top_avg": 1810
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 12,
+          "fg": 3,
+          "xpt": 11,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 92,
+          "avg_g": 30.7
+        },
+        "totals": {
+          "rush": 470,
+          "pass": 564,
+          "plays": 205,
+          "yds": 1034,
+          "avg_p": 5,
+          "td": 12,
+          "avg_g": 344.7
+        },
+        "rushing": {
+          "att": 122,
+          "yds": 470,
+          "avg": 3.9,
+          "td": 8,
+          "long": 63,
+          "avg_g": 156.7
+        },
+        "passing": {
+          "att": 83,
+          "cmp": 50,
+          "int": 6,
+          "pct": 0.602,
+          "yds": 564,
+          "avg_a": 6.8,
+          "td": 4,
+          "long": 55,
+          "avg_g": 188
+        },
+        "returns": {
+          "pr": {
+            "no": 6,
+            "yds": 55,
+            "avg": 9.2,
+            "td": 0,
+            "long": 36
+          },
+          "kr": {
+            "no": 6,
+            "yds": 110,
+            "avg": 18.3,
+            "td": 0,
+            "long": 62
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 10,
+            "yds": 400,
+            "avg": 40,
+            "long": 65,
+            "tb": 1,
+            "fc": 3,
+            "i20": 2,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 3,
+            "fga": 5,
+            "pct": 0.6,
+            "long": 39,
+            "blk": 1,
+            "pat_made": 11,
+            "pat_att": 12
+          }
+        },
+        "defense": {
+          "ua": 116,
+          "a": 82,
+          "tot": 198,
+          "tfl": 14,
+          "sacks": 1.5,
+          "int": 6,
+          "brup": 11,
+          "qbh": 3,
+          "fr": 1,
+          "ff": 2,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 46,
+            "conv": 18,
+            "pct": 0.391
+          },
+          "fourth": {
+            "att": 4,
+            "conv": 2,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 9,
+            "scores": 8,
+            "td": 5,
+            "fg": 3,
+            "pct": 0.889
+          }
+        },
+        "misc": {
+          "first_downs": 45,
+          "fd_rush": 21,
+          "fd_pass": 18,
+          "fd_pen": 6,
+          "fum": 6,
+          "fum_lost": 1,
+          "pen": 12,
+          "pen_yds": 106,
+          "top_avg": 1672
+        }
+      }
+    },
+    {
+      "team_id": "swacbcu",
+      "name": "Bethune Cookman",
+      "short": "BCU",
+      "conference": "SWAC",
+      "division": "East",
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 18,
+          "fg": 2,
+          "xpt": 18,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 132,
+          "avg_g": 44
+        },
+        "totals": {
+          "rush": 351,
+          "pass": 478,
+          "plays": 166,
+          "yds": 829,
+          "avg_p": 5,
+          "td": 18,
+          "avg_g": 276.3
+        },
+        "rushing": {
+          "att": 91,
+          "yds": 351,
+          "avg": 3.9,
+          "td": 9,
+          "long": 38,
+          "avg_g": 117
+        },
+        "passing": {
+          "att": 75,
+          "cmp": 45,
+          "int": 1,
+          "pct": 0.6,
+          "yds": 478,
+          "avg_a": 6.4,
+          "td": 9,
+          "long": 36,
+          "avg_g": 159.3
+        },
+        "returns": {
+          "pr": {
+            "no": 6,
+            "yds": 47,
+            "avg": 7.8,
+            "td": 0,
+            "long": 24
+          },
+          "kr": {
+            "no": 15,
+            "yds": 293,
+            "avg": 19.5,
+            "td": 0,
+            "long": 59
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 16,
+            "yds": 622,
+            "avg": 38.9,
+            "long": 50,
+            "tb": 1,
+            "fc": 4,
+            "i20": 2,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 4,
+            "pct": 0.5,
+            "long": 42,
+            "blk": 0,
+            "pat_made": 18,
+            "pat_att": 18
+          }
+        },
+        "defense": {
+          "ua": 126,
+          "a": 87,
+          "tot": 213,
+          "tfl": 10,
+          "sacks": 0.5,
+          "int": 6,
+          "brup": 10,
+          "qbh": 3,
+          "fr": 2,
+          "ff": 3,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 45,
+            "conv": 14,
+            "pct": 0.311
+          },
+          "fourth": {
+            "att": 8,
+            "conv": 4,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 6,
+            "scores": 4,
+            "td": 4,
+            "fg": 0,
+            "pct": 0.667
+          }
+        },
+        "misc": {
+          "first_downs": 47,
+          "fd_rush": 16,
+          "fd_pass": 28,
+          "fd_pen": 3,
+          "fum": 6,
+          "fum_lost": 3,
+          "pen": 14,
+          "pen_yds": 127,
+          "top_avg": 1639
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 7,
+          "fg": 5,
+          "xpt": 6,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 63,
+          "avg_g": 21
+        },
+        "totals": {
+          "rush": 579,
+          "pass": 973,
+          "plays": 222,
+          "yds": 1552,
+          "avg_p": 7,
+          "td": 7,
+          "avg_g": 517.3
+        },
+        "rushing": {
+          "att": 116,
+          "yds": 579,
+          "avg": 5,
+          "td": 3,
+          "long": 32,
+          "avg_g": 193
+        },
+        "passing": {
+          "att": 106,
+          "cmp": 64,
+          "int": 0,
+          "pct": 0.604,
+          "yds": 973,
+          "avg_a": 9.2,
+          "td": 4,
+          "long": 74,
+          "avg_g": 324.3
+        },
+        "returns": {
+          "pr": {
+            "no": 5,
+            "yds": 28,
+            "avg": 5.6,
+            "td": 0,
+            "long": 27
+          },
+          "kr": {
+            "no": 9,
+            "yds": 148,
+            "avg": 16.4,
+            "td": 0,
+            "long": 27
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 9,
+            "yds": 374,
+            "avg": 41.6,
+            "long": 51,
+            "tb": 1,
+            "fc": 2,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 5,
+            "pct": 1,
+            "long": 44,
+            "blk": 0,
+            "pat_made": 6,
+            "pat_att": 7
+          }
+        },
+        "defense": {
+          "ua": 113,
+          "a": 85,
+          "tot": 198,
+          "tfl": 14,
+          "sacks": 0.5,
+          "int": 0,
+          "brup": 11,
+          "qbh": 15,
+          "fr": 0,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 43,
+            "conv": 22,
+            "pct": 0.512
+          },
+          "fourth": {
+            "att": 1,
+            "conv": 0,
+            "pct": 0
+          },
+          "red_zone": {
+            "att": 9,
+            "scores": 6,
+            "td": 6,
+            "fg": 0,
+            "pct": 0.667
+          }
+        },
+        "misc": {
+          "first_downs": 34,
+          "fd_rush": 13,
+          "fd_pass": 19,
+          "fd_pen": 2,
+          "fum": 3,
+          "fum_lost": 3,
+          "pen": 14,
+          "pen_yds": 143,
+          "top_avg": 1572
+        }
+      }
+    },
+    {
+      "team_id": "swacfamu",
+      "name": "Florida A&M",
+      "short": "FAMU",
+      "conference": "SWAC",
+      "division": "East",
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 15,
+          "fg": 2,
+          "xpt": 14,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 112,
+          "avg_g": 37.3
+        },
+        "totals": {
+          "rush": 526,
+          "pass": 780,
+          "plays": 206,
+          "yds": 1306,
+          "avg_p": 6.3,
+          "td": 15,
+          "avg_g": 435.3
+        },
+        "rushing": {
+          "att": 105,
+          "yds": 526,
+          "avg": 5,
+          "td": 5,
+          "long": 42,
+          "avg_g": 175.3
+        },
+        "passing": {
+          "att": 101,
+          "cmp": 51,
+          "int": 3,
+          "pct": 0.505,
+          "yds": 780,
+          "avg_a": 7.7,
+          "td": 9,
+          "long": 69,
+          "avg_g": 260
+        },
+        "returns": {
+          "pr": {
+            "no": 3,
+            "yds": 27,
+            "avg": 9,
+            "td": 0,
+            "long": 50
+          },
+          "kr": {
+            "no": 15,
+            "yds": 290,
+            "avg": 19.3,
+            "td": 0,
+            "long": 50
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 10,
+            "yds": 370,
+            "avg": 37,
+            "long": 65,
+            "tb": 2,
+            "fc": 3,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 5,
+            "pct": 0.4,
+            "long": 48,
+            "blk": 0,
+            "pat_made": 14,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 92,
+          "a": 81,
+          "tot": 173,
+          "tfl": 16,
+          "sacks": 5,
+          "int": 5,
+          "brup": 21,
+          "qbh": 4,
+          "fr": 0,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 41,
+            "conv": 16,
+            "pct": 0.39
+          },
+          "fourth": {
+            "att": 1,
+            "conv": 0,
+            "pct": 0
+          },
+          "red_zone": {
+            "att": 7,
+            "scores": 7,
+            "td": 5,
+            "fg": 2,
+            "pct": 1
+          }
+        },
+        "misc": {
+          "first_downs": 42,
+          "fd_rush": 13,
+          "fd_pass": 26,
+          "fd_pen": 3,
+          "fum": 4,
+          "fum_lost": 4,
+          "pen": 19,
+          "pen_yds": 188,
+          "top_avg": 1575
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 15,
+          "fg": 6,
+          "xpt": 14,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 1,
+          "pts": 124,
+          "avg_g": 41.3
+        },
+        "totals": {
+          "rush": 480,
+          "pass": 431,
+          "plays": 167,
+          "yds": 911,
+          "avg_p": 5.5,
+          "td": 15,
+          "avg_g": 303.7
+        },
+        "rushing": {
+          "att": 93,
+          "yds": 480,
+          "avg": 5.2,
+          "td": 8,
+          "long": 52,
+          "avg_g": 160
+        },
+        "passing": {
+          "att": 74,
+          "cmp": 52,
+          "int": 2,
+          "pct": 0.703,
+          "yds": 431,
+          "avg_a": 5.8,
+          "td": 7,
+          "long": 60,
+          "avg_g": 143.7
+        },
+        "returns": {
+          "pr": {
+            "no": 9,
+            "yds": 90,
+            "avg": 10,
+            "td": 1,
+            "long": 45
+          },
+          "kr": {
+            "no": 6,
+            "yds": 103,
+            "avg": 17.2,
+            "td": 0,
+            "long": 23
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 10,
+            "yds": 392,
+            "avg": 39.2,
+            "long": 63,
+            "tb": 2,
+            "fc": 3,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 6,
+            "fga": 7,
+            "pct": 0.857,
+            "long": 28,
+            "blk": 0,
+            "pat_made": 14,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 112,
+          "a": 62,
+          "tot": 174,
+          "tfl": 16,
+          "sacks": 9,
+          "int": 3,
+          "brup": 24,
+          "qbh": 8,
+          "fr": 1,
+          "ff": 0,
+          "blk": 0,
+          "saf": 1
+        },
+        "conversions": {
+          "third": {
+            "att": 43,
+            "conv": 22,
+            "pct": 0.512
+          },
+          "fourth": {
+            "att": 1,
+            "conv": 0,
+            "pct": 0
+          },
+          "red_zone": {
+            "att": 6,
+            "scores": 6,
+            "td": 4,
+            "fg": 2,
+            "pct": 1
+          }
+        },
+        "misc": {
+          "first_downs": 53,
+          "fd_rush": 23,
+          "fd_pass": 30,
+          "fd_pen": 0,
+          "fum": 5,
+          "fum_lost": 3,
+          "pen": 27,
+          "pen_yds": 213,
+          "top_avg": 1938
+        }
+      }
+    },
+    {
+      "team_id": "swacjsu",
+      "name": "Jackson State",
+      "short": "JSU",
+      "conference": "SWAC",
+      "division": "East",
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 7,
+          "fg": 6,
+          "xpt": 6,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 68,
+          "avg_g": 22.7
+        },
+        "totals": {
+          "rush": 613,
+          "pass": 740,
+          "plays": 211,
+          "yds": 1353,
+          "avg_p": 6.4,
+          "td": 7,
+          "avg_g": 451
+        },
+        "rushing": {
+          "att": 114,
+          "yds": 613,
+          "avg": 5.4,
+          "td": 3,
+          "long": 42,
+          "avg_g": 204.3
+        },
+        "passing": {
+          "att": 97,
+          "cmp": 49,
+          "int": 3,
+          "pct": 0.505,
+          "yds": 740,
+          "avg_a": 7.6,
+          "td": 3,
+          "long": 66,
+          "avg_g": 246.7
+        },
+        "returns": {
+          "pr": {
+            "no": 9,
+            "yds": 61,
+            "avg": 6.8,
+            "td": 1,
+            "long": 30
+          },
+          "kr": {
+            "no": 8,
+            "yds": 148,
+            "avg": 18.5,
+            "td": 0,
+            "long": 35
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 13,
+            "yds": 501,
+            "avg": 38.5,
+            "long": 60,
+            "tb": 2,
+            "fc": 3,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 6,
+            "fga": 8,
+            "pct": 0.75,
+            "long": 40,
+            "blk": 0,
+            "pat_made": 6,
+            "pat_att": 7
+          }
+        },
+        "defense": {
+          "ua": 113,
+          "a": 77,
+          "tot": 190,
+          "tfl": 9,
+          "sacks": 1.5,
+          "int": 4,
+          "brup": 10,
+          "qbh": 3,
+          "fr": 2,
+          "ff": 3,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 38,
+            "conv": 15,
+            "pct": 0.395
+          },
+          "fourth": {
+            "att": 1,
+            "conv": 1,
+            "pct": 1
+          },
+          "red_zone": {
+            "att": 15,
+            "scores": 12,
+            "td": 9,
+            "fg": 3,
+            "pct": 0.8
+          }
+        },
+        "misc": {
+          "first_downs": 36,
+          "fd_rush": 12,
+          "fd_pass": 22,
+          "fd_pen": 2,
+          "fum": 0,
+          "fum_lost": 0,
+          "pen": 12,
+          "pen_yds": 126,
+          "top_avg": 1787
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 15,
+          "fg": 6,
+          "xpt": 15,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 123,
+          "avg_g": 41
+        },
+        "totals": {
+          "rush": 328,
+          "pass": 423,
+          "plays": 198,
+          "yds": 751,
+          "avg_p": 3.8,
+          "td": 15,
+          "avg_g": 250.3
+        },
+        "rushing": {
+          "att": 115,
+          "yds": 328,
+          "avg": 2.9,
+          "td": 8,
+          "long": 42,
+          "avg_g": 109.3
+        },
+        "passing": {
+          "att": 83,
+          "cmp": 50,
+          "int": 6,
+          "pct": 0.602,
+          "yds": 423,
+          "avg_a": 5.1,
+          "td": 7,
+          "long": 43,
+          "avg_g": 141
+        },
+        "returns": {
+          "pr": {
+            "no": 4,
+            "yds": 20,
+            "avg": 5,
+            "td": 0,
+            "long": 42
+          },
+          "kr": {
+            "no": 12,
+            "yds": 284,
+            "avg": 23.7,
+            "td": 0,
+            "long": 73
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 9,
+            "yds": 370,
+            "avg": 41.1,
+            "long": 68,
+            "tb": 0,
+            "fc": 2,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 6,
+            "fga": 8,
+            "pct": 0.75,
+            "long": 48,
+            "blk": 0,
+            "pat_made": 15,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 95,
+          "a": 68,
+          "tot": 163,
+          "tfl": 10,
+          "sacks": 8.5,
+          "int": 6,
+          "brup": 12,
+          "qbh": 11,
+          "fr": 3,
+          "ff": 3,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 40,
+            "conv": 12,
+            "pct": 0.3
+          },
+          "fourth": {
+            "att": 9,
+            "conv": 4,
+            "pct": 0.444
+          },
+          "red_zone": {
+            "att": 14,
+            "scores": 10,
+            "td": 8,
+            "fg": 2,
+            "pct": 0.714
+          }
+        },
+        "misc": {
+          "first_downs": 50,
+          "fd_rush": 26,
+          "fd_pass": 24,
+          "fd_pen": 0,
+          "fum": 4,
+          "fum_lost": 3,
+          "pen": 14,
+          "pen_yds": 106,
+          "top_avg": 1585
+        }
+      }
+    },
+    {
+      "team_id": "swacmvsu",
+      "name": "Mississippi Valley State",
+      "short": "MVSU",
+      "conference": "SWAC",
+      "division": "East",
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 16,
+          "fg": 3,
+          "xpt": 16,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 123,
+          "avg_g": 30.8
+        },
+        "totals": {
+          "rush": 504,
+          "pass": 665,
+          "plays": 261,
+          "yds": 1169,
+          "avg_p": 4.5,
+          "td": 16,
+          "avg_g": 292.3
+        },
+        "rushing": {
+          "att": 147,
+          "yds": 504,
+          "avg": 3.4,
+          "td": 5,
+          "long": 66,
+          "avg_g": 126
+        },
+        "passing": {
+          "att": 114,
+          "cmp": 68,
+          "int": 6,
+          "pct": 0.596,
+          "yds": 665,
+          "avg_a": 5.8,
+          "td": 11,
+          "long": 83,
+          "avg_g": 166.3
+        },
+        "returns": {
+          "pr": {
+            "no": 10,
+            "yds": 64,
+            "avg": 6.4,
+            "td": 0,
+            "long": 31
+          },
+          "kr": {
+            "no": 8,
+            "yds": 162,
+            "avg": 20.3,
+            "td": 0,
+            "long": 48
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 12,
+            "yds": 522,
+            "avg": 43.5,
+            "long": 48,
+            "tb": 2,
+            "fc": 1,
+            "i20": 6,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 3,
+            "fga": 4,
+            "pct": 0.75,
+            "long": 50,
+            "blk": 0,
+            "pat_made": 16,
+            "pat_att": 16
+          }
+        },
+        "defense": {
+          "ua": 154,
+          "a": 62,
+          "tot": 216,
+          "tfl": 24,
+          "sacks": 5,
+          "int": 8,
+          "brup": 26,
+          "qbh": 15,
+          "fr": 1,
+          "ff": 2,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 57,
+            "conv": 17,
+            "pct": 0.298
+          },
+          "fourth": {
+            "att": 10,
+            "conv": 6,
+            "pct": 0.6
+          },
+          "red_zone": {
+            "att": 13,
+            "scores": 8,
+            "td": 8,
+            "fg": 0,
+            "pct": 0.615
+          }
+        },
+        "misc": {
+          "first_downs": 65,
+          "fd_rush": 25,
+          "fd_pass": 34,
+          "fd_pen": 6,
+          "fum": 2,
+          "fum_lost": 0,
+          "pen": 22,
+          "pen_yds": 224,
+          "top_avg": 1835
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 17,
+          "fg": 6,
+          "xpt": 17,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 137,
+          "avg_g": 34.3
+        },
+        "totals": {
+          "rush": 920,
+          "pass": 839,
+          "plays": 261,
+          "yds": 1759,
+          "avg_p": 6.7,
+          "td": 17,
+          "avg_g": 439.8
+        },
+        "rushing": {
+          "att": 168,
+          "yds": 920,
+          "avg": 5.5,
+          "td": 11,
+          "long": 65,
+          "avg_g": 230
+        },
+        "passing": {
+          "att": 93,
+          "cmp": 47,
+          "int": 5,
+          "pct": 0.505,
+          "yds": 839,
+          "avg_a": 9,
+          "td": 6,
+          "long": 25,
+          "avg_g": 209.8
+        },
+        "returns": {
+          "pr": {
+            "no": 12,
+            "yds": 66,
+            "avg": 5.5,
+            "td": 0,
+            "long": 43
+          },
+          "kr": {
+            "no": 11,
+            "yds": 243,
+            "avg": 22.1,
+            "td": 0,
+            "long": 93
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 18,
+            "yds": 747,
+            "avg": 41.5,
+            "long": 63,
+            "tb": 0,
+            "fc": 4,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 6,
+            "fga": 9,
+            "pct": 0.667,
+            "long": 35,
+            "blk": 0,
+            "pat_made": 17,
+            "pat_att": 17
+          }
+        },
+        "defense": {
+          "ua": 165,
+          "a": 84,
+          "tot": 249,
+          "tfl": 22,
+          "sacks": 10.5,
+          "int": 0,
+          "brup": 15,
+          "qbh": 16,
+          "fr": 1,
+          "ff": 2,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 60,
+            "conv": 30,
+            "pct": 0.5
+          },
+          "fourth": {
+            "att": 8,
+            "conv": 4,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 16,
+            "scores": 13,
+            "td": 11,
+            "fg": 2,
+            "pct": 0.813
+          }
+        },
+        "misc": {
+          "first_downs": 74,
+          "fd_rush": 33,
+          "fd_pass": 35,
+          "fd_pen": 6,
+          "fum": 6,
+          "fum_lost": 5,
+          "pen": 21,
+          "pen_yds": 153,
+          "top_avg": 1959
+        }
+      }
+    },
+    {
+      "team_id": "swacpvamu",
+      "name": "Prairie View A&M",
+      "short": "PVAMU",
+      "conference": "SWAC",
+      "division": "West",
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 11,
+          "fg": 0,
+          "xpt": 10,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 76,
+          "avg_g": 25.3
+        },
+        "totals": {
+          "rush": 526,
+          "pass": 607,
+          "plays": 158,
+          "yds": 1133,
+          "avg_p": 7.2,
+          "td": 11,
+          "avg_g": 377.7
+        },
+        "rushing": {
+          "att": 91,
+          "yds": 526,
+          "avg": 5.8,
+          "td": 6,
+          "long": 70,
+          "avg_g": 175.3
+        },
+        "passing": {
+          "att": 67,
+          "cmp": 40,
+          "int": 5,
+          "pct": 0.597,
+          "yds": 607,
+          "avg_a": 9.1,
+          "td": 5,
+          "long": 53,
+          "avg_g": 202.3
+        },
+        "returns": {
+          "pr": {
+            "no": 6,
+            "yds": 52,
+            "avg": 8.7,
+            "td": 0,
+            "long": 5
+          },
+          "kr": {
+            "no": 9,
+            "yds": 221,
+            "avg": 24.6,
+            "td": 0,
+            "long": 21
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 11,
+            "yds": 475,
+            "avg": 43.2,
+            "long": 58,
+            "tb": 1,
+            "fc": 1,
+            "i20": 2,
+            "blk": 1
+          },
+          "fg": {
+            "fgm": 0,
+            "fga": 0,
+            "pct": null,
+            "long": null,
+            "blk": 0,
+            "pat_made": 10,
+            "pat_att": 11
+          }
+        },
+        "defense": {
+          "ua": 129,
+          "a": 67,
+          "tot": 196,
+          "tfl": 17,
+          "sacks": 1.5,
+          "int": 2,
+          "brup": 13,
+          "qbh": 10,
+          "fr": 1,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 46,
+            "conv": 18,
+            "pct": 0.391
+          },
+          "fourth": {
+            "att": 3,
+            "conv": 1,
+            "pct": 0.333
+          },
+          "red_zone": {
+            "att": 11,
+            "scores": 9,
+            "td": 6,
+            "fg": 3,
+            "pct": 0.818
+          }
+        },
+        "misc": {
+          "first_downs": 53,
+          "fd_rush": 24,
+          "fd_pass": 29,
+          "fd_pen": 0,
+          "fum": 5,
+          "fum_lost": 5,
+          "pen": 22,
+          "pen_yds": 213,
+          "top_avg": 1565
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 7,
+          "fg": 1,
+          "xpt": 6,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 51,
+          "avg_g": 17
+        },
+        "totals": {
+          "rush": 361,
+          "pass": 581,
+          "plays": 204,
+          "yds": 942,
+          "avg_p": 4.6,
+          "td": 7,
+          "avg_g": 314
+        },
+        "rushing": {
+          "att": 104,
+          "yds": 361,
+          "avg": 3.5,
+          "td": 4,
+          "long": 36,
+          "avg_g": 120.3
+        },
+        "passing": {
+          "att": 100,
+          "cmp": 60,
+          "int": 4,
+          "pct": 0.6,
+          "yds": 581,
+          "avg_a": 5.8,
+          "td": 3,
+          "long": 64,
+          "avg_g": 193.7
+        },
+        "returns": {
+          "pr": {
+            "no": 7,
+            "yds": 55,
+            "avg": 7.9,
+            "td": 0,
+            "long": 13
+          },
+          "kr": {
+            "no": 8,
+            "yds": 193,
+            "avg": 24.1,
+            "td": 0,
+            "long": 47
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 15,
+            "yds": 570,
+            "avg": 38,
+            "long": 58,
+            "tb": 1,
+            "fc": 3,
+            "i20": 5,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 1,
+            "fga": 2,
+            "pct": 0.5,
+            "long": 28,
+            "blk": 1,
+            "pat_made": 6,
+            "pat_att": 7
+          }
+        },
+        "defense": {
+          "ua": 129,
+          "a": 76,
+          "tot": 205,
+          "tfl": 15,
+          "sacks": 8.5,
+          "int": 6,
+          "brup": 15,
+          "qbh": 13,
+          "fr": 1,
+          "ff": 2,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 43,
+            "conv": 22,
+            "pct": 0.512
+          },
+          "fourth": {
+            "att": 6,
+            "conv": 3,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 9,
+            "scores": 6,
+            "td": 5,
+            "fg": 1,
+            "pct": 0.667
+          }
+        },
+        "misc": {
+          "first_downs": 41,
+          "fd_rush": 15,
+          "fd_pass": 26,
+          "fd_pen": 0,
+          "fum": 3,
+          "fum_lost": 3,
+          "pen": 27,
+          "pen_yds": 189,
+          "top_avg": 1717
+        }
+      }
+    },
+    {
+      "team_id": "swacsu",
+      "name": "Southern",
+      "short": "SU",
+      "conference": "SWAC",
+      "division": "West",
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 15,
+          "fg": 0,
+          "xpt": 15,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 107,
+          "avg_g": 26.8
+        },
+        "totals": {
+          "rush": 511,
+          "pass": 933,
+          "plays": 301,
+          "yds": 1444,
+          "avg_p": 4.8,
+          "td": 15,
+          "avg_g": 361
+        },
+        "rushing": {
+          "att": 162,
+          "yds": 511,
+          "avg": 3.2,
+          "td": 9,
+          "long": 75,
+          "avg_g": 127.8
+        },
+        "passing": {
+          "att": 139,
+          "cmp": 83,
+          "int": 5,
+          "pct": 0.597,
+          "yds": 933,
+          "avg_a": 6.7,
+          "td": 5,
+          "long": 86,
+          "avg_g": 233.3
+        },
+        "returns": {
+          "pr": {
+            "no": 11,
+            "yds": 129,
+            "avg": 11.7,
+            "td": 0,
+            "long": 40
+          },
+          "kr": {
+            "no": 8,
+            "yds": 170,
+            "avg": 21.3,
+            "td": 1,
+            "long": 33
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 19,
+            "yds": 779,
+            "avg": 41,
+            "long": 58,
+            "tb": 1,
+            "fc": 2,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 0,
+            "fga": 2,
+            "pct": 0,
+            "long": null,
+            "blk": 0,
+            "pat_made": 15,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 136,
+          "a": 98,
+          "tot": 234,
+          "tfl": 12,
+          "sacks": 2.5,
+          "int": 2,
+          "brup": 18,
+          "qbh": 20,
+          "fr": 0,
+          "ff": 0,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 53,
+            "conv": 16,
+            "pct": 0.302
+          },
+          "fourth": {
+            "att": 4,
+            "conv": 1,
+            "pct": 0.25
+          },
+          "red_zone": {
+            "att": 14,
+            "scores": 12,
+            "td": 10,
+            "fg": 2,
+            "pct": 0.857
+          }
+        },
+        "misc": {
+          "first_downs": 45,
+          "fd_rush": 16,
+          "fd_pass": 22,
+          "fd_pen": 7,
+          "fum": 7,
+          "fum_lost": 7,
+          "pen": 32,
+          "pen_yds": 250,
+          "top_avg": 1688
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 13,
+          "fg": 5,
+          "xpt": 13,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 108,
+          "avg_g": 27
+        },
+        "totals": {
+          "rush": 917,
+          "pass": 1380,
+          "plays": 297,
+          "yds": 2297,
+          "avg_p": 7.7,
+          "td": 13,
+          "avg_g": 574.3
+        },
+        "rushing": {
+          "att": 154,
+          "yds": 917,
+          "avg": 6,
+          "td": 9,
+          "long": 41,
+          "avg_g": 229.3
+        },
+        "passing": {
+          "att": 143,
+          "cmp": 72,
+          "int": 1,
+          "pct": 0.503,
+          "yds": 1380,
+          "avg_a": 9.7,
+          "td": 4,
+          "long": 43,
+          "avg_g": 345
+        },
+        "returns": {
+          "pr": {
+            "no": 12,
+            "yds": 55,
+            "avg": 4.6,
+            "td": 0,
+            "long": 29
+          },
+          "kr": {
+            "no": 17,
+            "yds": 294,
+            "avg": 17.3,
+            "td": 0,
+            "long": 47
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 16,
+            "yds": 669,
+            "avg": 41.8,
+            "long": 65,
+            "tb": 0,
+            "fc": 4,
+            "i20": 1,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 6,
+            "pct": 0.833,
+            "long": 36,
+            "blk": 0,
+            "pat_made": 13,
+            "pat_att": 13
+          }
+        },
+        "defense": {
+          "ua": 126,
+          "a": 91,
+          "tot": 217,
+          "tfl": 29,
+          "sacks": 5,
+          "int": 8,
+          "brup": 26,
+          "qbh": 16,
+          "fr": 1,
+          "ff": 0,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 50,
+            "conv": 25,
+            "pct": 0.5
+          },
+          "fourth": {
+            "att": 5,
+            "conv": 2,
+            "pct": 0.4
+          },
+          "red_zone": {
+            "att": 8,
+            "scores": 5,
+            "td": 5,
+            "fg": 0,
+            "pct": 0.625
+          }
+        },
+        "misc": {
+          "first_downs": 59,
+          "fd_rush": 25,
+          "fd_pass": 29,
+          "fd_pen": 5,
+          "fum": 3,
+          "fum_lost": 3,
+          "pen": 18,
+          "pen_yds": 146,
+          "top_avg": 1636
+        }
+      }
+    },
+    {
+      "team_id": "swactsu",
+      "name": "Texas Southern",
+      "short": "TSU",
+      "conference": "SWAC",
+      "division": "West",
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 15,
+          "fg": 5,
+          "xpt": 14,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 121,
+          "avg_g": 30.3
+        },
+        "totals": {
+          "rush": 597,
+          "pass": 938,
+          "plays": 268,
+          "yds": 1535,
+          "avg_p": 5.7,
+          "td": 15,
+          "avg_g": 383.8
+        },
+        "rushing": {
+          "att": 128,
+          "yds": 597,
+          "avg": 4.7,
+          "td": 5,
+          "long": 27,
+          "avg_g": 149.3
+        },
+        "passing": {
+          "att": 140,
+          "cmp": 84,
+          "int": 3,
+          "pct": 0.6,
+          "yds": 938,
+          "avg_a": 6.7,
+          "td": 10,
+          "long": 35,
+          "avg_g": 234.5
+        },
+        "returns": {
+          "pr": {
+            "no": 11,
+            "yds": 81,
+            "avg": 7.4,
+            "td": 0,
+            "long": 40
+          },
+          "kr": {
+            "no": 16,
+            "yds": 274,
+            "avg": 17.1,
+            "td": 0,
+            "long": 91
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 22,
+            "yds": 873,
+            "avg": 39.7,
+            "long": 49,
+            "tb": 2,
+            "fc": 1,
+            "i20": 7,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 9,
+            "pct": 0.556,
+            "long": 35,
+            "blk": 0,
+            "pat_made": 14,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 158,
+          "a": 117,
+          "tot": 275,
+          "tfl": 30,
+          "sacks": 2.5,
+          "int": 2,
+          "brup": 24,
+          "qbh": 18,
+          "fr": 0,
+          "ff": 0,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 58,
+            "conv": 23,
+            "pct": 0.397
+          },
+          "fourth": {
+            "att": 8,
+            "conv": 5,
+            "pct": 0.625
+          },
+          "red_zone": {
+            "att": 15,
+            "scores": 10,
+            "td": 8,
+            "fg": 2,
+            "pct": 0.667
+          }
+        },
+        "misc": {
+          "first_downs": 67,
+          "fd_rush": 25,
+          "fd_pass": 39,
+          "fd_pen": 3,
+          "fum": 3,
+          "fum_lost": 3,
+          "pen": 18,
+          "pen_yds": 142,
+          "top_avg": 1914
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 12,
+          "fg": 2,
+          "xpt": 11,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 91,
+          "avg_g": 22.8
+        },
+        "totals": {
+          "rush": 669,
+          "pass": 1161,
+          "plays": 300,
+          "yds": 1830,
+          "avg_p": 6.1,
+          "td": 12,
+          "avg_g": 457.5
+        },
+        "rushing": {
+          "att": 158,
+          "yds": 669,
+          "avg": 4.2,
+          "td": 6,
+          "long": 61,
+          "avg_g": 167.3
+        },
+        "passing": {
+          "att": 142,
+          "cmp": 71,
+          "int": 0,
+          "pct": 0.5,
+          "yds": 1161,
+          "avg_a": 8.2,
+          "td": 5,
+          "long": 54,
+          "avg_g": 290.3
+        },
+        "returns": {
+          "pr": {
+            "no": 9,
+            "yds": 62,
+            "avg": 6.9,
+            "td": 0,
+            "long": 17
+          },
+          "kr": {
+            "no": 11,
+            "yds": 220,
+            "avg": 20,
+            "td": 0,
+            "long": 75
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 21,
+            "yds": 886,
+            "avg": 42.2,
+            "long": 45,
+            "tb": 2,
+            "fc": 4,
+            "i20": 9,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 3,
+            "pct": 0.667,
+            "long": 26,
+            "blk": 0,
+            "pat_made": 11,
+            "pat_att": 12
+          }
+        },
+        "defense": {
+          "ua": 159,
+          "a": 61,
+          "tot": 220,
+          "tfl": 21,
+          "sacks": 11.5,
+          "int": 5,
+          "brup": 22,
+          "qbh": 14,
+          "fr": 1,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 50,
+            "conv": 15,
+            "pct": 0.3
+          },
+          "fourth": {
+            "att": 11,
+            "conv": 8,
+            "pct": 0.727
+          },
+          "red_zone": {
+            "att": 18,
+            "scores": 13,
+            "td": 9,
+            "fg": 4,
+            "pct": 0.722
+          }
+        },
+        "misc": {
+          "first_downs": 50,
+          "fd_rush": 19,
+          "fd_pass": 27,
+          "fd_pen": 4,
+          "fum": 7,
+          "fum_lost": 0,
+          "pen": 18,
+          "pen_yds": 176,
+          "top_avg": 1675
+        }
+      }
+    },
+    {
+      "team_id": "swacuapb",
+      "name": "Arkansas-Pine Bluff",
+      "short": "UAPB",
+      "conference": "SWAC",
+      "division": "West",
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 15,
+          "fg": 1,
+          "xpt": 14,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 1,
+          "pts": 109,
+          "avg_g": 36.3
+        },
+        "totals": {
+          "rush": 802,
+          "pass": 903,
+          "plays": 210,
+          "yds": 1705,
+          "avg_p": 8.1,
+          "td": 15,
+          "avg_g": 568.3
+        },
+        "rushing": {
+          "att": 124,
+          "yds": 802,
+          "avg": 6.5,
+          "td": 9,
+          "long": 69,
+          "avg_g": 267.3
+        },
+        "passing": {
+          "att": 86,
+          "cmp": 52,
+          "int": 3,
+          "pct": 0.605,
+          "yds": 903,
+          "avg_a": 10.5,
+          "td": 6,
+          "long": 35,
+          "avg_g": 301
+        },
+        "returns": {
+          "pr": {
+            "no": 8,
+            "yds": 73,
+            "avg": 9.1,
+            "td": 0,
+            "long": 56
+          },
+          "kr": {
+            "no": 15,
+            "yds": 356,
+            "avg": 23.7,
+            "td": 0,
+            "long": 20
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 17,
+            "yds": 721,
+            "avg": 42.4,
+            "long": 48,
+            "tb": 0,
+            "fc": 0,
+            "i20": 7,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 1,
+            "fga": 4,
+            "pct": 0.25,
+            "long": 38,
+            "blk": 0,
+            "pat_made": 14,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 99,
+          "a": 85,
+          "tot": 184,
+          "tfl": 17,
+          "sacks": 4,
+          "int": 6,
+          "brup": 10,
+          "qbh": 14,
+          "fr": 3,
+          "ff": 1,
+          "blk": 0,
+          "saf": 1
+        },
+        "conversions": {
+          "third": {
+            "att": 47,
+            "conv": 19,
+            "pct": 0.404
+          },
+          "fourth": {
+            "att": 7,
+            "conv": 3,
+            "pct": 0.429
+          },
+          "red_zone": {
+            "att": 9,
+            "scores": 6,
+            "td": 5,
+            "fg": 1,
+            "pct": 0.667
+          }
+        },
+        "misc": {
+          "first_downs": 36,
+          "fd_rush": 14,
+          "fd_pass": 22,
+          "fd_pen": 0,
+          "fum": 4,
+          "fum_lost": 3,
+          "pen": 20,
+          "pen_yds": 212,
+          "top_avg": 1934
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 14,
+          "fg": 2,
+          "xpt": 13,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 103,
+          "avg_g": 34.3
+        },
+        "totals": {
+          "rush": 403,
+          "pass": 491,
+          "plays": 184,
+          "yds": 894,
+          "avg_p": 4.9,
+          "td": 14,
+          "avg_g": 298
+        },
+        "rushing": {
+          "att": 94,
+          "yds": 403,
+          "avg": 4.3,
+          "td": 5,
+          "long": 70,
+          "avg_g": 134.3
+        },
+        "passing": {
+          "att": 90,
+          "cmp": 54,
+          "int": 5,
+          "pct": 0.6,
+          "yds": 491,
+          "avg_a": 5.5,
+          "td": 8,
+          "long": 55,
+          "avg_g": 163.7
+        },
+        "returns": {
+          "pr": {
+            "no": 5,
+            "yds": 57,
+            "avg": 11.4,
+            "td": 0,
+            "long": 45
+          },
+          "kr": {
+            "no": 14,
+            "yds": 272,
+            "avg": 19.4,
+            "td": 0,
+            "long": 86
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 17,
+            "yds": 682,
+            "avg": 40.1,
+            "long": 46,
+            "tb": 1,
+            "fc": 2,
+            "i20": 7,
+            "blk": 1
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 5,
+            "pct": 0.4,
+            "long": 35,
+            "blk": 0,
+            "pat_made": 13,
+            "pat_att": 14
+          }
+        },
+        "defense": {
+          "ua": 109,
+          "a": 88,
+          "tot": 197,
+          "tfl": 10,
+          "sacks": 9.5,
+          "int": 1,
+          "brup": 13,
+          "qbh": 12,
+          "fr": 0,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 42,
+            "conv": 21,
+            "pct": 0.5
+          },
+          "fourth": {
+            "att": 2,
+            "conv": 1,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 10,
+            "scores": 6,
+            "td": 5,
+            "fg": 1,
+            "pct": 0.6
+          }
+        },
+        "misc": {
+          "first_downs": 56,
+          "fd_rush": 26,
+          "fd_pass": 25,
+          "fd_pen": 5,
+          "fum": 5,
+          "fum_lost": 0,
+          "pen": 13,
+          "pen_yds": 111,
+          "top_avg": 1755
+        }
+      }
+    },
+    {
+      "team_id": "swacgsu",
+      "name": "Grambling State",
+      "short": "GSU",
+      "conference": "SWAC",
+      "division": "West",
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 19,
+          "fg": 1,
+          "xpt": 19,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 138,
+          "avg_g": 34.5
+        },
+        "totals": {
+          "rush": 710,
+          "pass": 677,
+          "plays": 283,
+          "yds": 1387,
+          "avg_p": 4.9,
+          "td": 19,
+          "avg_g": 346.8
+        },
+        "rushing": {
+          "att": 165,
+          "yds": 710,
+          "avg": 4.3,
+          "td": 10,
+          "long": 25,
+          "avg_g": 177.5
+        },
+        "passing": {
+          "att": 118,
+          "cmp": 59,
+          "int": 0,
+          "pct": 0.5,
+          "yds": 677,
+          "avg_a": 5.7,
+          "td": 8,
+          "long": 29,
+          "avg_g": 169.3
+        },
+        "returns": {
+          "pr": {
+            "no": 4,
+            "yds": 30,
+            "avg": 7.5,
+            "td": 0,
+            "long": 48
+          },
+          "kr": {
+            "no": 9,
+            "yds": 178,
+            "avg": 19.8,
+            "td": 0,
+            "long": 77
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 20,
+            "yds": 772,
+            "avg": 38.6,
+            "long": 51,
+            "tb": 1,
+            "fc": 3,
+            "i20": 7,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 1,
+            "fga": 3,
+            "pct": 0.333,
+            "long": 42,
+            "blk": 0,
+            "pat_made": 19,
+            "pat_att": 19
+          }
+        },
+        "defense": {
+          "ua": 139,
+          "a": 109,
+          "tot": 248,
+          "tfl": 15,
+          "sacks": 8.5,
+          "int": 6,
+          "brup": 27,
+          "qbh": 7,
+          "fr": 2,
+          "ff": 4,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 55,
+            "conv": 22,
+            "pct": 0.4
+          },
+          "fourth": {
+            "att": 9,
+            "conv": 6,
+            "pct": 0.667
+          },
+          "red_zone": {
+            "att": 16,
+            "scores": 9,
+            "td": 8,
+            "fg": 1,
+            "pct": 0.563
+          }
+        },
+        "misc": {
+          "first_downs": 49,
+          "fd_rush": 16,
+          "fd_pass": 32,
+          "fd_pen": 1,
+          "fum": 1,
+          "fum_lost": 0,
+          "pen": 36,
+          "pen_yds": 317,
+          "top_avg": 1693
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 19,
+          "fg": 4,
+          "xpt": 18,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 146,
+          "avg_g": 36.5
+        },
+        "totals": {
+          "rush": 581,
+          "pass": 983,
+          "plays": 290,
+          "yds": 1564,
+          "avg_p": 5.4,
+          "td": 19,
+          "avg_g": 391
+        },
+        "rushing": {
+          "att": 155,
+          "yds": 581,
+          "avg": 3.7,
+          "td": 7,
+          "long": 32,
+          "avg_g": 145.3
+        },
+        "passing": {
+          "att": 135,
+          "cmp": 81,
+          "int": 3,
+          "pct": 0.6,
+          "yds": 983,
+          "avg_a": 7.3,
+          "td": 12,
+          "long": 78,
+          "avg_g": 245.8
+        },
+        "returns": {
+          "pr": {
+            "no": 4,
+            "yds": 26,
+            "avg": 6.5,
+            "td": 0,
+            "long": 20
+          },
+          "kr": {
+            "no": 18,
+            "yds": 306,
+            "avg": 17,
+            "td": 0,
+            "long": 37
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 22,
+            "yds": 902,
+            "avg": 41,
+            "long": 63,
+            "tb": 1,
+            "fc": 2,
+            "i20": 2,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 4,
+            "fga": 7,
+            "pct": 0.571,
+            "long": 25,
+            "blk": 0,
+            "pat_made": 18,
+            "pat_att": 19
+          }
+        },
+        "defense": {
+          "ua": 160,
+          "a": 90,
+          "tot": 250,
+          "tfl": 31,
+          "sacks": 4.5,
+          "int": 1,
+          "brup": 25,
+          "qbh": 11,
+          "fr": 3,
+          "ff": 0,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 55,
+            "conv": 22,
+            "pct": 0.4
+          },
+          "fourth": {
+            "att": 9,
+            "conv": 4,
+            "pct": 0.444
+          },
+          "red_zone": {
+            "att": 20,
+            "scores": 16,
+            "td": 12,
+            "fg": 4,
+            "pct": 0.8
+          }
+        },
+        "misc": {
+          "first_downs": 60,
+          "fd_rush": 24,
+          "fd_pass": 29,
+          "fd_pen": 7,
+          "fum": 8,
+          "fum_lost": 0,
+          "pen": 31,
+          "pen_yds": 329,
+          "top_avg": 1766
+        }
+      }
+    },
+    {
+      "team_id": "meacdsu",
+      "name": "Delaware State",
+      "short": "DSU",
+      "conference": "MEAC",
+      "division": null,
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 10,
+          "fg": 6,
+          "xpt": 10,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 88,
+          "avg_g": 29.3
+        },
+        "totals": {
+          "rush": 637,
+          "pass": 621,
+          "plays": 191,
+          "yds": 1258,
+          "avg_p": 6.6,
+          "td": 10,
+          "avg_g": 419.3
+        },
+        "rushing": {
+          "att": 107,
+          "yds": 637,
+          "avg": 6,
+          "td": 4,
+          "long": 63,
+          "avg_g": 212.3
+        },
+        "passing": {
+          "att": 84,
+          "cmp": 50,
+          "int": 2,
+          "pct": 0.595,
+          "yds": 621,
+          "avg_a": 7.4,
+          "td": 5,
+          "long": 67,
+          "avg_g": 207
+        },
+        "returns": {
+          "pr": {
+            "no": 3,
+            "yds": 14,
+            "avg": 4.7,
+            "td": 0,
+            "long": 56
+          },
+          "kr": {
+            "no": 6,
+            "yds": 99,
+            "avg": 16.5,
+            "td": 0,
+            "long": 81
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 10,
+            "yds": 370,
+            "avg": 37,
+            "long": 59,
+            "tb": 0,
+            "fc": 1,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 6,
+            "fga": 6,
+            "pct": 1,
+            "long": 28,
+            "blk": 0,
+            "pat_made": 10,
+            "pat_att": 10
+          }
+        },
+        "defense": {
+          "ua": 92,
+          "a": 61,
+          "tot": 153,
+          "tfl": 17,
+          "sacks": 6,
+          "int": 1,
+          "brup": 13,
+          "qbh": 14,
+          "fr": 0,
+          "ff": 3,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 37,
+            "conv": 15,
+            "pct": 0.405
+          },
+          "fourth": {
+            "att": 7,
+            "conv": 3,
+            "pct": 0.429
+          },
+          "red_zone": {
+            "att": 15,
+            "scores": 8,
+            "td": 8,
+            "fg": 0,
+            "pct": 0.533
+          }
+        },
+        "misc": {
+          "first_downs": 46,
+          "fd_rush": 12,
+          "fd_pass": 30,
+          "fd_pen": 4,
+          "fum": 5,
+          "fum_lost": 0,
+          "pen": 22,
+          "pen_yds": 211,
+          "top_avg": 1824
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 15,
+          "fg": 2,
+          "xpt": 15,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 111,
+          "avg_g": 37
+        },
+        "totals": {
+          "rush": 502,
+          "pass": 549,
+          "plays": 185,
+          "yds": 1051,
+          "avg_p": 5.7,
+          "td": 15,
+          "avg_g": 350.3
+        },
+        "rushing": {
+          "att": 100,
+          "yds": 502,
+          "avg": 5,
+          "td": 7,
+          "long": 28,
+          "avg_g": 167.3
+        },
+        "passing": {
+          "att": 85,
+          "cmp": 51,
+          "int": 2,
+          "pct": 0.6,
+          "yds": 549,
+          "avg_a": 6.5,
+          "td": 8,
+          "long": 44,
+          "avg_g": 183
+        },
+        "returns": {
+          "pr": {
+            "no": 3,
+            "yds": 14,
+            "avg": 4.7,
+            "td": 0,
+            "long": 54
+          },
+          "kr": {
+            "no": 13,
+            "yds": 228,
+            "avg": 17.5,
+            "td": 0,
+            "long": 58
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 10,
+            "yds": 379,
+            "avg": 37.9,
+            "long": 48,
+            "tb": 0,
+            "fc": 2,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 2,
+            "pct": 1,
+            "long": 36,
+            "blk": 0,
+            "pat_made": 15,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 100,
+          "a": 61,
+          "tot": 161,
+          "tfl": 15,
+          "sacks": 6.5,
+          "int": 4,
+          "brup": 23,
+          "qbh": 15,
+          "fr": 1,
+          "ff": 2,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 43,
+            "conv": 13,
+            "pct": 0.302
+          },
+          "fourth": {
+            "att": 6,
+            "conv": 4,
+            "pct": 0.667
+          },
+          "red_zone": {
+            "att": 13,
+            "scores": 11,
+            "td": 8,
+            "fg": 3,
+            "pct": 0.846
+          }
+        },
+        "misc": {
+          "first_downs": 49,
+          "fd_rush": 26,
+          "fd_pass": 22,
+          "fd_pen": 1,
+          "fum": 1,
+          "fum_lost": 0,
+          "pen": 18,
+          "pen_yds": 187,
+          "top_avg": 1601
+        }
+      }
+    },
+    {
+      "team_id": "meachu",
+      "name": "Howard",
+      "short": "HU",
+      "conference": "MEAC",
+      "division": null,
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 13,
+          "fg": 5,
+          "xpt": 12,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 105,
+          "avg_g": 35
+        },
+        "totals": {
+          "rush": 489,
+          "pass": 370,
+          "plays": 195,
+          "yds": 859,
+          "avg_p": 4.4,
+          "td": 13,
+          "avg_g": 286.3
+        },
+        "rushing": {
+          "att": 123,
+          "yds": 489,
+          "avg": 4,
+          "td": 8,
+          "long": 31,
+          "avg_g": 163
+        },
+        "passing": {
+          "att": 72,
+          "cmp": 36,
+          "int": 2,
+          "pct": 0.5,
+          "yds": 370,
+          "avg_a": 5.1,
+          "td": 5,
+          "long": 52,
+          "avg_g": 123.3
+        },
+        "returns": {
+          "pr": {
+            "no": 3,
+            "yds": 17,
+            "avg": 5.7,
+            "td": 0,
+            "long": 8
+          },
+          "kr": {
+            "no": 10,
+            "yds": 167,
+            "avg": 16.7,
+            "td": 0,
+            "long": 67
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 15,
+            "yds": 645,
+            "avg": 43,
+            "long": 62,
+            "tb": 1,
+            "fc": 2,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 6,
+            "pct": 0.833,
+            "long": 29,
+            "blk": 0,
+            "pat_made": 12,
+            "pat_att": 13
+          }
+        },
+        "defense": {
+          "ua": 103,
+          "a": 54,
+          "tot": 157,
+          "tfl": 21,
+          "sacks": 1,
+          "int": 6,
+          "brup": 21,
+          "qbh": 6,
+          "fr": 0,
+          "ff": 1,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 38,
+            "conv": 15,
+            "pct": 0.395
+          },
+          "fourth": {
+            "att": 7,
+            "conv": 4,
+            "pct": 0.571
+          },
+          "red_zone": {
+            "att": 8,
+            "scores": 5,
+            "td": 4,
+            "fg": 1,
+            "pct": 0.625
+          }
+        },
+        "misc": {
+          "first_downs": 46,
+          "fd_rush": 23,
+          "fd_pass": 20,
+          "fd_pen": 3,
+          "fum": 0,
+          "fum_lost": 0,
+          "pen": 16,
+          "pen_yds": 136,
+          "top_avg": 1858
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 15,
+          "fg": 4,
+          "xpt": 15,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 119,
+          "avg_g": 39.7
+        },
+        "totals": {
+          "rush": 513,
+          "pass": 564,
+          "plays": 174,
+          "yds": 1077,
+          "avg_p": 6.2,
+          "td": 15,
+          "avg_g": 359
+        },
+        "rushing": {
+          "att": 105,
+          "yds": 513,
+          "avg": 4.9,
+          "td": 6,
+          "long": 21,
+          "avg_g": 171
+        },
+        "passing": {
+          "att": 69,
+          "cmp": 35,
+          "int": 6,
+          "pct": 0.507,
+          "yds": 564,
+          "avg_a": 8.2,
+          "td": 8,
+          "long": 72,
+          "avg_g": 188
+        },
+        "returns": {
+          "pr": {
+            "no": 8,
+            "yds": 39,
+            "avg": 4.9,
+            "td": 0,
+            "long": 22
+          },
+          "kr": {
+            "no": 9,
+            "yds": 151,
+            "avg": 16.8,
+            "td": 1,
+            "long": 87
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 14,
+            "yds": 529,
+            "avg": 37.8,
+            "long": 62,
+            "tb": 0,
+            "fc": 2,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 4,
+            "fga": 7,
+            "pct": 0.571,
+            "long": 47,
+            "blk": 1,
+            "pat_made": 15,
+            "pat_att": 15
+          }
+        },
+        "defense": {
+          "ua": 119,
+          "a": 75,
+          "tot": 194,
+          "tfl": 17,
+          "sacks": 8,
+          "int": 6,
+          "brup": 21,
+          "qbh": 4,
+          "fr": 0,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 38,
+            "conv": 15,
+            "pct": 0.395
+          },
+          "fourth": {
+            "att": 4,
+            "conv": 1,
+            "pct": 0.25
+          },
+          "red_zone": {
+            "att": 7,
+            "scores": 5,
+            "td": 4,
+            "fg": 1,
+            "pct": 0.714
+          }
+        },
+        "misc": {
+          "first_downs": 49,
+          "fd_rush": 27,
+          "fd_pass": 20,
+          "fd_pen": 2,
+          "fum": 4,
+          "fum_lost": 2,
+          "pen": 19,
+          "pen_yds": 192,
+          "top_avg": 2035
+        }
+      }
+    },
+    {
+      "team_id": "meacmsu",
+      "name": "Morgan State",
+      "short": "MSU",
+      "conference": "MEAC",
+      "division": null,
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 12,
+          "fg": 2,
+          "xpt": 12,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 92,
+          "avg_g": 30.7
+        },
+        "totals": {
+          "rush": 382,
+          "pass": 476,
+          "plays": 165,
+          "yds": 858,
+          "avg_p": 5.2,
+          "td": 12,
+          "avg_g": 286
+        },
+        "rushing": {
+          "att": 97,
+          "yds": 382,
+          "avg": 3.9,
+          "td": 4,
+          "long": 68,
+          "avg_g": 127.3
+        },
+        "passing": {
+          "att": 68,
+          "cmp": 41,
+          "int": 0,
+          "pct": 0.603,
+          "yds": 476,
+          "avg_a": 7,
+          "td": 8,
+          "long": 61,
+          "avg_g": 158.7
+        },
+        "returns": {
+          "pr": {
+            "no": 6,
+            "yds": 49,
+            "avg": 8.2,
+            "td": 0,
+            "long": 44
+          },
+          "kr": {
+            "no": 8,
+            "yds": 138,
+            "avg": 17.3,
+            "td": 0,
+            "long": 78
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 14,
+            "yds": 552,
+            "avg": 39.4,
+            "long": 57,
+            "tb": 1,
+            "fc": 4,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 2,
+            "pct": 1,
+            "long": 43,
+            "blk": 0,
+            "pat_made": 12,
+            "pat_att": 12
+          }
+        },
+        "defense": {
+          "ua": 95,
+          "a": 58,
+          "tot": 153,
+          "tfl": 24,
+          "sacks": 6.5,
+          "int": 4,
+          "brup": 16,
+          "qbh": 12,
+          "fr": 3,
+          "ff": 2,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 37,
+            "conv": 19,
+            "pct": 0.514
+          },
+          "fourth": {
+            "att": 8,
+            "conv": 4,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 8,
+            "scores": 8,
+            "td": 5,
+            "fg": 3,
+            "pct": 1
+          }
+        },
+        "misc": {
+          "first_downs": 35,
+          "fd_rush": 12,
+          "fd_pass": 17,
+          "fd_pen": 6,
+          "fum": 1,
+          "fum_lost": 1,
+          "pen": 23,
+          "pen_yds": 207,
+          "top_avg": 1569
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 18,
+          "fg": 2,
+          "xpt": 17,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 131,
+          "avg_g": 43.7
+        },
+        "totals": {
+          "rush": 458,
+          "pass": 842,
+          "plays": 201,
+          "yds": 1300,
+          "avg_p": 6.5,
+          "td": 18,
+          "avg_g": 433.3
+        },
+        "rushing": {
+          "att": 96,
+          "yds": 458,
+          "avg": 4.8,
+          "td": 9,
+          "long": 53,
+          "avg_g": 152.7
+        },
+        "passing": {
+          "att": 105,
+          "cmp": 53,
+          "int": 6,
+          "pct": 0.505,
+          "yds": 842,
+          "avg_a": 8,
+          "td": 9,
+          "long": 33,
+          "avg_g": 280.7
+        },
+        "returns": {
+          "pr": {
+            "no": 9,
+            "yds": 56,
+            "avg": 6.2,
+            "td": 0,
+            "long": 12
+          },
+          "kr": {
+            "no": 15,
+            "yds": 294,
+            "avg": 19.6,
+            "td": 0,
+            "long": 78
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 15,
+            "yds": 647,
+            "avg": 43.1,
+            "long": 50,
+            "tb": 0,
+            "fc": 1,
+            "i20": 5,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 5,
+            "pct": 0.4,
+            "long": 35,
+            "blk": 0,
+            "pat_made": 17,
+            "pat_att": 18
+          }
+        },
+        "defense": {
+          "ua": 128,
+          "a": 82,
+          "tot": 210,
+          "tfl": 19,
+          "sacks": 6,
+          "int": 0,
+          "brup": 17,
+          "qbh": 4,
+          "fr": 1,
+          "ff": 2,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 46,
+            "conv": 18,
+            "pct": 0.391
+          },
+          "fourth": {
+            "att": 3,
+            "conv": 1,
+            "pct": 0.333
+          },
+          "red_zone": {
+            "att": 9,
+            "scores": 6,
+            "td": 5,
+            "fg": 1,
+            "pct": 0.667
+          }
+        },
+        "misc": {
+          "first_downs": 41,
+          "fd_rush": 13,
+          "fd_pass": 24,
+          "fd_pen": 4,
+          "fum": 0,
+          "fum_lost": 0,
+          "pen": 26,
+          "pen_yds": 268,
+          "top_avg": 1769
+        }
+      }
+    },
+    {
+      "team_id": "meacnccu",
+      "name": "North Carolina Central",
+      "short": "NCCU",
+      "conference": "MEAC",
+      "division": null,
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 20,
+          "fg": 0,
+          "xpt": 19,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 139,
+          "avg_g": 34.8
+        },
+        "totals": {
+          "rush": 515,
+          "pass": 886,
+          "plays": 231,
+          "yds": 1401,
+          "avg_p": 6.1,
+          "td": 20,
+          "avg_g": 350.3
+        },
+        "rushing": {
+          "att": 120,
+          "yds": 515,
+          "avg": 4.3,
+          "td": 12,
+          "long": 42,
+          "avg_g": 128.8
+        },
+        "passing": {
+          "att": 111,
+          "cmp": 56,
+          "int": 2,
+          "pct": 0.505,
+          "yds": 886,
+          "avg_a": 8,
+          "td": 8,
+          "long": 35,
+          "avg_g": 221.5
+        },
+        "returns": {
+          "pr": {
+            "no": 8,
+            "yds": 68,
+            "avg": 8.5,
+            "td": 0,
+            "long": 35
+          },
+          "kr": {
+            "no": 13,
+            "yds": 243,
+            "avg": 18.7,
+            "td": 0,
+            "long": 21
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 15,
+            "yds": 659,
+            "avg": 43.9,
+            "long": 46,
+            "tb": 0,
+            "fc": 0,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 0,
+            "fga": 3,
+            "pct": 0,
+            "long": null,
+            "blk": 1,
+            "pat_made": 19,
+            "pat_att": 20
+          }
+        },
+        "defense": {
+          "ua": 150,
+          "a": 65,
+          "tot": 215,
+          "tfl": 31,
+          "sacks": 7,
+          "int": 8,
+          "brup": 32,
+          "qbh": 16,
+          "fr": 2,
+          "ff": 2,
+          "blk": 1,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 50,
+            "conv": 20,
+            "pct": 0.4
+          },
+          "fourth": {
+            "att": 12,
+            "conv": 6,
+            "pct": 0.5
+          },
+          "red_zone": {
+            "att": 8,
+            "scores": 8,
+            "td": 5,
+            "fg": 3,
+            "pct": 1
+          }
+        },
+        "misc": {
+          "first_downs": 57,
+          "fd_rush": 21,
+          "fd_pass": 35,
+          "fd_pen": 1,
+          "fum": 5,
+          "fum_lost": 2,
+          "pen": 24,
+          "pen_yds": 230,
+          "top_avg": 1734
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 13,
+          "fg": 8,
+          "xpt": 12,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 116,
+          "avg_g": 29
+        },
+        "totals": {
+          "rush": 514,
+          "pass": 547,
+          "plays": 256,
+          "yds": 1061,
+          "avg_p": 4.1,
+          "td": 13,
+          "avg_g": 265.3
+        },
+        "rushing": {
+          "att": 155,
+          "yds": 514,
+          "avg": 3.3,
+          "td": 4,
+          "long": 68,
+          "avg_g": 128.5
+        },
+        "passing": {
+          "att": 101,
+          "cmp": 61,
+          "int": 0,
+          "pct": 0.604,
+          "yds": 547,
+          "avg_a": 5.4,
+          "td": 9,
+          "long": 53,
+          "avg_g": 136.8
+        },
+        "returns": {
+          "pr": {
+            "no": 5,
+            "yds": 57,
+            "avg": 11.4,
+            "td": 0,
+            "long": 51
+          },
+          "kr": {
+            "no": 20,
+            "yds": 448,
+            "avg": 22.4,
+            "td": 0,
+            "long": 69
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 17,
+            "yds": 687,
+            "avg": 40.4,
+            "long": 58,
+            "tb": 0,
+            "fc": 1,
+            "i20": 7,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 8,
+            "fga": 9,
+            "pct": 0.889,
+            "long": 52,
+            "blk": 0,
+            "pat_made": 12,
+            "pat_att": 13
+          }
+        },
+        "defense": {
+          "ua": 132,
+          "a": 90,
+          "tot": 222,
+          "tfl": 20,
+          "sacks": 6.5,
+          "int": 4,
+          "brup": 28,
+          "qbh": 9,
+          "fr": 0,
+          "ff": 3,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 49,
+            "conv": 20,
+            "pct": 0.408
+          },
+          "fourth": {
+            "att": 10,
+            "conv": 7,
+            "pct": 0.7
+          },
+          "red_zone": {
+            "att": 12,
+            "scores": 7,
+            "td": 6,
+            "fg": 1,
+            "pct": 0.583
+          }
+        },
+        "misc": {
+          "first_downs": 72,
+          "fd_rush": 36,
+          "fd_pass": 31,
+          "fd_pen": 5,
+          "fum": 3,
+          "fum_lost": 2,
+          "pen": 17,
+          "pen_yds": 160,
+          "top_avg": 1677
+        }
+      }
+    },
+    {
+      "team_id": "meacnsu",
+      "name": "Norfolk State",
+      "short": "NSU",
+      "conference": "MEAC",
+      "division": null,
+      "games": 3,
+      "offense": {
+        "scoring": {
+          "td": 12,
+          "fg": 4,
+          "xpt": 12,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 96,
+          "avg_g": 32
+        },
+        "totals": {
+          "rush": 455,
+          "pass": 410,
+          "plays": 189,
+          "yds": 865,
+          "avg_p": 4.6,
+          "td": 12,
+          "avg_g": 288.3
+        },
+        "rushing": {
+          "att": 114,
+          "yds": 455,
+          "avg": 4,
+          "td": 6,
+          "long": 60,
+          "avg_g": 151.7
+        },
+        "passing": {
+          "att": 75,
+          "cmp": 38,
+          "int": 4,
+          "pct": 0.507,
+          "yds": 410,
+          "avg_a": 5.5,
+          "td": 6,
+          "long": 88,
+          "avg_g": 136.7
+        },
+        "returns": {
+          "pr": {
+            "no": 8,
+            "yds": 70,
+            "avg": 8.8,
+            "td": 0,
+            "long": 18
+          },
+          "kr": {
+            "no": 9,
+            "yds": 225,
+            "avg": 25,
+            "td": 0,
+            "long": 66
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 9,
+            "yds": 388,
+            "avg": 43.1,
+            "long": 49,
+            "tb": 1,
+            "fc": 0,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 4,
+            "fga": 7,
+            "pct": 0.571,
+            "long": 35,
+            "blk": 1,
+            "pat_made": 12,
+            "pat_att": 12
+          }
+        },
+        "defense": {
+          "ua": 100,
+          "a": 49,
+          "tot": 149,
+          "tfl": 15,
+          "sacks": 7,
+          "int": 3,
+          "brup": 9,
+          "qbh": 6,
+          "fr": 0,
+          "ff": 0,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 45,
+            "conv": 23,
+            "pct": 0.511
+          },
+          "fourth": {
+            "att": 4,
+            "conv": 1,
+            "pct": 0.25
+          },
+          "red_zone": {
+            "att": 13,
+            "scores": 8,
+            "td": 7,
+            "fg": 1,
+            "pct": 0.615
+          }
+        },
+        "misc": {
+          "first_downs": 55,
+          "fd_rush": 22,
+          "fd_pass": 27,
+          "fd_pen": 6,
+          "fum": 3,
+          "fum_lost": 0,
+          "pen": 25,
+          "pen_yds": 193,
+          "top_avg": 1607
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 11,
+          "fg": 2,
+          "xpt": 11,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 85,
+          "avg_g": 28.3
+        },
+        "totals": {
+          "rush": 508,
+          "pass": 795,
+          "plays": 208,
+          "yds": 1303,
+          "avg_p": 6.3,
+          "td": 11,
+          "avg_g": 434.3
+        },
+        "rushing": {
+          "att": 118,
+          "yds": 508,
+          "avg": 4.3,
+          "td": 4,
+          "long": 66,
+          "avg_g": 169.3
+        },
+        "passing": {
+          "att": 90,
+          "cmp": 54,
+          "int": 5,
+          "pct": 0.6,
+          "yds": 795,
+          "avg_a": 8.8,
+          "td": 7,
+          "long": 73,
+          "avg_g": 265
+        },
+        "returns": {
+          "pr": {
+            "no": 7,
+            "yds": 83,
+            "avg": 11.9,
+            "td": 0,
+            "long": 59
+          },
+          "kr": {
+            "no": 13,
+            "yds": 241,
+            "avg": 18.5,
+            "td": 1,
+            "long": 71
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 15,
+            "yds": 594,
+            "avg": 39.6,
+            "long": 67,
+            "tb": 0,
+            "fc": 4,
+            "i20": 4,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 2,
+            "fga": 5,
+            "pct": 0.4,
+            "long": 41,
+            "blk": 0,
+            "pat_made": 11,
+            "pat_att": 11
+          }
+        },
+        "defense": {
+          "ua": 118,
+          "a": 63,
+          "tot": 181,
+          "tfl": 20,
+          "sacks": 0,
+          "int": 4,
+          "brup": 23,
+          "qbh": 10,
+          "fr": 1,
+          "ff": 1,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 47,
+            "conv": 19,
+            "pct": 0.404
+          },
+          "fourth": {
+            "att": 8,
+            "conv": 6,
+            "pct": 0.75
+          },
+          "red_zone": {
+            "att": 9,
+            "scores": 7,
+            "td": 6,
+            "fg": 1,
+            "pct": 0.778
+          }
+        },
+        "misc": {
+          "first_downs": 45,
+          "fd_rush": 15,
+          "fd_pass": 27,
+          "fd_pen": 3,
+          "fum": 2,
+          "fum_lost": 1,
+          "pen": 22,
+          "pen_yds": 202,
+          "top_avg": 1791
+        }
+      }
+    },
+    {
+      "team_id": "meacscsu",
+      "name": "South Carolina State",
+      "short": "SCSU",
+      "conference": "MEAC",
+      "division": null,
+      "games": 4,
+      "offense": {
+        "scoring": {
+          "td": 17,
+          "fg": 0,
+          "xpt": 17,
+          "two_pt": 1,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 121,
+          "avg_g": 30.3
+        },
+        "totals": {
+          "rush": 519,
+          "pass": 919,
+          "plays": 231,
+          "yds": 1438,
+          "avg_p": 6.2,
+          "td": 17,
+          "avg_g": 359.5
+        },
+        "rushing": {
+          "att": 124,
+          "yds": 519,
+          "avg": 4.2,
+          "td": 12,
+          "long": 20,
+          "avg_g": 129.8
+        },
+        "passing": {
+          "att": 107,
+          "cmp": 64,
+          "int": 3,
+          "pct": 0.598,
+          "yds": 919,
+          "avg_a": 8.6,
+          "td": 4,
+          "long": 30,
+          "avg_g": 229.8
+        },
+        "returns": {
+          "pr": {
+            "no": 9,
+            "yds": 51,
+            "avg": 5.7,
+            "td": 0,
+            "long": 10
+          },
+          "kr": {
+            "no": 17,
+            "yds": 316,
+            "avg": 18.6,
+            "td": 0,
+            "long": 66
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 12,
+            "yds": 497,
+            "avg": 41.4,
+            "long": 67,
+            "tb": 1,
+            "fc": 1,
+            "i20": 1,
+            "blk": 1
+          },
+          "fg": {
+            "fgm": 0,
+            "fga": 1,
+            "pct": 0,
+            "long": null,
+            "blk": 1,
+            "pat_made": 17,
+            "pat_att": 17
+          }
+        },
+        "defense": {
+          "ua": 120,
+          "a": 68,
+          "tot": 188,
+          "tfl": 14,
+          "sacks": 2.5,
+          "int": 6,
+          "brup": 22,
+          "qbh": 6,
+          "fr": 1,
+          "ff": 3,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 64,
+            "conv": 26,
+            "pct": 0.406
+          },
+          "fourth": {
+            "att": 0,
+            "conv": 0,
+            "pct": null
+          },
+          "red_zone": {
+            "att": 14,
+            "scores": 7,
+            "td": 7,
+            "fg": 0,
+            "pct": 0.5
+          }
+        },
+        "misc": {
+          "first_downs": 60,
+          "fd_rush": 32,
+          "fd_pass": 23,
+          "fd_pen": 5,
+          "fum": 3,
+          "fum_lost": 1,
+          "pen": 26,
+          "pen_yds": 252,
+          "top_avg": 1854
+        }
+      },
+      "defense": {
+        "scoring": {
+          "td": 17,
+          "fg": 5,
+          "xpt": 17,
+          "two_pt": 0,
+          "def_xp": 0,
+          "saf": 0,
+          "pts": 134,
+          "avg_g": 33.5
+        },
+        "totals": {
+          "rush": 425,
+          "pass": 818,
+          "plays": 263,
+          "yds": 1243,
+          "avg_p": 4.7,
+          "td": 17,
+          "avg_g": 310.8
+        },
+        "rushing": {
+          "att": 135,
+          "yds": 425,
+          "avg": 3.1,
+          "td": 12,
+          "long": 74,
+          "avg_g": 106.3
+        },
+        "passing": {
+          "att": 128,
+          "cmp": 64,
+          "int": 2,
+          "pct": 0.5,
+          "yds": 818,
+          "avg_a": 6.4,
+          "td": 4,
+          "long": 54,
+          "avg_g": 204.5
+        },
+        "returns": {
+          "pr": {
+            "no": 5,
+            "yds": 53,
+            "avg": 10.6,
+            "td": 0,
+            "long": 43
+          },
+          "kr": {
+            "no": 16,
+            "yds": 366,
+            "avg": 22.9,
+            "td": 0,
+            "long": 54
+          }
+        },
+        "kicking": {
+          "punting": {
+            "no": 20,
+            "yds": 840,
+            "avg": 42,
+            "long": 50,
+            "tb": 1,
+            "fc": 2,
+            "i20": 3,
+            "blk": 0
+          },
+          "fg": {
+            "fgm": 5,
+            "fga": 7,
+            "pct": 0.714,
+            "long": 51,
+            "blk": 0,
+            "pat_made": 17,
+            "pat_att": 17
+          }
+        },
+        "defense": {
+          "ua": 177,
+          "a": 79,
+          "tot": 256,
+          "tfl": 19,
+          "sacks": 1,
+          "int": 4,
+          "brup": 18,
+          "qbh": 20,
+          "fr": 3,
+          "ff": 0,
+          "blk": 0,
+          "saf": 0
+        },
+        "conversions": {
+          "third": {
+            "att": 59,
+            "conv": 24,
+            "pct": 0.407
+          },
+          "fourth": {
+            "att": 5,
+            "conv": 4,
+            "pct": 0.8
+          },
+          "red_zone": {
+            "att": 17,
+            "scores": 14,
+            "td": 10,
+            "fg": 4,
+            "pct": 0.824
+          }
+        },
+        "misc": {
+          "first_downs": 62,
+          "fd_rush": 28,
+          "fd_pass": 31,
+          "fd_pen": 3,
+          "fum": 6,
+          "fum_lost": 2,
+          "pen": 20,
+          "pen_yds": 204,
+          "top_avg": 1920
+        }
+      }
+    }
+  ]
+}

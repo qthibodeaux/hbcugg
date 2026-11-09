@@ -1,0 +1,3449 @@
+{
+  "season": "2026",
+  "version": "1.3",
+  "games_processed": 6,
+  "teams_count": 6,
+  "league_averages": {
+    "advanced": {
+      "epa_per_play": 0.0624,
+      "success_rate": 0.3972,
+      "success_rate_early_down": 0.4083,
+      "success_rate_late_down": 0.3503,
+      "success_rate_goal_to_go": 0.7056,
+      "success_rate_two_minute": 0.3905,
+      "two_minute_epa_per_play": 0.0316,
+      "two_minute_wpa_per_play": 0.0024,
+      "explosive_rate": 0.1446,
+      "quality_drive_rate": 0.5193,
+      "explosive_drive_rate": 0.1943,
+      "negative_drive_rate": 0.4632,
+      "havoc_rate_forced": 0.1442,
+      "havoc_rate_allowed": 0.1442,
+      "stuff_rate": 0.1291,
+      "red_zone_efficiency": 5.0588,
+      "turnover_luck": -0.4122,
+      "penalty_yards_per_game": 74.5,
+      "yards_negated_per_game": 5.2
+    },
+    "per_game": {
+      "pass_yards": 209.7,
+      "rush_yards": 186.3,
+      "total_yards": 396.0,
+      "points_scored": 29.0,
+      "avg_start_field_position": 29.2
+    },
+    "points_per_game": 29.0,
+    "special_teams": {
+      "touchback_rate": 0.0933,
+      "net_punt_avg": 32.3,
+      "punt_efficiency_ratio": 0.874,
+      "inside_10_rate": 0.0,
+      "fg_overall_pct": 0.8333,
+      "ko_avg_return_yards_allowed": null
+    },
+    "sequence": {
+      "after_own_turnover_score_rate": 0.2,
+      "after_takeaway_score_rate": 0.4,
+      "sudden_change_pts_allowed": 2.0,
+      "after_3andout_score_rate": 0.4528,
+      "after_opponent_score_score_rate": 0.4417,
+      "after_defensive_stop_score_rate": 0.4152,
+      "after_halftime_score_rate": 0.1667,
+      "stabilization_success_rate": 0.4083,
+      "avg_turnover_td_rate": 0.2,
+      "avg_q4_lead_changes_per_game": 0.67,
+      "avg_lead_changes_per_game": 1.33
+    },
+    "penalties": {
+      "avg_accepted_per_game": 7.5,
+      "avg_yards_per_game": 74.5,
+      "pre_snap_rate": 0.3772,
+      "live_ball_rate": 0.6228
+    },
+    "coaching": {
+      "run_rate_d1": 0.5945,
+      "run_rate_d2": 0.463,
+      "run_rate_d3": 0.351,
+      "rz_run_rate": 0.6382,
+      "short_yardage_run_rate": 0.6508,
+      "avg_halftime_adjustment": -0.016,
+      "avg_predictability_index": 0.8365
+    },
+    "defensive_identity": {
+      "avg_disruption_rate": 0.1442,
+      "avg_explosive_prevention_rate": 0.8553,
+      "avg_yards_per_play_allowed": 6.37,
+      "avg_bend_dont_break_index": 15.15
+    },
+    "uncounted": {
+      "net_epa_per_game": 1.442,
+      "net_points_per_game": 0.0,
+      "harmed_epa": 1.486,
+      "benefited_epa": 2.928
+    }
+  },
+  "standings": {
+    "swac": [
+      {
+        "team_id": "swacasu",
+        "wins": 1,
+        "losses": 0,
+        "conf_wins": 1,
+        "conf_losses": 0,
+        "points_for": 30,
+        "points_against": 17,
+        "point_differential": 13,
+        "points_per_game": 30.0,
+        "epa_per_play": 0.057,
+        "success_rate": 0.375,
+        "rank": 1
+      },
+      {
+        "team_id": "swactsu",
+        "wins": 1,
+        "losses": 0,
+        "conf_wins": 0,
+        "conf_losses": 0,
+        "points_for": 42,
+        "points_against": 30,
+        "point_differential": 12,
+        "points_per_game": 42.0,
+        "epa_per_play": 0.3281,
+        "success_rate": 0.4407,
+        "rank": 2
+      },
+      {
+        "team_id": "swacaamu",
+        "wins": 0,
+        "losses": 1,
+        "conf_wins": 0,
+        "conf_losses": 0,
+        "points_for": 24,
+        "points_against": 31,
+        "point_differential": -7,
+        "points_per_game": 24.0,
+        "epa_per_play": 0.03,
+        "success_rate": 0.4154,
+        "rank": 3
+      },
+      {
+        "team_id": "swacsu",
+        "wins": 0,
+        "losses": 1,
+        "conf_wins": 0,
+        "conf_losses": 1,
+        "points_for": 17,
+        "points_against": 30,
+        "point_differential": -13,
+        "points_per_game": 17.0,
+        "epa_per_play": -0.1204,
+        "success_rate": 0.375,
+        "rank": 4
+      }
+    ],
+    "meac": [
+      {
+        "team_id": "meachu",
+        "wins": 1,
+        "losses": 0,
+        "conf_wins": 0,
+        "conf_losses": 0,
+        "points_for": 31,
+        "points_against": 24,
+        "point_differential": 7,
+        "points_per_game": 31.0,
+        "epa_per_play": 0.0534,
+        "success_rate": 0.3537,
+        "rank": 1
+      },
+      {
+        "team_id": "meacnccu",
+        "wins": 0,
+        "losses": 1,
+        "conf_wins": 0,
+        "conf_losses": 0,
+        "points_for": 30,
+        "points_against": 42,
+        "point_differential": -12,
+        "points_per_game": 30.0,
+        "epa_per_play": 0.0264,
+        "success_rate": 0.4231,
+        "rank": 2
+      }
+    ]
+  },
+  "head_to_head": {
+    "swacsu": {
+      "swacasu": {
+        "winner": "swacasu",
+        "score": "17-30",
+        "game_id": "ASUSU29082026",
+        "week": ""
+      }
+    },
+    "swacasu": {
+      "swacsu": {
+        "winner": "swacasu",
+        "score": "30-17",
+        "game_id": "ASUSU29082026",
+        "week": ""
+      }
+    },
+    "": {
+      "": {
+        "winner": "",
+        "score": "0-0",
+        "game_id": "results_2026",
+        "week": ""
+      }
+    },
+    "swacaamu": {
+      "meachu": {
+        "winner": "meachu",
+        "score": "24-31",
+        "game_id": "HUAAMU29082026",
+        "week": ""
+      }
+    },
+    "meachu": {
+      "swacaamu": {
+        "winner": "meachu",
+        "score": "31-24",
+        "game_id": "HUAAMU29082026",
+        "week": ""
+      }
+    },
+    "swactsu": {
+      "meacnccu": {
+        "winner": "swactsu",
+        "score": "42-30",
+        "game_id": "NCCUTSU29082026",
+        "week": ""
+      }
+    },
+    "meacnccu": {
+      "swactsu": {
+        "winner": "swactsu",
+        "score": "30-42",
+        "game_id": "NCCUTSU29082026",
+        "week": ""
+      }
+    }
+  },
+  "teams": {
+    "swacsu": {
+      "team_id": "swacsu",
+      "games_played": 1,
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "conf_wins": 0,
+        "conf_losses": 1
+      },
+      "points_for": 17,
+      "points_against": 30,
+      "point_differential": -13,
+      "points_per_game": 17.0,
+      "points_allowed_per_game": 30.0,
+      "totals": {
+        "pass_yards": 174.0,
+        "rush_yards": 171.0,
+        "total_yards": 345.0,
+        "pass_touchdowns": 0.0,
+        "rush_touchdowns": 2.0,
+        "interceptions_thrown": 1.0,
+        "turnovers_committed": 1.0,
+        "turnovers_forced": 0.0,
+        "turnover_margin": -1.0,
+        "sacks_allowed": 2.0,
+        "sacks_made": 1.0,
+        "completion_pct": 63.0,
+        "third_down_conversion_rate": 0.333,
+        "third_down_avg_distance": 8.7,
+        "fourth_down_go_rate": 0.667,
+        "fourth_down_go_conversion_rate": 1.0
+      },
+      "per_game": {
+        "pass_yards": 174.0,
+        "rush_yards": 171.0,
+        "total_yards": 345.0,
+        "points_scored": 17.0,
+        "pass_attempts": 27.0,
+        "drives_offense": 13.0,
+        "avg_start_field_position": 26.8
+      },
+      "advanced": {
+        "epa_per_play": -0.1204,
+        "epa_total": -8.67,
+        "success_rate": 0.375,
+        "success_rate_early_down": 0.3878,
+        "success_rate_late_down": 0.2353,
+        "success_rate_standard_down": 0.4474,
+        "success_rate_passing_down": 0.2143,
+        "success_rate_goal_to_go": 1.0,
+        "success_rate_two_minute": 0.0,
+        "two_minute_epa_per_play": -2.3323,
+        "two_minute_wpa_per_play": -0.0064,
+        "explosive_rate": 0.0758,
+        "quality_drive_rate": 0.3846,
+        "explosive_drive_rate": 0.0769,
+        "negative_drive_rate": 0.6154,
+        "havoc_rate_forced": 0.1148,
+        "havoc_rate_allowed": 0.1061,
+        "havoc_rate_forced_pass": 0.1667,
+        "havoc_rate_forced_rush": 0.0811,
+        "havoc_rate_allowed_pass": 0.1379,
+        "havoc_rate_allowed_rush": 0.0811,
+        "havoc_situational": {
+          "havoc_rate_forced_early_down": 0.0833,
+          "havoc_rate_allowed_early_down": 0.102,
+          "havoc_rate_forced_passing_down": 0.12,
+          "havoc_rate_allowed_passing_down": 0.1429,
+          "havoc_rate_forced_late_down": 0.2308,
+          "havoc_rate_allowed_late_down": 0.1176,
+          "havoc_rate_forced_third_down": 0.25,
+          "havoc_rate_allowed_third_down": 0.1333,
+          "havoc_rate_forced_fourth_down": 0.0,
+          "havoc_rate_allowed_fourth_down": 0.0,
+          "havoc_rate_forced_red_zone": 0.0833,
+          "havoc_rate_allowed_red_zone": 0.3333,
+          "havoc_rate_forced_goal_to_go": 0.0,
+          "havoc_rate_allowed_goal_to_go": 0.0,
+          "havoc_rate_forced_two_minute": 0.0,
+          "havoc_rate_allowed_two_minute": 0.0,
+          "havoc_rate_forced_competitive_time": 0.1148,
+          "havoc_rate_allowed_competitive_time": 0.1061
+        },
+        "stuff_rate": 0.1081,
+        "power_success_rate": 0.25,
+        "red_zone_efficiency": 3.4,
+        "red_zone_td_rate": 0.4,
+        "red_zone_opportunities": 5,
+        "turnover_luck": -0.4028,
+        "penalty_yards_per_game": 85.0,
+        "yards_negated_per_game": 5.0,
+        "penalty_swing_per_game": 55.0
+      },
+      "games": [
+        {
+          "game_id": "ASUSU29082026",
+          "week": "",
+          "opponent": "swacasu",
+          "result": "L",
+          "score_for": 17,
+          "score_against": 30,
+          "is_conf": true,
+          "epa_per_play": -0.1204,
+          "success_rate": 0.3878,
+          "explosive_rate": 0.0758,
+          "uncounted_net_epa": 3.334
+        }
+      ],
+      "overtime_season": {
+        "games_with_overtime": 0,
+        "totals": {
+          "pass_attempts": 0.0,
+          "pass_completions": 0.0,
+          "pass_yards": 0.0,
+          "pass_touchdowns": 0.0,
+          "rush_attempts": 0.0,
+          "rush_yards": 0.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 0.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0,
+          "two_point_rush_attempts": 0.0,
+          "two_point_rush_successes": 0.0,
+          "two_point_pass_attempts": 0.0,
+          "two_point_pass_successes": 0.0
+        },
+        "regulation_only": {
+          "pass_yards": 174.0,
+          "rush_yards": 171.0,
+          "pass_touchdowns": 0.0,
+          "rush_touchdowns": 2.0,
+          "points_scored": 17.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0
+        }
+      },
+      "special_teams_season": {
+        "kickoff_team": {
+          "attempts": 4,
+          "touchbacks": 1,
+          "touchback_rate": 0.25,
+          "returns_allowed": 0,
+          "avg_return_yards_allowed": null,
+          "avg_start_abs_allowed": null,
+          "fumble_opportunities": 0,
+          "turnovers_forced": 0,
+          "turnover_forced_rate": null,
+          "touchdowns_allowed": 0,
+          "penalty_yards_benefited": 15.0,
+          "return_penalty_yards_benefited": 0.0
+        },
+        "punt_team": {
+          "attempts": 6,
+          "avg_gross_yards": 40.3,
+          "net_punt_avg": 26.0,
+          "punt_efficiency_ratio": 0.645,
+          "inside_10_count": 0,
+          "inside_10_rate": 0.0,
+          "muffs_forced": 0,
+          "zone": {
+            "flip": {
+              "attempts": 6,
+              "avg_gross_yards": 40.3,
+              "avg_net_yards": 26.0,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 1
+            },
+            "pin": {
+              "attempts": 0,
+              "avg_gross_yards": null,
+              "avg_net_yards": null,
+              "touchback_rate": null,
+              "inside_20_rate": null,
+              "downed_count": 0
+            }
+          }
+        },
+        "field_goal_unit": {
+          "by_range": {
+            "u30": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "30_39": {
+              "attempts": 1,
+              "made": 1,
+              "pct": 1.0
+            },
+            "40_49": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "50p": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            }
+          },
+          "overall_pct": 1.0
+        },
+        "kickoff_return": {
+          "attempts": 6,
+          "avg_return_yards": 16.7,
+          "explosives": 1,
+          "touchdowns": 0,
+          "fumble_opportunities": 0,
+          "fumbles_lost": 0
+        },
+        "punt_return": {
+          "attempts": 1,
+          "fair_catches": 1,
+          "muffs": 0,
+          "avg_return_yards": 0.0,
+          "zone": {
+            "flip": {
+              "punts_faced": 5,
+              "return_attempts": 1,
+              "avg_return_yards": 0.0
+            },
+            "pin": {
+              "punts_faced": 1,
+              "return_attempts": 0,
+              "avg_return_yards": null
+            }
+          }
+        }
+      },
+      "sequence_season": {
+        "after_own_turnover": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "after_takeaway": {
+          "drives": 0,
+          "total_points": 0,
+          "score_rate": null,
+          "avg_points_per_drive": null
+        },
+        "sudden_change_defense": {
+          "drives_faced": 1,
+          "total_points_allowed": 3,
+          "avg_points_allowed": 3.0
+        },
+        "after_3_and_out": {
+          "drives": 5,
+          "score_rate": 0.4
+        },
+        "after_opponent_score": {
+          "drives": 6,
+          "total_points": 7,
+          "score_rate": 0.167
+        },
+        "after_defensive_stop": {
+          "drives": 6,
+          "total_points": 10,
+          "score_rate": 0.333
+        },
+        "after_halftime": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0
+        },
+        "stabilization_after_explosive_allowed": {
+          "plays": 23,
+          "success_rate": 0.435
+        },
+        "avg_turnover_score_rate": null,
+        "avg_turnover_td_rate": null,
+        "total_q4_lead_changes": 0,
+        "avg_q4_lead_changes_per_game": 0.0,
+        "total_q4_go_ahead_drives": 0,
+        "total_q4_lead_takes": 0,
+        "total_lead_changes": 1,
+        "avg_lead_changes_per_game": 1.0,
+        "total_go_ahead_drives": 1,
+        "total_lead_takes": 1,
+        "avg_max_consecutive_scoring_drives": 2.0
+      },
+      "penalty_season": {
+        "total_accepted": 10,
+        "total_yards": 85,
+        "avg_accepted_per_game": 10.0,
+        "avg_yards_per_game": 85.0,
+        "pre_snap_rate": 0.5,
+        "live_ball_rate": 0.5,
+        "on_3rd_down": 2,
+        "on_4th_down": 0,
+        "in_red_zone": 1,
+        "in_clutch_time": 0,
+        "high_leverage_count": 3,
+        "false_start_3rd_down": 1,
+        "holding_on_passing_down": 1,
+        "pre_snap_on_critical_down": 1,
+        "auto_first_downs_given": 3,
+        "auto_first_on_critical_down": 0,
+        "drives_with_accepted_penalty": 6,
+        "drive_kill_count": 5,
+        "drive_extend_count": 1,
+        "accepted_penalty_epa_sum": -2.951,
+        "hidden_yardage_lost": 55,
+        "hidden_yardage_gained": 70,
+        "avg_repeat_offender_players": 0.0,
+        "top_penalty_types": [
+          {
+            "penalty_type": "FALSE START",
+            "count": 3
+          },
+          {
+            "penalty_type": "HOLDING",
+            "count": 3
+          },
+          {
+            "penalty_type": "FACEMASK",
+            "count": 1
+          },
+          {
+            "penalty_type": "DELAY OF GAME",
+            "count": 1
+          },
+          {
+            "penalty_type": "PERSONAL FOUL",
+            "count": 1
+          }
+        ]
+      },
+      "coaching_season": {
+        "run_rate_by_down": {
+          "1": 0.621,
+          "2": 0.5,
+          "3": 0.533,
+          "4": 0.5
+        },
+        "efficiency_by_down_call": {
+          "1": {
+            "run_success_rate": 0.2778,
+            "pass_success_rate": 0.6364
+          },
+          "2": {
+            "run_success_rate": 0.4,
+            "pass_success_rate": 0.3
+          },
+          "3": {
+            "run_success_rate": 0.25,
+            "pass_success_rate": 0.2857
+          },
+          "4": {
+            "run_success_rate": 0.0,
+            "pass_success_rate": 0.0
+          }
+        },
+        "obvious_situation_execution": {
+          "obvious_pass_success_rate": 0.2,
+          "obvious_run_success_rate": 0.2
+        },
+        "red_zone_tendency": {
+          "runs": 3,
+          "passes": 3,
+          "run_rate": 0.5
+        },
+        "short_yardage_tendency": {
+          "runs": 4,
+          "passes": 2,
+          "run_rate": 0.667
+        },
+        "avg_halftime_adjustment": -0.0303,
+        "avg_predictability_index": 0.7333
+      },
+      "defensive_identity_season": {
+        "total_def_plays": 61,
+        "avg_disruption_rate": 0.115,
+        "avg_explosive_prevention_rate": 0.836,
+        "avg_yards_per_play_allowed": 5.9,
+        "avg_bend_dont_break_index": 12.0
+      },
+      "uncounted_season": {
+        "harmed": {
+          "count": 1,
+          "yards": 5.0,
+          "points": 0.0,
+          "epa": 1.047,
+          "wpa": 0.0165
+        },
+        "benefited": {
+          "count": 4,
+          "yards": 60.0,
+          "points": 0.0,
+          "epa": 4.381,
+          "wpa": 0.0376
+        },
+        "net_points": 0.0,
+        "net_epa": 3.334,
+        "net_wpa": 0.0211,
+        "drive_outcomes": {
+          "survived_own_mistake": 0,
+          "mistake_was_fatal": 1,
+          "capitalized_on_gift": 1,
+          "wasted_the_gift": 1
+        },
+        "net_epa_per_game": 3.334,
+        "net_points_per_game": 0.0
+      },
+      "split_entities_season": {
+        "pass_offense": {
+          "eligible_plays": 29,
+          "success_rate": 0.4138,
+          "explosive_rate_yardage": 0.069,
+          "epa_total": -6.25,
+          "epa_per_play": -0.2154,
+          "gop_explosive_rate": 0.069,
+          "epa_per_play_non_explosive": -0.5324,
+          "situational": {
+            "success_rate_early_down": 0.4762,
+            "epa_per_play_early_down": -0.149,
+            "success_rate_passing_down": 0.2,
+            "epa_per_play_passing_down": -0.4771,
+            "success_rate_late_down": 0.25,
+            "epa_per_play_late_down": -0.3899,
+            "success_rate_third_down": 0.2857,
+            "epa_per_play_third_down": 0.2944,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": -5.18,
+            "success_rate_red_zone": 0.0,
+            "epa_per_play_red_zone": -1.2753,
+            "success_rate_goal_to_go": 0.0,
+            "epa_per_play_goal_to_go": 0.0,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": -3.051,
+            "success_rate_competitive_time": 0.4138,
+            "epa_per_play_competitive_time": -0.2154
+          }
+        },
+        "rush_offense": {
+          "eligible_plays": 37,
+          "success_rate": 0.2973,
+          "explosive_rate_yardage": 0.0811,
+          "epa_total": 0.18,
+          "epa_per_play": 0.0049,
+          "gop_explosive_rate": 0.0811,
+          "epa_per_play_non_explosive": -0.232,
+          "situational": {
+            "success_rate_early_down": 0.3214,
+            "epa_per_play_early_down": 0.0335,
+            "success_rate_passing_down": 0.2308,
+            "epa_per_play_passing_down": -0.057,
+            "success_rate_late_down": 0.2222,
+            "epa_per_play_late_down": -0.0843,
+            "success_rate_third_down": 0.25,
+            "epa_per_play_third_down": -0.0414,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": -0.428,
+            "success_rate_red_zone": 0.6667,
+            "epa_per_play_red_zone": 0.1657,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 0.498,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.0,
+            "success_rate_competitive_time": 0.2973,
+            "epa_per_play_competitive_time": 0.0049
+          },
+          "line_yards_per_rush": 3.4649,
+          "highlight_yards_per_rush": 1.1568,
+          "rush_opportunity_rate": 0.4865,
+          "stuff_rate": 0.1081,
+          "stopped_run_rate": 0.3514,
+          "power_success_rate": 0.25,
+          "power_attempts": 4
+        },
+        "pass_defense": {
+          "eligible_plays": 24,
+          "success_rate": 0.375,
+          "explosive_rate_yardage": 0.1667,
+          "epa_total": 2.6,
+          "epa_per_play": 0.1082,
+          "gop_explosive_rate": 0.0417,
+          "epa_per_play_non_explosive": -0.1304,
+          "situational": {
+            "success_rate_early_down": 0.5,
+            "epa_per_play_early_down": 0.5232,
+            "success_rate_passing_down": 0.2727,
+            "epa_per_play_passing_down": -0.0323,
+            "success_rate_late_down": 0.125,
+            "epa_per_play_late_down": -0.7216,
+            "success_rate_third_down": 0.125,
+            "epa_per_play_third_down": -0.7216,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.3333,
+            "epa_per_play_red_zone": 0.164,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 1.693,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.0,
+            "success_rate_competitive_time": 0.375,
+            "epa_per_play_competitive_time": 0.1082
+          }
+        },
+        "rush_defense": {
+          "eligible_plays": 37,
+          "success_rate": 0.3514,
+          "explosive_rate_yardage": 0.1622,
+          "epa_total": 2.79,
+          "epa_per_play": 0.0754,
+          "gop_explosive_rate": 0.0811,
+          "epa_per_play_non_explosive": -0.1241,
+          "situational": {
+            "success_rate_early_down": 0.3438,
+            "epa_per_play_early_down": 0.1122,
+            "success_rate_passing_down": 0.2857,
+            "epa_per_play_passing_down": 0.1227,
+            "success_rate_late_down": 0.4,
+            "epa_per_play_late_down": -0.1602,
+            "success_rate_third_down": 0.25,
+            "epa_per_play_third_down": -0.87,
+            "success_rate_fourth_down": 1.0,
+            "epa_per_play_fourth_down": 2.679,
+            "success_rate_red_zone": 0.4444,
+            "epa_per_play_red_zone": 0.2499,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 1.155,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.2595,
+            "success_rate_competitive_time": 0.3514,
+            "epa_per_play_competitive_time": 0.0754
+          },
+          "line_yards_per_rush": 0.0,
+          "highlight_yards_per_rush": 0.0,
+          "rush_opportunity_rate": 0.0,
+          "stuff_rate": 0.0,
+          "stopped_run_rate": 0.0,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        }
+      }
+    },
+    "swacasu": {
+      "team_id": "swacasu",
+      "games_played": 1,
+      "record": {
+        "wins": 1,
+        "losses": 0,
+        "conf_wins": 1,
+        "conf_losses": 0
+      },
+      "points_for": 30,
+      "points_against": 17,
+      "point_differential": 13,
+      "points_per_game": 30.0,
+      "points_allowed_per_game": 17.0,
+      "totals": {
+        "pass_yards": 192.0,
+        "rush_yards": 163.0,
+        "total_yards": 355.0,
+        "pass_touchdowns": 1.0,
+        "rush_touchdowns": 2.0,
+        "interceptions_thrown": 0.0,
+        "turnovers_committed": 0.0,
+        "turnovers_forced": 1.0,
+        "turnover_margin": 1.0,
+        "sacks_allowed": 1.0,
+        "sacks_made": 2.0,
+        "completion_pct": 60.9,
+        "third_down_conversion_rate": 0.167,
+        "third_down_avg_distance": 6.3,
+        "fourth_down_go_rate": 0.25,
+        "fourth_down_go_conversion_rate": 1.0
+      },
+      "per_game": {
+        "pass_yards": 192.0,
+        "rush_yards": 163.0,
+        "total_yards": 355.0,
+        "points_scored": 30.0,
+        "pass_attempts": 23.0,
+        "drives_offense": 13.0,
+        "avg_start_field_position": 34.7
+      },
+      "advanced": {
+        "epa_per_play": 0.057,
+        "epa_total": 3.65,
+        "success_rate": 0.375,
+        "success_rate_early_down": 0.3958,
+        "success_rate_late_down": 0.2308,
+        "success_rate_standard_down": 0.4167,
+        "success_rate_passing_down": 0.28,
+        "success_rate_goal_to_go": 1.0,
+        "success_rate_two_minute": 0.0,
+        "two_minute_epa_per_play": -0.145,
+        "two_minute_wpa_per_play": 0.0001,
+        "explosive_rate": 0.1639,
+        "quality_drive_rate": 0.5385,
+        "explosive_drive_rate": 0.0769,
+        "negative_drive_rate": 0.4615,
+        "havoc_rate_forced": 0.1061,
+        "havoc_rate_allowed": 0.1148,
+        "havoc_rate_forced_pass": 0.1379,
+        "havoc_rate_forced_rush": 0.0811,
+        "havoc_rate_allowed_pass": 0.1667,
+        "havoc_rate_allowed_rush": 0.0811,
+        "havoc_situational": {
+          "havoc_rate_forced_early_down": 0.102,
+          "havoc_rate_allowed_early_down": 0.0833,
+          "havoc_rate_forced_passing_down": 0.1429,
+          "havoc_rate_allowed_passing_down": 0.12,
+          "havoc_rate_forced_late_down": 0.1176,
+          "havoc_rate_allowed_late_down": 0.2308,
+          "havoc_rate_forced_third_down": 0.1333,
+          "havoc_rate_allowed_third_down": 0.25,
+          "havoc_rate_forced_fourth_down": 0.0,
+          "havoc_rate_allowed_fourth_down": 0.0,
+          "havoc_rate_forced_red_zone": 0.3333,
+          "havoc_rate_allowed_red_zone": 0.0833,
+          "havoc_rate_forced_goal_to_go": 0.0,
+          "havoc_rate_allowed_goal_to_go": 0.0,
+          "havoc_rate_forced_two_minute": 0.0,
+          "havoc_rate_allowed_two_minute": 0.0,
+          "havoc_rate_forced_competitive_time": 0.1061,
+          "havoc_rate_allowed_competitive_time": 0.1148
+        },
+        "stuff_rate": 0.1622,
+        "power_success_rate": 1.0,
+        "red_zone_efficiency": 4.5,
+        "red_zone_td_rate": 0.5,
+        "red_zone_opportunities": 6,
+        "turnover_luck": -1.2229,
+        "penalty_yards_per_game": 95.0,
+        "yards_negated_per_game": 0.0,
+        "penalty_swing_per_game": 10.0
+      },
+      "games": [
+        {
+          "game_id": "ASUSU29082026",
+          "week": "",
+          "opponent": "swacsu",
+          "result": "W",
+          "score_for": 30,
+          "score_against": 17,
+          "is_conf": true,
+          "epa_per_play": 0.057,
+          "success_rate": 0.3958,
+          "explosive_rate": 0.1639,
+          "uncounted_net_epa": 2.146
+        }
+      ],
+      "overtime_season": {
+        "games_with_overtime": 0,
+        "totals": {
+          "pass_attempts": 0.0,
+          "pass_completions": 0.0,
+          "pass_yards": 0.0,
+          "pass_touchdowns": 0.0,
+          "rush_attempts": 0.0,
+          "rush_yards": 0.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 0.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0,
+          "two_point_rush_attempts": 0.0,
+          "two_point_rush_successes": 0.0,
+          "two_point_pass_attempts": 0.0,
+          "two_point_pass_successes": 0.0
+        },
+        "regulation_only": {
+          "pass_yards": 192.0,
+          "rush_yards": 163.0,
+          "pass_touchdowns": 1.0,
+          "rush_touchdowns": 2.0,
+          "points_scored": 30.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0
+        }
+      },
+      "special_teams_season": {
+        "kickoff_team": {
+          "attempts": 6,
+          "touchbacks": 0,
+          "touchback_rate": 0.0,
+          "returns_allowed": 0,
+          "avg_return_yards_allowed": null,
+          "avg_start_abs_allowed": null,
+          "fumble_opportunities": 0,
+          "turnovers_forced": 0,
+          "turnover_forced_rate": null,
+          "touchdowns_allowed": 0,
+          "penalty_yards_benefited": 0.0,
+          "return_penalty_yards_benefited": 0.0
+        },
+        "punt_team": {
+          "attempts": 6,
+          "avg_gross_yards": 36.8,
+          "net_punt_avg": 36.8,
+          "punt_efficiency_ratio": 1.0,
+          "inside_10_count": 0,
+          "inside_10_rate": 0.0,
+          "muffs_forced": 0,
+          "zone": {
+            "flip": {
+              "attempts": 5,
+              "avg_gross_yards": 39.4,
+              "avg_net_yards": 39.4,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 3
+            },
+            "pin": {
+              "attempts": 1,
+              "avg_gross_yards": 24.0,
+              "avg_net_yards": 24.0,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 0
+            }
+          }
+        },
+        "field_goal_unit": {
+          "by_range": {
+            "u30": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "30_39": {
+              "attempts": 2,
+              "made": 2,
+              "pct": 1.0
+            },
+            "40_49": {
+              "attempts": 1,
+              "made": 1,
+              "pct": 1.0
+            },
+            "50p": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            }
+          },
+          "overall_pct": 1.0
+        },
+        "kickoff_return": {
+          "attempts": 2,
+          "avg_return_yards": 23.0,
+          "explosives": 1,
+          "touchdowns": 0,
+          "fumble_opportunities": 0,
+          "fumbles_lost": 0
+        },
+        "punt_return": {
+          "attempts": 2,
+          "fair_catches": 1,
+          "muffs": 0,
+          "avg_return_yards": 43.0,
+          "zone": {
+            "flip": {
+              "punts_faced": 6,
+              "return_attempts": 2,
+              "avg_return_yards": 43.0
+            },
+            "pin": {
+              "punts_faced": 0,
+              "return_attempts": 0,
+              "avg_return_yards": null
+            }
+          }
+        }
+      },
+      "sequence_season": {
+        "after_own_turnover": {
+          "drives": 0,
+          "total_points": 0,
+          "score_rate": null,
+          "avg_points_per_drive": null
+        },
+        "after_takeaway": {
+          "drives": 1,
+          "total_points": 3,
+          "score_rate": 1.0,
+          "avg_points_per_drive": 3.0
+        },
+        "sudden_change_defense": {
+          "drives_faced": 0,
+          "total_points_allowed": 0,
+          "avg_points_allowed": null
+        },
+        "after_3_and_out": {
+          "drives": 5,
+          "score_rate": 0.4
+        },
+        "after_opponent_score": {
+          "drives": 3,
+          "total_points": 13,
+          "score_rate": 1.0
+        },
+        "after_defensive_stop": {
+          "drives": 9,
+          "total_points": 17,
+          "score_rate": 0.333
+        },
+        "after_halftime": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0
+        },
+        "stabilization_after_explosive_allowed": {
+          "plays": 15,
+          "success_rate": 0.267
+        },
+        "avg_turnover_score_rate": 1.0,
+        "avg_turnover_td_rate": 0.0,
+        "total_q4_lead_changes": 0,
+        "avg_q4_lead_changes_per_game": 0.0,
+        "total_q4_go_ahead_drives": 0,
+        "total_q4_lead_takes": 0,
+        "total_lead_changes": 1,
+        "avg_lead_changes_per_game": 1.0,
+        "total_go_ahead_drives": 1,
+        "total_lead_takes": 1,
+        "avg_max_consecutive_scoring_drives": 3.0
+      },
+      "penalty_season": {
+        "total_accepted": 8,
+        "total_yards": 95,
+        "avg_accepted_per_game": 8.0,
+        "avg_yards_per_game": 95.0,
+        "pre_snap_rate": 0.25,
+        "live_ball_rate": 0.75,
+        "on_3rd_down": 1,
+        "on_4th_down": 2,
+        "in_red_zone": 0,
+        "in_clutch_time": 1,
+        "high_leverage_count": 4,
+        "false_start_3rd_down": 0,
+        "holding_on_passing_down": 0,
+        "pre_snap_on_critical_down": 1,
+        "auto_first_downs_given": 4,
+        "auto_first_on_critical_down": 1,
+        "drives_with_accepted_penalty": 3,
+        "drive_kill_count": 2,
+        "drive_extend_count": 1,
+        "accepted_penalty_epa_sum": 12.144,
+        "hidden_yardage_lost": 10,
+        "hidden_yardage_gained": 85,
+        "avg_repeat_offender_players": 0.0,
+        "top_penalty_types": [
+          {
+            "penalty_type": "FALSE START",
+            "count": 2
+          },
+          {
+            "penalty_type": "PERSONAL FOUL",
+            "count": 2
+          },
+          {
+            "penalty_type": "PASS INTERFERENCE",
+            "count": 1
+          },
+          {
+            "penalty_type": "FACEMASK",
+            "count": 1
+          },
+          {
+            "penalty_type": "UNSPORTSMANLIKE CONDUCT",
+            "count": 1
+          }
+        ]
+      },
+      "coaching_season": {
+        "run_rate_by_down": {
+          "1": 0.667,
+          "2": 0.667,
+          "3": 0.333,
+          "4": 1.0
+        },
+        "efficiency_by_down_call": {
+          "1": {
+            "run_success_rate": 0.4,
+            "pass_success_rate": 0.6
+          },
+          "2": {
+            "run_success_rate": 0.25,
+            "pass_success_rate": 0.3333
+          },
+          "3": {
+            "run_success_rate": 0.25,
+            "pass_success_rate": 0.125
+          },
+          "4": {
+            "run_success_rate": 1.0,
+            "pass_success_rate": null
+          }
+        },
+        "obvious_situation_execution": {
+          "obvious_pass_success_rate": 0.1429,
+          "obvious_run_success_rate": 1.0
+        },
+        "red_zone_tendency": {
+          "runs": 9,
+          "passes": 3,
+          "run_rate": 0.75
+        },
+        "short_yardage_tendency": {
+          "runs": 2,
+          "passes": 0,
+          "run_rate": 1.0
+        },
+        "avg_halftime_adjustment": 0.1385,
+        "avg_predictability_index": 0.7778
+      },
+      "defensive_identity_season": {
+        "total_def_plays": 66,
+        "avg_disruption_rate": 0.106,
+        "avg_explosive_prevention_rate": 0.924,
+        "avg_yards_per_play_allowed": 5.36,
+        "avg_bend_dont_break_index": 20.82
+      },
+      "uncounted_season": {
+        "harmed": {
+          "count": 0,
+          "yards": 0.0,
+          "points": 0.0,
+          "epa": 0.0,
+          "wpa": 0.0
+        },
+        "benefited": {
+          "count": 3,
+          "yards": 37.0,
+          "points": 0.0,
+          "epa": 2.146,
+          "wpa": 0.0262
+        },
+        "net_points": 0.0,
+        "net_epa": 2.146,
+        "net_wpa": 0.0262,
+        "drive_outcomes": {
+          "survived_own_mistake": 0,
+          "mistake_was_fatal": 0,
+          "capitalized_on_gift": 2,
+          "wasted_the_gift": 1
+        },
+        "net_epa_per_game": 2.146,
+        "net_points_per_game": 0.0
+      },
+      "split_entities_season": {
+        "pass_offense": {
+          "eligible_plays": 24,
+          "success_rate": 0.375,
+          "explosive_rate_yardage": 0.1667,
+          "epa_total": 2.6,
+          "epa_per_play": 0.1082,
+          "gop_explosive_rate": 0.0417,
+          "epa_per_play_non_explosive": -0.1304,
+          "situational": {
+            "success_rate_early_down": 0.5,
+            "epa_per_play_early_down": 0.5232,
+            "success_rate_passing_down": 0.2727,
+            "epa_per_play_passing_down": -0.0323,
+            "success_rate_late_down": 0.125,
+            "epa_per_play_late_down": -0.7216,
+            "success_rate_third_down": 0.125,
+            "epa_per_play_third_down": -0.7216,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.3333,
+            "epa_per_play_red_zone": 0.164,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 1.693,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.0,
+            "success_rate_competitive_time": 0.375,
+            "epa_per_play_competitive_time": 0.1082
+          }
+        },
+        "rush_offense": {
+          "eligible_plays": 37,
+          "success_rate": 0.3514,
+          "explosive_rate_yardage": 0.1622,
+          "epa_total": 2.79,
+          "epa_per_play": 0.0754,
+          "gop_explosive_rate": 0.0811,
+          "epa_per_play_non_explosive": -0.1241,
+          "situational": {
+            "success_rate_early_down": 0.3438,
+            "epa_per_play_early_down": 0.1122,
+            "success_rate_passing_down": 0.2857,
+            "epa_per_play_passing_down": 0.1227,
+            "success_rate_late_down": 0.4,
+            "epa_per_play_late_down": -0.1602,
+            "success_rate_third_down": 0.25,
+            "epa_per_play_third_down": -0.87,
+            "success_rate_fourth_down": 1.0,
+            "epa_per_play_fourth_down": 2.679,
+            "success_rate_red_zone": 0.4444,
+            "epa_per_play_red_zone": 0.2499,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 1.155,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.2595,
+            "success_rate_competitive_time": 0.3514,
+            "epa_per_play_competitive_time": 0.0754
+          },
+          "line_yards_per_rush": 3.2432,
+          "highlight_yards_per_rush": 1.1622,
+          "rush_opportunity_rate": 0.3514,
+          "stuff_rate": 0.1622,
+          "stopped_run_rate": 0.4324,
+          "power_success_rate": 1.0,
+          "power_attempts": 2
+        },
+        "pass_defense": {
+          "eligible_plays": 29,
+          "success_rate": 0.4138,
+          "explosive_rate_yardage": 0.069,
+          "epa_total": -6.25,
+          "epa_per_play": -0.2154,
+          "gop_explosive_rate": 0.069,
+          "epa_per_play_non_explosive": -0.5324,
+          "situational": {
+            "success_rate_early_down": 0.4762,
+            "epa_per_play_early_down": -0.149,
+            "success_rate_passing_down": 0.2,
+            "epa_per_play_passing_down": -0.4771,
+            "success_rate_late_down": 0.25,
+            "epa_per_play_late_down": -0.3899,
+            "success_rate_third_down": 0.2857,
+            "epa_per_play_third_down": 0.2944,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": -5.18,
+            "success_rate_red_zone": 0.0,
+            "epa_per_play_red_zone": -1.2753,
+            "success_rate_goal_to_go": 0.0,
+            "epa_per_play_goal_to_go": 0.0,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": -3.051,
+            "success_rate_competitive_time": 0.4138,
+            "epa_per_play_competitive_time": -0.2154
+          }
+        },
+        "rush_defense": {
+          "eligible_plays": 37,
+          "success_rate": 0.2973,
+          "explosive_rate_yardage": 0.0811,
+          "epa_total": 0.18,
+          "epa_per_play": 0.0049,
+          "gop_explosive_rate": 0.0811,
+          "epa_per_play_non_explosive": -0.232,
+          "situational": {
+            "success_rate_early_down": 0.3214,
+            "epa_per_play_early_down": 0.0335,
+            "success_rate_passing_down": 0.2308,
+            "epa_per_play_passing_down": -0.057,
+            "success_rate_late_down": 0.2222,
+            "epa_per_play_late_down": -0.0843,
+            "success_rate_third_down": 0.25,
+            "epa_per_play_third_down": -0.0414,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": -0.428,
+            "success_rate_red_zone": 0.6667,
+            "epa_per_play_red_zone": 0.1657,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 0.498,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.0,
+            "success_rate_competitive_time": 0.2973,
+            "epa_per_play_competitive_time": 0.0049
+          },
+          "line_yards_per_rush": 0.0,
+          "highlight_yards_per_rush": 0.0,
+          "rush_opportunity_rate": 0.0,
+          "stuff_rate": 0.0,
+          "stopped_run_rate": 0.0,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        }
+      }
+    },
+    "swacaamu": {
+      "team_id": "swacaamu",
+      "games_played": 1,
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "conf_wins": 0,
+        "conf_losses": 0
+      },
+      "points_for": 24,
+      "points_against": 31,
+      "point_differential": -7,
+      "points_per_game": 24.0,
+      "points_allowed_per_game": 31.0,
+      "totals": {
+        "pass_yards": 254.0,
+        "rush_yards": 151.0,
+        "total_yards": 405.0,
+        "pass_touchdowns": 2.0,
+        "rush_touchdowns": 1.0,
+        "interceptions_thrown": 1.0,
+        "turnovers_committed": 2.0,
+        "turnovers_forced": 1.0,
+        "turnover_margin": -1.0,
+        "sacks_allowed": 0.0,
+        "sacks_made": 4.0,
+        "completion_pct": 61.0,
+        "third_down_conversion_rate": 0.3,
+        "third_down_avg_distance": 5.9,
+        "fourth_down_go_rate": 0.5,
+        "fourth_down_go_conversion_rate": 1.0
+      },
+      "per_game": {
+        "pass_yards": 254.0,
+        "rush_yards": 151.0,
+        "total_yards": 405.0,
+        "points_scored": 24.0,
+        "pass_attempts": 41.0,
+        "drives_offense": 12.0,
+        "avg_start_field_position": 24.0
+      },
+      "advanced": {
+        "epa_per_play": 0.03,
+        "epa_total": 1.95,
+        "success_rate": 0.4154,
+        "success_rate_early_down": 0.4898,
+        "success_rate_late_down": 0.2727,
+        "success_rate_standard_down": 0.4571,
+        "success_rate_passing_down": 0.44,
+        "success_rate_goal_to_go": 1.0,
+        "success_rate_two_minute": 0.7143,
+        "two_minute_epa_per_play": -0.3221,
+        "two_minute_wpa_per_play": -0.0015,
+        "explosive_rate": 0.1333,
+        "quality_drive_rate": 0.4167,
+        "explosive_drive_rate": 0.25,
+        "negative_drive_rate": 0.5833,
+        "havoc_rate_forced": 0.1818,
+        "havoc_rate_allowed": 0.1333,
+        "havoc_rate_forced_pass": 0.2381,
+        "havoc_rate_forced_rush": 0.1143,
+        "havoc_rate_allowed_pass": 0.1707,
+        "havoc_rate_allowed_rush": 0.0526,
+        "havoc_situational": {
+          "havoc_rate_forced_early_down": 0.1404,
+          "havoc_rate_allowed_early_down": 0.1633,
+          "havoc_rate_forced_passing_down": 0.2353,
+          "havoc_rate_allowed_passing_down": 0.04,
+          "havoc_rate_forced_late_down": 0.3,
+          "havoc_rate_allowed_late_down": 0.0,
+          "havoc_rate_forced_third_down": 0.3333,
+          "havoc_rate_allowed_third_down": 0.0,
+          "havoc_rate_forced_fourth_down": 0.0,
+          "havoc_rate_allowed_fourth_down": 0.0,
+          "havoc_rate_forced_red_zone": 0.1538,
+          "havoc_rate_allowed_red_zone": 0.3333,
+          "havoc_rate_forced_goal_to_go": 0.1667,
+          "havoc_rate_allowed_goal_to_go": 0.0,
+          "havoc_rate_forced_two_minute": 0.4,
+          "havoc_rate_allowed_two_minute": 0.1429,
+          "havoc_rate_forced_competitive_time": 0.1818,
+          "havoc_rate_allowed_competitive_time": 0.1333
+        },
+        "stuff_rate": 0.1053,
+        "power_success_rate": 0.0,
+        "red_zone_efficiency": 6.0,
+        "red_zone_td_rate": 0.75,
+        "red_zone_opportunities": 4,
+        "turnover_luck": 0.6287,
+        "penalty_yards_per_game": 58.0,
+        "yards_negated_per_game": 11.0,
+        "penalty_swing_per_game": 31.0
+      },
+      "games": [
+        {
+          "game_id": "HUAAMU29082026",
+          "week": "",
+          "opponent": "meachu",
+          "result": "L",
+          "score_for": 24,
+          "score_against": 31,
+          "is_conf": false,
+          "epa_per_play": 0.03,
+          "success_rate": 0.4898,
+          "explosive_rate": 0.1333,
+          "uncounted_net_epa": -1.875
+        }
+      ],
+      "overtime_season": {
+        "games_with_overtime": 0,
+        "totals": {
+          "pass_attempts": 0.0,
+          "pass_completions": 0.0,
+          "pass_yards": 0.0,
+          "pass_touchdowns": 0.0,
+          "rush_attempts": 0.0,
+          "rush_yards": 0.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 0.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0,
+          "two_point_rush_attempts": 0.0,
+          "two_point_rush_successes": 0.0,
+          "two_point_pass_attempts": 0.0,
+          "two_point_pass_successes": 0.0
+        },
+        "regulation_only": {
+          "pass_yards": 254.0,
+          "rush_yards": 151.0,
+          "pass_touchdowns": 2.0,
+          "rush_touchdowns": 1.0,
+          "points_scored": 24.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0
+        }
+      },
+      "special_teams_season": {
+        "kickoff_team": {
+          "attempts": 5,
+          "touchbacks": 0,
+          "touchback_rate": 0.0,
+          "returns_allowed": 0,
+          "avg_return_yards_allowed": null,
+          "avg_start_abs_allowed": null,
+          "fumble_opportunities": 0,
+          "turnovers_forced": 0,
+          "turnover_forced_rate": null,
+          "touchdowns_allowed": 0,
+          "penalty_yards_benefited": 0.0,
+          "return_penalty_yards_benefited": 0.0
+        },
+        "punt_team": {
+          "attempts": 5,
+          "avg_gross_yards": 34.6,
+          "net_punt_avg": 31.2,
+          "punt_efficiency_ratio": 0.902,
+          "inside_10_count": 0,
+          "inside_10_rate": 0.0,
+          "muffs_forced": 0,
+          "zone": {
+            "flip": {
+              "attempts": 5,
+              "avg_gross_yards": 34.6,
+              "avg_net_yards": 31.2,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 0
+            },
+            "pin": {
+              "attempts": 0,
+              "avg_gross_yards": null,
+              "avg_net_yards": null,
+              "touchback_rate": null,
+              "inside_20_rate": null,
+              "downed_count": 0
+            }
+          }
+        },
+        "field_goal_unit": {
+          "by_range": {
+            "u30": {
+              "attempts": 1,
+              "made": 1,
+              "pct": 1.0
+            },
+            "30_39": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "40_49": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "50p": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            }
+          },
+          "overall_pct": 1.0
+        },
+        "kickoff_return": {
+          "attempts": 5,
+          "avg_return_yards": 21.7,
+          "explosives": 1,
+          "touchdowns": 0,
+          "fumble_opportunities": 0,
+          "fumbles_lost": 0
+        },
+        "punt_return": {
+          "attempts": 3,
+          "fair_catches": 0,
+          "muffs": 0,
+          "avg_return_yards": 5.3,
+          "zone": {
+            "flip": {
+              "punts_faced": 3,
+              "return_attempts": 3,
+              "avg_return_yards": 5.3
+            },
+            "pin": {
+              "punts_faced": 1,
+              "return_attempts": 0,
+              "avg_return_yards": null
+            }
+          }
+        }
+      },
+      "sequence_season": {
+        "after_own_turnover": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "after_takeaway": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "sudden_change_defense": {
+          "drives_faced": 2,
+          "total_points_allowed": 0,
+          "avg_points_allowed": 0.0
+        },
+        "after_3_and_out": {
+          "drives": 3,
+          "score_rate": 0.667
+        },
+        "after_opponent_score": {
+          "drives": 6,
+          "total_points": 14,
+          "score_rate": 0.333
+        },
+        "after_defensive_stop": {
+          "drives": 5,
+          "total_points": 10,
+          "score_rate": 0.4
+        },
+        "after_halftime": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0
+        },
+        "stabilization_after_explosive_allowed": {
+          "plays": 28,
+          "success_rate": 0.25
+        },
+        "avg_turnover_score_rate": 0.0,
+        "avg_turnover_td_rate": 0.0,
+        "total_q4_lead_changes": 2,
+        "avg_q4_lead_changes_per_game": 2.0,
+        "total_q4_go_ahead_drives": 0,
+        "total_q4_lead_takes": 1,
+        "total_lead_changes": 2,
+        "avg_lead_changes_per_game": 2.0,
+        "total_go_ahead_drives": 1,
+        "total_lead_takes": 1,
+        "avg_max_consecutive_scoring_drives": 2.0
+      },
+      "penalty_season": {
+        "total_accepted": 5,
+        "total_yards": 58,
+        "avg_accepted_per_game": 5.0,
+        "avg_yards_per_game": 58.0,
+        "pre_snap_rate": 0.0,
+        "live_ball_rate": 1.0,
+        "on_3rd_down": 0,
+        "on_4th_down": 0,
+        "in_red_zone": 0,
+        "in_clutch_time": 1,
+        "high_leverage_count": 1,
+        "false_start_3rd_down": 0,
+        "holding_on_passing_down": 0,
+        "pre_snap_on_critical_down": 0,
+        "auto_first_downs_given": 2,
+        "auto_first_on_critical_down": 0,
+        "drives_with_accepted_penalty": 4,
+        "drive_kill_count": 2,
+        "drive_extend_count": 2,
+        "accepted_penalty_epa_sum": -1.013,
+        "hidden_yardage_lost": 31,
+        "hidden_yardage_gained": 52,
+        "avg_repeat_offender_players": 0.0,
+        "top_penalty_types": [
+          {
+            "penalty_type": "HOLDING",
+            "count": 3
+          },
+          {
+            "penalty_type": "PERSONAL FOUL",
+            "count": 1
+          },
+          {
+            "penalty_type": "PASS INTERFERENCE",
+            "count": 1
+          }
+        ]
+      },
+      "coaching_season": {
+        "run_rate_by_down": {
+          "1": 0.393,
+          "2": 0.238,
+          "3": 0.2,
+          "4": 1.0
+        },
+        "efficiency_by_down_call": {
+          "1": {
+            "run_success_rate": 0.5455,
+            "pass_success_rate": 0.3529
+          },
+          "2": {
+            "run_success_rate": 0.6,
+            "pass_success_rate": 0.5625
+          },
+          "3": {
+            "run_success_rate": 0.0,
+            "pass_success_rate": 0.375
+          },
+          "4": {
+            "run_success_rate": 0.0,
+            "pass_success_rate": null
+          }
+        },
+        "obvious_situation_execution": {
+          "obvious_pass_success_rate": 0.25,
+          "obvious_run_success_rate": 0.5
+        },
+        "red_zone_tendency": {
+          "runs": 2,
+          "passes": 1,
+          "run_rate": 0.667
+        },
+        "short_yardage_tendency": {
+          "runs": 0,
+          "passes": 2,
+          "run_rate": 0.0
+        },
+        "avg_halftime_adjustment": 0.1062,
+        "avg_predictability_index": 0.8333
+      },
+      "defensive_identity_season": {
+        "total_def_plays": 77,
+        "avg_disruption_rate": 0.182,
+        "avg_explosive_prevention_rate": 0.857,
+        "avg_yards_per_play_allowed": 5.99,
+        "avg_bend_dont_break_index": 14.87
+      },
+      "uncounted_season": {
+        "harmed": {
+          "count": 2,
+          "yards": 11.0,
+          "points": 0.0,
+          "epa": 3.449,
+          "wpa": 0.0156
+        },
+        "benefited": {
+          "count": 3,
+          "yards": 27.0,
+          "points": 0.0,
+          "epa": 1.574,
+          "wpa": 0.0052
+        },
+        "net_points": 0.0,
+        "net_epa": -1.875,
+        "net_wpa": -0.0104,
+        "drive_outcomes": {
+          "survived_own_mistake": 0,
+          "mistake_was_fatal": 2,
+          "capitalized_on_gift": 2,
+          "wasted_the_gift": 0
+        },
+        "net_epa_per_game": -1.875,
+        "net_points_per_game": 0.0
+      },
+      "split_entities_season": {
+        "pass_offense": {
+          "eligible_plays": 41,
+          "success_rate": 0.439,
+          "explosive_rate_yardage": 0.122,
+          "epa_total": 0.52,
+          "epa_per_play": 0.0127,
+          "gop_explosive_rate": 0.0488,
+          "epa_per_play_non_explosive": -0.1612,
+          "situational": {
+            "success_rate_early_down": 0.4545,
+            "epa_per_play_early_down": -0.0331,
+            "success_rate_passing_down": 0.5,
+            "epa_per_play_passing_down": 0.3926,
+            "success_rate_late_down": 0.375,
+            "epa_per_play_late_down": 0.2016,
+            "success_rate_third_down": 0.375,
+            "epa_per_play_third_down": 0.2016,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 1.0,
+            "epa_per_play_red_zone": 3.071,
+            "success_rate_goal_to_go": 0.0,
+            "epa_per_play_goal_to_go": 0.0,
+            "success_rate_two_minute": 0.7143,
+            "epa_per_play_two_minute": -0.1776,
+            "success_rate_competitive_time": 0.439,
+            "epa_per_play_competitive_time": 0.0127
+          }
+        },
+        "rush_offense": {
+          "eligible_plays": 19,
+          "success_rate": 0.4737,
+          "explosive_rate_yardage": 0.1579,
+          "epa_total": 2.5,
+          "epa_per_play": 0.1316,
+          "gop_explosive_rate": 0.1579,
+          "epa_per_play_non_explosive": -0.3146,
+          "situational": {
+            "success_rate_early_down": 0.5625,
+            "epa_per_play_early_down": 0.4614,
+            "success_rate_passing_down": 0.2857,
+            "epa_per_play_passing_down": -0.5334,
+            "success_rate_late_down": 0.0,
+            "epa_per_play_late_down": -1.6277,
+            "success_rate_third_down": 0.0,
+            "epa_per_play_third_down": -1.563,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": -1.757,
+            "success_rate_red_zone": 0.5,
+            "epa_per_play_red_zone": 0.1935,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 1.298,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.0,
+            "success_rate_competitive_time": 0.4737,
+            "epa_per_play_competitive_time": 0.1316
+          },
+          "line_yards_per_rush": 5.3053,
+          "highlight_yards_per_rush": 2.6421,
+          "rush_opportunity_rate": 0.5263,
+          "stuff_rate": 0.1053,
+          "stopped_run_rate": 0.3158,
+          "power_success_rate": 0.0,
+          "power_attempts": 1
+        },
+        "pass_defense": {
+          "eligible_plays": 42,
+          "success_rate": 0.381,
+          "explosive_rate_yardage": 0.1905,
+          "epa_total": 8.92,
+          "epa_per_play": 0.2124,
+          "gop_explosive_rate": 0.119,
+          "epa_per_play_non_explosive": -0.2107,
+          "situational": {
+            "success_rate_early_down": 0.3448,
+            "epa_per_play_early_down": 0.1744,
+            "success_rate_passing_down": 0.4348,
+            "epa_per_play_passing_down": 0.3373,
+            "success_rate_late_down": 0.4615,
+            "epa_per_play_late_down": 0.2971,
+            "success_rate_third_down": 0.4615,
+            "epa_per_play_third_down": 0.2971,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.4,
+            "epa_per_play_red_zone": -0.229,
+            "success_rate_goal_to_go": 0.5,
+            "epa_per_play_goal_to_go": 0.081,
+            "success_rate_two_minute": 0.25,
+            "epa_per_play_two_minute": 0.4883,
+            "success_rate_competitive_time": 0.381,
+            "epa_per_play_competitive_time": 0.2124
+          }
+        },
+        "rush_defense": {
+          "eligible_plays": 35,
+          "success_rate": 0.2857,
+          "explosive_rate_yardage": 0.0857,
+          "epa_total": -3.49,
+          "epa_per_play": -0.0997,
+          "gop_explosive_rate": 0.0286,
+          "epa_per_play_non_explosive": -0.187,
+          "situational": {
+            "success_rate_early_down": 0.25,
+            "epa_per_play_early_down": -0.1453,
+            "success_rate_passing_down": 0.3636,
+            "epa_per_play_passing_down": -0.057,
+            "success_rate_late_down": 0.4286,
+            "epa_per_play_late_down": 0.0823,
+            "success_rate_third_down": 0.2,
+            "epa_per_play_third_down": -0.7672,
+            "success_rate_fourth_down": 1.0,
+            "epa_per_play_fourth_down": 2.206,
+            "success_rate_red_zone": 0.25,
+            "epa_per_play_red_zone": -0.302,
+            "success_rate_goal_to_go": 0.5,
+            "epa_per_play_goal_to_go": -0.203,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": -0.013,
+            "success_rate_competitive_time": 0.2857,
+            "epa_per_play_competitive_time": -0.0997
+          },
+          "line_yards_per_rush": 0.0,
+          "highlight_yards_per_rush": 0.0,
+          "rush_opportunity_rate": 0.0,
+          "stuff_rate": 0.0,
+          "stopped_run_rate": 0.0,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        }
+      }
+    },
+    "meachu": {
+      "team_id": "meachu",
+      "games_played": 1,
+      "record": {
+        "wins": 1,
+        "losses": 0,
+        "conf_wins": 0,
+        "conf_losses": 0
+      },
+      "points_for": 31,
+      "points_against": 24,
+      "point_differential": 7,
+      "points_per_game": 31.0,
+      "points_allowed_per_game": 24.0,
+      "totals": {
+        "pass_yards": 322.0,
+        "rush_yards": 129.0,
+        "total_yards": 451.0,
+        "pass_touchdowns": 3.0,
+        "rush_touchdowns": 0.0,
+        "interceptions_thrown": 0.0,
+        "turnovers_committed": 1.0,
+        "turnovers_forced": 2.0,
+        "turnover_margin": 1.0,
+        "sacks_allowed": 4.0,
+        "sacks_made": 0.0,
+        "completion_pct": 52.6,
+        "third_down_conversion_rate": 0.444,
+        "third_down_avg_distance": 7.5,
+        "fourth_down_go_rate": 0.4,
+        "fourth_down_go_conversion_rate": 1.0
+      },
+      "per_game": {
+        "pass_yards": 322.0,
+        "rush_yards": 129.0,
+        "total_yards": 451.0,
+        "points_scored": 31.0,
+        "pass_attempts": 38.0,
+        "drives_offense": 13.0,
+        "avg_start_field_position": 29.5
+      },
+      "advanced": {
+        "epa_per_play": 0.0534,
+        "epa_total": 4.38,
+        "success_rate": 0.3537,
+        "success_rate_early_down": 0.2982,
+        "success_rate_late_down": 0.45,
+        "success_rate_standard_down": 0.2791,
+        "success_rate_passing_down": 0.4118,
+        "success_rate_goal_to_go": 0.5,
+        "success_rate_two_minute": 0.2,
+        "two_minute_epa_per_play": 0.388,
+        "two_minute_wpa_per_play": 0.0062,
+        "explosive_rate": 0.1429,
+        "quality_drive_rate": 0.6923,
+        "explosive_drive_rate": 0.1538,
+        "negative_drive_rate": 0.3846,
+        "havoc_rate_forced": 0.1333,
+        "havoc_rate_allowed": 0.1818,
+        "havoc_rate_forced_pass": 0.1707,
+        "havoc_rate_forced_rush": 0.0526,
+        "havoc_rate_allowed_pass": 0.2381,
+        "havoc_rate_allowed_rush": 0.1143,
+        "havoc_situational": {
+          "havoc_rate_forced_early_down": 0.1633,
+          "havoc_rate_allowed_early_down": 0.1404,
+          "havoc_rate_forced_passing_down": 0.04,
+          "havoc_rate_allowed_passing_down": 0.2353,
+          "havoc_rate_forced_late_down": 0.0,
+          "havoc_rate_allowed_late_down": 0.3,
+          "havoc_rate_forced_third_down": 0.0,
+          "havoc_rate_allowed_third_down": 0.3333,
+          "havoc_rate_forced_fourth_down": 0.0,
+          "havoc_rate_allowed_fourth_down": 0.0,
+          "havoc_rate_forced_red_zone": 0.3333,
+          "havoc_rate_allowed_red_zone": 0.1538,
+          "havoc_rate_forced_goal_to_go": 0.0,
+          "havoc_rate_allowed_goal_to_go": 0.1667,
+          "havoc_rate_forced_two_minute": 0.1429,
+          "havoc_rate_allowed_two_minute": 0.4,
+          "havoc_rate_forced_competitive_time": 0.1333,
+          "havoc_rate_allowed_competitive_time": 0.1818
+        },
+        "stuff_rate": 0.1143,
+        "power_success_rate": 0.5,
+        "red_zone_efficiency": 5.167,
+        "red_zone_td_rate": 0.5,
+        "red_zone_opportunities": 6,
+        "turnover_luck": -0.7335,
+        "penalty_yards_per_game": 67.0,
+        "yards_negated_per_game": 0.0,
+        "penalty_swing_per_game": 25.0
+      },
+      "games": [
+        {
+          "game_id": "HUAAMU29082026",
+          "week": "",
+          "opponent": "swacaamu",
+          "result": "W",
+          "score_for": 31,
+          "score_against": 24,
+          "is_conf": false,
+          "epa_per_play": 0.0534,
+          "success_rate": 0.2982,
+          "explosive_rate": 0.1429,
+          "uncounted_net_epa": 2.025
+        }
+      ],
+      "overtime_season": {
+        "games_with_overtime": 0,
+        "totals": {
+          "pass_attempts": 0.0,
+          "pass_completions": 0.0,
+          "pass_yards": 0.0,
+          "pass_touchdowns": 0.0,
+          "rush_attempts": 0.0,
+          "rush_yards": 0.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 0.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0,
+          "two_point_rush_attempts": 0.0,
+          "two_point_rush_successes": 0.0,
+          "two_point_pass_attempts": 0.0,
+          "two_point_pass_successes": 0.0
+        },
+        "regulation_only": {
+          "pass_yards": 322.0,
+          "rush_yards": 129.0,
+          "pass_touchdowns": 3.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 31.0,
+          "two_point_attempts": 1.0,
+          "two_point_successes": 1.0
+        }
+      },
+      "special_teams_season": {
+        "kickoff_team": {
+          "attempts": 7,
+          "touchbacks": 1,
+          "touchback_rate": 0.143,
+          "returns_allowed": 0,
+          "avg_return_yards_allowed": null,
+          "avg_start_abs_allowed": null,
+          "fumble_opportunities": 0,
+          "turnovers_forced": 0,
+          "turnover_forced_rate": null,
+          "touchdowns_allowed": 0,
+          "penalty_yards_benefited": 0.0,
+          "return_penalty_yards_benefited": 8.0
+        },
+        "punt_team": {
+          "attempts": 4,
+          "avg_gross_yards": 35.5,
+          "net_punt_avg": 31.5,
+          "punt_efficiency_ratio": 0.887,
+          "inside_10_count": 0,
+          "inside_10_rate": 0.0,
+          "muffs_forced": 0,
+          "zone": {
+            "flip": {
+              "attempts": 3,
+              "avg_gross_yards": 37.0,
+              "avg_net_yards": 31.7,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 0
+            },
+            "pin": {
+              "attempts": 1,
+              "avg_gross_yards": 31.0,
+              "avg_net_yards": 31.0,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 0
+            }
+          }
+        },
+        "field_goal_unit": {
+          "by_range": {
+            "u30": {
+              "attempts": 3,
+              "made": 3,
+              "pct": 1.0
+            },
+            "30_39": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "40_49": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "50p": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            }
+          },
+          "overall_pct": 1.0
+        },
+        "kickoff_return": {
+          "attempts": 4,
+          "avg_return_yards": 23.5,
+          "explosives": 1,
+          "touchdowns": 0,
+          "fumble_opportunities": 0,
+          "fumbles_lost": 0
+        },
+        "punt_return": {
+          "attempts": 2,
+          "fair_catches": 2,
+          "muffs": 0,
+          "avg_return_yards": 8.5,
+          "zone": {
+            "flip": {
+              "punts_faced": 5,
+              "return_attempts": 2,
+              "avg_return_yards": 8.5
+            },
+            "pin": {
+              "punts_faced": 0,
+              "return_attempts": 0,
+              "avg_return_yards": null
+            }
+          }
+        }
+      },
+      "sequence_season": {
+        "after_own_turnover": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "after_takeaway": {
+          "drives": 2,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "sudden_change_defense": {
+          "drives_faced": 1,
+          "total_points_allowed": 0,
+          "avg_points_allowed": 0.0
+        },
+        "after_3_and_out": {
+          "drives": 4,
+          "score_rate": 1.0
+        },
+        "after_opponent_score": {
+          "drives": 4,
+          "total_points": 7,
+          "score_rate": 0.25
+        },
+        "after_defensive_stop": {
+          "drives": 8,
+          "total_points": 24,
+          "score_rate": 0.625
+        },
+        "after_halftime": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0
+        },
+        "stabilization_after_explosive_allowed": {
+          "plays": 19,
+          "success_rate": 0.632
+        },
+        "avg_turnover_score_rate": 0.0,
+        "avg_turnover_td_rate": 0.0,
+        "total_q4_lead_changes": 2,
+        "avg_q4_lead_changes_per_game": 2.0,
+        "total_q4_go_ahead_drives": 0,
+        "total_q4_lead_takes": 1,
+        "total_lead_changes": 2,
+        "avg_lead_changes_per_game": 2.0,
+        "total_go_ahead_drives": 1,
+        "total_lead_takes": 2,
+        "avg_max_consecutive_scoring_drives": 3.0
+      },
+      "penalty_season": {
+        "total_accepted": 7,
+        "total_yards": 67,
+        "avg_accepted_per_game": 7.0,
+        "avg_yards_per_game": 67.0,
+        "pre_snap_rate": 0.429,
+        "live_ball_rate": 0.571,
+        "on_3rd_down": 2,
+        "on_4th_down": 2,
+        "in_red_zone": 0,
+        "in_clutch_time": 0,
+        "high_leverage_count": 4,
+        "false_start_3rd_down": 0,
+        "holding_on_passing_down": 0,
+        "pre_snap_on_critical_down": 2,
+        "auto_first_downs_given": 3,
+        "auto_first_on_critical_down": 1,
+        "drives_with_accepted_penalty": 4,
+        "drive_kill_count": 3,
+        "drive_extend_count": 1,
+        "accepted_penalty_epa_sum": -0.457,
+        "hidden_yardage_lost": 25,
+        "hidden_yardage_gained": 50,
+        "avg_repeat_offender_players": 1.0,
+        "top_penalty_types": [
+          {
+            "penalty_type": "DELAY OF GAME",
+            "count": 2
+          },
+          {
+            "penalty_type": "PERSONAL FOUL",
+            "count": 1
+          },
+          {
+            "penalty_type": "UNSPORTSMANLIKE CONDUCT",
+            "count": 1
+          },
+          {
+            "penalty_type": "HOLDING",
+            "count": 1
+          },
+          {
+            "penalty_type": "PASS INTERFERENCE",
+            "count": 1
+          }
+        ]
+      },
+      "coaching_season": {
+        "run_rate_by_down": {
+          "1": 0.581,
+          "2": 0.385,
+          "3": 0.278,
+          "4": 1.0
+        },
+        "efficiency_by_down_call": {
+          "1": {
+            "run_success_rate": 0.3333,
+            "pass_success_rate": 0.2308
+          },
+          "2": {
+            "run_success_rate": 0.1,
+            "pass_success_rate": 0.4375
+          },
+          "3": {
+            "run_success_rate": 0.2,
+            "pass_success_rate": 0.4615
+          },
+          "4": {
+            "run_success_rate": 1.0,
+            "pass_success_rate": null
+          }
+        },
+        "obvious_situation_execution": {
+          "obvious_pass_success_rate": 0.4,
+          "obvious_run_success_rate": 0.5
+        },
+        "red_zone_tendency": {
+          "runs": 8,
+          "passes": 5,
+          "run_rate": 0.615
+        },
+        "short_yardage_tendency": {
+          "runs": 2,
+          "passes": 1,
+          "run_rate": 0.667
+        },
+        "avg_halftime_adjustment": -0.1137,
+        "avg_predictability_index": 0.9286
+      },
+      "defensive_identity_season": {
+        "total_def_plays": 60,
+        "avg_disruption_rate": 0.133,
+        "avg_explosive_prevention_rate": 0.867,
+        "avg_yards_per_play_allowed": 6.77,
+        "avg_bend_dont_break_index": 16.92
+      },
+      "uncounted_season": {
+        "harmed": {
+          "count": 0,
+          "yards": 0.0,
+          "points": 0.0,
+          "epa": 0.0,
+          "wpa": 0.0
+        },
+        "benefited": {
+          "count": 2,
+          "yards": 30.0,
+          "points": 0.0,
+          "epa": 2.025,
+          "wpa": 0.0164
+        },
+        "net_points": 0.0,
+        "net_epa": 2.025,
+        "net_wpa": 0.0164,
+        "drive_outcomes": {
+          "survived_own_mistake": 0,
+          "mistake_was_fatal": 0,
+          "capitalized_on_gift": 1,
+          "wasted_the_gift": 1
+        },
+        "net_epa_per_game": 2.025,
+        "net_points_per_game": 0.0
+      },
+      "split_entities_season": {
+        "pass_offense": {
+          "eligible_plays": 42,
+          "success_rate": 0.381,
+          "explosive_rate_yardage": 0.1905,
+          "epa_total": 8.92,
+          "epa_per_play": 0.2124,
+          "gop_explosive_rate": 0.119,
+          "epa_per_play_non_explosive": -0.2107,
+          "situational": {
+            "success_rate_early_down": 0.3448,
+            "epa_per_play_early_down": 0.1744,
+            "success_rate_passing_down": 0.4348,
+            "epa_per_play_passing_down": 0.3373,
+            "success_rate_late_down": 0.4615,
+            "epa_per_play_late_down": 0.2971,
+            "success_rate_third_down": 0.4615,
+            "epa_per_play_third_down": 0.2971,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.4,
+            "epa_per_play_red_zone": -0.229,
+            "success_rate_goal_to_go": 0.5,
+            "epa_per_play_goal_to_go": 0.081,
+            "success_rate_two_minute": 0.25,
+            "epa_per_play_two_minute": 0.4883,
+            "success_rate_competitive_time": 0.381,
+            "epa_per_play_competitive_time": 0.2124
+          }
+        },
+        "rush_offense": {
+          "eligible_plays": 35,
+          "success_rate": 0.2857,
+          "explosive_rate_yardage": 0.0857,
+          "epa_total": -3.49,
+          "epa_per_play": -0.0997,
+          "gop_explosive_rate": 0.0286,
+          "epa_per_play_non_explosive": -0.187,
+          "situational": {
+            "success_rate_early_down": 0.25,
+            "epa_per_play_early_down": -0.1453,
+            "success_rate_passing_down": 0.3636,
+            "epa_per_play_passing_down": -0.057,
+            "success_rate_late_down": 0.4286,
+            "epa_per_play_late_down": 0.0823,
+            "success_rate_third_down": 0.2,
+            "epa_per_play_third_down": -0.7672,
+            "success_rate_fourth_down": 1.0,
+            "epa_per_play_fourth_down": 2.206,
+            "success_rate_red_zone": 0.25,
+            "epa_per_play_red_zone": -0.302,
+            "success_rate_goal_to_go": 0.5,
+            "epa_per_play_goal_to_go": -0.203,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": -0.013,
+            "success_rate_competitive_time": 0.2857,
+            "epa_per_play_competitive_time": -0.0997
+          },
+          "line_yards_per_rush": 2.9286,
+          "highlight_yards_per_rush": 0.7571,
+          "rush_opportunity_rate": 0.4286,
+          "stuff_rate": 0.1143,
+          "stopped_run_rate": 0.3429,
+          "power_success_rate": 0.5,
+          "power_attempts": 4
+        },
+        "pass_defense": {
+          "eligible_plays": 41,
+          "success_rate": 0.439,
+          "explosive_rate_yardage": 0.122,
+          "epa_total": 0.52,
+          "epa_per_play": 0.0127,
+          "gop_explosive_rate": 0.0488,
+          "epa_per_play_non_explosive": -0.1612,
+          "situational": {
+            "success_rate_early_down": 0.4545,
+            "epa_per_play_early_down": -0.0331,
+            "success_rate_passing_down": 0.5,
+            "epa_per_play_passing_down": 0.3926,
+            "success_rate_late_down": 0.375,
+            "epa_per_play_late_down": 0.2016,
+            "success_rate_third_down": 0.375,
+            "epa_per_play_third_down": 0.2016,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 1.0,
+            "epa_per_play_red_zone": 3.071,
+            "success_rate_goal_to_go": 0.0,
+            "epa_per_play_goal_to_go": 0.0,
+            "success_rate_two_minute": 0.7143,
+            "epa_per_play_two_minute": -0.1776,
+            "success_rate_competitive_time": 0.439,
+            "epa_per_play_competitive_time": 0.0127
+          }
+        },
+        "rush_defense": {
+          "eligible_plays": 19,
+          "success_rate": 0.4737,
+          "explosive_rate_yardage": 0.1579,
+          "epa_total": 2.5,
+          "epa_per_play": 0.1316,
+          "gop_explosive_rate": 0.1579,
+          "epa_per_play_non_explosive": -0.3146,
+          "situational": {
+            "success_rate_early_down": 0.5625,
+            "epa_per_play_early_down": 0.4614,
+            "success_rate_passing_down": 0.2857,
+            "epa_per_play_passing_down": -0.5334,
+            "success_rate_late_down": 0.0,
+            "epa_per_play_late_down": -1.6277,
+            "success_rate_third_down": 0.0,
+            "epa_per_play_third_down": -1.563,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": -1.757,
+            "success_rate_red_zone": 0.5,
+            "epa_per_play_red_zone": 0.1935,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 1.298,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": 0.0,
+            "success_rate_competitive_time": 0.4737,
+            "epa_per_play_competitive_time": 0.1316
+          },
+          "line_yards_per_rush": 0.0,
+          "highlight_yards_per_rush": 0.0,
+          "rush_opportunity_rate": 0.0,
+          "stuff_rate": 0.0,
+          "stopped_run_rate": 0.0,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        }
+      }
+    },
+    "swactsu": {
+      "team_id": "swactsu",
+      "games_played": 1,
+      "record": {
+        "wins": 1,
+        "losses": 0,
+        "conf_wins": 0,
+        "conf_losses": 0
+      },
+      "points_for": 42,
+      "points_against": 30,
+      "point_differential": 12,
+      "points_per_game": 42.0,
+      "points_allowed_per_game": 30.0,
+      "totals": {
+        "pass_yards": 185.0,
+        "rush_yards": 289.0,
+        "total_yards": 474.0,
+        "pass_touchdowns": 3.0,
+        "rush_touchdowns": 2.0,
+        "interceptions_thrown": 1.0,
+        "turnovers_committed": 1.0,
+        "turnovers_forced": 1.0,
+        "turnover_margin": 0.0,
+        "sacks_allowed": 2.0,
+        "sacks_made": 3.0,
+        "completion_pct": 42.1,
+        "third_down_conversion_rate": 0.5,
+        "third_down_avg_distance": 10.8,
+        "fourth_down_go_rate": 0.0,
+        "fourth_down_go_conversion_rate": null
+      },
+      "per_game": {
+        "pass_yards": 185.0,
+        "rush_yards": 289.0,
+        "total_yards": 474.0,
+        "points_scored": 42.0,
+        "pass_attempts": 19.0,
+        "drives_offense": 11.0,
+        "avg_start_field_position": 26.2
+      },
+      "advanced": {
+        "epa_per_play": 0.3281,
+        "epa_total": 19.36,
+        "success_rate": 0.4407,
+        "success_rate_early_down": 0.4545,
+        "success_rate_late_down": 0.5556,
+        "success_rate_standard_down": 0.5294,
+        "success_rate_passing_down": 0.3684,
+        "success_rate_goal_to_go": 0.3333,
+        "success_rate_two_minute": 0.4286,
+        "two_minute_epa_per_play": 0.6292,
+        "two_minute_wpa_per_play": 0.0034,
+        "explosive_rate": 0.283,
+        "quality_drive_rate": 0.5455,
+        "explosive_drive_rate": 0.4545,
+        "negative_drive_rate": 0.2727,
+        "havoc_rate_forced": 0.1781,
+        "havoc_rate_allowed": 0.1509,
+        "havoc_rate_forced_pass": 0.2162,
+        "havoc_rate_forced_rush": 0.1389,
+        "havoc_rate_allowed_pass": 0.2857,
+        "havoc_rate_allowed_rush": 0.0625,
+        "havoc_situational": {
+          "havoc_rate_forced_early_down": 0.1525,
+          "havoc_rate_allowed_early_down": 0.1591,
+          "havoc_rate_forced_passing_down": 0.2069,
+          "havoc_rate_allowed_passing_down": 0.2105,
+          "havoc_rate_forced_late_down": 0.2857,
+          "havoc_rate_allowed_late_down": 0.1111,
+          "havoc_rate_forced_third_down": 0.2857,
+          "havoc_rate_allowed_third_down": 0.1111,
+          "havoc_rate_forced_fourth_down": null,
+          "havoc_rate_allowed_fourth_down": null,
+          "havoc_rate_forced_red_zone": 0.3333,
+          "havoc_rate_allowed_red_zone": 0.1429,
+          "havoc_rate_forced_goal_to_go": 0.4,
+          "havoc_rate_allowed_goal_to_go": 0.3333,
+          "havoc_rate_forced_two_minute": 0.0,
+          "havoc_rate_allowed_two_minute": 0.2857,
+          "havoc_rate_forced_competitive_time": 0.1781,
+          "havoc_rate_allowed_competitive_time": 0.1509
+        },
+        "stuff_rate": 0.0625,
+        "power_success_rate": null,
+        "red_zone_efficiency": 7.0,
+        "red_zone_td_rate": 1.0,
+        "red_zone_opportunities": 5,
+        "turnover_luck": -0.1821,
+        "penalty_yards_per_game": 117.0,
+        "yards_negated_per_game": 15.0,
+        "penalty_swing_per_game": 45.0
+      },
+      "games": [
+        {
+          "game_id": "NCCUTSU29082026",
+          "week": "",
+          "opponent": "meacnccu",
+          "result": "W",
+          "score_for": 42,
+          "score_against": 30,
+          "is_conf": false,
+          "epa_per_play": 0.3281,
+          "success_rate": 0.4545,
+          "explosive_rate": 0.283,
+          "uncounted_net_epa": -4.423
+        }
+      ],
+      "overtime_season": {
+        "games_with_overtime": 0,
+        "totals": {
+          "pass_attempts": 0.0,
+          "pass_completions": 0.0,
+          "pass_yards": 0.0,
+          "pass_touchdowns": 0.0,
+          "rush_attempts": 0.0,
+          "rush_yards": 0.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 0.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0,
+          "two_point_rush_attempts": 0.0,
+          "two_point_rush_successes": 0.0,
+          "two_point_pass_attempts": 0.0,
+          "two_point_pass_successes": 0.0
+        },
+        "regulation_only": {
+          "pass_yards": 185.0,
+          "rush_yards": 289.0,
+          "pass_touchdowns": 3.0,
+          "rush_touchdowns": 2.0,
+          "points_scored": 42.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0
+        }
+      },
+      "special_teams_season": {
+        "kickoff_team": {
+          "attempts": 7,
+          "touchbacks": 0,
+          "touchback_rate": 0.0,
+          "returns_allowed": 0,
+          "avg_return_yards_allowed": null,
+          "avg_start_abs_allowed": null,
+          "fumble_opportunities": 0,
+          "turnovers_forced": 0,
+          "turnover_forced_rate": null,
+          "touchdowns_allowed": 0,
+          "penalty_yards_benefited": 15.0,
+          "return_penalty_yards_benefited": 0.0
+        },
+        "punt_team": {
+          "attempts": 3,
+          "avg_gross_yards": 37.7,
+          "net_punt_avg": 31.3,
+          "punt_efficiency_ratio": 0.83,
+          "inside_10_count": 0,
+          "inside_10_rate": 0.0,
+          "muffs_forced": 0,
+          "zone": {
+            "flip": {
+              "attempts": 3,
+              "avg_gross_yards": 37.7,
+              "avg_net_yards": 31.3,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.0,
+              "downed_count": 1
+            },
+            "pin": {
+              "attempts": 0,
+              "avg_gross_yards": null,
+              "avg_net_yards": null,
+              "touchback_rate": null,
+              "inside_20_rate": null,
+              "downed_count": 0
+            }
+          }
+        },
+        "field_goal_unit": {
+          "by_range": {
+            "u30": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "30_39": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "40_49": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "50p": {
+              "attempts": 1,
+              "made": 0,
+              "pct": 0.0
+            }
+          },
+          "overall_pct": 0.0
+        },
+        "kickoff_return": {
+          "attempts": 4,
+          "avg_return_yards": 29.2,
+          "explosives": 4,
+          "touchdowns": 0,
+          "fumble_opportunities": 0,
+          "fumbles_lost": 0
+        },
+        "punt_return": {
+          "attempts": 2,
+          "fair_catches": 1,
+          "muffs": 0,
+          "avg_return_yards": 19.0,
+          "zone": {
+            "flip": {
+              "punts_faced": 6,
+              "return_attempts": 2,
+              "avg_return_yards": 19.0
+            },
+            "pin": {
+              "punts_faced": 0,
+              "return_attempts": 0,
+              "avg_return_yards": null
+            }
+          }
+        }
+      },
+      "sequence_season": {
+        "after_own_turnover": {
+          "drives": 1,
+          "total_points": 7,
+          "score_rate": 1.0,
+          "avg_points_per_drive": 7.0
+        },
+        "after_takeaway": {
+          "drives": 1,
+          "total_points": 7,
+          "score_rate": 1.0,
+          "avg_points_per_drive": 7.0
+        },
+        "sudden_change_defense": {
+          "drives_faced": 1,
+          "total_points_allowed": 0,
+          "avg_points_allowed": 0.0
+        },
+        "after_3_and_out": {
+          "drives": 4,
+          "score_rate": 0.25
+        },
+        "after_opponent_score": {
+          "drives": 6,
+          "total_points": 21,
+          "score_rate": 0.5
+        },
+        "after_defensive_stop": {
+          "drives": 5,
+          "total_points": 14,
+          "score_rate": 0.4
+        },
+        "after_halftime": {
+          "drives": 1,
+          "total_points": 7,
+          "score_rate": 1.0
+        },
+        "stabilization_after_explosive_allowed": {
+          "plays": 15,
+          "success_rate": 0.333
+        },
+        "avg_turnover_score_rate": 1.0,
+        "avg_turnover_td_rate": 1.0,
+        "total_q4_lead_changes": 0,
+        "avg_q4_lead_changes_per_game": 0.0,
+        "total_q4_go_ahead_drives": 0,
+        "total_q4_lead_takes": 0,
+        "total_lead_changes": 1,
+        "avg_lead_changes_per_game": 1.0,
+        "total_go_ahead_drives": 1,
+        "total_lead_takes": 1,
+        "avg_max_consecutive_scoring_drives": 2.0
+      },
+      "penalty_season": {
+        "total_accepted": 12,
+        "total_yards": 117,
+        "avg_accepted_per_game": 12.0,
+        "avg_yards_per_game": 117.0,
+        "pre_snap_rate": 0.417,
+        "live_ball_rate": 0.583,
+        "on_3rd_down": 3,
+        "on_4th_down": 2,
+        "in_red_zone": 0,
+        "in_clutch_time": 0,
+        "high_leverage_count": 5,
+        "false_start_3rd_down": 1,
+        "holding_on_passing_down": 0,
+        "pre_snap_on_critical_down": 3,
+        "auto_first_downs_given": 5,
+        "auto_first_on_critical_down": 2,
+        "drives_with_accepted_penalty": 3,
+        "drive_kill_count": 2,
+        "drive_extend_count": 1,
+        "accepted_penalty_epa_sum": 2.5,
+        "hidden_yardage_lost": 45,
+        "hidden_yardage_gained": 10,
+        "avg_repeat_offender_players": 1.0,
+        "top_penalty_types": [
+          {
+            "penalty_type": "PERSONAL FOUL",
+            "count": 5
+          },
+          {
+            "penalty_type": "FALSE START",
+            "count": 2
+          },
+          {
+            "penalty_type": "ILLEGAL SUBSTITUTION",
+            "count": 2
+          },
+          {
+            "penalty_type": "PASS INTERFERENCE",
+            "count": 1
+          },
+          {
+            "penalty_type": "HOLDING",
+            "count": 1
+          }
+        ]
+      },
+      "coaching_season": {
+        "run_rate_by_down": {
+          "1": 0.76,
+          "2": 0.526,
+          "3": 0.333,
+          "4": null
+        },
+        "efficiency_by_down_call": {
+          "1": {
+            "run_success_rate": 0.5789,
+            "pass_success_rate": 0.1667
+          },
+          "2": {
+            "run_success_rate": 0.5,
+            "pass_success_rate": 0.3333
+          },
+          "3": {
+            "run_success_rate": 1.0,
+            "pass_success_rate": 0.3333
+          },
+          "4": {
+            "run_success_rate": null,
+            "pass_success_rate": null
+          }
+        },
+        "obvious_situation_execution": {
+          "obvious_pass_success_rate": 0.4286,
+          "obvious_run_success_rate": null
+        },
+        "red_zone_tendency": {
+          "runs": 5,
+          "passes": 2,
+          "run_rate": 0.714
+        },
+        "short_yardage_tendency": {
+          "runs": 1,
+          "passes": 0,
+          "run_rate": 1.0
+        },
+        "avg_halftime_adjustment": 0.0884,
+        "avg_predictability_index": 0.8571
+      },
+      "defensive_identity_season": {
+        "total_def_plays": 73,
+        "avg_disruption_rate": 0.178,
+        "avg_explosive_prevention_rate": 0.931,
+        "avg_yards_per_play_allowed": 5.18,
+        "avg_bend_dont_break_index": 12.6
+      },
+      "uncounted_season": {
+        "harmed": {
+          "count": 2,
+          "yards": 19.0,
+          "points": 0.0,
+          "epa": 4.423,
+          "wpa": 0.0014
+        },
+        "benefited": {
+          "count": 0,
+          "yards": 0.0,
+          "points": 0.0,
+          "epa": 0.0,
+          "wpa": 0.0
+        },
+        "net_points": 0.0,
+        "net_epa": -4.423,
+        "net_wpa": -0.0014,
+        "drive_outcomes": {
+          "survived_own_mistake": 1,
+          "mistake_was_fatal": 0,
+          "capitalized_on_gift": 0,
+          "wasted_the_gift": 0
+        },
+        "net_epa_per_game": -4.423,
+        "net_points_per_game": 0.0
+      },
+      "split_entities_season": {
+        "pass_offense": {
+          "eligible_plays": 21,
+          "success_rate": 0.2857,
+          "explosive_rate_yardage": 0.2381,
+          "epa_total": 4.95,
+          "epa_per_play": 0.2356,
+          "gop_explosive_rate": 0.1905,
+          "epa_per_play_non_explosive": -0.7489,
+          "situational": {
+            "success_rate_early_down": 0.2667,
+            "epa_per_play_early_down": 0.0473,
+            "success_rate_passing_down": 0.25,
+            "epa_per_play_passing_down": -0.0698,
+            "success_rate_late_down": 0.3333,
+            "epa_per_play_late_down": 0.7065,
+            "success_rate_third_down": 0.3333,
+            "epa_per_play_third_down": 0.7065,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.5,
+            "epa_per_play_red_zone": 1.7865,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 4.115,
+            "success_rate_two_minute": 0.6,
+            "epa_per_play_two_minute": 1.5498,
+            "success_rate_competitive_time": 0.2857,
+            "epa_per_play_competitive_time": 0.2356
+          }
+        },
+        "rush_offense": {
+          "eligible_plays": 32,
+          "success_rate": 0.5938,
+          "explosive_rate_yardage": 0.3125,
+          "epa_total": 18.15,
+          "epa_per_play": 0.5672,
+          "gop_explosive_rate": 0.1875,
+          "epa_per_play_non_explosive": 0.0883,
+          "situational": {
+            "success_rate_early_down": 0.5517,
+            "epa_per_play_early_down": 0.3259,
+            "success_rate_passing_down": 0.5714,
+            "epa_per_play_passing_down": 1.375,
+            "success_rate_late_down": 1.0,
+            "epa_per_play_late_down": 2.8993,
+            "success_rate_third_down": 1.0,
+            "epa_per_play_third_down": 2.8993,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.6,
+            "epa_per_play_red_zone": 0.8338,
+            "success_rate_goal_to_go": 0.0,
+            "epa_per_play_goal_to_go": -0.961,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": -0.4105,
+            "success_rate_competitive_time": 0.5938,
+            "epa_per_play_competitive_time": 0.5672
+          },
+          "line_yards_per_rush": 6.0,
+          "highlight_yards_per_rush": 3.0312,
+          "rush_opportunity_rate": 0.625,
+          "stuff_rate": 0.0625,
+          "stopped_run_rate": 0.1562,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        },
+        "pass_defense": {
+          "eligible_plays": 37,
+          "success_rate": 0.2973,
+          "explosive_rate_yardage": 0.027,
+          "epa_total": -9.75,
+          "epa_per_play": -0.2636,
+          "gop_explosive_rate": 0.0,
+          "epa_per_play_non_explosive": -0.2636,
+          "situational": {
+            "success_rate_early_down": 0.3448,
+            "epa_per_play_early_down": -0.0883,
+            "success_rate_passing_down": 0.2222,
+            "epa_per_play_passing_down": -0.3192,
+            "success_rate_late_down": 0.125,
+            "epa_per_play_late_down": -0.899,
+            "success_rate_third_down": 0.125,
+            "epa_per_play_third_down": -0.899,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.2,
+            "epa_per_play_red_zone": -0.192,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 2.138,
+            "success_rate_two_minute": 1.0,
+            "epa_per_play_two_minute": 1.124,
+            "success_rate_competitive_time": 0.2973,
+            "epa_per_play_competitive_time": -0.2636
+          }
+        },
+        "rush_defense": {
+          "eligible_plays": 36,
+          "success_rate": 0.5278,
+          "explosive_rate_yardage": 0.1111,
+          "epa_total": 7.71,
+          "epa_per_play": 0.2142,
+          "gop_explosive_rate": 0.0833,
+          "epa_per_play_non_explosive": -0.0867,
+          "situational": {
+            "success_rate_early_down": 0.5,
+            "epa_per_play_early_down": 0.1274,
+            "success_rate_passing_down": 0.5455,
+            "epa_per_play_passing_down": 0.775,
+            "success_rate_late_down": 0.6667,
+            "epa_per_play_late_down": 0.648,
+            "success_rate_third_down": 0.6667,
+            "epa_per_play_third_down": 0.648,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.1429,
+            "epa_per_play_red_zone": -0.6951,
+            "success_rate_goal_to_go": 0.25,
+            "epa_per_play_goal_to_go": -0.0307,
+            "success_rate_two_minute": 1.0,
+            "epa_per_play_two_minute": 2.82,
+            "success_rate_competitive_time": 0.5278,
+            "epa_per_play_competitive_time": 0.2142
+          },
+          "line_yards_per_rush": 0.0,
+          "highlight_yards_per_rush": 0.0,
+          "rush_opportunity_rate": 0.0,
+          "stuff_rate": 0.0,
+          "stopped_run_rate": 0.0,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        }
+      }
+    },
+    "meacnccu": {
+      "team_id": "meacnccu",
+      "games_played": 1,
+      "record": {
+        "wins": 0,
+        "losses": 1,
+        "conf_wins": 0,
+        "conf_losses": 0
+      },
+      "points_for": 30,
+      "points_against": 42,
+      "point_differential": -12,
+      "points_per_game": 30.0,
+      "points_allowed_per_game": 42.0,
+      "totals": {
+        "pass_yards": 131.0,
+        "rush_yards": 215.0,
+        "total_yards": 346.0,
+        "pass_touchdowns": 1.0,
+        "rush_touchdowns": 2.0,
+        "interceptions_thrown": 1.0,
+        "turnovers_committed": 1.0,
+        "turnovers_forced": 1.0,
+        "turnover_margin": 0.0,
+        "sacks_allowed": 3.0,
+        "sacks_made": 2.0,
+        "completion_pct": 47.1,
+        "third_down_conversion_rate": 0.429,
+        "third_down_avg_distance": 9.1,
+        "fourth_down_go_rate": 0.0,
+        "fourth_down_go_conversion_rate": null
+      },
+      "per_game": {
+        "pass_yards": 131.0,
+        "rush_yards": 215.0,
+        "total_yards": 346.0,
+        "points_scored": 30.0,
+        "pass_attempts": 34.0,
+        "drives_offense": 13.0,
+        "avg_start_field_position": 34.0
+      },
+      "advanced": {
+        "epa_per_play": 0.0264,
+        "epa_total": 2.06,
+        "success_rate": 0.4231,
+        "success_rate_early_down": 0.4237,
+        "success_rate_late_down": 0.3571,
+        "success_rate_standard_down": 0.4545,
+        "success_rate_passing_down": 0.3448,
+        "success_rate_goal_to_go": 0.4,
+        "success_rate_two_minute": 1.0,
+        "two_minute_epa_per_play": 1.972,
+        "two_minute_wpa_per_play": 0.0127,
+        "explosive_rate": 0.0685,
+        "quality_drive_rate": 0.5385,
+        "explosive_drive_rate": 0.1538,
+        "negative_drive_rate": 0.4615,
+        "havoc_rate_forced": 0.1509,
+        "havoc_rate_allowed": 0.1781,
+        "havoc_rate_forced_pass": 0.2857,
+        "havoc_rate_forced_rush": 0.0625,
+        "havoc_rate_allowed_pass": 0.2162,
+        "havoc_rate_allowed_rush": 0.1389,
+        "havoc_situational": {
+          "havoc_rate_forced_early_down": 0.1591,
+          "havoc_rate_allowed_early_down": 0.1525,
+          "havoc_rate_forced_passing_down": 0.2105,
+          "havoc_rate_allowed_passing_down": 0.2069,
+          "havoc_rate_forced_late_down": 0.1111,
+          "havoc_rate_allowed_late_down": 0.2857,
+          "havoc_rate_forced_third_down": 0.1111,
+          "havoc_rate_allowed_third_down": 0.2857,
+          "havoc_rate_forced_fourth_down": null,
+          "havoc_rate_allowed_fourth_down": null,
+          "havoc_rate_forced_red_zone": 0.1429,
+          "havoc_rate_allowed_red_zone": 0.3333,
+          "havoc_rate_forced_goal_to_go": 0.3333,
+          "havoc_rate_allowed_goal_to_go": 0.4,
+          "havoc_rate_forced_two_minute": 0.2857,
+          "havoc_rate_allowed_two_minute": 0.0,
+          "havoc_rate_forced_competitive_time": 0.1509,
+          "havoc_rate_allowed_competitive_time": 0.1781
+        },
+        "stuff_rate": 0.2222,
+        "power_success_rate": 1.0,
+        "red_zone_efficiency": 4.286,
+        "red_zone_td_rate": 0.429,
+        "red_zone_opportunities": 7,
+        "turnover_luck": -0.5605,
+        "penalty_yards_per_game": 25.0,
+        "yards_negated_per_game": 0.0,
+        "penalty_swing_per_game": 10.0
+      },
+      "games": [
+        {
+          "game_id": "NCCUTSU29082026",
+          "week": "",
+          "opponent": "swactsu",
+          "result": "L",
+          "score_for": 30,
+          "score_against": 42,
+          "is_conf": false,
+          "epa_per_play": 0.0264,
+          "success_rate": 0.4237,
+          "explosive_rate": 0.0685,
+          "uncounted_net_epa": 7.444
+        }
+      ],
+      "overtime_season": {
+        "games_with_overtime": 0,
+        "totals": {
+          "pass_attempts": 0.0,
+          "pass_completions": 0.0,
+          "pass_yards": 0.0,
+          "pass_touchdowns": 0.0,
+          "rush_attempts": 0.0,
+          "rush_yards": 0.0,
+          "rush_touchdowns": 0.0,
+          "points_scored": 0.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0,
+          "two_point_rush_attempts": 0.0,
+          "two_point_rush_successes": 0.0,
+          "two_point_pass_attempts": 0.0,
+          "two_point_pass_successes": 0.0
+        },
+        "regulation_only": {
+          "pass_yards": 131.0,
+          "rush_yards": 215.0,
+          "pass_touchdowns": 1.0,
+          "rush_touchdowns": 2.0,
+          "points_scored": 30.0,
+          "two_point_attempts": 0.0,
+          "two_point_successes": 0.0
+        }
+      },
+      "special_teams_season": {
+        "kickoff_team": {
+          "attempts": 6,
+          "touchbacks": 1,
+          "touchback_rate": 0.167,
+          "returns_allowed": 0,
+          "avg_return_yards_allowed": null,
+          "avg_start_abs_allowed": null,
+          "fumble_opportunities": 0,
+          "turnovers_forced": 0,
+          "turnover_forced_rate": null,
+          "touchdowns_allowed": 0,
+          "penalty_yards_benefited": 0.0,
+          "return_penalty_yards_benefited": 7.0
+        },
+        "punt_team": {
+          "attempts": 6,
+          "avg_gross_yards": 37.5,
+          "net_punt_avg": 36.8,
+          "punt_efficiency_ratio": 0.981,
+          "inside_10_count": 0,
+          "inside_10_rate": 0.0,
+          "muffs_forced": 0,
+          "zone": {
+            "flip": {
+              "attempts": 6,
+              "avg_gross_yards": 37.5,
+              "avg_net_yards": 36.8,
+              "touchback_rate": 0.0,
+              "inside_20_rate": 0.167,
+              "downed_count": 3
+            },
+            "pin": {
+              "attempts": 0,
+              "avg_gross_yards": null,
+              "avg_net_yards": null,
+              "touchback_rate": null,
+              "inside_20_rate": null,
+              "downed_count": 0
+            }
+          }
+        },
+        "field_goal_unit": {
+          "by_range": {
+            "u30": {
+              "attempts": 1,
+              "made": 1,
+              "pct": 1.0
+            },
+            "30_39": {
+              "attempts": 2,
+              "made": 2,
+              "pct": 1.0
+            },
+            "40_49": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            },
+            "50p": {
+              "attempts": 0,
+              "made": 0,
+              "pct": null
+            }
+          },
+          "overall_pct": 1.0
+        },
+        "kickoff_return": {
+          "attempts": 1,
+          "avg_return_yards": 13.5,
+          "explosives": 0,
+          "touchdowns": 0,
+          "fumble_opportunities": 0,
+          "fumbles_lost": 0
+        },
+        "punt_return": {
+          "attempts": 1,
+          "fair_catches": 0,
+          "muffs": 0,
+          "avg_return_yards": 19.0,
+          "zone": {
+            "flip": {
+              "punts_faced": 3,
+              "return_attempts": 1,
+              "avg_return_yards": 19.0
+            },
+            "pin": {
+              "punts_faced": 0,
+              "return_attempts": 0,
+              "avg_return_yards": null
+            }
+          }
+        }
+      },
+      "sequence_season": {
+        "after_own_turnover": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "after_takeaway": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0,
+          "avg_points_per_drive": 0.0
+        },
+        "sudden_change_defense": {
+          "drives_faced": 1,
+          "total_points_allowed": 7,
+          "avg_points_allowed": 7.0
+        },
+        "after_3_and_out": {
+          "drives": 1,
+          "score_rate": 0.0
+        },
+        "after_opponent_score": {
+          "drives": 5,
+          "total_points": 10,
+          "score_rate": 0.4
+        },
+        "after_defensive_stop": {
+          "drives": 5,
+          "total_points": 14,
+          "score_rate": 0.4
+        },
+        "after_halftime": {
+          "drives": 1,
+          "total_points": 0,
+          "score_rate": 0.0
+        },
+        "stabilization_after_explosive_allowed": {
+          "plays": 30,
+          "success_rate": 0.533
+        },
+        "avg_turnover_score_rate": 0.0,
+        "avg_turnover_td_rate": 0.0,
+        "total_q4_lead_changes": 0,
+        "avg_q4_lead_changes_per_game": 0.0,
+        "total_q4_go_ahead_drives": 0,
+        "total_q4_lead_takes": 0,
+        "total_lead_changes": 1,
+        "avg_lead_changes_per_game": 1.0,
+        "total_go_ahead_drives": 1,
+        "total_lead_takes": 1,
+        "avg_max_consecutive_scoring_drives": 3.0
+      },
+      "penalty_season": {
+        "total_accepted": 3,
+        "total_yards": 25,
+        "avg_accepted_per_game": 3.0,
+        "avg_yards_per_game": 25.0,
+        "pre_snap_rate": 0.667,
+        "live_ball_rate": 0.333,
+        "on_3rd_down": 1,
+        "on_4th_down": 0,
+        "in_red_zone": 0,
+        "in_clutch_time": 0,
+        "high_leverage_count": 1,
+        "false_start_3rd_down": 1,
+        "holding_on_passing_down": 0,
+        "pre_snap_on_critical_down": 1,
+        "auto_first_downs_given": 0,
+        "auto_first_on_critical_down": 0,
+        "drives_with_accepted_penalty": 4,
+        "drive_kill_count": 2,
+        "drive_extend_count": 2,
+        "accepted_penalty_epa_sum": -1.221,
+        "hidden_yardage_lost": 10,
+        "hidden_yardage_gained": 105,
+        "avg_repeat_offender_players": 0.0,
+        "top_penalty_types": [
+          {
+            "penalty_type": "FALSE START",
+            "count": 2
+          },
+          {
+            "penalty_type": "PERSONAL FOUL",
+            "count": 1
+          }
+        ]
+      },
+      "coaching_season": {
+        "run_rate_by_down": {
+          "1": 0.545,
+          "2": 0.462,
+          "3": 0.429,
+          "4": null
+        },
+        "efficiency_by_down_call": {
+          "1": {
+            "run_success_rate": 0.5,
+            "pass_success_rate": 0.4
+          },
+          "2": {
+            "run_success_rate": 0.5,
+            "pass_success_rate": 0.2857
+          },
+          "3": {
+            "run_success_rate": 0.6667,
+            "pass_success_rate": 0.125
+          },
+          "4": {
+            "run_success_rate": null,
+            "pass_success_rate": null
+          }
+        },
+        "obvious_situation_execution": {
+          "obvious_pass_success_rate": 0.0,
+          "obvious_run_success_rate": 1.0
+        },
+        "red_zone_tendency": {
+          "runs": 7,
+          "passes": 5,
+          "run_rate": 0.583
+        },
+        "short_yardage_tendency": {
+          "runs": 4,
+          "passes": 3,
+          "run_rate": 0.571
+        },
+        "avg_halftime_adjustment": -0.2853,
+        "avg_predictability_index": 0.8889
+      },
+      "defensive_identity_season": {
+        "total_def_plays": 53,
+        "avg_disruption_rate": 0.151,
+        "avg_explosive_prevention_rate": 0.717,
+        "avg_yards_per_play_allowed": 9.04,
+        "avg_bend_dont_break_index": 13.69
+      },
+      "uncounted_season": {
+        "harmed": {
+          "count": 0,
+          "yards": 0.0,
+          "points": 0.0,
+          "epa": 0.0,
+          "wpa": 0.0
+        },
+        "benefited": {
+          "count": 5,
+          "yards": 117.0,
+          "points": 0.0,
+          "epa": 7.444,
+          "wpa": 0.082
+        },
+        "net_points": 0.0,
+        "net_epa": 7.444,
+        "net_wpa": 0.082,
+        "drive_outcomes": {
+          "survived_own_mistake": 0,
+          "mistake_was_fatal": 0,
+          "capitalized_on_gift": 4,
+          "wasted_the_gift": 0
+        },
+        "net_epa_per_game": 7.444,
+        "net_points_per_game": 0.0
+      },
+      "split_entities_season": {
+        "pass_offense": {
+          "eligible_plays": 37,
+          "success_rate": 0.2973,
+          "explosive_rate_yardage": 0.027,
+          "epa_total": -9.75,
+          "epa_per_play": -0.2636,
+          "gop_explosive_rate": 0.0,
+          "epa_per_play_non_explosive": -0.2636,
+          "situational": {
+            "success_rate_early_down": 0.3448,
+            "epa_per_play_early_down": -0.0883,
+            "success_rate_passing_down": 0.2222,
+            "epa_per_play_passing_down": -0.3192,
+            "success_rate_late_down": 0.125,
+            "epa_per_play_late_down": -0.899,
+            "success_rate_third_down": 0.125,
+            "epa_per_play_third_down": -0.899,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.2,
+            "epa_per_play_red_zone": -0.192,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 2.138,
+            "success_rate_two_minute": 1.0,
+            "epa_per_play_two_minute": 1.124,
+            "success_rate_competitive_time": 0.2973,
+            "epa_per_play_competitive_time": -0.2636
+          }
+        },
+        "rush_offense": {
+          "eligible_plays": 36,
+          "success_rate": 0.5278,
+          "explosive_rate_yardage": 0.1111,
+          "epa_total": 7.71,
+          "epa_per_play": 0.2142,
+          "gop_explosive_rate": 0.0833,
+          "epa_per_play_non_explosive": -0.0867,
+          "situational": {
+            "success_rate_early_down": 0.5,
+            "epa_per_play_early_down": 0.1274,
+            "success_rate_passing_down": 0.5455,
+            "epa_per_play_passing_down": 0.775,
+            "success_rate_late_down": 0.6667,
+            "epa_per_play_late_down": 0.648,
+            "success_rate_third_down": 0.6667,
+            "epa_per_play_third_down": 0.648,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.1429,
+            "epa_per_play_red_zone": -0.6951,
+            "success_rate_goal_to_go": 0.25,
+            "epa_per_play_goal_to_go": -0.0307,
+            "success_rate_two_minute": 1.0,
+            "epa_per_play_two_minute": 2.82,
+            "success_rate_competitive_time": 0.5278,
+            "epa_per_play_competitive_time": 0.2142
+          },
+          "line_yards_per_rush": 3.7944,
+          "highlight_yards_per_rush": 2.1778,
+          "rush_opportunity_rate": 0.5556,
+          "stuff_rate": 0.2222,
+          "stopped_run_rate": 0.25,
+          "power_success_rate": 1.0,
+          "power_attempts": 1
+        },
+        "pass_defense": {
+          "eligible_plays": 21,
+          "success_rate": 0.2857,
+          "explosive_rate_yardage": 0.2381,
+          "epa_total": 4.95,
+          "epa_per_play": 0.2356,
+          "gop_explosive_rate": 0.1905,
+          "epa_per_play_non_explosive": -0.7489,
+          "situational": {
+            "success_rate_early_down": 0.2667,
+            "epa_per_play_early_down": 0.0473,
+            "success_rate_passing_down": 0.25,
+            "epa_per_play_passing_down": -0.0698,
+            "success_rate_late_down": 0.3333,
+            "epa_per_play_late_down": 0.7065,
+            "success_rate_third_down": 0.3333,
+            "epa_per_play_third_down": 0.7065,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.5,
+            "epa_per_play_red_zone": 1.7865,
+            "success_rate_goal_to_go": 1.0,
+            "epa_per_play_goal_to_go": 4.115,
+            "success_rate_two_minute": 0.6,
+            "epa_per_play_two_minute": 1.5498,
+            "success_rate_competitive_time": 0.2857,
+            "epa_per_play_competitive_time": 0.2356
+          }
+        },
+        "rush_defense": {
+          "eligible_plays": 32,
+          "success_rate": 0.5938,
+          "explosive_rate_yardage": 0.3125,
+          "epa_total": 18.15,
+          "epa_per_play": 0.5672,
+          "gop_explosive_rate": 0.1875,
+          "epa_per_play_non_explosive": 0.0883,
+          "situational": {
+            "success_rate_early_down": 0.5517,
+            "epa_per_play_early_down": 0.3259,
+            "success_rate_passing_down": 0.5714,
+            "epa_per_play_passing_down": 1.375,
+            "success_rate_late_down": 1.0,
+            "epa_per_play_late_down": 2.8993,
+            "success_rate_third_down": 1.0,
+            "epa_per_play_third_down": 2.8993,
+            "success_rate_fourth_down": 0.0,
+            "epa_per_play_fourth_down": 0.0,
+            "success_rate_red_zone": 0.6,
+            "epa_per_play_red_zone": 0.8338,
+            "success_rate_goal_to_go": 0.0,
+            "epa_per_play_goal_to_go": -0.961,
+            "success_rate_two_minute": 0.0,
+            "epa_per_play_two_minute": -0.4105,
+            "success_rate_competitive_time": 0.5938,
+            "epa_per_play_competitive_time": 0.5672
+          },
+          "line_yards_per_rush": 0.0,
+          "highlight_yards_per_rush": 0.0,
+          "rush_opportunity_rate": 0.0,
+          "stuff_rate": 0.0,
+          "stopped_run_rate": 0.0,
+          "power_success_rate": 0.0,
+          "power_attempts": 0
+        }
+      }
+    }
+  }
+}

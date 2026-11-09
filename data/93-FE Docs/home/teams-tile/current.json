@@ -1,0 +1,154 @@
+{
+  "season": 2026,
+  "week": 10,
+  "week_label": "Week 10",
+  "generated_at": "2026-11-07T19:59:27-06:00",
+  "source": "current_season",
+  "rotation": [
+    "division_race",
+    "hot_streak",
+    "rivalry",
+    "home_field",
+    "band"
+  ],
+  "items": [
+    {
+      "key": "division_race",
+      "title": "Division Race",
+      "headline": "J-State lead SWAC East at 4-2, AAMU level with them.",
+      "teams": [
+        "swacjsu",
+        "swacaamu"
+      ],
+      "why": "The tightest race at the top of the three groups: tied for first.",
+      "data": {
+        "group_label": "SWAC East",
+        "games_total": 8,
+        "rows": [
+          {
+            "team_id": "swacjsu",
+            "conf_wins": 4,
+            "conf_losses": 2,
+            "record": "7-2"
+          },
+          {
+            "team_id": "swacaamu",
+            "conf_wins": 4,
+            "conf_losses": 2,
+            "record": "7-3"
+          },
+          {
+            "team_id": "swacbcu",
+            "conf_wins": 3,
+            "conf_losses": 3,
+            "record": "5-5"
+          },
+          {
+            "team_id": "swacasu",
+            "conf_wins": 3,
+            "conf_losses": 3,
+            "record": "5-4"
+          },
+          {
+            "team_id": "swacmvsu",
+            "conf_wins": 2,
+            "conf_losses": 4,
+            "record": "3-7"
+          },
+          {
+            "team_id": "swacfamu",
+            "conf_wins": 1,
+            "conf_losses": 5,
+            "record": "2-8"
+          }
+        ]
+      }
+    },
+    {
+      "key": "hot_streak",
+      "title": "Hot Streak",
+      "headline": "SC State have won 3 straight and sit at 8-2.",
+      "teams": [
+        "meacscsu"
+      ],
+      "why": "Longest active winning streak among the 18.",
+      "data": {
+        "team_id": "meacscsu",
+        "streak": 3,
+        "record": "8-2",
+        "results": [
+          {
+            "result": "L"
+          },
+          {
+            "result": "L"
+          },
+          {
+            "result": "W"
+          },
+          {
+            "result": "W"
+          },
+          {
+            "result": "W"
+          }
+        ]
+      }
+    },
+    {
+      "key": "rivalry",
+      "title": "Rivalry",
+      "headline": "Florida Classic: FAMU vs B-CU, Nov 21.",
+      "teams": [
+        "swacfamu",
+        "swacbcu"
+      ],
+      "why": "The next named series game between two of the 18 (Florida Classic).",
+      "data": {
+        "event_name": "Florida Classic",
+        "team_a": "swacfamu",
+        "team_b": "swacbcu",
+        "wins_a": 4,
+        "wins_b": 2,
+        "ties": 0,
+        "series_from": 2019,
+        "last_meeting": {
+          "date": "2025-11-22",
+          "a_score": 34,
+          "b_score": 38
+        },
+        "next_meeting": {
+          "date": "2026-11-21",
+          "venue": "Camping World Stadium"
+        }
+      }
+    },
+    {
+      "key": "home_field",
+      "title": "Home Field",
+      "headline": "J-State are 6-0 at home this season.",
+      "teams": [
+        "swacjsu"
+      ],
+      "why": "Best home record among the 18 (two or more home games).",
+      "data": {
+        "team_id": "swacjsu",
+        "home_wins": 6,
+        "home_losses": 0,
+        "image_url": null
+      }
+    },
+    {
+      "key": "band",
+      "title": "The Band",
+      "headline": "",
+      "teams": [
+        "swacasu"
+      ],
+      "why": "Bama State host Turkey Day Classic on Nov 26.",
+      "data": {
+        "team_id": "swacasu"
+      }
+    }
+  ]
+}
